@@ -50,9 +50,9 @@
         //alert(text[0]);
     }
     
-    
     // Convert to 32bit integer
     var content = url.searchParams.get("text");
+
     function stringToHash(string) {
         var hash = 0;
         if (string.length == 0) return hash;
@@ -84,8 +84,8 @@
     for(var j=0;j<count;j++){
         i=j;
         var temp=stringToHash((i*1157).toString());
-        x=(temp>>>4)%21-10;//原點偏移
-        y=(temp>>>5)%21-10;//原點偏移
+        x=0;//(temp>>>4)%21-10;//原點偏移
+        y=0;//(temp>>>5)%21-10;//原點偏移
         r=(r_base+(temp>>>1)%64-32);
         r=check_color(r);
         g=(g_base+(temp>>>2)%64-32);
