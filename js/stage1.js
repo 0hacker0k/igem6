@@ -1,4 +1,4 @@
-function preload (){
+function preload_stage_1(){
     this.load.image('background', 'img/main/background.png');//載入一般圖片
     this.load.image('stage1', 'img/main/green.png');//載入一般圖片
     //this.load.image('player', 'img/main/green.png');
@@ -8,7 +8,7 @@ function preload (){
     );//載入畫楨
 }
 
-function create (){
+function create_stage_1 (){
     //--------------------場景設定--------------------
     this.add.image(0, 0, 'background').setOrigin(0, 0);
     platforms = this.physics.add.staticGroup();//分為靜態與動態，靜態的只有大小與位置，動態的有速度、加速度、反彈、碰撞。
@@ -42,12 +42,12 @@ function create (){
     //function
     function enter(){//進入關卡
         if(player.x>=90 && player.x<=100 && player.y>=290 && player.y<=310){
-            load_stage_1();
+            load();
         }
     }
 }
 
-function update (){//與外界有關的互動
+function update_stage_1 (){//與外界有關的互動
     cursors = this.input.keyboard.createCursorKeys();
     if (cursors.left.isDown){//向左
         player.setVelocityX(-160);

@@ -5,7 +5,7 @@
     <title>Making your first Phaser 3 Game - Part 1</title>
     <script src="phaser-3.55.2/dist/phaser.js"></script>
     <script src="./js/lobby.js"></script>
-    <script src="./js/stage.js"></script>
+    <script src="./js/stage1.js"></script>
     <style type="text/css">
         body {
             margin: 10%;
@@ -13,40 +13,52 @@
     </style>
 </head>
 <body>
-<select onChange="changeLang(this.options[this.selectedIndex].value)">
+<select id="language_set" onChange="changeLang(this.options[this.selectedIndex].value)">
     <option value="#">please choose your language</option>
     <option value="en">English</option>
     <option value="zh-tw">繁體中文</option>
     <option value="zh-cn">簡體中文</option>
 </select>
-<button onclick="load()">123123132</button>
+<!-- <button onclick="load()">123123132</button> -->
 <script type="text/javascript">
     var getUrlString = location.href;
     var url = new URL(getUrlString);
     //alert(location.host+location.pathname);
-    var languege=url.searchParams.get('lang');
-    if(languege==null)languege="en";
-    //alert(languege);
+    var language=url.searchParams.get('lang');
+    if(language==null)language="en";
+    //alert(language);
     function changeLang(input){
-        languege=input;
-        location=location.protocol+"//"+location.host+location.pathname+"?lang="+languege;
+        language=input;
+        location=location.protocol+"//"+location.host+location.pathname+"?lang="+language;
     }
-    var text=[];
     var langLoadComplete=0;
-    let langueges="./languege/"+languege+".js";
+    let languages="./language/"+language+".js";
     var head= document.getElementsByTagName('head')[0]; 
     var script= document.createElement('script'); 
     script.type= 'text/javascript'; 
     script.onload = script.onreadystatechange = function() { 
         if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) { 
-            loadLanguege();
+            loadlanguage();
             script.onload = script.onreadystatechange = null; 
         }
     };
-    script.src= langueges; 
+    script.src= languages;
     head.appendChild(script);
-    function loadLanguege(){
+    function loadlanguage(){
         langLoadComplete=1;
+        var language_set = document.getElementById("language_set");
+        var language_set = document.getElementById("language_set");
+        switch (language){
+            case "en":
+                language_set[1].selected=true;
+                break;
+            case "zh-tw":
+                language_set[2].selected=true;
+                break;
+            case "zh-cn":
+                language_set[3].selected=true;
+                break;
+        }
         load();
     }
     var config;
@@ -65,14 +77,36 @@
             physics: {//物理函式
                 default: 'arcade',
                 arcade: {
-                    gravity: { y: 300 },
+                    gravity: { y: 0 },
                     debug: false
                 }
             },
             scene: {//場景函式
-                preload: preload1,//預載入
-                create: create1,//建立
-                update: update1//更新
+                preload: preload,//預載入
+                create: create,//建立
+                update: update//更新
+            }
+        };
+        game = new Phaser.Game(config);
+    }
+    function load_stage_1(){
+        if(game!=null)
+            game.destroy(true, false);
+        config = {
+            type: Phaser.AUTO,
+            width: 800,
+            height: 600,
+            physics: {//物理函式
+                default: 'arcade',
+                arcade: {
+                    gravity: { y: 0 },
+                    debug: false
+                }
+            },
+            scene: {//場景函式
+                preload: preload_stage_1,//預載入
+                create: create_stage_1,//建立
+                update: update_stage_1//更新
             }
         };
         game = new Phaser.Game(config);

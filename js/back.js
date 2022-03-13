@@ -86,7 +86,7 @@ function create1 (){
         player.setTint(0xff0000);
         player.anims.play('turn');
         gameOver = true;
-        scoreText.setText('Game Over\nYour Score:' + score + text[0]);
+        scoreText.setText('Game Over\nYour Score:' + score + text[0]);//text.hello
         scoreText.setX(150);
         scoreText.setY(260);
         scoreText.setFontSize(64);
