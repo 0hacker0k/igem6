@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Making your first Phaser 3 Game - Part 1</title>
     <script src="phaser-3.55.2/dist/phaser.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/lobby.js"></script>
     <script src="./js/stage1.js"></script>
     <style type="text/css">
@@ -60,56 +61,11 @@
         }
         load();
     }
-    var config;
-    var score = 0;
-    var scoreText;
-    var game=null;
-    var platforms;
-    gameOver=false;
-    function load(){
-        if(game!=null)
-            game.destroy(true, false);
-        config = {
-            type: Phaser.AUTO,
-            width: 800,
-            height: 600,
-            physics: {//物理函式
-                default: 'arcade',
-                arcade: {
-                    gravity: { y: 0 },
-                    debug: false
-                }
-            },
-            scene: {//場景函式
-                preload: preload,//預載入
-                create: create,//建立
-                update: update//更新
-            }
-        };
-        game = new Phaser.Game(config);
-    }
-    function load_stage_1(){
-        if(game!=null)
-            game.destroy(true, false);
-        config = {
-            type: Phaser.AUTO,
-            width: 800,
-            height: 600,
-            physics: {//物理函式
-                default: 'arcade',
-                arcade: {
-                    gravity: { y: 0 },
-                    debug: false
-                }
-            },
-            scene: {//場景函式
-                preload: preload_stage_1,//預載入
-                create: create_stage_1,//建立
-                update: update_stage_1//更新
-            }
-        };
-        game = new Phaser.Game(config);
-    }
+    
+    
+
+    
+
 </script>
 
 </body>
