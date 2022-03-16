@@ -41,7 +41,7 @@ function create_stage_1 (){
     this.physics.add.overlap(player, stage, enter, null, this);//碰撞設定
     //function
     function enter(){//進入關卡
-        if(player.x>=90 && player.x<=100 && player.y>=290 && player.y<=310){
+        if(player.x>=40 && player.x<=90 && player.y>=260 && player.y<=330){
             load();
         }
     }
