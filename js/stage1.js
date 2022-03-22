@@ -70,6 +70,7 @@ function create_stage_1 (){
     card2.on('pointerdown', function (){clickCard(card2,1)},this);
     card3.on('pointerdown', function (){clickCard(card3,2)},this);
     card4.on('pointerdown', function (){clickCard(card4,3)},this);
+    // card1.on('wheel', function (deltaY) {if(deltaY>0)clickCard(card4,3);});
     button.on('pointerdown', function (){checkAns()},this);
     function clickCard(card,id){//進入關卡
         switch(codon[id]){
@@ -91,28 +92,31 @@ function create_stage_1 (){
                 break;
         }
     }
-    // ans=['T', 'T', 'C', 'C'];
+    // ans=['G', 'A', 'T', 'T'];
     text=this.add.text(300, 300, '', { fill: '#000000' });
     function checkAns(){
         var correct=0;
         var misplaced=0;
         var len=4;
         //compute
-        var temp=[0,0,0,0];
+        var ans_status=[0,0,0,0];
+        var coden_status=[0,0,0,0];
         for(var i=0 ; i<len ; i++){
             if(ans[i]==codon[i]){
                 correct+=1;
-                temp[i]=1;
+                ans_status[i]=1;
+                coden_status[i]=1;
                 continue;
             }
         }
         for(var i=0 ; i<len ; i++){
-            if(temp[i]==1)continue;
+            if(coden_status[i]==1)continue;
             for(var j=0;j<len;j++){
-                if(temp[j]==1)continue;
+                if(ans_status[j]==1)continue;
                 if(ans[j]==codon[i]){
                     misplaced++;
-                    temp[i]==1;
+                    ans_status[j]=1;
+                    coden_status[i]=1;
                     console.log(i,j);
                     break;
                 }
