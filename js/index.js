@@ -4,7 +4,66 @@ var scoreText;
 var game=null;
 var platforms;
 gameOver=false;
+var getUrlString = location.href;
+var url = new URL(getUrlString);
+//alert(location.host+location.pathname);
+var language=url.searchParams.get('lang');
+var page=url.searchParams.get('page');
+if(language==null)language="en";
+//alert(language);
+
+var langLoadComplete=0;
+let languages="./language/"+language+".js";
+var head= document.getElementsByTagName('head')[0]; 
+var script= document.createElement('script'); 
+script.type= 'text/javascript'; 
+script.onload = script.onreadystatechange = function() { 
+    if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) { 
+        loadlanguage();
+        script.onload = script.onreadystatechange = null; 
+    }
+};
+script.src= languages;
+head.appendChild(script);
+function changeLang(input){
+    language=input;
+    location=location.protocol+"//"+location.host+location.pathname+"?lang="+language;
+}
+function loadlanguage(){
+    langLoadComplete=1;
+    var language_set = document.getElementById("language_set");
+    switch (language){
+        case "en":
+            language_set[1].selected=true;
+            break;
+        case "zh-tw":
+            language_set[2].selected=true;
+            break;
+        case "zh-cn":
+            language_set[3].selected=true;
+            break;
+    }
+    load();
+}
 function load(){
+    if(page==null){
+        load_lobby_1();
+    }else{
+        switch(page){
+            case "lobby":
+                load_lobby_1();
+                break;
+            case "stage1":
+                load_stage_1();
+                break;
+            case "stage2":
+                load_stage_2();
+                break;
+        }
+    }
+
+}
+function load_lobby_1(){
     if(game!=null)
         game.destroy(true, false);
     config = {
