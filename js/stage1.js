@@ -9,6 +9,7 @@ function preload_stage_1(){
 }
 var codon=["A","A","A","A"];
 var ans=["C","C","C","C"];
+var output="";
 function create_stage_1 (){
     //--------------------場景設定--------------------
     this.add.image(0, 0, 'background').setOrigin(0, 0);
@@ -90,14 +91,35 @@ function create_stage_1 (){
                 break;
         }
     }
-    text=this.add.text(350, 450, '', { fill: '#000000' });
+    // ans=["T","T","A","C"];
+    text=this.add.text(300, 300, '', { fill: '#000000' });
     function checkAns(){
         var correct=0;
         var misplaced=0;
+        var len=4;
         //compute
+        var temp=[0,0,0,0];
+        for(var i=0 ; i<len ; i++){
+            if(ans[i]==codon[i]){
+                correct+=1;
+                temp[i]=1;
+                continue;
+            }
+        }
+        for(var i=0 ; i<len ; i++){
+            if(temp[i]==1)continue;
+            for(var j=0;j<len;j++){
+                if(temp[j]==1)continue;
+                if(ans[i]==codon[j]){
+                    misplaced++;
+                    temp[i]==1;
+                    break;
+                }
+            }
+        }
+        output+=codon[0]+codon[1]+codon[2]+codon[3]+"  "+correct.toString()+" correct , "+misplaced.toString()+" misplaced\n";
+        text.setText(output);
         
-        // text=this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
-        text.setText(correct.toString()+" correct , "+misplaced.toString()+" misplaced");
     }
 }
 
