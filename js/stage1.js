@@ -92,17 +92,19 @@ function create_stage_1 (){
                 break;
         }
     }
-    // ans=['G', 'A', 'T', 'T'];
-    text=this.add.text(300, 300, '', { fill: '#000000' });
+    // ans=['T', 'T', 'C', 'C'];
+    text=this.add.text(100, 260, '', { fontSize: '32px', fill: '#000000' });
     function checkAns(){
         var correct=0;
         var misplaced=0;
         var len=4;
+        var accept=[0,0,0,0];
         //compute
         var ans_status=[0,0,0,0];
         var coden_status=[0,0,0,0];
         for(var i=0 ; i<len ; i++){
             if(ans[i]==codon[i]){
+                accept[i]=1;
                 correct+=1;
                 ans_status[i]=1;
                 coden_status[i]=1;
@@ -121,8 +123,11 @@ function create_stage_1 (){
                     break;
                 }
             }
-        }//TCTA
+        }
         output+=codon[0]+codon[1]+codon[2]+codon[3]+"  "+correct.toString()+" correct , "+misplaced.toString()+" misplaced\n";
+        // for(var i=0;i<len;i++){
+
+        // }
         text.setText(output);
         
     }console.log(ans);
