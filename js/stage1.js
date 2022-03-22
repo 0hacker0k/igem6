@@ -64,7 +64,7 @@ function create_stage_1 (){
                 ans[i]='G';
                 break;    
         }
-    }console.log(ans);
+    }
     //function
     card1.on('pointerdown', function (){clickCard(card1,0)},this);
     card2.on('pointerdown', function (){clickCard(card2,1)},this);
@@ -91,7 +91,7 @@ function create_stage_1 (){
                 break;
         }
     }
-    // ans=["T","T","A","C"];
+    ans=['T', 'T', 'C', 'C'];
     text=this.add.text(300, 300, '', { fill: '#000000' });
     function checkAns(){
         var correct=0;
@@ -110,17 +110,18 @@ function create_stage_1 (){
             if(temp[i]==1)continue;
             for(var j=0;j<len;j++){
                 if(temp[j]==1)continue;
-                if(ans[i]==codon[j]){
+                if(ans[j]==codon[i]){
                     misplaced++;
                     temp[i]==1;
+                    console.log(i,j);
                     break;
                 }
             }
-        }
+        }//TCTA
         output+=codon[0]+codon[1]+codon[2]+codon[3]+"  "+correct.toString()+" correct , "+misplaced.toString()+" misplaced\n";
         text.setText(output);
         
-    }
+    }console.log(ans);
 }
 
 function update_stage_1 (){//與外界有關的互動
