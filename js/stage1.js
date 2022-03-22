@@ -91,7 +91,7 @@ function create_stage_1 (){
                 break;
         }
     }
-    ans=['T', 'T', 'C', 'C'];
+    // ans=['T', 'T', 'C', 'C'];
     text=this.add.text(300, 300, '', { fill: '#000000' });
     function checkAns(){
         var correct=0;
