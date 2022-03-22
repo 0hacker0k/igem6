@@ -1,78 +1,106 @@
 function preload_stage_1(){
-    this.load.image('background', 'img/main/background.png');//載入一般圖片
-    this.load.image('stage1', 'img/main/green.png');//載入一般圖片
-    //this.load.image('player', 'img/main/green.png');
-    this.load.spritesheet('player',
-        'img/main/player.png',
-        { frameWidth: 64, frameHeight: 64 }
+    this.load.image('background', 'img/stage1/background.png');//載入一般圖片
+    // this.load.image('stage1', 'img/stage1/ATCG.png');
+    this.load.image('button', 'img/main/green.png');
+    this.load.spritesheet('card',
+        'img/stage1/ATCG.png',
+        { frameWidth: 140, frameHeight: 192 }
     );//載入畫楨
 }
-
+var codon=["A","A","A","A"];
+var ans=["C","C","C","C"];
 function create_stage_1 (){
     //--------------------場景設定--------------------
     this.add.image(0, 0, 'background').setOrigin(0, 0);
     platforms = this.physics.add.staticGroup();//分為靜態與動態，靜態的只有大小與位置，動態的有速度、加速度、反彈、碰撞。
-    //玩家進入關卡
-    stage = this.physics.add.group();//動態群組
-    stage = this.physics.add.sprite(50, 300, 'stage1');
-    //--------------------玩家設定--------------------
-    player = this.physics.add.sprite(400, 300, 'player');
-    player.setBounce(0.2);//反彈
-    player.setCollideWorldBounds(true);//邊界設置為遊戲框
+    card = this.physics.add.group();//動態群組
+    card1 = this.physics.add.sprite(100, 50, 'card').setOrigin(0, 0).setInteractive();
+    card2 = this.physics.add.sprite(250, 50, 'card').setOrigin(0, 0).setInteractive();
+    card3 = this.physics.add.sprite(400, 50, 'card').setOrigin(0, 0).setInteractive();
+    card4 = this.physics.add.sprite(550, 50, 'card').setOrigin(0, 0).setInteractive();
+    button = this.physics.add.sprite(720, 140, 'button').setOrigin(0, 0).setInteractive();
+    //--------------------卡片設定--------------------
     this.anims.create({//向左移動動畫
-        key: 'left',
-        frames: this.anims.generateFrameNumbers('player', { start: 1, end: 1 }),
+        key: 'A',
+        frames: this.anims.generateFrameNumbers('card', { start: 0, end: 0 }),
         frameRate: 10,
         repeat: -1
     });
     this.anims.create({//向右移動動畫
-        key: 'right',
-        frames: this.anims.generateFrameNumbers('player', { start: 2, end: 2 }),
+        key: 'T',
+        frames: this.anims.generateFrameNumbers('card', { start: 1, end: 1 }),
         frameRate: 10,
         repeat: -1
     });
     this.anims.create({//不動動畫
-        key: 'face',
-        frames: this.anims.generateFrameNumbers('player', { start: 0, end: 0 }),
+        key: 'C',
+        frames: this.anims.generateFrameNumbers('card', { start: 2, end: 2 }),
         frameRate: 10,
         repeat: -1
     });
-    //碰撞
-    this.physics.add.overlap(player, stage, enter, null, this);//碰撞設定
-    //function
-    function enter(){//進入關卡
-        if(player.x>=40 && player.x<=90 && player.y>=260 && player.y<=330){
-            load();
+    this.anims.create({//不動動畫
+        key: 'G',
+        frames: this.anims.generateFrameNumbers('card', { start: 3, end: 3 }),
+        frameRate: 10,
+        repeat: -1
+    });
+    //隨機密碼
+    function getRandom(max){
+        return Math.floor(Math.random() * max)+1;
+    }
+    for(var i=0;i<4;i++){
+        switch(getRandom(4)){
+            case 1:
+                ans[i]='A';
+                break;
+            case 2:
+                ans[i]='T';
+                break;
+            case 3:
+                ans[i]='C';
+                break;
+            case 4:
+                ans[i]='G';
+                break;    
         }
+    }console.log(ans);
+    //function
+    card1.on('pointerdown', function (){clickCard(card1,0)},this);
+    card2.on('pointerdown', function (){clickCard(card2,1)},this);
+    card3.on('pointerdown', function (){clickCard(card3,2)},this);
+    card4.on('pointerdown', function (){clickCard(card4,3)},this);
+    button.on('pointerdown', function (){checkAns()},this);
+    function clickCard(card,id){//進入關卡
+        switch(codon[id]){
+            case 'A':
+                card.anims.play('T');
+                codon[id]='T';
+                break;
+            case 'T':
+                card.anims.play('C');
+                codon[id]='C';
+                break;
+            case 'C':
+                card.anims.play('G');
+                codon[id]='G';
+                break;
+            case 'G':
+                card.anims.play('A');
+                codon[id]='A';
+                break;
+        }
+    }
+    text=this.add.text(350, 450, '', { fill: '#000000' });
+    function checkAns(){
+        var correct=0;
+        var misplaced=0;
+        //compute
+        
+        // text=this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
+        text.setText(correct.toString()+" correct , "+misplaced.toString()+" misplaced");
     }
 }
 
 function update_stage_1 (){//與外界有關的互動
-    cursors = this.input.keyboard.createCursorKeys();
-    if (cursors.left.isDown){//向左
-        player.setVelocityX(-160);
-        player.setVelocityY(0);
-        player.anims.play('left');
-        check_location();
-    }else if (cursors.right.isDown){//向右
-        player.setVelocityX(160);
-        player.setVelocityY(0);
-        player.anims.play('right');
-    }else if (cursors.up.isDown){//上
-        player.setVelocityY(-160);
-        player.setVelocityX(0);
-        //player.anims.play('face');
-    }else if (cursors.down.isDown){//下
-        player.setVelocityY(160);
-        player.setVelocityX(0);
-        player.anims.play('face');
-    }else{//不動
-        player.setVelocityX(0);
-        player.setVelocityY(0);
-    }
-    function check_location(){
-        //if(player.x==)
-        //alert(y);
-    }
-
+    // cursors = this.input.keyboard.createCursorKeys();
 }

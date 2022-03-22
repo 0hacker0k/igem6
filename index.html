@@ -21,52 +21,5 @@
     <option value="zh-cn">簡體中文</option>
 </select>
 <!-- <button onclick="load()">123123132</button> -->
-<script type="text/javascript">
-    var getUrlString = location.href;
-    var url = new URL(getUrlString);
-    //alert(location.host+location.pathname);
-    var language=url.searchParams.get('lang');
-    if(language==null)language="en";
-    //alert(language);
-    function changeLang(input){
-        language=input;
-        location=location.protocol+"//"+location.host+location.pathname+"?lang="+language;
-    }
-    var langLoadComplete=0;
-    let languages="./language/"+language+".js";
-    var head= document.getElementsByTagName('head')[0]; 
-    var script= document.createElement('script'); 
-    script.type= 'text/javascript'; 
-    script.onload = script.onreadystatechange = function() { 
-        if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) { 
-            loadlanguage();
-            script.onload = script.onreadystatechange = null; 
-        }
-    };
-    script.src= languages;
-    head.appendChild(script);
-    function loadlanguage(){
-        langLoadComplete=1;
-        var language_set = document.getElementById("language_set");
-        switch (language){
-            case "en":
-                language_set[1].selected=true;
-                break;
-            case "zh-tw":
-                language_set[2].selected=true;
-                break;
-            case "zh-cn":
-                language_set[3].selected=true;
-                break;
-        }
-        load();
-    }
-    
-    
-
-    
-
-</script>
-
 </body>
 </html>
