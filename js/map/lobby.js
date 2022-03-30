@@ -66,8 +66,8 @@ function create (){
                 load_stage_1();
             },500);
             stop=1;
-            this.scene.resume('sceneA');
-            this.scene.stop();
+            // this.scene.resume('sceneA');
+            // this.scene.stop();
             //return ;
         }
     }

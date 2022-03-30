@@ -25,7 +25,7 @@ var output="";
 
 function create_stage1_sequence (){
     //轉場設定
-    transition = this.physics.add.sprite(-900, 0, 'transition').setOrigin(0, 0).setScale(2,1);
+    transition = this.physics.add.sprite(-1100, 0, 'transition').setOrigin(0, 0).setScale(2,1);
     transition.depth = 1024;
     //--------------------場景設定--------------------
     this.add.image(0, 0, 'background').setOrigin(0, 0);
@@ -248,7 +248,7 @@ function create_stage1_sequence (){
     transition.setVelocityX(-2500);
     setTimeout(function(){
         transition.setVelocityX(0);
-    },600);
+    },800);
     
     
 }
