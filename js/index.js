@@ -100,9 +100,9 @@ function load_stage_1(){
             }
         },
         scene: {//場景函式
-            preload: preload_stage_1,//預載入
-            create: create_stage_1,//建立
-            update: update_stage_1//更新
+            preload: preload_stage1_sequence,//預載入
+            create: create_stage1_sequence,//建立
+            update: update_stage1_sequence//更新
         }
     };
     game = new Phaser.Game(config);

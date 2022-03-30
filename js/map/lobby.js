@@ -2,6 +2,7 @@ function preload (){
     this.load.image('background', 'img/main/background.png');//載入一般圖片
     this.load.image('stage1', 'img/main/green.png');//載入一般圖片
     this.load.image('direct', 'img/main/director.png');
+    this.load.image('transition', 'img/main/transition.png');
     //this.load.image('player', 'img/main/green.png');
     this.load.spritesheet('player',
         'img/main/player.png',
@@ -16,7 +17,7 @@ function create (){
     background=this.add.tileSprite(0, 0, 1600, 1200, 'background').setOrigin(0, 0).setScale(2);//setScale: { x: 1, y: 2, stepY: 0.1 }
     platforms = this.physics.add.staticGroup();//分為靜態與動態，靜態的只有大小與位置，動態的有速度、加速度、反彈、碰撞。
     //玩家進入關卡
-    stage = this.physics.add.group();//動態群組
+    //stage = this.physics.add.group();//動態群組
     stage = this.physics.add.sprite(100, 600, 'stage1');
     //--------------------玩家設定--------------------
     player = this.physics.add.sprite(800, 600, 'player');//this.centerX
@@ -52,11 +53,22 @@ function create (){
     //碰撞
     this.physics.add.overlap(player, stage, enter, null, this);//碰撞設定
     //function
+    var stop=0;
     function enter(){//進入關卡
         // alert(player.x);
         // alert(player.y);
-        if(player.x>=80 && player.x<=145 && player.y>=555 && player.y<=600){
-            load_stage_1();
+        if(stop==0 && player.x>=80 && player.x<=145 && player.y>=555 && player.y<=600){
+            //轉場設定
+            transition = this.physics.add.sprite(800, 300, 'transition').setOrigin(0, 0).setScale(2.1,1);
+            transition.depth = 1024;
+            transition.setVelocityX(-2500);
+            setTimeout(function(){
+                load_stage_1();
+            },500);
+            stop=1;
+            this.scene.resume('sceneA');
+            this.scene.stop();
+            //return ;
         }
     }
     var x,y,status=0;
