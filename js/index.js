@@ -1,8 +1,12 @@
+// import "./map/lobby.js";
 var config;
 var score = 0;
 var scoreText;
 var game=null;
+var game_temp=null;
 var platforms;
+var level=0;
+var send_string="";
 gameOver=false;
 var getUrlString = location.href;
 var url = new URL(getUrlString);
@@ -45,27 +49,48 @@ function loadlanguage(){
     }
     load();
 }
+const map_1={
+    key: 'map_1',
+    preload: preload,
+    create: create,
+    update: update
+}
+const stage_1_choose={
+    key: 'stage_1_choose',
+    preload: preload_stage1_choose,
+    create: create_stage1_choose,
+    update: update_stage1_choose
+}
+const stage_1_sequence={
+    key: 'stage_1_sequence',
+    preload: preload_stage1_sequence,
+    create: create_stage1_sequence,
+    update: update_stage1_sequence
+}
+const stage_1_pcr={
+    key: 'stage_1_pcr',
+    preload: preload_stage1_pcr,
+    create: create_stage1_pcr,
+    update: update_stage1_pcr
+}
 function load(){
     if(page==null){
-        load_lobby_1();
+        load_page(map_1);
     }else{
         switch(page){
             case "lobby":
-                load_lobby_1();
+                load_page(map_1);
                 break;
             case "stage1":
-                load_stage_1();
+                load_page(stage_1_choose);
                 break;
             case "stage2":
-                load_stage_2();
+                load_page(stage_2);
                 break;
         }
     }
-
 }
-function load_lobby_1(){
-    if(game!=null)
-        game.destroy(true, false);
+function load_page(page){
     config = {
         type: Phaser.AUTO,
         width: 800,
@@ -77,36 +102,36 @@ function load_lobby_1(){
                 debug: false
             }
         },
-        scene: {//場景函式
-            preload: preload,//預載入
-            create: create,//建立
-            update: update//更新
-        }
+        scene: page
     };
-    game = new Phaser.Game(config);
-}
-function load_stage_1(){
+    game_temp = new Phaser.Game(config);
     if(game!=null)
         game.destroy(true, false);
-    config = {
-        type: Phaser.AUTO,
-        width: 800,
-        height: 600,
-        physics: {//物理函式
-            default: 'arcade',
-            arcade: {
-                gravity: { y: 0 },
-                debug: false
-            }
-        },
-        scene: {//場景函式
-            preload: preload_stage1_sequence,//預載入
-            create: create_stage1_sequence,//建立
-            update: update_stage1_sequence//更新
-        }
-    };
-    game = new Phaser.Game(config);
+    game=game_temp;
 }
+// function load_stage_1(){
+//     config = {
+//         type: Phaser.AUTO,
+//         width: 800,
+//         height: 600,
+//         physics: {//物理函式
+//             default: 'arcade',
+//             arcade: {
+//                 gravity: { y: 0 },
+//                 debug: false
+//             }
+//         },
+//         scene: {//場景函式
+//             preload: preload_stage1_sequence,//預載入
+//             create: create_stage1_sequence,//建立
+//             update: update_stage1_sequence//更新
+//         }
+//     };
+//     game_temp = new Phaser.Game(config);
+//     if(game!=null)
+//         game.destroy(true, false);
+//     game=game_temp;
+// }
 /*
 var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 

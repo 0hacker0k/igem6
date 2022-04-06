@@ -1,9 +1,8 @@
 function preload (){
+    load_transition(this);
     this.load.image('background', 'img/main/background.png');//載入一般圖片
     this.load.image('stage1', 'img/main/green.png');//載入一般圖片
     this.load.image('direct', 'img/main/director.png');
-    this.load.image('transition', 'img/main/transition.png');
-    //this.load.image('player', 'img/main/green.png');
     this.load.spritesheet('player',
         'img/main/player.png',
         { frameWidth: 64, frameHeight: 64 }
@@ -59,16 +58,11 @@ function create (){
         // alert(player.y);
         if(stop==0 && player.x>=80 && player.x<=145 && player.y>=555 && player.y<=600){
             //轉場設定
-            transition = this.physics.add.sprite(800, 300, 'transition').setOrigin(0, 0).setScale(2.1,1);
-            transition.depth = 1024;
-            transition.setVelocityX(-2500);
+            finish_transition(this,800,300);
             setTimeout(function(){
-                load_stage_1();
+                load_page(stage_1_choose);
             },500);
             stop=1;
-            // this.scene.resume('sceneA');
-            // this.scene.stop();
-            //return ;
         }
     }
     var x,y,status=0;
