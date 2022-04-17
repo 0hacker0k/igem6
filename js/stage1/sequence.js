@@ -1,6 +1,7 @@
 function preload_stage1_sequence(){
     this.load.image('background', 'img/stage1/background.png');//載入一般圖片
     load_transition(this);
+    this.load.image('back', 'img/main/back.png');
     this.load.spritesheet('check',
         'img/stage1/check_button.png',
         { frameWidth: 250, frameHeight: 25 }
@@ -24,26 +25,21 @@ var output="";
 
 function create_stage1_sequence (){
     //轉場設定
-    loading_transition(this,-1100,0);
+    loading_transition(this,-500*width/800,0);
     //--------------------場景設定--------------------
-    this.add.image(0, 0, 'background').setOrigin(0, 0);
+    this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
     platforms = this.physics.add.staticGroup();//分為靜態與動態，靜態的只有大小與位置，動態的有速度、加速度、反彈、碰撞。
-    // card = this.physics.add.group();//動態群組
-    // card1 = this.physics.add.sprite(100, 50, 'card').setOrigin(0, 0).setInteractive().setScale(0.8);
-    // card2 = this.physics.add.sprite(250, 50, 'card').setOrigin(0, 0).setInteractive().setScale(0.8);
-    // card3 = this.physics.add.sprite(400, 50, 'card').setOrigin(0, 0).setInteractive().setScale(0.8);
-    // card4 = this.physics.add.sprite(550, 50, 'card').setOrigin(0, 0).setInteractive().setScale(0.8);
     var card=[];
     var button=[];
     var stack=0;
     var len=level+2;
     codon=["","","","",""];
     for(var i=len-1;i>=0;i--){
-        card[i] = this.physics.add.sprite(50+120*i, 50, 'card').setOrigin(0, 0).setInteractive().setScale(0.8);
+        card[i] = this.physics.add.sprite(width*0.02+(width*0.50)/(len-1)*i, 80*height/600, 'card').setOrigin(0, 0).setInteractive().setDisplaySize(0.14*width*((13-len)/10),0.256*height*((13-len)/10));
     }
-    check_button = this.physics.add.sprite(160, 235, 'check').setOrigin(0, 0).setInteractive();
+    check_button = this.physics.add.sprite(160*width/800, 265*height/600, 'check').setOrigin(0, 0).setInteractive();
     for(var i=3;i>=0;i--){
-        button[i] = this.physics.add.sprite(70+120*i, 300, 'card').setOrigin(0, 0).setInteractive().setScale(0.8);
+        button[i] = this.physics.add.sprite((70+120*i)*width/800, 330*height/600, 'card').setOrigin(0, 0).setInteractive().setScale(0.8);
     }
     //--------------------卡片設定--------------------
     {//畫禎設定
@@ -199,9 +195,9 @@ function create_stage1_sequence (){
         if(stack>id)stack=id;
     }
     // ans=['T', 'T', 'C', 'C'];
-    instruction=this.add.text(100, 460, 'C: correct\nM: misplaced\nW: wrong', { fontSize: '32px', fill: '#000000' });
-    text=this.add.text(540, 150, '', { fontFamily: 'fantasy', fontSize: '32px', fill: '#111111' });
-    condition=this.add.text(540, 55, '', { fontFamily: 'fantasy', fontSize: '48px', fill: '#000000' });
+    instruction=this.add.text(100*width/800, 490*height/600, 'C: correct\nM: misplaced\nW: wrong', { fontSize: '32px', fill: '#000000' });
+    text=this.add.text(0.7*width, 150*height/600, '', { fontFamily: 'fantasy', fontSize: '32px', fill: '#111111' });
+    condition=this.add.text(0.7*width, 55*height/600, '', { fontFamily: 'fantasy', fontSize: '48px', fill: '#000000' });
     
     function checkAns(where){
         for(var i=0;i<len;i++){
@@ -253,13 +249,20 @@ function create_stage1_sequence (){
                 output+=ans[i];
             }
             send_string=output;
-            finish_transition(where,800,0);
+            finish_transition(where,width,0);
             setTimeout(function(){
                 load_page(stage_1_pcr);
             },500);
         }
     }//console.log(ans);
-
+    //back
+    back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
+    back.on('pointerdown', function (){
+        finish_transition(this,width,0);
+        setTimeout(function(){
+            load_page(stage_1_choose);
+        },500);
+    },this);
     //轉場動畫
     start_transition(this);
     

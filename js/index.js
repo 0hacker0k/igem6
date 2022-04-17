@@ -1,4 +1,9 @@
 // import "./map/lobby.js";
+var set_width=1260;
+var set_height=900;
+var scale=0.8;
+var width=set_width*scale;
+var height=set_height*scale;
 var config;
 var score = 0;
 var scoreText;
@@ -93,8 +98,8 @@ function load(){
 function load_page(page){
     config = {
         type: Phaser.AUTO,
-        width: 800,
-        height: 600,
+        width: width,
+        height: height,
         physics: {//物理函式
             default: 'arcade',
             arcade: {

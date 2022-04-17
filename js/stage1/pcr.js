@@ -1,6 +1,7 @@
 function preload_stage1_pcr(){
     this.load.image('background', 'img/stage1/background.png');//載入一般圖片
     load_transition(this);
+    this.load.image('back', 'img/main/back.png');
     this.load.spritesheet('gene',
         'img/stage1/small_ATCG.png',
         { frameWidth: 90, frameHeight: 90 }
@@ -8,10 +9,10 @@ function preload_stage1_pcr(){
 }
 function create_stage1_pcr (){
     //轉場設定
-    loading_transition(this,-1100,0);
+    loading_transition(this,-500*width/800,0);
     
     //--------------------場景設定--------------------
-    this.add.image(0, 0, 'background').setOrigin(0, 0);
+    this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
     {//畫禎設定
         this.anims.create({//A
             key: 'A',
@@ -40,10 +41,19 @@ function create_stage1_pcr (){
     }
     //send_string是序列
     var frames = this.textures.get('gene').getFrameNames();
-    var x = 100;
-    var y = 100;
-    
+    var x = 100*width/800;
+    var y = 100*width/800;
+    var x2 = 100*width/800;
+    var y2 = 400*width/800;
     var len = level+2;
+    var gene_goal=[];
+    var gene_move=[];
+    var final_x,final_y;
+    var final_object;
+    var input_string=[];
+    for(var i=0;i<len;i++){
+        input_string[i]='N';
+    }
     for (var i = 0; i < len; i++){
         var temp="";
         switch(send_string[i]){
@@ -60,23 +70,68 @@ function create_stage1_pcr (){
                 temp="C";
                 break;
         }
-        var image = this.physics.add.sprite(x, y, 'gene').setInteractive();
-        image.anims.play(temp);
-        this.input.setDraggable(image);
-        x += 84;
+        gene_goal[i] = this.physics.add.sprite(x, y, 'gene').setInteractive();
+        gene_goal[i].anims.play(temp);
+        //this.input.setDraggable(image);
+        x += 90*width/800;
     }
-
-    //  Grab everything under the pointer
-
-    this.input.topOnly = false;
-
+    for (var i = 0; i < len; i++){
+        gene_move[i] = this.physics.add.sprite(x2, y2, 'gene').setInteractive();
+        gene_move[i].anims.play(send_string[i]);
+        this.input.setDraggable(gene_move[i]);
+        x2 += 90*width/800;
+    }
+    // this.input.topOnly = true;//只抓最上面的
     this.input.on('drag', function (pointer, gameObject, dragX, dragY) {
-
         gameObject.x = dragX;
         gameObject.y = dragY;
-
+        final_x = dragX;
+        final_y = dragY;
+        final_object=gameObject;
     });
-
+    this.input.on('pointerdown', function (pointer, gameObject, dragX, dragY) {
+        console.log(gameObject);
+        console.log(dragX);
+        console.log(dragY);
+        console.log(input_string);
+    });
+    this.input.on('pointerup', function (pointer) {
+        var status=0;
+        var temp;
+        for(var i=0;i<len;i++){
+            var tempx=final_x-gene_goal[i].x;
+            var tempy=final_y-(gene_goal[i].y+90*height/600);
+            if(tempx*tempx+tempy*tempy<800){
+                final_object.x=gene_goal[i].x;
+                final_object.y=gene_goal[i].y+(90*width/800);
+                status=1;
+                temp=i;
+                break;
+            }
+        }
+        for(var i=0;i<len;i++){
+            if(gene_move[i]==final_object){
+                if(status==0){
+                    final_object.x=100*width/800+(90*width/800*i);
+                    final_object.y=y2;
+                    input_string[i]='N';
+                }else{
+                    input_string[temp]=send_string[i];
+                }console.log(input_string);
+                break;
+            }
+        }
+        
+        //alert(status);
+    });
+    //back
+    back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
+    back.on('pointerdown', function (){
+        finish_transition(this,width,0);
+        setTimeout(function(){
+            load_page(stage_1_sequence);
+        },500);
+    },this);
     //轉場動畫
     start_transition(this);
     

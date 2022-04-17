@@ -12,8 +12,9 @@ var player;
 var cursors;
 var direction=0;
 function create (){
+    loading_transition(this,-500*width/800,height/3);
     //--------------------場景設定--------------------
-    background=this.add.tileSprite(0, 0, 1600, 1200, 'background').setOrigin(0, 0).setScale(2);//setScale: { x: 1, y: 2, stepY: 0.1 }
+    background=this.add.tileSprite(0, 0, width,height, 'background').setOrigin(0, 0).setDisplaySize(width*2,height*2);//setScale: { x: 1, y: 2, stepY: 0.1 }
     platforms = this.physics.add.staticGroup();//分為靜態與動態，靜態的只有大小與位置，動態的有速度、加速度、反彈、碰撞。
     //玩家進入關卡
     //stage = this.physics.add.group();//動態群組
@@ -58,7 +59,7 @@ function create (){
         // alert(player.y);
         if(stop==0 && player.x>=80 && player.x<=145 && player.y>=555 && player.y<=600){
             //轉場設定
-            finish_transition(this,800,300);
+            finish_transition(this,width,height/3);
             setTimeout(function(){
                 load_page(stage_1_choose);
             },500);
@@ -94,6 +95,7 @@ function create (){
         status=0;
         direction=0;
     }, this);
+    start_transition(this);
 }
 
 function update (){//與外界有關的互動
