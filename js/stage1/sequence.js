@@ -6,10 +6,6 @@ function preload_stage1_sequence(){
         'img/stage1/check_button.png',
         { frameWidth: 250, frameHeight: 25 }
     );
-    this.load.spritesheet('gene',
-        'img/stage1/small_ATCG.png',
-        { frameWidth: 90, frameHeight: 90 }
-    );
     this.load.spritesheet('card',
         'img/stage1/ATCG.png',
         { frameWidth: 140, frameHeight: 192 }
