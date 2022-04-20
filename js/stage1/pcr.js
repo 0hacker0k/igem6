@@ -181,7 +181,7 @@ function create_stage1_pcr (){
         clearTimeout(sett);
         sett=setTimeout(function(){
             end_stage1();
-        },250);
+        },166);
         // if(alpha<1){
         //     setTimeout(function(){
         //         end_stage1();

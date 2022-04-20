@@ -8,9 +8,9 @@ function preload_stage1_choose(){
     load_transition(this);
 }
 function create_stage1_choose (){
-    send_string="ATT";
+    /*send_string="ATT";
     level=1;
-    load_page(stage_1_pcr);
+    load_page(stage_1_pcr);*/
     //轉場設定
     loading_transition(this,-500*width/800,0);
     //--------------------場景設定--------------------
