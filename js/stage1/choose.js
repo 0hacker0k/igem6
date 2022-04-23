@@ -17,9 +17,9 @@ function create_stage1_choose (){
     this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
     this.add.image(width*0.2, height*0.1, 'DNA').setOrigin(0, 0).setDisplaySize(height*0.8,height*0.8);
     button=[]
-    button[0] = this.physics.add.sprite((1080-320)/1080*height*0.8+width*0.2, height*0.1, 'gene1').setOrigin(0, 0).setInteractive().setDisplaySize(height/1080*318*0.8,height/1080*324*0.8);
-    button[1] = this.physics.add.sprite(406/1080*height*0.8+width*0.2, 300/1080*height*0.8+height*0.1, 'gene2').setOrigin(0, 0).setInteractive().setDisplaySize(height/1080*376*0.8,height/1080*377*0.8);
-    button[2] = this.physics.add.sprite(width*0.2, (1080-425)/1080*height*0.8+height*0.1, 'gene3').setOrigin(0, 0).setInteractive().setDisplaySize(height/1080*427*0.8,height/1080*425*0.8);
+    button[0] = this.physics.add.sprite(0.69*height*0.8+width*0.2, -0.0514*height*0.8+height*0.1, 'gene1').setOrigin(0, 0).setInteractive().setDisplaySize(0.357*height*0.8,0.357*height*0.8);
+    button[1] = this.physics.add.sprite(0.3786*height*0.8+width*0.2, 0.1942*height*0.8+height*0.1, 'gene2').setOrigin(0, 0).setInteractive().setDisplaySize(0.427*height*0.8,0.427*height*0.8);
+    button[2] = this.physics.add.sprite(0.1*height*0.8+width*0.2, 0.65*height*0.8+height*0.1, 'gene3').setOrigin(0, 0).setInteractive().setDisplaySize(0.6*height*0.8,0.6*height*0.8);
     button[0].on('pointerdown', function (){clickButton(1,this)},this);
     button[1].on('pointerdown', function (){clickButton(2,this)},this);
     button[2].on('pointerdown', function (){clickButton(3,this)},this);
