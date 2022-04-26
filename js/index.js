@@ -132,8 +132,8 @@ function isMobileDevice(){
             isMobileDevice=true;
         }
     }
-    return true;
-    // return isMobileDevice;
+    // return true;
+    return isMobileDevice;
 }
 // function load_stage_1(){
 //     config = {

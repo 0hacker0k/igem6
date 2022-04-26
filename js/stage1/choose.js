@@ -36,6 +36,7 @@ function create_stage1_choose (){
     button[0].alpha=0.1;
     button[1].alpha=0.1;
     button[2].alpha=0.1;
+    banner_status=0;
     function clickButton(id,where){//輸入序列
         if(banner_status!=id && isMobileDevice()){
             banner_status=id;
