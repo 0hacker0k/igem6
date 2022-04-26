@@ -35,7 +35,7 @@ var langLoadComplete=0;
 let languages="./language/"+language+".js";
 var head= document.getElementsByTagName('head')[0]; 
 var script= document.createElement('script'); 
-script.type= 'text/javascript'; 
+script.type= 'text/javascript';
 script.onload = script.onreadystatechange = function() { 
     if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) { 
         loadlanguage();
@@ -46,7 +46,18 @@ script.src= languages;
 head.appendChild(script);
 function changeLang(input){
     language=input;
-    location=location.protocol+"//"+location.host+location.pathname+"?lang="+language;
+    languages="./language/"+language+".js";
+    head= document.getElementsByTagName('head')[0]; 
+    script= document.createElement('script'); 
+    script.type= 'text/javascript';
+    script.onload = script.onreadystatechange = function() { 
+        if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) { 
+            script.onload = script.onreadystatechange = null; 
+        }
+    };
+    script.src= languages;
+    head.appendChild(script);
+    //location=location.protocol+"//"+location.host+location.pathname+"?lang="+language;
 }
 function loadlanguage(){
     langLoadComplete=1;

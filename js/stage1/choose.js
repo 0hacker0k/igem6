@@ -10,7 +10,7 @@ function preload_stage1_choose(){
 }
 var banner_status=0;
 var banner;
-var instruction;
+var level_instruction;
 var banner_width=0;
 function create_stage1_choose (){
     /*send_string="ATT";
@@ -50,9 +50,9 @@ function create_stage1_choose (){
             load_page(stage_1_sequence);
         },500);
     }
-    banner=this.add.image(0, 0.7*height, 'banner').setOrigin(0, 0).setDisplaySize(0,0.15*height); 
+    banner=this.add.image(0, 0.7*height, 'banner').setOrigin(0, 0).setDisplaySize(500,0.15*height); 
     banner.alpha=0.4;
-    instruction=this.add.text(0.5*width, 0.775*height, '', { fontSize: (0.1*height).toString()+'px bold', fill: '#000000', bold: 'true'}).setOrigin(0.5, 0.5);
+    level_instruction=this.add.text(0.5*width, 0.775*height, '123', { fontSize: (0.1*height).toString()+'px bold', fill: '#000000', bold: 'true'}).setOrigin(0.5, 0.5);
     function hover(id){//輸入序列
         if(!isMobileDevice()){
             banner_status=id;
@@ -63,7 +63,7 @@ function create_stage1_choose (){
         if(!isMobileDevice()){
             banner_status=0;
         }
-        button[id-1].alpha=0.1;
+        button[id-1].alpha=0.001;
         
     }
     //back
@@ -84,26 +84,23 @@ function update_stage1_choose (){//與外界有關的互動
         banner.x=(width-banner_width)/2;
         banner.setDisplaySize(banner_width,0.15*height);
         if(banner_width>0)banner_width=(banner_width-(width*0.02))<0?0:banner_width-(width*0.2);
-        instruction.setText("");
+        level_instruction.setText("");
     }else{
         banner.x=(width-banner_width)/2;
         banner.setDisplaySize(banner_width,0.15*height);
         if(banner_width<width)banner_width+=(width*0.1);
         switch(banner_status){
-            case 1: 
-                instruction.setText(text.Easy);
-                instruction.setColor("#33FF33");
+            case 1:
+                level_instruction.setText(lan_text.Easy);
+                level_instruction.setColor("#33FF33");
                 break;
-            case 2: 
-                instruction.setText(text.Moderate);
-                instruction.setColor("#FFFF33");
+            case 2:
+                level_instruction.setText(lan_text.Moderate);
+                level_instruction.setColor("#FFFF33");
                 break;
-            case 3: 
-                instruction.setText(text.Difficult);
-                instruction.setColor("#FF3333");
-                break;
-            default:
-                alert(banner_status);
+            case 3:
+                level_instruction.setText(lan_text.Difficult);
+                level_instruction.setColor("#FF3333");
                 break;
         }
     }

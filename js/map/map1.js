@@ -29,7 +29,7 @@ function create (){
     this.physics.world.bounds.height=1200;
     cam.setZoom(1);
     // -----------------------文字-------------------------
-    scoreText = this.add.text(400, 300, text.hello, { fontSize: '32px', fill: '#000000' });
+    scoreText = this.add.text(400, 300, lan_text.hello, { fontSize: '32px', fill: '#000000' });
     // scoreText.setText('Game Over\nYour Score:' + score);
     //player.setBounce(0.2);//反彈
     player.setCollideWorldBounds(true);//邊界設置為遊戲框

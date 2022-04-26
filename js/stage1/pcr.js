@@ -18,39 +18,47 @@ function preload_stage1_pcr(){
         'img/stage1/small_ATCG.png',
         { frameWidth: 90, frameHeight: 90 }
     );
+    this.load.image('A', 'img/stage1/pcr/A.png');
+    this.load.image('A1', 'img/stage1/pcr/A1.png');
+    this.load.image('T', 'img/stage1/pcr/T.png');
+    this.load.image('T1', 'img/stage1/pcr/T1.png');
+    this.load.image('C', 'img/stage1/pcr/C.png');
+    this.load.image('C1', 'img/stage1/pcr/C1.png');
+    this.load.image('G', 'img/stage1/pcr/G.png');
+    this.load.image('G1', 'img/stage1/pcr/G1.png');
 }
 function create_stage1_pcr (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
     
     //--------------------場景設定--------------------
-    this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
-    {//畫禎設定
-        this.anims.create({//A
-            key: 'A',
-            frames: this.anims.generateFrameNumbers('gene', { start: 0, end: 0 }),
-            frameRate: 10,
-            repeat: -1
-        });
-        this.anims.create({//T
-            key: 'T',
-            frames: this.anims.generateFrameNumbers('gene', { start: 1, end: 1 }),
-            frameRate: 10,
-            repeat: -1
-        });
-        this.anims.create({//C
-            key: 'C',
-            frames: this.anims.generateFrameNumbers('gene', { start: 2, end: 2 }),
-            frameRate: 10,
-            repeat: -1
-        });
-        this.anims.create({//G
-            key: 'G',
-            frames: this.anims.generateFrameNumbers('gene', { start: 3, end: 3 }),
-            frameRate: 10,
-            repeat: -1
-        });
-    }
+    // this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
+    // {//畫禎設定
+    //     this.anims.create({//A
+    //         key: 'A',
+    //         frames: this.anims.generateFrameNumbers('gene', { start: 0, end: 0 }),
+    //         frameRate: 10,
+    //         repeat: -1
+    //     });
+    //     this.anims.create({//T
+    //         key: 'T',
+    //         frames: this.anims.generateFrameNumbers('gene', { start: 1, end: 1 }),
+    //         frameRate: 10,
+    //         repeat: -1
+    //     });
+    //     this.anims.create({//C
+    //         key: 'C',
+    //         frames: this.anims.generateFrameNumbers('gene', { start: 2, end: 2 }),
+    //         frameRate: 10,
+    //         repeat: -1
+    //     });
+    //     this.anims.create({//G
+    //         key: 'G',
+    //         frames: this.anims.generateFrameNumbers('gene', { start: 3, end: 3 }),
+    //         frameRate: 10,
+    //         repeat: -1
+    //     });
+    // }
     //send_string是前面送來的序列
     var frames = this.textures.get('gene').getFrameNames();
     var x = 100*width/800;

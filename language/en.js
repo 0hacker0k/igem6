@@ -3,11 +3,14 @@
 //     text[1]="bye";
 // }
 // get(text);
-text=
+lan_text=
 {
     "hello":"hello",
     "bye":"bye",
     "Easy":"Easy",
     "Moderate":"Moderate",
-    "Difficult":"Difficult"
+    "Difficult":"Difficult",
+    "correct":"correct",
+    "misplaced":"misplaced",
+    "wrong":"wrong"
 }
