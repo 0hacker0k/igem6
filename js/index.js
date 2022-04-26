@@ -12,7 +12,7 @@ document.cookie = document.cookie + ";expires=" + exp.toGMTString();
 var debug=1;
 var set_width=1260;
 var set_height=900;
-var scale=1;//0.8;
+var scale=0.8;//0.8;
 var width=set_width*scale;
 var height=set_height*scale;
 var config;
@@ -132,8 +132,8 @@ function isMobileDevice(){
             isMobileDevice=true;
         }
     }
-    // return true;
-    return isMobileDevice;
+    return true;
+    // return isMobileDevice;
 }
 // function load_stage_1(){
 //     config = {

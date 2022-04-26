@@ -36,6 +36,10 @@ function create_stage1_choose (){
     button[1].alpha=0.1;
     button[2].alpha=0.1;
     function clickButton(id,where){//輸入序列
+        if(banner_status!=id && isMobileDevice()){
+            banner_status=id;
+            return ;
+        }
         level=id;
         finish_transition(where,width,0);
         setTimeout(function(){
@@ -47,7 +51,7 @@ function create_stage1_choose (){
     instruction=this.add.text(0.5*width, 0.775*height, '', { fontSize: (0.1*height).toString()+'px bold', fill: '#000000', bold: 'true'}).setOrigin(0.5, 0.5);
     function hover(id){//輸入序列
         if(!isMobileDevice()){
-            banner_status=1;
+            banner_status=id;
         }
         button[id-1].alpha=1;
         switch(id){
@@ -75,11 +79,6 @@ function create_stage1_choose (){
     //back
     back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.on('pointerdown', function (){
-        if(banner_status==0 && isMobileDevice()){
-            //alert("phone");
-            banner_status=1;
-            return ;
-        }
         finish_transition(this,width,0);
         setTimeout(function(){
             load_page(map_1);
@@ -95,7 +94,7 @@ function update_stage1_choose (){//與外界有關的互動
         banner.x=(width-banner_width)/2;
         banner.setDisplaySize(banner_width,0.15*height);
         if(banner_width>0)banner_width=(banner_width-(width*0.02))<0?0:banner_width-(width*0.2);
-    }else if(banner_status==1){
+    }else{
         banner.x=(width-banner_width)/2;
         banner.setDisplaySize(banner_width,0.15*height);
         if(banner_width<width)banner_width+=(width*0.1);
