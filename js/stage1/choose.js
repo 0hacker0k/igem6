@@ -10,6 +10,7 @@ function preload_stage1_choose(){
 }
 var banner_status=0;
 var banner;
+var instruction;
 function create_stage1_choose (){
     /*send_string="ATT";
     level=1;
@@ -54,27 +55,13 @@ function create_stage1_choose (){
             banner_status=id;
         }
         button[id-1].alpha=1;
-        switch(id){
-            case 1: 
-                instruction.setText(text.Easy);
-                instruction.setColor("#33FF33");
-                break;
-            case 2: 
-                instruction.setText(text.Moderate);
-                instruction.setColor("#FFFF33");
-                break;
-            case 3: 
-                instruction.setText(text.Difficult);
-                instruction.setColor("#FF3333");
-                break;
-        }
     }
     function out(id){//輸入序列
         if(!isMobileDevice()){
             banner_status=0;
         }
         button[id-1].alpha=0.1;
-        instruction.setText("");
+        
     }
     //back
     back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
@@ -94,10 +81,25 @@ function update_stage1_choose (){//與外界有關的互動
         banner.x=(width-banner_width)/2;
         banner.setDisplaySize(banner_width,0.15*height);
         if(banner_width>0)banner_width=(banner_width-(width*0.02))<0?0:banner_width-(width*0.2);
+        instruction.setText("");
     }else{
         banner.x=(width-banner_width)/2;
         banner.setDisplaySize(banner_width,0.15*height);
         if(banner_width<width)banner_width+=(width*0.1);
+        switch(banner_status){
+            case 1: 
+                instruction.setText(text.Easy);
+                instruction.setColor("#33FF33");
+                break;
+            case 2: 
+                instruction.setText(text.Moderate);
+                instruction.setColor("#FFFF33");
+                break;
+            case 3: 
+                instruction.setText(text.Difficult);
+                instruction.setColor("#FF3333");
+                break;
+        }
     }
     if((banner_width<width) && banner_width==temp){
         banner_width=0;
