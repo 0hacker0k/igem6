@@ -133,6 +133,7 @@ function isMobileDevice(){
         }
     }
     // return true;
+    alert(isMobileDevice);
     return isMobileDevice;
 }
 // function load_stage_1(){
