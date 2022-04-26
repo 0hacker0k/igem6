@@ -126,7 +126,7 @@ function load_page(page){
 }
 // alert(navigator.userAgent);
 function isMobileDevice(){
-    var mobileDevices = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone','Samsung'];
+    var mobileDevices = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone','Samsung','MiuiBrowser','XiaoMi'];
     var isMobileDevice=false;
     for(var i=0;i<mobileDevices.length;i++){
         if(navigator.userAgent.match(mobileDevices[i])){

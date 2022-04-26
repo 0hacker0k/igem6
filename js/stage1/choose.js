@@ -11,6 +11,7 @@ function preload_stage1_choose(){
 var banner_status=0;
 var banner;
 var instruction;
+var banner_width=0;
 function create_stage1_choose (){
     /*send_string="ATT";
     level=1;
@@ -37,6 +38,7 @@ function create_stage1_choose (){
     button[1].alpha=0.1;
     button[2].alpha=0.1;
     banner_status=0;
+    banner_width=0;
     function clickButton(id,where){//輸入序列
         if(banner_status!=id && isMobileDevice()){
             banner_status=id;
@@ -75,7 +77,7 @@ function create_stage1_choose (){
     //轉場動畫
     start_transition(this);
 }
-var banner_width=0;
+
 function update_stage1_choose (){//與外界有關的互動
     var temp=banner_width;
     if(banner_status==0){
@@ -99,6 +101,9 @@ function update_stage1_choose (){//與外界有關的互動
             case 3: 
                 instruction.setText(text.Difficult);
                 instruction.setColor("#FF3333");
+                break;
+            default:
+                alert(banner_status);
                 break;
         }
     }
