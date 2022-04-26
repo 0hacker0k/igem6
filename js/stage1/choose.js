@@ -46,7 +46,9 @@ function create_stage1_choose (){
     banner.alpha=0.4;
     instruction=this.add.text(0.5*width, 0.775*height, '', { fontSize: (0.1*height).toString()+'px bold', fill: '#000000', bold: 'true'}).setOrigin(0.5, 0.5);
     function hover(id){//輸入序列
-        banner_status=1;
+        if(!isMobileDevice()){
+            banner_status=1;
+        }
         button[id-1].alpha=1;
         switch(id){
             case 1: 
@@ -64,7 +66,9 @@ function create_stage1_choose (){
         }
     }
     function out(id){//輸入序列
-        banner_status=0;
+        if(!isMobileDevice()){
+            banner_status=0;
+        }
         button[id-1].alpha=0.1;
         instruction.setText("");
     }
@@ -72,6 +76,7 @@ function create_stage1_choose (){
     back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.on('pointerdown', function (){
         if(banner_status==0 && isMobileDevice()){
+            //alert("phone");
             banner_status=1;
             return ;
         }
