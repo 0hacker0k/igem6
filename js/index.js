@@ -124,6 +124,7 @@ function load_page(page){
         game.destroy(true, false);
     game=game_temp;
 }
+alert(navigator.userAgent);
 function isMobileDevice(){
     var mobileDevices = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone'];
     var isMobileDevice=false;
@@ -133,7 +134,7 @@ function isMobileDevice(){
         }
     }
     // return true;
-    alert(isMobileDevice);
+    // alert(isMobileDevice);
     return isMobileDevice;
 }
 // function load_stage_1(){
