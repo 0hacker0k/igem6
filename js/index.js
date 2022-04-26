@@ -8,7 +8,6 @@ exp.setTime(exp.getTime() - 1);
 var cval = document.cookie;
 document.cookie = document.cookie + ";expires=" + exp.toGMTString();
 */
-
 //alert(document.cookie);
 var debug=1;
 var set_width=1260;
@@ -124,6 +123,17 @@ function load_page(page){
     if(game!=null)
         game.destroy(true, false);
     game=game_temp;
+}
+function isMobileDevice(){
+    var mobileDevices = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone'];
+    var isMobileDevice=false;
+    for(var i=0;i<mobileDevices.length;i++){
+        if(navigator.userAgent.match(mobileDevices[i])){
+            isMobileDevice=true;
+        }
+    }
+    // return true;
+    return isMobileDevice;
 }
 // function load_stage_1(){
 //     config = {

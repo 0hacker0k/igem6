@@ -44,19 +44,22 @@ function create_stage1_choose (){
     }
     banner=this.add.image(0, 0.7*height, 'banner').setOrigin(0, 0).setDisplaySize(0,0.15*height); 
     banner.alpha=0.4;
-    instruction=this.add.text(0.5*width, 0.78*height, '', { fontSize: (0.1*height).toString()+'px bold', fill: '#000000', bold: 'true'}).setOrigin(0.5, 0.5);
+    instruction=this.add.text(0.5*width, 0.775*height, '', { fontSize: (0.1*height).toString()+'px bold', fill: '#000000', bold: 'true'}).setOrigin(0.5, 0.5);
     function hover(id){//輸入序列
         banner_status=1;
         button[id-1].alpha=1;
         switch(id){
             case 1: 
                 instruction.setText(text.Easy);
+                instruction.setColor("#33FF33");
                 break;
             case 2: 
                 instruction.setText(text.Moderate);
+                instruction.setColor("#FFFF33");
                 break;
             case 3: 
                 instruction.setText(text.Difficult);
+                instruction.setColor("#FF3333");
                 break;
         }
     }
@@ -68,6 +71,10 @@ function create_stage1_choose (){
     //back
     back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.on('pointerdown', function (){
+        if(banner_status==0 && isMobileDevice()){
+            banner_status=1;
+            return ;
+        }
         finish_transition(this,width,0);
         setTimeout(function(){
             load_page(map_1);
