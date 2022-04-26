@@ -12,7 +12,7 @@ var player;
 var cursors;
 var direction=0;
 function create (){
-    loading_transition(this,-500*width/800,height/3);
+    loading_transition(this,this.cameras.main.scrollX+(-0.3)*width,this.cameras.main.scrollY+(0.16)*height);
     //--------------------場景設定--------------------
     background=this.add.tileSprite(0, 0, width,height, 'background').setOrigin(0, 0).setDisplaySize(width*2,height*2);//setScale: { x: 1, y: 2, stepY: 0.1 }
     platforms = this.physics.add.staticGroup();//分為靜態與動態，靜態的只有大小與位置，動態的有速度、加速度、反彈、碰撞。
@@ -22,11 +22,12 @@ function create (){
     //--------------------玩家設定--------------------
     player = this.physics.add.sprite(800, 600, 'player');//this.centerX
     player.body.fixedRotation = true;
-    this.cameras.main.startFollow(player,0.1,0.1);//後面兩個值是相機追趕速度
-    this.cameras.main.setBounds(0, 0, 1600, 1200);
+    var cam=this.cameras.main;
+    cam.startFollow(player,0.1,0.1);//後面兩個值是相機追趕速度
+    cam.setBounds(0, 0, 1600, 1200);
     this.physics.world.bounds.width=1600;
     this.physics.world.bounds.height=1200;
-    this.cameras.main.setZoom(1);
+    cam.setZoom(1);
     // -----------------------文字-------------------------
     scoreText = this.add.text(400, 300, text.hello, { fontSize: '32px', fill: '#000000' });
     // scoreText.setText('Game Over\nYour Score:' + score);
@@ -59,7 +60,7 @@ function create (){
         // alert(player.y);
         if(stop==0 && player.x>=80 && player.x<=145 && player.y>=555 && player.y<=600){
             //轉場設定
-            finish_transition(this,width,height/3);
+            finish_transition(this,cam.scrollX+(0.8)*width,cam.scrollY+(0.0)*height);
             setTimeout(function(){
                 load_page(stage_1_choose);
             },500);
@@ -102,6 +103,7 @@ function update (){//與外界有關的互動
     cursors = this.input.keyboard.createCursorKeys();
     player.setVelocityX(0);
     player.setVelocityY(0);
+    // console.log(this.cameras.main.scrollX,this.cameras.main.scrollY);
     switch(direction){
         case 1://右
             player.setVelocityX(300);

@@ -5,8 +5,11 @@ function preload_stage1_choose(){
     this.load.image('gene3', 'img/stage1/3.png');
     this.load.image('DNA', 'img/stage1/DNA.png');
     this.load.image('back', 'img/main/back.png');
+    this.load.image('banner', 'img/stage1/banner.png');
     load_transition(this);
 }
+var banner_status=0;
+var banner;
 function create_stage1_choose (){
     /*send_string="ATT";
     level=1;
@@ -16,10 +19,10 @@ function create_stage1_choose (){
     //--------------------場景設定--------------------
     this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
     this.add.image(width*0.2, height*0.1, 'DNA').setOrigin(0, 0).setDisplaySize(height*0.8,height*0.8);
-    button=[]
+    button=[];
     button[0] = this.physics.add.sprite(0.69*height*0.8+width*0.2, -0.0514*height*0.8+height*0.1, 'gene1').setOrigin(0, 0).setInteractive().setDisplaySize(0.357*height*0.8,0.357*height*0.8);
-    button[1] = this.physics.add.sprite(0.3786*height*0.8+width*0.2, 0.1942*height*0.8+height*0.1, 'gene2').setOrigin(0, 0).setInteractive().setDisplaySize(0.427*height*0.8,0.427*height*0.8);
-    button[2] = this.physics.add.sprite(0.1*height*0.8+width*0.2, 0.65*height*0.8+height*0.1, 'gene3').setOrigin(0, 0).setInteractive().setDisplaySize(0.6*height*0.8,0.6*height*0.8);
+    button[1] = this.physics.add.sprite(0.3731*height*0.8+width*0.2, 0.2062*height*0.8+height*0.1, 'gene2').setOrigin(0, 0).setInteractive().setDisplaySize(0.427*height*0.8,0.427*height*0.8);
+    button[2] = this.physics.add.sprite(-0.066*height*0.8+width*0.2, 0.438*height*0.8+height*0.1, 'gene3').setOrigin(0, 0).setInteractive().setDisplaySize(0.6158*height*0.8,0.6158*height*0.8);
     button[0].on('pointerdown', function (){clickButton(1,this)},this);
     button[1].on('pointerdown', function (){clickButton(2,this)},this);
     button[2].on('pointerdown', function (){clickButton(3,this)},this);
@@ -33,22 +36,34 @@ function create_stage1_choose (){
     button[1].alpha=0.1;
     button[2].alpha=0.1;
     function clickButton(id,where){//輸入序列
-        if(id==1)
-            level=1;
-        else if(id==2)
-            level=3;
-        else if(id==3)
-            level=2;
+        level=id;
         finish_transition(where,width,0);
         setTimeout(function(){
             load_page(stage_1_sequence);
         },500);
     }
+    banner=this.add.image(0, 0.7*height, 'banner').setOrigin(0, 0).setDisplaySize(0,0.15*height); 
+    banner.alpha=0.4;
+    instruction=this.add.text(0.5*width, 0.78*height, '', { fontSize: (0.1*height).toString()+'px bold', fill: '#000000', bold: 'true'}).setOrigin(0.5, 0.5);
     function hover(id){//輸入序列
+        banner_status=1;
         button[id-1].alpha=1;
+        switch(id){
+            case 1: 
+                instruction.setText(text.Easy);
+                break;
+            case 2: 
+                instruction.setText(text.Moderate);
+                break;
+            case 3: 
+                instruction.setText(text.Difficult);
+                break;
+        }
     }
     function out(id){//輸入序列
+        banner_status=0;
         button[id-1].alpha=0.1;
+        instruction.setText("");
     }
     //back
     back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
@@ -60,10 +75,24 @@ function create_stage1_choose (){
     },this);
     //轉場動畫
     start_transition(this);
-    
-    
 }
-
+var banner_width=0;
 function update_stage1_choose (){//與外界有關的互動
+    var temp=banner_width;
+    if(banner_status==0){
+        banner.x=(width-banner_width)/2;
+        banner.setDisplaySize(banner_width,0.15*height);
+        if(banner_width>0)banner_width=(banner_width-(width*0.02))<0?0:banner_width-(width*0.2);
+    }else if(banner_status==1){
+        banner.x=(width-banner_width)/2;
+        banner.setDisplaySize(banner_width,0.15*height);
+        if(banner_width<width)banner_width+=(width*0.1);
+    }
+    if((banner_width<width) && banner_width==temp){
+        banner_width=0;
+        banner.x=(width-banner_width)/2;
+        banner.setDisplaySize(banner_width,0.15*height);
+    }
+    
     // cursors = this.input.keyboard.createCursorKeys();
 }

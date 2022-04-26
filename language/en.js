@@ -6,5 +6,8 @@
 text=
 {
     "hello":"hello",
-    "bye":"bye"
+    "bye":"bye",
+    "Easy":"Easy",
+    "Moderate":"Moderate",
+    "Difficult":"Difficult"
 }

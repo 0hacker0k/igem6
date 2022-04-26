@@ -2,13 +2,18 @@
 // document.cookie = 'stage=1';
 // document.cookie = 'stage=2';
 // document.cookie='max-age=0';
+/*
 var exp = new Date();
 exp.setTime(exp.getTime() - 1);
-document.cookie='expires=' + exp.toGMTString();
-alert(document.cookie);
+var cval = document.cookie;
+document.cookie = document.cookie + ";expires=" + exp.toGMTString();
+*/
+
+//alert(document.cookie);
+var debug=1;
 var set_width=1260;
 var set_height=900;
-var scale=0.8;//0.8;
+var scale=1;//0.8;
 var width=set_width*scale;
 var height=set_height*scale;
 var config;

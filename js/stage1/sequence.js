@@ -109,6 +109,9 @@ function create_stage1_sequence (){
     
     //隨機密碼
     function getRandom(max){
+        if(debug==1){
+            return 1;
+        }
         return Math.floor(Math.random() * max)+1;
     }
     for(var i=0;i<len;i++){

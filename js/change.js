@@ -1,5 +1,5 @@
 function loading_transition (where,x,y){
-    transition = where.physics.add.sprite(x, y, 'transition').setOrigin(0, 0).setDisplaySize(width*2,height*1);
+    transition = where.physics.add.sprite(x, y, 'transition').setOrigin(0, 0).setDisplaySize(width*2.1,height*1.1);
     transition.depth = 1024;
 }
 function start_transition (where){
@@ -9,7 +9,7 @@ function start_transition (where){
     },1200);
 }
 function finish_transition (where,x,y){
-    transition = where.physics.add.sprite(x, y, 'transition').setOrigin(0, 0).setDisplaySize(width*2.1,height*1);
+    transition = where.physics.add.sprite(x, y, 'transition').setOrigin(0, 0).setDisplaySize(width*2.1,height*1.1);
     transition.depth = 1024;
     transition.setVelocityX(-2500*width/800);
 }
