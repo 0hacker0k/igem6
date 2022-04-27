@@ -84,7 +84,7 @@ function create (){
         status=1;
         point_x=x;
         point_y=y;
-        if(!isMobileDevice()){
+        if(isMobileDevice()){
             direct.alpha = 1;
         }
         // console.log(stage.x);
