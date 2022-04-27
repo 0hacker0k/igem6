@@ -1,5 +1,11 @@
-text=
+lan_text=
 {
     "hello":"哈囉",
-    "bey":"掰"
+    "bye":"掰",
+    "Easy":"簡單",
+    "Moderate":"中等",
+    "Difficult":"困難",
+    "correct":"正確",
+    "misplaced":"錯位",
+    "wrong":"不存在"
 }

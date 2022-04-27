@@ -2,10 +2,16 @@
 // document.cookie = 'stage=1';
 // document.cookie = 'stage=2';
 // document.cookie='max-age=0';
+/*
 var exp = new Date();
 exp.setTime(exp.getTime() - 1);
-document.cookie='expires=' + exp.toGMTString();
-alert(document.cookie);
+var cval = document.cookie;
+document.cookie = document.cookie + ";expires=" + exp.toGMTString();
+*/
+//alert(document.cookie);
+var debug=1;
+var anime;
+var stop=0;
 var set_width=1260;
 var set_height=900;
 var scale=0.8;//0.8;
@@ -31,7 +37,7 @@ var langLoadComplete=0;
 let languages="./language/"+language+".js";
 var head= document.getElementsByTagName('head')[0]; 
 var script= document.createElement('script'); 
-script.type= 'text/javascript'; 
+script.type= 'text/javascript';
 script.onload = script.onreadystatechange = function() { 
     if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) { 
         loadlanguage();
@@ -42,7 +48,18 @@ script.src= languages;
 head.appendChild(script);
 function changeLang(input){
     language=input;
-    location=location.protocol+"//"+location.host+location.pathname+"?lang="+language;
+    languages="./language/"+language+".js";
+    head= document.getElementsByTagName('head')[0]; 
+    script= document.createElement('script'); 
+    script.type= 'text/javascript';
+    script.onload = script.onreadystatechange = function() { 
+        if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) { 
+            script.onload = script.onreadystatechange = null; 
+        }
+    };
+    script.src= languages;
+    head.appendChild(script);
+    //location=location.protocol+"//"+location.host+location.pathname+"?lang="+language;
 }
 function loadlanguage(){
     langLoadComplete=1;
@@ -84,6 +101,12 @@ const stage_1_pcr={
     create: create_stage1_pcr,
     update: update_stage1_pcr
 }
+const stage_2_flop={
+    key: 'stage_2_flop',
+    preload: preload_stage2_flop,
+    create: create_stage2_flop,
+    update: update_stage2_flop
+}
 function load(){
     if(page==null){
         load_page(map_1);
@@ -96,7 +119,7 @@ function load(){
                 load_page(stage_1_choose);
                 break;
             case "stage2":
-                load_page(stage_2);
+                load_page(stage_2_flop);
                 break;
         }
     }
@@ -119,6 +142,19 @@ function load_page(page){
     if(game!=null)
         game.destroy(true, false);
     game=game_temp;
+}
+// alert(navigator.userAgent);
+function isMobileDevice(){
+    var mobileDevices = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone','Samsung','MiuiBrowser','XiaoMi'];
+    var isMobileDevice=false;
+    for(var i=0;i<mobileDevices.length;i++){
+        if(navigator.userAgent.match(mobileDevices[i])){
+            isMobileDevice=true;
+        }
+    }
+    // return true;
+    // alert(isMobileDevice);
+    return isMobileDevice;
 }
 // function load_stage_1(){
 //     config = {

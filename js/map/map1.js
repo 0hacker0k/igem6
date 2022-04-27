@@ -12,23 +12,25 @@ var player;
 var cursors;
 var direction=0;
 function create (){
-    loading_transition(this,-500*width/800,height/3);
+    loading_transition(this,this.cameras.main.scrollX+(-0.3)*width,this.cameras.main.scrollY+(0.26)*height);
     //--------------------場景設定--------------------
     background=this.add.tileSprite(0, 0, width,height, 'background').setOrigin(0, 0).setDisplaySize(width*2,height*2);//setScale: { x: 1, y: 2, stepY: 0.1 }
     platforms = this.physics.add.staticGroup();//分為靜態與動態，靜態的只有大小與位置，動態的有速度、加速度、反彈、碰撞。
     //玩家進入關卡
-    //stage = this.physics.add.group();//動態群組
-    stage = this.physics.add.sprite(100, 600, 'stage1');
+    stage = this.physics.add.group();//動態群組
+    stage.create(100, 600, 'stage1');
+    stage.create(1500, 600, 'stage1');
     //--------------------玩家設定--------------------
     player = this.physics.add.sprite(800, 600, 'player');//this.centerX
     player.body.fixedRotation = true;
-    this.cameras.main.startFollow(player,0.1,0.1);//後面兩個值是相機追趕速度
-    this.cameras.main.setBounds(0, 0, 1600, 1200);
+    var cam=this.cameras.main;
+    cam.startFollow(player,0.1,0.1);//後面兩個值是相機追趕速度
+    cam.setBounds(0, 0, 1600, 1200);
     this.physics.world.bounds.width=1600;
     this.physics.world.bounds.height=1200;
-    this.cameras.main.setZoom(1);
+    cam.setZoom(1);
     // -----------------------文字-------------------------
-    scoreText = this.add.text(400, 300, text.hello, { fontSize: '32px', fill: '#000000' });
+    scoreText = this.add.text(400, 300, lan_text.hello, { fontSize: '32px', fill: '#000000' });
     // scoreText.setText('Game Over\nYour Score:' + score);
     //player.setBounce(0.2);//反彈
     player.setCollideWorldBounds(true);//邊界設置為遊戲框
@@ -53,25 +55,36 @@ function create (){
     //碰撞
     this.physics.add.overlap(player, stage, enter, null, this);//碰撞設定
     //function
-    var stop=0;
     function enter(){//進入關卡
         // alert(player.x);
         // alert(player.y);
         if(stop==0 && player.x>=80 && player.x<=145 && player.y>=555 && player.y<=600){
             //轉場設定
-            finish_transition(this,width,height/3);
+            finish_transition(this,cam.scrollX+(0.8)*width,cam.scrollY+(0.0)*height);
             setTimeout(function(){
                 load_page(stage_1_choose);
+            },500);
+            stop=1;
+        }else if(stop==0 && player.x>=1455 && player.x<=1520 && player.y>=555 && player.y<=600){
+            finish_transition(this,cam.scrollX+(0.8)*width,cam.scrollY+(0.0)*height);
+            setTimeout(function(){
+                load_page(stage_2_flop);
             },500);
             stop=1;
         }
     }
     var x,y,status=0;
+    var direct=this.add.image(x+cam.scrollX, y+cam.scrollY, 'direct').setDisplaySize(0.2*width,0.2*width);
+    direct.alpha = 0;
     this.input.on('pointerdown', function (pointer) {
         x=pointer.x;
         y=pointer.y;
         status=1;
-        // this.add.image(pointer.x, pointer.y, 'direct');
+        direct.x=x+cam.scrollX;
+        direct.y=y+cam.scrollY;
+        if(isMobileDevice()){
+            direct.alpha = 1;
+        }
         // console.log(stage.x);
     }, this);
     this.input.on('pointermove', function (pointer) {
@@ -94,7 +107,9 @@ function create (){
     this.input.on('pointerup', function (pointer) {
         status=0;
         direction=0;
+        direct.alpha = 0;
     }, this);
+    stop=0;
     start_transition(this);
 }
 
@@ -102,39 +117,41 @@ function update (){//與外界有關的互動
     cursors = this.input.keyboard.createCursorKeys();
     player.setVelocityX(0);
     player.setVelocityY(0);
-    switch(direction){
-        case 1://右
-            player.setVelocityX(300);
-            player.anims.play('right');
-            break;
-        case 2://下
-            player.setVelocityY(300);
-            player.anims.play('face');
-            break;
-        case 3://左
-            player.setVelocityX(-300);
-            player.anims.play('left');
-            break;
-        case 4://上
+    // console.log(this.cameras.main.scrollX,this.cameras.main.scrollY);
+    if(stop==0){
+        switch(direction){
+            case 1://右
+                player.setVelocityX(300);
+                player.anims.play('right');
+                break;
+            case 2://下
+                player.setVelocityY(300);
+                player.anims.play('face');
+                break;
+            case 3://左
+                player.setVelocityX(-300);
+                player.anims.play('left');
+                break;
+            case 4://上
+                player.setVelocityY(-300);
+                player.anims.play('face');
+                break;
+        }
+        if (cursors.up.isDown){
             player.setVelocityY(-300);
             player.anims.play('face');
-            break;
+        }else if (cursors.down.isDown){
+            player.setVelocityY(300);
+            player.anims.play('face');
+        }
+        if (cursors.left.isDown){
+            player.setVelocityX(-300);
+            player.anims.play('left');
+        }else if (cursors.right.isDown){
+            player.setVelocityX(300);
+            player.anims.play('right');
+        }
     }
-    if (cursors.up.isDown){
-        player.setVelocityY(-300);
-        player.anims.play('face');
-    }else if (cursors.down.isDown){
-        player.setVelocityY(300);
-        player.anims.play('face');
-    }
-    if (cursors.left.isDown){
-        player.setVelocityX(-300);
-        player.anims.play('left');
-    }else if (cursors.right.isDown){
-        player.setVelocityX(300);
-        player.anims.play('right');
-    }
-
 }
 /*
 function create() {

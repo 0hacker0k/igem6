@@ -109,6 +109,9 @@ function create_stage1_sequence (){
     
     //隨機密碼
     function getRandom(max){
+        if(debug==1){
+            return 1;
+        }
         return Math.floor(Math.random() * max)+1;
     }
     for(var i=0;i<len;i++){
@@ -191,7 +194,7 @@ function create_stage1_sequence (){
         if(stack>id)stack=id;
     }
     // ans=['T', 'T', 'C', 'C'];
-    instruction=this.add.text(100*width/800, 490*height/600, 'C: correct\nM: misplaced\nW: wrong', { fontSize: '32px', fill: '#000000' });
+    instruction=this.add.text(0.125*width, 0.7*height, '\nC: '+lan_text.correct+'\nM: '+lan_text.misplaced+'\nW: '+lan_text.wrong, { fontSize: '32px', fill: '#000000' });
     text=this.add.text(0.7*width, 150*height/600, '', { fontFamily: 'fantasy', fontSize: '32px', fill: '#111111' });
     condition=this.add.text(0.7*width, 55*height/600, '', { fontFamily: 'fantasy', fontSize: '48px', fill: '#000000' });
     
