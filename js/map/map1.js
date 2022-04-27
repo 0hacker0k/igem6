@@ -11,6 +11,8 @@ function preload (){
 var player;
 var cursors;
 var direction=0;
+var direct;
+var point_x,point_y;
 function create (){
     loading_transition(this,this.cameras.main.scrollX+(-0.3)*width,this.cameras.main.scrollY+(0.26)*height);
     //--------------------場景設定--------------------
@@ -74,24 +76,25 @@ function create (){
         }
     }
     var x,y,status=0;
-    var direct=this.add.image(x+cam.scrollX, y+cam.scrollY, 'direct').setDisplaySize(0.2*width,0.2*width);
+    direct=this.add.image(x+cam.scrollX, y+cam.scrollY, 'direct').setDisplaySize(0.2*width,0.2*width);
     direct.alpha = 0;
     this.input.on('pointerdown', function (pointer) {
         x=pointer.x;
         y=pointer.y;
         status=1;
-        direct.x=x+cam.scrollX;
-        direct.y=y+cam.scrollY;
-        if(isMobileDevice()){
+        point_x=x;
+        point_y=y;
+        if(!isMobileDevice()){
             direct.alpha = 1;
         }
         // console.log(stage.x);
     }, this);
     this.input.on('pointermove', function (pointer) {
+        point_x=x;
+        point_y=y;
         if(status!=0){
             var temp_x=(pointer.x-x);
             var temp_y=(pointer.y-y);
-            
             if(temp_x >= Math.abs(temp_y)){
                 direction=1;
             }else if(-temp_x > Math.abs(temp_y)){
@@ -119,6 +122,8 @@ function update (){//與外界有關的互動
     player.setVelocityY(0);
     // console.log(this.cameras.main.scrollX,this.cameras.main.scrollY);
     if(stop==0){
+        direct.x=player.x+point_x-width/2;
+        direct.y=player.y+point_y-height/2;
         switch(direction){
             case 1://右
                 player.setVelocityX(300);
