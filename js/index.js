@@ -10,6 +10,8 @@ document.cookie = document.cookie + ";expires=" + exp.toGMTString();
 */
 //alert(document.cookie);
 var debug=1;
+var anime;
+var stop=0;
 var set_width=1260;
 var set_height=900;
 var scale=0.8;//0.8;
@@ -99,6 +101,12 @@ const stage_1_pcr={
     create: create_stage1_pcr,
     update: update_stage1_pcr
 }
+const stage_2_flop={
+    key: 'stage_2_flop',
+    preload: preload_stage2_flop,
+    create: create_stage2_flop,
+    update: update_stage2_flop
+}
 function load(){
     if(page==null){
         load_page(map_1);
@@ -111,7 +119,7 @@ function load(){
                 load_page(stage_1_choose);
                 break;
             case "stage2":
-                load_page(stage_2);
+                load_page(stage_2_flop);
                 break;
         }
     }
