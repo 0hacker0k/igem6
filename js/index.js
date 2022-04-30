@@ -9,7 +9,7 @@ var cval = document.cookie;
 document.cookie = document.cookie + ";expires=" + exp.toGMTString();
 */
 //alert(document.cookie);
-var debug=1;
+var debug=0;
 var anime;
 var stop=0;
 var set_width=1260;
@@ -48,6 +48,8 @@ script.src= languages;
 head.appendChild(script);
 function changeLang(input){
     language=input;
+    document.cookie='language='+input;
+    // alert(location.protocol+"//"+location.host+location.pathname+"?lang="+language);
     languages="./language/"+language+".js";
     head= document.getElementsByTagName('head')[0]; 
     script= document.createElement('script'); 
@@ -59,20 +61,21 @@ function changeLang(input){
     };
     script.src= languages;
     head.appendChild(script);
-    //location=location.protocol+"//"+location.host+location.pathname+"?lang="+language;
+    // location=location.protocol+"//"+location.host+location.pathname+"?lang="+language;
+    
 }
 function loadlanguage(){
     langLoadComplete=1;
     var language_set = document.getElementById("language_set");
     switch (language){
         case "en":
-            language_set[1].selected=true;
+            language_set[0].selected=true;
             break;
         case "zh-tw":
-            language_set[2].selected=true;
+            language_set[1].selected=true;
             break;
         case "zh-cn":
-            language_set[3].selected=true;
+            language_set[2].selected=true;
             break;
     }
     load();
@@ -156,6 +159,22 @@ function isMobileDevice(){
     // alert(isMobileDevice);
     return isMobileDevice;
 }
+
+function getcookie(text){
+    var content=document.cookie;
+    var i=content.indexOf(text, 0);
+    if(i==-1){
+        return null;
+    }
+    var begin=content.indexOf('=', i);
+    var len=content.indexOf(' ', begin);
+    if(len==-1){
+        len=content.length;
+    }
+    len-=begin;
+    return content.substr(begin+1,len);
+}
+// console.log(getcookie("language"));
 // function load_stage_1(){
 //     config = {
 //         type: Phaser.AUTO,

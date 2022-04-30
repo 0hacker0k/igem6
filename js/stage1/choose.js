@@ -1,5 +1,5 @@
 function preload_stage1_choose(){
-    this.load.image('background', 'img/stage1/background.png');//載入一般圖片
+    this.load.image('background', 'img/stage1/step_1_background.jpg');//載入一般圖片
     this.load.image('gene1', 'img/stage1/1.png');
     this.load.image('gene2', 'img/stage1/2.png');
     this.load.image('gene3', 'img/stage1/3.png');
@@ -13,7 +13,7 @@ var banner;
 var level_instruction;
 var banner_width=0;
 function create_stage1_choose (){
-    /*send_string="ATT";
+    /*send_string="AAA";
     level=1;
     load_page(stage_1_pcr);*/
     //轉場設定
@@ -24,7 +24,7 @@ function create_stage1_choose (){
     button=[];
     button[0] = this.physics.add.sprite(0.69*height*0.8+width*0.2, -0.0514*height*0.8+height*0.1, 'gene1').setOrigin(0, 0).setInteractive().setDisplaySize(0.357*height*0.8,0.357*height*0.8);
     button[1] = this.physics.add.sprite(0.3731*height*0.8+width*0.2, 0.2062*height*0.8+height*0.1, 'gene2').setOrigin(0, 0).setInteractive().setDisplaySize(0.427*height*0.8,0.427*height*0.8);
-    button[2] = this.physics.add.sprite(-0.066*height*0.8+width*0.2, 0.438*height*0.8+height*0.1, 'gene3').setOrigin(0, 0).setInteractive().setDisplaySize(0.6158*height*0.8,0.6158*height*0.8);
+    button[2] = this.physics.add.sprite(-0.0688*height*0.8+width*0.2, 0.4353*height*0.8+height*0.1, 'gene3').setOrigin(0, 0).setInteractive().setDisplaySize(0.620*height*0.8,0.620*height*0.8);
     button[0].on('pointerdown', function (){clickButton(1,this)},this);
     button[1].on('pointerdown', function (){clickButton(2,this)},this);
     button[2].on('pointerdown', function (){clickButton(3,this)},this);

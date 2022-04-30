@@ -1,5 +1,5 @@
 function preload_stage1_sequence(){
-    this.load.image('background', 'img/stage1/background.png');//載入一般圖片
+    this.load.image('background', 'img/stage1/step_2_background.jpg');//載入一般圖片
     load_transition(this);
     this.load.image('back', 'img/main/back.png');
     this.load.spritesheet('check',
@@ -31,9 +31,9 @@ function create_stage1_sequence (){
     var len=level+2;
     codon=["","","","",""];
     for(var i=len-1;i>=0;i--){
-        card[i] = this.physics.add.sprite(width*0.02+(width*0.50)/(len-1)*i, 80*height/600, 'card').setOrigin(0, 0).setInteractive().setDisplaySize(0.14*width*((13-len)/10),0.256*height*((13-len)/10));
+        card[i] = this.physics.add.sprite(width*(0.13-(len*0.02))+(width*0.04)*(8-len)*i, 80*height/600+0.0256*height, 'card').setOrigin(0, 0).setInteractive().setDisplaySize(0.14*width*((13-len)/10),0.256*height*((13-len)/10));
     }
-    check_button = this.physics.add.sprite(160*width/800, 265*height/600, 'check').setOrigin(0, 0).setInteractive();
+    check_button = this.physics.add.sprite(width*(0.13-(len*0.02))+((width*0.04)*(8-len)*(len-1)+0.256*height*((13-len)/10))/2, 265*height/600, 'check').setOrigin(0.55, 0).setInteractive().setDisplaySize(0.35*width,0.05*height);
     for(var i=3;i>=0;i--){
         button[i] = this.physics.add.sprite((70+120*i)*width/800, 330*height/600, 'card').setOrigin(0, 0).setInteractive().setScale(0.8);
     }
@@ -194,7 +194,7 @@ function create_stage1_sequence (){
         if(stack>id)stack=id;
     }
     // ans=['T', 'T', 'C', 'C'];
-    instruction=this.add.text(0.125*width, 0.7*height, '\nC: '+lan_text.correct+'\nM: '+lan_text.misplaced+'\nW: '+lan_text.wrong, { fontSize: '32px', fill: '#000000' });
+    instruction=this.add.text(0.26*width, 0.7*height, '\nC: '+lan_text.correct+'\nM: '+lan_text.misplaced+'\nW: '+lan_text.wrong, { fontFamily: 'fantasy', fontSize: '32px', fill: '#000000' });
     text=this.add.text(0.7*width, 150*height/600, '', { fontFamily: 'fantasy', fontSize: '32px', fill: '#111111' });
     condition=this.add.text(0.7*width, 55*height/600, '', { fontFamily: 'fantasy', fontSize: '48px', fill: '#000000' });
     

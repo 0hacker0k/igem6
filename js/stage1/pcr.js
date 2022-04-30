@@ -1,5 +1,5 @@
 function preload_stage1_pcr(){
-    this.load.image('background', 'img/stage1/background.png');//載入一般圖片
+    this.load.image('background', 'img/stage1/step_3_background.jpg');//載入一般圖片
     load_transition(this);
     this.load.image('back', 'img/main/back.png');
     for(var i=0;i<18;i++){
@@ -77,11 +77,13 @@ function create_stage1_pcr (){
     }
     //send_string是前面送來的序列
     var frames = this.textures.get('gene').getFrameNames();
-    var x = 0.2*width;
-    var y = 0.2*width;
-    var x2 = 0.07*width;
-    var y2 = 0.55*width;
     var len = level+2;
+    var goal_each_spacing=90*width/800;
+    var move_each_spacing=0.15*width;
+    var x = (width-((len-1)*goal_each_spacing)-0.05*width)/2;
+    var y = 0.2*width;
+    var x2 = 0.17*width;
+    var y2 = 0.58*width;
     var gene_goal=[];
     var gene_move=[];
     var final_x,final_y;
@@ -89,43 +91,36 @@ function create_stage1_pcr (){
     var correct=0;
     var input_string=[];
     var game_end=0;
-    var move_string=['A','T','C','G'];
-    send_string=['A','T','C','G','A'];
+    var move_string=['T','A','G','C'];
+    if(debug==1){
+        send_string=['A','T','C','G','A'];
+    }
     for(var i=0;i<len;i++){
         input_string[i]='N';
-        move_string[i+4]=send_string[i];
-    }
-    for(var i=0;i<len+4;i++){
-        var temp=move_string[i];
-        var rnd=Math.floor(Math.random() * (len+4));
-        move_string[i]=move_string[rnd];
-        move_string[rnd]=temp;
     }
     for (var i = 0; i < len; i++){
-        gene_goal[i] = this.physics.add.sprite(x, y, 'gene').setInteractive().setDisplaySize(0.1*width,0.3*height);
+        gene_goal[i] = this.physics.add.sprite(x+goal_each_spacing*i, y, 'gene').setInteractive().setDisplaySize(0.1*width,0.3*height);
         gene_goal[i].anims.play(send_string[i]+"u");
         //this.input.setDraggable(image);
-        x += 90*width/800;
     }
-    for (var i = 0; i < len+4; i++){
-        gene_move[i] = this.physics.add.sprite(x2, y2, 'gene').setInteractive().setDisplaySize(0.1*width,0.3*height);
+    for (var i = 0; i < 4; i++){
+        gene_move[i] = this.physics.add.sprite(x2+move_each_spacing*i, y2, 'gene').setInteractive().setDisplaySize(0.1*width,0.3*height);
         var temp="";
-        switch(move_string[i]){
-            case 'A':
-                temp="Td";
-                break;
-            case 'T':
+        switch(i){
+            case 0:
                 temp="Ad";
                 break;
-            case 'C':
-                temp="Gd";
+            case 1:
+                temp="Td";
                 break;
-            case 'G':
+            case 2:
                 temp="Cd";
+                break;
+            case 3:
+                temp="Gd";
                 break;
         }gene_move[i].anims.play(temp);
         this.input.setDraggable(gene_move[i]);
-        x2 += 0.105*width;
     }
     // this.input.topOnly = true;//只抓最上面的
     this.input.on('drag', function (pointer, gameObject, dragX, dragY) {
@@ -134,7 +129,6 @@ function create_stage1_pcr (){
         final_x = dragX;
         final_y = dragY;
         final_object=gameObject;
-        
     });
     this.input.on('pointerdown', function (pointer, gameObject, dragX, dragY) {
         // console.log(gameObject);
@@ -142,6 +136,7 @@ function create_stage1_pcr (){
         // console.log(dragY);
         // console.log(input_string);
     });
+    var space=this;
     this.input.on('pointerup', function (pointer) {
         if(game_end==1){
             load_page(map_1);
@@ -164,7 +159,7 @@ function create_stage1_pcr (){
                     status=0;
                 }
                 if(status==0){
-                    final_object.x=0.07*width+(0.105*width*i);
+                    final_object.x=x2+(move_each_spacing*i);
                     final_object.y=y2;
                     //input_string[i]='N';
                 }else{
@@ -173,6 +168,23 @@ function create_stage1_pcr (){
                     final_object.y=gene_goal[temp].y+(0.16*height);
                     input_string[temp]=move_string[i];
                     this.setDraggable(final_object,false);
+                    gene_move[i]=space.physics.add.sprite(x2+move_each_spacing*i, y2, 'gene').setInteractive().setDisplaySize(0,0);
+                    var temp="";
+                    switch(i){
+                        case 0:
+                            temp="Ad";
+                            break;
+                        case 1:
+                            temp="Td";
+                            break;
+                        case 2:
+                            temp="Cd";
+                            break;
+                        case 3:
+                            temp="Gd";
+                            break;
+                    }gene_move[i].anims.play(temp);
+                    bigger(gene_move[i],1);
                 }
                 final_object=0;
                 //console.log(i,temp);
@@ -186,6 +198,16 @@ function create_stage1_pcr (){
         //console.log(input_string);
         //alert(status);
     });
+    function bigger(object,count){
+        object.setDisplaySize(count*0.0025*width,count*0.0075*height);
+        if(count==40){
+            space.input.setDraggable(object);
+            return ;
+        }
+        setTimeout(function(){
+            bigger(object,count+1);
+        },13);
+    }
     var end=this.physics.add.staticGroup();
     var count=0;
     var last_one=null;
