@@ -197,7 +197,7 @@ function create_stage1_sequence (){
     instruction=this.add.text(0.26*width, 0.7*height, '\nC: '+lan_text.correct+'\nM: '+lan_text.misplaced+'\nW: '+lan_text.wrong, { fontFamily: 'fantasy', fontSize: '32px', fill: '#000000' });
     text=this.add.text(0.7*width, 150*height/600, '', { fontFamily: 'fantasy', fontSize: '32px', fill: '#111111' });
     condition=this.add.text(0.7*width, 55*height/600, '', { fontFamily: 'fantasy', fontSize: '48px', fill: '#000000' });
-    
+    output="";
     function checkAns(where){
         for(var i=0;i<len;i++){
             if(codon[i]==""){
