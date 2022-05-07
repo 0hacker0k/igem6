@@ -1,4 +1,12 @@
-
+body{
+  width: 100%;
+/*   height: 100%; */
+  margin: 0;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .card{
   width: 1400px;
@@ -10,15 +18,15 @@
 }
 
 
-ul li{
+
+
+.name{
+  font-size: 30px;
   display: inline-block;
   width: 30%;
   vertical-align: top;
   padding: 10px;
-}
-
-.name{
-  font-size: 30px;
+  list-style-type: none;
 }
 
 h2{
@@ -38,12 +46,13 @@ h1{
   width: 80px;
 }
 
-html,body{
-  width: 100%;
-/*   height: 100%; */
-  margin: 0;
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+.link{
+  font-size: 30px;
+  background-color:chartreuse;
+}
+
+.ul a{
+  background-color: rgb(33, 103, 194);
 }
