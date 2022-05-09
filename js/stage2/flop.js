@@ -186,6 +186,11 @@ function create_stage2_flop (){
     time_clock=setTimeout(function(){
         time_count();
     },1000);
+    var last_one=null;
+    var end=this.physics.add.staticGroup();
+    var count=0;
+    var sett;
+    var game_end=0;
     function end_stage1(){
         if(last_one!=null){
             last_one.alpha=0;
@@ -202,6 +207,12 @@ function create_stage2_flop (){
             end_stage1();
         },130);
     }
+    this.input.on('pointerup', function (pointer) {
+        if(game_end==1){
+            load_page(map_1);
+            return ;
+        }
+    });
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.on('pointerdown', function (){
