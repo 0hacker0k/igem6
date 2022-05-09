@@ -5,7 +5,17 @@ function preload_stage2_flop(){
     // this.load.image('card_back', 'img/stage2/card_back.jpg');
     // this.load.image('card_plasmid', 'img/stage2/card_back.jpg');
     // this.load.image('card_target_gene', 'img/stage2/card_target_gene.jpg');
-    
+    for(var i=0;i<18;i++){
+        var i_0=i.toString();
+        var i_1=(i+1).toString();
+        var locate;
+        if(i+1<10){
+            locate='0'+i_1;
+        }else{
+            locate=i_1;
+        }
+        this.load.image('end'+i_0, 'img/stage1/congratulations/congratulations_'+locate+'.png');
+    }
     this.load.spritesheet('card',
         'img/stage2/card.jpg',
         { frameWidth: 367, frameHeight: 519 }
@@ -98,6 +108,9 @@ function create_stage2_flop (){
         }
         card_gene[i*6+j].setText(temp);
         card_gene[i*6+j].alpha=0;
+        if(debug==1){
+            card_gene[i*6+j].alpha=1;
+        }
         card[i*6+j].on('pointerdown', function (){
             flop++;
             if(card_num[i*6+j]>=card_count){
@@ -128,6 +141,9 @@ function create_stage2_flop (){
     }
     function match(c1,c2,c3,c4,id){
         if(c1[id].alpha==0){
+            if(flop==card_count){
+                end_stage1();
+            }
             return;
         }
         c1[id].alpha-=0.1;
@@ -170,6 +186,23 @@ function create_stage2_flop (){
     time_clock=setTimeout(function(){
         time_count();
     },1000);
+    function end_stage1(){
+        if(last_one!=null){
+            last_one.alpha=0;
+        }
+        last_one=end.create(0, 0, 'end'+count.toString()).setOrigin(0, 0).setInteractive().setDisplaySize(width,height);
+        if(count<17){
+            count++;
+        }else{
+            count=16;
+            game_end=1;
+        }
+        clearTimeout(sett);
+        sett=setTimeout(function(){
+            end_stage1();
+        },130);
+    }
+    //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.on('pointerdown', function (){
         finish_transition(this,width,0);

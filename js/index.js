@@ -9,7 +9,7 @@ var cval = document.cookie;
 document.cookie = document.cookie + ";expires=" + exp.toGMTString();
 */
 //alert(document.cookie);
-var debug=0; //if in debug mod it will be set to 1
+var debug=1; //if in debug mod it will be set to 1
 var anime; //It is settimeout return value in anime
 var stop=0; //whether should stop the role
 var set_width=1260; //the web game window size(width)
