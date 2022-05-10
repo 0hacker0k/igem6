@@ -49,8 +49,9 @@ for file in all_php:
             context=go.text
             file=file[0:-4] + '.html'
             path = "." + file
-            f = open(path, 'w+')
-            print(context,file=f)
+            f = open(path, 'w+',encoding = "UTF-8",newline='')
+            # print(context)
+            f.write(context.strip())
             f.close()
         else :
             error=go.status_code
