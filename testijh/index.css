@@ -1,0 +1,50 @@
+
+/* *{
+    background-color: #F2CCC3;
+} */
+
+.card{
+    justify-content: center;
+    align-items: center;
+}
+
+.ul li{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.header{
+    float: left;
+}
+  
+.name{
+    font-size: 30px;
+}
+  
+.h2{
+    font-size: 45px;
+    color: #FFCAE7;
+    background-color: #FFF985;
+}
+  
+  
+.h1{
+    font-size: 80px;
+    color: #FFCAE7;
+    background-color: #900902;
+}
+  
+.image{
+    width: 80px;
+}
+  
+.html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
