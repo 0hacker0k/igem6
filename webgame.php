@@ -2,17 +2,11 @@
 <html lang="zh-tw"> 
 <head>
     <?php include "sub/head.html"?>
+    <?php include "sub/gamehead.html"?>
     <meta charset="UTF-8" />
     <title>igem6 web game</title>
     <!-- <script src="phaser-3.55.2/dist/phaser.js"></script> -->
-    <script src="./js/phaser.min.js"></script>
-    <script src="./js/map/map1.js"></script>
-    <script src="./js/stage1/choose.js"></script>
-    <script src="./js/stage1/sequence.js"></script>
-    <script src="./js/stage1/pcr.js"></script>
-    <script src="./js/stage2/flop.js"></script>
-    <script src="./js/change.js"></script>
-    <script src="./js/index.js"></script>
+    
     <style type="text/css">
         body {
             margin: 10%;

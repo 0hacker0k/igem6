@@ -57,6 +57,8 @@ function create (){
     //碰撞
     this.physics.add.overlap(player, stage, enter, null, this);//碰撞設定
     //function
+    status=0;
+    direction=0;
     function enter(){//進入關卡
         // alert(player.x);
         // alert(player.y);
