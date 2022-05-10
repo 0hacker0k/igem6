@@ -86,8 +86,10 @@ function create_stage2_flop (){
         }
     }
     function add_card(where,i,j){
-        card[i*6+j]=where.physics.add.sprite(width*0.05+0.15*width*j, height*0.19+0.25*height*i, 'card').setOrigin(0, 0).setInteractive().setDisplaySize(width*21*0.0065 ,height*40*0.0065);
+        card[i*6+j]=where.physics.add.sprite(width*0.05+0.15*width*j, height*0.19+0.25*height*i, 'card').setOrigin(0, 0).setDisplaySize(width*21*0.0065 ,height*40*0.0065);
         card_gene[i*6+j]=where.add.text(width*0.092+0.15*width*j, height*0.38+0.25*height*i, '', { fontFamily: 'fantasy', fontSize: '32px', fill: '#111111' });
+        card[i*6+j].setInteractive();
+        // card[i*6+j].enable();
         var temp="";
         var temp_num=card_num[i*6+j];
         for(var k=0;k<3;k++){
@@ -129,9 +131,9 @@ function create_stage2_flop (){
                     if(flop==card_count){
                         time_stop();
                     }
-                    match(card,card_gene,flop_last,last_gene,i*6+j);
+                    ready_match(card,card_gene,flop_last,last_gene,i*6+j);
                 }else{// no match
-                    nomatch(card,card_gene,flop_last,last_gene,i*6+j);
+                    ready_nomatch(card,card_gene,flop_last,last_gene,i*6+j);
                     flop-=2;
                 }
                 return;
@@ -139,11 +141,27 @@ function create_stage2_flop (){
             //alert(card_num[i*6+j]);
         },this);
     }
+    function ready_match(c1,c2,c3,c4,id){
+        c1[id].disableInteractive();
+        c3.disableInteractive();
+        setTimeout(function(){
+            match(c1,c2,c3,c4,id);
+        },1500);
+    }
+    function ready_nomatch(c1,c2,c3,c4,id){
+        c1[id].disableInteractive();
+        c3.disableInteractive();
+        setTimeout(function(){
+            nomatch(c1,c2,c3,c4,id);
+        },1500);
+    }
     function match(c1,c2,c3,c4,id){
         if(c1[id].alpha==0){
             if(flop==card_count){
                 end_stage1();
             }
+            c1[id].setInteractive();
+            c3.setInteractive();
             return;
         }
         c1[id].alpha-=0.1;
@@ -159,6 +177,8 @@ function create_stage2_flop (){
         if(c2[id].alpha==0){
             c1[id].anims.play('back');
             c3.anims.play('back');
+            c1[id].setInteractive();
+            c3.setInteractive();
             return;
         }
         c2[id].alpha-=0.1;
@@ -180,7 +200,7 @@ function create_stage2_flop (){
     }
     function time_stop(){
         clearTimeout(time_clock);
-        alert("game finished with "+count_time.toString()+" seconds.");
+        // alert("game finished with "+count_time.toString()+" seconds.");
         return ;
     }
     time_clock=setTimeout(function(){
