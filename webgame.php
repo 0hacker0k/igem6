@@ -1,6 +1,7 @@
 <!doctype html> 
 <html lang="zh-tw"> 
 <head>
+    <?php include "sub/head.html"?>
     <meta charset="UTF-8" />
     <title>igem6 web game</title>
     <!-- <script src="phaser-3.55.2/dist/phaser.js"></script> -->
