@@ -1,6 +1,6 @@
 <footer class="text-center text-lg-start main-bg-color" style="">
     <section class="d-flex justify-content-center p-4">
-        <div >
+        <div>
             <a href="" class="me-4">
                 <div class="dropdown fab button_floating"><img src="<?php echo imgfile;?>/igem5.png" alt="" height="50px"></div>
             </a>

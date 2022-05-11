@@ -1,7 +1,7 @@
 body{
 /*   height: 100%; */
   margin: 0;
-  background-color: #F2CCC3;
+  background-color: #F2CCC3 !important;
   /* border: solid 12px #EA2B1F; */
   /* display: flex; */
   /* justify-content: center; */
@@ -128,7 +128,7 @@ li a{
     height: auto;
     justify-content: center !important;
     text-align: center;
-    background-color: #F2CCC3;
+    /* background-color: #F2CCC3; */
 }
 
 .centerdiv{

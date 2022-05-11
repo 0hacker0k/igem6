@@ -1,35 +1,144 @@
 <!doctype html> 
-<html lang="zh-tw"> 
+<html lang="zh-tw">
 <head>
-    <script src="jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" media="all" href="./wiki.css">
-<script src="wiki.js"></script>    <meta charset="UTF-8" />
+        <script src="./js/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" media="all" href="./css/index.css">
+<script src="./js/index.js"></script>
+<link href="./css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+<script src="./js/bootstrap.js" crossorigin="anonymous"></script>
+    <script src="./webgamejs/phaser.min.js"></script>
+<script src="./webgamejs/map/map1.js"></script>
+<script src="./webgamejs/stage1/choose.js"></script>
+<script src="./webgamejs/stage1/sequence.js"></script>
+<script src="./webgamejs/stage1/pcr.js"></script>
+<script src="./webgamejs/stage2/flop.js"></script>
+<script src="./webgamejs/change.js"></script>
+<script src="./webgamejs/index.js"></script>
+    <meta charset="UTF-8" />
     <title>igem6 web game</title>
     <!-- <script src="phaser-3.55.2/dist/phaser.js"></script> -->
-    <script src="./js/phaser.min.js"></script>
-    <script src="./js/map/map1.js"></script>
-    <script src="./js/stage1/choose.js"></script>
-    <script src="./js/stage1/sequence.js"></script>
-    <script src="./js/stage1/pcr.js"></script>
-    <script src="./js/stage2/flop.js"></script>
-    <script src="./js/change.js"></script>
-    <script src="./js/index.js"></script>
-    <style type="text/css">
+    
+    <!-- <style type="text/css">
         body {
             margin: 10%;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <!-- <div style="text-align: center;">
+    <header class="navbar navbar-expand-lg navbar-light main-bg-color">
+    <div class="logo d-inline-flex p-2 bd-highlight">
+        <a href="https://www.google.com/">
+            <img src="./img/brand.png" alt="logo" class="brand">
+        </a>
+    </div>
+    <div class="nav">
+        <div class="dropdown">
+            <button onclick="myFunction('myDropdown1')" class="dropbtn">Team</button>
+            <div id="myDropdown1" class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#">Members</a>
+                <a href="#">Attributions</a>
+                <a href="#">Sponsors</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button onclick="myFunction('myDropdown2')" class="dropbtn">Project</button>
+            <div id="myDropdown2" class="dropdown-content">
+                <a href="#">Description</a>
+                <a href="#">Design</a>
+                <a href="#">Implementation</a>
+                <a href="#">Entrepreneurship</a>
+                <a href="#">Contribution</a>
+                <a href="#">Improvement</a>
+                <a href="#">Proof of Concept</a>
+            </div>
+
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction('myDropdown3')" class="dropbtn">Labwork</button>
+            <div id="myDropdown3" class="dropdown-content">
+                <a href="#">Protocol</a>
+                <a href="#">Engineering</a>
+                <a href="#">Measurement</a>
+                <a href="#">Model</a>
+                <a href="#">Result</a>
+                <a href="#">Part</a>
+            </div>
+
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction('myDropdown4')" class="dropbtn">Human Practice</button>
+            <div id="myDropdown4" class="dropdown-content">
+                <a href="#">Integrated Human Practice</a>
+                <a href="#">Education</a>
+                <a href="#">Science Communication</a>
+                <a href="#">Collaboration</a>
+                <a href="#">Partnership</a>
+                <a href="#">Inclusivity</a>
+            </div>
+
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction('myDropdown6')" class="dropbtn">Notebook</button>
+        
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction('myDropdown7')" class="dropbtn">Safety</button>
+        
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction('myDropdown8')" class="dropbtn">Awards</button>
+            <div id="myDropdown8" class="dropdown-content">
+                <a href="#">Medals</a>
+                <a href="#">Judging Form</a>
+            
+            </div>
+        </div>
+    </div>
+
+    
+</header>    <!-- <div style="text-align: center;">
         <div>hiuuuu</div>
     </div> -->
-    <select id="language_set" onChange="changeLang(this.options[this.selectedIndex].value)">
-        <!-- <option value="#">please choose your language</option> -->
-        <option value="en">English</option>
-        <option value="zh-tw">繁體中文</option>
-        <option value="zh-cn">簡體中文</option>
-    </select>
-<!-- <button onclick="load()">123123132</button> -->
+    <div class="maindiv">
+        <div class="centerdiv">
+            <div>
+                <select id="language_set" onChange="changeLang(this.options[this.selectedIndex].value)">
+                    <option value="en">English</option>
+                    <option value="zh-tw">繁體中文</option>
+                    <option value="zh-cn">簡體中文</option>
+                </select>
+            </div>
+            <div id="game"></div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start main-bg-color" style="">
+    <section class="d-flex justify-content-center p-4">
+        <div>
+            <a href="" class="me-4">
+                <div class="dropdown fab button_floating"><img src="./img/igem5.png" alt="" height="50px"></div>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <div class="dropdown fab button_floating"><img src="./img/CCUBMS.png" alt="" height="50px"></div>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <div class="dropdown fab button_floating"><img src="./img/pubmed.png" alt="" height="50px"></div>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <div class="dropdown fab button_floating"><img src="./img/youtube.png" alt="" height="50px"></div>
+            </a>
+        </div>
+    </section>
+    <div class="text-center p-2" style="color: #ffffff">
+        Copyright © 2022 
+        <a class="text-reset fw-bold" style="text-decoration:none;" href="https://www.ccu.edu.tw/">National Chung Cheng University All rights reserved</a>
+    </div>
+</footer><!-- <button onclick="load()">123123132</button> -->
 </body>
 </html>

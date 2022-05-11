@@ -1,5 +1,5 @@
 <!doctype html> 
-<html lang="zh-tw"> 
+<html lang="zh-tw">
 <head>
     <?php include "sub/config.php"?>
     <?php include "sub/head.php"?>
