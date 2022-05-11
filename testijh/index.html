@@ -1,69 +1,107 @@
 <head>
-    <script src="jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" media="all" href="./test.css">
-    <title>wiki</title>
-    <script src="wiki.js"></script>
-    
+  <script src="jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" media="all" href="./index.css">
+  <title>wiki</title>
+  <script src="wiki.js"></script>
 </head>
 
 <body>
     <div class="header">
-        <nav>
-          <ul>
-            <li>
-              <img src="./human/brand.png" alt=""height=60 class="brand">
-            </li>
 
-            <li>
-              <a href="http://https://2021.igem.org/Team:CCU_Taiwan">iGEM5</a>
-            </li>
+      <a href="https://www.google.com/">
+        <img src="./human/brand.png" alt="logo" class="brand">
+      </a>
 
-            <li>
-              <a href="http://admbio.ccu.edu.tw/zh-tw/">CCUBMS</a>
-            </li>
-
-            <li>
-              <a href="http://pubmed.ncbi.nlm.nih.gov/">pubmed</a>
-            </li>
-
-            <li>
-              <a href="http://www.youtube.com/channel/UCgqSdCx7Tj3ZyxOCJNlOADQ">Youtube Channel</a>
-            </li>
-
-            
-
-
-
-          </ul>
-        </nav>
+      <div class="dropdown">
+        <button onclick="myFunction('myDropdown1')" class="dropbtn">Team</button>
+        <div id="myDropdown1" class="dropdown-content">
+          <a href="#">Home</a>
+          <a href="#">Members</a>
+          <a href="#">Attributions</a>
+          <a href="#">Sponsors</a>
+        </div>
       </div>
       
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      
+      <div class="dropdown">
+        <button onclick="myFunction('myDropdown2')" class="dropbtn">Project</button>
+        <div id="myDropdown2" class="dropdown-content">
+          <a href="#">Description</a>
+          <a href="#">Design</a>
+          <a href="#">Implementation</a>
+          <a href="#">Entrepreneurship</a>
+          <a href="#">Contribution</a>
+          <a href="#">Improvement</a>
+          <a href="#">Proof of Concept</a>
+        </div>
 
-    
+      </div>
+
+      <div class="dropdown">
+        <button onclick="myFunction('myDropdown3')" class="dropbtn">Labwork</button>
+        <div id="myDropdown3" class="dropdown-content">
+          <a href="#">Protocol</a>
+          <a href="#">Engineering</a>
+          <a href="#">Measurement</a>
+          <a href="#">Model</a>
+          <a href="#">Result</a>
+          <a href="#">Part</a>
+        </div>
+
+      </div>
+
+      <div class="dropdown">
+        <button onclick="myFunction('myDropdown4')" class="dropbtn">Human Practice</button>
+        <div id="myDropdown4" class="dropdown-content">
+          <a href="#">Integrated Human Practice</a>
+          <a href="#">Education</a>
+          <a href="#">Science Communication</a>
+          <a href="#">Collaboration</a>
+          <a href="#">Partnership</a>
+          <a href="#">Inclusivity</a>
+        </div>
+
+      </div>
+
+      <div class="dropdown">
+        <button onclick="myFunction('myDropdown6')" class="dropbtn">Notebook</button>
+        
+      </div>
+
+      <div class="dropdown">
+        <button onclick="myFunction('myDropdown7')" class="dropbtn">Safety</button>
+        
+      </div>
+
+      <div class="dropdown">
+        <button onclick="myFunction('myDropdown8')" class="dropbtn">Awards</button>
+        <div id="myDropdown8" class="dropdown-content">
+          <a href="#">Medals</a>
+          <a href="#">Judging Form</a>
+          
+        </div>
+      </div>
+    </div> 
+
     <footer class="footer">
         <div class="wrapper">
             <div class="content">
                 <nav>
                 <ul>
                     <li>
-                    <a href="http://https://2021.igem.org/Team:CCU_Taiwan"><img src="./human/igem5.png" alt="" height="50px"></a>
+                    <a class="iGEM5" href="http://https://2021.igem.org/Team:CCU_Taiwan"><img src="./human/igem5.png" alt="" height="50px"></a>
                     </li>
         
                     <li>
-                    <a href="http://admbio.ccu.edu.tw/zh-tw/"><img src="./human/CCUBMS.png" alt="" height="50px"></a>
+                    <a class="CCUBMS" href="http://admbio.ccu.edu.tw/zh-tw/"><img src="./human/CCUBMS.png" alt="" height="50px"></a>
                     </li>
         
                     <li>
-                    <a href="http://pubmed.ncbi.nlm.nih.gov/"><img src="./human/pubmed.png" alt="" height="50px"></a>
+                    <a class="pubmed" href="http://pubmed.ncbi.nlm.nih.gov/"><img src="./human/pubmed.png" alt="" height="50px"></a>
                     </li>
         
                     <li>
-                    <a href="http://www.youtube.com/channel/UCgqSdCx7Tj3ZyxOCJNlOADQ"><img src="./human/youtube.png" alt="" height="50px"></a>
+                    <a class="Youtube" href="http://www.youtube.com/channel/UCgqSdCx7Tj3ZyxOCJNlOADQ"><img src="./human/youtube.png" alt="" height="50px"></a>
                     </li>
                 </ul>
                 </nav>
@@ -81,3 +119,4 @@
       
 </body>
     
+
