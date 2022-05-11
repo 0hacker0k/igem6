@@ -1,24 +1,18 @@
-<footer class="text-center text-lg-start main-bg-color">
-    <section class="d-flex justify-content-center justify-content-lg-between p-4">
-        <div>
-        <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-        </a>
+<footer class="text-center text-lg-start main-bg-color" style="">
+    <section class="d-flex justify-content-center p-4">
+        <div >
+            <a href="" class="me-4">
+                <div class="dropdown fab button_floating"><img src="<?php echo imgfile;?>/igem5.png" alt="" height="50px"></div>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <div class="dropdown fab button_floating"><img src="<?php echo imgfile;?>/CCUBMS.png" alt="" height="50px"></div>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <div class="dropdown fab button_floating"><img src="<?php echo imgfile;?>/pubmed.png" alt="" height="50px"></div>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <div class="dropdown fab button_floating"><img src="<?php echo imgfile;?>/youtube.png" alt="" height="50px"></div>
+            </a>
         </div>
     </section>
     <div class="text-center p-2" style="color: #ffffff">

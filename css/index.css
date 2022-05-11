@@ -68,7 +68,6 @@ li a{
   font-size: 25px;
   border: none;
   cursor: pointer;
-  font-family: monospace ;
 }
 
 /* Dropdown button on hover & focus */
@@ -83,6 +82,7 @@ li a{
     /* margin-top: 35px; */
 }
 .nav {
+    
     height: 100%;
     /* position: relative; */
     /* vertical-align:middle; */
@@ -123,15 +123,29 @@ li a{
 .show {display:block;}
 
 .maindiv{
+    margin-top:0;
     width: 100%;
+    height: auto;
     justify-content: center !important;
     text-align: center;
+    background-color: #F2CCC3;
 }
 
 .centerdiv{
     /* min-width: 1080px; */
     width: auto;
 }
+.button_floating{
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+    transition: 0.5s;
+}
+
+.button_floating:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translate(-5px,-5px);
+    background-color: #EA2B1F;
+}
+
 /* .wrapper{
   min-height: 100%;
   margin-bottom: -50px;
