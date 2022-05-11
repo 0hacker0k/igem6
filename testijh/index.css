@@ -131,3 +131,33 @@ font-family: monospace ;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translate(-5px,-5px);
 }
+
+.CCUBMS{
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+  transition: 0.5s;
+}
+
+.CCUBMS:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translate(-5px,-5px);
+}
+
+.pubmed{
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+  transition: 0.5s;
+}
+
+.pubmed:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translate(-5px,-5px);
+}
+
+.Youtube{
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+  transition: 0.5s;
+}
+
+.Youtube:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translate(-5px,-5px);
+}
