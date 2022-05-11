@@ -115,7 +115,7 @@ function create_stage2_flop (){
         }
         card[i*6+j].on('pointerdown', function (){
             flop++;
-            if(card_num[i*6+j]>=card_count){
+            if(card_num[i*6+j]>=32){
                 card[i*6+j].anims.play('target_gene');
             }else{
                 card[i*6+j].anims.play("plasmid");
@@ -146,14 +146,14 @@ function create_stage2_flop (){
         c3.disableInteractive();
         setTimeout(function(){
             match(c1,c2,c3,c4,id);
-        },1500);
+        },1000);
     }
     function ready_nomatch(c1,c2,c3,c4,id){
         c1[id].disableInteractive();
         c3.disableInteractive();
         setTimeout(function(){
             nomatch(c1,c2,c3,c4,id);
-        },1500);
+        },1000);
     }
     function match(c1,c2,c3,c4,id){
         if(c1[id].alpha==0){
