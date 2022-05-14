@@ -1,0 +1,132 @@
+
+
+/* *{
+  border: solid 1px;
+} */
+.flexcard{
+        width: 400px;
+        height: 200px;
+        display: flex;
+        font-size: 30px;
+      }
+      .left{
+        flex: 6;
+        background-color: rgb(255, 221, 56);
+      }
+      .mid{
+        flex: 120px;
+        flex-grow: 0;
+        background-color: rgb(255, 163, 43);
+      }
+      .right{
+        flex: 4;
+        background-color: rgb(255, 109, 56);
+      }
+      
+      
+      .flexcard2{
+        flex-direction: column
+      }
+      
+      .flexcard3{
+        width: 100%
+      }
+      .flexcard3 .left{
+        flex: 400px;
+      }
+      .flexcard3 .mid{
+        flex: 300px;
+      }
+      .flexcard3 .right{
+        flex: 200px;
+        flex-grow: 0
+      }
+      
+      .flexcard4{
+        width: 100%
+      }
+      .flexcard4 .left{
+        flex: 400px;
+      }
+      .flexcard4 .mid{
+        flex: 300px;
+      }
+      .flexcard4 .right{
+        flex: 200px;
+      }
+      .flexcard4 .left{
+        flex-shrink: 0
+      }
+      
+      .flexcard5{
+        flex-direction: row-reverse;
+      }
+      
+      .flexcard6{
+        flex-direction: column-reverse;
+      }
+      
+      .items{
+        height: 300px;
+        display: flex;
+        position: relative;
+        border: solid 4px black
+      }
+      .items.jStart{
+        justify-content: flex-start;
+      }
+      .items.jCenter{
+        justify-content: center;
+      }
+      .items.jEnd{
+        justify-content: flex-end;
+      }
+      .items.aStart{
+        align-items: flex-start;
+      }
+      .items.aCenter{
+        align-items: center;
+      }
+      .items.aEnd{
+        align-items: flex-end;
+      }
+      .items.jBetween{
+        justify-content: space-between;
+      }
+      .items.jAround{
+        justify-content: space-around;
+      }
+      .items.jEvenly{
+        justify-content: space-evenly;
+      }
+      .items.rowReverse{
+        flex-direction: row-reverse;
+      }
+      
+      .mainAxis{
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 50%;
+        border: solid 2px red  
+      }
+      .subAxis{
+        position: absolute;
+        width: 0;
+        height: 100%;
+        left: 50%;
+        border: solid 2px blue  
+      }
+      .item{
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+        text-align: center;
+        background-color: #eee;
+      }
+      .flexrow{
+        display: flex;
+      }
+      .flexrow > div{
+        flex: 1;
+      }

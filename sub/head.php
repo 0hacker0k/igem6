@@ -3,3 +3,5 @@
 <script src="<?php echo jsfile;?>/index.js"></script>
 <link href="<?php echo cssfile;?>/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
 <script src="<?php echo jsfile;?>/bootstrap.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" media="all" href="<?php echo cssfile;?>/arrangetest.css">
+<link rel="stylesheet" media="all" href="<?php echo cssfile;?>/wiki.css">
