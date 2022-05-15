@@ -24,9 +24,9 @@
   <br>
   <br>
 
-  <div class=member_card>
+  <div class="member_card row justify-content-between">
 
-    <div class=intro>
+    <div class="col-12">
       <h1>Introduction</h1>
       <p>CCU_Taiwan is established in the year of 2017. Our team consists of twenty-one passionate students. We are a multidisciplinary team as our team members have different professional background from five departments.</p>
 
@@ -41,47 +41,37 @@
     
   
         
-    <div class="person">
+    <div class="col-4 person">
         <h3>Cringe</h3>
-          <div class="image">
-            <img src="./human/cringe.png" alt="">
-          </div>
-          
-          <div class="social">
+        <img class="person_img" src="./human/cringe.png" alt="">
+        <div class="social">
             <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModal1" style="background-color: #FFF985;">
                 More about me
             </button>
-          
-          </div>
+        
+        </div>
     </div>
 
       
 
-    <div class="person">
-      <h3>Yuan Chi</h3>
-        <div class="image">
-          <img src="./human/Yuan Chi Tsai.jpg" alt="">
-        </div>
-          
-          <div class="social">
+    <div class="col-4 person">
+        <h3>Yuan Chi</h3>
+        <img class="person_img" src="./human/Yuan Chi Tsai.jpg" alt="">
+        
+        <div class="social">
             <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModal1" style="background-color: #FFF985;">
                 More about me
             </button>
-          
-          </div>
+        </div>
     </div>
 
-    <div class="person">
+    <div class="col-4 person">
       <h3>Yun Chi</h3>
-        <div class="image">
-          <img src="./human/Yun Chi Chiu.png" alt="">
-        </div>
-        
+        <img class="person_img" src="./human/Yun Chi Chiu.png" alt="">
         <div class="social">
-          <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModal1" style="background-color: #FFF985;">
-              More about me
-          </button>
-        
+            <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModal1" style="background-color: #FFF985;">
+                More about me
+            </button>
         </div>
     </div>
 
