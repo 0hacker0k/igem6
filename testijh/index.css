@@ -1,9 +1,9 @@
-html,body{
+body{
   height: 100%;
   margin: 0;
   background-color: #F2CCC3;
   /* border: solid 12px #EA2B1F; */
-  /* display: flex; */
+  display: flex;
 }
 
 .header{
@@ -107,11 +107,15 @@ font-family: monospace ;
 .wrapper{
     min-height: 100%;
     margin-bottom: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .content{
-    padding-bottom: 50px;
-
+    padding-bottom: 20px;
+    display: block;
 }
 
 .footer{
@@ -122,8 +126,8 @@ font-family: monospace ;
     background-color: #900902;
 }
 
+
 .iGEM5{
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
     transition: 0.5s;
 }
 
@@ -133,7 +137,6 @@ font-family: monospace ;
 }
 
 .CCUBMS{
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
   transition: 0.5s;
 }
 
@@ -143,7 +146,6 @@ font-family: monospace ;
 }
 
 .pubmed{
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
   transition: 0.5s;
 }
 
@@ -153,7 +155,6 @@ font-family: monospace ;
 }
 
 .Youtube{
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
   transition: 0.5s;
 }
 

@@ -1,73 +1,49 @@
 body{
-/*   height: 100%; */
-  margin: 0;
-  background-color: #F2CCC3;
-  /* border: solid 12px #EA2B1F; */
-  display: flex;
-  justify-content: center;
-  align-items: top;
-  margin:0px;
-}
+    margin: 0;
+    background-color: #F2CCC3 !important;
+    /* border: solid 12px #EA2B1F !important; */
+    /* justify-content: center; */
+    /* align-items: top; */
+  }
 
 
+  .header{
+    width:100%;
+    height:200px;
+    display:block;
+    font-size: 30px;
+    background-color:#900902; 
+  }
 
-.header{
-  width:100%;
-  height:200px;
-  display:block;
-  font-size: 30px;
-  background-color:#900902;
+  /*看狀況使用*/
+  ul{
+    list-style-type: none;
+    padding:0px;  
+  }
   
-  
-}
+  li{
+    float:left;
+  }
 
-ul{
-  list-style-type: none;
-  padding:0px;
-  
-  
-  
-}
-
-
-
-
-li{
-  float:left;
-  
-
-  /* border-right:5px solid #ea2b1f; */
-}
-
-li a{
-  display:block;
-  padding:10px;
-  text-decoration: none;
-  font-size:30px;
-  color:#FFF985;
-  font-weight: 800;
-  text-align: center;
-  /* margin-left:50px; */
-  
-  
-}
+  /*here have trouble*/
+  li a{
+    display:block;
+    padding:10px;
+    text-decoration: none;
+    font-size:30px;
+    color: #ffcae7;
+    font-weight: 800;
+    text-align: center;
+    /* margin-left:50px; */
+      
+  }
 
 
 
-
-.brand{
-  margin: 30px;
-  height:10vh;
-  float:left;
-}
-
-
-
-
-/* Dropdown Button */
+  /* Dropdown Button */
 .dropbtn {
   background-color: #900902;
-  color: #FFF985;
+  color: #ffcae7;
   padding: 16px;
   font-size: 25px;
   border: none;
@@ -84,8 +60,26 @@ li a{
 .dropdown {
   position: relative;
   display: inline-block;
-  margin-top: 35px;
+  /* margin-top: 35px; */
 }
+
+.nav {
+  height: 100%;
+  /* position: relative; */
+  /* vertical-align:middle; */
+  float: right;
+}
+
+
+.logo {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  margin: 1%;
+  /* float: left; */
+  /* margin-top: 35px; */
+}
+
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -96,6 +90,7 @@ li a{
   box-shadow: 0px 8px 16px 0px #FFCAE7;
   z-index: 1;
 }
+
 
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -113,21 +108,13 @@ li a{
 .show {display:block;}
 
 
-/* .wrapper{
-  min-height: 100%;
-  margin-bottom: -50px;
 
+
+
+
+
+
+
+  .full_size_image{
+  width:100%;
 }
-
-.content{
-  padding-bottom: 50px;
-
-}
-
-.footer{
-  width: 100%;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  background-color: #900902;
-} */
