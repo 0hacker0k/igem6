@@ -89,7 +89,7 @@
 
 
 
-  <!-- <?php include "../sub/footer.php"?> -->
+  <?php include "../sub/footer.php"?>
   
 
      
