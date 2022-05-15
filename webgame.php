@@ -1,5 +1,5 @@
 <!doctype html> 
-<html lang="zh-tw"> 
+<html lang="zh-tw">
 <head>
     <?php include "sub/config.php"?>
     <?php include "sub/head.php"?>
@@ -19,7 +19,6 @@
     <!-- <div style="text-align: center;">
         <div>hiuuuu</div>
     </div> -->
-    <br>
     <div class="maindiv">
         <div class="centerdiv">
             <div>

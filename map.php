@@ -9,7 +9,7 @@
                     $results[] = $locate."/".$value;
                 }
             } else if ($value != "." && $value != ".." && $value != ".git" && $value != "img" && $value != "test") {
-                getDirContents($dir,$locate."/".$value, $results);
+                // getDirContents($dir,$locate."/".$value, $results);
                 // $results[] = $value;
             }
         }
