@@ -128,3 +128,14 @@ p{
   color:390099;
   font-weight: 500;
 }
+
+.person{
+  width:25%;
+  float:left;
+  margin-left: 50px;
+  margin-right:50px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
