@@ -21,7 +21,7 @@
 
 <body>
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color:#FFF985">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color: #FFF985;color:blue;">
   More about me
 </button>
 

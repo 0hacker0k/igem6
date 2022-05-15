@@ -45,9 +45,8 @@
         <h3>Cringe</h3>
         <img class="person_img" src="./human/cringe.png" alt="">
         <div class="social">
-            <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModal1" style="background-color: #FFF985;">
-                More about me
-            </button>
+        
+        <?php include "../sub/popup.php";?>
         
         </div>
     </div>
@@ -59,9 +58,8 @@
         <img class="person_img" src="./human/Yuan Chi Tsai.jpg" alt="">
         
         <div class="social">
-            <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModal1" style="background-color: #FFF985;">
-                More about me
-            </button>
+        <?php include "../sub/popup.php";?>
+
         </div>
     </div>
 
@@ -69,9 +67,8 @@
       <h3>Yun Chi</h3>
         <img class="person_img" src="./human/Yun Chi Chiu.png" alt="">
         <div class="social">
-            <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModal1" style="background-color: #FFF985;">
-                More about me
-            </button>
+        <?php include "../sub/popup.php";?>
+
         </div>
     </div>
 
