@@ -21,8 +21,8 @@
 
 <body>
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color: #FFF985;color:blue;">
-  More about me
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color:#FFCAE7">
+  <img class="person_img" src="../testSrRb/human/5a.jpg" alt="">
 </button>
 
 <!-- Modal -->
@@ -30,16 +30,16 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Wet lab - 162</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <div class="image">
-        <img src="./human/cringe.png" alt="">
+        <img src="./human/5b.jpg" alt="">
         </div>
-        <p>123123123123123123</p>
+        <p>Hola</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -10,7 +10,7 @@
   <?php include "../sub/header.php"?>
 
 
-  <!-- <div style="height:100%; background-color:#F2CCC3"; class="box"> -->
+  
     <img class="full_size_image" src="./human/fullimage.jpg" alt="">
 
     
@@ -43,10 +43,10 @@
         
     <div class="col-4 person">
         <h3>Cringe</h3>
-        <img class="person_img" src="./human/cringe.png" alt="">
+        <!-- <img class="person_img" src="./human/cringe.png" alt=""> -->
         <div class="social">
         
-        <?php include "../sub/popup.php";?>
+        <?php include "../sub/popup/popup1.php";?>
         
         </div>
     </div>
@@ -55,19 +55,49 @@
 
     <div class="col-4 person">
         <h3>Yuan Chi</h3>
-        <img class="person_img" src="./human/Yuan Chi Tsai.jpg" alt="">
+        <!-- <img class="person_img" src="./human/Yuan Chi Tsai.jpg" alt=""> -->
         
         <div class="social">
-        <?php include "../sub/popup.php";?>
+        <?php include "../sub/popup/popup2.php";?>
 
         </div>
     </div>
 
     <div class="col-4 person">
       <h3>Yun Chi</h3>
-        <img class="person_img" src="./human/Yun Chi Chiu.png" alt="">
+        <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
         <div class="social">
-        <?php include "../sub/popup.php";?>
+        <?php include "../sub/popup/popup3.php";?>
+
+        </div>
+    </div>
+
+    
+
+
+    <div class="col-4 person">
+      <h3>162 boy</h3>
+        <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
+        <div class="social">
+        <?php include "../sub/popup/popup4.php";?>
+
+        </div>
+    </div>
+
+    <div class="col-4 person">
+      <h3>sheep</h3>
+        <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
+        <div class="social">
+        <?php include "../sub/popup/popup5.php";?>
+
+        </div>
+    </div>
+
+    <div class="col-4 person">
+      <h3>Tino</h3>
+        <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
+        <div class="social">
+        <?php include "../sub/popup/popup6.php";?>
 
         </div>
     </div>
