@@ -8,8 +8,8 @@
                 if(strstr($value,'.')==".php" && strcmp($value,'map.php')!=0){
                     $results[] = $locate."/".$value;
                 }
-            } else if ($value != "." && $value != ".." && $value != ".git" && $value != "img" && $value != "test") {
-                // getDirContents($dir,$locate."/".$value, $results);
+            } else if ($value =="testSrRb") {
+                getDirContents($dir,$locate."/".$value, $results);
                 // $results[] = $value;
             }
         }
