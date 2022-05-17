@@ -2,7 +2,7 @@
 
 
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2" style="background-color:#FFCAE7">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2" >
   <img class="person_img" src="../testSrRb/human/2a.jpg" alt="">
 </button>
 
@@ -18,9 +18,17 @@
       </div>
       <div class="modal-body">
         <div class="image">
-        <img src="./human/2b.jpg" alt="">
+        <img src="./human/2e.png" alt="">
         </div>
-        <p>Hi</p>
+          <p>
+            <ul>
+              <li>Department of Mechanical Engineering</li>
+              <br>
+              <li>16 personality: Protagonist</li>
+              <br>
+              <li>Merit Reminder</li>            
+            </ul>
+          </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

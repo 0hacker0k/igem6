@@ -32,12 +32,7 @@
 
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <h1>Leader</h1>
     
   
         
@@ -72,11 +67,11 @@
         </div>
     </div>
 
-    
-
+        
+    <h1>More Leaders</h1>
 
     <div class="col-4 person">
-      <h3>162 boy</h3>
+      <h3>162.8 boy</h3>
         <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
         <div class="social">
         <?php include "../sub/popup/popup4.php";?>
@@ -93,11 +88,43 @@
         </div>
     </div>
 
+
+    <!-- <h1>Dry Lab</h1> -->
+
     <div class="col-4 person">
       <h3>Tino</h3>
         <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
         <div class="social">
         <?php include "../sub/popup/popup6.php";?>
+
+        </div>
+    </div>
+
+    <h1>Deputy Leaders</h1>
+
+    <div class="col-4 person">
+      <h3>Yoo Chen</h3>
+        <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
+        <div class="social">
+        <?php include "../sub/popup/popup7.php";?>
+
+        </div>
+    </div>
+
+    <div class="col-4 person">
+      <h3>SrRb</h3>
+        <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
+        <div class="social">
+        <?php include "../sub/popup/popup8.php";?>
+
+        </div>
+    </div>
+
+    <div class="col-4 person">
+      <h3>Yi Yun</h3>
+        <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
+        <div class="social">
+        <?php include "../sub/popup/popup9.php";?>
 
         </div>
     </div>
@@ -110,7 +137,12 @@
 
   
 
-
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
 
 

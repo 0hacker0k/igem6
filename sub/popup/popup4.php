@@ -1,5 +1,5 @@
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4" style="background-color:#FFCAE7">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
   <img class="person_img" src="../testSrRb/human/4a.jpg" alt="">
 </button>
 
@@ -8,16 +8,24 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Wet lab - 162</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Wet lab - 162.8</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <div class="image">
-        <img src="./human/4b.jpg" alt="">
+        <img src="./human/4e.png" alt="">
         </div>
-        <p>Hola</p>
+          <p>
+              <ul>
+                <li>Department of Biomedical Science</li>
+                <br>
+                <li>16 personality: Commander</li>
+                <br>
+                <li>Dry Lab Botherer</li>            
+              </ul>
+            </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
