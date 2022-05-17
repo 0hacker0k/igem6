@@ -112,6 +112,12 @@ const stage_2_flop={
     create: create_stage2_flop,
     update: update_stage2_flop
 }
+const stage_3_shoot={
+    key: 'stage_3_shoot',
+    preload: preload_stage3_shoot,
+    create: create_stage3_shoot,
+    update: update_stage3_shoot
+}
 function load(){
     if(page==null){
         load_page(map_1);
@@ -125,6 +131,9 @@ function load(){
                 break;
             case "stage2":
                 load_page(stage_2_flop);
+                break;
+            case "stage3":
+                load_page(stage_3_shoot);
                 break;
         }
     }

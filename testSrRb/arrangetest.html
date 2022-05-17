@@ -1,0 +1,221 @@
+<head>
+    <link href="../css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+<script src="../js/bootstrap.js" crossorigin="anonymous"></script>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" media="all" href="../css/index.css">
+<script src="../js/index.js"></script>
+<link rel="stylesheet" media="all" href="../css/arrangetest.css">
+<link rel="stylesheet" media="all" href="../css/wiki.css">
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+</head>
+
+
+<body>
+  
+
+<h1>flexbox排版入門</h1>
+<hr>
+<div class="flexrow">
+  <div>
+    <h2>使用flex控制份數</h2>
+    <div class="flexcard">
+      <div class="left">L 6</div>
+      <div class="mid">M 120px</div>
+      <div class="right">R 4</div>
+    </div>
+  </div>
+  <div>
+    <h2>flex-direction控制軸向</h2>
+    <div class="flexcard flexcard2">
+      <div class="left">L 6</div>
+      <div class="mid">M 120px</div>
+      <div class="right">R 4</div>
+    </div>
+  </div>
+</div>
+<h3>flex-grow 控制膨脹分配</h3>
+<div class="flexcard flexcard3">
+  <div class="left">L 400px</div>
+  <div class="mid">M 300px</div>
+  <div class="right">R 200px (flex-grow: 0)</div>
+</div>
+<h3>flex-shrink 控制縮減分配</h3>
+<div class="flexcard flexcard4">
+  <div class="left">L 400px (flex-shrink: 0)</div>
+  <div class="mid">M 300px</div>
+  <div class="right">R 200px</div>
+</div>
+
+<hr>
+<h2>順序 flex-direction: column-reverse / row-reverse</h2>
+<div class="flexrow">
+  <div>
+    <h3>row-reverse</h3>
+    <div class="flexcard flexcard5">
+      <div class="left">L 400px</div>
+      <div class="mid">M 300px</div>
+      <div class="right">R 200px</div>
+    </div>
+  </div>
+  <div>
+    <h3>column-reverse</h3>
+    <div class="flexcard flexcard6">
+      <div class="left">L 400px</div>
+      <div class="mid">M 300px</div>
+      <div class="right">R 200px</div>
+    </div>
+  </div>
+</div>
+<hr>
+<h2>物件排列</h2>
+
+<!-- justify -->
+<div class="flexrow">
+  <div>
+    <h4>justify-content: flex-start<br>align-items:flex-start </h4>
+    <div class="items">
+      <div class="mainAxis">主軸 (justify)</div>
+      <div class="subAxis">副軸 (align)</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </div>
+  <div>
+    <h4>justify-content: center<br>align-items: flex-start </h4>
+    <div class="items jCenter">
+      <div class="mainAxis">主軸 (justify)</div>
+      <div class="subAxis">副軸 (align)</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </div>
+  
+  <div>
+    <h4>justify-content: flex-end<br>align-items: flex-start </h4>
+    <div class="items jEnd">
+      <div class="mainAxis">主軸 (justify)</div>
+      <div class="subAxis">副軸 (align)</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- justify | align center-->
+<div class="flexrow">
+  <div>
+    <h4>justify-content: flex-start<br>align-items:center </h4>
+    <div class="items aCenter">
+      <div class="mainAxis">主軸 (justify)</div>
+      <div class="subAxis">副軸 (align)</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </div>
+  <div>
+    <h4>justify-content: center<br>align-items: center </h4>
+    <div class="items jCenter aCenter">
+      <div class="mainAxis">主軸 (justify)</div>
+      <div class="subAxis">副軸 (align)</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </div>
+  
+  <div>
+    <h4>justify-content: flex-end<br>align-items: center </h4>
+    <div class="items jEnd aCenter">
+      <div class="mainAxis">主軸 (justify)</div>
+      <div class="subAxis">副軸 (align)</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- justify | align end-->
+<div class="flexrow">
+  <div>
+    <h4>justify-content: flex-start<br>align-items: flex-end </h4>
+    <div class="items aEnd">
+      <div class="mainAxis">主軸 (justify)</div>
+      <div class="subAxis">副軸 (align)</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </div>
+  <div>
+    <h4>justify-content: center<br>align-items: flex-end </h4>
+    <div class="items jCenter aEnd">
+      <div class="mainAxis">主軸 (justify)</div>
+      <div class="subAxis">副軸 (align)</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </div>
+  
+  <div>
+    <h4>justify-content: flex-end<br>align-items: flex-end </h4>
+    <div class="items jEnd aEnd">
+      <div class="mainAxis">主軸 (justify)</div>
+      <div class="subAxis">副軸 (align)</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </div>
+</div>
+<hr>
+<h2>空間排列space-between / space-around</h2>
+<div>
+  <h4>space between</h4>
+  <div class="items jBetween aCenter">
+    <div class="mainAxis">主軸 (justify)</div>
+    <div class="subAxis">副軸 (align)</div>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</div>
+<div>
+  <h4>space around</h4>
+  <div class="items jAround aCenter">
+    <div class="mainAxis">主軸 (justify)</div>
+    <div class="subAxis">副軸 (align)</div>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</div>
+
+<div>
+  <h4>space evenly</h4>
+  <div class="items jEvenly aCenter">
+    <div class="mainAxis">主軸 (justify)</div>
+    <div class="subAxis">副軸 (align)</div>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</div>
+
+
+
+
+</body>
