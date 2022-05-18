@@ -118,6 +118,12 @@ const stage_3_shoot={
     create: create_stage3_shoot,
     update: update_stage3_shoot
 }
+const play_1={
+    key: 'play_1',
+    preload: play_1_shoot,
+    create: play_1_shoot,
+    update: play_1_shoot
+}
 function load(){
     if(page==null){
         load_page(map_1);
@@ -134,6 +140,9 @@ function load(){
                 break;
             case "stage3":
                 load_page(stage_3_shoot);
+                break;
+            case "play":
+                load_page(play_1);
                 break;
         }
     }

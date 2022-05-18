@@ -21,6 +21,8 @@ function preload_stage3_shoot(){
     //     { frameWidth: 367, frameHeight: 519 }
     // );
 }
+var bullets;
+var bullets_queue=[];
 function create_stage3_shoot (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
@@ -33,6 +35,8 @@ function create_stage3_shoot (){
     bars.create(0.3*width, 0, 'bar').setOrigin(0, 0).setDisplaySize(0.4*width,0.01*width).refreshBody();
     var guns = this.physics.add.group();
     var gun = guns.create(0.5*width, 0.9*height, 'bar').setOrigin(0.5, 0).setDisplaySize(0.01*width,height*0.2);
+    var score_text=this.add.text(width*0.95, height*0.15, '0', { fontFamily: 'fantasy', fontSize: (width*0.07).toString()+'px', fill: '#111111' }).setOrigin(1, 1);
+    var score=0;
     var angle;
     var delta_x,delta_y;
     this.input.on('pointermove', function (pointer) {
@@ -45,20 +49,33 @@ function create_stage3_shoot (){
         }
         gun.setAngle(angle);
     },this);
-    var bullets = this.physics.add.group();
+    bullets = this.physics.add.group();
     this.physics.add.collider(bullets, bars);
     // this.physics.add.collider(bullets, bullets);
+    //alert(this.scale.isLandscape);//橫屏
+    //bullet
     this.input.on('pointerdown', function (pointer) {
-        var bullet = bullets.create(0.5*width, 0.9*height, 'bar').setOrigin(0.5, 0).setDisplaySize(height*0.02,height*0.02);
+        var bullet;
+        if(bullets_queue.length>0){
+            bullet=bullets_queue.pop();
+            bullet.x=0.5*width;
+            bullet.y=0.9*height;
+            bullet.setVisible(true);
+        }else{
+            bullet = bullets.create(0.5*width, 0.9*height, 'bar').setOrigin(0.5, 0).setDisplaySize(height*0.02,height*0.02);
+            
+        }
         bullet.setAngle(angle);
         bullet.setBounce(1);
-        // bullet.setCollideWorldBounds(true);
+        // bullet.setCollideWorldBounds(true,0.5,0.5);
         var scale=400/Math.sqrt((delta_x*delta_x)+(delta_y*delta_y));
         bullet.setVelocityX(delta_x*scale);
         bullet.setVelocityY(delta_y*scale);
+        // console.log(bullets_queue.length);
     },this);
     var ecolis = this.physics.add.staticGroup();//this.physics.add.group();
     // var ecolis = this.physics.add.group();
+    //ecoli
     this.physics.add.collider(bullets, ecolis, hitdown, null, this);
     for(var i=0;i<4;i++){
         for(var j=0;j<3;j++){
@@ -73,6 +90,8 @@ function create_stage3_shoot (){
         bullet.disableBody(true, true);
         ecoli.disableBody(true, true);
         falling_ecoli.setVelocityY(height*0.3);
+        score+=100;
+        score_text.setText(score.toString());
     }
     // spinTween.oncomplete.add(this.winPrize, this);
     //返回
@@ -86,7 +105,20 @@ function create_stage3_shoot (){
     //轉場動畫
     start_transition(this);
 }
-
 function update_stage3_shoot (){//與外界有關的互動
+    bullets.children.entries.forEach(item =>  {
+        if(item.y>height){
+            item.setVelocityX(0);
+            item.setVelocityY(0);
+            item.setVisible(false);
+            item.x=0.1*width;
+            item.y=0.1*height;
+            bullets_queue[bullets_queue.length]=item;
+        }
+        /*item.alpha -= 0.05;
+        if (item.alpha < 0.001 || item.alpha > 0.999){
+            item.alpha = 1;
+        }*/
+    });
     // cursors = this.input.keyboard.createCursorKeys();
 }

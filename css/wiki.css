@@ -120,17 +120,6 @@ body{
   margin-right: 250px;
 }
 
-h1{
-  color:#EA2B1F;
-  font-weight:bolder;
-  
-  }
-
-p{
-  color:390099;
-  font-weight: 500;
-}
-
 .person{
     height: auto;
     padding: auto;
@@ -149,8 +138,30 @@ p{
   width: 25px;
 }
 
+h1{
+  color:#EA2B1F;
+  font-weight:bolder;
+  font-size:70px !important;
+  padding-top:100px;
+  padding-bottom:100px;
+  }
 
-/* .btn_btn-primary{
-  width: 60%;
+
+p{
+  color:#390099;
+  font-weight: 500;
+  font-size:30px ;
+  padding: left 30% right 30%;
+}
+
+
+.btn-primary{
+  width: 70%;
   height: auto;
-} */
+  background-color:#FFCAE7 !important;
+  border:#FFF985 solid 5px !important;
+}
+
+.button_floating{
+  height:100%;
+}
