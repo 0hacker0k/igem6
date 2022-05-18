@@ -44,10 +44,19 @@
         <?php
             $id=1;
             $name="Leader - Cringe";
-            $content="Hello";
+            $content="
+            <p>
+              <ul>
+                <li>Department of Biomedical Science</li>
+                <br>
+                <li>16 personality: Campaigner</li>
+                <br>
+                <li>Meme Spreader</li>            
+              </ul>
+            </p>";
             $person_img="../testSrRb/human/1a.jpg";
             $person_img_alt="";
-            $popup_img="./human/1b.jpg";
+            $popup_img="./human/1e.png";
             $popup_img_alt="";
             include "../sub/popup/popup.php";
         ?>
@@ -62,7 +71,25 @@
         <!-- <img class="person_img" src="./human/Yuan Chi Tsai.jpg" alt=""> -->
         
         <div class="social">
-        <?php include "../sub/popup/popup2.php";?>
+        <?php
+            $id=2;
+            $name="Co Leader - Yuan Chi";
+            $content="
+            <p>
+              <ul>
+                <li>Department of Mechanical Engineering</li>
+                <br>
+                <li>16 personality: Campaigner</li>
+                <br>
+                <li>Merit Reminder</li>            
+              </ul>
+            </p>";
+            $person_img="../testSrRb/human/2a.jpg";
+            $person_img_alt="";
+            $popup_img="./human/2e.png";
+            $popup_img_alt="";
+            include "../sub/popup/popup.php";
+        ?>
 
         </div>
     </div>
