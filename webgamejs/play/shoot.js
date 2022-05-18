@@ -1,4 +1,4 @@
-function play_1_shoot(){
+function play_1_preload(){
     this.load.image('background', 'img/stage2/background.png');//載入一般圖片
     load_transition(this);
     this.load.image('back', 'img/main/back.png');
@@ -23,7 +23,7 @@ function play_1_shoot(){
 }
 var bullets;
 var bullets_queue=[];
-function play_1_shoot (){
+function play_1_create (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
     
@@ -48,13 +48,21 @@ function play_1_shoot (){
             angle=Math.atan((delta_y)/(delta_x))/Math.PI*180+90;
         }
         gun.setAngle(angle);
+        shooting(pointer)
     },this);
     bullets = this.physics.add.group();
     this.physics.add.collider(bullets, bars);
     // this.physics.add.collider(bullets, bullets);
     //alert(this.scale.isLandscape);//橫屏
     //bullet
+    var cool_down=0;
+    var cool_down_reduce_status=null;
     this.input.on('pointerdown', function (pointer) {
+        shooting(pointer);
+        // console.log(bullets_queue.length);
+    },this);
+    function shooting(pointer){
+        if(cool_down!=0)return ;
         var bullet;
         if(bullets_queue.length>0){
             bullet=bullets_queue.pop();
@@ -63,7 +71,6 @@ function play_1_shoot (){
             bullet.setVisible(true);
         }else{
             bullet = bullets.create(0.5*width, 0.9*height, 'bar').setOrigin(0.5, 0).setDisplaySize(height*0.02,height*0.02);
-            
         }
         bullet.setAngle(angle);
         bullet.setBounce(1);
@@ -71,8 +78,25 @@ function play_1_shoot (){
         var scale=400/Math.sqrt((delta_x*delta_x)+(delta_y*delta_y));
         bullet.setVelocityX(delta_x*scale);
         bullet.setVelocityY(delta_y*scale);
-        // console.log(bullets_queue.length);
-    },this);
+        cool_down=0;
+        cool_down_reduce_status=setTimeout(function(){
+            cool_down_reduce();
+        },100);
+    }
+    function cool_down_reduce(){
+        if(cool_down<=0){
+            clearTimeout(cool_down_reduce_status);
+            cool_down=0;
+            return ;
+        }
+        cool_down-=1;
+        if(cool_down>0){
+            cool_down_reduce_status=setTimeout(function(){
+                cool_down_reduce();
+            },100);
+        }
+        console.log(cool_down);
+    }
     var ecolis = this.physics.add.staticGroup();//this.physics.add.group();
     // var ecolis = this.physics.add.group();
     //ecoli
@@ -82,15 +106,22 @@ function play_1_shoot (){
             var ecoli = ecolis.create(0.3*width+0.08*width*(i+1), 0.1*height+0.1*height*j, 'bar').setOrigin(0.5, 0).setDisplaySize(width*0.06,height*0.06);
             ecoli.refreshBody();
             ecoli.y-=0.015*height;
+            ecoli.health=100;
         }
     }
     var falling_ecolis = this.physics.add.group();
     function hitdown(bullet, ecoli){
-        var falling_ecoli = falling_ecolis.create(ecoli.x, ecoli.y, 'bar').setOrigin(0.5, 0).setDisplaySize(width*0.06,height*0.06);
+        // var falling_ecoli = falling_ecolis.create(ecoli.x, ecoli.y, 'bar').setOrigin(0.5, 0).setDisplaySize(width*0.06,height*0.06);
         bullet.disableBody(true, true);
-        ecoli.disableBody(true, true);
-        falling_ecoli.setVelocityY(height*0.3);
-        score+=100;
+        ecoli.health-=1;
+        if(ecoli.health==0){
+            ecoli.disableBody(true, true);
+        }else{
+            ecoli.setDisplaySize(width*0.06*ecoli.health*0.01,height*0.06*ecoli.health*0.01).refreshBody();
+        }
+        
+        // falling_ecoli.setVelocityY(height*0.3);
+        score+=10;
         score_text.setText(score.toString());
     }
     // spinTween.oncomplete.add(this.winPrize, this);
@@ -105,7 +136,7 @@ function play_1_shoot (){
     //轉場動畫
     start_transition(this);
 }
-function play_1_shoot (){//與外界有關的互動
+function play_1_update (){//與外界有關的互動
     bullets.children.entries.forEach(item =>  {
         if(item.y>height){
             item.setVelocityX(0);
