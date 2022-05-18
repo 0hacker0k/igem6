@@ -120,9 +120,9 @@ const stage_3_shoot={
 }
 const play_1={
     key: 'play_1',
-    preload: play_1_shoot,
-    create: play_1_shoot,
-    update: play_1_shoot
+    preload: play_1_preload,
+    create: play_1_create,
+    update: play_1_update
 }
 function load(){
     if(page==null){
