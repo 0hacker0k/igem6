@@ -2,7 +2,7 @@
 // define("root",substr(dirname(__FILE__,2),strlen($_SERVER['DOCUMENT_ROOT'])));
 // echo dirname(__FILE__,2);
 // echo dirname($_SERVER['DOCUMENT_ROOT']);
-define("root","/data1/adm/webteam.ccu.edu.tw/WWW/phaser");
+define("root","/phaser");
 define("cssfile", root."/css");
 define("jsfile", root."/js");
 define("webgamejsfile", root."/webgamejs");
