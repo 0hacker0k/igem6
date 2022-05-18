@@ -1,27 +1,29 @@
 <!doctype html> 
 <html lang="zh-tw">
 <head>
-        <link href="./css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
-<script src="./js/bootstrap.js" crossorigin="anonymous"></script>
-<script src="./js/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" media="all" href="./css/index.css">
-<script src="./js/index.js"></script>
-<link rel="stylesheet" media="all" href="./css/arrangetest.css">
-<link rel="stylesheet" media="all" href="./css/wiki.css">
+        <link href="\igem6/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+<script src="\igem6/js/bootstrap.js" crossorigin="anonymous"></script>
+<script src="\igem6/js/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" media="all" href="\igem6/css/index.css">
+<script src="\igem6/js/index.js"></script>
+<link rel="stylesheet" media="all" href="\igem6/css/arrangetest.css">
+<link rel="stylesheet" media="all" href="\igem6/css/wiki.css">
 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    <script src="./webgamejs/phaser.min.js"></script>
-<script src="./webgamejs/map/map1.js"></script>
-<script src="./webgamejs/stage1/choose.js"></script>
-<script src="./webgamejs/stage1/sequence.js"></script>
-<script src="./webgamejs/stage1/pcr.js"></script>
-<script src="./webgamejs/stage2/flop.js"></script>
-<script src="./webgamejs/stage3/shoot.js"></script>
-<script src="./webgamejs/change.js"></script>
-<script src="./webgamejs/index.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    <script src="\igem6/webgamejs/phaser.min.js"></script>
+<script src="\igem6/webgamejs/map/map1.js"></script>
+<script src="\igem6/webgamejs/stage1/choose.js"></script>
+<script src="\igem6/webgamejs/stage1/sequence.js"></script>
+<script src="\igem6/webgamejs/stage1/pcr.js"></script>
+<script src="\igem6/webgamejs/stage2/flop.js"></script>
+<script src="\igem6/webgamejs/stage3/shoot.js"></script>
+<script src="\igem6/webgamejs/play/shoot.js"></script>
+
+<script src="\igem6/webgamejs/change.js"></script>
+<script src="\igem6/webgamejs/index.js"></script>
     <meta charset="UTF-8" />
     <title>igem6 web game</title>
     <!-- <script src="phaser-3.55.2/dist/phaser.js"></script> -->
@@ -36,13 +38,13 @@
     <header class="navbar navbar-expand-lg navbar-light main-bg-color">
     <div class="logo d-inline-flex p-2 bd-highlight">
         <a href="https://www.google.com/">
-            <img src="./img/brand.png" alt="logo" class="brand">
+            <img src="\igem6/img/brand.png" alt="logo" class="brand">
         </a>
     </div>
     <div class="nav">
         <div class="dropdown">
         
-            <button onclick="myFunction('myDropdown1')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Team</button>
+            <button onmouseover="myFunction('myDropdown1')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Team</button>
             <div id="myDropdown1" class="dropdown-content">
                 <a href="#">Home</a>
                 <a href="#">Members</a>
@@ -52,7 +54,7 @@
         </div>
         
         <div class="dropdown">
-            <button onclick="myFunction('myDropdown2')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Project</button>
+            <button onmouseover="myFunction('myDropdown2')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Project</button>
             <div id="myDropdown2" class="dropdown-content">
                 <a href="#">Description</a>
                 <a href="#">Design</a>
@@ -66,7 +68,7 @@
         </div>
 
         <div class="dropdown">
-            <button onclick="myFunction('myDropdown3')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Labwork</button>
+            <button onmouseover="myFunction('myDropdown3')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Labwork</button>
             <div id="myDropdown3" class="dropdown-content">
                 <a href="#">Protocol</a>
                 <a href="#">Engineering</a>
@@ -79,7 +81,7 @@
         </div>
 
         <div class="dropdown">
-            <button onclick="myFunction('myDropdown4')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Human Practice</button>
+            <button onmouseover="myFunction('myDropdown4')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Human Practice</button>
             <div id="myDropdown4" class="dropdown-content">
                 <a href="#">Integrated Human Practice</a>
                 <a href="#">Education</a>
@@ -92,17 +94,17 @@
         </div>
 
         <div class="dropdown">
-            <button onclick="myFunction('myDropdown6')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Notebook</button>
+            <button onmouseover="myFunction('myDropdown6')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Notebook</button>
         
         </div>
 
         <div class="dropdown">
-            <button onclick="myFunction('myDropdown7')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Safety</button>
+            <button onmouseover="myFunction('myDropdown7')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Safety</button>
         
         </div>
 
         <div class="dropdown">
-            <button onclick="myFunction('myDropdown8')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Awards</button>
+            <button onmouseover="myFunction('myDropdown8')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Awards</button>
             <div id="myDropdown8" class="dropdown-content">
                 <a href="#">Medals</a>
                 <a href="#">Judging Form</a>
@@ -131,19 +133,19 @@
     <section class="d-flex justify-content-center p-4">
         <div>
             <a href="https://www.facebook.com/ccuigemteam/" class="me-4">
-                <div class="dropdown fab button_floating"><img src="./img/facebook.png" alt="" height="50px"></div>
+                <div class="dropdown fab button_floating"><img src="\igem6/img/facebook.png" alt="" height="50px"></div>
             </a>
             <a href="https://www.instagram.com/ccuigem/" class="me-4 text-reset">
-                <div class="dropdown fab button_floating"><img src="./img/instagram.png" alt="" height="50px"></div>
+                <div class="dropdown fab button_floating"><img src="\igem6/img/instagram.png" alt="" height="50px"></div>
             </a>
             <a href="" class="me-4 text-reset">
-                <div class="dropdown fab button_floating"><img src="./img/twitter.png" alt="" height="50px"></div>
+                <div class="dropdown fab button_floating"><img src="\igem6/img/twitter.png" alt="" height="50px"></div>
             </a>
             <a href="https://www.youtube.com/channel/UCgqSdCx7Tj3ZyxOCJNlOADQ" class="me-4 text-reset">
-                <div class="dropdown fab button_floating"><img src="./img/youtube.png" alt="" height="50px"></div>
+                <div class="dropdown fab button_floating"><img src="\igem6/img/youtube.png" alt="" height="50px"></div>
             </a>
             <a href="" class="me-4 text-reset">
-                <div class="dropdown fab button_floating"><img src="./img/gmail.png" alt="" height="50px"></div>
+                <div class="dropdown fab button_floating"><img src="\igem6/img/gmail.png" alt="" height="50px"></div>
             </a>
         </div>
     </section>
