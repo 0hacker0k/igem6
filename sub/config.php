@@ -1,7 +1,8 @@
 <?php
-define("cssfile", "./css");
-define("jsfile", "./js");
-define("webgamejsfile", "./webgamejs");
-define("imgfile", "./img");
+define("root",substr(dirname(__FILE__,2),strlen($_SERVER['DOCUMENT_ROOT'])));
+define("cssfile", root."/css");
+define("jsfile", root."/js");
+define("webgamejsfile", root."/webgamejs");
+define("imgfile", root."/img");
 // define("DB_PASSWD", "");
 ?>

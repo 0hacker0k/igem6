@@ -1,7 +1,7 @@
 <head>
   
   <title>wiki</title>
-  <?php include "./config.php";?>
+  <?php include "../sub/config.php";?>
   <?php include "../sub/head.php";?>
   
 </head>

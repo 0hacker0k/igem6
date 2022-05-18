@@ -1,4 +1,4 @@
-function preload_stage3_shoot(){
+function play_1_shoot(){
     this.load.image('background', 'img/stage2/background.png');//載入一般圖片
     load_transition(this);
     this.load.image('back', 'img/main/back.png');
@@ -23,7 +23,7 @@ function preload_stage3_shoot(){
 }
 var bullets;
 var bullets_queue=[];
-function create_stage3_shoot (){
+function play_1_shoot (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
     
@@ -105,7 +105,7 @@ function create_stage3_shoot (){
     //轉場動畫
     start_transition(this);
 }
-function update_stage3_shoot (){//與外界有關的互動
+function play_1_shoot (){//與外界有關的互動
     bullets.children.entries.forEach(item =>  {
         if(item.y>height){
             item.setVelocityX(0);
