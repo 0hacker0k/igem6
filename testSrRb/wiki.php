@@ -41,7 +41,16 @@
         <!-- <img class="person_img" src="./human/cringe.png" alt=""> -->
         <div class="social">
         
-        <?php include "../sub/popup/popup1.php";?>
+        <?php
+            $id=1;
+            $name="Leader - Cringe";
+            $content="Hello";
+            $person_img="../testSrRb/human/1a.jpg";
+            $person_img_alt="";
+            $popup_img="./human/1b.jpg";
+            $popup_img_alt="";
+            include "../sub/popup/popup.php";
+        ?>
         
         </div>
     </div>
