@@ -3,6 +3,8 @@ function play_1_preload(){
     load_transition(this);
     this.load.image('back', 'img/main/back.png');
     this.load.image('bar', 'img/main/green.png');
+    this.load.image('fire', 'img/play/fire.png');
+    this.load.image('water', 'img/play/water.png');
     // this.load.image('card_plasmid', 'img/stage2/card_back.jpg');
     // this.load.image('card_target_gene', 'img/stage2/card_target_gene.jpg');
     // for(var i=0;i<18;i++){
@@ -22,6 +24,7 @@ function play_1_preload(){
     // );
 }
 var bullets;
+var ecolis;
 var bullets_queue=[];
 function play_1_create (){
     //轉場設定
@@ -70,7 +73,7 @@ function play_1_create (){
             bullet.y=0.9*height;
             bullet.setVisible(true);
         }else{
-            bullet = bullets.create(0.5*width, 0.9*height, 'bar').setOrigin(0.5, 0).setDisplaySize(height*0.02,height*0.02);
+            bullet = bullets.create(0.5*width, 0.9*height, 'water').setOrigin(0.5, 0).setDisplaySize(height*0.02,height*0.03);
         }
         bullet.setAngle(angle);
         bullet.setBounce(1);
@@ -97,27 +100,27 @@ function play_1_create (){
         }
         console.log(cool_down);
     }
-    var ecolis = this.physics.add.staticGroup();//this.physics.add.group();
+    ecolis = this.physics.add.staticGroup();//this.physics.add.group();
     // var ecolis = this.physics.add.group();
     //ecoli
     this.physics.add.collider(bullets, ecolis, hitdown, null, this);
     for(var i=0;i<4;i++){
         for(var j=0;j<3;j++){
-            var ecoli = ecolis.create(0.3*width+0.08*width*(i+1), 0.1*height+0.1*height*j, 'bar').setOrigin(0.5, 0).setDisplaySize(width*0.06,height*0.06);
+            var ecoli = ecolis.create(0.3*width+0.08*width*(i+1), 0.2*height+0.1*height*j, 'fire').setOrigin(0.5, 1).setDisplaySize(width*0.08,height*0.15);
             ecoli.refreshBody();
-            ecoli.y-=0.015*height;
-            ecoli.health=100;
+            // ecoli.y+=0.1*height;
+            ecoli.health=80;
         }
     }
     var falling_ecolis = this.physics.add.group();
     function hitdown(bullet, ecoli){
         // var falling_ecoli = falling_ecolis.create(ecoli.x, ecoli.y, 'bar').setOrigin(0.5, 0).setDisplaySize(width*0.06,height*0.06);
         bullet.disableBody(true, true);
-        ecoli.health-=1;
-        if(ecoli.health==0){
+        ecoli.health-=2;
+        if(ecoli.health<=20){
             ecoli.disableBody(true, true);
         }else{
-            ecoli.setDisplaySize(width*0.06*ecoli.health*0.01,height*0.06*ecoli.health*0.01).refreshBody();
+            ecoli.setDisplaySize(width*0.08*ecoli.health*0.0125,height*0.15*ecoli.health*0.0125).refreshBody();
         }
         
         // falling_ecoli.setVelocityY(height*0.3);
@@ -150,6 +153,15 @@ function play_1_update (){//與外界有關的互動
         if (item.alpha < 0.001 || item.alpha > 0.999){
             item.alpha = 1;
         }*/
+    });
+    ecolis.children.entries.forEach(item =>  {
+        if(item.health<80){
+            item.health+=0.3;
+        }if(item.health<=20){
+            item.health=0;
+            item.disableBody(true, true);
+        }
+        item.setDisplaySize(width*0.08*item.health*0.0125,height*0.15*item.health*0.0125).refreshBody();
     });
     // cursors = this.input.keyboard.createCursorKeys();
 }
