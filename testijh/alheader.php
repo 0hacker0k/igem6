@@ -17,7 +17,7 @@
         </div>
         
         <div class="dropdown">
-            <button onmouseover="myFunction('myDropdown2')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Project</button>
+            <button onclick="myFunction('myDropdown2')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Project</button>
             <div id="myDropdown2" class="dropdown-content">
                 <a href="#">Description</a>
                 <a href="#">Design</a>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="dropdown">
-            <button onmouseover="myFunction('myDropdown3')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Labwork</button>
+            <button onclick="myFunction('myDropdown3')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Labwork</button>
             <div id="myDropdown3" class="dropdown-content">
                 <a href="#">Protocol</a>
                 <a href="#">Engineering</a>
@@ -44,7 +44,7 @@
         </div>
 
         <div class="dropdown">
-            <button onmouseover="myFunction('myDropdown4')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Human Practice</button>
+            <button onclick="myFunction('myDropdown4')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Human Practice</button>
             <div id="myDropdown4" class="dropdown-content">
                 <a href="#">Integrated Human Practice</a>
                 <a href="#">Education</a>
@@ -57,17 +57,17 @@
         </div>
 
         <div class="dropdown">
-            <button onmouseover="myFunction('myDropdown6')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Notebook</button>
+            <button onclick="myFunction('myDropdown6')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Notebook</button>
         
         </div>
 
         <div class="dropdown">
-            <button onmouseover="myFunction('myDropdown7')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Safety</button>
+            <button onclick="myFunction('myDropdown7')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Safety</button>
         
         </div>
 
         <div class="dropdown">
-            <button onmouseover="myFunction('myDropdown8')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Awards</button>
+            <button onclick="myFunction('myDropdown8')" class="dropbtn"><img class="drop" src="../img/drop.png" alt="">Awards</button>
             <div id="myDropdown8" class="dropdown-content">
                 <a href="#">Medals</a>
                 <a href="#">Judging Form</a>
