@@ -73,7 +73,7 @@
         <div class="social">
         <?php
             $id=2;
-            $name="Co Leader - Yuan Chi";
+            $name="Co-Lead - Yuan Chi";
             $content="
             <p>
               <ul>
@@ -98,8 +98,25 @@
       <h3>Yun Chi</h3>
         <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
         <div class="social">
-        <?php include "../sub/popup/popup3.php";?>
-
+        <?php
+            $id=3;
+            $name="Co-Lead - Yun Chi";
+            $content="
+            <p>
+              <ul>
+                <li>Department of Biomedical Science</li>
+                <br>
+                <li>16 personality: Defender</li>
+                <br>
+                <li>Paper Reader</li>            
+              </ul>
+            </p>";
+            $person_img="../testSrRb/human/3a.jpg";
+            $person_img_alt="";
+            $popup_img="./human/3e.png";
+            $popup_img_alt="";
+            include "../sub/popup/popup.php";
+        ?>
         </div>
     </div>
 
@@ -110,7 +127,25 @@
       <h3>162.8 boy</h3>
         <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
         <div class="social">
-        <?php include "../sub/popup/popup4.php";?>
+        <?php
+            $id=4;
+            $name="Wet lab - 162.8 boy";
+            $content="
+            <p>
+              <ul>
+                <li>Department of Biomedical Science</li>
+                <br>
+                <li>16 personality: Commander</li>
+                <br>
+                <li>Dry Lab Botherer</li>            
+              </ul>
+            </p>";
+            $person_img="../testSrRb/human/4a.jpg";
+            $person_img_alt="";
+            $popup_img="./human/4e.png";
+            $popup_img_alt="";
+            include "../sub/popup/popup.php";
+        ?>
 
         </div>
     </div>
@@ -119,7 +154,25 @@
       <h3>sheep</h3>
         <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
         <div class="social">
-        <?php include "../sub/popup/popup5.php";?>
+        <?php
+            $id=5;
+            $name="Dry lab - Sheep";
+            $content="
+            <p>
+              <ul>
+                <li>Department of Computer Science and Information Engineering</li>
+                <br>
+                <li>16 personality: Mediator</li>
+                <br>
+                <li>Code Builder</li>            
+              </ul>
+            </p>";
+            $person_img="../testSrRb/human/5a.jpg";
+            $person_img_alt="";
+            $popup_img="./human/5e.png";
+            $popup_img_alt="";
+            include "../sub/popup/popup.php";
+        ?>
 
         </div>
     </div>
@@ -131,19 +184,53 @@
       <h3>Tino</h3>
         <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
         <div class="social">
-        <?php include "../sub/popup/popup6.php";?>
-
+        <?php
+            $id=6;
+            $name="Human Practice - Tino";
+            $content="
+            <p>
+              <ul>
+                <li>Department of Psychology</li>
+                <br>
+                <li>16 personality: Mediator</li>
+                <br>
+                <li>Cheese Ganster</li>            
+              </ul>
+            </p>";
+            $person_img="../testSrRb/human/6a.jpg";
+            $person_img_alt="";
+            $popup_img="./human/6e.png";
+            $popup_img_alt="";
+            include "../sub/popup/popup.php";
+        ?>
         </div>
     </div>
 
-    <h1>Deputy Leaders</h1>
+    <h1>Co-Leads</h1>
 
     <div class="col-4 person">
       <h3>Yoo Chen</h3>
         <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
         <div class="social">
-        <?php include "../sub/popup/popup7.php";?>
-
+        <?php
+            $id=7;
+            $name="Wet lab - Yoo Chen";
+            $content="
+            <p>
+              <ul>
+                <li>Department of Biomedical Science</li>
+                <br>
+                <li>16 personality: Adventurer</li>
+                <br>
+                <li>Labor Protecter</li>            
+              </ul>
+            </p>";
+            $person_img="../testSrRb/human/7a.jpg";
+            $person_img_alt="";
+            $popup_img="./human/7e.png";
+            $popup_img_alt="";
+            include "../sub/popup/popup.php";
+        ?>
         </div>
     </div>
 
@@ -151,7 +238,25 @@
       <h3>SrRb</h3>
         <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
         <div class="social">
-        <?php include "../sub/popup/popup8.php";?>
+        <?php
+            $id=8;
+            $name="Dry lab - SrRb";
+            $content="
+            <p>
+              <ul>
+                <li>Department of Biomedical Science</li>
+                <br>
+                <li>16 personality: Entertainer</li>
+                <br>
+                <li>Food Orderer</li>            
+              </ul>
+            </p>";
+            $person_img="../testSrRb/human/8a.jpg";
+            $person_img_alt="";
+            $popup_img="./human/8e.png";
+            $popup_img_alt="";
+            include "../sub/popup/popup.php";
+        ?>
 
         </div>
     </div>
@@ -160,8 +265,25 @@
       <h3>Yi Yun</h3>
         <!-- <img class="person_img" src="./human/Yun Chi Chiu.png" alt=""> -->
         <div class="social">
-        <?php include "../sub/popup/popup9.php";?>
-
+        <?php
+            $id=9;
+            $name="Human Practice - Yi Yun";
+            $content="
+            <p>
+              <ul>
+                <li>Department of Biomedical Science</li>
+                <br>
+                <li>16 personality: Campaigner</li>
+                <br>
+                <li>Ha Ha Ha er</li>            
+              </ul>
+            </p>";
+            $person_img="../testSrRb/human/9a.jpg";
+            $person_img_alt="";
+            $popup_img="./human/9e.png";
+            $popup_img_alt="";
+            include "../sub/popup/popup.php";
+        ?>
         </div>
     </div>
 
