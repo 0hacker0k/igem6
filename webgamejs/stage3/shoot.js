@@ -239,7 +239,6 @@ function create_stage3_shoot (){
         cool_down_reduce_status=setTimeout(function(){
             cool_down_reduce(cool_down);
         },25);
-        // console.log(bullets_queue.length);
     },this);
     //設定子彈冷卻時間
     function cool_down_reduce(count){
@@ -530,11 +529,5 @@ function update_stage3_shoot (){//與外界有關的互動
             item.alpha = 1;
         }*/
     });
-    var pointer = this.input.activePointer;
-
-    console.log([
-        'isDown: ' + pointer.isDown,
-        'rightButtonDown: ' + pointer.rightButtonDown()
-    ]);
     // cursors = this.input.keyboard.createCursorKeys();
 }
