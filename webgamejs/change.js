@@ -4,9 +4,16 @@ function loading_transition (where,x,y){//載入黑畫面
 }
 function start_transition (where){//畫面漸亮
     transition.setVelocityX(-2500*width/800);
-    anime=setTimeout(function(){
-        transition.setVelocityX(0);
-    },1200);
+    function keep_move(){
+        if(transition.x<-2.1*width){
+            transition.setVelocityX(0);
+        }else{
+            anime=setTimeout(function(){
+                keep_move();
+            },200);
+        }
+            
+    }keep_move();
 }
 function finish_transition (where,x,y){//畫面漸暗
     clearTimeout(anime);
