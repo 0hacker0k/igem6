@@ -156,9 +156,9 @@ function create_stage3_shoot (){
     var first=this.physics.add.sprite(0.485*width, 0.9*height, 'plastid').setOrigin(0.5, 0.5).setDisplaySize(height*0.02,height*0.02);
     first.anims.play(next_bullet[0].toString());
     second.anims.play(next_bullet[1].toString());
-    first.x=0.5*width;
+    first.x=0.485*width;
     first.y=0.87*height;
-    second.x=0.5*width;
+    second.x=0.485*width;
     second.y=0.95*height;
     var cool_down=0;
     var cool_down_reduce_status=null;
@@ -200,15 +200,15 @@ function create_stage3_shoot (){
     // this.physics.add.collider(bullets, bullets);
     //alert(this.scale.isLandscape);//橫屏
     //bullet
-    var status=1;
-    this.input.on('pointerdown', function (pointer) {
+    var status=0;
+    
+    this.input.on('pointerup', function (pointer) {
         if(cool_down!=0){
             return ;
         }
-        if(status){
-            ecoli_falling();
-            status=0;
-        }
+        // if(status){
+        //     status=0;
+        // }
         var bullet;
         if(bullets_queue.length>0){
             bullet=bullets_queue.pop();
@@ -329,7 +329,7 @@ function create_stage3_shoot (){
         setTimeout(function(){
             ecoli_falling();
         },30);
-    }
+    }ecoli_falling();
     //目標物彼此碰撞
     // this.physics.add.collider(ecolis, ecolis, merge, null, this);
     // function merge(ecoli1, ecoli2){
@@ -529,5 +529,11 @@ function update_stage3_shoot (){//與外界有關的互動
             item.alpha = 1;
         }*/
     });
+    var pointer = this.input.activePointer;
+
+    console.log([
+        'isDown: ' + pointer.isDown,
+        'rightButtonDown: ' + pointer.rightButtonDown()
+    ]);
     // cursors = this.input.keyboard.createCursorKeys();
 }
