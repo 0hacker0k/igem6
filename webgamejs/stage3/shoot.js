@@ -131,7 +131,7 @@ function create_stage3_shoot (){
         next_bullet.push(myrand());
     }
     function myrand(){
-        return 3;
+        // return 3;
         if(rand_buffer.length<1){
             for(var i=0;i<15;i++){
                 var rnd=Math.floor(Math.random()*15);
