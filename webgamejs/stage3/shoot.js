@@ -88,8 +88,41 @@ function create_stage3_shoot (){
             next_bullet.push(i+1);
         }
     }
+    var rand_buffer=[];
+    var rand_list=[];
+    for(var i=0;i<15;i++){
+        rand_list.push(i%5);
+    }
+    for(var i=0;i<15;i++){
+        var rnd=Math.floor(Math.random()*15);
+        var temp=rand_list[i];
+        rand_list[i]=rand_list[rnd];
+        rand_list[rnd]=temp;
+    }
+    for(var i=0;i<15;i++){
+        rand_buffer.push(rand_list[i]);
+    }
     for(var i=0;i<2;i++){
-        next_bullet.push(Math.floor(Math.random()*5+1));
+        next_bullet.push(myrand());
+    }
+    function myrand(){
+        if(rand_buffer.length<1){
+            rand_list=[];
+            for(var i=0;i<15;i++){
+                rand_list.push(i%5);
+            }
+            for(var i=0;i<15;i++){
+                var rnd=Math.floor(Math.random()*15);
+                var temp=rand_list[i];
+                rand_list[i]=rand_list[rnd];
+                rand_list[rnd]=temp;
+            }
+            for(var i=0;i<15;i++){
+                rand_buffer.push(rand_list[i]);
+            }
+            
+        }
+        return rand_buffer.pop();
     }
     //瞄準線產生
     for(var i=aim_count-1;i>=0;i--){
@@ -169,7 +202,7 @@ function create_stage3_shoot (){
             bullet.type=next_bullet.shift();
             bullet.anims.play(bullet.type.toString());
         }
-        next_bullet.push(Math.floor(Math.random()*5+1));
+        next_bullet.push(myrand());
         bullet.setAngle(angle);
         bullet.setBounce(1);
         // bullet.setCollideWorldBounds(true,0.5,0.5);
@@ -209,8 +242,8 @@ function create_stage3_shoot (){
     // var ecolis = this.physics.add.group();
     //ecoli
     for(var i=0;i<4;i++){
-        for(var j=0;j<3;j++){
-            var ecoli = ecolis.create(0.3*width+0.08*width*(i+1), 0.1*height+0.1*height*j, 'bar').setOrigin(0.5, 0.5).setDisplaySize(width*0.06,height*0.06);
+        for(var j=7-i;j>=0;j--){
+            var ecoli = ecolis.create(0.1*width+0.08*width*(j+1)+0.04*i*width, 0.1*height+0.1*height*i, 'bar').setOrigin(0.5, 0.5).setDisplaySize(width*0.06,height*0.06);
             ecoli.refreshBody();
             // ecoli.y-=0.015*height;
             ecoli.plastid=[];
@@ -255,6 +288,9 @@ function create_stage3_shoot (){
             }
             if(item.check==1){
                 y_v=8.8;
+                x_v=0;
+            }
+            if(item.x<=0.13*width || item.x>=0.77*width){
                 x_v=0;
             }
             item.y+=y_v;
