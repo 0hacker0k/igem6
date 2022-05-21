@@ -98,8 +98,7 @@ function create_stage3_shoot (){
         },100);
     }
     var guns = this.physics.add.group();
-    var gun = guns.create(0.5*width, 0.95*height, 'gun').setOrigin(0.5, 0).setDisplaySize(0.01*width,height*0.08);
-    gun.setAngle(180);
+    var gun = guns.create(0.485*width, 0.95*height, 'gun').setOrigin(0.5, 1).setDisplaySize(0.02*width,height*0.08);
     var score_text=this.add.text(width*0.98, height*0.15, '0', { fontFamily: 'fantasy', fontSize: (width*0.07).toString()+'px', fill: '#111111' }).setOrigin(1, 1);
     var score=0;
     var angle;
@@ -153,8 +152,8 @@ function create_stage3_shoot (){
     }
     //滑鼠移動 瞄準線移動
     var scale1,scale2;
-    var second=this.physics.add.sprite(0.5*width, 0.9*height, 'plastid').setOrigin(0.5, 0.5).setDisplaySize(height*0.02,height*0.02);
-    var first=this.physics.add.sprite(0.5*width, 0.9*height, 'plastid').setOrigin(0.5, 0.5).setDisplaySize(height*0.02,height*0.02);
+    var second=this.physics.add.sprite(0.485*width, 0.9*height, 'plastid').setOrigin(0.5, 0.5).setDisplaySize(height*0.02,height*0.02);
+    var first=this.physics.add.sprite(0.485*width, 0.9*height, 'plastid').setOrigin(0.5, 0.5).setDisplaySize(height*0.02,height*0.02);
     first.anims.play(next_bullet[0].toString());
     second.anims.play(next_bullet[1].toString());
     first.x=0.5*width;
@@ -168,9 +167,9 @@ function create_stage3_shoot (){
         delta_x=pointer.x-gun.x;
         delta_y=pointer.y-gun.y;
         if(pointer.x-gun.x>0){
-            angle=Math.atan((delta_y)/(delta_x))/Math.PI*180-90;
-        }else{
             angle=Math.atan((delta_y)/(delta_x))/Math.PI*180+90;
+        }else{
+            angle=Math.atan((delta_y)/(delta_x))/Math.PI*180-90;
         }
         gun.setAngle(angle);
         scale1=20/Math.sqrt((delta_x*delta_x)+(delta_y*delta_y));
