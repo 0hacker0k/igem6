@@ -91,7 +91,7 @@ function create_stage3_shoot (){
     var rand_buffer=[];
     var rand_list=[];
     for(var i=0;i<15;i++){
-        rand_list.push(i%5);
+        rand_list.push(i%5+1);
     }
     for(var i=0;i<15;i++){
         var rnd=Math.floor(Math.random()*15);
@@ -107,10 +107,6 @@ function create_stage3_shoot (){
     }
     function myrand(){
         if(rand_buffer.length<1){
-            rand_list=[];
-            for(var i=0;i<15;i++){
-                rand_list.push(i%5);
-            }
             for(var i=0;i<15;i++){
                 var rnd=Math.floor(Math.random()*15);
                 var temp=rand_list[i];
