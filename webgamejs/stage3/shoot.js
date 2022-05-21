@@ -131,6 +131,7 @@ function create_stage3_shoot (){
         next_bullet.push(myrand());
     }
     function myrand(){
+        return 3;
         if(rand_buffer.length<1){
             for(var i=0;i<15;i++){
                 var rnd=Math.floor(Math.random()*15);
@@ -311,7 +312,7 @@ function create_stage3_shoot (){
                 y_v=8.8;
                 x_v=0;
             }
-            if(item.x<=0.13*width || item.x>=0.77*width){
+            if(item.x<=0.168*width || item.x>=0.812*width){
                 x_v=0;
             }
             item.y+=y_v;
