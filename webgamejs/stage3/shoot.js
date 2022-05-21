@@ -1,12 +1,19 @@
 function preload_stage3_shoot(){
-    this.load.image('background', 'img/stage2/background.png');//載入一般圖片
+    this.load.image('background', 'img/stage3/background.jpg');//載入一般圖片
     load_transition(this);
     this.load.image('back', 'img/main/back.png');
     this.load.image('bar', 'img/main/green.png');
+    this.load.image('ecoli', 'img/stage3/ecoli.png');
+    this.load.image('ecoli_break', 'img/stage3/ecoli_break.png');
+    this.load.image('aim', 'img/stage3/aim.png');
+    this.load.image('gun', 'img/stage3/gene_gun.png');
     this.load.spritesheet('plastid',
         'img/stage3/plastid.png',
-        { frameWidth: 685, frameHeight: 685 }
+        { frameWidth: 30, frameHeight: 30 }
     );
+    for(var i=1;i<=5;i++){
+        this.load.image('antibiotic_'+i.toString(), 'img/stage3/'+'antibiotic_'+i.toString()+'.png');
+    }
     // this.load.image('card_plasmid', 'img/stage2/card_back.jpg');
     // this.load.image('card_target_gene', 'img/stage2/card_target_gene.jpg');
     // for(var i=0;i<18;i++){
@@ -27,6 +34,7 @@ function preload_stage3_shoot(){
 }
 var bullets;
 var bullets_queue=[];
+var common_array=[];
 function create_stage3_shoot (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
@@ -66,13 +74,31 @@ function create_stage3_shoot (){
     }
     this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
     var bars = this.physics.add.staticGroup();
-    bars.create(0.10*width, 0, 'bar').setOrigin(0, 0).setDisplaySize(0.01*width,height).refreshBody();
-    bars.create(0.80*width, 0, 'bar').setOrigin(0, 0).setDisplaySize(0.01*width,height).refreshBody();
-    bars.create(0.10*width, 0, 'bar').setOrigin(0, 0).setDisplaySize(0.7*width,0.01*height).refreshBody();
+    bars.create(0.126*width, 0, 'bar').setOrigin(0, 0).setDisplaySize(0.01*width,height).refreshBody().alpha=0;
+    bars.create(0.844*width, 0, 'bar').setOrigin(0, 0).setDisplaySize(0.01*width,height).refreshBody().alpha=0;
+    bars.create(0.126*width, 0, 'bar').setOrigin(0, 0).setDisplaySize(0.718*width,0.01*height).refreshBody().alpha=0;
     var bottom = this.physics.add.staticGroup();
-    bottom.create(0.10*width, 0.80*height, 'bar').setOrigin(0, 0).setDisplaySize(0.7*width,0.01*height).refreshBody();
+    common_array=[];
+    for(var i=1;i<=5;i++){
+        common_array[i-1]=bottom.create(0.131*width, 0.80*height, 'antibiotic_'+i.toString()).setOrigin(0, 0).setDisplaySize(0.718*width,0.02*height).refreshBody();
+    }
+    laser(0);
+    function laser(light){
+        for(var i=0;i<5;i++){
+            if(i==light){
+                common_array[i].alpha=1;
+                continue;
+            }
+            common_array[i].alpha=0.3;
+        }
+        light++;
+        if(light>=5)light=0;
+        setTimeout(function(){
+            laser(light);
+        },100);
+    }
     var guns = this.physics.add.group();
-    var gun = guns.create(0.5*width, 0.95*height, 'bar').setOrigin(0.5, 0).setDisplaySize(0.01*width,height*0.08);
+    var gun = guns.create(0.5*width, 0.95*height, 'gun').setOrigin(0.5, 0).setDisplaySize(0.01*width,height*0.08);
     gun.setAngle(180);
     var score_text=this.add.text(width*0.98, height*0.15, '0', { fontFamily: 'fantasy', fontSize: (width*0.07).toString()+'px', fill: '#111111' }).setOrigin(1, 1);
     var score=0;
@@ -122,7 +148,7 @@ function create_stage3_shoot (){
     }
     //瞄準線產生
     for(var i=aim_count-1;i>=0;i--){
-        aim[i]=aims.create(0, 0, 'bar').setOrigin(0.5, 0.5).setDisplaySize(0.01*width,0.01*width);
+        aim[i]=aims.create(-width, -width, 'aim').setOrigin(0.5, 0.5).setDisplaySize(0.01*width,0.01*width);
         aim[i].id=i;
     }
     //滑鼠移動 瞄準線移動
@@ -153,10 +179,10 @@ function create_stage3_shoot (){
             aim[i].y=delta_y*scale1*(i+8)+gun.y;
             aim[i].alpha=1;
             while(1){
-                if(aim[i].x < (0.1+0.015)*width){
-                    aim[i].x=2*(0.1+0.015)*width-aim[i].x;
-                }else if(aim[i].x > (0.8-0.0052)*width){
-                    aim[i].x=2*(0.8-0.0052)*width-aim[i].x;
+                if(aim[i].x < (0.126+0.015)*width){
+                    aim[i].x=2*(0.126+0.015)*width-aim[i].x;
+                }else if(aim[i].x > (0.844-0.0052)*width){
+                    aim[i].x=2*(0.844-0.0052)*width-aim[i].x;
                 }else if(aim[i].y < (0.01+0.0075)*height){
                     aim[i].y=2*(0.01+0.0075)*height-aim[i].y;
                 }else{
@@ -239,7 +265,7 @@ function create_stage3_shoot (){
     //ecoli
     for(var i=0;i<4;i++){
         for(var j=7-i;j>=0;j--){
-            var ecoli = ecolis.create(0.1*width+0.08*width*(j+1)+0.04*i*width, 0.1*height+0.1*height*i, 'bar').setOrigin(0.5, 0.5).setDisplaySize(width*0.06,height*0.06);
+            var ecoli = ecolis.create(0.126*width+0.08*width*(j+1)+0.04*i*width, 0.1*height+0.1*height*i, 'ecoli').setOrigin(0.5, 0.5).setDisplaySize(width*0.06,height*0.06);
             ecoli.refreshBody();
             // ecoli.y-=0.015*height;
             ecoli.plastid=[];
@@ -375,10 +401,10 @@ function create_stage3_shoot (){
     //     }
     // }
     this.physics.add.collider(bullets, ecolis, hit, null, this);
-    var falling_ecolis = this.physics.add.group();
+    var ecolis_breaken = this.physics.add.group();
     //擊中目標物
     function hit(bullet, ecoli){
-        // var falling_ecoli = falling_ecolis.create(ecoli.x, ecoli.y, 'bar').setOrigin(0.5, 0).setDisplaySize(width*0.06,height*0.06);
+        // var ecoli_breaken = ecolis_breaken.create(ecoli.x, ecoli.y, 'bar').setOrigin(0.5, 0).setDisplaySize(width*0.06,height*0.06);
         if(ecoli.check==1){
             return;
         }
@@ -392,12 +418,14 @@ function create_stage3_shoot (){
         // }
         bullet.disableBody(true, false);
         if(ecoli.plastid_count==5){//原先已經有五個
-            ecoli.disableBody(true, false);
+            ecoli.disableBody(true, true);
+            ecoli.check=-1;
             for(var i=0;i<5;i++){
                 ecoli.plastid.pop().disableBody(true, true);
             }bullet.disableBody(true, true);
             // bullet.disableBody(true, true);
-            ecoli_die(ecoli,40);
+            var ecoli_breaken = ecolis_breaken.create(ecoli.x, ecoli.y, 'ecoli_break').setOrigin(0.5, 0.5).setDisplaySize(width*0.06,height*0.06);
+            ecoli_die(ecoli_breaken,40);
             return ;
         }
         bullet.setVelocityX(0);
@@ -458,7 +486,7 @@ function create_stage3_shoot (){
     this.physics.add.collider(ecolis, bottom, dead_check, null, this);
     function dead_check(ecoli, bottom){
         var state=2;
-        if(ecoli.check==1)return ;
+        if(ecoli.check==1||ecoli.check==-1)return ;
         for(var i=0;i<ecoli.plastid_count;i++){
             ecoli.plastid[i].type=-1;
         }
@@ -467,7 +495,11 @@ function create_stage3_shoot (){
             for(var i=0;i<ecoli.plastid_count;i++){
                 ecoli.plastid.pop().disableBody(true, true);
             }
-            ecoli_die(ecoli,40);
+            ecoli.plastid_count=0;
+            ecoli.check=-1;
+            ecoli.disableBody(true, true);
+            var ecoli_breaken = ecolis_breaken.create(ecoli.x, ecoli.y, 'ecoli_break').setOrigin(0.5, 0.5).setDisplaySize(width*0.06,height*0.06);
+            ecoli_die(ecoli_breaken,40);
         }
         
     }
