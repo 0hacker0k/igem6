@@ -14,8 +14,9 @@
         }
     </style> -->
 </head>
-<body>
+<body onload="load_finish()">
     <?php include "sub/header.php"?>
+    <?php include "sub/loading.php"?>
     <!-- <div style="text-align: center;">
         <div>hiuuuu</div>
     </div> -->
