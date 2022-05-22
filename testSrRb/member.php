@@ -24,9 +24,9 @@
   <br>
   <br>
 
-  <div class="member_card row justify-content-between">
+  <div class="member_card row justify-content-around">
 
-    <div class="col-12">
+    <div class="col-6">
       <h1>Introduction</h1>
       <p>CCU_Taiwan is established in the year of 2017. Our team consists of twenty-one passionate students. We are a multidisciplinary team as our team members have different professional background from five departments.</p>
 
