@@ -3,25 +3,31 @@
   <title>wiki</title>
   <?php include "../sub/config.php";?>
   <?php include "../sub/head.php";?>
-  
+  <script type="text/javascript">
+
+
+</script>
 </head>
 
-<body>
-
-  <div id="preloader">
-    <div id="status"><img src="./human/loading.gif"/></div>
-  </div>
+  <body onload="loadingFunction()">
 
   <?php include "../sub/header.php"?>
 
 
-  
-    <img class="full_size_image" src="./human/fullimage.jpg" alt="">
+  <img class="loading" src="./human/loading.gif" alt="">
+
+
+  <script>
+    function loadingFunction(){
+      $(".loading").fadeOut();
+    }
+  </script>
+
+  <img class="full_size_image" src="./human/fullimage.jpg" alt="">
 
     
 
   </div> 
-
 
 
   <br>
@@ -320,7 +326,6 @@
 
      
 
-    
         
       
     
