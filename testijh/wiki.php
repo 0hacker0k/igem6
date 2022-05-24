@@ -19,7 +19,7 @@
 
   <script>
     function loadingFunction(){
-      $(".loading").fadeOut();
+      $(".loading").delay(1000).fadeOut();
     }
   </script>
 
