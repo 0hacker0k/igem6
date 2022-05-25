@@ -11,6 +11,7 @@ define("cssfile", root."/css");
 define("jsfile", root."/js");
 define("webgamejsfile", root."/webgamejs");
 define("imgfile", root."/img");
+define("subfile", root."/sub");
 // define("DB_PASSWD", "");
 //    /data1/adm/webteam.ccu.edu.tw/WWW/phaser
 //    /data1/adm/www013001.ccu.edu.tw
