@@ -6,6 +6,6 @@
 <script src="<?php echo webgamejsfile;?>/stage2/flop.js"></script>
 <script src="<?php echo webgamejsfile;?>/stage3/shoot.js"></script>
 <script src="<?php echo webgamejsfile;?>/play/shoot.js"></script>
-
+<script src="<?php echo webgamejsfile;?>/play/billiard.js"></script>
 <script src="<?php echo webgamejsfile;?>/change.js"></script>
 <script src="<?php echo webgamejsfile;?>/index.js"></script>

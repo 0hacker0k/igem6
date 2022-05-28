@@ -124,6 +124,12 @@ const play_1={
     create: play_1_create,
     update: play_1_update
 }
+const play_2={
+    key: 'play_2',
+    preload: play_2_preload,
+    create: play_2_create,
+    update: play_2_update
+}
 function load(){
     if(page==null){
         load_page(map_1);
@@ -141,8 +147,11 @@ function load(){
             case "stage3":
                 load_page(stage_3_shoot);
                 break;
-            case "play":
+            case "play1":
                 load_page(play_1);
+                break;
+            case "play2":
+                load_page(play_2);
                 break;
         }
     }
