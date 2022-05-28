@@ -69,7 +69,7 @@
                 <li>Meme Spreader</li>            
               </ul>
             </p>";
-            $person_img="../testSrRb/human/1a.jpg";
+            $person_img="../img/human/1a.jpg";
             $person_img_alt="";
             $popup_img="./human/1e.png";
             $popup_img_alt="";
