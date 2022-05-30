@@ -8,6 +8,12 @@ body{
   }
 
 
+  .blank{
+    margin-top:200px;
+    margin-bottom:200px;
+  }
+
+
   .header{
     width:100%;
     height:200px;
@@ -23,7 +29,6 @@ body{
     margin-left: 180px;
     border-radius:20px;
     height:1200px;
-    
     
   }
 
@@ -64,12 +69,13 @@ body{
     color:#EA2B1F;
     border-radius: 1%;
     /* border: 0cm; */
-    width:50%;
-    text-align:center;
+    width:40%;
+    text-align:left;
     margin-left:490px;
     border:0px;
     margin-bottom:40px;
     border-radius: 14px;
+    padding: 10px;
   }
 
   .midbutton:hover {
@@ -111,17 +117,20 @@ body{
 
   .leftlabel{
     width:180px;
-    margin-left:40px;
+    margin-left:20px;
     margin-top:30px;
     font-size:40px;
     text-align: left;
     padding-left:15px;
     border:0px;
+    position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
+    right: 20px;
+    
   }
 
   .leftlabel:hover {
     position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
-    right: 20px;
+    right: 0px;
   }
 
   .leftlabel1{

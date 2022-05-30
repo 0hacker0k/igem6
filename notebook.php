@@ -9,14 +9,10 @@
 
 <body>
 
-  <?php include "./sub/header.php"?>
+  
+  <!-- <?php include "./sub/header.php"?> -->
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
 
   <div class="blank">
 
@@ -110,12 +106,7 @@
   </div>
 
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  
 
   <?php include "./sub/footer.php"?>
 
