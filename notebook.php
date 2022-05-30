@@ -25,27 +25,102 @@
   <br>
   <br>
 
-  <div class="out">
+  <div class="blank">
 
-    <h1>NOTEBOOK</h1>
-    <hr>  
+      <div class="top">
 
-    <ul>
-      <li>
-        <button type="button">WET LAB</button>
-      </li>
+        <ul>
+            <li>
+                <button type="button" class="toplabel toplabel1">WET LAB</button>
+            </li>
+
+            <li>
+                <button type="button" class="toplabel">DRY LAB</button>
+            </li>
+
+            <li>
+                <button type="button" class="toplabel">HP</button>
+            </li>
+
+            <li>
+                <button type="button" class="toplabel">TIMELINE</button>
+            </li>
+        </ul>
+
+      </div>
+
+    <div class="left">
+
+        <ul>
+          <li>
+              <button type="button" class="leftlabel leftlabel1">MAY.</button>
+          </li>
+
+          <li>
+              <button type="button" class="leftlabel leftlabel2">JUN.</button>
+          </li>
+
+          <li>
+              <button type="button" class="leftlabel leftlabel3">JUL.</button>
+          </li>
+
+          <li>
+              <button type="button" class="leftlabel leftlabel4">AUG.</button>
+          </li>
+
+          <li>
+              <button type="button" class="leftlabel leftlabel5">SEP.</button>
+          </li>
+
+          <li>
+              <button type="button" class="leftlabel leftlabel6">OCT.</button>
+          </li>
+        </ul>
+
+    </div>
+
+    
+
+
       
-      <li>
-      <button type="button">DRY LAB</button>
-      </li>
-      
-      <li>
-      <button type="button">HP</button>
-      </li>
 
-    </ul>
-  
+      
+
+
+      <div class="out">  
+
+
+
+      
+      
+
+          
+
+        <div class="mid">
+
+          <h1>NOTEBOOK</h1>
+          <!-- <hr> -->
+            <ul>
+              <li>
+                <button type="button" class="midbutton">WET LAB</button>
+              </li>
+              
+              <li>
+                <button type="button" class="midbutton">DRY LAB</button>
+              </li>
+              
+              <li>
+                <button type="button" class="midbutton">HP</button>
+              </li>
+
+            </ul>
+        </div>
+      
+    </div>
+    
   </div>
+
+  </div> 
 
 
   

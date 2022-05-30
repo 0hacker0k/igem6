@@ -19,13 +19,16 @@ body{
   .out{
     background-color: #FFFFF0;
     border: solid 20px #AC6E52;
-    margin:40px;
+    margin-right:40px;
+    margin-left: 180px;
     border-radius:5%;
+    
+    
   }
 
   h1{
     color:#EA2B1F;
-    font-size: 150px !important;
+    font-size: 120px !important;
     text-align: center;
     text-shadow: 0.05em 0.05em #900902;
   }
@@ -33,21 +36,103 @@ body{
 
 
 
-  hr{
+  /* hr{
     color:#900902;
     height:10px;
     border: 5px solid #900902;
     padding-top:0px;
     margin-left:100px ;
     margin-right:100px ;
+    margin-bottom: 0%;
+  } */
+
+
+  .mid{
+    /* width:20%; */
+    /* margin-top:200px; */
+    align-content: center;
+    /* 這為啥不能用啊==害我只能用padding left喬 */
+    
   }
 
-  button{
-    font-size:120px;
+
+  .midbutton{
+    font-size:50px;
     background-color: #FFFFF0;
     color:#EA2B1F;
     border-radius: 1%;
     /* border: 0cm; */
+    width:50%;
+    text-align:center;
+    margin-left:500px;
+    border:0px;
+    margin-bottom: 50px;
+  }
+
+  .top{
+    /* padding-bottom:20px; */
+    align-content:left;
+
+  }
+
+  .toplabel1{
+    margin-left: 200px;
+  
+  }
+
+  .toplabel{
+    margin-top: -35px;
+    padding:10px;
+    font-size:40px;
+    border:0px;
+    background-color: #764028;
+    color:white;
+    border-radius: 14px;
+    width:auto;
+     
+  }
+
+  .left{
+    width:20%;
+    align-content: left;
+  }
+
+  .leftlabel{
+    width:180px;
+    margin-left:40px;
+    margin-top:30px;
+    font-size:40px;
+    text-align: left;
+    padding-left:15px;
+    border:0px;
+  }
+
+  .leftlabel1{
+    background-color: #f85c70;
+  }
+
+  .leftlabel2{
+    background-color: #05e0e9;
+  }
+
+  .leftlabel3{
+    background-color: #c8b3ee;
+  }
+
+  .leftlabel4{
+    background-color: #ff9a5c;
+  }
+
+  .leftlabel5{
+    background-color: #c9e265;
+  }
+
+  .leftlabel6{
+    background-color: #ffde59;
   }
 
   
+
+  /* li{
+    display: flex;
+  } */
