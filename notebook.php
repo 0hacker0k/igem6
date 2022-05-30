@@ -10,7 +10,7 @@
 <body>
 
   
-  <!-- <?php include "./sub/header.php"?> -->
+  <?php include "./sub/header.php"?>
 
 
 
