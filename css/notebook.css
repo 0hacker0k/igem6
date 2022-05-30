@@ -21,7 +21,8 @@ body{
     border: solid 20px #AC6E52;
     margin-right:40px;
     margin-left: 180px;
-    border-radius:5%;
+    border-radius:20px;
+    height:1200px;
     
     
   }
@@ -31,27 +32,28 @@ body{
     font-size: 120px !important;
     text-align: center;
     text-shadow: 0.05em 0.05em #900902;
+    background-color: #fffff0;
   }
 
 
 
 
-  /* hr{
+  hr{
     color:#900902;
     height:10px;
     border: 5px solid #900902;
     padding-top:0px;
     margin-left:100px ;
     margin-right:100px ;
-    margin-bottom: 0%;
-  } */
+    
+  }
 
 
   .mid{
-    /* width:20%; */
+    width:20%;
     /* margin-top:200px; */
-    align-content: center;
-    /* 這為啥不能用啊==害我只能用padding left喬 */
+    /* align-content: center; */
+    /* 這為啥不能用啊==害我只能用padding left喬（.midbutton{　margin-left:490px;） */
     
   }
 
@@ -64,9 +66,15 @@ body{
     /* border: 0cm; */
     width:50%;
     text-align:center;
-    margin-left:500px;
+    margin-left:490px;
     border:0px;
-    margin-bottom: 50px;
+    margin-bottom:40px;
+    border-radius: 14px;
+  }
+
+  .midbutton:hover {
+    background-color: #FFCAE7;
+  
   }
 
   .top{
@@ -92,6 +100,10 @@ body{
      
   }
 
+  .toplabel:hover {
+    background-color: #B86B3D;
+  }
+
   .left{
     width:20%;
     align-content: left;
@@ -105,6 +117,11 @@ body{
     text-align: left;
     padding-left:15px;
     border:0px;
+  }
+
+  .leftlabel:hover {
+    position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
+    right: 20px;
   }
 
   .leftlabel1{
@@ -136,3 +153,5 @@ body{
   /* li{
     display: flex;
   } */
+
+  
