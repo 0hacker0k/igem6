@@ -1,4 +1,4 @@
-<header class="navbar navbar-expand-lg navbar-light main-bg-color" style="z-index:10000;">
+<header class="navbar navbar-expand-lg navbar-light main-bg-color" style="z-index:10000;" id="navbar">
     <div class="logo d-inline-flex p-2 bd-highlight">
         <a href="https://www.google.com/">
             <img src="<?php echo imgfile;?>/brand.png" alt="logo" class="brand">

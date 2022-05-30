@@ -35,20 +35,22 @@
         $("#id12").hide();
         $("#id21").hide();
         $("#id22").hide();
-        switch(id){
-            case 11:
-                $("#id11").show();
-                break;
-            case 12:
-                $("#id12").show();
-                break;
-            case 21:
-                $("#id21").show();
-                break;
-            case 21:
-                $("#id22").show();
-                break;
-        }
+        
+        // switch(id){
+        //     case 11:
+        //         $("#id11").show();
+        //         break;
+        //     case 12:
+        //         $("#id12").show();
+        //         break;
+        //     case 21:
+        //         $("#id21").show();
+        //         break;
+        //     case 21:
+        //         $("#id22").show();
+        //         break;
+        // }
+
         // function loadingFunction(){
         //     $("#id"+(y+x)).delay(1000).hide();
         // }

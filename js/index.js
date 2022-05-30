@@ -32,3 +32,4 @@ window.onclick = function(event) {
 function loadingFunction(){
         $(".loading").delay(1000).fadeOut();
       }
+
