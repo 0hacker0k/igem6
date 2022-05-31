@@ -144,24 +144,9 @@
             }
         }
 
-        $("#id11").hide();
-        $("#id12").hide();
-        $("#id13").hide();
-        $("#id14").hide();
-        $("#id15").hide();
-        $("#id16").hide();
-        $("#id21").hide();
-        $("#id22").hide();
-        $("#id23").hide();
-        $("#id24").hide();
-        $("#id25").hide();
-        $("#id26").hide();
-        $("#id31").hide();
-        $("#id32").hide();
-        $("#id33").hide();
-        $("#id34").hide();
-        $("#id35").hide();
-        $("#id36").hide();
+        for(i=11; i<=36; i++){
+            $("#id"+(i)).hide();
+        }
 
     </script>
 
