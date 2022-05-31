@@ -1,15 +1,15 @@
 <head>
   
   <title>wiki</title>
-  <?php include "./sub/config.php";?>
-  <?php include "./sub/head.php";?>
+  <?php include "../sub/config.php";?>
+  <?php include "../sub/head.php";?>
   <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook.css">
   
 </head>
 
 <body>
 
-  <?php include "./sub/header.php"?>
+  <?php include "../sub/header.php"?>
 
   <br>
   <br>
@@ -83,15 +83,15 @@
 
               <ul>
                 <li>
-                  <button type="button" class="midbutton" onclick="switchbtn(11)"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">WET LAB</button>
+                  <button type="button" class="midbutton" onclick="switchbtn(10)"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">WET LAB</button>
                 </li>
                 
                 <li>
-                  <button type="button" class="midbutton" onclick="switchbtn(21)"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">DRY LAB</button>
+                  <button type="button" class="midbutton" onclick="switchbtn(20)"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">DRY LAB</button>
                 </li>
                 
                 <li>
-                  <button type="button" class="midbutton" onclick="switchbtn(31)"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">HUMAN PRACTICE</button>
+                  <button type="button" class="midbutton" onclick="switchbtn(30)"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">HUMAN PRACTICE</button>
                 </li>
               </ul>
 
@@ -131,7 +131,7 @@
   </div>
 
   <script>
-        var x=0,y=10;
+        var x=1,y=10;
         function switchbtn(id){
             $("#mid").hide();
             $("#id"+(y+x)).hide();
@@ -139,7 +139,9 @@
             else x=id;
             id=x+y;
             $("#id"+(y+x).toString()).show();
-            
+            while(id==10^id==20^id==30){
+                
+            }
         }
 
         $("#id11").hide();
@@ -170,6 +172,6 @@
   <br>
   <br>
 
-  <?php include "./sub/footer.php"?>
+  <?php include "../sub/footer.php"?>
 
 </body>
