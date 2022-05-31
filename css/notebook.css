@@ -71,7 +71,7 @@ body{
     /* border: 0cm; */
     width:40%;
     text-align:left;
-    margin-left:490px;
+    margin-left:590px;
     border:0px;
     margin-bottom:40px;
     border-radius: 14px;
@@ -124,13 +124,13 @@ body{
     padding-left:15px;
     border:0px;
     position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
-    right: 20px;
+    right: 0px;
     
   }
 
   .leftlabel:hover {
     position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
-    right: 0px;
+    right: 20px;
   }
 
   .leftlabel1{
