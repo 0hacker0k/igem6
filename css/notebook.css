@@ -8,10 +8,10 @@ body{
   }
 
 
-  .blank{
+  /* .blank{
     margin-top:200px;
     margin-bottom:200px;
-  }
+  } */
 
 
   .header{
@@ -167,4 +167,15 @@ body{
     align-items: center;
     justify-self: center;
     text-align: center;
+  }
+
+
+  .blankk{
+    width: 100%;
+    height:300px;  
+  }
+
+  .blankkk{
+    width: 100%;
+    height:300px;  
   }

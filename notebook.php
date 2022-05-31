@@ -12,7 +12,7 @@
   
   <?php include "./sub/header.php"?>
 
-
+  <div class="blankk"></div>
 
   <div class="blank">
 
@@ -104,6 +104,8 @@
 
 
   </div>
+
+  <div class="blankkk"></div>
 
 
   
