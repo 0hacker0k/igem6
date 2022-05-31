@@ -12,7 +12,7 @@
   
   <?php include "./sub/header.php"?>
 
-  <div class="blankk"></div>
+  
 
   <div class="blank">
 

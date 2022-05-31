@@ -130,7 +130,7 @@ body{
 
   .leftlabel:hover {
     position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
-    right: 20px;
+    left: 20px;
   }
 
   .leftlabel1{
@@ -170,10 +170,7 @@ body{
   }
 
 
-  .blankk{
-    width: 100%;
-    height:300px;  
-  }
+  
 
   .blankkk{
     width: 100%;
