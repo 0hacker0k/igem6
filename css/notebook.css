@@ -163,4 +163,8 @@ body{
     display: flex;
   } */
 
-  
+  .output{
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+  }
