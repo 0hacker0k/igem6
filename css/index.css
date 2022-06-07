@@ -166,3 +166,9 @@ li a{
   height:164px;  
 
 }
+
+@media (max-width:1400px) {
+  body {
+    background-color: lightblue;
+  }
+}

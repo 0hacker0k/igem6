@@ -100,7 +100,7 @@
 
           </div>
 
-          <div class="output">
+            <div class="output">
                 <div id="id11"><p>11</p></div>
                 <div id="id12"><p>12</p></div>
                 <div id="id13"><p>13</p></div>
@@ -119,7 +119,7 @@
                 <div id="id34"><p>34</p></div>
                 <div id="id35"><p>35</p></div>
                 <div id="id36"><p>36</p></div>
-              </div>
+            </div>
         
       </div>
 
