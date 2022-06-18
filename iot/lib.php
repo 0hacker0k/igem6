@@ -19,7 +19,7 @@ if(isset($_GET['motor'])){
 }
 if(isset($_GET['set_time']) && $_GET['set_time']==1 && $_POST['set_time']!=null){
     $rs=$dbc->prepare("UPDATE `iot` SET `set_time`=:dat WHERE `id`=1");
-    $rs->bindValue("dat",$_GET['set_time']);
+    $rs->bindValue("dat",$_POST['set_time']);
     $v=$rs->execute();
 }
 /*if($_GET['return_value']!=null){
