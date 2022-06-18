@@ -4,7 +4,7 @@ $DB = new DBconnect();
 $dbc = $DB->connect();
 if(isset($_GET['status'])){
     $rs=$dbc->prepare("UPDATE `iot` SET `status`=:dat WHERE `id`=1");
-    $rs->bindValue("dat",$_GET['data']);
+    $rs->bindValue("dat",$_GET['status']);
     $v=$rs->execute();
 }
 if(isset($_GET['buzzer'])){
