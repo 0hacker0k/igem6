@@ -6,7 +6,10 @@ $rs=$dbc->prepare("SELECT * FROM `iot`");
 $rs->execute();
 $count=0;
 foreach($rs->fetchall() as $value){
-    if($count!=0) echo " ";
-    echo $value['status'];
+    echo $value['status']." ";
+    echo $value['buzzer']." ";
+    echo $value['motor']." ";
+    echo $value['set_time']." ";
+    echo $value['return_value']." ";
     $count++;
 }
