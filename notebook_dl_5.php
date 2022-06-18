@@ -70,15 +70,29 @@
 
       <div class="out">
 
-        <h1>May</h1>
         
-        <div class="leftt"></div>
+        <div class="leftt">
 
-        <!-- <img class="notebookmay" src="<?php echo imgfile;?>/notebook/5_1.png" alt=""> -->
-          
-        <div class="rightt"></div>
+            <img class="notebookmay" src="<?php echo imgfile;?>/notebook/5_1.png" alt="">
+            <h5>week2</h5>
+            <ul>
+                <li>Webgame:12348654125</li>
+                <li>Machine:14564678168</li>
+                <li>Wiki....:(</li>
+            </ul>
+        </div>
+
+        <div class="rightt">
               
-              
+            
+            <h5>week1</h5>
+            <ul>
+                <li>Webgame:12348654125</li>
+                <li>Machine:14564678168</li>
+                <li>Wiki....QQ</li>
+            </ul>
+            <img class="notebookmay" src="<?php echo imgfile;?>/notebook/5_2.jpg" alt="">
+        </div>
 
           
 
