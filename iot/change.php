@@ -11,5 +11,5 @@
     <button style="font-size: 6rem;" formaction="./lib.php?buzzer=1" type="submit">提醒</button>
     <div style="font-size: 6rem;">計時</div>
     <input type="text" style="font-size: 6rem;" value="60"/>
-    <button style="font-size: 6rem;" formaction="./lib.php?settime=1" type="submit">送出計時</button>
+    <button style="font-size: 6rem;" formaction="./lib.php?set_time=1" type="submit">送出計時</button>
 </form>
