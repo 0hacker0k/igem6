@@ -71,27 +71,30 @@
       <div class="out">
 
         
-        <div class="leftt">
+        <div class="week">
 
-            <img class="notebookmay" src="<?php echo imgfile;?>/notebook/5_1.png" alt="">
-            <h5>week2</h5>
-            <ul>
-                <li>Webgame:12348654125</li>
-                <li>Machine:14564678168</li>
-                <li>Wiki....:(</li>
-            </ul>
+            <img class="left_content" src="<?php echo imgfile;?>/notebook/5_1.png" alt="">
+            <div class="right_content">
+                <h5>week2</h5>
+                <ul>
+                    <li>Webgame:12348654125</li>
+                    <li>Machine:14564678168</li>
+                    <li>Wiki....:(</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="rightt">
+        <div class="week">
               
-            
-            <h5>week1</h5>
-            <ul>
-                <li>Webgame:12348654125</li>
-                <li>Machine:14564678168</li>
-                <li>Wiki....QQ</li>
-            </ul>
-            <img class="notebookmay" src="<?php echo imgfile;?>/notebook/5_2.jpg" alt="">
+            <div class="left_content">
+                <h5>week1</h5>
+                <ul>
+                    <li>Webgame:12348654125</li>
+                    <li>Machine:14564678168</li>
+                    <li>Wiki....QQ</li>
+                </ul>
+            </div>
+            <img class="right_content" src="<?php echo imgfile;?>/notebook/5_2.jpg" alt="">
         </div>
 
           
