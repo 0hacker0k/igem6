@@ -22,8 +22,8 @@ body{
   }
 
   .out{
-    display: flex;
-    justify-content: space-between;
+     /* display: flex;
+    justify-content: space-between;  */
     background-color: #FFFFF0;
     border: solid 20px #AC6E52;
     margin-right:40px;
@@ -184,7 +184,8 @@ body{
   .leftt{
     /* display: flex; */
     /* align-self: left; */
-    width: 50%;
+    width: 48%;
+    /* float: left; */
   }
 
 
@@ -192,7 +193,8 @@ body{
     /* display: flex; */
     /* align-self: right; */
     align-items: right;
-    width: 50%;
+    width: 48%;
+    /* float: left; */
 
   }
 
