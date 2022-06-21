@@ -22,6 +22,8 @@ body{
   }
 
   .out{
+    /* display: flex; */
+    justify-content: space-between;
     background-color: #FFFFF0;
     border: solid 20px #AC6E52;
     margin-right:40px;
@@ -179,18 +181,19 @@ body{
   }
 
 
-  .leftt{
-    float: left;
-    width: 50%;
+  .week{
+    display: flex;
+    /* align-self: left; */
+    width: 100%;
   }
 
 
-  .rightt{
-    float: right;
+  .left_content{
     width: 50%;
-
+    padding-left: 5%;
   }
-
-  .notebookmay{
+  .right_content{
     width: 50%;
+    padding-right: 5%;
   }
+  
