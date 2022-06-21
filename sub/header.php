@@ -73,10 +73,12 @@
                 <a href="#">Judging Form</a>
             </div>
         </div>
+
+        <a class="hamBar" href="#"><img src="<?php echo imgfile;?>/fa-bars.png" alt="" style="float:left; width: 30px;"></a>
     </div>
 
     
     
 </header>
 
-<div class="blank200"></div>
+<div class="blank200" style=""></div>

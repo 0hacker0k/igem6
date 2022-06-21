@@ -5,31 +5,30 @@
   <?php include "../sub/head.php";?>
   <script type="text/javascript">
 
-
 </script>
 </head>
+
+<body>
 
   <body onload="loadingFunction()">
 
   <?php include "../sub/header.php"?>
 
-
-  <img class="loading" src="./human/loading.gif" alt="">
-
-
+  <img class="loading" src="../img/loading.gif" alt="">
+  
   <script>
-    function loadingFunction(){
+   function loadingFunction(){
       $(".loading").delay(1000).fadeOut();
     }
   </script>
 
-  <img class="full_size_image" src="./human/fullimage.jpg" alt="">
+
+  <img class="full_size_image" src="<?php echo imgfile;?>/human/fullimage.jpg" alt="">
 
     
 
   </div> 
 
-
   <br>
   <br>
   <br>
@@ -37,11 +36,9 @@
   <br>
   <br>
 
+  <div class="member_card row justify-content-around">
 
-
-  <div class="member_card row justify-content-between">
-
-    <div class="col-12">
+    <div class="col-7">
       <h1>Introduction</h1>
       <p>CCU_Taiwan is established in the year of 2017. Our team consists of twenty-one passionate students. We are a multidisciplinary team as our team members have different professional background from five departments.</p>
 
@@ -71,9 +68,9 @@
             </p>";
             $person_img="../img/human/1a.jpg";
             $person_img_alt="";
-            $popup_img="./human/1e.png";
+            $popup_img="../img/human/1e.png";
             $popup_img_alt="";
-            include "../sub/popup/popup.php";
+            include "../sub/popup.php";
         ?>
         
         </div>
@@ -99,11 +96,11 @@
                 <li>Merit Reminder</li>            
               </ul>
             </p>";
-            $person_img="../testSrRb/human/2a.jpg";
+            $person_img="../img/human/2a.jpg";
             $person_img_alt="";
-            $popup_img="./human/2e.png";
+            $popup_img="../img/human/2e.png";
             $popup_img_alt="";
-            include "../sub/popup/popup.php";
+            include "../sub/popup.php";
         ?>
 
         </div>
@@ -126,11 +123,11 @@
                 <li>Paper Reader</li>            
               </ul>
             </p>";
-            $person_img="../testSrRb/human/3a.jpg";
+            $person_img="../img/human/3a.jpg";
             $person_img_alt="";
-            $popup_img="./human/3e.png";
+            $popup_img="../img/human/3e.png";
             $popup_img_alt="";
-            include "../sub/popup/popup.php";
+            include "../sub/popup.php";
         ?>
         </div>
     </div>
@@ -155,11 +152,11 @@
                 <li>Dry Lab Botherer</li>            
               </ul>
             </p>";
-            $person_img="../testSrRb/human/4a.jpg";
+            $person_img="../img/human/4a.jpg";
             $person_img_alt="";
-            $popup_img="./human/4e.png";
+            $popup_img="../img/human/4e.png";
             $popup_img_alt="";
-            include "../sub/popup/popup.php";
+            include "../sub/popup.php";
         ?>
 
         </div>
@@ -182,11 +179,11 @@
                 <li>Code Builder</li>            
               </ul>
             </p>";
-            $person_img="../testSrRb/human/5a.jpg";
+            $person_img="../img/human/5a.jpg";
             $person_img_alt="";
-            $popup_img="./human/5e.png";
+            $popup_img="../img/human/5e.png";
             $popup_img_alt="";
-            include "../sub/popup/popup.php";
+            include "../sub/popup.php";
         ?>
 
         </div>
@@ -212,11 +209,11 @@
                 <li>Cheese Ganster</li>            
               </ul>
             </p>";
-            $person_img="../testSrRb/human/6a.jpg";
+            $person_img="../img/human/6a.jpg";
             $person_img_alt="";
-            $popup_img="./human/6e.png";
+            $popup_img="../img/human/6e.png";
             $popup_img_alt="";
-            include "../sub/popup/popup.php";
+            include "../sub/popup.php";
         ?>
         </div>
     </div>
@@ -240,11 +237,11 @@
                 <li>Labor Protecter</li>            
               </ul>
             </p>";
-            $person_img="../testSrRb/human/7a.jpg";
+            $person_img="../img/human/7a.jpg";
             $person_img_alt="";
-            $popup_img="./human/7e.png";
+            $popup_img="../img/human/7e.png";
             $popup_img_alt="";
-            include "../sub/popup/popup.php";
+            include "../sub/popup.php";
         ?>
         </div>
     </div>
@@ -266,11 +263,11 @@
                 <li>Food Orderer</li>            
               </ul>
             </p>";
-            $person_img="../testSrRb/human/8a.jpg";
+            $person_img="../img/human/8a.jpg";
             $person_img_alt="";
-            $popup_img="./human/8e.png";
+            $popup_img="../img/human/8e.png";
             $popup_img_alt="";
-            include "../sub/popup/popup.php";
+            include "../sub/popup.php";
         ?>
 
         </div>
@@ -293,11 +290,11 @@
                 <li>Ha Ha Ha er</li>            
               </ul>
             </p>";
-            $person_img="../testSrRb/human/9a.jpg";
+            $person_img="../img/human/9a.jpg";
             $person_img_alt="";
-            $popup_img="./human/9e.png";
+            $popup_img="../img/human/9e.png";
             $popup_img_alt="";
-            include "../sub/popup/popup.php";
+            include "../sub/popup.php";
         ?>
         </div>
     </div>
@@ -325,7 +322,7 @@
   
 
      
-
+    
         
       
     
