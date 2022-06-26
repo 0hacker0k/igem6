@@ -29,7 +29,7 @@ body{
     margin-right:40px;
     margin-left: 180px;
     border-radius:20px;
-    height:1200px;
+    height:2500px;
     
   }
 
@@ -191,9 +191,21 @@ body{
   .left_content{
     width: 50%;
     padding-left: 5%;
+    padding-right: 5%;
+    padding-top:5%;
   }
   .right_content{
     width: 50%;
+    padding-left: 5%;
     padding-right: 5%;
+    padding-top:5%;
   }
   
+  .word_content{
+    font-size: 30px;
+
+  }
+
+  .title_content{
+    font-size:50px;
+  }

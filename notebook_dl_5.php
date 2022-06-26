@@ -72,29 +72,80 @@
 
         
         <div class="week">
-
+            
+           
             <img class="left_content" src="<?php echo imgfile;?>/notebook/5_1.png" alt="">
             <div class="right_content">
-                <h5>week2</h5>
+                
+                <h5 class="title_content">week1</h5>
+                
+                <div class="word_content">
                 <ul>
                     <li>Webgame:12348654125</li>
+                    <br>
                     <li>Machine:14564678168</li>
+                    <br>
                     <li>Wiki....:(</li>
                 </ul>
+                </div>
             </div>
         </div>
 
         <div class="week">
               
             <div class="left_content">
-                <h5>week1</h5>
+                
+                <h5 class="title_content">week2</h5>
+                
+                <div class="word_content">
                 <ul>
                     <li>Webgame:12348654125</li>
+                    <br>
                     <li>Machine:14564678168</li>
+                    <br>
                     <li>Wiki....QQ</li>
                 </ul>
+                </div>
             </div>
             <img class="right_content" src="<?php echo imgfile;?>/notebook/5_2.jpg" alt="">
+        </div>
+
+        <div class="week">
+            
+            <img class="left_content" src="<?php echo imgfile;?>/notebook/5_3.png" alt="">
+            <div class="right_content">
+                
+                <h5 class="title_content">week3</h5>
+                
+                <div class="word_content">
+                <ul>
+                    <li>Webgame:12348654125</li>
+                    <br>
+                    <li>Machine:14564678168</li>
+                    <br>
+                    <li>Wiki....:(</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="week">
+              
+            <div class="left_content">
+                
+                <h5 class="title_content">week4</h5>
+                
+                <div class="word_content">
+                <ul>
+                    <li>Webgame:12348654125</li>
+                    <br>
+                    <li>Machine:14564678168</li>
+                    <br>
+                    <li>Wiki....QQ</li>
+                </ul>
+                </div>
+            </div>
+            <img class="right_content" src="<?php echo imgfile;?>/notebook/5_4.png" alt="">
         </div>
 
           
