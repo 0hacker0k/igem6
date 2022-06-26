@@ -4,6 +4,7 @@
             <img src="<?php echo imgfile;?>/brand.png" alt="logo" class="brand">
         </a>
     </div>
+    <input type="checkbox" name="" id="menu_control">
     <div class="nav">
         <div class="dropdown">
         
@@ -74,7 +75,7 @@
             </div>
         </div>
 
-        <a class="hamBar" href="#"><img src="<?php echo imgfile;?>/fa-bars.png" alt="" style="float:left; width: 30px;"></a>
+        <a class="hamBar" href="#"><img src="<?php echo imgfile;?>/fa-bars.png" alt="" style="width: 40px;"></a>
     </div>
 
     

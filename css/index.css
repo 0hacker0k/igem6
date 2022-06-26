@@ -64,13 +64,14 @@ li a{
     display: inline-block;
     /* margin-top: 35px; */
 }
+
 .nav {
-    
     height: 100%;
-    /* position: relative; */
-    /* vertical-align:middle; */
     float: right;
+    /* position: relative;
+    vertical-align:middle; */
 }
+
 .logo {
     position: relative;
     display: inline-block;
@@ -155,10 +156,25 @@ li a{
 
 .hamBar{
   display: none;
-  width: 44px;
-  height: 44px;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+  float: right;
+  position: absolute;
+  top: 35%;
+  right: 5%;
+}
+
+.hamBar span{
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  display: block;
+  overflow: hidden;
+}
+
+#menu_control{
+  position: absolute;
+  z-index: 2;
 }
 
 @media all and (max-width:1500px) {
@@ -174,5 +190,23 @@ li a{
 
   .hamBar{
     display: flex;
+  }
+
+  .nav{
+    width: 100%;
+    height: calc(100vh - 200px);
+    background-color: #900902;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+  }
+
+  .nav a{
+    display: block;
+  }
+
+  #menu_control:checked ~ .nav{
+    top: 0;
   }
 }
