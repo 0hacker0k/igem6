@@ -19,9 +19,6 @@ body{
 ul{
   list-style-type: none;
   padding:0px;
-  
-  
-  
 }
 
 li a{
@@ -29,15 +26,15 @@ li a{
   padding:10px;
   text-decoration: none;
   font-size:30px;
-  color:#FFF985;
+  color:#ffcae7;
   font-weight: 800;
   text-align: center;
   /* margin-left:50px; */
 }
 
 .brand{
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
   /* margin: 30px; */
   /* height:10vh; */
     float:left;
@@ -46,11 +43,12 @@ li a{
 /* Dropdown Button */
 .dropbtn {
   background-color: #900902;
-  color: #FFF985;
+  color: #ffcae7;
   padding: 16px;
-  font-size: 25px;
+  font-size: 1.5rem;
   border: none;
   cursor: pointer;
+  font-family: monospace ;
 }
 
 /* Dropdown button on hover & focus */
@@ -66,8 +64,8 @@ li a{
 }
 
 .nav {
-    height: 100%;
-    float: right;
+    /* width: 80%-1rem; */
+    float: left;
     /* position: relative;
     vertical-align:middle; */
 }
@@ -75,8 +73,11 @@ li a{
 .logo {
     position: relative;
     display: inline-block;
+    max-width: 12rem;
+    min-width: 8rem;
     width: 20%;
-    margin: 1%;
+    height: auto;
+    /* margin: 1%; */
     /* float: left; */
     /* margin-top: 35px; */
 }
@@ -86,11 +87,16 @@ li a{
   display: none;
   position: absolute;
   background-color: #900902;
-  min-width: 160px;
+  min-width: 100%;
   box-shadow: 0px 8px 16px 0px #FFCAE7;
   z-index: 1;
 }
-
+/* float: right;position:relative;
+position:absolute ;right:0; */
+.a-right {
+    margin-right: 0;
+    right:0;
+}
 /* Links inside the dropdown */
 .dropdown-content a {
   color: #FFF985;
@@ -101,7 +107,10 @@ li a{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #EA2B1F}
+.dropdown-content a:hover {
+    background-color: #EA2B1F;
+    color: #FFF985;
+}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
@@ -177,7 +186,7 @@ li a{
   z-index: 2;
 }
 
-@media all and (max-width:1500px) {
+/* @media all and (max-width:1500px) {
   .dropbtn{
     display: none;
     position: absolute;
@@ -209,4 +218,16 @@ li a{
   #menu_control:checked ~ .nav{
     top: 0;
   }
+} */
+.dropdown_rwd{
+    display: none;
+}
+@media all and (max-width:1332px) {
+    .dropdown{
+        display: none;
+    }
+    .dropdown_rwd{
+        display: block;
+        /* margin-right: 0; */
+    }
 }

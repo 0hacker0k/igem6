@@ -1,9 +1,12 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function hide_bar(id) {
+function out_bar(id) {
+    if(document.documentElement.scrollWidth<=1332){
+        return ;
+    }
     document.getElementById(id).classList.remove('show');
 } 
-function show_bar(id) {
+function in_bar(id) {
     // var dropdowns = document.getElementsByClassName("dropdown-content");
     // var i;
     // for (i = 0; i < dropdowns.length; i++) {
@@ -12,12 +15,29 @@ function show_bar(id) {
     //         openDropdown.classList.remove('show');
     //     }
     // }
+    if(document.documentElement.scrollWidth<=1332){
+        return ;
+    }
     document.getElementById(id).classList.toggle("show");
+}
+function click_bar(id) {
+    if(document.documentElement.scrollWidth>1332){
+        return ;
+    }
+    if(document.getElementById(id).classList.contains('show')){
+        document.getElementById(id).classList.remove('show');
+    }else{
+        document.getElementById(id).classList.toggle("show");
+    }
 }
  
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
+        // if(document.documentElement.scrollWidth>1332){
+        //     return ;
+        // }
+        console.log(event.target);
+        if (!event.target.matches('.click')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 var i;
                 for (i = 0; i < dropdowns.length; i++) {
@@ -30,8 +50,8 @@ window.onclick = function(event) {
 }
 
 function loadingFunction(){
-        $(".loading").delay(1000).fadeOut();
-      }
+    $(".loading").delay(1000).fadeOut();
+}
 
 // $(document).ready(() => {
 //   $('.hamBar').click(function(){

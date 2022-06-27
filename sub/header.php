@@ -1,14 +1,14 @@
-<header class="navbar navbar-expand-lg navbar-light main-bg-color" style="z-index:10000;" id="navbar">
+<header class="navbar navbar-light main-bg-color" style="z-index:10000;" id="navbar">
     <div class="logo d-inline-flex p-2 bd-highlight">
         <a href="https://www.google.com/">
             <img src="<?php echo imgfile;?>/brand.png" alt="logo" class="brand">
         </a>
     </div>
-    <input type="checkbox" name="" id="menu_control">
+    <!-- <input type="checkbox" name="" id="menu_control"> -->
     <div class="nav">
-        <div class="dropdown">
+        <div onclick="click_bar('myDropdown1')" onmouseout="out_bar('myDropdown1')" onmouseover="in_bar('myDropdown1')" class="dropdown">
         
-            <button onmouseout="hide_bar('myDropdown1')" onmouseover="show_bar('myDropdown1')" class="dropbtn"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">Team</button>
+            <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Team</button>
             <div id="myDropdown1" class="dropdown-content">
                 <a href="#">Home</a>
                 <a href="#">Members</a>
@@ -17,8 +17,8 @@
             </div>
         </div>
         
-        <div class="dropdown">
-            <button onmouseout="hide_bar('myDropdown2')" onmouseover="show_bar('myDropdown2')" class="dropbtn"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">Project</button>
+        <div onclick="click_bar('myDropdown2')" onmouseout="out_bar('myDropdown2')" onmouseover="in_bar('myDropdown2')" class="dropdown">
+            <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Project</button>
             <div id="myDropdown2" class="dropdown-content">
                 <a href="#">Description</a>
                 <a href="#">Design</a>
@@ -31,8 +31,8 @@
 
         </div>
 
-        <div class="dropdown">
-            <button onmouseout="hide_bar('myDropdown3')" onmouseover="show_bar('myDropdown3')" class="dropbtn"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">Labwork</button>
+        <div onclick="click_bar('myDropdown3')" onmouseout="out_bar('myDropdown3')" onmouseover="in_bar('myDropdown3')" class="dropdown">
+            <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Labwork</button>
             <div id="myDropdown3" class="dropdown-content">
                 <a href="#">Protocol</a>
                 <a href="#">Engineering</a>
@@ -44,8 +44,8 @@
 
         </div>
 
-        <div class="dropdown">
-            <button onmouseout="hide_bar('myDropdown4')" onmouseover="show_bar('myDropdown4')" class="dropbtn"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">Human Practice</button>
+        <div onclick="click_bar('myDropdown4')" onmouseout="out_bar('myDropdown4')" onmouseover="in_bar('myDropdown4')" class="dropdown">
+            <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Human Practice</button>
             <div id="myDropdown4" class="dropdown-content">
                 <a href="#">Integrated Human Practice</a>
                 <a href="#">Education</a>
@@ -57,24 +57,36 @@
 
         </div>
 
-        <div class="dropdown">
-            <button onmouseout="hide_bar('myDropdown6')" onmouseover="show_bar('myDropdown6')" class="dropbtn"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">Notebook</button>
+        <div onclick="click_bar('myDropdown6')" onmouseout="out_bar('myDropdown6')" onmouseover="in_bar('myDropdown6')" class="dropdown">
+            <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Notebook</button>
         
         </div>
 
-        <div class="dropdown">
-            <button onmouseout="hide_bar('myDropdown7')" onmouseover="show_bar('myDropdown7')" class="dropbtn"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">Safety</button>
+        <div onclick="click_bar('myDropdown7')" onmouseout="out_bar('myDropdown7')" onmouseover="in_bar('myDropdown7')" class="dropdown">
+            <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Safety</button>
         
         </div>
 
-        <div class="dropdown">
-            <button onmouseout="hide_bar('myDropdown8')" onmouseover="show_bar('myDropdown8')" class="dropbtn"><img class="drop" src="<?php echo imgfile;?>/drop.png" alt="">Awards</button>
+        <div onclick="click_bar('myDropdown8')" onmouseout="out_bar('myDropdown8')" onmouseover="in_bar('myDropdown8')" class="dropdown">
+            <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Awards</button>
             <div id="myDropdown8" class="dropdown-content">
                 <a href="#">Medals</a>
                 <a href="#">Judging Form</a>
             </div>
         </div>
 
+        <div onclick="click_bar('myDropdown9')" onmouseout="out_bar('myDropdown9')" onmouseover="in_bar('myDropdown9')" class="dropdown dropdown_rwd">
+            <button class="dropbtn click"><img class="click" src="/igem6/img/fa-bars.png" alt="" style="width: 40px;"></button>
+            <div id="myDropdown9" class="dropdown-content a-right">
+                <a href="#">Team</a>
+                <a href="#">Project</a>
+                <a href="#">Labwork</a>
+                <a href="#">Human Practice</a>
+                <a href="#">Notebook</a>
+                <a href="#">Safety</a>
+                <a href="#">Awards</a>
+            </div>
+        </div>
         <a class="hamBar" href="#"><img src="<?php echo imgfile;?>/fa-bars.png" alt="" style="width: 40px;"></a>
     </div>
 
