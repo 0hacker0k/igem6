@@ -4,6 +4,3 @@
         <div class="spinner-border dropdown" style="width:3em;height:3em;border-color:#900902;border-right-color:transparent;border-width:0.5em;" role="status" aria-hidden="true"></div>
     </div>
 </div>
-<script>
-    
-</script>

@@ -12,15 +12,7 @@
   background-color:#900902; 
 }
 
-.out{
-  background-color: #FFFFF0;
-  border: solid 20px #AC6E52;
-  margin-right:40px;
-  margin-left: 180px;
-  border-radius:20px;
-  height:1200px;
-  
-}
+
 
 h1{
   color:#EA2B1F;
@@ -44,28 +36,27 @@ hr{
   
 }
 
-
-.mid{
-  width:20%;
-  /* margin-top:200px; */
-  /* align-content: center; */
-  /* 這為啥不能用啊==害我只能用padding left喬（.midbutton{　margin-left:490px;） */
-  
+.mid_control{
+    width:100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom:40px;
 }
-
-
+.mid_area{
+  width:100%;
+  /* margin-top:200px; */
+  align-content: center;
+  /* 這為啥不能用啊==害我只能用padding left喬（.midbutton{　margin-left:490px;） */
+    /* display: flex; */
+    
+}
 .midbutton{
-  font-size:50px;
+  font-size:3rem;
   background-color: #FFFFF0;
   color:#EA2B1F;
-  border-radius: 1%;
-  /* border: 0cm; */
-  width:40%;
   text-align:left;
-  margin-left:590px;
   border:0px;
-  margin-bottom:40px;
-  border-radius: 14px;
   padding: 10px;
 }
 
@@ -73,47 +64,64 @@ hr{
   background-color: #FFCAE7;
 
 }
-
-.top{
-  /* padding-bottom:20px; */
-  align-content:left;
-
-}
-
-.toplabel1{
-  margin-left: 200px;
-
-}
-
 .toplabel{
-  margin-top: -35px;
-  padding:20px;
-  font-size:30px;
+  padding:1rem;
+  font-size:1.8rem;
   border:0px;
   background-color: #764028;
   color:white;
-  border-radius: 14px;
+  border-radius: 1rem;
   width:auto;
-   
 }
 
 .toplabel:hover {
   background-color: #B86B3D;
 }
-
-.left{
-  width:20%;
-  align-content: left;
+.toplabel1{
+    margin-left:1.5rem;
 }
-
+.top_control{
+    margin-left:0.2rem;
+    position: relative;
+    float: left;
+    margin-bottom:-3rem;
+    z-index: 100000;
+}
+.left_div{
+  width:15%;
+  height:100%;
+  float: left;
+}
+.top_div{
+    /* padding-bottom:20px; */
+    width:85%;
+    float: left;
+    /* align-content:left; */
+}
+.right_div{
+    width:85%;
+    height:90%;
+    float: left;
+    z-index: 0;
+}
+.pad{
+    width:95%;
+    height: 100%;
+    background-color: #FFFFF0;
+    border: solid 1.5rem #AC6E52;
+    float: left;
+    /* margin-left: 12rem; */
+    border-radius:20px;
+}
 .leftlabel{
   color:white;
-  width:180px;
-  margin-left:20px;
-  margin-top:30px;
-  font-size:40px;
+  width:90%;
+  float :right;
+  margin-right:-1.5rem;
+  margin-top:1.5rem;
+  font-size:1.8rem;
   text-align: left;
-  padding-left:15px;
+  padding-left:1rem;
   border:0px;
   position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
   right: 0px;
@@ -127,6 +135,7 @@ hr{
 
 .leftlabel1{
   background-color: #f85c70;
+  margin-top:100%;
 }
 
 .leftlabel2{
@@ -153,13 +162,14 @@ hr{
   justify-self: center;
   text-align: center;
 }
-.blankkk{
-  width: 100%;
-  height:300px;  
+
+
+
+.notebook{
+    width: 100%;
+    height:80rem;
+    /* 1200 */
 }
-
-
-
 
 
 li{
