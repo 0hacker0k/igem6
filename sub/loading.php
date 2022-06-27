@@ -5,9 +5,5 @@
     </div>
 </div>
 <script>
-    function load_finish(){
-        // return ;
-        var loading=document.getElementById("loading");
-        loading.style.visibility = "hidden";
-    }
+    
 </script>

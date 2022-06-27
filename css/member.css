@@ -6,19 +6,7 @@ body{
   }
 
 
-  #navbar{
-    position: fixed;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    transition: top 300ms ease;
-    margin-bottom: 200px;
-  }
-
-  #navbar.header-hide{
-    top: -280px;
-  }
+  
 
   /* .header{
     margin-bottom: 200px;
@@ -57,9 +45,7 @@ body{
     height: auto;
 }
 
-.drop{
-  width: 25px;
-}
+
 
 h1{
   color:#EA2B1F;
@@ -89,7 +75,7 @@ p{
   height:100%;
 }
 
-.loading{
+/* .loading{
   position: fixed;
   display: block;
   width: 100%;
@@ -98,4 +84,4 @@ p{
   top: 0%;
   align-items: center;
   z-index: 9999;
-}
+} */

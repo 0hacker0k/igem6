@@ -10,7 +10,19 @@ body{
   font-family: "Lucida Handwriting";
 }
 
+#navbar{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: top 300ms ease;
+    margin-bottom: 200px;
+  }
 
+  #navbar.header-hide{
+    top: -280px;
+  }
 
 .main-bg-color{
     background-color:#900902;
@@ -31,7 +43,9 @@ li a{
   text-align: center;
   /* margin-left:50px; */
 }
-
+.drop{
+    width: 25px;
+  }
 .brand{
     height: 100%;
     width: 100%;

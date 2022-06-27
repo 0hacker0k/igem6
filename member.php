@@ -3,25 +3,14 @@
   <title>wiki</title>
   <?php include "./sub/config.php";?>
   <?php include "./sub/head.php";?>
-  <script type="text/javascript">
-
-</script>
+  <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/member.css">
 </head>
 
-<body>
-
-  <body onload="loadingFunction()">
+<body onload="load_finish()">
 
   <?php include "./sub/header.php"?>
 
-  <img class="loading" src="./img/loading.gif" alt="">
-  
-  <script>
-   function loadingFunction(){
-      $(".loading").delay(1000).fadeOut();
-    }
-  </script>
-
+  <?php include "sub/loading.php"?>
 
   <img class="full_size_image" src="<?php echo imgfile;?>/human/fullimage.jpg" alt="">
 

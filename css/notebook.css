@@ -148,23 +148,33 @@ hr{
 .leftlabel6{
   background-color: #ffde59;
 }
-
-
-
-/* li{
-  display: flex;
-} */
-
 .output{
   align-items: center;
   justify-self: center;
   text-align: center;
 }
-
-
-
-
 .blankkk{
   width: 100%;
   height:300px;  
+}
+
+
+
+
+
+li{
+    float:left;
+}
+h1{
+    color:#EA2B1F;
+    font-weight:bolder;
+    font-size:70px !important;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+p{
+    color:#390099;
+    font-weight: 500;
+    font-size:30px ;
+    padding: left 30% right 30%;
 }
