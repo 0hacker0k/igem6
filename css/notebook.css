@@ -166,6 +166,7 @@ hr{
 .notebook{
     width: 100%;
     min-height:60rem;
+    min-width:60rem;
     /* height: 100%; */
     margin-bottom: 10%;
     /* 1200 */
