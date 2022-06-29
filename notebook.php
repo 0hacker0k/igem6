@@ -50,7 +50,7 @@
 
         <div class="right_div">
             <div class="pad">
-                <h1>NOTEBOOK</h1>
+                <h1 class="align-mid">NOTEBOOK</h1>
                 <hr>
                 <div class="mid_area">
                     <div class="mid_control">
