@@ -243,6 +243,6 @@ position:absolute ;right:0; */
         /* margin-right: 0; */
     }
     body{
-        font-size: 0.5em;
+        font-size: 0.5em !important;
     }
 }
