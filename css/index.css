@@ -46,8 +46,8 @@ li a{
     width: 25px;
   }
 .brand{
-    height: 100%;
     width: 100%;
+    height: auto;
   /* margin: 30px; */
   /* height:10vh; */
     float:left;
@@ -89,7 +89,7 @@ li a{
     max-width: 12rem;
     min-width: 8rem;
     width: 20%;
-    height: auto;
+    /* height: auto; */
     /* margin: 1%; */
     /* float: left; */
     /* margin-top: 35px; */
