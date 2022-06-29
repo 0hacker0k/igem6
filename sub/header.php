@@ -76,7 +76,7 @@
         </div>
 
         <div onclick="click_bar('myDropdown9')" onmouseout="out_bar('myDropdown9')" onmouseover="in_bar('myDropdown9')" class="dropdown dropdown_rwd">
-            <button class="dropbtn click"><img class="click" src="/igem6/img/fa-bars.png" alt="" style="width: 40px;"></button>
+            <button class="dropbtn click"><img class="<?php echo imgfile;?>click" src="/igem6/img/fa-bars.png" alt="" style="width: 40px;"></button>
             <div id="myDropdown9" class="dropdown-content a-right">
                 <a href="#">Team</a>
                 <a href="#">Project</a>
