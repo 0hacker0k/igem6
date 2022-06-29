@@ -3,7 +3,7 @@
 // echo dirname(__FILE__,2);
 // echo dirname($_SERVER['DOCUMENT_ROOT']);
 int htmlmode=1;
-if(htnlmode==1 || dirname(__FILE__,2)=="/data1/adm/webteam.ccu.edu.tw/WWW/phaser"){
+if(htmlmode==1 || dirname(__FILE__,2)=="/data1/adm/webteam.ccu.edu.tw/WWW/phaser"){
     define("root","/phaser");
 }else{
     define("root","/igem6");
