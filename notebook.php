@@ -64,53 +64,29 @@
                     </div>
                 </div>
             </div>
-
-                <div class="output">
-                    <div id="id11"><p>11</p></div>
-                    <div id="id12"><p>12</p></div>
-                    <div id="id13"><p>13</p></div>
-                    <div id="id14"><p>14</p></div>
-                    <div id="id15"><p>15</p></div>
-                    <div id="id16"><p>16</p></div>
-                    <div id="id21"><p>21</p></div>
-                    <div id="id22"><p>22</p></div>
-                    <div id="id23"><p>23</p></div>
-                    <div id="id24"><p>24</p></div>
-                    <div id="id25"><p>25</p></div>
-                    <div id="id26"><p>26</p></div>
-                    <div id="id31"><p>31</p></div>
-                    <div id="id32"><p>32</p></div>
-                    <div id="id33"><p>33</p></div>
-                    <div id="id34"><p>34</p></div>
-                    <div id="id35"><p>35</p></div>
-                    <div id="id36"><p>36</p></div>
-                </div>
-                
-            </div>
-
-        
-
-
-
         </div>
     </div>
 
-  <script>
+  <script>  
         var x=1,y=10;
         function switchbtn(id){
-            $("#mid").hide();
-            $("#id"+(y+x)).hide();
             if(id>=10)y=id;
             else x=id;
             id=x+y;
-            $("#id"+(y+x).toString()).show();
-            while(id==10^id==20^id==30){
-                
+            var lab="";
+            switch(y){
+                case 10:
+                    lab="wl";
+                    break;
+                case 20:
+                    lab="dl";
+                    break;
+                case 30:
+                    lab="hp";
+                    break;
             }
-        }
-
-        for(i=11; i<=36; i++){
-            $("#id"+(i)).hide();
+            var month=x+4;
+            location.href = "./notebook_"+lab+"_"+month+".html";
         }
 
     </script>

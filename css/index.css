@@ -19,9 +19,8 @@ body{
     transition: top 300ms ease;
     margin-bottom: 200px;
   }
-
   #navbar.header-hide{
-    top: -280px;
+    top: -100px;
   }
 
 .main-bg-color{

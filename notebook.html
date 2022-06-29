@@ -1,7 +1,7 @@
-<!doctype html> 
-<html lang="zh-tw">
 <head>
-        <link href="/igem6/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+  
+  <title>wiki</title>
+    <link href="/igem6/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
 <script src="/igem6/js/bootstrap.js" crossorigin="anonymous"></script>
 <script src="/igem6/js/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" media="all" href="/igem6/css/index.css">
@@ -12,29 +12,12 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    <script src="/igem6/webgamejs/phaser.min.js"></script>
-<script src="/igem6/webgamejs/map/map1.js"></script>
-<script src="/igem6/webgamejs/stage1/choose.js"></script>
-<script src="/igem6/webgamejs/stage1/sequence.js"></script>
-<script src="/igem6/webgamejs/stage1/pcr.js"></script>
-<script src="/igem6/webgamejs/stage2/flop.js"></script>
-<script src="/igem6/webgamejs/stage3/shoot.js"></script>
-<script src="/igem6/webgamejs/play/shoot.js"></script>
-<script src="/igem6/webgamejs/play/billiard.js"></script>
-<script src="/igem6/webgamejs/change.js"></script>
-<script src="/igem6/webgamejs/index.js"></script>
-    <meta charset="UTF-8" />
-    <title>igem6 web game</title>
-    <!-- <script src="phaser-3.55.2/dist/phaser.js"></script> -->
-    
-    <!-- <style type="text/css">
-        body {
-            margin: 10%;
-        }
-    </style> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  <link rel="stylesheet" media="all" href="/igem6/css/notebook.css">
+  
 </head>
+
 <body onload="load_finish()">
-    <header class="navbar navbar-light main-bg-color" style="z-index:10000;" id="navbar">
+  <header class="navbar navbar-light main-bg-color" style="z-index:10000;" id="navbar">
     <div class="logo d-inline-flex p-2 bd-highlight">
         <a href="https://www.google.com/">
             <img src="/igem6/img/brand.png" alt="logo" class="brand">
@@ -130,27 +113,92 @@
     
 </header>
 
-<div class="blank200" style=""></div>    <div id="loading" class="align-items-center" style="display: flex;top:0px;z-index:100;background-color:#F2CCC3;width:100%;height:100%;position: fixed;text-align: center;">
+<div class="blank200" style=""></div>  <div id="loading" class="align-items-center" style="display: flex;top:0px;z-index:100;background-color:#F2CCC3;width:100%;height:100%;position: fixed;text-align: center;">
     <div class="align-items-center" style="width:100%;text-align: center;">
         <div class="" style="display:inline;color:#900902;font-size:5em ;">Loading...</div>
         <div class="spinner-border dropdown" style="width:3em;height:3em;border-color:#900902;border-right-color:transparent;border-width:0.5em;" role="status" aria-hidden="true"></div>
     </div>
-</div>    <!-- <div style="text-align: center;">
-        <div>hiuuuu</div>
-    </div> -->
-    <div class="maindiv">
-        <div class="centerdiv">
+</div>    <div class="notebook">
+        <div class="left_div">
             <div>
-                <select id="language_set" onChange="changeLang(this.options[this.selectedIndex].value)">
-                    <option value="en">English</option>
-                    <option value="zh-tw">繁體中文</option>
-                    <option value="zh-cn">簡體中文</option>
-                </select>
+                <button type="button" class="leftlabel leftlabel1" onclick="switchbtn(1)">MAY.</button>
             </div>
-            <div id="game"></div>
+            <div>
+                <button type="button" class="leftlabel leftlabel2" onclick="switchbtn(2)">JUN.</button>
+            </div>
+            <div>
+                <button type="button" class="leftlabel leftlabel3" onclick="switchbtn(3)">JUL.</button>
+            </div>
+            <div>
+                <button type="button" class="leftlabel leftlabel4" onclick="switchbtn(4)">AUG.</button>
+            </div>
+            <div>
+                <button type="button" class="leftlabel leftlabel5" onclick="switchbtn(5)">SEP.</button>
+            </div>
+            <div>
+                <button type="button" class="leftlabel leftlabel6" onclick="switchbtn(6)">OCT.</button>
+            </div>
+        </div>
+        <div class="top_div">
+            <div class="top_control">
+                <button type="button" class="toplabel toplabel1" onclick="switchbtn(10)">WET LAB</button>
+            </div>
+            <div class="top_control">
+                <button type="button" class="toplabel" onclick="switchbtn(20)">DRY LAB</button>
+            </div>
+            <div class="top_control">
+                <button type="button" class="toplabel" onclick="switchbtn(30)">HP</button>
+            </div>
+            <div class="top_control">
+                <button type="button" class="toplabel" onclick="switchbtn(40)">TIMELINE</button> 
+            </div>
+        </div>
+
+        
+
+        <div class="right_div">
+            <div class="pad">
+                <h1>NOTEBOOK</h1>
+                <hr>
+                <div class="mid_area">
+                    <div class="mid_control">
+                        <button type="button" class="midbutton" onclick="switchbtn(10)"><img class="drop" src="/igem6/img/drop.png" alt="">WET LAB</button>
+                    </div>
+                    <div class="mid_control">
+                        <button type="button" class="midbutton" onclick="switchbtn(20)"><img class="drop" src="/igem6/img/drop.png" alt="">DRY LAB</button>
+                    </div>
+                    <div class="mid_control">
+                        <button type="button" class="midbutton" onclick="switchbtn(30)"><img class="drop" src="/igem6/img/drop.png" alt="">HUMAN PRACTICE</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <footer class="text-center text-lg-start main-bg-color" style="">
+
+  <script>  
+        var x=1,y=10;
+        function switchbtn(id){
+            if(id>=10)y=id;
+            else x=id;
+            id=x+y;
+            var lab="";
+            switch(y){
+                case 10:
+                    lab="wl";
+                    break;
+                case 20:
+                    lab="dl";
+                    break;
+                case 30:
+                    lab="hp";
+                    break;
+            }
+            var month=x+4;
+            location.href = "./notebook_"+lab+"_"+month+".html";
+        }
+
+    </script>
+  <footer class="text-center text-lg-start main-bg-color" style="">
     <section class="d-flex justify-content-center p-4">
         <div>
             <a href="https://www.facebook.com/ccuigemteam/" class="me-4">
@@ -174,6 +222,5 @@
         Copyright © 2022 
         <a class="text-reset fw-bold" style="text-decoration:none;" href="https://www.ccu.edu.tw/">National Chung Cheng University All rights reserved</a>
     </div>
-</footer><!-- <button onclick="load()">123123132</button> -->
+</footer>
 </body>
-</html>
