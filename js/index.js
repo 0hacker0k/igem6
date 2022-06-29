@@ -96,5 +96,6 @@ document.addEventListener('DOMContentLoaded', function(){
 function load_finish(){
     // return ;
     var loading=document.getElementById("loading");
+    $(".loading").fadeOut();
     loading.style.visibility = "hidden";
 }
