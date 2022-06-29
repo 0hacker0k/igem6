@@ -242,4 +242,7 @@ position:absolute ;right:0; */
         display: block;
         /* margin-right: 0; */
     }
+    body{
+        font-size: 0.5em;
+    }
 }
