@@ -66,29 +66,8 @@
             </div>
         </div>
     </div>
-
-  <script>  
-        var x=1,y=10;
-        function switchbtn(id){
-            if(id>=10)y=id;
-            else x=id;
-            id=x+y;
-            var lab="";
-            switch(y){
-                case 10:
-                    lab="wl";
-                    break;
-                case 20:
-                    lab="dl";
-                    break;
-                case 30:
-                    lab="hp";
-                    break;
-            }
-            var month=x+4;
-            location.href = "./notebook_"+lab+"_"+month+".html";
-        }
-
+    <script>
+        setpage(1,10);
     </script>
   <?php include "./sub/footer.php"?>
 

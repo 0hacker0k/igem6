@@ -26,17 +26,17 @@ hr{
 
 .week_content{
     width: 50%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
     padding-top:5%;
     word-wrap:break-word;
 }
 
 .word_content{
-    font-size: 30px;
+    font-size: 1.5rem;
     word-wrap:break-word;
 }
 
 .title_content{
-    font-size:50px;
+    font-size:3rem;
 }

@@ -11,19 +11,19 @@ body{
   background-color:#900902; 
 }
 
-
-
 h1{
-  color:#EA2B1F;
-  font-size: 120px !important;
-  text-align: center;
-  text-shadow: 0.05em 0.05em #900902;
-  background-color: #fffff0;
-  font-family: "Lucida Handwriting";
+    color:#EA2B1F;
+    font-weight:bolder;
+    font-size:70px !important;
+    padding-top:100px;
+    padding-bottom:100px;
 }
-
-
-
+p{
+    color:#390099;
+    font-weight: 500;
+    font-size:30px ;
+    padding: left 30% right 30%;
+}
 
 hr{
   color:#900902;
@@ -177,16 +177,4 @@ hr{
 li{
     float:left;
 }
-h1{
-    color:#EA2B1F;
-    font-weight:bolder;
-    font-size:70px !important;
-    padding-top:100px;
-    padding-bottom:100px;
-}
-p{
-    color:#390099;
-    font-weight: 500;
-    font-size:30px ;
-    padding: left 30% right 30%;
-}
+

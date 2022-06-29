@@ -87,7 +87,7 @@
                 <a href="#">Awards</a>
             </div>
         </div>
-        <a class="hamBar" href="#"><img src="<?php echo imgfile;?>/fa-bars.png" alt="" style="width: 40px;"></a>
+        <!-- <a class="hamBar" href="#"><img src="<?php echo imgfile;?>/fa-bars.png" alt="" style="width: 40px;"></a> -->
     </div>
 
     

@@ -106,7 +106,7 @@
                 <a href="#">Awards</a>
             </div>
         </div>
-        <a class="hamBar" href="#"><img src="/phaser/img/fa-bars.png" alt="" style="width: 40px;"></a>
+        <!-- <a class="hamBar" href="#"><img src="/phaser/img/fa-bars.png" alt="" style="width: 40px;"></a> -->
     </div>
 
     
@@ -174,29 +174,8 @@
             </div>
         </div>
     </div>
-
-  <script>  
-        var x=1,y=10;
-        function switchbtn(id){
-            if(id>=10)y=id;
-            else x=id;
-            id=x+y;
-            var lab="";
-            switch(y){
-                case 10:
-                    lab="wl";
-                    break;
-                case 20:
-                    lab="dl";
-                    break;
-                case 30:
-                    lab="hp";
-                    break;
-            }
-            var month=x+4;
-            location.href = "./notebook_"+lab+"_"+month+".html";
-        }
-
+    <script>
+        setpage(1,10);
     </script>
   <footer class="text-center text-lg-start main-bg-color" style="">
     <section class="d-flex justify-content-center p-4">

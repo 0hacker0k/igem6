@@ -131,5 +131,8 @@
             </div>
         </div>
     </div>
+    <script>
+        setpage(1,20);
+    </script>
     <?php include "./sub/footer.php"?>
 </body>
