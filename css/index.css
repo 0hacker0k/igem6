@@ -121,6 +121,7 @@ position:absolute ;right:0; */
 .dropdown-content a:hover {
     background-color: #EA2B1F;
     color: #FFF985;
+    text-decoration:none;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */

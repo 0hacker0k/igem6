@@ -56,6 +56,7 @@ hr{
     text-align:left;
     border:0px;
     padding: 10px;
+    border-radius: 1rem;
 }
 
 .midbutton:hover {
@@ -64,7 +65,7 @@ hr{
 }
 .toplabel{
   padding:1rem;
-  font-size:2rem;
+  font-size:1.5rem;
   border:0px;
   background-color: #764028;
   color:white;
@@ -89,18 +90,18 @@ hr{
     width:12%;
     height:100%;
     float: left;
+    /* display: table; */
 }
 .top_div{
-    /* padding-bottom:20px; */
     width:88%;
     height: auto;
-    /* float: left; */
     align-content:left;
+    /* display: table; */
 }
 .right_div{
     width:88%;
-    /* min-height:100%; */
     float: left;
+    /* display: table; */
 }
 .pad{
     width:95%;
@@ -165,13 +166,9 @@ hr{
 
 .notebook{
     width: 100%;
-    min-height:60rem;
     min-width:60rem;
-    /* height: 100%; */
     margin-bottom: 10%;
-    /* 1200 */
     display: table;
-    /* height: fit-content; */
 }
 
 
