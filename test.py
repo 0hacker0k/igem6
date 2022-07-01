@@ -24,7 +24,7 @@ year_number=2015
 # str() #轉成字串
 # for j in range(0,5):
 context=""
-map="http://127.0.0.1:60000/igem6/map.php?type=1"
+map="http://127.0.0.1:60000/igem6/map.php"
 try:
     go=requests.get(map, timeout = 30)
     if  go.status_code == 200:
