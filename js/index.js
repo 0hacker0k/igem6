@@ -1,29 +1,22 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
+var hidden=0;
 function out_bar(id) {
-    if(document.documentElement.scrollWidth<=1332){
+    if(hidden==1){
         return ;
-    }
+    }if(id==null)return ;
     document.getElementById(id).classList.remove('show');
 } 
 function in_bar(id) {
-    // var dropdowns = document.getElementsByClassName("dropdown-content");
-    // var i;
-    // for (i = 0; i < dropdowns.length; i++) {
-    //     var openDropdown = dropdowns[i];
-    //     if (openDropdown.classList.contains('show')) {
-    //         openDropdown.classList.remove('show');
-    //     }
-    // }
-    if(document.documentElement.scrollWidth<=1332){
+    if(hidden==1){
         return ;
-    }
+    }if(id==null)return ;
     document.getElementById(id).classList.toggle("show");
 }
 function click_bar(id) {
-    if(document.documentElement.scrollWidth>1332){
+    if(hidden==0){
         return ;
-    }
+    }if(id==null)return ;
     if(document.getElementById(id).classList.contains('show')){
         document.getElementById(id).classList.remove('show');
     }else{
@@ -33,10 +26,6 @@ function click_bar(id) {
  
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-        // if(document.documentElement.scrollWidth>1332){
-        //     return ;
-        // }
-        // console.log(event.target);
         if (!event.target.matches('.click')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 var i;
@@ -48,34 +37,9 @@ window.onclick = function(event) {
                 }
         }
 }
-
 function loadingFunction(){
     $(".loading").delay(1000).fadeOut();
 }
-
-// $(document).ready(() => {
-//   $('.hamBar').click(function(){
-//     //避免 a 標籤會觸發
-//     event.preventDefault();
-//     //展開或收起來
-//     $('.dropbtn').slideToggle(600);
-    
-//   })
-//   $('.dropdown li a').click(function(){
-//     event.preventDefault();
-//     //收起來
-//     $('.dropdown').slideUp(600);
-//     //以下是滾動動畫
-//     var sectionTitle = this.title;
-//     console.log(sectionTitle);
-//     var sectionId = "#myDropdown--" + sectionTitle;
-//     console.log(sectionId);
-//     var scrollPoint = $(sectionId).offset().top;
-//     var lastScrollPoint = scrollPoint - 100;
-//     $("html,body").animate({ scrollTop: lastScrollPoint }, 800);
-//   })
-// });
-
 document.addEventListener('DOMContentLoaded', function(){
     jQuery(function($){
         var myWindow = $(window); 
@@ -84,9 +48,12 @@ document.addEventListener('DOMContentLoaded', function(){
             // alert(myPosition);
         if (myPosition > 90) {
             if (myWindow.scrollTop() > myPosition) {
-            $("#navbar").addClass("header-hide");
+                // $("#navbar").addClass("header-hide");
+                var item=document.getElementById("navbar");
+                item.style.top="-"+item.clientHeight+"px";
             } else {
-            $("#navbar").removeClass("header-hide");
+                document.getElementById("navbar").style.top="0px";
+                // $("#navbar").removeClass("header-hide");
             }
         }
         myPosition = myWindow.scrollTop();
@@ -121,5 +88,27 @@ function switchbtn(id){
             break;
     }
     var month=x+4;
-    location.href = "./notebook_"+lab+"_"+month+".html";
+    location.href = "./notebook_"+lab+"_"+month+".php";
+}
+var nav_len=0;
+function check_navbar(){
+    if(nav_len==0){
+        var nav = document.getElementsByClassName("dropdown");
+        for(var i=0;i<nav.length;i++){
+            nav_len+=nav[i].clientWidth;
+        }
+    }
+    var navbar = document.getElementById("navbar").clientWidth;
+    var logo = document.getElementById("logo").clientWidth;
+    console.log(nav_len);
+    if(navbar<=logo+nav_len*1.03){
+        hidden=1;
+        document.getElementById("nav_style").innerHTML=".dropdown{display: none;}.dropdown_rwd{display: block;}";
+    }else{
+        hidden=0;
+        document.getElementById("nav_style").innerHTML=".dropdown{display: block;}.dropdown_rwd{display: none;}";
+    }
+    // console.log(navbar);
+    // console.log(logo+nav);
+    document.getElementById("blank_top").style.height=document.getElementById("navbar").clientHeight;
 }

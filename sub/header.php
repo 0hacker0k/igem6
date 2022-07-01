@@ -1,11 +1,11 @@
-<header class="mid_size navbar navbar-light main-bg-color" style="z-index:10000;" id="navbar">
-    <div class="logo d-inline-flex p-2 bd-highlight">
+<header class="mid_size navbar navbar-light main-bg-color" id="navbar">
+    <div class="logo d-inline-flex p-2 bd-highlight" id="logo">
         <a href="https://www.google.com/">
             <img src="<?php echo imgfile;?>/brand.png" alt="logo" class="brand">
         </a>
     </div>
     <!-- <input type="checkbox" name="" id="menu_control"> -->
-    <div class="nav">
+    <div class="nav" id="nav">
         <div onclick="click_bar('myDropdown1')" onmouseout="out_bar('myDropdown1')" onmouseover="in_bar('myDropdown1')" class="dropdown">
         
             <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Team</button>
@@ -57,12 +57,12 @@
 
         </div>
 
-        <div onclick="click_bar('myDropdown6')" onmouseout="out_bar('myDropdown6')" onmouseover="in_bar('myDropdown6')" class="dropdown">
+        <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown">
             <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Notebook</button>
         
         </div>
 
-        <div onclick="click_bar('myDropdown7')" onmouseout="out_bar('myDropdown7')" onmouseover="in_bar('myDropdown7')" class="dropdown">
+        <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown">
             <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Safety</button>
         
         </div>
@@ -94,4 +94,14 @@
     
 </header>
 
-<div class="blank200" style=""></div>
+<div id="blank_top" style=""></div>
+<style id="nav_style">
+
+</style>
+<script>
+    check_navbar();
+    window.onresize=function(){
+        check_navbar();
+    };
+    
+</script>
