@@ -118,7 +118,8 @@ hr{
   float :right;
   margin-right:-1.5rem;
   margin-top:1.5rem;
-  font-size:2rem;
+  font-size:1.5rem;
+  min-width: 5rem;
   text-align: left;
   padding-left:1rem;
   border:0px;
@@ -129,7 +130,7 @@ hr{
 
 .leftlabel:hover {
   position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
-  left: 20px;
+  left: 1rem;
 }
 
 .leftlabel1{
