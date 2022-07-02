@@ -100,7 +100,6 @@ function check_navbar(){
     }
     var navbar = document.getElementById("navbar").clientWidth;
     var logo = document.getElementById("logo").clientWidth;
-    console.log(nav_len);
     if(navbar<=logo+nav_len*1.03){
         hidden=1;
         document.getElementById("nav_style").innerHTML=".dropdown{display: none;}.dropdown_rwd{display: block;}";
@@ -108,7 +107,8 @@ function check_navbar(){
         hidden=0;
         document.getElementById("nav_style").innerHTML=".dropdown{display: block;}.dropdown_rwd{display: none;}";
     }
-    // console.log(navbar);
+    // our_footer
+    console.log(666);
     // console.log(logo+nav);
     document.getElementById("blank_top").style.height=document.getElementById("navbar").clientHeight;
 }

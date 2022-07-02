@@ -94,7 +94,7 @@
     
 </header>
 
-<div id="blank_top" style=""></div>
+<div id="blank_top" style="height:115px;"></div>
 <style id="nav_style">
 
 </style>

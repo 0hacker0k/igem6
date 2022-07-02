@@ -1,4 +1,4 @@
-<footer class="text-center text-lg-start main-bg-color" style="">
+<footer class="text-center text-lg-start main-bg-color our_footer">
     <section class="d-flex justify-content-center p-4">
         <div class="footer_div">
             <a href="https://www.facebook.com/ccuigemteam/" class="me-4 text-reset">
