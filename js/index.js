@@ -108,7 +108,6 @@ function check_navbar(){
         document.getElementById("nav_style").innerHTML=".dropdown{display: block;}.dropdown_rwd{display: none;}";
     }
     // our_footer
-    console.log(666);
     // console.log(logo+nav);
-    document.getElementById("blank_top").style.height=document.getElementById("navbar").clientHeight;
+    document.getElementById("blank_top").style.height=document.getElementById("navbar").clientHeight+"px";
 }
