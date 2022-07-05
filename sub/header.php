@@ -7,7 +7,7 @@
         </div>
         <!-- <input type="checkbox" name="" id="menu_control"> -->
         <div class="nav" id="nav">
-            <div onclick="click_bar('myDropdown1')" onmouseout="out_bar('myDropdown1')" onmouseover="in_bar('myDropdown1')" class="dropdown">
+            <div onclick="click_bar('myDropdown1')" onmouseout="out_bar('myDropdown1')" onmouseover="in_bar('myDropdown1')" class="dropdown top_nav">
             
                 <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Team</button>
                 <div id="myDropdown1" class="dropdown-content">
@@ -18,7 +18,7 @@
                 </div>
             </div>
             
-            <div onclick="click_bar('myDropdown2')" onmouseout="out_bar('myDropdown2')" onmouseover="in_bar('myDropdown2')" class="dropdown">
+            <div onclick="click_bar('myDropdown2')" onmouseout="out_bar('myDropdown2')" onmouseover="in_bar('myDropdown2')" class="dropdown top_nav">
                 <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Project</button>
                 <div id="myDropdown2" class="dropdown-content">
                     <a href="#" class="dropdown-content_list click">Description</a>
@@ -32,7 +32,7 @@
 
             </div>
 
-            <div onclick="click_bar('myDropdown3')" onmouseout="out_bar('myDropdown3')" onmouseover="in_bar('myDropdown3')" class="dropdown">
+            <div onclick="click_bar('myDropdown3')" onmouseout="out_bar('myDropdown3')" onmouseover="in_bar('myDropdown3')" class="dropdown top_nav">
                 <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Labwork</button>
                 <div id="myDropdown3" class="dropdown-content">
                     <a href="#" class="dropdown-content_list click">Protocol</a>
@@ -45,7 +45,7 @@
 
             </div>
 
-            <div onclick="click_bar('myDropdown4')" onmouseout="out_bar('myDropdown4')" onmouseover="in_bar('myDropdown4')" class="dropdown">
+            <div onclick="click_bar('myDropdown4')" onmouseout="out_bar('myDropdown4')" onmouseover="in_bar('myDropdown4')" class="dropdown top_nav">
                 <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Human Practice</button>
                 <div id="myDropdown4" class="dropdown-content">
                     <a href="#" class="dropdown-content_list click">Integrated Human Practice</a>
@@ -58,17 +58,17 @@
 
             </div>
 
-            <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown">
+            <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown top_nav">
                 <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Notebook</button>
             
             </div>
 
-            <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown">
+            <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown top_nav">
                 <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Safety</button>
             
             </div>
 
-            <div onclick="click_bar('myDropdown8')" onmouseout="out_bar('myDropdown8')" onmouseover="in_bar('myDropdown8')" class="dropdown">
+            <div onclick="click_bar('myDropdown8')" onmouseout="out_bar('myDropdown8')" onmouseover="in_bar('myDropdown8')" class="dropdown top_nav">
                 <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Awards</button>
                 <div id="myDropdown8" class="dropdown-content">
                     <a href="#" class="dropdown-content_list click">Medals</a>

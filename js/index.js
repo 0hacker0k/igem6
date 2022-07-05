@@ -120,12 +120,12 @@ function switchbtn(id){
 var nav_len=0;
 function check_navbar(){
     if(nav_len==0){
-        var nav = document.getElementsByClassName("dropdown");
+        var nav = document.getElementsByClassName("top_nav");
         for(var i=0;i<nav.length;i++){
             nav_len+=nav[i].clientWidth;
         }
     }
-    var navbar = document.getElementById("nav").clientWidth;
+    var navbar = document.getElementById("navbar").clientWidth;
     var logo = document.getElementById("logo").clientWidth;
     if(navbar<=logo+nav_len*1.03){
         hide_mod=1;
@@ -134,9 +134,6 @@ function check_navbar(){
         hide_mod=0;
         document.getElementById("nav_style").innerHTML=".dropdown{display: block;}.dropdown_rwd{display: none;}";
     }
-    // our_footer
-    // console.log(logo+nav);
-    // alert("hi");
     document.getElementById("blank_top").style.height=document.getElementById("normal_nav").clientHeight+"px";
 }
 
