@@ -1,32 +1,49 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-var hidden=0;
+var hide_mod=0;
+var isShow=0;
+var temp_down_nav=null;
 function out_bar(id) {
-    if(hidden==1){
+    if(hide_mod==1){
         return ;
     }if(id==null)return ;
     document.getElementById(id).classList.remove('show');
+    isShow=0;
 } 
 function in_bar(id) {
-    if(hidden==1){
+    if(hide_mod==1){
         return ;
     }if(id==null)return ;
+    // e = event || window.event;
+    // e.wheel.preventDefault();
     document.getElementById(id).classList.toggle("show");
+    isShow=1;
 }
 function click_bar(id) {
-    if(hidden==0){
+    if(hide_mod==0){
         return ;
     }if(id==null)return ;
     if(document.getElementById(id).classList.contains('show')){
         document.getElementById(id).classList.remove('show');
+        isShow=0;
+        if(id=="myDropdown9"){
+            temp_down_nav.classList.remove('show');
+            temp_down_nav=null;
+            if(document.getElementById(id).classList.contains('helf_size')){
+                document.getElementById(id).classList.remove('helf_size');
+            }
+        }
     }else{
         document.getElementById(id).classList.toggle("show");
+        isShow=1;
     }
 }
  
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
         if (!event.target.matches('.click')) {
+                isShow=0;
+                temp_down_nav=null;
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 var i;
                 for (i = 0; i < dropdowns.length; i++) {
@@ -34,6 +51,16 @@ window.onclick = function(event) {
                         if (openDropdown.classList.contains('show')) {
                                 openDropdown.classList.remove('show');
                         }
+                }
+                dropdowns = document.getElementsByClassName("nav_rwd");
+                for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                        }
+                }
+                if(document.getElementById("myDropdown9").classList.contains('helf_size')){
+                    document.getElementById("myDropdown9").classList.remove('helf_size');
                 }
         }
 }
@@ -47,10 +74,10 @@ document.addEventListener('DOMContentLoaded', function(){
         myWindow.scroll(function(){
             // alert(myPosition);
         if (myPosition > 90) {
-            if (myWindow.scrollTop() > myPosition) {
+            if (myWindow.scrollTop() > myPosition && isShow==0) {
                 // $("#navbar").addClass("header-hide");
                 var item=document.getElementById("navbar");
-                item.style.top="-"+item.clientHeight+"px";
+                item.style.top="-"+(item.clientHeight+1)+"px";
             } else {
                 document.getElementById("navbar").style.top="0px";
                 // $("#navbar").removeClass("header-hide");
@@ -98,16 +125,42 @@ function check_navbar(){
             nav_len+=nav[i].clientWidth;
         }
     }
-    var navbar = document.getElementById("navbar").clientWidth;
+    var navbar = document.getElementById("nav").clientWidth;
     var logo = document.getElementById("logo").clientWidth;
     if(navbar<=logo+nav_len*1.03){
-        hidden=1;
+        hide_mod=1;
         document.getElementById("nav_style").innerHTML=".dropdown{display: none;}.dropdown_rwd{display: block;}";
     }else{
-        hidden=0;
+        hide_mod=0;
         document.getElementById("nav_style").innerHTML=".dropdown{display: block;}.dropdown_rwd{display: none;}";
     }
     // our_footer
     // console.log(logo+nav);
-    document.getElementById("blank_top").style.height=document.getElementById("navbar").clientHeight+"px";
+    // alert("hi");
+    document.getElementById("blank_top").style.height=document.getElementById("normal_nav").clientHeight+"px";
+}
+
+function change_list(id){
+    if(hide_mod==0){
+        return ;
+    }
+    if(id==null)return ;
+    if(document.getElementById("mylist"+id)==undefined)return;
+    if(temp_down_nav!=null && temp_down_nav!=document.getElementById("mylist"+id)){
+        temp_down_nav.classList.remove('show');
+    }else{
+        if(document.getElementById("myDropdown9").classList.contains('helf_size')){
+            document.getElementById("myDropdown9").classList.remove('helf_size');
+        }else{
+            document.getElementById("myDropdown9").classList.toggle("helf_size");
+        }
+    }
+    if(document.getElementById("mylist"+id).classList.contains('show')){
+        document.getElementById("mylist"+id).classList.remove('show');
+        temp_down_nav=null;
+    }else{
+        temp_down_nav=document.getElementById("mylist"+id);
+        document.getElementById("mylist"+id).classList.toggle("show");
+    }
+    return;
 }
