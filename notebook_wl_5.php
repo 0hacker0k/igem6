@@ -4,7 +4,7 @@
     <?php include "./sub/config.php";?>
     <?php include "./sub/head.php";?>
     <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook.css">
-    <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook_dl_5.css">
+    <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook_wl_5.css">
   
 </head>
 
@@ -55,18 +55,20 @@
         <div class="right_div">
             <div class="pad">
                 <div class="week">
-                    <img class="week_content" src="<?php echo imgfile;?>/notebook/5_1.png" alt="">
+                    <img class="week_content" src="<?php echo imgfile;?>/notebook/5_1.jpg" alt="">
                     <div class="week_content">
                         
                         <h5 class="title_content">Week 1 (5/1~7)</h5>
                         
                         <div class="word_content">
                         <ul>
-                            <li>Choosing color tickets for wiki, according to our topic</li>
+                            <li>Exploring the pathway how FAS and PKS system produce fatty acid</li>
                             <br>
-                            <li>Coding stage 1 of the web game</li>
+                            <li>Exploring the mechanism how ACC gene increases the yield of DHA in Thraustochytrids</li>
                             <br>
-                            <li>Designing the first version of Gel Maker</li>
+                            <li>Exploring the mechanism how cerulenin increase the yield of DHA</li>
+                            <br>
+                            <li>Finding out the pfaE gene candidates that increase the yield of DHA</li>
                         </ul>
                         </div>
                     </div>
@@ -80,34 +82,30 @@
                         
                         <div class="word_content">
                         <ul>
-                            <li>Designing the appearance of header, footer, and home of wiki</li>
+                            <li>Purifying pColdI and pSTV28 vectors for pfa genes expression in E. Coli</li>
                             <br>
-                            <li>Completing stage 1 of the web game</li>
+                            <li>Confirming that TTC couldn’t be applied to distinguish PUFA-producing bacteria from others</li>
                             <br>
-                            <li>Using screw thread to increase the tightness between Gel Maker and a serum bottle</li>
+                            <li>Confirming the ability of EPA production in MP-1</li>
+                            <br>
+                            <li>Designing the biobricks for pfa genes and ACC genes expression in E. Coli</li>
                         </ul>
                         </div>
                     </div>
-                    <img class="week_content" src="<?php echo imgfile;?>/notebook/5_2.png" alt="">
+                    <img class="week_content" src="<?php echo imgfile;?>/notebook/5_2.jpg" alt="">
                 </div>
 
                 <div class="week">
                     
-                    <img class="week_content" src="<?php echo imgfile;?>/notebook/5_3.png" alt="">
+                    <img class="week_content" src="<?php echo imgfile;?>/notebook/5_3.jpg" alt="">
                     <div class="week_content">
                         
                         <h5 class="title_content">Week 3 (5/15~21)</h5>
                         
                         <div class="word_content">
                         <ul>
-                            <li>Designing the appearance of members.</li>
-                            <br>
-                            <li>Coding stage 2 of the web game.</li>
-                            <br>
-                            <li>Completing the conceptual design of the machine.</li>
-                            <br>
-                            <li>Testing the hole of controlling the amount of gel. (Gel Maker)</li>
-                        </ul>
+                            <li>Cloning pfa genes from MP-1 by PCR</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -120,39 +118,29 @@
                         
                         <div class="word_content">
                         <ul>
-                            <li>Deciding on the content of members.</li>
-                            <br>
-                            <li>Coding the loading page of wiki.</li>
-                            <br>
-                            <li>Completing stage 2 of the web game.</li>
-                            <br>
-                            <li>Deciding the function design of the machine.</li>
-                            <br>
-                            <li>Using an O-ring to fit Gel Maker and a serum bottle.</li>
+                            <li>Trying to ligate pfa genes to TA vectors for sequencing confirmation</li>
                         </ul>
                         </div>
                     </div>
 
    
-                    <img class="week_content" src="<?php echo imgfile;?>/notebook/5_4.png" alt="">
+                    <img class="week_content" src="<?php echo imgfile;?>/notebook/5_4.jpg" alt="">
                 </div>
 
                 <div class="week">
                     
-                    <img class="week_content" src="<?php echo imgfile;?>/notebook/5_5.png" alt="">
+                    <img class="week_content" src="<?php echo imgfile;?>/notebook/5_5.jpg" alt="">
                     <div class="week_content">
                         
                         <h5 class="title_content">Week 5 (5/29~6/4)</h5>
                         
                         <div class="word_content">
                         <ul>
-                            <li>Designing the appearance of notebook.</li>
+                            <li>Purifying pSTV28 vectors for ACC genes expression in  E. Coli</li>
                             <br>
-                            <li>Coding stage 3 of the web game</li>
+                            <li>Cloning pfa genes from MP-1 by PCR</li>
                             <br>
-                            <li>Purchasing components of the machine</li>
-                            <br>
-                            <li>Rotating the direction of the Gel Maker and printing it with a 3D printer (Gel Maker)</li>
+                            <li>Redesigning the biobricks for pfa genes and ACC genes expression in E. Coli</li>
                         </ul>
                         </div>
                     </div>

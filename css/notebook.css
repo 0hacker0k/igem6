@@ -1,5 +1,5 @@
 body{
-    font-family: "Lucida Handwriting";
+    font-family: "Comic Sans MS";
 }
 
 
@@ -125,7 +125,7 @@ hr{
   border:0px;
   position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
   right: 0px;
-  font-family: "Lucida Handwriting";
+  font-family: "Comic Sans MS";
 }
 
 .leftlabel:hover {

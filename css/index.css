@@ -7,7 +7,8 @@ body{
   /* justify-content: center; */
   /* align-items: top; */
   /* margin:0px; */
-  font-family: "Lucida Handwriting";
+  font-family: Papyrus, fantasy;
+  font-weight: 800;
 }
 
 #navbar{
@@ -41,7 +42,7 @@ body{
 }
 
 ul{
-    list-style-type: none;
+    /* list-style-type: ; */
     padding:0px;
 }
 
@@ -72,7 +73,8 @@ li a{
   padding: 16px 16px;
   border: none;
   cursor: pointer;
-  font-family: monospace ;
+  font-family: Papyrus, fantasy;
+  font-weight: 800;
 }
 
 /* Dropdown button on hover & focus */
@@ -113,11 +115,12 @@ li a{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #900902;
+    background-color: #EA2B1F;
     min-width: 100%;
     box-shadow: 0px 8px 16px 0px #FFCAE7;
     z-index: 1;
-    padding: 1%;
+    /* padding: 1%;
+     */
 }
 .dropdown-content-rwd{
     position: relative;
@@ -142,12 +145,13 @@ position:absolute ;right:0; */
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  font-family: monospace ;
+  font-family: Papyrus, fantasy;
+  font-weight: 800;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content_list:hover {
-    background-color: #EA2B1F;
+    background-color: #ff8c8e;
     color: #FFF985;
     text-decoration:none;
 }
@@ -156,7 +160,8 @@ position:absolute ;right:0; */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-family: monospace ;
+    font-family: Papyrus, fantasy;
+    font-weight: 800;
   }
 .dropdown-content_list2:hover {/********************/
     background-color: #FF8C8E;
