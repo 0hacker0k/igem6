@@ -1,8 +1,10 @@
+
 function preload_stage4_take(){
+    debug = 0;
     this.load.image('background', 'img/stage4/background.jpg');//載入一般圖片
     load_transition(this);
     this.load.image('bac', 'img/stage4/bac.png');
-    this.load.image('bac_gel', 'img/stage4/plate.png');
+    this.load.image('bac_gel', 'img/stage4/Plate.png');
     this.load.image('back', 'img/main/back.png');
     this.load.image('green', 'img/stage4/stick.png');
     this.load.image('pressure', 'img/stage4/pressure.png');
@@ -73,6 +75,8 @@ function create_stage4_take (){
     }
     function take_ecoli(i,j){
         bacs[i][j].on('pointerdown', function (pointer){
+            stick.x = pointer.x;
+            stick.y = pointer.y;
             press.x = bacs[i][j].x;
             press.y = bacs[i][j].y;
             press.alpha = 1;
