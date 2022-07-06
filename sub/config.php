@@ -9,6 +9,8 @@ if($htmlmode==1 && dirname(__FILE__,2)=="/data1/adm/webteam.ccu.edu.tw/WWW/phase
     define("root","/~lyang108u/igem6");
 }else if($htmlmode==2){
     define("root","/igem6_final");
+}else if($htmlmode==1){
+    define("root","/igem6");
 }else if($htmlmode==0){
     define("root","/igem6");
 }

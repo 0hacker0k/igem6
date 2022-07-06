@@ -86,50 +86,50 @@
     </div>
     
     <div class="down-nav mid_size">
-        <div id="myDropdown9" class="nav_rwd a-right">
-            <div onclick="change_list(1)" class="dropdown-content_list click">Team</div>
-            <div onclick="change_list(2)" class="dropdown-content_list click">Project</div>
-            <div onclick="change_list(3)" class="dropdown-content_list click">Labwork</div>
-            <div onclick="change_list(4)" class="dropdown-content_list click">Human Practice</div>
-            <div onclick="change_list(5)" class="dropdown-content_list click">Notebook</div>
-            <div onclick="change_list(6)" class="dropdown-content_list click">Safety</div>
-            <div onclick="change_list(8)" class="dropdown-content_list click">Awards</div>
+        <div id="myDropdown9" class="a-right">
+            <div onclick="change_list(1)" class="dropdown-content_list2 click">Team</div>
+            <div onclick="change_list(2)" class="dropdown-content_list2 click">Project</div>
+            <div onclick="change_list(3)" class="dropdown-content_list2 click">Labwork</div>
+            <div onclick="change_list(4)" class="dropdown-content_list2 click">Human Practice</div>
+            <div onclick="change_list(5)" class="dropdown-content_list2 click">Notebook</div>
+            <div onclick="change_list(6)" class="dropdown-content_list2 click">Safety</div>
+            <div onclick="change_list(8)" class="dropdown-content_list2 click">Awards</div>
         </div>
-        <div class="nav_rwd helf_size" style="display:block;">
+        <div class="nav_rwd sub_nav_rwd" style="display:table;">
             <div id="mylist1" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list click">Home</a>
-                <a href="#" class="dropdown-content_list click">Members</a>
-                <a href="#" class="dropdown-content_list click">Attributions</a>
-                <a href="#" class="dropdown-content_list click">Sponsors</a>
+                <a href="#" class="dropdown-content_list2 click">Home</a>
+                <a href="#" class="dropdown-content_list2 click">Members</a>
+                <a href="#" class="dropdown-content_list2 click">Attributions</a>
+                <a href="#" class="dropdown-content_list2 click">Sponsors</a>
             </div>
            <div id="mylist2" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list click">Description</a>
-                <a href="#" class="dropdown-content_list click">Design</a>
-                <a href="#" class="dropdown-content_list click">Implementation</a>
-                <a href="#" class="dropdown-content_list click">Entrepreneurship</a>
-                <a href="#" class="dropdown-content_list click">Contribution</a>
-                <a href="#" class="dropdown-content_list click">Improvement</a>
-                <a href="#" class="dropdown-content_list click">Proof of Concept</a>
+                <a href="#" class="dropdown-content_list2 click">Description</a>
+                <a href="#" class="dropdown-content_list2 click">Design</a>
+                <a href="#" class="dropdown-content_list2 click">Implementation</a>
+                <a href="#" class="dropdown-content_list2 click">Entrepreneurship</a>
+                <a href="#" class="dropdown-content_list2 click">Contribution</a>
+                <a href="#" class="dropdown-content_list2 click">Improvement</a>
+                <a href="#" class="dropdown-content_list2 click">Proof of Concept</a>
             </div>
             <div id="mylist3" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list click">Protocol</a>
-                <a href="#" class="dropdown-content_list click">Engineering</a>
-                <a href="#" class="dropdown-content_list click">Measurement</a>
-                <a href="#" class="dropdown-content_list click">Model</a>
-                <a href="#" class="dropdown-content_list click">Result</a>
-                <a href="#" class="dropdown-content_list click">Part</a>
+                <a href="#" class="dropdown-content_list2 click">Protocol</a>
+                <a href="#" class="dropdown-content_list2 click">Engineering</a>
+                <a href="#" class="dropdown-content_list2 click">Measurement</a>
+                <a href="#" class="dropdown-content_list2 click">Model</a>
+                <a href="#" class="dropdown-content_list2 click">Result</a>
+                <a href="#" class="dropdown-content_list2 click">Part</a>
             </div>
             <div id="mylist4" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list click">Integrated Human Practice</a>
-                <a href="#" class="dropdown-content_list click">Education</a>
-                <a href="#" class="dropdown-content_list click">Science Communication</a>
-                <a href="#" class="dropdown-content_list click">Collaboration</a>
-                <a href="#" class="dropdown-content_list click">Partnership</a>
-                <a href="#" class="dropdown-content_list click">Inclusivity</a>
+                <a href="#" class="dropdown-content_list2 click">Integrated Human Practice</a>
+                <a href="#" class="dropdown-content_list2 click">Education</a>
+                <a href="#" class="dropdown-content_list2 click">Science Communication</a>
+                <a href="#" class="dropdown-content_list2 click">Collaboration</a>
+                <a href="#" class="dropdown-content_list2 click">Partnership</a>
+                <a href="#" class="dropdown-content_list2 click">Inclusivity</a>
             </div>
             <div id="mylist8" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list click">Medals</a>
-                <a href="#" class="dropdown-content_list click">Judging Form</a>
+                <a href="#" class="dropdown-content_list2 click">Medals</a>
+                <a href="#" class="dropdown-content_list2 click">Judging Form</a>
             </div>
         </div>
     </div>

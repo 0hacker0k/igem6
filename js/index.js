@@ -146,11 +146,11 @@ function change_list(id){
     if(temp_down_nav!=null && temp_down_nav!=document.getElementById("mylist"+id)){
         temp_down_nav.classList.remove('show');
     }else{
-        if(document.getElementById("myDropdown9").classList.contains('helf_size')){
-            document.getElementById("myDropdown9").classList.remove('helf_size');
-        }else{
-            document.getElementById("myDropdown9").classList.toggle("helf_size");
-        }
+        // if(document.getElementById("myDropdown9").classList.contains('helf_size')){
+        //     document.getElementById("myDropdown9").classList.remove('helf_size');
+        // }else{
+        //     document.getElementById("myDropdown9").classList.toggle("helf_size");
+        // }
     }
     if(document.getElementById("mylist"+id).classList.contains('show')){
         document.getElementById("mylist"+id).classList.remove('show');
