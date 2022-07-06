@@ -118,6 +118,12 @@ const stage_3_shoot={
     create: create_stage3_shoot,
     update: update_stage3_shoot
 }
+const stage_4_take={
+    key: 'stage_4_take',
+    preload: preload_stage4_take,
+    create: create_stage4_take,
+    update: update_stage4_take
+}
 const play_1={
     key: 'play_1',
     preload: play_1_preload,
@@ -146,6 +152,9 @@ function load(){
                 break;
             case "stage3":
                 load_page(stage_3_shoot);
+                break;
+            case "stage4":
+                load_page(stage_4_take);
                 break;
             case "play1":
                 load_page(play_1);
