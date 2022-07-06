@@ -1,28 +1,8 @@
 import requests
 import json
 from bs4 import BeautifulSoup
-year_number=2015
-# print("key_word:")# 輸出
-#key_word=input()
-# key_word="allulose"
-
-# start_index = 0
-# end_index = 0
-# print("loading")
-
-# allteam=[]
- #開檔
-# all_text=f.read() #讀檔
-# f.close() #關檔
-# status=0
-# # allteam=all_text.split('\n') #切字
-# total=len(allteam) #計算陣列長度
-
-# path = 'answer.txt'
-# f = open(path, 'w')
-
-# str() #轉成字串
-# for j in range(0,5):
+import os
+import shutil
 context=""
 map="http://127.0.0.1:60000/igem6/map.php"
 try:
@@ -35,8 +15,8 @@ try:
 except requests.exceptions.RequestException as e:
     status=0
     exit()
-
-all_php=context.split(' ')
+all_php=context.split('\n')
+all_php.pop()
 goal="http://127.0.0.1:60000/igem6"
 # for i in range(0,total-1):#for迴圈格式
     #if "Gold" in allteam[i]:
@@ -47,12 +27,20 @@ for file in all_php:
         if  go.status_code == 200:
             status=1
             context=go.text
-            file=file[0:-4] + '.html'
-            path = "." + file
-            f = open(path, 'w+',encoding = "UTF-8",newline='')
-            # print(context)
-            f.write(context.strip())
-            f.close()
+            if file[-4:]==".php":
+                file=file[0:-4] + '.html'
+            path = "D:/xampp/htdocs/igem6_final"
+            path=path+file[0:file.rfind("/")]
+            if os.path.isdir(path)==False:
+                os.mkdir(path)
+            path+=file[file.rfind("/"):]
+            if file[-4:]==".jpg" or file[-4:]==".png":
+                shutil.copyfile("D:/xampp/htdocs/igem6"+file, path)
+            else:
+                f = open(path, 'w+',encoding = "UTF-8",newline='')
+                # print(context)
+                f.write(context.strip())
+                f.close()
         else :
             error=go.status_code
     except requests.exceptions.RequestException as e:
