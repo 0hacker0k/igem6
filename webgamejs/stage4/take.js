@@ -27,9 +27,11 @@ function create_stage4_take (){
     var bac_gel_size = 0.9*height;
     bac_gel.create(width/2, height/2, 'bac_gel').setOrigin(0.5, 0.5).setDisplaySize(bac_gel_size,bac_gel_size).refreshBody();
     //吉祥物
-    var bacs=new Array();   
+    var bacs=new Array();
+    var bacs_disize = new Array();   
     for(var i=-2;i<=1;i++){
         bacs[i+2] = new Array();
+        bacs_disize[i+2] = new Array();
         for(var j=-2;j<=1;j++){
             add_bacs(this,i,j);
         }
@@ -40,7 +42,7 @@ function create_stage4_take (){
         
         //bac_size = 30~30+0.05*height
         bacs[i+2][j+2] = where.physics.add.sprite(width/2+j*width*0.1+Math.random()*0.1*width, height/2+i*height*0.1+Math.random()*0.1*height, 'bac').setDisplaySize(rsize*height+bsize,rsize*height+bsize).setInteractive();
-        
+        bacs_disize[i+2][j+2] = rsize*height+bsize;
     }
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
@@ -69,11 +71,13 @@ function create_stage4_take (){
         }
 
     }
+    //分數
     var score_text=this.add.text(width*0.98, height*0.15, '0', { fontFamily: 'fantasy', fontSize: (width*0.07).toString()+'px', fill: '#111111' }).setOrigin(1, 1);
     var score=0;
-    var delta_width,delta_height;
+    var press_r;
     //press
     var press = this.add.sprite(width/2, height/2+50, 'pressure').setOrigin(0.5, 0.5).setDisplaySize(1,1);
+    var press_disize = 1;
     //滑鼠移動
     this.input.on('pointermove', function (pointer) {
         stick.x = pointer.x;
@@ -83,11 +87,13 @@ function create_stage4_take (){
     },this);
 
     var big;
+    
     //Hint: settimeout,clear
     function bigger(){
-        delta_height +=height*0.005;
-        delta_width +=height*0.005;
-        press.setDisplaySize(delta_width,delta_height);
+        press_r +=height*0.005;
+        press_r +=height*0.005;
+        press.setDisplaySize(press_r,press_r);
+        press_disize = press_r;
         press.alpha = 1;
         //console.log(delta_height);
         big = setTimeout(bigger,100);
@@ -97,6 +103,7 @@ function create_stage4_take (){
             take_ecoli(i,j);
         }
     }
+    var delta_r;
     function take_ecoli(i,j){
         bacs[i][j].on('pointerdown', function (pointer){
             stick.x = pointer.x;
@@ -104,21 +111,41 @@ function create_stage4_take (){
             press.x = bacs[i][j].x;
             press.y = bacs[i][j].y;
             
-            delta_width = 0;
-            delta_height = 0;        
+            press_r = 0;       
             bigger();
             
         },this);
         bacs[i][j].on('pointerup', function (pointer){
-            //根據prees大小精確度，分數不同，bac消失，移除碰撞
-            
-            
+            //根據press大小精確度，分數不同，bac消失，移除碰撞
+            delta_r = Math.abs(bacs_disize[i][j] - press_disize);
+            //press精確度
+            if(delta_r<=0.015*height){
+                console.log("EX!");
+                score+=1000;
+                score_text.setText(score.toString());
+                dis_bac(i,j)
+
+            }else if(0.015*height<delta_r && delta_r<=0.04*height){
+                console.log("Great");
+                score+=500;
+                score_text.setText(score.toString());
+                dis_bac(i,j)
+            }else{
+                console.log("Bad");
+                score+=100;
+                score_text.setText(score.toString());
+                dis_bac(i,j)
+            }
+
+
         },this);
     }
-
+    function dis_bac(i,j){
+        bacs[i][j].disableBody(true, true);
+    }
     //滑鼠放開
     this.input.on('pointerup', function (pointer) {
-        var height_c = delta_height - 
+         
         clearTimeout(big);
         press.setDisplaySize(height*0.01,height*0.01).alpha=0;
         
