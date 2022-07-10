@@ -12,9 +12,9 @@ document.cookie = document.cookie + ";expires=" + exp.toGMTString();
 var debug=1; //if in debug mod it will be set to 1
 var anime; //It is settimeout return value in anime
 var stop=0; //whether should stop the role
-var set_width=1280; //the web game window size(width)
-var set_height=720; //the web game window size(height)
-var scale=0.8; //the web game scale of window size
+var set_width=1280; //the web game window size(width) 1260
+var set_height=720; //the web game window size(height) 900
+var scale=0.9; //the web game scale of window size
 var width=set_width*scale; //the web game real window size(width)
 var height=set_height*scale; //the web game real window size(height)
 var role_x=width/2; //the x coordinate of role when the user back to map
