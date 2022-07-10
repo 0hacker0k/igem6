@@ -26,7 +26,7 @@ function create_stage4_take (){
     var bac_gel_size = 0.8*height;
     bac_gel.create(width/2, height/2, 'bac_gel').setOrigin(0.5, 0.5).setDisplaySize(bac_gel_size,bac_gel_size).refreshBody();
     //吉祥物
-    var bacs=new Array();
+    var bacs=new Array();   
     for(var i=-1;i<=1;i++){
         bacs[i+1] = new Array();
         for(var j=-1;j<=1;j++){
@@ -59,7 +59,7 @@ function create_stage4_take (){
     var score=0;
     var delta_width,delta_height;
     //press
-    var press = this.add.sprite(width/2, height/2+50, 'pressure').setOrigin(0.5, 0.5).setDisplaySize(height*0.01,height*0.01);
+    var press = this.add.sprite(width/2, height/2+50, 'pressure').setOrigin(0.5, 0.5).setDisplaySize(1,1);
     //滑鼠移動
     this.input.on('pointermove', function (pointer) {
         stick.x = pointer.x;
@@ -74,6 +74,7 @@ function create_stage4_take (){
         delta_height +=height*0.005;
         delta_width +=height*0.005;
         press.setDisplaySize(delta_width,delta_height);
+        press.alpha = 1;
         //console.log(delta_height);
         big = setTimeout(bigger,100);
     }
@@ -88,9 +89,9 @@ function create_stage4_take (){
             stick.y = pointer.y;
             press.x = bacs[i][j].x;
             press.y = bacs[i][j].y;
-            press.alpha = 1;
-            delta_width = height*0.01;
-            delta_height = height*0.01;        
+            
+            delta_width = 0;
+            delta_height = 0;        
             bigger();
             
         },this);
