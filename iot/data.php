@@ -10,11 +10,6 @@ if(isset($_GET['status'])){
     $rs->bindValue("dat",$_GET['status']);
     $v=$rs->execute();
 }
-if(isset($_GET['count'])){
-    $rs=$dbc->prepare("UPDATE `iot` SET `count`=:dat WHERE `id`=1");
-    $rs->bindValue("dat",$_GET['count']);
-    $v=$rs->execute();
-}
 foreach($rs->fetchall() as $value){
     echo $value['status']."\n";//狀態 0待命 1運作中 2異常
     echo $value['count']."\n";//目前膠數
@@ -24,6 +19,11 @@ foreach($rs->fetchall() as $value){
     echo $value['return_value']."\n";//已接收
     echo $value['port']."\n";//運作ip
     $count++;
+}
+if(isset($_GET['count'])){
+    $rs=$dbc->prepare("UPDATE `iot` SET `count`=:dat WHERE `id`=1");
+    $rs->bindValue("dat",$_GET['count']);
+    $v=$rs->execute();
 }
 if(isset($_GET['port'])){
     $rs=$dbc->prepare("UPDATE `iot` SET `port`=:dat WHERE `id`=1");
