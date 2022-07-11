@@ -5,11 +5,6 @@ $dbc = $DB->connect();
 $rs=$dbc->prepare("SELECT * FROM `iot`");
 $rs->execute();
 $count=0;
-if(isset($_GET['port'])){
-    $rs=$dbc->prepare("UPDATE `iot` SET `port`=:dat WHERE `id`=1");
-    $rs->bindValue("dat",$_GET['port']);
-    $v=$rs->execute();
-}
 if(isset($_GET['status'])){
     $rs=$dbc->prepare("UPDATE `iot` SET `status`=:dat WHERE `id`=1");
     $rs->bindValue("dat",$_GET['status']);
@@ -30,13 +25,20 @@ foreach($rs->fetchall() as $value){
     echo $value['port']."\n";//運作ip
     $count++;
 }
+if(isset($_GET['port'])){
+    $rs=$dbc->prepare("UPDATE `iot` SET `port`=:dat WHERE `id`=1");
+    $rs->bindValue("dat",$_GET['port']);
+    $v=$rs->execute();
+}else{
+    $rs=$dbc->prepare("UPDATE `iot` SET `return_value`=1 WHERE `id`=1");
+    $v=$rs->execute();
+}
 // if(isset($_GET['command'])){
 //     $rs=$dbc->prepare("UPDATE `iot` SET `command`=:dat WHERE `id`=1");
 //     $rs->bindValue("dat",$_GET['command']);
 //     $v=$rs->execute();
 // }
-$rs=$dbc->prepare("UPDATE `iot` SET `return_value`=1 WHERE `id`=1");
-$v=$rs->execute();
+
 
 // if(isset($_GET['set_time']) && $_GET['set_time']==1 && $_POST['set_time']!=null){
 //     $rs=$dbc->prepare("UPDATE `iot` SET `set_time`=:dat WHERE `id`=1");
