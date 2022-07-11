@@ -16,6 +16,8 @@ if(isset($_GET['count'])){
     $rs=$dbc->prepare("UPDATE `iot` SET `count`=:dat WHERE `id`=1");
     $rs->bindValue("dat",$_POST['count']);
     $v=$rs->execute();
+    $rs=$dbc->prepare("UPDATE `iot` SET `return_value`=0 WHERE `id`=1");
+    $v=$rs->execute();
 }
 if(isset($_GET['command'])){
     $rs=$dbc->prepare("UPDATE `iot` SET `command`=:dat WHERE `id`=1");
@@ -27,6 +29,5 @@ if(isset($_GET['command'])){
     $rs->bindValue("dat",$_GET['buzzer']);
     $v=$rs->execute();
 }*/
-$rs=$dbc->prepare("UPDATE `iot` SET `return_value`=0 WHERE `id`=1");
-$v=$rs->execute();
+
 header("Location:./change.php");
