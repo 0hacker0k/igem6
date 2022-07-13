@@ -8,6 +8,9 @@ function preload_stage4_take(){
     this.load.image('back', 'img/main/back.png');
     this.load.image('stick', 'img/stage4/stick.png');
     this.load.image('pressure', 'img/stage4/pressure.png');
+    this.load.image('tube', 'img/stage4/tube.png');
+    this.load.image('stick_box', 'img/main/green.png');
+    this.load.image('trashcan', 'img/main/green.png');
     if(debug==1){
         this.load.image('D_center', 'img/main/debug_center.png');
         this.load.image('green', 'img/main/green.png');
@@ -27,6 +30,7 @@ function create_stage4_take (){
     var bac_gel_size = 0.9*height;
     bac_gel.create(width/2, height/2, 'bac_gel').setOrigin(0.5, 0.5).setDisplaySize(bac_gel_size,bac_gel_size).refreshBody();
     //吉祥物
+    var isbacs=0;
     var bacs=new Array();
     var bacs_disize = new Array();   
     for(var i=-2;i<=1;i++){
@@ -43,14 +47,30 @@ function create_stage4_take (){
         //bac_size = 30~30+0.05*height
         bacs[i+2][j+2] = where.physics.add.sprite(width/2+j*width*0.1+Math.random()*0.1*width, height/2+i*height*0.1+Math.random()*0.1*height, 'bac').setDisplaySize(rsize*height+bsize,rsize*height+bsize).setInteractive();
         bacs_disize[i+2][j+2] = rsize*height+bsize;
+        //console.log(bacs[i+2][j+2].height);
     }
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
     }
+    //Tube
+    var tube = this.physics.add.sprite(width*0.87, height*0.65,'tube').setOrigin(0, 0).setInteractive();
+    var tube_size = 0.7
+    tube.setDisplaySize(tube.width*tube_size,tube.height*tube_size);
+    //牙籤盒
+    var stick_box = this.physics.add.sprite(width*0.025, height*0.7,'stick_box').setOrigin(0, 0).setInteractive();
+    var box_size;
+    stick_box.setDisplaySize(width*0.09, height*0.2);
+    stick_box.on('pointerdown', function (pointer) {
+         
+    },this);
+    //垃圾桶
+    var trashcan = this.physics.add.sprite(width*0.87, height*0.2,'trashcan').setOrigin(0, 0).setInteractive();
+    var trashcan_size;
+    trashcan.setDisplaySize(height*0.15, height*0.15);
     //牙籤
     var sticks = this.physics.add.group();
     var stick = sticks.create(width/2, height/2, 'stick').setOrigin(0.9,1);
-    stick.setDisplaySize(0.2*stick.width,0.2*stick.height);
+    stick.setDisplaySize(0.3*stick.width,0.3*stick.height);
     stick.setAngle(30);
     
     //DEBUG
@@ -85,19 +105,8 @@ function create_stage4_take (){
         
         press.alpha = 0;
     },this);
-
+    //抓bac
     var big;
-    
-    //Hint: settimeout,clear
-    function bigger(){
-        press_r +=height*0.005;
-        press_r +=height*0.005;
-        press.setDisplaySize(press_r,press_r);
-        press_disize = press_r;
-        press.alpha = 1;
-        //console.log(delta_height);
-        big = setTimeout(bigger,100);
-    }
     for(var i=0;i<bacs.length;i++){
         for(var j=0;j<bacs.length;j++){
             take_ecoli(i,j);
@@ -106,19 +115,20 @@ function create_stage4_take (){
     var delta_r;
     function take_ecoli(i,j){
         bacs[i][j].on('pointerdown', function (pointer){
-            stick.x = pointer.x;
-            stick.y = pointer.y;
+            stick.x = bacs[i][j].x;
+            stick.y = bacs[i][j].y;
             press.x = bacs[i][j].x;
             press.y = bacs[i][j].y;
             
-            press_r = 0;       
+            press_r = 0;
             bigger();
             
         },this);
         bacs[i][j].on('pointerup', function (pointer){
+            stick.x = pointer.x;
+            stick.y = pointer.y;
             //根據press大小精確度，分數不同，bac消失，移除碰撞
-            delta_r = Math.abs(bacs_disize[i][j] - press_disize);
-            //press精確度
+            delta_r = Math.abs(bacs_disize[i][j] - press_disize);//press差
             if(delta_r<=0.015*height){
                 console.log("EX!");
                 score+=1000;
@@ -140,6 +150,17 @@ function create_stage4_take (){
 
         },this);
     }
+    //放大press
+    function bigger(){
+        press_r +=height*0.005;
+        press_r +=height*0.005;
+        press.setDisplaySize(press_r,press_r);
+        press_disize = press_r;
+        press.alpha = 1;
+        //console.log(delta_height);
+        big = setTimeout(bigger,100);
+    }
+    //bac掰
     function dis_bac(i,j){
         bacs[i][j].disableBody(true, true);
     }
@@ -150,12 +171,8 @@ function create_stage4_take (){
         press.setDisplaySize(height*0.01,height*0.01).alpha=0;
         
     },this);
-    //生成目標物
-    var ecolis = this.physics.add.staticGroup();//this.physics.add.group();
-    //擊中目標物
-    function hit(bullet, ecoli){
-        
-    }
+    
+    
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.on('pointerdown', function (){
