@@ -134,7 +134,7 @@ function check_navbar(){
         hide_mod=0;
         document.getElementById("nav_style").innerHTML=".dropdown{display: block;}.dropdown_rwd{display: none;}";
     }
-    document.getElementById("blank_top").style.height=document.getElementById("normal_nav").clientHeight+"px";
+    document.getElementById("blank_top").style.height=(document.getElementById("normal_nav").clientHeight-1)+"px";
 }
 
 function change_list(id){
