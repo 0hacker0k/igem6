@@ -7,6 +7,7 @@ function start_transition (where){//畫面漸亮
     function keep_move(){
         if(transition.x<-2.1*width){
             transition.setVelocityX(0);
+            //transition.disableBody(true, true);
         }else{
             anime=setTimeout(function(){
                 keep_move();
