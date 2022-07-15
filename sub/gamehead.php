@@ -9,4 +9,5 @@
 <script src="<?php echo webgamejsfile;?>/play/shoot.js"></script>
 <script src="<?php echo webgamejsfile;?>/play/billiard.js"></script>
 <script src="<?php echo webgamejsfile;?>/change.js"></script>
+<script src="<?php echo webgamejsfile;?>/talk_box.js"></script>
 <script src="<?php echo webgamejsfile;?>/index.js"></script>

@@ -9,6 +9,7 @@ var cval = document.cookie;
 document.cookie = document.cookie + ";expires=" + exp.toGMTString();
 */
 //alert(document.cookie);
+const rexUI_path = "./webgamejs/rexUI.min.js";
 var debug=1; //if in debug mod it will be set to 1
 var anime; //It is settimeout return value in anime
 var stop=0; //whether should stop the role

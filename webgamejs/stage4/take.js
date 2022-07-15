@@ -1,3 +1,7 @@
+const COLOR_PRIMARY = 0x4e342e;
+const COLOR_LIGHT = 0x7b5e57;
+const COLOR_DARK = 0x260e04;
+var content = `Phaser is a fast, free, and fun open source HTML5 game framework that offers WebGL and Canvas rendering across desktop and mobile web browsers. Games can be compiled to iOS, Android and native apps by using 3rd party tools. You can use JavaScript or TypeScript for development.`;
 
 function preload_stage4_take(){
     debug = 1;
@@ -11,10 +15,16 @@ function preload_stage4_take(){
     this.load.image('tube', 'img/stage4/tube.png');
     this.load.image('stick_box', 'img/main/green.png');
     this.load.image('trashcan', 'img/main/green.png');
+    //load_talkbox(this);
     if(debug==1){
         this.load.image('D_center', 'img/main/debug_center.png');
         this.load.image('green', 'img/main/green.png');
     }
+    this.load.scenePlugin({
+        key: 'rexuiplugin',
+        url: rexUI_path,
+        sceneKey: 'rexUI'
+    });
     
 }
 
@@ -171,7 +181,7 @@ function create_stage4_take (){
         press.setDisplaySize(height*0.01,height*0.01).alpha=0;
         
     },this);
-    
+    //loading_talkbox(this,500,500);
     
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
@@ -183,9 +193,23 @@ function create_stage4_take (){
     },this);
     //轉場動畫
     start_transition(this);
+    
+    //Test rexUI
+    // createTextBox(this, 100, 100, {
+    //     wrapWidth: 500,
+    // })
+    // .start(content, 50);
+    createTextBox(this, 100, 400, {
+        wrapWidth: 500,
+        fixedWidth: 500,
+        fixedHeight: 65,
+    })
+    .start(content, 50);
+    
 }
 function update_stage4_take (){//與外界有關的互動
     
     
     // cursors = this.input.keyboard.createCursorKeys();
 }
+/*****************************/
