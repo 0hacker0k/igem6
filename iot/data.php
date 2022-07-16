@@ -17,6 +17,7 @@ foreach($rs->fetchall() as $value){
     echo $value['concentration']."\n";//濃度
     echo $value['return_value']."\n";//已接收
     echo $value['set_time']."\n";//定時結束
+    echo $value['return_cct']."\n";//定時結束
     echo $value['port']."\n";//運作ip
     $count++;
 }
@@ -29,17 +30,28 @@ if(isset($_GET['port'])){
     $rs=$dbc->prepare("UPDATE `iot` SET `port`=:dat WHERE `id`=1");
     $rs->bindValue("dat",$_GET['port']);
     $v=$rs->execute();
-}else{
-    $rs=$dbc->prepare("UPDATE `iot` SET `return_value`=1 WHERE `id`=1");
-    $v=$rs->execute();
 }
 if(isset($_GET['command'])){
     $rs=$dbc->prepare("UPDATE `iot` SET `command`=:dat WHERE `id`=1");
     $rs->bindValue("dat",$_GET['command']);
     $v=$rs->execute();
 }
+if(isset($_GET['return_value'])){
+    $rs=$dbc->prepare("UPDATE `iot` SET `return_value`=:dat WHERE `id`=1");
+    $rs->bindValue("dat",$_GET['return_value']);
+    $v=$rs->execute();
+}
+if(isset($_GET['concentration'])){
+    $rs=$dbc->prepare("UPDATE `iot` SET `concentration`=:dat WHERE `id`=1");
+    $rs->bindValue("dat",$_GET['concentration']);
+    $v=$rs->execute();
+}
 
-
+if(isset($_GET['return_cct'])){
+    $rs=$dbc->prepare("UPDATE `iot` SET `return_cct`=:dat WHERE `id`=1");
+    $rs->bindValue("dat",$_GET['return_cct']);
+    $v=$rs->execute();
+}
 // if(isset($_GET['set_time']) && $_GET['set_time']==1 && $_POST['set_time']!=null){
 //     $rs=$dbc->prepare("UPDATE `iot` SET `set_time`=:dat WHERE `id`=1");
 //     $rs->bindValue("dat",$_POST['set_time']);

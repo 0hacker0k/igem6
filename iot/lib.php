@@ -24,6 +24,13 @@ if(isset($_GET['command'])){
     $rs->bindValue("dat",$_GET['command']);
     $v=$rs->execute();
 }
+if(isset($_GET['concentration'])){
+    $rs=$dbc->prepare("UPDATE `iot` SET `concentration`=:dat WHERE `id`=1");
+    $rs->bindValue("dat",$_GET['concentration']);
+    $v=$rs->execute();
+    $rs=$dbc->prepare("UPDATE `iot` SET `return_cct`=0 WHERE `id`=1");
+    $v=$rs->execute();
+}
 /*if($_GET['return_value']!=null){
     $rs=$dbc->prepare("UPDATE `iot` SET `status`=:dat WHERE `id`=1");
     $rs->bindValue("dat",$_GET['buzzer']);
