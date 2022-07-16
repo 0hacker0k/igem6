@@ -62,13 +62,11 @@
                         
                         <div class="word_content">
                         <ul>
-                            <li>Exploring the pathway of how FAS and PKS systems produce fatty acid</li>
+                            <li>Obtain redesigned pfa genes from MP-1 by cloning</li>
                             <br>
-                            <li>Exploring the mechanism of how ACC gene increases the yield of DHA in Thraustochytrids</li>
+                            <li>Write the safety form</li>
                             <br>
-                            <li>Exploring the mechanism of how cerulenin increases the yield of DHA</li>
-                            <br>
-                            <li>Finding out the pfaE gene candidates that increase the yield of DHA</li>
+                            <li>Confirm whether E. coli could survive in two types of antibiotics</li>                         
                         </ul>
                         </div>
                     </div>
@@ -82,13 +80,11 @@
                         
                         <div class="word_content">
                         <ul>
-                            <li>Purifying pColdI and pSTV28 vectors for pfa genes expression in E. Coli</li>
+                            <li>Obtain redesigned pfa genes from MP-1 by cloning</li>
                             <br>
-                            <li>Confirming that TTC couldn’t be applied to distinguish PUFA-producing bacteria from others</li>
+                            <li>Write the safety form</li>
                             <br>
-                            <li>Confirming the ability of EPA production in MP-1</li>
-                            <br>
-                            <li>Designing the biobricks for pfa genes and ACC genes expression in E. Coli</li>
+                            <li>Confirm whether E. coli could survive in two types of antibiotics</li>
                         </ul>
                         </div>
                     </div>
