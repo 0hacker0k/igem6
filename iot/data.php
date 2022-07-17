@@ -17,7 +17,7 @@ foreach($rs->fetchall() as $value){
     echo $value['concentration']."\n";//濃度
     echo $value['return_value']."\n";//已接收
     echo $value['set_time']."\n";//定時結束
-    echo $value['return_cct']."\n";//定時結束
+    echo $value['return_cct']."\n";//已接收
     echo $value['port']."\n";//運作ip
     $count++;
 }

@@ -24,11 +24,12 @@ foreach($rs->fetchall() as $value){
     <button class="size_mid" onclick="add_count()" type="button">+</button>
     <input class="size_mid" type="text" id="count_1" name="count" value="<?php echo $value['count'];?>" style="text-align: right;"/>
     <button class="size_mid" onclick="sub_count()" type="button">-</button>
+    <button class="size_mid" formaction="./lib.php?count=1" type="submit">送出</button>
     <div>濃度(%)</div>
     <button class="size_mid" onclick="add_cct()" type="button">+</button>
     <input class="size_mid" type="text" id="cct_1" name="concentration" value="<?php echo $value['concentration'];?>" style="text-align: right;"/>
     <button class="size_mid" onclick="sub_cct()" type="button">-</button>
-    <button class="size_mid" formaction="./lib.php?count=1" type="submit">送出</button>
+    <button class="size_mid" formaction="./lib.php?count=2" type="submit">送出</button>
     <div>運行位址:<?php echo $value['port'];?></div>
 </form>
 <?php 

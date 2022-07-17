@@ -13,18 +13,36 @@ body{
   } */
 
   /*看狀況使用*/
-
-  
-  li{
-    float:left;
-  }
-
   .full_size_image{
   width:100%;
 }
-.member_card{
+.attribution_card{
     text-align: center;
     width: 100%;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    min-width:60rem;
+    margin-bottom: 10%;
+    display: table;
+}
+.attribution_overview{
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
+.attribution_left{
+    height: 100%;
+    width: 30%;
+    float: left;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+}
+.attribution_right{
+    width: 70%;
+    float: left;
 }
 .intro{
   text-align: center;
@@ -48,12 +66,12 @@ body{
 
 
 h1{
-  color:#EA2B1F;
-  font-weight:bolder;
-  font-size:70px !important;
-  padding-top:100px;
-  padding-bottom:100px;
-  }
+    color:#EA2B1F;
+    font-weight:bolder;
+    font-size:70px !important;
+    padding-top:100px;
+    padding-bottom:100px;
+}
 
 
 p{
@@ -72,7 +90,43 @@ p{
 }
 
 .button_floating{
-  height:100%;
+    height:100%;
+}
+.nav_control{
+    width:100%;
+    /* margin-bottom:5%; */
+}
+.attribution_nav{
+    background-size:100% 100%;    /*cover/ auto / contain*/
+    background-position: center;/*left  center */
+    /* background-attachment: /*scroll / fixed / local; */
+    /* width: 100%; */
+    display:table;
+    /* background-repeat: no-repeat;
+    color:#FFFFFF;
+    margin: 0; */
+}
+.attribution_nav_content{
+    margin-top: 15%;
+    margin-bottom: 0;
+    margin-left: 15%;
+    margin-right: 0;
+    text-align: left;
+}
+.title-label{
+    background-size:100% 100%;    /* cover/ auto / contain*/
+    background-position: left; /*left  center*/
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    color:#FFFFFF;
+    margin: 0;
+    display:table;
+    padding: 4% 20%;
+    /* margin: 10% 10%; */
+}
+.title-label-div{
+    /* float */
+    display:table;
 }
 
 /* .loading{
