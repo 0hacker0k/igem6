@@ -22,7 +22,7 @@ if(isset($_GET['count'])){
     }
     if($_GET['count']==2){
         $rs=$dbc->prepare("UPDATE `iot` SET `concentration`=:dat WHERE `id`=1");
-        $rs->bindValue("dat",$_GET['concentration']);
+        $rs->bindValue("dat",$_POST['concentration']);
         $v=$rs->execute();
         $rs=$dbc->prepare("UPDATE `iot` SET `return_cct`=0 WHERE `id`=1");
         $v=$rs->execute();
