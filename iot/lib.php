@@ -13,22 +13,24 @@ $dbc = $DB->connect();
 //     $v=$rs->execute();
 // }
 if(isset($_GET['count'])){
-    $rs=$dbc->prepare("UPDATE `iot` SET `count`=:dat WHERE `id`=1");
-    $rs->bindValue("dat",$_POST['count']);
-    $v=$rs->execute();
-    $rs=$dbc->prepare("UPDATE `iot` SET `return_value`=0 WHERE `id`=1");
-    $v=$rs->execute();
+    if($_GET['count']==1){
+        $rs=$dbc->prepare("UPDATE `iot` SET `count`=:dat WHERE `id`=1");
+        $rs->bindValue("dat",$_POST['count']);
+        $v=$rs->execute();
+        $rs=$dbc->prepare("UPDATE `iot` SET `return_value`=0 WHERE `id`=1");
+        $v=$rs->execute();
+    }
+    if($_GET['count']==2){
+        $rs=$dbc->prepare("UPDATE `iot` SET `concentration`=:dat WHERE `id`=1");
+        $rs->bindValue("dat",$_GET['concentration']);
+        $v=$rs->execute();
+        $rs=$dbc->prepare("UPDATE `iot` SET `return_cct`=0 WHERE `id`=1");
+        $v=$rs->execute();
+    }
 }
 if(isset($_GET['command'])){
     $rs=$dbc->prepare("UPDATE `iot` SET `command`=:dat WHERE `id`=1");
     $rs->bindValue("dat",$_GET['command']);
-    $v=$rs->execute();
-}
-if(isset($_GET['concentration'])){
-    $rs=$dbc->prepare("UPDATE `iot` SET `concentration`=:dat WHERE `id`=1");
-    $rs->bindValue("dat",$_GET['concentration']);
-    $v=$rs->execute();
-    $rs=$dbc->prepare("UPDATE `iot` SET `return_cct`=0 WHERE `id`=1");
     $v=$rs->execute();
 }
 /*if($_GET['return_value']!=null){
