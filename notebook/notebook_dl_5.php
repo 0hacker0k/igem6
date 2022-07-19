@@ -1,19 +1,20 @@
 <head>
   
     <title>wiki</title>
-    <?php include "./sub/config.php";?>
-    <?php include "./sub/head.php";?>
+    
+    <?php include dirname(__FILE__,2)."/sub/config.php";?>
+    <?php include dirname(__FILE__,3).subfile."/head.php";?>
     <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook.css">
-    <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook_dl_5.css">
+    <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook_each.css">
   
 </head>
 
 <body onload="load_finish()">
 
   
-    <?php include "./sub/header.php"?>
+    <?php include dirname(__FILE__,3).subfile."/header.php"?>
 
-    <?php include "sub/loading.php"?>
+    <?php include dirname(__FILE__,3).subfile."/loading.php"?>
 
     <div class="notebook">
         <div class="left_div">

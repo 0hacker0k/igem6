@@ -17,7 +17,7 @@
     </div>
     <div class="attribution_card justify-content-around">
         <div class="attribution_left">
-            <div class="attribution_nav" style="background-image:url(<?php echo imgfile;?>/note_untouch.png")>
+            <div id="nav_note" class="attribution_nav" style="background-image:url(<?php echo imgfile;?>/note_untouch.png")>
                 <div class="attribution_nav_content">
                     <div class="nav_control"><li>Primary Principal Investigator</li></div>
                     <div class="nav_control"><li>Secondary Principal Investigators</li></div>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="attribution_right">
-            <div class="title-label-div">
+            <div class="title-labe-dliv">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Leaders</h1>
             </div>
             <?php

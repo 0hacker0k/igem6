@@ -6,6 +6,7 @@
   <?php include "./sub/config.php";?>
   <?php include "./sub/head.php";?>
   <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook.css">
+  <script src="<?php echo jsfile;?>/notebook.js"></script>
   
 </head>
 
