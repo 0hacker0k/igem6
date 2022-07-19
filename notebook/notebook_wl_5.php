@@ -1,58 +1,3 @@
-<head>
-  
-    <title>wiki</title>
-    
-    <?php include dirname(__FILE__,2)."/sub/config.php";?>
-    <?php include dirname(__FILE__,3).subfile."/head.php";?>
-    <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook.css">
-    <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook_each.css">
-  
-</head>
-
-<body onload="load_finish()">
-
-  
-    <?php include dirname(__FILE__,3).subfile."/header.php"?>
-
-    <?php include dirname(__FILE__,3).subfile."/loading.php"?>
-
-    <div class="notebook">
-        <div class="left_div">
-            <div>
-                <button type="button" class="leftlabel leftlabel1" onclick="switchbtn(1)">MAY.</button>
-            </div>
-            <div>
-                <button type="button" class="leftlabel leftlabel2" onclick="switchbtn(2)">JUN.</button>
-            </div>
-            <div>
-                <button type="button" class="leftlabel leftlabel3" onclick="switchbtn(3)">JUL.</button>
-            </div>
-            <div>
-                <button type="button" class="leftlabel leftlabel4" onclick="switchbtn(4)">AUG.</button>
-            </div>
-            <div>
-                <button type="button" class="leftlabel leftlabel5" onclick="switchbtn(5)">SEP.</button>
-            </div>
-            <div>
-                <button type="button" class="leftlabel leftlabel6" onclick="switchbtn(6)">OCT.</button>
-            </div>
-        </div>
-        <div class="top_div">
-            <div class="top_control">
-                <button type="button" class="toplabel toplabel1" onclick="switchbtn(10)">WET LAB</button>
-            </div>
-            <div class="top_control">
-                <button type="button" class="toplabel" onclick="switchbtn(20)">DRY LAB</button>
-            </div>
-            <div class="top_control">
-                <button type="button" class="toplabel" onclick="switchbtn(30)">HP</button>
-            </div>
-            <div class="top_control">
-                <button type="button" class="toplabel" onclick="switchbtn(40)">TIMELINE</button> 
-            </div>
-        </div>
-      
-
         <div class="right_div">
             <div class="pad">
                 <div class="week">
@@ -151,9 +96,6 @@
 
             </div>
         </div>
-    </div>
     <script>
         setpage(1,20);
     </script>
-    <?php include "./sub/footer.php"?>
-</body>

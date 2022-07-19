@@ -97,6 +97,7 @@ p{
     height:100%;
 }
 .nav_control{
+    transition: 0.3s;
     width:100%;
     white-space:nowrap;
     box-shadow: 0 1px;
@@ -179,7 +180,7 @@ p{
     object-fit: cover;
     object-position: center top;
     overflow: hidden;
-    border-radius:20%;
+    border-radius:50%;
 }
 .card_title{
     display: flex;

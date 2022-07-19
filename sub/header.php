@@ -13,7 +13,7 @@
                 <div id="myDropdown1" class="dropdown-content">
                     <a href="#" class="dropdown-content_list click">Home</a>
                     <a href="#" class="dropdown-content_list click">Members</a>
-                    <a href="#" class="dropdown-content_list click">Attributions</a>
+                    <a href="./attribution.php" class="dropdown-content_list click">Attributions</a>
                     <a href="#" class="dropdown-content_list click">Sponsors</a>
                 </div>
             </div>
