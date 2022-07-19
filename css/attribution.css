@@ -32,18 +32,21 @@ body{
     display: flex;
 }
 .attribution_left{
-    height: 100%;
+    position : relative ; 
+    height: 1px;
+    bottom:0;
     width: 30%;
     float: left;
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center; 
-    align-items: center;
+    /* align-items: center; */
 }
 .attribution_right{
     width: 70%;
     float: left;
     padding-right: 5%;
+    padding-left: 2%;
 }
 .intro{
   text-align: center;
@@ -107,6 +110,7 @@ p{
     background-color: #EA2B1F;
 }
 .attribution_nav{
+    position: absolute;
     background-size:130%;    /*cover/ auto / contain*/
     background-position: center top;/*left  center */
     /* background-attachment: /*scroll / fixed / local; */

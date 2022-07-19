@@ -3,6 +3,7 @@
     <?php include "./sub/config.php";?>
     <?php include "./sub/head.php";?>
     <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/attribution.css">
+    <script src="<?php echo jsfile;?>/attribution.js"></script>
 </head>
 
 <body onload="load_finish()">
@@ -30,7 +31,7 @@
             </div>
         </div>
         <div class="attribution_right">
-            <div class="title-labe-dliv">
+            <div class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Leaders</h1>
             </div>
             <?php
