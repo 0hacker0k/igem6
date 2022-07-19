@@ -45,6 +45,18 @@
                 ";
                 include "sub/attribution_card.php";
             ?>
+            <?php
+                $name="ABC ABCD-EFGH";
+                $photo="/human/7a.jpg";
+                $icon1="/human/9e.png";
+                $icon2="/human/7e.png";
+                $icon3="/human/5e.png";
+                $content="
+                    do something, or you'll have no attribution.<br>
+                    do something, or you'll have no attribution.<br>
+                ";
+                include "sub/attribution_card.php";
+            ?>
         </div>
         
         

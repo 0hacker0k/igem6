@@ -147,6 +147,7 @@ p{
     padding: 2%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 7%;
     /* height: 20rem; */
 }
 .card_left{
