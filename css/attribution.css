@@ -110,6 +110,7 @@ p{
     background-color: #EA2B1F;
 }
 .attribution_nav{
+    transition: 0.3s;
     position: absolute;
     background-size:130%;    /*cover/ auto / contain*/
     background-position: center top;/*left  center */

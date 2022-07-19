@@ -1,3 +1,4 @@
+var sticker=null;
 document.addEventListener('DOMContentLoaded', function(){
     jQuery(function($){
         var myWindow = $(window); 
@@ -9,7 +10,13 @@ document.addEventListener('DOMContentLoaded', function(){
             temp=notePosition-noteheight*0.6;
         if (myPosition > temp) {
             if (myWindow.scrollTop() > temp) {
+                if(sticker!=null)
+                    clearTimeout(sticker);
                 note.style.top=(myPosition-temp)+"px";
+                note.style.backgroundImage="url(img/note_touch.png)";
+                sticker=setTimeout(function(){
+                    note_stick(note);
+                },100);
             } else {
                 note.style.top=0+"px";
             }
@@ -18,6 +25,6 @@ document.addEventListener('DOMContentLoaded', function(){
         }); 
     });  
 });
-// function note_move(item,goal){
-//     note.style.top=(myPosition-notePosition+noteheight)+"px";
-// }
+function note_stick(item){
+    item.style.backgroundImage="url(img/note_untouch.png)";
+}
