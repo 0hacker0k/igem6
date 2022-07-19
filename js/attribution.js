@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 note.style.backgroundImage="url(img/note_touch.png)";
                 sticker=setTimeout(function(){
                     note_stick(note);
-                },100);
+                },300);
             } else {
                 note.style.top=0+"px";
             }
