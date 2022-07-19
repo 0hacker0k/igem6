@@ -33,31 +33,18 @@
             <div class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Leaders</h1>
             </div>
-            <div class="card">
-                <div class="card_left">
-                    <image class="card_img" src="<?php echo imgfile;?>/human/7a.jpg" />
-                </div>
-                <div class="card_right">
-                    <div class="card_title">
-                        <div class="card_name">
-                            ABC ABCD-EFGH
-                        </div>
-                        <div class="card_icon_list">
-                            <image class="card_icon" src="<?php echo imgfile;?>/human/9e.png" />
-                            <image class="card_icon" src="<?php echo imgfile;?>/human/7e.png" />
-                            <image class="card_icon" src="<?php echo imgfile;?>/human/5e.png" />
-                        </div>
-                    </div>
-                    <div class="card_content">
-                        do some things.<br>
-                        do some things.<br>
-                        do some things.<br>
-                        do some things.<br>
-                        do some things.<br>
-                    </div>
-                </div>
-                <!-- <h1 class="title-label">Leaders</h1> -->
-            </div>
+            <?php
+                $name="ABC ABCD-EFGH";
+                $photo="/human/7a.jpg";
+                $icon1="/human/9e.png";
+                $icon2="/human/7e.png";
+                $icon3="/human/5e.png";
+                $content="
+                    do something, or you'll have no attribution.<br>
+                    do something, or you'll have no attribution.<br>
+                ";
+                include "sub/attribution_card.php";
+            ?>
         </div>
         
         

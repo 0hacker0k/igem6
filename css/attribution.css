@@ -191,6 +191,7 @@ p{
 }
 .card_icon_list{
     width: 30%;
+    text-align: left;
 }
 .card_icon{
     width :30%;
