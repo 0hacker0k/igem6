@@ -13,13 +13,14 @@ document.addEventListener('DOMContentLoaded', function(){
         noteheight=note.scrollHeight;
         temp=notePosition-noteheight*0.4;
         move_note();
-        myPosition = myWindow.scrollTop();
+        // myPosition = myWindow.scrollTop();
         myWindow.scroll(function(){
             temp=notePosition-noteheight*0.4;
             move_note();
         }); 
     });  
 });
+
 function move_note(){
     if (myPosition > temp) {
         if (myPosition > temp) {
