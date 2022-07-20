@@ -1,22 +1,24 @@
 var sticker=null;
+var note;
+var myPosition;
+var temp;
 document.addEventListener('DOMContentLoaded', function(){
     jQuery(function($){
         var myWindow = $(window); 
-        var myPosition = myWindow.scrollTop();
-        var note=document.getElementById("nav_note");
+        myPosition = myWindow.scrollTop();
+        note=document.getElementById("nav_note");
         var notePosition = $('#nav_note').offset().top;
         var noteheight=note.scrollHeight;
         temp=notePosition-noteheight*0.4;
-        move_note(note,myPosition,temp);
+        move_note();
         myPosition = myWindow.scrollTop();
         myWindow.scroll(function(){
             temp=notePosition-noteheight*0.4;
-            move_note(note,myPosition,temp);
-            myPosition = myWindow.scrollTop();
+            move_note();
         }); 
     });  
 });
-function move_note(note,myPosition,temp){
+function move_note(){
     if (myPosition > temp) {
         if (myPosition > temp) {
             if(sticker!=null)
@@ -30,7 +32,12 @@ function move_note(note,myPosition,temp){
             note.style.top=0+"px";
         }
     }
-    
+    myPosition = $(window).scrollTop();
+}
+function move_note2(){
+    setTimeout(() => {
+        move_note();
+    }, 0.1);
 }
 function note_stick(item){
     item.style.backgroundImage="url(img/note_untouch3.png)";

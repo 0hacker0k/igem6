@@ -1,3 +1,8 @@
+@media (prefers-reduced-motion: no-preference){
+    :root {
+        scroll-behavior: auto !important;
+    }
+}
 body{
 /*   height: 100%; */
   margin: 0;
@@ -10,7 +15,12 @@ body{
   font-family: Papyrus, fantasy;
   font-weight: 800;
 }
-
+.offcanvas{
+    transition:transform .0s !important;
+}
+.modal-dialog{
+    transition:transform .0s !important;
+}
 #navbar{
     width: 100%;
     left: 0;

@@ -20,18 +20,19 @@
         <div class="attribution_left">
             <div id="nav_note" class="attribution_nav" style="background-image:url(<?php echo imgfile;?>/note_untouch3.png")>
                 <div class="attribution_nav_content">
-                    <div class="nav_control"><li>Primary Principal Investigator</li></div>
-                    <div class="nav_control"><li>Secondary Principal Investigators</li></div>
-                    <div class="nav_control"><li>Instuctor</li></div>
-                    <div class="nav_control"><li>Leaders</li></div>
-                    <div class="nav_control"><li>wet lab</li></div>
-                    <div class="nav_control"><li>dry lab</li></div>
-                    <div class="nav_control"><li>human practice</li></div>
+                    <a href="#1" onclick="move_note2()"><div class="nav_control"><li>Primary Principal Investigator</li></div></a>
+                    <a href="#2" onclick="move_note2()"><div class="nav_control"><li>Secondary Principal Investigators</li></div></a>
+                    <a href="#3" onclick="move_note2()"><div class="nav_control"><li>Instuctor</li></div></a>
+                    <a href="#4" onclick="move_note2()"><div class="nav_control"><li>Leaders</li></div></a>
+                    <a href="#5" onclick="move_note2()"><div class="nav_control"><li>wet lab</li></div></a>
+                    <a href="#6" onclick="move_note2()"><div class="nav_control"><li>dry lab</li></div></a>
+                    <a href="#7" onclick="move_note2()"><div class="nav_control"><li>human practice</li></div></a>
+                    <a href="#8" onclick="move_note2()"><div class="nav_control"><li>Advisors</li></div></a>
                 </div>    
             </div>
         </div>
         <div class="attribution_right">
-            <div class="title-label-div">
+            <div id="1" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Primary Principal Investigators</h1>
             </div>
             <?php
@@ -52,7 +53,7 @@
                 $content="Dr. Yu helps team members to establish the whole vision, monitors the team process, and provides consulting on Wet lab experiments and HP activities.";
                 include "sub/attribution_card.php";
             ?>
-            <div class="title-label-div">
+            <div id="2" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Secondary Principal Investigators</h1>
             </div>
             <?php
@@ -91,7 +92,7 @@
                 $content="Ph.D. in Chemistry and Biochemistry, University of California.<br>Dr. Lin helps team members to sharpen the original ideas, gives advice on dry lab experimental designs, instructs and provides technical resources of modeling.";
                 include "sub/attribution_card.php";
             ?>
-            <div class="title-label-div">
+            <div id="3" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Instructors</h1>
             </div>
             <?php
@@ -121,7 +122,7 @@
                 $content="Ph.D. in Electronics Engineering, National Tsing Hua University";
                 include "sub/attribution_card.php";
             ?>
-            <div class="title-label-div">
+            <div id="4" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Leaders</h1>
             </div>
             <?php
@@ -151,7 +152,7 @@
                 $content="Team Co-leader: Responsible for communication between wet lab and human practice. Designing cloning methods in the wet lab group, and assisting social media, IHP and open lab in the human practice group.";
                 include "sub/attribution_card.php";
             ?>
-            <div class="title-label-div">
+            <div id="5" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Wet Lab</h1>
             </div>
             <?php
@@ -208,7 +209,7 @@
                 $content="Responsible for DHA detection and the protein expression of pfa B, pfa C, and pfa E genes.";
                 include "sub/attribution_card.php";
             ?>
-            <div class="title-label-div">
+            <div id="6" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Dry Lab</h1>
             </div>
             <?php
@@ -238,7 +239,7 @@
                 $content="Responsible for designing and establishing the machine.";
                 include "sub/attribution_card.php";
             ?>
-            <div class="title-label-div">
+            <div id="7" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Human Practice</h1>
             </div>
             <?php
@@ -304,7 +305,7 @@
                 $content="Responsible for holding campus walking.";
                 include "sub/attribution_card.php";
             ?>
-            <div class="title-label-div">
+            <div id="8" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Advisors</h1>
             </div>
             <?php
@@ -344,8 +345,6 @@
                 include "sub/attribution_card.php";
             ?>
         </div>
-        
-        
     </div>
     <?php include "./sub/footer.php"?>   
 </body>

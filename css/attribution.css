@@ -107,12 +107,15 @@ p{
     font-weight: bolder;
     padding-left:0.5em;
     padding-right:0.2em;
-    /* text-decoration: underline; */
+    color: #000000;
     /* margin-bottom:5%; */
 }
 .nav_control:hover{
     cursor:pointer;
     background-color: #EA7B6F;
+}
+a{
+    text-decoration: none !important;
 }
 .attribution_nav{
     transition: 0.3s;
