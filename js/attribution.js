@@ -45,7 +45,7 @@ function note_stick(item){
 let lazyImages = []
 const option = {
     root: null,
-    rootMargin: "0px 0px 0px 0px",
+    rootMargin: "200px 0px 200px 0px",
     threshold: [0]
 }
 const observer = new IntersectionObserver(entries => {
