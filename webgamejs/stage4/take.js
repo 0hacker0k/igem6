@@ -15,7 +15,7 @@ function preload_stage4_take(){
     this.load.image('tube', 'img/stage4/tube.png');
     this.load.image('stick_box', 'img/main/green.png');
     this.load.image('trashcan', 'img/main/green.png');
-    //load_talkbox(this);
+    load_talkbox(this);
     if(debug==1){
         this.load.image('D_center', 'img/main/debug_center.png');
         this.load.image('green', 'img/main/green.png');
@@ -194,15 +194,15 @@ function create_stage4_take (){
     //轉場動畫
     start_transition(this);
     
-    //Test rexUI
+    //Talk box
     // createTextBox(this, 100, 100, {
     //     wrapWidth: 500,
     // })
     // .start(content, 50);
-    createTextBox(this, 100, 400, {
-        wrapWidth: 500,
-        fixedWidth: 500,
-        fixedHeight: 65,
+    createTextBox(this, width*0.15, height*0.75, {
+        wrapWidth: width*0.5,
+        fixedWidth: width*0.55,
+        fixedHeight: height*0.15,
     })
     .start(content, 50);
     

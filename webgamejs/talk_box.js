@@ -1,3 +1,8 @@
+function load_talkbox(where){//載入動畫檔
+    where.load.image('talkbox', 'img/main/green.png');
+    where.load.image('nextPage', 'img/main/green.png');
+}
+
 function loading_talkbox(where,x,y){
     talkbox = where.physics.add.sprite(x,y,'talkbox').setOrigin(0.5,0.5).setDisplaysize(500,500);
 }
@@ -5,6 +10,8 @@ function loading_talkbox(where,x,y){
 function start_talkbox(where,dialog){
     
 }
+var theend=0;
+const talkbox_size = width*0.01;
 const GetValue = Phaser.Utils.Objects.GetValue;
 function createTextBox (scene, x, y, config) {
     var wrapWidth = GetValue(config, 'wrapWidth', 0);
@@ -23,14 +30,14 @@ function createTextBox (scene, x, y, config) {
             text: getBBcodeText(scene, wrapWidth, fixedWidth, fixedHeight),
 
             action: scene.add.image(0, 0, 'nextPage').setTint(COLOR_LIGHT).setVisible(false),
-
+            
             space: {
-                left: 20,
-                right: 20,
-                top: 20,
-                bottom: 20,
-                icon: 10,
-                text: 10,
+                left: talkbox_size*2,
+                right: talkbox_size*2,
+                top: talkbox_size*2,
+                bottom: talkbox_size*2,
+                icon: talkbox_size,
+                text: talkbox_size,
             }
         })
         .setOrigin(0)
@@ -44,13 +51,22 @@ function createTextBox (scene, x, y, config) {
             if (this.isTyping) {
                 this.stop(true);
             } else {
+                if(this.isLastPage){
+                    //最後一頁，字跑完，talkbox消失
+                    this.setVisible(false);
+                    this.setInteractive(false);
+                    theend=0;
+                    return;
+                }
                 this.typeNextPage();
             }
+            
         }, textBox)
         .on('pageend', function () {
-            if (this.isLastPage) {
-                return;
-            }
+            // if (this.isLastPage) {
+            //     return;
+            // }
+            
 
             var icon = this.getElement('action').setVisible(true);
             this.resetChildVisibleState(icon);
@@ -117,6 +133,3 @@ var getBBcodeText = function (scene, wrapWidth, fixedWidth, fixedHeight) {
 //     transition.depth = 1024;
 //     transition.setVelocityX(-2500*width/800);
 // }
-function load_talkbox(where){//載入動畫檔
-    where.load.image('talkbox', 'img/main/green.png');
-}
