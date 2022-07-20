@@ -4,6 +4,7 @@
                 </div>
                 <div class="card_right">
                     <div class="card_title">
+                        <image class="name_icon" src="<?php echo imgfile;?>/drop.png" />
                         <div class="card_name">
                             <?php echo $name;?>
                         </div>

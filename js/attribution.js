@@ -6,25 +6,32 @@ document.addEventListener('DOMContentLoaded', function(){
         var note=document.getElementById("nav_note");
         var notePosition = $('#nav_note').offset().top;
         var noteheight=note.scrollHeight;
-        myWindow.scroll(function(){
-            temp=notePosition-noteheight*0.6;
-        if (myPosition > temp) {
-            if (myWindow.scrollTop() > temp) {
-                if(sticker!=null)
-                    clearTimeout(sticker);
-                note.style.top=(myPosition-temp)+"px";
-                note.style.backgroundImage="url(img/note_touch.png)";
-                sticker=setTimeout(function(){
-                    note_stick(note);
-                },300);
-            } else {
-                note.style.top=0+"px";
-            }
-        }
+        temp=notePosition-noteheight*0.4;
+        move_note(note,myPosition,temp);
         myPosition = myWindow.scrollTop();
+        myWindow.scroll(function(){
+            temp=notePosition-noteheight*0.4;
+            move_note(note,myPosition,temp);
+            myPosition = myWindow.scrollTop();
         }); 
     });  
 });
+function move_note(note,myPosition,temp){
+    if (myPosition > temp) {
+        if (myPosition > temp) {
+            if(sticker!=null)
+                clearTimeout(sticker);
+            note.style.top=(myPosition-temp)+"px";
+            note.style.backgroundImage="url(img/note_touch3.png)";
+            sticker=setTimeout(function(){
+                note_stick(note);
+            },300);
+        } else {
+            note.style.top=0+"px";
+        }
+    }
+    
+}
 function note_stick(item){
-    item.style.backgroundImage="url(img/note_untouch.png)";
+    item.style.backgroundImage="url(img/note_untouch3.png)";
 }
