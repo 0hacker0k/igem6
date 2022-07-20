@@ -42,7 +42,7 @@
                 $icon2="";
                 $icon3="";
                 $content="Ph.D. in Biomedical Science Institute, National Sun Yat-sen University<br>Aka 中正金城武";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Chun-Ying Yu";
@@ -51,7 +51,7 @@
                 $icon2="";
                 $icon3="";
                 $content="Dr. Yu helps team members to establish the whole vision, monitors the team process, and provides consulting on Wet lab experiments and HP activities.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <div id="2" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Secondary Principal Investigators</h1>
@@ -63,7 +63,7 @@
                 $icon2="";
                 $icon3="";
                 $content="Ph.D. in Biophysical Chemistry, Yale University.<br>Dr. Lee builds up the laboratory and assists the executive affairs.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Michael Chan";
@@ -72,7 +72,7 @@
                 $icon2="";
                 $icon3="";
                 $content="Ph.D. in Anatomical and Cellular Pathology, The Chinese University of Hong Kong";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Hau-Ren Chen";
@@ -81,7 +81,7 @@
                 $icon2="";
                 $icon3="";
                 $content="Ph.D. in Microbial Immunity, National Yang-Ming University.<br>Dr. Chen gives advice on experimental design, and instructs the wet lab experiments.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Eugene C. Lin";
@@ -90,7 +90,7 @@
                 $icon2="";
                 $icon3="";
                 $content="Ph.D. in Chemistry and Biochemistry, University of California.<br>Dr. Lin helps team members to sharpen the original ideas, gives advice on dry lab experimental designs, instructs and provides technical resources of modeling.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <div id="3" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Instructors</h1>
@@ -102,7 +102,7 @@
                 $icon2="";
                 $icon3="";
                 $content="Ph.D. in Plant Breeding, Cornell University.<br>Dr. Rau gave comments, corrections, and suggestions on the monthly team presentations, video scripts, picture book, and other English materials.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Victoria Rau";
@@ -111,7 +111,7 @@
                 $icon2="";
                 $icon3="";
                 $content="Ph.D. in Linguistics, Cornell University.<br>Dr. Rau gave comments, corrections, and suggestions on the monthly team presentations, video scripts, picture book, and other English materials.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Hsiang-Chiu Wu";
@@ -120,7 +120,7 @@
                 $icon2="";
                 $icon3="";
                 $content="Ph.D. in Electronics Engineering, National Tsing Hua University";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <div id="4" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Leaders</h1>
@@ -132,7 +132,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Team leader: Responsible for deciding the team’s target, integrating and communicating among groups, and team representative to other teams.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Yuan-Chi Tsai";
@@ -141,7 +141,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Team Co-leader: Responsible for communication between wet lab and dry lab. Performing part of the protein expression in the wet lab group, and designing machines in the dry lab group.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Yun-Chi Chiu";
@@ -150,7 +150,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Team Co-leader: Responsible for communication between wet lab and human practice. Designing cloning methods in the wet lab group, and assisting social media, IHP and open lab in the human practice group.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <div id="5" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Wet Lab</h1>
@@ -162,7 +162,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Wet Lab leader: Responsible for cloning design, scheduling experiments, and coordinating with other groups.                ";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Yu-Chen Huang";
@@ -171,7 +171,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Wet Lab co-leader: Assisting group leader, and responsible for the protein expression of pfa B, pfa C, and pfa E genes.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Chen-Yu Wu";
@@ -180,7 +180,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Responsible for the protein expression of pfa A and pfa D genes.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Chi-Huan Zheng";
@@ -189,7 +189,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Responsible for protein expression of pfa A, and pfa  D genes";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Zong-Ying He";
@@ -198,7 +198,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Responsible for protein expression of pfa B, pfa  C, and pfa E genes";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Bo-Qin Wu";
@@ -207,7 +207,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Responsible for DHA detection and the protein expression of pfa B, pfa C, and pfa E genes.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <div id="6" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Dry Lab</h1>
@@ -219,7 +219,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Dry lab leader: Responsible for coordinating with other groups and coding the web game, wiki, as well as programs of the machine.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Si-Ru Zhou";
@@ -228,7 +228,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Dry lab co-leader: Responsible for art designing of wiki, team logo, and social media.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Hao-Fang Chan";
@@ -237,7 +237,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Responsible for designing and establishing the machine.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <div id="7" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Human Practice</h1>
@@ -249,7 +249,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Human practice leader: Responsible for coordinating with other groups and designing the web game.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Yi-Yun Lee";
@@ -258,7 +258,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Human practice co-leader: Responsible for holding Open Lab and fundraising.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Peng-Jen Chen";
@@ -267,7 +267,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Responsible for most of the art illustrations.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Guan-Chen Li";
@@ -276,7 +276,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Responsible for designing and directing the promotion video.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Yu-Quan Chou";
@@ -285,7 +285,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Responsible for IHP projects.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Jung-Hsuan Hsiao";
@@ -294,7 +294,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Responsible for collaboration and marketing.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Wei-Chun Fu";
@@ -303,7 +303,7 @@
                 $icon2="/human/7e.png";
                 $icon3="/human/5e.png";
                 $content="Responsible for holding campus walking.";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <div id="8" class="title-label-div">
                 <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Advisors</h1>
@@ -315,7 +315,7 @@
                 $icon2="";
                 $icon3="";
                 $content="";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Hong-Fu Liao";
@@ -324,7 +324,7 @@
                 $icon2="";
                 $icon3="";
                 $content="";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Chia-Chia Tsai";
@@ -333,7 +333,7 @@
                 $icon2="";
                 $icon3="";
                 $content="";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
             <?php
                 $name="Shi-Jie Nga";
@@ -342,7 +342,7 @@
                 $icon2="";
                 $icon3="";
                 $content="";
-                include "sub/attribution_card.php";
+                include "sub/attribution_card2.php";
             ?>
         </div>
     </div>
