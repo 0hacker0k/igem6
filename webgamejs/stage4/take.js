@@ -1,6 +1,6 @@
-const COLOR_PRIMARY = 0x4e342e;
-const COLOR_LIGHT = 0x7b5e57;
-const COLOR_DARK = 0x260e04;
+COLOR_PRIMARY = 0x4e342e;
+COLOR_LIGHT = 0x7b5e57;
+COLOR_DARK = 0x260e04;
 var content = `Phaser is a fast, free, and fun open source HTML5 game framework that offers WebGL and Canvas rendering across desktop and mobile web browsers. Games can be compiled to iOS, Android and native apps by using 3rd party tools. You can use JavaScript or TypeScript for development.`;
 
 function preload_stage4_take(){
@@ -203,7 +203,7 @@ function create_stage4_take (){
         wrapWidth: width*0.5,
         fixedWidth: width*0.55,
         fixedHeight: height*0.15,
-    })
+    },'green')
     .start(content, 50);
     
 }

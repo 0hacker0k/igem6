@@ -10,6 +10,9 @@ document.cookie = document.cookie + ";expires=" + exp.toGMTString();
 */
 //alert(document.cookie);
 const rexUI_path = "./webgamejs/rexUI.min.js";
+var COLOR_PRIMARY;
+var COLOR_LIGHT;
+var COLOR_DARK;
 var debug=1; //if in debug mod it will be set to 1
 var anime; //It is settimeout return value in anime
 var stop=0; //whether should stop the role
@@ -125,6 +128,12 @@ const stage_4_take={
     create: create_stage4_take,
     update: update_stage4_take
 }
+const stage_5_gel={
+    key: 'stage_5_gel',
+    preload: preload_stage5_take,
+    create: create_stage5_take,
+    update: update_stage5_take
+}
 const play_1={
     key: 'play_1',
     preload: play_1_preload,
@@ -156,6 +165,9 @@ function load(){
                 break;
             case "stage4":
                 load_page(stage_4_take);
+                break;
+            case "stage5":
+                load_page(stage_5_gel);
                 break;
             case "play1":
                 load_page(play_1);
