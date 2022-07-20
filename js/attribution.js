@@ -2,23 +2,37 @@ var sticker=null;
 var note;
 var myPosition;
 var temp;
+var myWindow = $(window); 
+var noteheight;
+var notePosition;
 document.addEventListener('DOMContentLoaded', function(){
     jQuery(function($){
-        var myWindow = $(window); 
         myPosition = myWindow.scrollTop();
         note=document.getElementById("nav_note");
-        var notePosition = $('#nav_note').offset().top;
-        var noteheight=note.scrollHeight;
+        notePosition = $('#nav_note').offset().top;
+        noteheight=note.scrollHeight;
         temp=notePosition-noteheight*0.4;
         move_note();
-        myPosition = myWindow.scrollTop();
+        // myPosition = myWindow.scrollTop();
         myWindow.scroll(function(){
             temp=notePosition-noteheight*0.4;
             move_note();
         }); 
     });  
-});
+});//1488-836=652
+// function ttt(){
+//     console.log(document.getElementById("full_size_image").clientHeight);
+// }
+// setTimeout(() => {
+//     ttt();
+// }, 1000);
+function locate_note(){
+    notePosition = $('#attribution_left').offset().top;
+    temp=notePosition-noteheight*0.4;
+    move_note();
+}
 function move_note(){
+    console.log(notePosition,noteheight);
     if (myPosition > temp) {
         if (myPosition > temp) {
             if(sticker!=null)
@@ -32,7 +46,7 @@ function move_note(){
             note.style.top=0+"px";
         }
     }
-    myPosition = $(window).scrollTop();
+    myPosition = myWindow.scrollTop();
 }
 function move_note2(){
     setTimeout(() => {
@@ -45,7 +59,7 @@ function note_stick(item){
 let lazyImages = []
 const option = {
     root: null,
-    rootMargin: "0px 0px 0px 0px",
+    rootMargin: "200px 0px 200px 0px",
     threshold: [0]
 }
 const observer = new IntersectionObserver(entries => {
