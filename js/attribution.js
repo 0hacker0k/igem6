@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
 // }, 1000);
 function locate_note(){
     notePosition = $('#attribution_left').offset().top;
+    temp=notePosition-noteheight*0.4;
     move_note();
 }
 function move_note(){
