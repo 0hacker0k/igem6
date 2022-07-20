@@ -6,7 +6,7 @@
     <script src="<?php echo jsfile;?>/attribution.js"></script>
 </head>
 
-<body onload="load_finish()">
+<body onload="/*load_finish()*/">
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
     <img class="full_size_image" src="<?php echo imgfile;?>/human/attribution_banner.jpg" alt=""> 
