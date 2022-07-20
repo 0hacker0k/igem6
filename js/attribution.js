@@ -19,8 +19,16 @@ document.addEventListener('DOMContentLoaded', function(){
             move_note();
         }); 
     });  
-});
-
+});//1488-836=652
+// function ttt(){
+//     console.log(document.getElementById("full_size_image").clientHeight);
+// }
+// setTimeout(() => {
+//     ttt();
+// }, 1000);
+function locate_note(){
+    notePosition = $('#nav_note').offset().top;
+}
 function move_note(){
     console.log(notePosition,noteheight);
     if (myPosition > temp) {
