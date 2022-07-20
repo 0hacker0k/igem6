@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="attribution_card justify-content-around">
-        <div class="attribution_left">
+        <div id="attribution_left" class="attribution_left">
             <div id="nav_note" class="attribution_nav" style="background-image:url(<?php echo imgfile;?>/note_untouch3.png")>
                 <div class="attribution_nav_content">
                     <a href="#1" onclick="move_note2()"><div class="nav_control"><li>Primary Principal Investigator</li></div></a>
