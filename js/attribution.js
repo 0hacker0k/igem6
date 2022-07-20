@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 function move_note(){
+    console.log(myPosition,temp);
     if (myPosition > temp) {
         if (myPosition > temp) {
             if(sticker!=null)
@@ -35,7 +36,7 @@ function move_note(){
             note.style.top=0+"px";
         }
     }
-    myPosition = $(window).scrollTop();
+    myPosition = myWindow.scrollTop();
 }
 function move_note2(){
     setTimeout(() => {
