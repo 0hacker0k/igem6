@@ -9,7 +9,7 @@
 <body onload="load_finish();locate_note();">
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
-    <img class="full_size_image"" src="<?php echo imgfile;?>/human/attribution_banner.jpg" alt=""> 
+    <img class="full_size_image" src="<?php echo imgfile;?>/human/attribution_banner.jpg" alt=""> 
     <div class="attribution_overview justify-content-around">
         <div class="col-7">
             <h1>Overview</h1>
