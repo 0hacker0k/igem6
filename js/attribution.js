@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 function move_note(){
-    console.log(myPosition,temp);
+    console.log(notePosition,noteheight);
     if (myPosition > temp) {
         if (myPosition > temp) {
             if(sticker!=null)
