@@ -1,6 +1,11 @@
 function load_talkbox(where){//載入動畫檔
     where.load.image('talkbox', 'img/main/green.png');
     where.load.image('nextPage', 'img/main/green.png');
+    where.load.scenePlugin({
+        key: 'rexuiplugin',
+        url: rexUI_path,
+        sceneKey: 'rexUI'
+    });
 }
 
 function loading_talkbox(where,x,y){
@@ -10,10 +15,9 @@ function loading_talkbox(where,x,y){
 function start_talkbox(where,dialog){
     
 }
-var theend=0;
 const talkbox_size = width*0.01;
 const GetValue = Phaser.Utils.Objects.GetValue;
-function createTextBox (scene, x, y, config) {
+function createTextBox (scene, x, y, config, npc_key) {
     var wrapWidth = GetValue(config, 'wrapWidth', 0);
     var fixedWidth = GetValue(config, 'fixedWidth', 0);
     var fixedHeight = GetValue(config, 'fixedHeight', 0);
@@ -24,8 +28,9 @@ function createTextBox (scene, x, y, config) {
             background: scene.rexUI.add.roundRectangle(0, 0, 2, 2, 20, COLOR_PRIMARY)
                 .setStrokeStyle(2, COLOR_LIGHT),
 
-            icon: scene.rexUI.add.roundRectangle(0, 0, 2, 2, 20, COLOR_DARK),
-
+            icon: scene.add.image(0, 0, npc_key),//卡關
+            //icon: scene.rexUI.add.roundRectangle(0, 0, 2, 2, 20, COLOR_DARK),
+            //iconMask: true,
             //text: getBuiltInText(scene, wrapWidth, fixedWidth, fixedHeight),
             text: getBBcodeText(scene, wrapWidth, fixedWidth, fixedHeight),
 
@@ -42,6 +47,7 @@ function createTextBox (scene, x, y, config) {
         })
         .setOrigin(0)
         .layout();
+        
 
     textBox
         .setInteractive()
@@ -52,10 +58,10 @@ function createTextBox (scene, x, y, config) {
                 this.stop(true);
             } else {
                 if(this.isLastPage){
-                    //最後一頁，字跑完，talkbox消失
+                    //最後一頁，字跑完，talkbox消失，遊戲開始
                     this.setVisible(false);
                     this.setInteractive(false);
-                    theend=0;
+                    
                     return;
                 }
                 this.typeNextPage();
@@ -67,7 +73,7 @@ function createTextBox (scene, x, y, config) {
             //     return;
             // }
             
-
+            
             var icon = this.getElement('action').setVisible(true);
             this.resetChildVisibleState(icon);
             icon.y -= 30;
@@ -80,6 +86,7 @@ function createTextBox (scene, x, y, config) {
                 yoyo: false
             });
         }, textBox)
+        
     //.on('type', function () {
     //})
 
