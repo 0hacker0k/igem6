@@ -128,27 +128,27 @@
             <?php
                 $name="Chia-Hsien Kung";
                 $photo="/attributions/attributions001.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/leadership.png";
+                $icon2="/attributions/presentation.png";
+                $icon3="";
                 $content="Team leader: Responsible for deciding the team’s target, integrating and communicating among groups, and team representative to other teams.";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Yuan-Chi Tsai";
                 $photo="/attributions/attributions002.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/leadership.png";
+                $icon2="/attributions/experiment.png";
+                $icon3="/attributions/hardware.png";
                 $content="Team Co-leader: Responsible for communication between wet lab and dry lab. Performing part of the protein expression in the wet lab group, and designing machines in the dry lab group.";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Yun-Chi Chiu";
                 $photo="/attributions/attributions003.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/presentation.png";
+                $icon2="/attributions/experiment.png";
+                $icon3="/attributions/ihp.png";
                 $content="Team Co-leader: Responsible for communication between wet lab and human practice. Designing cloning methods in the wet lab group, and assisting social media, IHP and open lab in the human practice group.";
                 include "sub/attribution_card.php";
             ?>
@@ -158,54 +158,54 @@
             <?php
                 $name="Ding-Hong Chang";
                 $photo="/attributions/attributions004.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/leadership.png";
+                $icon2="/attributions/presentation.png";
+                $icon3="/attributions/experiment.png";
                 $content="Wet Lab leader: Responsible for cloning design, scheduling experiments, and coordinating with other groups.                ";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Yu-Chen Huang";
                 $photo="/attributions/attributions005.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/experiment.png";
+                $icon2="/attributions/wiki.png";
+                $icon3="/attributions/education.png";
                 $content="Wet Lab co-leader: Assisting group leader, and responsible for the protein expression of pfa B, pfa C, and pfa E genes.";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Chen-Yu Wu";
                 $photo="/attributions/attributions006.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/experiment.png";
+                $icon2="";
+                $icon3="";
                 $content="Responsible for the protein expression of pfa A and pfa D genes.";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Chi-Huan Zheng";
                 $photo="/attributions/attributions007.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/presentation.png";
+                $icon2="/attributions/experiment.png";
+                $icon3="";
                 $content="Responsible for protein expression of pfa A, and pfa  D genes";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Zong-Ying He";
                 $photo="/attributions/attributions008.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/experiment.png";
+                $icon2="/attributions/wiki.png";
+                $icon3="";
                 $content="Responsible for protein expression of pfa B, pfa  C, and pfa E genes";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Bo-Qin Wu";
                 $photo="/attributions/attributions009.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/slides_editor.png";
+                $icon2="/attributions/experiment.png";
+                $icon3="";
                 $content="Responsible for DHA detection and the protein expression of pfa B, pfa C, and pfa E genes.";
                 include "sub/attribution_card.php";
             ?>
@@ -215,27 +215,27 @@
             <?php
                 $name="Chi-Yang Lin";
                 $photo="/attributions/attributions010.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/leadership.png";
+                $icon2="/attributions/software.png";
+                $icon3="/attributions/hardware.png";
                 $content="Dry lab leader: Responsible for coordinating with other groups and coding the web game, wiki, as well as programs of the machine.";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Si-Ru Zhou";
                 $photo="/attributions/attributions011.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/leadership.png";
+                $icon2="/attributions/measurement.png";
+                $icon3="/attributions/wiki.png";
                 $content="Dry lab co-leader: Responsible for art designing of wiki, team logo, and social media.";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Hao-Fang Chan";
                 $photo="/attributions/attributions012.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/hardware.png";
+                $icon2="/attributions/measurement.png";
+                $icon3="/attributions/wiki.png";
                 $content="Responsible for designing and establishing the machine.";
                 include "sub/attribution_card.php";
             ?>
@@ -245,63 +245,63 @@
             <?php
                 $name="Hao-Yuan Cheng";
                 $photo="/attributions/attributions013.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/leadership.png";
+                $icon2="/attributions/software.png";
+                $icon3="/attributions/education.png";
                 $content="Human practice leader: Responsible for coordinating with other groups and designing the web game.";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Yi-Yun Lee";
                 $photo="/attributions/attributions014.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/presentation.png";
+                $icon2="/attributions/slides_editor.png";
+                $icon3="/attributions/education.png";
                 $content="Human practice co-leader: Responsible for holding Open Lab and fundraising.";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Peng-Jen Chen";
                 $photo="/attributions/attributions015.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/wiki.png";
+                $icon2="";
+                $icon3="";
                 $content="Responsible for most of the art illustrations.";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Guan-Chen Li";
                 $photo="/attributions/attributions016.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/wiki.png";
+                $icon2="";
+                $icon3="";
                 $content="Responsible for designing and directing the promotion video.";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Yu-Quan Chou";
                 $photo="/attributions/attributions017.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/wiki.png";
+                $icon2="/attributions/ihp.png";
+                $icon3="/attributions/collaboration.png";
                 $content="Responsible for IHP projects.";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Jung-Hsuan Hsiao";
                 $photo="/attributions/attributions018.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/education.png";
+                $icon2="/attributions/ihp.png";
+                $icon3="/attributions/collaboration.png";
                 $content="Responsible for collaboration and marketing.";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Wei-Chun Fu";
                 $photo="/attributions/attributions019.jpg";
-                $icon1="/human/9e.png";
-                $icon2="/human/7e.png";
-                $icon3="/human/5e.png";
+                $icon1="/attributions/education.png";
+                $icon2="";
+                $icon3="";
                 $content="Responsible for holding campus walking.";
                 include "sub/attribution_card.php";
             ?>
