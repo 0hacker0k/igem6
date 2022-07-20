@@ -13,6 +13,7 @@ function preload_stage5_take(){
     this.load.image('back', 'img/main/back.png');
     load_talkbox(this);
     load_transition(this);
+
     //else
     this.load.image('desk', 'img/main/green.png');
     this.load.image('background', 'img/stage4/background.jpg');
@@ -22,7 +23,7 @@ function preload_stage5_take(){
         { frameWidth: 64, frameHeight: 64 }
     );//載入畫楨
 }
-
+var player;
 function create_stage5_take (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
@@ -31,14 +32,33 @@ function create_stage5_take (){
     //背景
     this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
     //桌子
-    for(var i=0;i<5;i++){
+    var desk_pos = [
+                [1,1,1,1,1,0,0,0],
+                [0,0,0,0,0,0,0,0],
+                [0,0,0,0,0,0,0,0],
+                [1,1,1,1,0,0,0,0],
+                [0,0,0,1,0,0,0,0],
+                [0,0,0,0,0,0,0,0],
+                [1,1,0,0,0,0,1,1],];
+    var desk_what = [['TAE','agarose','beaker','microwave','trashcan','','','',''],
+                    ['','','','','','','',''],
+                    ['','','','','','','',''],
+                    ['mixer','mixer','','','','','',''],
+                    ['','','','','','','',''],
+                    ['','','','','','','',''],
+                    ['elec','run_gel','','','','','mod','']];
+    var desk = new Array();
+    for(var i=0;i<7;i++){
+        desk[i] = new Array();
         for(var j=0;j<8;j++){
-
+            desk[i][j] = this.physics.add.staticImage((1+j)*width*0.1,(1+i)*height*0.12,'desk').setOrigin(0).setDisplaySize(width*0.1,height*0.12);
+            desk[i][j].setBodySize(width*0.1,height*0.12,true);
         }
     }
     //人物、camera
     player = this.physics.add.sprite(width/2, height/2, 'player');//this.centerX
     player.body.fixedRotation = true;
+    player.setBodySize(player.width,player.height);
     var cam=this.cameras.main;
     cam.startFollow(player,0.1,0.1);//後面兩個值是相機追趕速度
     cam.setBounds(0, 0, width, height);
@@ -46,7 +66,36 @@ function create_stage5_take (){
     this.physics.world.bounds.height=height;
     cam.setZoom(1);
     player.setCollideWorldBounds(true);
+    
+    //碰撞、
+    for(var i=0;i<7;i++){
+        for(var j=0;j<8;j++){
+            if(desk_pos[i][j]==1){
+                desk_collider(this,i,j);
+            }
+            if(desk_what[i][j]!=''){
+                this.add.image((1+j)*width*0.1+width*0.1/4,(1+i)*height*0.12+height*0.12/4,desk_what[i][j]).setOrigin(0).setDisplaySize(width*0.1/2,height*0.12/2);
+            }
+        }
+    }
+    function desk_collider(where,i,j){
+        where.physics.add.collider(player,desk[i][j]);
+        desk[i][j].setTint("0xff1234");
+    }
+    function pick_thing(what){
 
+    }
+    
+    //燒杯
+    //mixer
+    //TAE
+    //(粉)阿嘎羅斯
+    //微波爐
+    //垃圾桶
+    //電泳
+    //模具
+
+    //人物動畫
     this.anims.create({//向左移動動畫
         key: 'left',
         frames: this.anims.generateFrameNumbers('player', { start: 1, end: 1 }),
@@ -142,7 +191,7 @@ function create_stage5_take (){
         wrapWidth: width*0.5,
         fixedWidth: width*0.55,
         fixedHeight: height*0.15,
-    })
+    },'green')
     .start(content, 50);
     
 }

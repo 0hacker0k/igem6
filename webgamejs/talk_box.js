@@ -61,7 +61,6 @@ function createTextBox (scene, x, y, config, npc_key) {
                     //最後一頁，字跑完，talkbox消失，遊戲開始
                     this.setVisible(false);
                     this.setInteractive(false);
-                    
                     return;
                 }
                 this.typeNextPage();
@@ -72,7 +71,6 @@ function createTextBox (scene, x, y, config, npc_key) {
             // if (this.isLastPage) {
             //     return;
             // }
-            
             
             var icon = this.getElement('action').setVisible(true);
             this.resetChildVisibleState(icon);
