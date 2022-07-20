@@ -1,6 +1,6 @@
             <div class="card">
                 <div class="card_left">
-                    <image class="card_img" src="<?php echo imgfile.$photo;?>" />
+                    <image class="lazy card_img" data-src="<?php echo imgfile.$photo;?>" />
                 </div>
                 <div class="card_right">
                     <div class="card_title">
