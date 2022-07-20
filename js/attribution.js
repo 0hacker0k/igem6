@@ -2,13 +2,15 @@ var sticker=null;
 var note;
 var myPosition;
 var temp;
+var myWindow = $(window); 
+var noteheight;
+var notePosition;
 document.addEventListener('DOMContentLoaded', function(){
     jQuery(function($){
-        var myWindow = $(window); 
         myPosition = myWindow.scrollTop();
         note=document.getElementById("nav_note");
-        var notePosition = $('#nav_note').offset().top;
-        var noteheight=note.scrollHeight;
+        notePosition = $('#nav_note').offset().top;
+        noteheight=note.scrollHeight;
         temp=notePosition-noteheight*0.4;
         move_note();
         myPosition = myWindow.scrollTop();
