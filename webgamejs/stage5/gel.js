@@ -55,7 +55,7 @@ function create_stage5_take (){
         desk[i] = new Array();
         for(var j=0;j<8;j++){
             desk[i][j] = this.physics.add.staticImage((1+j)*width*0.1,(1+i)*height*0.12,'desk').setOrigin(0).setDisplaySize(width*0.1,height*0.12);
-            desk[i][j].setBodySize(width*0.1,height*0.12,true);
+            desk[i][j].setBodySize(width*0.1,height*0.12,true).refreshBody();
         }
     }
     //人物、camera
@@ -187,7 +187,7 @@ function create_stage5_take (){
     //music
     // var music = this.sound.add('music');
     // music.play();
-    
+
     start_transition(this);
     
     //Talk box
