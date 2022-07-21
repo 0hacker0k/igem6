@@ -9,10 +9,19 @@
                             <?php echo $name;?>
                         </div>
                         <div class="card_icon_list">
-                            <?php 
-                            if($icon1!="") echo "<image class=\"card_icon\" src=\"".imgfile.$icon1."\" />";
-                            if($icon2!="") echo "<image class=\"card_icon\" src=\"".imgfile.$icon2."\" />";
-                            if($icon3!="") echo "<image class=\"card_icon\" src=\"".imgfile.$icon3."\" />";
+                            <?php
+                            if($icon1!=""){
+                                $icon1=change_attr_icon($icon1);
+                                echo "<image title=\"".$icon1."\" class=\"card_icon\" src=\"".imgfile."/attributions/".$icon1.".png\" />";
+                            }
+                            if($icon2!=""){
+                                $icon2=change_attr_icon($icon2);
+                                echo "<image title=\"".$icon2."\" class=\"card_icon\" src=\"".imgfile."/attributions/".$icon2.".png\" />";
+                            }
+                            if($icon3!=""){
+                                $icon3=change_attr_icon($icon3);
+                                echo "<image title=\"".$icon3."\" class=\"card_icon\" src=\"".imgfile."/attributions/".$icon3.".png\" />";
+                            }
                             ?>
                         </div>
                     </div>

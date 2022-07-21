@@ -18,7 +18,6 @@ body{
 }
 .attribution_card{
     text-align: left;
-    margin-left:10rem;
     width: 100%;
     flex-wrap: wrap;
     margin-top: 5%;
@@ -209,41 +208,46 @@ a{
 }
 .card_name{
     font-size: 3vw;
-    width:55%;
+    /* width:100%; */
     font-weight: bolder;
     color: #EA2B1F;
     font-family: Papyrus, fantasy;
     margin-left:0%;
-    margin-right:10%;
+    margin-right:5%;
     white-space:nowrap;
+    display: flex;
 }
 .card_icon_list{
     width: 30%;
     text-align: left;
+    display: inline-block;
+	vertical-align: middle;
 }
 .card_icon{
-    width :30%;
+    width :33%;
     /* height:100%; */
     /* position: absolute; */
     top:0;
     left:0;
-    object-fit: cover;
-    object-position: center top;
+    /* object-fit: cover; */
+    object-position: center center;
     overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
     /* border-radius:20%; */
     
 }
 .name_icon{
-    width :5%;
-    /* height:100%; */
-    /* position: absolute; */
-    top:0;
-    left:0;
+    height:4vw;
+    /* overflow: hidden; */
+    /* 
     object-fit: cover;
     object-position: center center;
     overflow: hidden;
+    display: flex; */
     /* border-radius:20%; */
-    margin-left:2em;
+    margin-left:0.5vw;
+    margin-right:0.5vw;
 }
 .card_content{
     font-size: 1.5vw;
