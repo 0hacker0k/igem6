@@ -1,4 +1,4 @@
-        <div class="right_div">
+        <?php include "../sub/config.php";?>
             <div class="pad">
                 <div class="week">
                     <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_5_1.jpg" alt="">
@@ -95,7 +95,6 @@
 
 
             </div>
-        </div>
     <script>
         setpage(1,20);
     </script>

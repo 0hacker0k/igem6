@@ -20,5 +20,5 @@ function switchbtn(id){
             break;
     }
     var month=x+4;
-    location.href = "./notebook/notebook_"+lab+"_"+month+".php";
+    location.href = "./notebook_detail.php?group="+lab+"&month="+month;
 }

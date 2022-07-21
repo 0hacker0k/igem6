@@ -44,7 +44,16 @@
                 <button type="button" class="toplabel" onclick="switchbtn(40)">TIMELINE</button> 
             </div>
         </div>
-        <?php include "./notebook/notebook_wl_5.php"?>
+        <div id="right_div" class="right_div"></div>
+        <script>
+            var getUrlString = location.href;
+            var url = new URL(getUrlString);
+            var group=url.searchParams.get('group');
+            var month=url.searchParams.get('month');
+            var goal="./notebook/notebook_"+group+"_"+month+".php"
+            $("#right_div").load(goal);
+        </script>
+        
     </div>
     <?php include "./sub/footer.php"?>   
 </body>

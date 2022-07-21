@@ -18,7 +18,7 @@
     </div>
     <div class="attribution_card justify-content-around">
         <div id="attribution_left" class="attribution_left">
-            <div id="nav_note" class="attribution_nav" style="background-image:url(<?php echo imgfile;?>/note_untouch3.png")>
+            <div id="nav_note" class="attribution_nav" style="background-image:url('<?php echo imgfile;?>/note_untouch3.png')">
                 <div class="attribution_nav_content">
                     <a href="#1" onclick="move_note2()"><div class="nav_control"><li>Primary Principal Investigator</li></div></a>
                     <a href="#2" onclick="move_note2()"><div class="nav_control"><li>Secondary Principal Investigators</li></div></a>
@@ -33,7 +33,7 @@
         </div>
         <div class="attribution_right">
             <div id="1" class="title-label-div">
-                <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Primary Principal Investigators</h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Primary Principal Investigators</h1>
             </div>
             <?php
                 $name="Ching-Chieh Weng";
@@ -54,7 +54,7 @@
                 include "sub/attribution_card.php";
             ?>
             <div id="2" class="title-label-div">
-                <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Secondary Principal Investigators</h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Secondary Principal Investigators</h1>
             </div>
             <?php
                 $name="Cheng-I Lee";
@@ -93,7 +93,7 @@
                 include "sub/attribution_card.php";
             ?>
             <div id="3" class="title-label-div">
-                <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Instructors</h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Instructors</h1>
             </div>
             <?php
                 $name="Gerald Rau";
@@ -123,7 +123,7 @@
                 include "sub/attribution_card.php";
             ?>
             <div id="4" class="title-label-div">
-                <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Leaders</h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Leaders</h1>
             </div>
             <?php
                 $name="Chia-Hsien Kung";
@@ -153,7 +153,7 @@
                 include "sub/attribution_card.php";
             ?>
             <div id="5" class="title-label-div">
-                <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Wet Lab</h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Wet Lab</h1>
             </div>
             <?php
                 $name="Ding-Hong Chang";
@@ -210,7 +210,7 @@
                 include "sub/attribution_card.php";
             ?>
             <div id="6" class="title-label-div">
-                <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Dry Lab</h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Dry Lab</h1>
             </div>
             <?php
                 $name="Chi-Yang Lin";
@@ -240,7 +240,7 @@
                 include "sub/attribution_card.php";
             ?>
             <div id="7" class="title-label-div">
-                <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Human Practice</h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Human Practice</h1>
             </div>
             <?php
                 $name="Hao-Yuan Cheng";
@@ -306,7 +306,7 @@
                 include "sub/attribution_card.php";
             ?>
             <div id="8" class="title-label-div">
-                <h1 class="title_label" style="background-image:url(<?php echo imgfile;?>/tape.png")>Advisors</h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Advisors</h1>
             </div>
             <?php
                 $name="Chun-Kai Li";
