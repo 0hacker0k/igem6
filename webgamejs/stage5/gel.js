@@ -22,6 +22,9 @@ function preload_stage5_take(){
         'img/main/player.png',
         { frameWidth: 64, frameHeight: 64 }
     );//載入畫楨
+
+    //music
+    //this.load.audio('music',['aud/map/record.ogg','aud/map/record.mp3']);
 }
 var player;
 function create_stage5_take (){
@@ -180,6 +183,11 @@ function create_stage5_take (){
         },500);
     },this);
     //轉場動畫
+    
+    //music
+    // var music = this.sound.add('music');
+    // music.play();
+    
     start_transition(this);
     
     //Talk box
