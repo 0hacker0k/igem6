@@ -3,8 +3,21 @@ import json
 from bs4 import BeautifulSoup
 import os
 import shutil
+
+port="23252"
+def check_path(path):
+    if os.path.isdir(path)==False:
+        temp=path[0:path.rfind("/")]
+        check_path(temp)
+        os.mkdir(path)
+    else :
+        return
+
+
+
+
 context=""
-map="http://127.0.0.1:60000/igem6/map.php"
+map="http://127.0.0.1:"+port+"/igem6/map.php"
 try:
     go=requests.get(map, timeout = 30)
     if  go.status_code == 200:
@@ -17,7 +30,7 @@ except requests.exceptions.RequestException as e:
     exit()
 all_php=context.split('\n')
 all_php.pop()
-goal="http://127.0.0.1:60000/igem6"
+goal="http://127.0.0.1:"+port+"/igem6"
 # for i in range(0,total-1):#for迴圈格式
     #if "Gold" in allteam[i]:
 status=0
@@ -29,13 +42,12 @@ for file in all_php:
             context=go.text
             if file[-4:]==".php":
                 file=file[0:-4] + '.html'
-            path = "D:/xampp/htdocs/igem6_final"
+            path = "../igem6_final"
             path=path+file[0:file.rfind("/")]
-            if os.path.isdir(path)==False:
-                os.mkdir(path)
+            check_path(path)
             path+=file[file.rfind("/"):]
             if file[-4:]==".jpg" or file[-4:]==".png":
-                shutil.copyfile("D:/xampp/htdocs/igem6"+file, path)
+                shutil.copyfile(os.getcwd()+"/"+file, path)
             else:
                 f = open(path, 'w+',encoding = "UTF-8",newline='')
                 # print(context)
@@ -55,3 +67,6 @@ for file in all_php:
         #     elif status==3 :
         #         print(goal+team+"/Applied_Design",file=f)
 print("end")
+
+
+
