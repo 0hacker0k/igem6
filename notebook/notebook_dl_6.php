@@ -8,11 +8,11 @@
                         
                         <div class="word_content">
                         <ul>
-                            <li>Cloning <i>pfa</i> genes from MP-1 by PCR (New design)</li>
+                            <li>Coding notebook page of wiki</li>
                             <br>
-                            <li>Starting to edit safety form</li>
+                            <li>Completing stage 3 of the web game</li>
                             <br>
-                            <li>Applying dual selection of ampicillin and chloramphenicol to pColdI and pSTV28 vectors transformed  <i>E. coli</i></li>                         
+                            <li>Seeking a better design to quantify the amount of agar (Gel Maker)</li>                         
                         </ul>
                         </div>
                     </div>
@@ -27,10 +27,14 @@
                         <div class="word_content">
                         <ul>
                             <li class="final_exam">Final exam</li>
+                            <br>
+                            <li>Designing the 2.0 version of Gel Maker</li>
+                            <br>
+                            <li>Developing software for remote control of the Automatic Gel Machine</li>
                         </ul>
                         </div>
                     </div>
-                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_7.jpg" alt="">
+                    <img class="week_content" src="<?php echo imgfile;?>/notebook/dl_7.jpg" alt="">
                 </div>
 
                 <div class="week">
@@ -42,11 +46,13 @@
                         
                         <div class="word_content">
                         <ul>
-                            <li>Trying to ligate <i>pfa</i> genes (new design) to TA vectors for sequencing confirmation</li>
+                            <li>Coding notebook page of wiki</li>
                             <br>
-                            <li>Purifying pET28a vectors for <i>ACC</i> genes expression in  <i>E. Coli</i></li>
+                            <li>Editing the content of notebook (May)</li>
                             <br>
-                            <li>Sequencing <i>pfaD</i></li>
+                            <li>Functional test of components of the Automatic Gel Machine</li>
+                            <br>
+                            <li>Designing the on-off switch of Gel Maker</li>
                         </ul>
                         </div>
                     </div>
@@ -60,15 +66,13 @@
                         
                         <div class="word_content">
                         <ul>
-                            <li>Using TA-cloning for sequencing confirmation of <i> pfa A1</i>, <i>pfa A2</i>, and <i>pfa C</i> genes</li>
+                            <li>Illustrating portraits of members</li>
                             <br>
-                            <li>Cloning <i>pfa B</i>, <i>pfa E</i>, and <i>pfa F</i> genes from gene block</li>
+                            <li>Apply RWD (Responsive Web Design) to the header and footer of wiki</li>
                             <br>
-                            <li>Performing gradient PCR for optimization of <i>pfa A1</i> and <i>pfa A2</i> genes</li>
+                            <li>Designing our team logo</li>
                             <br>
-                            <li>Performing DMSO PCR for optimization of <i>pfa A1</i> and <i>pfa A2</i> genes</li>
-                            <br>
-                            <li>Using TA-cloning for sequencing confirmation of <i>pfa B</i>, <i>pfa E</i>, and <i>pfa F</i> genes</li>
+                            <li>Adjusting the design of Gel Maker, considering the metal material used in a practical workshop</li>
                         </ul>
                         </div>
                     </div>

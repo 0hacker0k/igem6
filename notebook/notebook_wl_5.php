@@ -1,7 +1,7 @@
         <?php include "../sub/config.php";?>
             <div class="pad">
                 <div class="week">
-                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_5_1.jpg" alt="">
+                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_1.jpg" alt="">
                     <div class="week_content">
                         
                         <h5 class="title_content">Week 1 (5/1~7)</h5>
@@ -38,12 +38,12 @@
                         </ul>
                         </div>
                     </div>
-                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_5_2.jpg" alt="">
+                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_2.jpg" alt="">
                 </div>
 
                 <div class="week">
                     
-                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_5_3.jpg" alt="">
+                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_3.jpg" alt="">
                     <div class="week_content">
                         
                         <h5 class="title_content">Week 3 (5/15~21)</h5>
@@ -70,12 +70,12 @@
                     </div>
 
    
-                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_5_4.jpg" alt="">
+                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_4.jpg" alt="">
                 </div>
 
                 <div class="week">
                     
-                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_5_5.jpg" alt="">
+                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_5.jpg" alt="">
                     <div class="week_content">
                         
                         <h5 class="title_content">Week 5 (5/29~6/4)</h5>
