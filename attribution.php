@@ -20,14 +20,14 @@
         <div id="attribution_left" class="attribution_left">
             <div id="nav_note" class="attribution_nav" style="background-image:url('<?php echo imgfile;?>/note_untouch3.png')">
                 <div class="attribution_nav_content">
-                    <a href="#1" onclick="move_note2()"><div class="nav_control"><li>Primary Principal Investigator</li></div></a>
-                    <a href="#2" onclick="move_note2()"><div class="nav_control"><li>Secondary Principal Investigators</li></div></a>
-                    <a href="#3" onclick="move_note2()"><div class="nav_control"><li>Instuctor</li></div></a>
-                    <a href="#4" onclick="move_note2()"><div class="nav_control"><li>Leaders</li></div></a>
-                    <a href="#5" onclick="move_note2()"><div class="nav_control"><li>wet lab</li></div></a>
-                    <a href="#6" onclick="move_note2()"><div class="nav_control"><li>dry lab</li></div></a>
-                    <a href="#7" onclick="move_note2()"><div class="nav_control"><li>human practice</li></div></a>
-                    <a href="#8" onclick="move_note2()"><div class="nav_control"><li>Advisors</li></div></a>
+                    <a href="#1" onclick="move_note2()"><div class="nav_control nav_control_a"><li>Primary Principal Investigator</li></div></a>
+                    <a href="#2" onclick="move_note2()"><div class="nav_control nav_control_a"><li>Secondary Principal Investigators</li></div></a>
+                    <a href="#3" onclick="move_note2()"><div class="nav_control nav_control_a"><li>Instuctor</li></div></a>
+                    <a href="#4" onclick="move_note2()"><div class="nav_control nav_control_b"><li>Leaders</li></div></a>
+                    <a href="#5" onclick="move_note2()"><div class="nav_control nav_control_b"><li>Wet lab</li></div></a>
+                    <a href="#6" onclick="move_note2()"><div class="nav_control nav_control_b"><li>Dry lab</li></div></a>
+                    <a href="#7" onclick="move_note2()"><div class="nav_control nav_control_b"><li>Human practice</li></div></a>
+                    <a href="#8" onclick="move_note2()"><div class="nav_control nav_control_a"><li>Advisors</li></div></a>
                 </div>    
             </div>
         </div>
@@ -41,7 +41,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="Ph.D. in Biomedical Science Institute, National Sun Yat-sen University<br>Aka 中正金城武";
+                $content="<div class='graduate'>Ph.D. in Biomedical Science Institute, National Sun Yat-sen University</div>Aka 中正金城武";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -50,7 +50,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="Dr. Yu helps team members to establish the whole vision, monitors the team process, and provides consulting on Wet lab experiments and HP activities.";
+                $content="<div class='graduate'>Ph.D. in Molecular Medicine, National Taiwan University</div>Dr. Yu helps team members to establish the whole vision, monitors the team process, and provides consulting on Wet lab experiments and HP activities.";
                 include "sub/attribution_card.php";
             ?>
             <div id="2" class="title-label-div">
@@ -62,7 +62,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="Ph.D. in Biophysical Chemistry, Yale University.<br>Dr. Lee builds up the laboratory and assists the executive affairs.";
+                $content="<div class='graduate'>Ph.D. in Biophysical Chemistry, Yale University.</div>Dr. Lee builds up the laboratory and assists the executive affairs.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -71,7 +71,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="Ph.D. in Anatomical and Cellular Pathology, The Chinese University of Hong Kong";
+                $content="<div class='graduate'>Ph.D. in Anatomical and Cellular Pathology, The Chinese University of Hong Kong</div>";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -80,7 +80,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="Ph.D. in Microbial Immunity, National Yang-Ming University.<br>Dr. Chen gives advice on experimental design, and instructs the wet lab experiments.";
+                $content="<div class='graduate'>Ph.D. in Microbial Immunity, National Yang-Ming University</div>Dr. Chen gives advice on experimental design, and instructs the wet lab experiments.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -89,7 +89,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="Ph.D. in Chemistry and Biochemistry, University of California.<br>Dr. Lin helps team members to sharpen the original ideas, gives advice on dry lab experimental designs, instructs and provides technical resources of modeling.";
+                $content="<div class='graduate'>Ph.D. in Chemistry and Biochemistry, University of California</div>Dr. Lin helps team members to sharpen the original ideas, gives advice on dry lab experimental designs, instructs and provides technical resources of modeling.";
                 include "sub/attribution_card.php";
             ?>
             <div id="3" class="title-label-div">
@@ -101,7 +101,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="Ph.D. in Plant Breeding, Cornell University.<br>Dr. Rau gave comments, corrections, and suggestions on the monthly team presentations, video scripts, picture book, and other English materials.";
+                $content="<div class='graduate'>Ph.D. in Plant Breeding, Cornell University</div>Dr. Rau gave comments, corrections, and suggestions on the monthly team presentations, video scripts, picture book, and other English materials.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -110,7 +110,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="Ph.D. in Linguistics, Cornell University.<br>Dr. Rau gave comments, corrections, and suggestions on the monthly team presentations, video scripts, picture book, and other English materials.";
+                $content="<div class='graduate'>Ph.D. in Linguistics, Cornell University</div>Dr. Rau gave comments, corrections, and suggestions on the monthly team presentations, video scripts, picture book, and other English materials.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -119,7 +119,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="Ph.D. in Electronics Engineering, National Tsing Hua University";
+                $content="<div class='graduate'>Ph.D. in Electronics Engineering, National Tsing Hua University</div>";
                 include "sub/attribution_card.php";
             ?>
             <div id="4" class="title-label-div">
