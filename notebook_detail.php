@@ -4,6 +4,7 @@
     <?php include "./sub/head.php";?>
     <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook.css">
     <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook_each.css">
+    <script src="<?php echo jsfile;?>/notebook.js"></script>
 </head>
 
 <body onload="load_finish()">
