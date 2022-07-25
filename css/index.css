@@ -335,7 +335,7 @@ position:absolute ;right:0; */
 }
 .loading_jump{
     animation: ld_jump 1s linear infinite;
-    animation-delay: calc(.1s*var(--i))
+    animation-delay: calc(.1s*var(--i));
 }
 @keyframes ld_jump {
     0%{
