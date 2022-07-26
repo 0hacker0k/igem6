@@ -11,7 +11,7 @@ var desk_what = [['TAE','agarose','beaker','microwave','trashcan','','','',''],
                     ['','','','','','','',''],
                     ['','','','','','','',''],
                     ['elec','run_gel','','','','','mod','']];
-// var desk_pos = [
+// var desk_pick = [
 //                 [0,0,0,0,0,0,0,0],
 //                 [0,0,0,0,0,0,0,0],
 //                 [0,0,0,0,0,0,0,0],
@@ -19,6 +19,8 @@ var desk_what = [['TAE','agarose','beaker','microwave','trashcan','','','',''],
 //                 [0,0,0,0,0,0,0,0],
 //                 [0,0,0,0,0,0,0,0],
 //                 [0,0,0,0,0,0,0,0],];
+                
+var picking;
 var content = `Phaser is a fast, free, and fun open source HTML5 game framework that offers WebGL and Canvas rendering across desktop and mobile web browsers. Games can be compiled to iOS, Android and native apps by using 3rd party tools. You can use JavaScript or TypeScript for development.`;
 function preload_stage5_take(){
     //basic
@@ -84,7 +86,7 @@ function create_stage5_take (){
                 [1,1,0,0,0,0,1,1],];
     
     
-    for(var i=0;i<7;i++){
+    for(var i=0;i<7;i++){//建立桌子
         desk[i] = new Array();
         for(var j=0;j<8;j++){
             if(desk_pos[i][j]){
@@ -94,6 +96,7 @@ function create_stage5_take (){
             
         }
     }
+
     //人物、camera
     player = this.physics.add.sprite(width*0.05, height*0.3, PLAYER_KEY);//this.centerX
     player.body.fixedRotation = true;
@@ -125,13 +128,13 @@ function create_stage5_take (){
         frameRate: 5,
         repeat: -1
     });
-    this.anims.create({//不動動畫
+    this.anims.create({//向上動畫
         key: 'up',
         frames: this.anims.generateFrameNumbers(PLAYER_KEY, { start: 2, end: 3 }),
         frameRate: 5,
         repeat: -1
     });
-    this.anims.create({//不動動畫
+    this.anims.create({//向下動畫
         key: 'down',
         frames: this.anims.generateFrameNumbers(PLAYER_KEY, { start: 0, end: 1 }),
         frameRate: 5,
@@ -139,11 +142,12 @@ function create_stage5_take (){
     });
     //碰撞、放器材
     var delta_rect = height*0.5;
+    keySpace = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+    
     for(var i=0;i<7;i++){
         for(var j=0;j<8;j++){
             if(desk_what[i][j]!=''){//物件初始位置
                 desk_what[i][j] = this.physics.add.image((1+j)*width*0.1+width*0.1/2, (1+i)*height*0.12+height*0.12/2, desk_what[i][j]).setDisplaySize(width*0.1/2,height*0.12/2);
-                //console.log(desk_what[i][j]);
                 desk_what[i][j].setInteractive().setBodySize(desk_what[i][j].width,desk_what[i][j].height*2.7);
                 this.physics.add.overlap(player,desk_what[i][j],pick_thing,null,this);
                 
@@ -157,31 +161,15 @@ function create_stage5_take (){
     //this.physics.add.collider(player, desk, pick_thing, null, this);
     
     this.physics.add.collider(player, deskGroup);//設定桌子碰撞
-    keySpace = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+     
     
-    
-
-    // function detectArea(where,i,j){
-    //     var over = where.physics.add.staticImage((1+j)*width*0.105,(1+i)*height*0.17,'mixer').setOrigin(0.5,0).setDisplaySize(width*0.09,height*0.1);
-    //     over.refreshBody().alpha = 0.5;
-    //     where.physics.add.overlap(player,over,pick_thing,null,this);
-    // }
-    
-    
-
     function pick_thing(player, what){
         islap = 1;
-        if(ispick==0&&keySpace.is){
-            picking = setTimeout(pickingup(player,what),100);
-            //if(keySpace.isUp) ispick = 1;
+        if(ispick==0&&keySpace.isDown){
+            picking = what;
         }
-        //desk_what[i][j].setTint("0xff00ff");
     }
-    function pickingup(player,what){
-        what.x=player.x;
-        what.y=player.y;
-        //return what;
-    }
+    
     
 
     //燒杯
@@ -327,18 +315,14 @@ function update_stage5_take (){//與外界有關的互動
     }
     var pick;
 
+    if(picking!=undefined){
+        picking.x=player.x;
+        picking.y=player.y;
+    }
     
 
     if(islap){
         if(keySpace.isDown){
-            pick=1;
-            for(var i=0;i<7;i++){
-                for(var j=0;j<8;j++){
-                    if(desk_what[i][j]!=''&&desk_what[i][j]!=null){
-                        
-                    }
-                }
-            }
             console.log('pick!')
         }else{
             pick=0;
