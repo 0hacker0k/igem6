@@ -7,7 +7,7 @@
                         $id=1;
                         $img_count=3;
                         $img_src[0]=imgfile."/notebook/dl_1.png";
-                        $img_src[1]=imgfile."/human/2a.jpg";
+                        $img_src[1]=imgfile."/human/6a.jpg";
                         $img_src[2]=imgfile."/human/3a.jpg";
                         $img_alt[0]="SrRb";
                         $img_alt[1]="SRRB";
@@ -53,13 +53,13 @@
                         <div class="square">
                     <?php
                         $id=2;
-                        $img_count=1;
+                        $img_count=3;
                         $img_src[0]=imgfile."/notebook/dl_2.png";
-                        // $img_src[1]=imgfile."/human/2a.jpg";
-                        // $img_src[2]=imgfile."/human/3a.jpg";
+                        $img_src[1]=imgfile."/human/1a.jpg";
+                        $img_src[2]=imgfile."/human/4a.jpg";
                         $img_alt[0]="SrRb";
-                        // $img_alt[1]="SRRB";
-                        // $img_alt[2]="srrb";
+                        $img_alt[1]="SRRB";
+                        $img_alt[2]="srrb";
                         include "../sub/carousel.php";
                     ?>
                         </div>

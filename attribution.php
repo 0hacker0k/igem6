@@ -202,7 +202,7 @@
                 $icon1="leadership";
                 $icon2="presentation";
                 $icon3="experiment";
-                $content="Wet Lab leader: Responsible for cloning design, scheduling experiments, and coordinating with other groups.                ";
+                $content="Wet Lab leader: Responsible for cloning design, scheduling experiments, and coordinating with other groups.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -211,7 +211,7 @@
                 $icon1="experiment";
                 $icon2="wiki";
                 $icon3="education";
-                $content="Wet Lab co-leader: Assisting group leader, and responsible for the protein expression of pfa B, pfa C, and pfa E genes.";
+                $content="Wet Lab co-leader: Assisting group leader, and responsible for the protein expression of <i>pfa B</i>, <i>pfa C</i>, and <i>pfa E</i> genes.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -220,7 +220,7 @@
                 $icon1="experiment";
                 $icon2="";
                 $icon3="";
-                $content="Responsible for the protein expression of pfa A and pfa D genes.";
+                $content="Responsible for the protein expression of <i>pfa A</i> and <i>pfa D</i> genes.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -229,7 +229,7 @@
                 $icon1="presentation";
                 $icon2="experiment";
                 $icon3="";
-                $content="Responsible for protein expression of pfa A, and pfa  D genes";
+                $content="Responsible for protein expression of <i>pfa A</i>, and <i>pfa  D</i> genes";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -238,7 +238,7 @@
                 $icon1="experiment";
                 $icon2="wiki";
                 $icon3="";
-                $content="Responsible for protein expression of pfa B, pfa  C, and pfa E genes";
+                $content="Responsible for protein expression of <i>pfa B</i>, <i>pfa  C</i>, and <i>pfa E</i> genes";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -247,7 +247,7 @@
                 $icon1="slides_editor";
                 $icon2="experiment";
                 $icon3="";
-                $content="Responsible for DHA detection and the protein expression of pfa B, pfa C, and pfa E genes.";
+                $content="Responsible for DHA detection and the protein expression of <i>pfa B</i>, <i>pfa C</i>, and <i>pfa E</i> genes.";
                 include "sub/attribution_card.php";
             ?>
             <div id="6" class="title-label-div">
