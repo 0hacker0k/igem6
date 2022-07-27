@@ -1,7 +1,7 @@
 <?php include "../sub/config.php";?>
             <div class="pad">
                 <div class="week">
-                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_5_1.jpg" alt="">
+                    <img class="week_content" src="<?php echo imgfile;?>/notebook/wl_6.jpg" alt="">
                     <div class="week_content">
                         
                         <h5 class="title_content">Week 6 (6/5-11)</h5>

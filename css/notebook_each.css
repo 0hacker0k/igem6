@@ -40,6 +40,7 @@ hr{
 .word_content{
     font-size: 1.5rem;
     word-wrap:break-word;
+    padding-left:5%;
 }
 
 .title_content{
@@ -70,7 +71,7 @@ hr{
     transform:translateX(100%) !important;
     /* transition: 0.5s !important; */
     animation: change_img;
-    animation-duration: 0.6s;
+    animation-duration: 0.61s;
     animation-timing-function: ease-in-out;
 }
 
@@ -86,7 +87,7 @@ hr{
     transform:translateX(-100%) !important;
     /* transition: 0.5s !important; */
     animation: change_img2;
-    animation-duration: 0.6s;
+    animation-duration: 0.61s;
     animation-timing-function: ease-in-out;
 }
 
@@ -97,6 +98,13 @@ hr{
     100%{
         transform: translateX(0%);
     }
+}
+.carousel-control-prev-icon{
+    background-color: #900902;
+    border-color: #EA2B1F;
+}
+.carousel-control-next-icon{
+    background-color: #900902;
 }
 /* carousel-item active carousel-item-start
 carousel-item carousel-item-next carousel-item-start active */
