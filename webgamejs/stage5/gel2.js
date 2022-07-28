@@ -70,6 +70,10 @@ function preload_stage5_2_take(){
     'img/main/human1.png',
     { frameWidth: 455, frameHeight: 1030 }
     );//載入畫楨
+    // this.load.spritesheet('human',
+    // 'img/main/human2.png',
+    // { frameWidth: 464, frameHeight: 1028 }
+    // );//載入畫楨
     //music
     //this.load.audio('music',['aud/map/record.ogg','aud/map/record.mp3']);
     
@@ -360,6 +364,8 @@ function update_stage5_2_take (){//與外界有關的互動
                 spot.setVelocityY(-300);
                 player.anims.play('up',true);
                 break;
+            default:
+                player.anims.play('face',true);
         }
         if (cursors.up.isDown){
             spot.setVelocityY(-300);
@@ -373,9 +379,6 @@ function update_stage5_2_take (){//與外界有關的互動
         }else if (cursors.right.isDown){
             spot.setVelocityX(300);
             player.anims.play('right',true);
-        }else{
-            player.anims.play('face',true);
-            
         }
     }
     player.x=spot.x;

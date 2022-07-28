@@ -4,7 +4,7 @@ COLOR_DARK = 0x260e04;
 var content = `Phaser is a fast, free, and fun open source HTML5 game framework that offers WebGL and Canvas rendering across desktop and mobile web browsers. Games can be compiled to iOS, Android and native apps by using 3rd party tools. You can use JavaScript or TypeScript for development.`;
 
 function preload_stage4_take(){
-    debug = 1;
+    debug = 0;
     this.load.image('background', 'img/stage4/background.jpg');//載入一般圖片
     load_transition(this);
     this.load.image('bac', 'img/stage4/bac.png');
@@ -67,16 +67,16 @@ function create_stage4_take (){
     var tube_size = 0.7
     tube.setDisplaySize(tube.width*tube_size,tube.height*tube_size);
     //牙籤盒
-    var stick_box = this.physics.add.sprite(width*0.025, height*0.7,'stick_box').setOrigin(0, 0).setInteractive();
-    var box_size;
-    stick_box.setDisplaySize(width*0.09, height*0.2);
-    stick_box.on('pointerdown', function (pointer) {
+    // var stick_box = this.physics.add.sprite(width*0.025, height*0.7,'stick_box').setOrigin(0, 0).setInteractive();
+    // var box_size;
+    // stick_box.setDisplaySize(width*0.09, height*0.2);
+    // stick_box.on('pointerdown', function (pointer) {
          
-    },this);
+    // },this);
     //垃圾桶
-    var trashcan = this.physics.add.sprite(width*0.87, height*0.2,'trashcan').setOrigin(0, 0).setInteractive();
-    var trashcan_size;
-    trashcan.setDisplaySize(height*0.15, height*0.15);
+    // var trashcan = this.physics.add.sprite(width*0.87, height*0.2,'trashcan').setOrigin(0, 0).setInteractive();
+    // var trashcan_size;
+    // trashcan.setDisplaySize(height*0.15, height*0.15);
     //牙籤
     var sticks = this.physics.add.group();
     var stick = sticks.create(width/2, height/2, 'stick').setOrigin(0.9,1);
