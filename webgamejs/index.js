@@ -134,17 +134,11 @@ const stage_5_gel={
     create: create_stage5_take,
     update: update_stage5_take
 }
-const play_1={
-    key: 'play_1',
-    preload: play_1_preload,
-    create: play_1_create,
-    update: play_1_update
-}
-const play_2={
-    key: 'play_2',
-    preload: play_2_preload,
-    create: play_2_create,
-    update: play_2_update
+const stage_5_gel2={
+    key: 'stage_5_gel2',
+    preload: preload_stage5_2_take,
+    create: create_stage5_2_take,
+    update: update_stage5_2_take
 }
 function load(){
     if(page==null){
@@ -169,11 +163,8 @@ function load(){
             case "stage5":
                 load_page(stage_5_gel);
                 break;
-            case "play1":
-                load_page(play_1);
-                break;
-            case "play2":
-                load_page(play_2);
+            case "stage5_2":
+                load_page(stage_5_gel2);
                 break;
         }
     }

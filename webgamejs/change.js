@@ -1,6 +1,6 @@
 function loading_transition (where,x,y){//載入黑畫面
     transition = where.physics.add.sprite(x, y, 'transition').setOrigin(0, 0).setDisplaySize(width*2.1,height*1.1);
-    transition.depth = 1024;
+    transition.depth = 65536;
 }
 function start_transition (where){//畫面漸亮
     transition.setVelocityX(-2500*width/800);

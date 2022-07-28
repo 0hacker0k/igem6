@@ -8,6 +8,7 @@
 <script src="<?php echo webgamejsfile;?>/stage3/shoot.js"></script>
 <script src="<?php echo webgamejsfile;?>/stage4/take.js"></script>
 <script src="<?php echo webgamejsfile;?>/stage5/gel.js"></script>
+<script src="<?php echo webgamejsfile;?>/stage5/gel2.js"></script>
 <script src="<?php echo webgamejsfile;?>/play/shoot.js"></script>
 <script src="<?php echo webgamejsfile;?>/play/billiard.js"></script>
 <script src="<?php echo webgamejsfile;?>/change.js"></script>
