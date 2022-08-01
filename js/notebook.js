@@ -1,4 +1,4 @@
-var x=1,y=10;
+var x=5,y=10;
 // var lab;
 // var month;
 function setpage(x1,y1){
@@ -23,13 +23,16 @@ function switchbtn(id){
             lab="hp";
             break;
     }
-    
-    if(!document.getElementById("right_div")){
-        location.href = "./notebook_detail.php?group="+lab+"&month="+x;
-    }else{
-        goal="./notebook/notebook_"+lab+"_"+x+".php";
-        $("#right_div").load(goal);
+    goal="./notebook/notebook_"+lab+"_"+x+".php";
+    $("#right_div").load(goal);
+    if (location.href.includes('?')) {
+        history.pushState({}, null, location.href.split('?')[0]);
     }
+    const url = new URL(location.href);
+    url.searchParams.set('group', lab);
+    history.pushState(null, '', url);
+    url.searchParams.set('month', x);
+    history.pushState(null, '', url);
     // var month=x;
     // location.href = "./notebook_detail.php?group="+lab+"&month="+month;
 }

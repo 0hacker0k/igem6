@@ -1,4 +1,4 @@
-h1{
+h1:not(.red_title){
     color:black;
     font-size: 120px !important;
     text-align: center;
@@ -6,17 +6,6 @@ h1{
     background-color: #fffff0;
     font-family: "Lucida Handwriting";
 }
-
-hr{
-    color:#900902;
-    height:10px;
-    border: 5px solid #900902;
-    padding-top:0px;
-    margin-left:100px ;
-    margin-right:100px ;
-    
-}
-
 
 .week{
     display: flex;
@@ -36,20 +25,20 @@ hr{
     word-wrap:break-word;
     position: relative;
 }
-
+/* 1 em=>vw*(1/60*100) in 60rem */
 .word_content{
-    font-size: 1.5rem;
+    font-size: 1.67vw;
     word-wrap:break-word;
     padding-left:5%;
 }
 
 .title_content{
-    font-size:2rem;
+    font-size: 3.33vw;
 }
 
 .final_exam{
     color:#EA2B1F;
-    font-size:4vw;
+    font-size: 1.67vw;
 }
 
 .square{
@@ -106,8 +95,28 @@ hr{
 .carousel-control-next-icon{
     background-color: #900902;
 }
-/* carousel-item active carousel-item-start
-carousel-item carousel-item-next carousel-item-start active */
-/* 
-carousel-item active carousel-item-start
-carousel-item carousel-item-next carousel-item-start */
+.carousel{
+    width: 100%;
+    height: 100%;
+    object-fit: auto;
+    object-position: center center;
+    overflow: hidden;
+}
+.carousel-item{
+    height: 100%;
+}
+.carousel-inner{
+    height: 100%;
+    position: relative;
+}
+@media all and (max-width:60rem) {
+    .word_content{
+        font-size: 1em;
+    }
+    .title_content{
+        font-size: 2em;
+    }
+    .final_exam{
+        font-size: 1em;
+    }
+}

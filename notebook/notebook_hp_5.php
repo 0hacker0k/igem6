@@ -171,6 +171,3 @@
 
 
             </div>
-    <script>
-        setpage(1,20);
-    </script>

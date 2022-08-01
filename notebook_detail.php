@@ -1,5 +1,7 @@
+<!doctype html> 
 <head>
     <title>wiki</title>
+    <meta charset="UTF-8" />
     <?php include "./sub/config.php";?>
     <?php include "./sub/head.php";?>
     <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook.css">
@@ -47,12 +49,13 @@
         </div>
         <div id="right_div" class="right_div"></div>
         <script>
-            // var getUrlString = location.href;
-            // var url = new URL(getUrlString);
-            // var group=url.searchParams.get('group');
-            // var month=url.searchParams.get('month');
-            // var goal="./notebook/notebook_"+group+"_"+month+".php"
-            // $("#right_div").load(goal);
+            const urlParams = new URLSearchParams(window.location.search);
+            if(urlParams.has('month')!=undefined && urlParams.has('group')!=undefined){
+                var group=urlParams.get('group');
+                var month=urlParams.get('month');
+                var goal="./notebook/notebook_"+group+"_"+Number(month)+".php"
+                $("#right_div").load(goal);
+            }
         </script>
         
     </div>

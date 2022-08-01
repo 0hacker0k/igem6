@@ -44,6 +44,7 @@ body{
 .down-nav{
     width: 100%;
     display: flex;
+    /* float: right; */
     /* text-align: right; */
     flex-direction: row-reverse;
 }

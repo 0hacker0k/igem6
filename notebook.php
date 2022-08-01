@@ -1,18 +1,17 @@
 <!doctype html> 
 <head>
-  
     <title>wiki</title>
     <meta charset="UTF-8" />
     <?php include "./sub/config.php";?>
     <?php include "./sub/head.php";?>
     <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook.css">
+    <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook_each.css">
     <script src="<?php echo jsfile;?>/notebook.js"></script>
-  
 </head>
 
 <body onload="load_finish()">
-  <?php include "./sub/header.php"?>
-  <?php include "sub/loading.php"?>
+    <?php include "./sub/header.php"?>
+    <?php include "sub/loading.php"?>
     <div class="notebook">
         <div class="left_div">
             <div>
@@ -51,9 +50,9 @@
 
         
 
-        <div class="right_div">
+        <div id="right_div" class="right_div">
             <div class="pad">
-                <h1 class="align-mid">NOTEBOOK</h1>
+                <h1 class="align-mid red_title">NOTEBOOK</h1>
                 <hr>
                 <div class="mid_area">
                     <div class="mid_control">
@@ -70,7 +69,22 @@
         </div>
     </div>
     <script>
-        setpage(1,10);
+        const urlParams = new URLSearchParams(window.location.search);
+        if(urlParams.has('month')!=undefined && urlParams.has('group')!=undefined){
+            var group=urlParams.get('group');
+            var month=urlParams.get('month');
+            var goal="./notebook/notebook_"+group+"_"+Number(month)+".php"
+            $("#right_div").load(goal);
+            if (location.href.includes('?')) {
+                history.pushState({}, null, location.href.split('?')[0]);
+            }
+            const url = new URL(location.href);
+            url.searchParams.set('group', group);
+            history.pushState(null, '', url);
+            url.searchParams.set('month', x);
+            history.pushState(null, '', url);
+        }
+        
     </script>
   <?php include "./sub/footer.php"?>
 

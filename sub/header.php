@@ -102,7 +102,7 @@
                 <a href="#" class="dropdown-content_list2 click">Attributions</a>
                 <a href="#" class="dropdown-content_list2 click">Sponsors</a>
             </div>
-           <div id="mylist2" class="dropdown-content nav_rwd">
+            <div id="mylist2" class="dropdown-content nav_rwd">
                 <a href="#" class="dropdown-content_list2 click">Description</a>
                 <a href="#" class="dropdown-content_list2 click">Design</a>
                 <a href="#" class="dropdown-content_list2 click">Implementation</a>

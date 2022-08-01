@@ -27,7 +27,8 @@ function click_bar(id) {
         document.getElementById(id).classList.remove('show');
         isShow=0;
         if(id=="myDropdown9"){
-            temp_down_nav.classList.remove('show');
+            if(temp_down_nav!=null)
+                temp_down_nav.classList.remove('show');
             temp_down_nav=null;
             if(document.getElementById(id).classList.contains('helf_size')){
                 document.getElementById(id).classList.remove('helf_size');
@@ -42,26 +43,27 @@ function click_bar(id) {
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
         if (!event.target.matches('.click')) {
-                isShow=0;
-                temp_down_nav=null;
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                                openDropdown.classList.remove('show');
-                        }
-                }
-                dropdowns = document.getElementsByClassName("nav_rwd");
-                for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                                openDropdown.classList.remove('show');
-                        }
-                }
-                if(document.getElementById("myDropdown9").classList.contains('helf_size')){
-                    document.getElementById("myDropdown9").classList.remove('helf_size');
-                }
+            isShow=0;
+            temp_down_nav=null;
+            var dropdowns = document.getElementsByClassName("show");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                    }
+            }
+            dropdowns = document.getElementsByClassName("nav_rwd");
+            for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                    }
+            }
+            dropdowns = document.getElementById("myDropdown9").classList.remove('show');;
+            // if(document.getElementById("myDropdown9").classList.contains('helf_size')){
+            //     document.getElementById("myDropdown9").classList.remove('helf_size');
+            // }
         }
 }
 function loadingFunction(){

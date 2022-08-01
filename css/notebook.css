@@ -3,28 +3,14 @@ body{
 }
 
 
-.header{
-  width:100%;
-  height:200px;
-  display:block;
-  font-size: 30px;
-  background-color:#900902; 
-}
-
-h1{
+.red_title{
     color:#EA2B1F;
     font-weight:bolder;
-    font-size:70px !important;
+    /* font-size:70px !important; */
+    font-size:4.5em !important;
     padding-top:100px;
     padding-bottom:100px;
 }
-p{
-    color:#390099;
-    font-weight: 500;
-    font-size:30px ;
-    padding: left 30% right 30%;
-}
-
 hr{
   color:#900902;
   height:10px;
