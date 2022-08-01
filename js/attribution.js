@@ -15,24 +15,26 @@ document.addEventListener('DOMContentLoaded', function(){
         move_note();
         // myPosition = myWindow.scrollTop();
         myWindow.scroll(function(){
-            temp=notePosition-noteheight*0.4;
+            temp=notePosition-((view_to_pixels("100vh")-note.clientHeight)/2);
             move_note();
         }); 
     });  
-});//1488-836=652
-// function ttt(){
-//     console.log(document.getElementById("full_size_image").clientHeight);
-// }
-// setTimeout(() => {
-//     ttt();
-// }, 1000);
+});
+function view_to_pixels(value) {
+    var parts = value.match(/([0-9]+[\.]*[0-9]+)(vh|vw)/);
+    var num = Number(parts[1]);
+    var h_and_w = window[['innerHeight', 'innerWidth'][['vh', 'vw'].indexOf(parts[2])]];
+    // alert(h_and_w * (num/100));
+    return h_and_w * (num/100);
+}
+
 function locate_note(){
     notePosition = $('#attribution_left').offset().top;
     temp=notePosition-noteheight*0.4;
     move_note();
 }
 function move_note(){
-    console.log(notePosition,noteheight);
+    // console.log(notePosition,noteheight);
     if (myPosition > temp) {
         if (myPosition > temp) {
             if(sticker!=null)
