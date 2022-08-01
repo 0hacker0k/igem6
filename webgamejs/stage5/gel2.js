@@ -86,6 +86,7 @@ var islap=0;
 var ispick=0;
 var picking;
 var spot,spot_touch;
+var trashcan;
 function create_stage5_2_take (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
@@ -176,9 +177,11 @@ function create_stage5_2_take (){
                         desk[i][j].item_type=desk_what[i][j];
                         break;
                     case 'trashcan':
-                        desk[i][j].item = this.physics.add.image(desk[i][j].x, desk[i][j].y, desk_what[i][j]).setDisplaySize(width*0.1/2,height*0.17/2);
+                        desk[i][j].item = this.physics.add.staticImage(desk[i][j].x, desk[i][j].y, desk_what[i][j]).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
+                        trashcan = desk[i][j].item;
                         desk[i][j].item_type=desk_what[i][j];
-                        desk[i][j].disableBody(true,true);
+                        //desk[i][j].alpha = 0;
+                        desk[i][j].disableBody(false,true);
                         break;
                     case 'mixer':
                         desk[i][j].item = createObject(desk[i][j].x, desk[i][j].y, desk_what[i][j], this);
@@ -199,6 +202,7 @@ function create_stage5_2_take (){
     //this.physics.add.collider(player, desk, pick_thing, null, this);
     this.physics.add.overlap(spot_touch,microwave,microwave_in,null,this);
     this.physics.add.collider(spot, deskGroup, null, null, this);
+    this.physics.add.collider(spot, trashcan, null, null, this);
     
     function createObject(x,y,what,where){
         var Object = where.physics.add.image(x, y, what).setDisplaySize(width*0.1/2,height*0.17/2); 
