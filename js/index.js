@@ -92,6 +92,10 @@ document.addEventListener('DOMContentLoaded', function(){
         }); 
     });  
 });
+function close_header(){
+    var item=document.getElementById("navbar");
+    item.style.top="-"+(item.clientHeight+1)+"px";
+}
 function load_finish(){
     // return ;
     var loading=document.getElementById("loading");

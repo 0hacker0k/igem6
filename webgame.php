@@ -29,7 +29,7 @@
                     <option value="zh-cn">簡體中文</option>
                 </select>
             </div>
-            <div id="game"></div>
+            <div onfocus="close_header()" id="game"></div>
         </div>
     </div>
     <?php include "sub/footer.php"?>
