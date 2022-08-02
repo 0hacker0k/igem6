@@ -75,15 +75,18 @@ document.addEventListener('DOMContentLoaded', function(){
         var myPosition = myWindow.scrollTop(); 
         myWindow.scroll(function(){
             // alert(myPosition);
-        if (myPosition > 90) {
+        if (myPosition > 60) {
             if (myWindow.scrollTop() > myPosition && isShow==0) {
                 // $("#navbar").addClass("header-hide");
                 var item=document.getElementById("navbar");
                 item.style.top="-"+(item.clientHeight+1)+"px";
-            } else {
+            } else if(location.href.indexOf('webgame')==-1){
+
                 document.getElementById("navbar").style.top="0px";
                 // $("#navbar").removeClass("header-hide");
             }
+        }else if(myPosition <= 3){
+            document.getElementById("navbar").style.top="0px";
         }
         myPosition = myWindow.scrollTop();
         }); 

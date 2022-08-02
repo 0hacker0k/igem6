@@ -134,12 +134,6 @@ const stage_5_gel={
     create: create_stage5_take,
     update: update_stage5_take
 }
-const stage_5_gel2={
-    key: 'stage_5_gel2',
-    preload: preload_stage5_2_take,
-    create: create_stage5_2_take,
-    update: update_stage5_2_take
-}
 function load(){
     if(page==null){
         load_page(map_1);
@@ -163,9 +157,6 @@ function load(){
             case "stage5":
                 load_page(stage_5_gel);
                 break;
-            case "stage5_2":
-                load_page(stage_5_gel2);
-                break;
         }
     }
 }
@@ -180,7 +171,7 @@ function load_page(page){
             default: 'arcade',
             arcade: {
                 gravity: { y: 0 },
-                debug: true
+                debug: false
             }
         },
         scene: page
