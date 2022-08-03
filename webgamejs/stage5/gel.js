@@ -384,7 +384,7 @@ function create_stage5_take (){
         }
     }
     function microwave_out(a_player, microwave){
-        if(microwave.time<=0 && microwave.item!=""){
+        if(microwave.time<=0 && microwave.item!=null){
             a_player.pick=microwave.item;
             microwave.item=null;
             a_player.pick.alpha=1;
@@ -454,7 +454,7 @@ function create_stage5_take (){
         }
     }
     function mod_out(a_player, mod){
-        if(mod.time<=0){
+        if(mod.time<=0 && mod.item!=null){
             a_player.pick=mod.item;
             mod.item=null;
             a_player.pick.alpha=1;
@@ -514,7 +514,7 @@ function create_stage5_take (){
         }
     }
     function run_gel_out(p, tank){
-        if(tank.item!=""){
+        if(tank.item!="" && tank.item!=null){
             p.pick=tank.item;
             tank.item=null;
             p.pick.alpha=1;
@@ -527,17 +527,19 @@ function create_stage5_take (){
     }
     function gel_run_time(tank, locate){
         if(tank.item==null)return ;
-        if(locate>=tank.item.qte_bar.x+width*0.1){
-            locate=tank.item.qte_bar.x+width*0.1;
+        if(tank.has_TAE==1){
+            if(locate>=tank.item.qte_bar.x+width*0.1){
+                locate=tank.item.qte_bar.x+width*0.1;
+            }
+            if(tank.TAE_concentration>0){
+                tank.TAE_concentration-=1;
+            }
+            tank.item.quality-=(1000-tank.TAE_concentration)/100;
+            tank.item.run_time+=1;
+            locate+=width*0.1*0.01;
+            tank.item.qte_pointer.x=locate;
+            tank.alert.setTint(0xffffff-Math.floor((1000-tank.TAE_concentration)/4)*(0x010101));
         }
-        if(tank.TAE_concentration>0){
-            tank.TAE_concentration-=1;
-        }
-        tank.item.quality-=(1000-tank.TAE_concentration)/100;
-        tank.item.run_time+=1;
-        locate+=width*0.1*0.01;
-        tank.item.qte_pointer.x=locate;
-        tank.alert.setTint(0xffffff-Math.floor((1000-tank.TAE_concentration)/4)*(0x010101));
         setTimeout(function(){
             gel_run_time(tank, locate);
         },100);
