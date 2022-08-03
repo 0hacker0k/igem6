@@ -32,6 +32,9 @@
             <div onfocus="close_header()" id="game"></div>
         </div>
     </div>
+    <script>
+        close_header();
+    </script>
     <?php include "sub/footer.php"?>
 <!-- <button onclick="load()">123123132</button> -->
 </body>

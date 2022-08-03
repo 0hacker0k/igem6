@@ -67,6 +67,10 @@ function preload_stage5_take(){
     //     }
     // }
     this.load.image("alert",'img/stage5/temp.png');
+    this.load.image("qte_pointer",'img/stage5/qte_bar_pointer.png');
+    this.load.image("qte_half",'img/stage5/qte_bar_half.png');
+    this.load.image("qte_perfect",'img/stage5/qte_bar_perfect.png');
+    this.load.image("qte_bar",'img/stage5/qte_bar.png');
     // this.load.image("gel",'img/stage5/gel.png');
     //remind: change gel photo
     this.load.spritesheet('player',
@@ -115,10 +119,12 @@ function create_stage5_take (){
     this.physics.world.bounds.height=height;
     player.depth = 5;
     player.pick=null;
+    player.stop=0;
     spot=this.physics.add.image(player.x, player.y, "green", this).setDisplaySize(width/35,width/35).refreshBody();
     spot.alpha=0;
     spot_touch=this.physics.add.image(player.x, player.y, "green", this).setDisplaySize(width/25,width/25).refreshBody();
     spot_touch.alpha=0;
+    spot_touch.player=player;
     spot.setCollideWorldBounds(true);
     for(var i=0;i<7;i++){   //建立桌子
         desk[i] = new Array();
@@ -238,6 +244,11 @@ function create_stage5_take (){
                     desk[i][j].item.time=-8;
                     desk[i][j].item.alert=cant_move_item.create(desk[i][j].item.x, desk[i][j].item.y-width*0.05, "alert").setDisplaySize(width*0.03,width*0.03).setOrigin(0.5,0.5);
                     desk[i][j].item.alert.alpha=0;
+                }else if(desk_what[i][j]=="pipette"){
+                    desk[i][j].item.take="";
+                    desk[i][j].item.score=0;
+                    desk[i][j].item.setDisplaySize(width*0.015,width*0.06).refreshBody();
+                    desk[i][j].item.setAngle(45);
                 }
             }
         }
@@ -270,39 +281,43 @@ function create_stage5_take (){
         if(keySpace.isDown){
             if(action_record==0){
                 action_record=1;
-                action_in_thing(desk_entity);
+                action_in_thing(spot_touch.player, desk_entity);
             }
         }else{
             action_record=0;
         }
         
     }
-    function action_in_thing(desk_entity){
+    function action_in_thing(p,desk_entity){
         // console.log(desk_entity.item.type);
         if(desk_entity.item!=null){//desk has something
-            if(player.pick!=null){//player has something
-                if(desk_entity.item.type=="beaker" || desk_entity.item.type=="pipette" || desk_entity.item.type=="gel"){
+            if(p.pick!=null){//player has something
+                if(desk_entity.item.type=="TAE" && p.pick.type=="beaker"){
+                    take_TAE(p.pick);
+                }else if(desk_entity.item.type=="agarose" && p.pick.type=="beaker"){
+                    take_agarose(p.pick);
+                }else if(desk_entity.item.type=="microwave" && p.pick.type=="beaker"){
+                    microwave_in(p, p.pick, desk_entity.item);
+                }else if(desk_entity.item.type=="mod" && p.pick.type=="beaker"){
+                    mod_in(p, p.pick, desk_entity.item);
+                }else if((desk_entity.item.type=="sample" || desk_entity.item.type=="marker") && p.pick.type=="pipette"){
+                    pipette_suction(p.pick, desk_entity.item);
+                }else if(desk_entity.item.type=="gel" && p.pick.type=="pipette" && p.pick.take!=""){
+                    pipette_spit(p, p.pick, desk_entity.item);
+                }else if(desk_entity.item.type=="beaker" || desk_entity.item.type=="pipette" || desk_entity.item.type=="gel"){
                     swap_item(desk_entity);
-                }else if(desk_entity.item.type=="TAE" && player.pick.type=="beaker"){
-                    take_TAE(player.pick);
-                }else if(desk_entity.item.type=="agarose" && player.pick.type=="beaker"){
-                    take_agarose(player.pick);
-                }else if(desk_entity.item.type=="microwave" && player.pick.type=="beaker"){
-                    microwave_in(player, player.pick, desk_entity.item);
-                }else if(desk_entity.item.type=="mod" && player.pick.type=="beaker"){
-                    mod_in(player, player.pick, desk_entity.item);
                 }
             }else{//player has nothing
                 if(desk_entity.item.type=="beaker" || desk_entity.item.type=="pipette" || desk_entity.item.type=="gel"){
                     pick_thing(desk_entity.item, desk_entity);
                 }else if(desk_entity.item.type=="microwave"){
-                    microwave_out(player, desk_entity.item);
+                    microwave_out(p, desk_entity.item);
                 }else if(desk_entity.item.type=="mod"){
-                    mod_out(player, desk_entity.item);
+                    mod_out(p, desk_entity.item);
                 }
             }
         }else{//desk has nothing
-            if(player.pick!=null){//player has something
+            if(p.pick!=null){//player has something
                 put_thing(desk_entity);
             }else{//player has nothing
                 //hmmmm... actually, it's useless.
@@ -313,17 +328,17 @@ function create_stage5_take (){
         if(beaker.c<2){
             beaker.TAE+=1;
             beaker.c+=1;
-            change_skin(beaker);
+            change_skin_beaker(beaker);
         }
     }
     function take_agarose(beaker){
         if(beaker.c<2){
             beaker.agar+=1;
             beaker.c+=1;
-            change_skin(beaker);
+            change_skin_beaker(beaker);
         }
     }
-    function change_skin(beaker){
+    function change_skin_beaker(beaker){
         if(beaker.c==2){
             if(beaker.TAE==1){//beaker.agar should be 1 too.
                 beaker.anims.play('beaker_TA',true);
@@ -395,7 +410,22 @@ function create_stage5_take (){
                 mod.item.score=beaker.score;
                 mod.item.alpha=0;
                 mod.item.ok=0;
+                mod.item.onuse=0;
                 mod.item.type="gel";
+                mod.item.sample=0;
+                mod.item.marker=0;
+                mod.item.qte_bar=cant_move_item.create(mod.x, mod.y, "qte_bar").setDisplaySize(width*0.1,width*0.1/12).setOrigin(0,0.5).refreshBody();
+                mod.item.qte_bar.alpha=0;
+                // mod.item.qte_bar.setTint();
+                mod.item.qte_pointer=cant_move_item.create(mod.x, mod.y, "qte_pointer").setDisplaySize(width*0.1/60,width*0.1/6).setOrigin(0,0.5).refreshBody();
+                mod.item.qte_pointer.alpha=0;
+                mod.item.qte_pointer.setTint(0x9999ff);
+                mod.item.qte_half=cant_move_item.create(mod.x, mod.y, "qte_half").setDisplaySize(width*0.1*0.4,width*0.1/12).setOrigin(0,0.5).refreshBody();
+                mod.item.qte_half.alpha=0;
+                mod.item.qte_half.setTint(0xffffbb);
+                mod.item.qte_perfect=cant_move_item.create(mod.x, mod.y, "qte_perfect").setDisplaySize(width*0.1*0.15,width*0.1/12).setOrigin(0,0.5).refreshBody();
+                mod.item.qte_perfect.alpha=0;
+                mod.item.qte_perfect.setTint(0xffcccc);
                 mod.time=7;
                 beaker_zero(beaker);
                 setTimeout(function(){
@@ -436,14 +466,117 @@ function create_stage5_take (){
     }
     function trashing(spot_touch, trashcan){
         if(keySpace.isDown){
-            if(player.pick!=null){
-                if(player.pick.type=="beaker"){
-                    beaker_zero(player.pick);
-                }else if(player.pick.type=="gel"){
-                    player.pick.destroy();
-                    player.pick=null;
+            var p=spot_touch.player;
+            if(p.pick!=null){
+                if(p.pick.type=="beaker"){
+                    beaker_zero(p.pick);
+                }else if(p.pick.type=="gel"){
+                    p.pick.destroy();
+                    p.pick=null;
+                }else if(p.pick.type=="pipette"){
+                    p.pick.take="";
+                    p.pick.clearTint();
                 }
             }
+        }
+    }
+    function pipette_suction(pipette, sample){
+        if(pipette.take==""){
+            pipette.take=sample.type;
+            if(sample.type=="sample"){
+                pipette.setTint(0xaaffaa);
+                // pipette.anims.play("");
+            }else if(sample.type=="marker"){
+                pipette.setTint(0xffaaff);
+                // pipette.anims.play("");
+            }
+            //remind: pipe skin
+        }
+    }
+    function pipette_spit(p, pipette, gel){
+        if(gel.onuse==0 && pipette.take!="" && gel.sample+gel.marker<2){
+            gel.onuse=1;
+            p.stop=1;
+            var qte_half=Math.floor(Math.random()*36)/60*width*0.1;
+            var qte_perfect=Math.floor(Math.random()*16)/60*width*0.1;
+            gel.qte_bar.depth=7;
+            gel.qte_bar.x=gel.x-width*0.1/2;
+            gel.qte_bar.y=gel.y-height*0.07;
+            gel.qte_bar.alpha=1;
+            gel.qte_half.depth=8;
+            gel.qte_half.x=gel.qte_bar.x+qte_half;
+            gel.qte_half.y=gel.y-height*0.07;
+            gel.qte_half.alpha=1;
+            gel.qte_perfect.depth=9;
+            gel.qte_perfect.x=gel.qte_half.x+qte_perfect;
+            gel.qte_perfect.y=gel.y-height*0.07;
+            gel.qte_perfect.alpha=1;
+            gel.qte_pointer.depth=10;
+            gel.qte_pointer.x=gel.qte_bar.x;
+            gel.qte_pointer.y=gel.y-height*0.07;
+            gel.qte_pointer.alpha=1;
+            setTimeout(function(){
+                qte_pointer_move(p, gel, 1, gel.qte_pointer.x);
+            },500);
+        }
+    }
+    function qte_pointer_move(p, gel, d, locate){
+        if(keySpace.isDown){
+            p.stop=0;
+            if(gel.qte_pointer.x>=gel.qte_half.x && gel.qte_pointer.x<=gel.qte_half.x+width*0.1*0.4){
+                gel.score+=50;
+            }
+            if(gel.qte_pointer.x>=gel.qte_perfect.x && gel.qte_pointer.x<=gel.qte_perfect.x+width*0.1*0.15){
+                gel.score+=50;
+            }
+            if(p.pick.take=="sample"){
+                gel.sample+=1;
+            }else if(p.pick.take=="marker"){
+                gel.marker+=1;
+            }
+            change_skin_gel(gel);
+            //remind: change gel skin
+            if(gel.marker+gel.sample==2){
+                gel.ok=1;
+            }
+            setTimeout(function(){
+                p.pick.take="";
+                gel.onuse=0;
+            },10);
+            p.pick.clearTint();
+            gel.qte_bar.alpha=0;
+            gel.qte_half.alpha=0;
+            gel.qte_perfect.alpha=0;
+            gel.qte_pointer.alpha=0;
+            console.log(gel.score);
+            return ;
+        }
+        locate+=d*width*0.1*0.0125;
+        gel.qte_pointer.x=locate;
+        if(locate>=gel.qte_bar.x+width*0.1 || locate<=gel.qte_bar.x){
+            d=-d;
+        }
+        setTimeout(function(){
+            qte_pointer_move(p, gel, d, locate);
+        },10);
+    }
+    function change_skin_gel(gel){
+        if(gel.sample+gel.marker==2){
+            if(gel.sample==1){//gel.marker should be 1 too.
+                gel.anims.play('gel_sm',true);
+            }if(gel.sample==2){//gel.marker should be 0.
+                gel.anims.play('gel_ss',true);
+            }if(gel.sample==0){//gel.marker should be 2.
+                gel.anims.play('gel_mm',true);
+            }
+        }else if(gel.sample+gel.marker==1){
+            if(gel.sample==1){//gel.marker should be 0.
+                gel.anims.play('gel_s',true);
+            }if(gel.sample==0){//gel.marker should be 1.
+                gel.anims.play('gel_m',true);
+            }
+        }else{
+            gel.anims.play('gel',true);
         }
     }
     function beaker_zero(beaker){
@@ -454,10 +587,6 @@ function create_stage5_take (){
         beaker.score=0;
         beaker.anims.play("beaker");
     }
-    function mixing(){
-
-    }
-    
     function pick_thing(pick_item, from){
         player.pick=pick_item;
         from.item=null;
@@ -553,7 +682,7 @@ function update_stage5_take (){//與外界有關的互動
     // console.log(this.cameras.main.scrollX,this.cameras.main.scrollY);
     spot.setVelocityX(0);
     spot.setVelocityY(0);
-    if(stop==0){
+    if(stop==0 && player.stop==0){
         direct.x=player.x+point_x-width/2;
         direct.y=player.y+point_y-height/2;
         if (cursors.up.isDown){
