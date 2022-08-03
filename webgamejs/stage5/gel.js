@@ -1,7 +1,7 @@
 var desk_what = [['TAE','agarose','beaker','beaker','microwave','trashcan','','',''],
                     ['','','','','','','',''],
                     ['','','','','','','',''],
-                    ['marker','sample','','pipette','','','',''],
+                    ['marker','sample','','pipette','','','microwave',''],
                     ['','','','','','','',''],
                     ['','','','','','','',''],
                     ['','run_gel','','','','','mod','']];
@@ -249,13 +249,18 @@ function create_stage5_take (){
                     desk[i][j].item.score=0;
                     desk[i][j].item.setDisplaySize(width*0.015,width*0.06).refreshBody();
                     desk[i][j].item.setAngle(45);
+                }else if(desk_what[i][j]=="run_gel"){
+                    desk[i][j].item.item=null;
+                    desk[i][j].item.has_TAE=0;
+                    desk[i][j].item.TAE_concentration=0;
+                    desk[i][j].item.alert=cant_move_item.create(desk[i][j].item.x, desk[i][j].item.y+width*0.02, "alert").setDisplaySize(width*0.03,width*0.03).setOrigin(0.5,0.5);
+                    // desk[i][j].item.alert.alpha=0;
+                    desk[i][j].item.alert.setTint(0x000000);
                 }
             }
         }
     }
     this.physics.add.overlap(spot_touch, deskGroup, touch_table, null, this);
-    //this.physics.add.collider(player, desk, pick_thing, null, this);
-    // this.physics.add.overlap(spot_touch,microwave,microwave_in,null,this);
     this.physics.add.collider(spot, deskGroup, null, null, this);
     this.physics.add.overlap(spot_touch, trashcan, trashing, null, this);
     this.physics.add.collider(spot, trashcan, null, null, this);
@@ -297,7 +302,7 @@ function create_stage5_take (){
                 }else if(desk_entity.item.type=="agarose" && p.pick.type=="beaker"){
                     take_agarose(p.pick);
                 }else if(desk_entity.item.type=="microwave" && p.pick.type=="beaker"){
-                    microwave_in(p, p.pick, desk_entity.item);
+                    microwave_in(p, desk_entity.item);
                 }else if(desk_entity.item.type=="mod" && p.pick.type=="beaker"){
                     mod_in(p, p.pick, desk_entity.item);
                 }else if((desk_entity.item.type=="sample" || desk_entity.item.type=="marker") && p.pick.type=="pipette"){
@@ -305,20 +310,26 @@ function create_stage5_take (){
                 }else if(desk_entity.item.type=="gel" && p.pick.type=="pipette" && p.pick.take!=""){
                     pipette_spit(p, p.pick, desk_entity.item);
                 }else if(desk_entity.item.type=="beaker" || desk_entity.item.type=="pipette" || desk_entity.item.type=="gel"){
-                    swap_item(desk_entity);
+                    swap_item(p, desk_entity);
+                }else if((desk_entity.item.type=="run_gel") && p.pick.type=="gel"){
+                    run_gel_in(p, desk_entity.item);
+                }else if((desk_entity.item.type=="run_gel") && p.pick.type=="beaker"){
+                    tank_change_TAE(p, desk_entity.item);
                 }
             }else{//player has nothing
                 if(desk_entity.item.type=="beaker" || desk_entity.item.type=="pipette" || desk_entity.item.type=="gel"){
-                    pick_thing(desk_entity.item, desk_entity);
+                    pick_thing(p, desk_entity.item, desk_entity);
                 }else if(desk_entity.item.type=="microwave"){
                     microwave_out(p, desk_entity.item);
                 }else if(desk_entity.item.type=="mod"){
                     mod_out(p, desk_entity.item);
+                }else if(desk_entity.item.type=="run_gel"){
+                    run_gel_out(p, desk_entity.item);
                 }
             }
         }else{//desk has nothing
             if(p.pick!=null){//player has something
-                put_thing(desk_entity);
+                put_thing(p, desk_entity);
             }else{//player has nothing
                 //hmmmm... actually, it's useless.
             }
@@ -346,6 +357,10 @@ function create_stage5_take (){
                 beaker.anims.play('beaker_TT',true);
             }if(beaker.TAE==0){//beaker.agar should be 2.
                 beaker.anims.play('beaker_AA',true);
+            }if(beaker.TAE==-1){//beaker.TAE can't use anymore.
+                // beaker.anims.play('beaker_AA',true);
+                //remind: change skin
+                beaker.setTint(0x666666);
             }
         }else if(beaker.c==1){
             if(beaker.TAE==1){//beaker.agar should be 0.
@@ -357,7 +372,7 @@ function create_stage5_take (){
             beaker.anims.play('beaker',true);
         }
     }
-    function microwave_in(a_player, beaker, microwave){
+    function microwave_in(a_player, microwave){
         if(microwave.item==null){
             microwave.item=a_player.pick;
             a_player.pick=null;
@@ -369,10 +384,11 @@ function create_stage5_take (){
         }
     }
     function microwave_out(a_player, microwave){
-        if(microwave.time<=0){
+        if(microwave.time<=0 && microwave.item!=""){
             a_player.pick=microwave.item;
             microwave.item=null;
             a_player.pick.alpha=1;
+            a_player.pick.score+=(microwave.time>-4)?100:100-(microwave.time+3)*20;
             microwave.time=-8;
             microwave.alert.alpha=0;
         }
@@ -411,7 +427,9 @@ function create_stage5_take (){
                 mod.item.alpha=0;
                 mod.item.ok=0;
                 mod.item.onuse=0;
+                mod.item.run_time=0;
                 mod.item.type="gel";
+                mod.item.quality=4000;
                 mod.item.sample=0;
                 mod.item.marker=0;
                 mod.item.qte_bar=cant_move_item.create(mod.x, mod.y, "qte_bar").setDisplaySize(width*0.1,width*0.1/12).setOrigin(0,0.5).refreshBody();
@@ -462,6 +480,83 @@ function create_stage5_take (){
             setTimeout(function(){
                 mod_cooldown(mod);
             },1000);
+        }
+    }
+    function run_gel_in(p, tank){
+        if(tank.item==null && p.pick.ok==1){
+            tank.item=p.pick;
+            p.pick=null;
+            tank.item.x=tank.x;
+            tank.item.y=tank.y;
+            tank.item.alpha=0;
+            tank.item.onuse=1;
+            var qte_half=0.55*width*0.1;
+            var qte_perfect=0.67*width*0.1;
+            tank.item.qte_bar.depth=7;
+            tank.item.qte_bar.x=tank.item.x-width*0.1/2;
+            tank.item.qte_bar.y=tank.item.y-height*0.07;
+            tank.item.qte_bar.alpha=1;
+            tank.item.qte_half.depth=8;
+            tank.item.qte_half.x=tank.item.qte_bar.x+qte_half;
+            tank.item.qte_half.y=tank.item.y-height*0.07;
+            tank.item.qte_half.alpha=1;
+            tank.item.qte_perfect.depth=9;
+            tank.item.qte_perfect.x=tank.item.qte_bar.x+qte_perfect;
+            tank.item.qte_perfect.y=tank.item.y-height*0.07;
+            tank.item.qte_perfect.alpha=1;
+            tank.item.qte_pointer.depth=10;
+            tank.item.qte_pointer.x=tank.item.qte_bar.x+width*0.1*tank.item.run_time*0.01;
+            tank.item.qte_pointer.y=tank.item.y-height*0.07;
+            tank.item.qte_pointer.alpha=1;
+            setTimeout(function(){
+                gel_run_time(tank, tank.item.qte_pointer.x);
+            },100);
+        }
+    }
+    function run_gel_out(p, tank){
+        if(tank.item!=""){
+            p.pick=tank.item;
+            tank.item=null;
+            p.pick.alpha=1;
+            //remind: gel score should be add by gel.run_time when it commit.
+            p.pick.qte_bar.alpha=0;
+            p.pick.qte_half.alpha=0;
+            p.pick.qte_perfect.alpha=0;
+            p.pick.qte_pointer.alpha=0;
+        }
+    }
+    function gel_run_time(tank, locate){
+        if(tank.item==null)return ;
+        if(locate>=tank.item.qte_bar.x+width*0.1){
+            locate=tank.item.qte_bar.x+width*0.1;
+        }
+        if(tank.TAE_concentration>0){
+            tank.TAE_concentration-=1;
+        }
+        tank.item.quality-=(1000-tank.TAE_concentration)/100;
+        tank.item.run_time+=1;
+        locate+=width*0.1*0.01;
+        tank.item.qte_pointer.x=locate;
+        tank.alert.setTint(0xffffff-Math.floor((1000-tank.TAE_concentration)/4)*(0x010101));
+        setTimeout(function(){
+            gel_run_time(tank, locate);
+        },100);
+    }
+    function tank_change_TAE(p, tank){
+        if(tank.has_TAE==0 && p.pick.TAE==2){
+            tank.has_TAE=1;
+            tank.TAE_concentration=1000;
+            p.pick.c=0;
+            p.pick.TAE=0;
+            tank.alert.setTint(0xffffff-Math.floor((1000-tank.TAE_concentration)/4)*(0x010101));
+            change_skin_beaker(p.pick);
+        }else if(tank.has_TAE==1 && p.pick.c==0){
+            tank.has_TAE=0;
+            tank.TAE_concentration=0;
+            p.pick.c=2;
+            p.pick.TAE=-1;
+            tank.alert.setTint(0xffffff-Math.floor((1000-tank.TAE_concentration)/4)*(0x010101));
+            change_skin_beaker(p.pick);
         }
     }
     function trashing(spot_touch, trashcan){
@@ -542,7 +637,7 @@ function create_stage5_take (){
             setTimeout(function(){
                 p.pick.take="";
                 gel.onuse=0;
-            },10);
+            },100);
             p.pick.clearTint();
             gel.qte_bar.alpha=0;
             gel.qte_half.alpha=0;
@@ -586,21 +681,22 @@ function create_stage5_take (){
         beaker.ok=0;
         beaker.score=0;
         beaker.anims.play("beaker");
+        beaker.clearTint();
     }
-    function pick_thing(pick_item, from){
-        player.pick=pick_item;
+    function pick_thing(p, pick_item, from){
+        p.pick=pick_item;
         from.item=null;
     }
-    function swap_item(desk){
+    function swap_item(p, desk){
         var t_item=desk.item;
-        desk.item=player.pick;
-        player.pick=t_item;
+        desk.item=p.pick;
+        p.pick=t_item;
         desk.item.x=desk.x;
         desk.item.y=desk.y;
     }
-    function put_thing(to){
-        to.item=player.pick;
-        player.pick=null;
+    function put_thing(p, to){
+        to.item=p.pick;
+        p.pick=null;
         to.item.x=to.x;
         to.item.y=to.y;
     }
