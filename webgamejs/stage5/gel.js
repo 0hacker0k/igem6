@@ -805,12 +805,18 @@ function create_stage5_take (){
             change_skin_beaker(p.pick);
             change_tank_skin(tank);
         }else if(tank.has_TAE==1 && p.pick.c==0){
+            if(tank.TAE_concentration<1000){
+                p.pick.TAE=-1;
+            }else{
+                p.pick.TAE=4;
+            }
             tank.has_TAE=0;
             tank.TAE_concentration=0;
             p.pick.c=4;
-            p.pick.TAE=-1;
+            
+            
             tank.alert.alpha=0;
-            tank.alert.setTint(0x000000);
+            // tank.alert.setTint(0x000000);
             change_skin_beaker(p.pick);
             change_tank_skin(tank);
         }
