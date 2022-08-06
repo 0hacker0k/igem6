@@ -84,7 +84,7 @@ function preload_stage5_take(){
     );
     this.load.spritesheet('beaker',
         'img/stage5/beaker.png',
-        { frameWidth: 780.8, frameHeight: 1022 }
+        { frameWidth: 216, frameHeight: 281.75 }
     );
     //載入畫楨
     //右靜止 
@@ -147,7 +147,7 @@ function create_stage5_take (){
             
         }
     }
-    {
+    {//動畫畫禎
         //人物動畫
         {
             this.anims.create({//橫向移動動畫
@@ -193,40 +193,112 @@ function create_stage5_take (){
                 repeat: -1
             });
         }
-        {//beaker animation
+        {//beaker
             this.anims.create({
-                key: 'beaker_TT',
-                frames: this.anims.generateFrameNumbers("beaker", { start: 4, end: 4 }),
+                key: 'beaker_A',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 0, end: 0 }),
                 frameRate: 5,
                 repeat: -1
             });
             this.anims.create({
                 key: 'beaker_AA',
-                frames: this.anims.generateFrameNumbers("beaker", { start: 5, end: 5 }),
-                frameRate: 5,
-                repeat: -1
-            });
-            this.anims.create({
-                key: 'beaker_TA',
-                frames: this.anims.generateFrameNumbers("beaker", { start: 3, end: 3 }),
-                frameRate: 5,
-                repeat: -1
-            });
-            this.anims.create({
-                key: 'beaker_T',
                 frames: this.anims.generateFrameNumbers("beaker", { start: 1, end: 1 }),
                 frameRate: 5,
                 repeat: -1
             });
             this.anims.create({
-                key: 'beaker_A',
+                key: 'beaker_AAA',
                 frames: this.anims.generateFrameNumbers("beaker", { start: 2, end: 2 }),
                 frameRate: 5,
                 repeat: -1
             });
             this.anims.create({
+                key: 'beaker_AAAA',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 3, end: 3 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_dirty',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 4, end: 4 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_dry2',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 5, end: 5 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_dry4',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 6, end: 6 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
                 key: 'beaker',
-                frames: this.anims.generateFrameNumbers("beaker", { start: 0, end: 0 }),
+                frames: this.anims.generateFrameNumbers("beaker", { start: 7, end: 7 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_T',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 8, end: 8 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_TA',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 9, end: 9 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_TAA',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 10, end: 10 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_TAAA',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 11, end: 11 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_TT',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 12, end: 12 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_TTA',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 13, end: 13 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_TTAA',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 14, end: 14 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_TTT',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 15, end: 15 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_TTTA',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 16, end: 16 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'beaker_TTTT',
+                frames: this.anims.generateFrameNumbers("beaker", { start: 17, end: 17 }),
                 frameRate: 5,
                 repeat: -1
             });
@@ -478,9 +550,9 @@ function create_stage5_take (){
             }else if(beaker.TAE==0){//beaker.agar should be 4.
                 beaker.anims.play('beaker_AAAA',true);
             }else if(beaker.TAE==-1){//beaker.TAE can't use anymore.
-                // beaker.anims.play('beaker_AA',true);
+                beaker.anims.play('beaker_dirty',true);
                 //remind: change skin
-                beaker.setTint(0x666666);
+                // beaker.setTint(0x666666);
             }
         }else if(beaker.c==3){
             if(beaker.TAE==3){//beaker.agar should be 0.
@@ -563,9 +635,9 @@ function create_stage5_take (){
             warning(20,0,microwave.alert,1,0);
             if(microwave.item.TAE==microwave.item.agar){
                 if(microwave.item.c==2){
-                    microwave.item.anims.play("beaker_AA");
+                    microwave.item.anims.play("beaker_dry2");
                 }else if(microwave.item.c==4){
-                    microwave.item.anims.play("beaker_AAAA");
+                    microwave.item.anims.play("beaker_dry4");
                 }
             }
             //remind: add microwave.item.anims.play("beaker_fail");
@@ -903,12 +975,14 @@ function create_stage5_take (){
         p.pick=t_item;
         desk.item.x=desk.x;
         desk.item.y=desk.y;
+        desk.item.depth=desk.depth+1;
     }
     function put_thing(p, to){
         to.item=p.pick;
         p.pick=null;
         to.item.x=to.x;
         to.item.y=to.y;
+        to.item.depth=to.depth+1;
     }
     function warning(level,last,item,d,count){
         if(item.alpha==0){
@@ -1141,28 +1215,28 @@ function update_stage5_take (){//與外界有關的互動
     player.y=spot.y;
     spot_touch.x=spot.x;
     spot_touch.y=spot.y;
-    player.depth=5+Math.floor((player.y-height*0.16)/(height*0.12));
+    player.depth=6+Math.floor((player.y-height*0.16)/(height*0.12));
     if(player.pick!=null){
         switch(p_facing){
             case 1://右
                 player.pick.x=player.x+width*0.02;
                 player.pick.y=player.y-width*0.03;
-                player.pick.depth=player.depth-1;
+                player.pick.depth=player.depth-0.5;
                 break;
             case 2://下
                 player.pick.x=player.x;
                 player.pick.y=player.y-width*0.03;
-                player.pick.depth=player.depth+1;
+                player.pick.depth=player.depth+0.5;
                 break;
             case 3://左
                 player.pick.x=player.x-width*0.02;
                 player.pick.y=player.y-width*0.03;
-                player.pick.depth=player.depth-1;
+                player.pick.depth=player.depth-0.5;
                 break;
             case 4://上
                 player.pick.x=player.x;
                 player.pick.y=player.y-width*0.05;
-                player.pick.depth=player.depth-1;
+                player.pick.depth=player.depth;
                 break;
         }
         
