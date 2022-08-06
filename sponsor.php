@@ -9,14 +9,14 @@
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
     <img class="full_size_image" src="<?php echo imgfile;?>/sponsor/pepe-the-frog-gif-6.gif" alt=""> 
-    <div class="attribution_overview justify-content-around">
-        <div class="col-7">
-            <img class="sponsor_rope" src="<?php echo imgfile;?>/sponsor/rope.png" alt="">
-        </div>
+    <div class="sponsor_body">
+        <img class="sponsor_rope" src="<?php echo imgfile;?>/sponsor/rope.png" alt="">
+        <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
+        <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
     </div>
-    
-    <div class="sponsor_paper">
 
-    </div>
+
+
+   
     <?php include "./sub/footer.php"?>   
 </body>
