@@ -66,6 +66,10 @@ function preload_stage5_take(){
         'img/stage5/mod.png',
         { frameWidth: 928, frameHeight: 674 }
     );
+    this.load.spritesheet('gel',
+        'img/stage5/gel.png',
+        { frameWidth: 574, frameHeight: 561 }
+    );
     this.load.spritesheet('microwave',
         'img/stage5/microwave.png',
         { frameWidth: 1173, frameHeight: 784 }
@@ -129,6 +133,7 @@ function create_stage5_take (){
     var trashcan=this.physics.add.staticGroup();
     var banner=this.physics.add.staticGroup().create(0, 0, "green", this).setDisplaySize(width,height*0.16).setOrigin(0,0).refreshBody();
     banner.alpha=0;
+    where=this;
     for(var i=0;i<7;i++){   //建立桌子
         desk[i] = new Array();
         for(var j=0;j<10;j++){
@@ -137,6 +142,7 @@ function create_stage5_take (){
                 desk[i][j].setBodySize(width*0.1,height*0.12,true).refreshBody();   
                 desk[i][j].i=i;
                 desk[i][j].j=j;
+                desk[i][j].depth=5+i;
             }
             
         }
@@ -259,6 +265,44 @@ function create_stage5_take (){
                 repeat: -1
             });
         }
+        {//gel
+            this.anims.create({
+                key: 'gel',
+                frames: this.anims.generateFrameNumbers("gel", { start: 0, end: 0 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'gel_m',
+                frames: this.anims.generateFrameNumbers("gel", { start: 1, end: 1 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'gel_sm',
+                frames: this.anims.generateFrameNumbers("gel", { start: 2, end: 2 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'gel_mm',
+                frames: this.anims.generateFrameNumbers("gel", { start: 3, end: 3 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'gel_ss',
+                frames: this.anims.generateFrameNumbers("gel", { start: 4, end: 4 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'gel_s',
+                frames: this.anims.generateFrameNumbers("gel", { start: 5, end: 5 }),
+                frameRate: 5,
+                repeat: -1
+            });
+        }
         {//tank
             this.anims.create({
                 key: 'tank',
@@ -293,6 +337,7 @@ function create_stage5_take (){
         for(var j=0;j<10;j++){
             if(desk_what[i][j]!=''){//物件初始位置
                 desk[i][j].item = createObject(desk[i][j].x, desk[i][j].y, desk_what[i][j], this);
+                desk[i][j].item.depth=desk[i][j].depth;
                 if(desk_what[i][j]=="trashcan"){
                     desk[i][j].disableBody(false,true);
                 }else if(desk_what[i][j]=="beaker"){
@@ -340,7 +385,7 @@ function create_stage5_take (){
         }else if(what=="trashcan"){
             Object = trashcan.create(x, y, what).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
         }else if(what=="sample" || what=="marker"){
-            Object = trashcan.create(x, y, what).setDisplaySize(width*0.1/6,height*0.17/2).refreshBody();
+            Object = cant_move_item.create(x, y, what).setDisplaySize(width*0.1/6,height*0.17/3).refreshBody();
         }else{
             Object = where.physics.add.sprite(x, y, what).setDisplaySize(width*0.1/2,height*0.17/2);
             Object.setInteractive().setBodySize(Object.width,Object.height);
@@ -516,8 +561,12 @@ function create_stage5_take (){
         }else if(microwave.time==-12){
             microwave.item.ok=0;
             warning(20,0,microwave.alert,1,0);
-            if(microwave.item.c%2==0 && microwave.item.TAE==microwave.item.agar){
-                microwave.item.anims.play("beaker_AA");
+            if(microwave.item.TAE==microwave.item.agar){
+                if(microwave.item.c==2){
+                    microwave.item.anims.play("beaker_AA");
+                }else if(microwave.item.c==4){
+                    microwave.item.anims.play("beaker_AAAA");
+                }
             }
             //remind: add microwave.item.anims.play("beaker_fail");
         }
@@ -531,7 +580,7 @@ function create_stage5_take (){
         if(mod.item==null){
             if(beaker.ok==1){
                 mod.anims.play("mod_w");
-                mod.item=cant_move_item.create(mod.x, mod.y, "green").setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
+                mod.item=createObject(mod.x, mod.y, "gel",where).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
                 // mod.item.anims.play("gel_")
                 mod.item.score=beaker.score;
                 mod.item.alpha=0;
@@ -617,8 +666,8 @@ function create_stage5_take (){
             tank.item.y=tank.y;
             tank.item.alpha=0;
             tank.item.onuse=1;
-            var qte_half=0.55*width*0.1;
-            var qte_perfect=0.67*width*0.1;
+            var qte_half=0.55*tank.item.qte_bar.width;
+            var qte_perfect=0.67*tank.item.qte_bar.width;
             tank.item.qte_bar.depth=7;
             tank.item.qte_bar.x=tank.item.x-tank.item.qte_bar.width/2;
             tank.item.qte_bar.y=tank.item.y-height*0.07;
@@ -927,6 +976,7 @@ function create_stage5_take (){
     start_transition(this);
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
+    back.depth=1023;
     back.on('pointerdown', function (){
         finish_transition(this,width,0);
         setTimeout(function(){
@@ -1091,27 +1141,28 @@ function update_stage5_take (){//與外界有關的互動
     player.y=spot.y;
     spot_touch.x=spot.x;
     spot_touch.y=spot.y;
+    player.depth=5+Math.floor((player.y-height*0.16)/(height*0.12));
     if(player.pick!=null){
         switch(p_facing){
             case 1://右
                 player.pick.x=player.x+width*0.02;
                 player.pick.y=player.y-width*0.03;
-                player.pick.depth=4;
+                player.pick.depth=player.depth-1;
                 break;
             case 2://下
                 player.pick.x=player.x;
                 player.pick.y=player.y-width*0.03;
-                player.pick.depth=6;
+                player.pick.depth=player.depth+1;
                 break;
             case 3://左
                 player.pick.x=player.x-width*0.02;
                 player.pick.y=player.y-width*0.03;
-                player.pick.depth=4;
+                player.pick.depth=player.depth-1;
                 break;
             case 4://上
                 player.pick.x=player.x;
                 player.pick.y=player.y-width*0.05;
-                player.pick.depth=4;
+                player.pick.depth=player.depth-1;
                 break;
         }
         
