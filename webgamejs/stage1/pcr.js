@@ -81,9 +81,9 @@ function create_stage1_pcr (){
     var goal_each_spacing=90*width/800;
     var move_each_spacing=0.15*width;
     var x = (width-((len-1)*goal_each_spacing)-0.05*width)/2;
-    var y = 0.2*width;
+    var y = 0.3*height;
     var x2 = 0.17*width;
-    var y2 = 0.58*width;
+    var y2 = 0.81*height;
     var gene_goal=[];
     var gene_move=[];
     var final_x,final_y;
