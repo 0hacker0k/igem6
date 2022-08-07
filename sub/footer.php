@@ -23,3 +23,5 @@
         <a class="text-reset fw-bold" style="text-decoration:none;" href="https://www.ccu.edu.tw/">National Chung Cheng University All rights reserved</a>
     </div>
 </footer>
+<script src="<?php echo jsfile;?>/bootstrap_js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="<?php echo jsfile;?>/bootstrap_js/bootstrap.min.js" crossorigin="anonymous"></script>

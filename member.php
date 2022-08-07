@@ -45,6 +45,7 @@
         <?php
             $id=1;
             $name="Leader - Cringe";
+            $job_title="Leader";
             $content="
             <p>
               <ul>
@@ -55,10 +56,14 @@
                 <li>Meme Spreader</li>            
               </ul>
             </p>";
+            $title_explain="";
             $person_img="./img/human/1a.jpg";
             $person_img_alt="";
-            $popup_img="./img/human/1e.png";
+            $popup_img="./img/human/1a.jpg";
             $popup_img_alt="";
+            $person_title="#Progress procrastinator";
+            $person_icon="./img/human/1e.png";
+            
             include "./sub/popup.php";
         ?>
         

@@ -4,22 +4,10 @@
     }
 }
 body{
-/*   height: 100%; */
   margin: 0;
   background-color: #F2CCC3 !important;
-  /* border: solid 12px #EA2B1F; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: top; */
-  /* margin:0px; */
   font-family: Papyrus, fantasy;
   font-weight: 800;
-}
-.offcanvas{
-    transition:transform .0s !important;
-}
-.modal-dialog{
-    transition:transform .0s !important;
 }
 #navbar{
     width: 100%;
@@ -29,7 +17,7 @@ body{
     position: fixed;
     transition: top 300ms ease;
     /* margin-bottom: 200px; */
-    z-index:10000;
+    z-index:1024;
     padding: 0 !important;
 }
 .topbar{

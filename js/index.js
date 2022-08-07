@@ -49,7 +49,7 @@ window.onclick = function(event) {
             var i;
             for (i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
+                    if (openDropdown.classList.contains('show') && !openDropdown.classList.contains('modal')) {
                             openDropdown.classList.remove('show');
                     }
             }
@@ -99,8 +99,9 @@ function close_header(){
 function load_finish(){
     // return ;
     var loading=document.getElementById("loading");
-    $(".loading").fadeOut();
     loading.style.visibility = "hidden";
+    $(".loading").fadeOut();
+    
 }
 var nav_len=0;
 function check_navbar(){
