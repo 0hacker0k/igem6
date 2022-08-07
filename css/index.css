@@ -3,10 +3,26 @@
         scroll-behavior: auto !important;
     }
 }
+@font-face {
+    font-family: 'comic';
+    src: url('../fonts/comic.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'lhandw';
+    src: url('../fonts/lhandw.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'papyrus';
+    src: url('../fonts/papyrus.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'refsan';
+    src: url('../fonts/refsan.ttf') format("truetype");
+}
 body{
   margin: 0;
   background-color: #F2CCC3 !important;
-  font-family: Papyrus, fantasy;
+  font-family: papyrus;
   font-weight: 800;
 }
 #navbar{
