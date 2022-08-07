@@ -62,7 +62,7 @@
             $popup_img="./img/human/1a.jpg";
             $popup_img_alt="";
             $person_title="#Progress procrastinator";
-            $person_icon="🥲";
+            $person_icon="🐸🐨😢🥲🤣🤔🌱🐱😐🥺🐿😃🧀🥰🦊😏🥫🍠 🤩";
             
             include "./sub/popup.php";
         ?>
