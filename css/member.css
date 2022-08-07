@@ -57,26 +57,26 @@ h1{
 
 
 p{
-  color:#390099;
-  font-weight: 500;
-  font-size:30px ;
-  padding: left 30% right 30%;
+    color:#390099;
+    font-weight: 500;
+    font-size:30px ;
+    padding: left 30% right 30%;
 }
 
 
 .btn-primary{
-  width: 70%;
-  height: auto;
-  background-color:#FFCAE7 !important;
-  border:#FFF985 solid 5px !important;
+    width: 70%;
+    height: auto;
+    background-color:#FFCAE7 !important;
+    border:#FFF985 solid 5px !important;
 }
 
 .button_floating{
-  height:100%;
+    height:100%;
 }
 .modal-dialog{
     max-width: none;
-    width:80%;
+    width:60%;
 }
 
 .modal-content{
@@ -131,26 +131,10 @@ p{
     display: flex;
 }
 .person_title{
-    width :80%;
+    width :100%;
     font-size: 2em;
 }
-.person_icon_div{
-    width :20%;
-    padding-bottom: 20%;
-    position: relative;
-}
-.person_icon{
-    width :100%;
-    height:100%;
-    position: absolute;
-    top:0;
-    left:0;
-    object-fit: cover;
-    object-position: center center;
-    overflow: hidden;
-    border-radius:0%;
-}
-.job_title{
+.title_explain{
     width :100%;
 }
 .person_data{

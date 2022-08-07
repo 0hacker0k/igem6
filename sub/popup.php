@@ -14,7 +14,6 @@
             <div class="modal-body">
                 <div class="person_card">
                     <div class="card_left">
-                        <!-- <image class="lazy card_img" data-src="<?php echo imgfile.$popup_img;?>" alt="<?php echo $popup_img_alt;?>" /> -->
                         <img class="card_img" src="<?php echo $popup_img;?>" alt="<?php echo $popup_img_alt;?>">
                         <div class="person_name">
                             <?php echo $name;?>
@@ -26,13 +25,10 @@
                     <div class="card_right">
                         <div class="person_tag">
                             <div class="person_title">
-                                <?php echo $person_title;?>
-                            </div>
-                            <div class="person_icon_div">
-                                <img class="person_icon" src="<?php echo $person_icon;?>" alt="icon">
+                                <?php echo $person_title;?><?php echo $person_icon;?>
                             </div>
                         </div>
-                        <div class="job_title">
+                        <div class="title_explain">
                             <?php echo $title_explain;?>
                         </div>
                         <div class="person_data">
