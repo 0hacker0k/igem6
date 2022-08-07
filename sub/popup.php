@@ -7,10 +7,10 @@
 <div class="modal fade" id="popup<?php echo $id;?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+            <!-- <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+            </div> -->
             <div class="modal-body">
                 <div class="person_card">
                     <div class="card_left">
@@ -24,9 +24,8 @@
                     </div>
                     <div class="card_right">
                         <div class="person_tag">
-                            <div class="person_title">
-                                <?php echo $person_title;?><?php echo $person_icon;?>
-                            </div>
+                            <?php echo $person_title;?>
+                            <?php echo $person_icon;?>
                         </div>
                         <div class="title_explain">
                             <?php echo $title_explain;?>

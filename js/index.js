@@ -49,7 +49,7 @@ window.onclick = function(event) {
             var i;
             for (i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show') && !openDropdown.classList.contains('modal')) {
+                    if (openDropdown.classList.contains('show') && !openDropdown.classList.contains('modal') && !openDropdown.classList.contains('modal-backdrop')) {
                             openDropdown.classList.remove('show');
                     }
             }

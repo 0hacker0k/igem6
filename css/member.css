@@ -77,6 +77,7 @@ p{
 .modal-dialog{
     max-width: none;
     width:60%;
+    min-width:50em;
 }
 
 .modal-content{
@@ -86,8 +87,8 @@ p{
 .person_card{
     width:100%;
     display: flex;
-    padding: 5%;
-    padding-bottom: 2%;
+    padding: 2%;
+    padding-bottom: 0%;
 }
 .card_left{
     width:30%;
@@ -98,7 +99,7 @@ p{
 .card_right{
     width:70%;
     float: left;
-    padding-left: 10%;
+    padding-left: 3%;
 }
 .card_img{
     width: 100%;
@@ -117,6 +118,8 @@ p{
     position: absolute;
     top:80%;
     left:0;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 .job_title{
     width :100%;
@@ -124,19 +127,31 @@ p{
     position: absolute;
     top:90%;
     left:0;
+    color:#d6d256;
+    font-weight: 400;
 }
 .person_tag{
     width :100%;
     position: relative;
     display: flex;
-}
-.person_title{
-    width :100%;
+    text-align: left;
     font-size: 2em;
+    color:#2c90d7;
+    font-weight: 700;
 }
 .title_explain{
     width :100%;
+    border: #000000 0.2em solid;
+    border-radius: 1.5em;
+    color:red;
+    padding: 0.5em 0.5em;
+    font-size: 1.2em;
+    margin-top: 5%;
+    font-weight: 500;
 }
 .person_data{
     width :100%;
+    font-size: 1.2em;
+    padding-left: 5%;
+    font-weight: 500;
 }

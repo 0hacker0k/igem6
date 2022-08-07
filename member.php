@@ -32,7 +32,8 @@
       <p>CCU_Taiwan is established in the year of 2017. Our team consists of twenty-one passionate students. We are a multidisciplinary team as our team members have different professional background from five departments.</p>
 
     </div>
-
+    <h1>🐸🐨😢🥲🤣🤔🌱🐱😐🥺🐿😃🧀🥰🦊😏🥫🍠🤩</h1>
+    
     <h1>Leader</h1>
     
   
@@ -44,8 +45,8 @@
         
         <?php
             $id=1;
-            $name="Leader - Cringe";
-            $job_title="Leader";
+            $name="SI-RU, ZHOU";
+            $job_title="Co-leader of Dry lab";
             $content="
             <p>
               <ul>
@@ -62,7 +63,7 @@
             $popup_img="./img/human/1a.jpg";
             $popup_img_alt="";
             $person_title="#Progress procrastinator";
-            $person_icon="🐸🐨😢🥲🤣🤔🌱🐱😐🥺🐿😃🧀🥰🦊😏🥫🍠 🤩";
+            $person_icon="🐸";
             
             include "./sub/popup.php";
         ?>
