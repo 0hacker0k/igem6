@@ -1,8 +1,3 @@
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup<?php echo $id;?>">
-    <img class="person_img" src="<?php echo $person_img;?>" alt="<?php echo $person_img_alt;?>">
-</button>
-
 <!-- Modal -->
 <div class="modal fade" id="popup<?php echo $id;?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">

@@ -56,9 +56,8 @@ h1:not(.red_title){
     object-position: center center;
     overflow: hidden;
 }
-.carousel-item-next{
+/* .carousel-item-next{
     transform:translateX(100%) !important;
-    /* transition: 0.5s !important; */
     animation: change_img;
     animation-duration: 0.61s;
     animation-timing-function: ease-in-out;
@@ -74,7 +73,6 @@ h1:not(.red_title){
 }
 .carousel-item-prev{
     transform:translateX(-100%) !important;
-    /* transition: 0.5s !important; */
     animation: change_img2;
     animation-duration: 0.61s;
     animation-timing-function: ease-in-out;
@@ -87,7 +85,7 @@ h1:not(.red_title){
     100%{
         transform: translateX(0%);
     }
-}
+} */
 .carousel-control-prev-icon{
     background-color: #900902;
     border-color: #EA2B1F;
