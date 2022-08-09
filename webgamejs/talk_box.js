@@ -6,6 +6,8 @@ function load_talkbox(where){//載入動畫檔
         url: rexUI_path,
         sceneKey: 'rexUI'
     });
+    where.load.image('PACO', 'img/main/PACO.png');
+    where.load.image('Sprite', 'img/main/sprite.png');
 }
 
 function loading_talkbox(where,x,y){
@@ -28,7 +30,7 @@ function createTextBox (scene, x, y, config, npc_key) {
             background: scene.rexUI.add.roundRectangle(0, 0, 2, 2, 20, COLOR_PRIMARY)
                 .setStrokeStyle(2, COLOR_LIGHT),
 
-            icon: scene.add.image(0, 0, npc_key),//卡關
+            icon: scene.add.image(0, 0, npc_key).setDisplaySize(50,50),//卡關
             //icon: scene.rexUI.add.roundRectangle(0, 0, 2, 2, 20, COLOR_DARK),
             //iconMask: true,
             //text: getBuiltInText(scene, wrapWidth, fixedWidth, fixedHeight),
@@ -47,7 +49,7 @@ function createTextBox (scene, x, y, config, npc_key) {
         })
         .setOrigin(0)
         .layout();
-        
+    
 
     textBox
         .setInteractive()
@@ -55,6 +57,7 @@ function createTextBox (scene, x, y, config, npc_key) {
             var icon = this.getElement('action').setVisible(false);
             this.resetChildVisibleState(icon);
             if (this.isTyping) {
+                //show all text
                 this.stop(true);
             } else {
                 if(this.isLastPage){
@@ -84,7 +87,7 @@ function createTextBox (scene, x, y, config, npc_key) {
                 yoyo: false
             });
         }, textBox)
-        
+    textBox.setVisible(false);
     //.on('type', function () {
     //})
 
@@ -106,10 +109,13 @@ var getBBcodeText = function (scene, wrapWidth, fixedWidth, fixedHeight) {
     return scene.rexUI.add.BBCodeText(0, 0, '', {
         fixedWidth: fixedWidth,
         fixedHeight: fixedHeight,
-
+        
+        padding :{//避免中文被切字
+            top:8,
+        },
         fontSize: '20px',
         wrap: {
-            mode: 'word',
+            mode: 'char',
             width: wrapWidth
         },
         maxLines: 3

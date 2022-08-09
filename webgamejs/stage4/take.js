@@ -204,7 +204,7 @@ function create_stage4_take (){
         fixedWidth: width*0.55,
         fixedHeight: height*0.15,
     },'green')
-    .start(content, 50);
+    .start(content,50);
     
 }
 function update_stage4_take (){//與外界有關的互動

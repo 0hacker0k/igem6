@@ -6,12 +6,15 @@ function preload_stage1_choose(){
     this.load.image('DNA', 'img/stage1/DNA.png');
     this.load.image('back', 'img/main/back.png');
     this.load.image('banner', 'img/stage1/banner.png');
+    load_talkbox(this);
     load_transition(this);
 }
 var banner_status=0;
 var banner;
 var level_instruction;
 var banner_width=0;
+var Sprite;
+var PACO;
 function create_stage1_choose (){
     /*send_string="AAA";
     level=1;
@@ -74,6 +77,25 @@ function create_stage1_choose (){
             load_page(map_1);
         },500);
     },this);
+
+    //文字說明
+    
+    TextBox_x=width*0.15;
+    TextBox_y=height*0.75;
+    var config =
+    {
+        wrapWidth: width*0.5,
+        fixedWidth: width*0.55,
+        fixedHeight: height*0.15,
+    };
+    
+    Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
+    PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
+    Sprite.setVisible(true).start(lan_stage1.vo_1,50);
+    PACO.setVisible(true).start(lan_stage1.pa_2,50);
+    
+    //.start(lan_stage1.vo_1, 50);
+    
     //轉場動畫
     start_transition(this);
 }
