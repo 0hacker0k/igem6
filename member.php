@@ -31,24 +31,22 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="a_group">
-                        <div class="leaders_person" style="--id:1">
-                            leaders
+                        <div class="leaders_title" style="--id:1">
+                            <div class="member_portrait">
+                                leaders
+                            </div>
                         </div>
-                        <div class="leaders_person" style="--id:2"></div>
-                        <div class="leaders_person" style="--id:4">
+                        <div class="leaders_person" style="--id:2">
                             <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
                                 <img class="person_img" src="<?php echo imgfile."/human/members001.jpg";?>" alt="">
                             </button>
                         </div>
-                        <div class="leaders_person" style="--id:3"></div>
-                        <div class="leaders_person" style="--id:6"></div>
-                        <div class="leaders_person" style="--id:5">
+                        <div class="leaders_person" style="--id:3">
                             <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup2">
                                 <img class="person_img" src="<?php echo imgfile."/human/members002.jpg";?>" alt="">
                             </button>
                         </div>
-                        <div class="leaders_person" style="--id:7"></div>
-                        <div class="leaders_person" style="--id:8">
+                        <div class="leaders_person" style="--id:4">
                             <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup3">
                                 <img class="person_img" src="<?php echo imgfile."/human/members003.jpg";?>" alt="">
                             </button>
@@ -63,14 +61,9 @@
                                 <img class="person_img" src="<?php echo imgfile."/human/members004.jpg";?>" alt="">
                             </button>
                         </div>
-                        <div class="wet_lab_person" style="--id:1">
+                        <div class="wet_lab_title" style="--id:1">
                             <div class="member_portrait">
                                 wetlab
-                            </div>
-                        </div>
-                        <div class="wet_lab_person" style="--id:2">
-                            <div class="member_portrait">
-                                e. coli
                             </div>
                         </div>
                         <div class="wet_lab_person" style="--id:4">
@@ -102,26 +95,22 @@
                 </div>
                 <div class="carousel-item">
                     <div class="a_group">
-                        <div class="dry_lab_person" style="--id:1">
+                        <div class="dry_lab_title" style="--id:1">
                             <div class="member_portrait">
                                 drylab
                             </div>
                         </div>
-                        <div class="dry_lab_person" style="--id:2"></div>
-                        <div class="dry_lab_person" style="--id:4">
+                        <div class="dry_lab_person" style="--id:2">
                             <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup10">
                                 <img class="person_img" src="<?php echo imgfile."/human/members010.jpg";?>" alt="">
                             </button>
                         </div>
-                        <div class="dry_lab_person" style="--id:3"></div>
-                        <div class="dry_lab_person" style="--id:6"></div>
-                        <div class="dry_lab_person" style="--id:5">
+                        <div class="dry_lab_person" style="--id:3">
                             <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup11">
                                 <img class="person_img" src="<?php echo imgfile."/human/members011.jpg";?>" alt="">
                             </button>
                         </div>
-                        <div class="dry_lab_person" style="--id:7"></div>
-                        <div class="dry_lab_person" style="--id:8">
+                        <div class="dry_lab_person" style="--id:4">
                             <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup12">
                                 <img class="person_img" src="<?php echo imgfile."/human/members012.jpg";?>" alt="">
                             </button>
@@ -261,7 +250,7 @@
             <li>Interest: Bothering Hao-Fang</li>            
             </ul>
         </p>";
-        $title_explain="";
+        $title_explain="Ding-Hong has to get into the swing of every experiment and the content of lab work that we show on wiki. Thus, seldom does he sleep enough.";
         $popup_img="./img/human/members004.jpg";
         $popup_img_alt="";
         $person_title="#SLEEP_TERMINATOR";
