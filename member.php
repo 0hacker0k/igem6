@@ -7,24 +7,15 @@
 </head>
 
 <body onload="load_finish()">
-
     <?php include "./sub/header.php"?>
-
     <?php include "sub/loading.php"?>
-
     <img class="full_size_image" src="<?php echo imgfile;?>/human/fullimage.jpg" alt="">
-
-        
-
-    </div> 
-
     <br>
     <br>
     <br>
     <br>
     <br>
     <br>
-
     <div class="member_card row justify-content-around">
 
     <div class="col-7">
@@ -40,33 +31,70 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="a_group">
-                        <div class="wet_lab_person" style="--id:1">
+                        <div class="leaders_person" style="--id:1">
+                            leaders
+                        </div>
+                        <div class="leaders_person" style="--id:2"></div>
+                        <div class="leaders_person" style="--id:4">
                             <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
                                 <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
                             </button>
                         </div>
-                        <div class="wet_lab_person" style="--id:2">
+                        <div class="leaders_person" style="--id:3"></div>
+                        <div class="leaders_person" style="--id:6"></div>
+                        <div class="leaders_person" style="--id:5">
                             <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
                                 <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
                             </button>
                         </div>
+                        <div class="leaders_person" style="--id:7"></div>
+                        <div class="leaders_person" style="--id:8">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
+                                <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="a_group">
                         <div class="wet_lab_person" style="--id:3">
                             <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
                                 <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
                             </button>
                         </div>
+                        <div class="wet_lab_person" style="--id:1">
+                            <div class="member_portrait">
+                                wetlab
+                            </div>
+                        </div>
+                        <div class="wet_lab_person" style="--id:2">
+                            <div class="member_portrait">
+                                e. coli
+                            </div>
+                        </div>
                         <div class="wet_lab_person" style="--id:4">
-                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup2">
                                 <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
                             </button>
                         </div>
                         <div class="wet_lab_person" style="--id:5">
-                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup3">
                                 <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
                             </button>
                         </div>
                         <div class="wet_lab_person" style="--id:6">
-                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup4">
+                                <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
+                            </button>
+                        </div>
+                        <div class="wet_lab_person" style="--id:7">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup5">
+                                <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
+                            </button>
+                        </div>
+                        <div class="wet_lab_person" style="--id:8">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup6">
                                 <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
                             </button>
                         </div>
@@ -74,13 +102,72 @@
                 </div>
                 <div class="carousel-item">
                     <div class="a_group">
-                        <div class="wet_lab_person" style="--x:1;--y:1">
+                        <div class="dry_lab_person" style="--id:1">
+                            <div class="member_portrait">
+                                drylab
+                            </div>
+                        </div>
+                        <div class="dry_lab_person" style="--id:2"></div>
+                        <div class="dry_lab_person" style="--id:4">
                             <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
                                 <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
                             </button>
                         </div>
-                        <div class="wet_lab_person" style="--x:1;--y:2">
+                        <div class="dry_lab_person" style="--id:3"></div>
+                        <div class="dry_lab_person" style="--id:6"></div>
+                        <div class="dry_lab_person" style="--id:5">
                             <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
+                                <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
+                            </button>
+                        </div>
+                        <div class="dry_lab_person" style="--id:7"></div>
+                        <div class="dry_lab_person" style="--id:8">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
+                                <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="a_group">
+                        <div class="hp_person" style="--id:1">
+                            <div class="member_portrait">
+                                hp
+                            </div>
+                        </div>
+                        <div class="hp_person" style="--id:2">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
+                                <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
+                            </button>
+                        </div>
+                        <div class="hp_person" style="--id:3">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup2">
+                                <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
+                            </button>
+                        </div>
+                        <div class="hp_person" style="--id:4">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup2">
+                                <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
+                            </button>
+                        </div>
+                        <div class="hp_person" style="--id:5">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup3">
+                                <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
+                            </button>
+                        </div>
+                        <div class="hp_person" style="--id:6">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup4">
+                                <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
+                            </button>
+                        </div>
+                        <div class="hp_person" style="--id:7">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup5">
+                                <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
+                            </button>
+                        </div>
+                        <div class="hp_person" style="--id:8">
+                            <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup6">
                                 <img class="person_img" src="<?php echo imgfile."/human/1a.jpg";?>" alt="">
                             </button>
                         </div>
