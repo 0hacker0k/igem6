@@ -24,4 +24,4 @@
     </div>
 </footer>
 <script src="<?php echo jsfile;?>/bootstrap_js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-<script src="<?php echo jsfile;?>/bootstrap_js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- <script src="<?php echo jsfile;?>/bootstrap_js/bootstrap.min.js" crossorigin="anonymous"></script> -->

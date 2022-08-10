@@ -25,7 +25,7 @@
         </div>
         <h1>Leader</h1>
         <div class="bulletin">
-            <div id="carousel_member" class="carousel slide" data-bs-ride="carou_sel_1">
+            <div id="carousel_member" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="a_group">
