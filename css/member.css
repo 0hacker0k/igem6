@@ -27,7 +27,8 @@ li{
     object-fit: cover;
     object-position: center top;
     overflow: hidden;
-    border-radius:5%;
+    display:inline-block;
+    /* border-radius:5%; */
 }
 
 
@@ -57,6 +58,9 @@ p{
     background-color:transparent;
     border:transparent solid 0em;
     padding: 0;
+    color: aliceblue;
+    /* background-color: #000000; */
+    font-size: 2em;
 }
 
 .button_floating{
@@ -97,6 +101,17 @@ p{
     display:inline-block;
     left: 0;
     top: 0;
+    /* invert(80%)負片 
+    sepia(80%)懷舊 
+    brightness(70%)亮度 
+    contrast(150%)對比 
+    saturate(200%)飽和 
+    grayscale(50%)灰階 
+    hue-rotate(90deg)色相翻轉 
+    blur(5px)模糊 
+    opacity(30%)透明 */
+    -webkit-filter: brightness(70%) contrast(200%);
+    filter: brightness(70%) contrast(200%);
 }
 .wet_lab_title{
     width: 38%;
