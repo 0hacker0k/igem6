@@ -25,9 +25,9 @@
         </div>
         <h1>Leader</h1>
         <div class="bulletin">
-            <div id="carousel_member" class="carousel slide" data-bs-ride="carousel">
+            <div id="carousel_member" class="carousel slide" data-bs-touch="false" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="4000">
                         <div class="a_group">
                             <div class="leaders_title" style="--id:1">
                                 <div class="member_portrait">
@@ -52,7 +52,7 @@
                             
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="4000">
                         <div class="a_group">
                             <div class="wet_lab_person" style="--id:3">
                                 <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup4">
@@ -91,7 +91,7 @@
                             </div>                   
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="4000">
                         <div class="a_group">
                             <div class="dry_lab_title" style="--id:1">
                                 <div class="member_portrait">
@@ -116,7 +116,7 @@
                             
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="4000">
                         <div class="a_group">
                             <div class="hp_person" style="--id:1">
                                 <div class="member_portrait">
