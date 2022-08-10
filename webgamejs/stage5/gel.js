@@ -54,7 +54,7 @@ function preload_stage5_take(){
     this.load.image('direct', 'img/main/director.png');
     this.load.image('marker', 'img/stage5/marker.png');
     this.load.image('sample', 'img/stage5/sample.png');
-    this.load.image('pipette', 'img/stage5/pipette.png');
+    // this.load.image('pipette', 'img/stage5/pipette.png');
     this.load.image("alert",'img/stage5/temp.png');
     this.load.image("qte_pointer",'img/stage5/qte_bar_pointer.png');
     this.load.image("qte_half",'img/stage5/qte_bar_half.png');
@@ -65,6 +65,10 @@ function preload_stage5_take(){
     this.load.spritesheet('mod',
         'img/stage5/mod.png',
         { frameWidth: 928, frameHeight: 674 }
+    );
+    this.load.spritesheet('pipette',
+        'img/stage5/pipette.png',
+        { frameWidth: 422, frameHeight: 1741 }
     );
     this.load.spritesheet('gel',
         'img/stage5/gel.png',
@@ -116,7 +120,7 @@ function create_stage5_take (){
     this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
 
     //人物、camera
-    player = this.physics.add.sprite(width*0.05, height*0.35, PLAYER_KEY);//this.centerX
+    player = this.physics.add.sprite(width*0.05, height*0.3, PLAYER_KEY);//this.centerX
     player.body.fixedRotation = true;
     player.setDisplaySize(player.width/10,player.height/10).setOrigin(0.5,0.9).refreshBody();
     this.physics.world.bounds.width=width;
@@ -139,10 +143,13 @@ function create_stage5_take (){
         for(var j=0;j<10;j++){
             if(desk_pos[i][j]){
                 desk[i][j] = deskGroup.create(j*width*0.1+width*0.05,i*height*0.12+height*0.22,'desk').setDisplaySize(width*0.1,height*0.12);
-                desk[i][j].setBodySize(width*0.1,height*0.12,true).refreshBody();   
+                desk[i][j].x+=0;
+                desk[i][j].y-=height*0.03;
+                desk[i][j].setBodySize(width*0.1,height*0.1,true).refreshBody();
+                desk[i][j].setDisplaySize(width*0.1,height*0.18,true);
                 desk[i][j].i=i;
                 desk[i][j].j=j;
-                desk[i][j].depth=5+i;
+                desk[i][j].depth=5+i*2;
             }
             
         }
@@ -401,6 +408,26 @@ function create_stage5_take (){
                 repeat: -1
             });
         }
+        {//pipette
+            this.anims.create({
+                key: 'pipette',
+                frames: this.anims.generateFrameNumbers("pipette", { start: 0, end: 0 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'pipette_m',
+                frames: this.anims.generateFrameNumbers("pipette", { start: 1, end: 1 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({
+                key: 'pipette_s',
+                frames: this.anims.generateFrameNumbers("pipette", { start: 2, end: 2 }),
+                frameRate: 5,
+                repeat: -1
+            });
+        }
     }
     //碰撞、放器材
     keySpace = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
@@ -409,7 +436,7 @@ function create_stage5_take (){
         for(var j=0;j<10;j++){
             if(desk_what[i][j]!=''){//物件初始位置
                 desk[i][j].item = createObject(desk[i][j].x, desk[i][j].y, desk_what[i][j], this);
-                desk[i][j].item.depth=desk[i][j].depth;
+                desk[i][j].item.depth=desk[i][j].depth+1;
                 if(desk_what[i][j]=="trashcan"){
                     desk[i][j].disableBody(false,true);
                 }else if(desk_what[i][j]=="beaker"){
@@ -420,12 +447,14 @@ function create_stage5_take (){
                     desk[i][j].item.time=-12;
                     desk[i][j].item.alert=cant_move_item.create(desk[i][j].item.x, desk[i][j].item.y-width*0.05, "alert").setDisplaySize(width*0.03,width*0.03).setOrigin(0.5,0.5);
                     desk[i][j].item.alert.alpha=0;
+                    desk[i][j].item.alert.depth=100;
                 }else if(desk_what[i][j]=="mod"){
                     desk[i][j].item.anims.play("mod_n");
                     desk[i][j].item.item=null;
                     desk[i][j].item.time=-12;
                     desk[i][j].item.alert=cant_move_item.create(desk[i][j].item.x, desk[i][j].item.y-width*0.05, "alert").setDisplaySize(width*0.03,width*0.03).setOrigin(0.5,0.5);
                     desk[i][j].item.alert.alpha=0;
+                    desk[i][j].item.alert.depth=100;
                 }else if(desk_what[i][j]=="pipette"){
                     desk[i][j].item.take="";
                     desk[i][j].item.score=0;
@@ -440,6 +469,7 @@ function create_stage5_take (){
                     // desk[i][j].item.alert.alpha=0;
                     desk[i][j].item.alert.alpha=0;
                     desk[i][j].item.alert.setTint(0x000000);
+                    desk[i][j].item.alert.depth=100;
                 }
             }
         }
@@ -451,6 +481,7 @@ function create_stage5_take (){
     this.physics.add.collider(spot, banner, null, null, this);
     function createObject(x,y,what,where){
         var Object;
+        y-=height*0.03;
         if(what=="beaker"){
             Object = where.physics.add.sprite(x, y, what).setDisplaySize(width*0.1/2,height*0.17/2);
             Object.setInteractive().setBodySize(Object.width,Object.height);
@@ -621,27 +652,28 @@ function create_stage5_take (){
             microwave.alert.setTint(0xffffff);
             microwave.alert.alpha=1;
             microwave.anims.play("mw_d");
-        }else if(microwave.time<=-3 && microwave.time>-6){
-            warning(1,0,microwave.alert,1,0);
-            // microwave.alert.setTint(0xffffff+(microwave.time+3)*0x002222);
-        }else if(microwave.time<=-6 && microwave.time>-9){
-            warning(2,0,microwave.alert,1,0);
-            // microwave.alert.setTint(0xffffff+(microwave.time+3)*0x002222);
-        }else if(microwave.time<=-9 && microwave.time>-12){
-            warning(4,0,microwave.alert,1,0);
-            // microwave.alert.setTint(0xffffff+(microwave.time+3)*0x002222);
-        }else if(microwave.time==-12){
-            microwave.item.ok=0;
-            warning(20,0,microwave.alert,1,0);
-            if(microwave.item.TAE==microwave.item.agar){
+        }if(microwave.item.TAE==microwave.item.agar && microwave.item.c%2==0){
+            if(microwave.time<=-3 && microwave.time>-6){
+                warning(1,0,microwave.alert,1,0);
+                // microwave.alert.setTint(0xffffff+(microwave.time+3)*0x002222);
+            }else if(microwave.time<=-6 && microwave.time>-9){
+                warning(2,0,microwave.alert,1,0);
+                // microwave.alert.setTint(0xffffff+(microwave.time+3)*0x002222);
+            }else if(microwave.time<=-9 && microwave.time>-12){
+                warning(4,0,microwave.alert,1,0);
+                // microwave.alert.setTint(0xffffff+(microwave.time+3)*0x002222);
+            }else if(microwave.time==-12){
+                microwave.item.ok=0;
+                warning(20,0,microwave.alert,1,0);
                 if(microwave.item.c==2){
                     microwave.item.anims.play("beaker_dry2");
                 }else if(microwave.item.c==4){
                     microwave.item.anims.play("beaker_dry4");
                 }
+                //remind: add microwave.item.anims.play("beaker_fail");
             }
-            //remind: add microwave.item.anims.play("beaker_fail");
         }
+        
         if(microwave.time>-12){
             setTimeout(function(){
                 microwave_timeout(microwave);
@@ -740,19 +772,19 @@ function create_stage5_take (){
             tank.item.onuse=1;
             var qte_half=0.55*tank.item.qte_bar.width;
             var qte_perfect=0.67*tank.item.qte_bar.width;
-            tank.item.qte_bar.depth=7;
+            tank.item.qte_bar.depth=100;
             tank.item.qte_bar.x=tank.item.x-tank.item.qte_bar.width/2;
             tank.item.qte_bar.y=tank.item.y-height*0.07;
             tank.item.qte_bar.alpha=1;
-            tank.item.qte_half.depth=8;
+            tank.item.qte_half.depth=101;
             tank.item.qte_half.x=tank.item.qte_bar.x+qte_half;
             tank.item.qte_half.y=tank.item.y-height*0.07;
             tank.item.qte_half.alpha=1;
-            tank.item.qte_perfect.depth=9;
+            tank.item.qte_perfect.depth=102;
             tank.item.qte_perfect.x=tank.item.qte_bar.x+qte_perfect;
             tank.item.qte_perfect.y=tank.item.y-height*0.07;
             tank.item.qte_perfect.alpha=1;
-            tank.item.qte_pointer.depth=10;
+            tank.item.qte_pointer.depth=103;
             tank.item.qte_pointer.x=tank.item.qte_bar.x+tank.item.qte_bar.width*tank.item.run_time*0.01;
             tank.item.qte_pointer.y=tank.item.y-height*0.07;
             tank.item.qte_pointer.alpha=1;
@@ -856,11 +888,11 @@ function create_stage5_take (){
         if(pipette.take==""){
             pipette.take=sample.type;
             if(sample.type=="sample"){
-                pipette.setTint(0xaaffaa);
-                // pipette.anims.play("");
+                // pipette.setTint(0xaaffaa);
+                pipette.anims.play("pipette_s");
             }else if(sample.type=="marker"){
-                pipette.setTint(0xffaaff);
-                // pipette.anims.play("");
+                // pipette.setTint(0xffaaff);
+                pipette.anims.play("pipette_m");
             }
             //remind: pipe skin
         }
@@ -871,19 +903,19 @@ function create_stage5_take (){
             p.stop=1;
             var qte_half=Math.floor(Math.random()*36)/60*gel.qte_bar.width;
             var qte_perfect=Math.floor(Math.random()*16)/60*gel.qte_bar.width;
-            gel.qte_bar.depth=7;
+            gel.qte_bar.depth=100;
             gel.qte_bar.x=gel.x-gel.qte_bar.width/2;
             gel.qte_bar.y=gel.y-height*0.07;
             gel.qte_bar.alpha=1;
-            gel.qte_half.depth=8;
+            gel.qte_half.depth=101;
             gel.qte_half.x=gel.qte_bar.x+qte_half;
             gel.qte_half.y=gel.y-height*0.07;
             gel.qte_half.alpha=1;
-            gel.qte_perfect.depth=9;
+            gel.qte_perfect.depth=102;
             gel.qte_perfect.x=gel.qte_half.x+qte_perfect;
             gel.qte_perfect.y=gel.y-height*0.07;
             gel.qte_perfect.alpha=1;
-            gel.qte_pointer.depth=10;
+            gel.qte_pointer.depth=103;
             gel.qte_pointer.x=gel.qte_bar.x;
             gel.qte_pointer.y=gel.y-height*0.07;
             gel.qte_pointer.alpha=1;
@@ -915,7 +947,8 @@ function create_stage5_take (){
                 p.pick.take="";
                 gel.onuse=0;
             },100);
-            p.pick.clearTint();
+            // p.pick.clearTint();
+            p.pick.anims.play("pipette");
             gel.qte_bar.alpha-=0.001;
             setTimeout(function(){
                 gel_fade_out(gel);
@@ -980,15 +1013,23 @@ function create_stage5_take (){
         desk.item=p.pick;
         p.pick=t_item;
         desk.item.x=desk.x;
-        desk.item.y=desk.y;
+        desk.item.y=desk.y-height*0.03;;
         desk.item.depth=desk.depth+1;
+        if(desk.item.type=="pipette"){
+            desk.item.setDisplaySize(width*0.015,width*0.06);
+            desk.item.setAngle(45);
+        }
     }
     function put_thing(p, to){
         to.item=p.pick;
         p.pick=null;
         to.item.x=to.x;
-        to.item.y=to.y;
+        to.item.y=to.y-height*0.03;
         to.item.depth=to.depth+1;
+        if(to.item.type=="pipette"){
+            to.item.setDisplaySize(width*0.015,width*0.06);
+            to.item.setAngle(45);
+        }
     }
     function warning(level,last,item,d,count){
         if(item.alpha==0){
@@ -1221,28 +1262,45 @@ function update_stage5_take (){//與外界有關的互動
     player.y=spot.y;
     spot_touch.x=spot.x;
     spot_touch.y=spot.y;
-    player.depth=6+Math.floor((player.y-height*0.16)/(height*0.12));
+    player.depth=6+Math.floor((player.y-height*0.13)/(height*0.12))*2;
     if(player.pick!=null){
         switch(p_facing){
             case 1://右
                 player.pick.x=player.x+width*0.02;
                 player.pick.y=player.y-width*0.03;
                 player.pick.depth=player.depth-0.5;
+                if(player.pick.type=="pipette"){
+                    player.pick.setAngle(0);
+                    player.pick.setDisplaySize(width*0.01,width*0.04);
+                }
                 break;
             case 2://下
                 player.pick.x=player.x;
                 player.pick.y=player.y-width*0.03;
                 player.pick.depth=player.depth+0.5;
+                if(player.pick.type=="pipette"){
+                    player.pick.setAngle(45);
+                    player.pick.setDisplaySize(width*0.01,width*0.04);
+                }
                 break;
             case 3://左
                 player.pick.x=player.x-width*0.02;
                 player.pick.y=player.y-width*0.03;
                 player.pick.depth=player.depth-0.5;
+                if(player.pick.type=="pipette"){
+                    player.pick.setAngle(0);
+                    player.pick.setDisplaySize(width*0.01,width*0.04);
+                }
                 break;
             case 4://上
                 player.pick.x=player.x;
                 player.pick.y=player.y-width*0.05;
-                player.pick.depth=player.depth;
+                player.pick.depth=player.depth-0.5;
+                if(player.pick.type=="pipette"){
+                    player.pick.y=player.y-width*0.03;
+                    player.pick.setAngle(-45);
+                    player.pick.setDisplaySize(width*0.01,width*0.04);
+                }
                 break;
         }
         
