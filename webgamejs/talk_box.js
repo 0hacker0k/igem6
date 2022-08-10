@@ -30,7 +30,7 @@ function createTextBox (scene, x, y, config, npc_key) {
             background: scene.rexUI.add.roundRectangle(0, 0, 2, 2, 20, COLOR_PRIMARY)
                 .setStrokeStyle(2, COLOR_LIGHT),
 
-            icon: scene.add.image(0, 0, npc_key).setDisplaySize(50,50),//卡關
+            icon: scene.add.image(0, 0, npc_key).setDisplaySize(fixedWidth*0.1,fixedWidth*0.1),//卡關
             //icon: scene.rexUI.add.roundRectangle(0, 0, 2, 2, 20, COLOR_DARK),
             //iconMask: true,
             //text: getBuiltInText(scene, wrapWidth, fixedWidth, fixedHeight),

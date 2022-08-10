@@ -88,9 +88,9 @@ function create_stage1_choose (){
         fixedWidth: width*0.55,
         fixedHeight: height*0.15,
     };
-    
-    Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
     PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
+    Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
+    
     Sprite.setVisible(true).start(lan_stage1.vo_1,50);
     PACO.setVisible(true).start(lan_stage1.pa_2,50);
     
