@@ -25,7 +25,7 @@
         </div>
         <h1>Leader</h1>
         <div class="bulletin">
-            <div id="carousel_member" class="carousel slide" data-bs-ride="carousel">
+            <div id="carousel_member" class="carousel slide" data-bs-ride="carou_sel_1">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="a_group">
@@ -161,14 +161,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel_member" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_member" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel_member" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                </button> -->
+                </button>
             </div>
         </div>
         <?php
