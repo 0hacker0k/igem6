@@ -68,7 +68,7 @@ function preload_stage5_take(){
     );
     this.load.spritesheet('pipette',
         'img/stage5/pipette.png',
-        { frameWidth: 422, frameHeight: 1741 }
+        { frameWidth: 421, frameHeight: 1741 }
     );
     this.load.spritesheet('gel',
         'img/stage5/gel.png',
@@ -142,10 +142,12 @@ function create_stage5_take (){
         desk[i] = new Array();
         for(var j=0;j<10;j++){
             if(desk_pos[i][j]){
-                desk[i][j] = deskGroup.create(j*width*0.1+width*0.05,i*height*0.12+height*0.22,'desk').setDisplaySize(width*0.1,height*0.12);
+                desk[i][j] = deskGroup.create(j*width*0.1+width*0.05,i*height*0.12+height*0.22,'desk');
                 desk[i][j].x+=0;
-                desk[i][j].y-=height*0.03;
-                desk[i][j].setBodySize(width*0.1,height*0.1,true).refreshBody();
+                desk[i][j].y-=height*0.015;
+                desk[i][j].refreshBody();
+                desk[i][j].setBodySize(width*0.1,height*0.09,true);
+                desk[i][j].y-=height*0.015;
                 desk[i][j].setDisplaySize(width*0.1,height*0.18,true);
                 desk[i][j].i=i;
                 desk[i][j].j=j;
@@ -486,7 +488,7 @@ function create_stage5_take (){
             Object = where.physics.add.sprite(x, y, what).setDisplaySize(width*0.1/2,height*0.17/2);
             Object.setInteractive().setBodySize(Object.width,Object.height);
         }else if(what=="trashcan"){
-            Object = trashcan.create(x, y, what).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
+            Object = trashcan.create(x, y+width*0.02, what).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
         }else if(what=="sample" || what=="marker"){
             Object = cant_move_item.create(x, y, what).setDisplaySize(width*0.1/6,height*0.17/3).refreshBody();
         }else{
@@ -641,9 +643,12 @@ function create_stage5_take (){
     }
     function microwave_timeout(microwave){
         microwave.time-=1;
+        if(microwave.item==null)return ;
         if(microwave.time==0){
             if(microwave.item.c%2==0 && microwave.item.TAE==microwave.item.agar){
-                microwave.item.ok=1;
+                if(microwave.item.ok!=-1){
+                    microwave.item.ok=1;
+                }
                 if(microwave.item.c==2)
                     microwave.item.anims.play("beaker_TT");
                 if(microwave.item.c==4)
@@ -663,7 +668,7 @@ function create_stage5_take (){
                 warning(4,0,microwave.alert,1,0);
                 // microwave.alert.setTint(0xffffff+(microwave.time+3)*0x002222);
             }else if(microwave.time==-12){
-                microwave.item.ok=0;
+                microwave.item.ok=-1;
                 warning(20,0,microwave.alert,1,0);
                 if(microwave.item.c==2){
                     microwave.item.anims.play("beaker_dry2");
@@ -885,6 +890,7 @@ function create_stage5_take (){
         }
     }
     function pipette_suction(pipette, sample){
+        
         if(pipette.take==""){
             pipette.take=sample.type;
             if(sample.type=="sample"){
@@ -1262,7 +1268,8 @@ function update_stage5_take (){//與外界有關的互動
     player.y=spot.y;
     spot_touch.x=spot.x;
     spot_touch.y=spot.y;
-    player.depth=6+Math.floor((player.y-height*0.13)/(height*0.12))*2;
+    // i*height*0.12+height*0.22  0.1*height
+    player.depth=6+Math.floor((player.y-height*0.16)/(height*0.12))*2;
     if(player.pick!=null){
         switch(p_facing){
             case 1://右
