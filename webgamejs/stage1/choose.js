@@ -91,8 +91,8 @@ function create_stage1_choose (){
     PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
     
-    Sprite.setVisible(true).start(lan_stage1.vo_1,50);
-    PACO.setVisible(true).start(lan_stage1.pa_2,50);
+    Sprite.start(lan_stage1.vo_1,50);
+    PACO.start(lan_stage1.pa_2,50);
     
     //.start(lan_stage1.vo_1, 50);
     

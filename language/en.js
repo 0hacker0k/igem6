@@ -14,3 +14,9 @@ lan_text=
     "misplaced":"misplaced",
     "wrong":"wrong"
 }
+
+lan_stage1=
+{
+    "vo_1":"When we want to express the protein we want by using a gene from a species, we will extract its all DNA first, which called “Genome”. I have extracted the DNA. Now you have to choose a gene from it.",
+    "pa_2":"Does the gene have to extract from the species?"
+}

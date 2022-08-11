@@ -17,7 +17,7 @@ function preload_stage2_flop(){
         this.load.image('end'+i_0, 'img/stage1/congratulations/congratulations_'+locate+'.png');
     }
     this.load.spritesheet('card',
-        'img/stage2/card.jpg',
+        'img/stage2/card1.png',
         { frameWidth: 367, frameHeight: 519 }
     );
 }

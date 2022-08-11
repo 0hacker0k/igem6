@@ -87,7 +87,7 @@ function createTextBox (scene, x, y, config, npc_key) {
                 yoyo: false
             });
         }, textBox)
-    textBox.setVisible(false);
+    //textBox.setVisible(false);
     //.on('type', function () {
     //})
 
@@ -106,6 +106,8 @@ var getBuiltInText = function (scene, wrapWidth, fixedWidth, fixedHeight) {
 }
 
 var getBBcodeText = function (scene, wrapWidth, fixedWidth, fixedHeight) {
+    var mod ='word';
+    if(language=='zh-tw') mod = 'char';
     return scene.rexUI.add.BBCodeText(0, 0, '', {
         fixedWidth: fixedWidth,
         fixedHeight: fixedHeight,
@@ -115,7 +117,7 @@ var getBBcodeText = function (scene, wrapWidth, fixedWidth, fixedHeight) {
         },
         fontSize: '20px',
         wrap: {
-            mode: 'char',
+            mode: mod,
             width: wrapWidth
         },
         maxLines: 3
