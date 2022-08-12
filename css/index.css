@@ -24,6 +24,7 @@ body{
   background-color: #F2CCC3 !important;
   font-family: papyrus;
   font-weight: 800;
+  display: table;
 }
 #navbar{
     width: 100%;
@@ -294,6 +295,9 @@ position:absolute ;right:0; */
 .helf_size {
     width:50%;
     min-width: 0;
+}
+.our_footer{
+    width: 100% !important;
 }
 .loading{
     display: flex;
