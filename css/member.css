@@ -3,6 +3,9 @@ body{
 }
 li{
     float:left;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
 }
 
 .full_size_image{
@@ -179,47 +182,7 @@ p{
     left: 0;
     top: 0;
 }
-@media all and (max-aspect-ratio:1/1){
-    .leaders_title{
-        width: 80%;
-        order: var(--id);
-        padding-bottom: calc(40%/3*4);
-    }
-    .leaders_person{
-        width: 40%;
-        order: var(--id);
-        padding-bottom: calc(40%/3*4);
-        margin-left: 30%;
-        margin-right: 30%;
-    }
-    .wet_lab_title{
-        width: 80%;
-        order: var(--id);
-        padding-bottom: calc(40%/3*4);
-    }
-    .wet_lab_person{
-        width: 40%;
-        order: var(--id);
-        padding-bottom: calc(40%/3*4);
-    }
-    .dry_lab_title{
-        width: 40%;
-        order: var(--id);
-        padding-bottom: calc(40%/3*4);
-    }
-    .dry_lab_person{
-        width: 40%;
-        order: var(--id);
-        padding-bottom: calc(40%/3*4);
-        margin-left: 30%;
-        margin-right: 30%;
-    }
-    .hp_person{
-        width: 40%;
-        order: var(--id);
-        padding-bottom: calc(40%/3*4);
-    }
-}
+
 .carousel-control-next {
     width: 10%;
 }
@@ -319,3 +282,83 @@ p{
 /* .carousel-item{
     transition: 0.1s;
 } */
+@media all and (max-aspect-ratio:1/1){
+    .leaders_title{
+        width: 80%;
+        order: var(--id);
+        padding-bottom: calc(40%/3*4);
+    }
+    .leaders_person{
+        width: 40%;
+        order: var(--id);
+        padding-bottom: calc(40%/3*4);
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .wet_lab_title{
+        width: 80%;
+        order: var(--id);
+        padding-bottom: calc(40%/3*4);
+    }
+    .wet_lab_person{
+        width: 40%;
+        order: var(--id);
+        padding-bottom: calc(40%/3*4);
+    }
+    .dry_lab_title{
+        width: 40%;
+        order: var(--id);
+        padding-bottom: calc(40%/3*4);
+    }
+    .dry_lab_person{
+        width: 40%;
+        order: var(--id);
+        padding-bottom: calc(40%/3*4);
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .hp_person{
+        width: 40%;
+        order: var(--id);
+        padding-bottom: calc(40%/3*4);
+    }
+    .modal-dialog{
+        width:90%;
+        min-width:0;
+        margin: 1.75rem auto;
+    }
+    .person_card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card_left{
+        width:90%;
+        padding-bottom:120%;
+        /* float: left; */
+        position: relative;
+        display: inline-block;
+    }
+    .card_right{
+        width:100%;
+        /* float: left; */
+        display: inline-block;
+        padding-left: 3%;
+    }
+    .person_name{
+        font-size: 6vw;
+    }
+    .job_title{
+        font-size: 5vw;
+    }
+    .person_tag{
+        font-size: 4vw;
+    }
+    .title_explain{
+        font-size: 3.5vw;
+    }
+    .person_data{
+        font-size: 3.5vw;
+    }
+}
