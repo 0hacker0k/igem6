@@ -217,7 +217,6 @@ p{
 }
 .card_left{
     width:30%;
-    padding-bottom:40%;
     float: left;
     position: relative;
 }
@@ -226,9 +225,15 @@ p{
     float: left;
     padding-left: 3%;
 }
+.card_img_div{
+    width: 100%;
+    padding-bottom:130%;
+    float: left;
+    position: relative;
+}
 .card_img{
     width: 100%;
-    height: 80%;
+    height: 100%;
     position: absolute;
     top:0;
     left:0;
@@ -239,21 +244,17 @@ p{
 }
 .person_name{
     width: 100%;
-    height: 10%;
-    position: absolute;
-    top:80%;
-    left:0;
+    position: relative;
     font-size: 1.5em;
     font-weight: 700;
+    display: table;
 }
 .job_title{
     width :100%;
-    height:10%;
-    position: absolute;
-    top:90%;
-    left:0;
+    position: relative;
     color:#d6d256;
     font-weight: 400;
+    display: table;
 }
 .person_tag{
     width :100%;
@@ -336,8 +337,6 @@ p{
     }
     .card_left{
         width:90%;
-        padding-bottom:120%;
-        /* float: left; */
         position: relative;
         display: inline-block;
     }
@@ -365,6 +364,6 @@ p{
     .person_data{
         font-size: 3.5vw;
     }.close_button{
-        font-size:1.8rem;
+        font-size: 3.5vw;
     }
 }

@@ -9,7 +9,9 @@
             <div class="modal-body">
                 <div class="person_card">
                     <div class="card_left">
-                        <img class="card_img" src="<?php echo $popup_img;?>" alt="<?php echo $popup_img_alt;?>">
+                        <div class="card_img_div">
+                            <img class="card_img" src="<?php echo $popup_img;?>" alt="<?php echo $popup_img_alt;?>">
+                        </div>
                         <div class="person_name">
                             <?php echo $name;?>
                         </div>
