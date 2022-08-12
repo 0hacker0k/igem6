@@ -21,7 +21,7 @@ body{
     width: 100%;
     flex-wrap: wrap;
     margin-top: 5%;
-    min-width:50rem;
+    /* min-width: 83vw; */
     margin-bottom: 10%;
     display: table;
 }
@@ -35,7 +35,7 @@ body{
     position : relative ; 
     height: 1px;
     bottom:0;
-    width: 30%;
+    width: 25%;
     float: left;
     display: flex;
     /* text-align: center; */
@@ -43,7 +43,7 @@ body{
     /* align-items: center; */
 }
 .attribution_right{
-    width: 70%;
+    width: 75%;
     float: left;
     padding-right: 2%;
     padding-left: 2%;
@@ -82,7 +82,8 @@ p{
   color:#390099;
   font-weight: 500;
   font-size:30px ;
-  padding: left 30% right 30%;
+  /* padding-left: 30%;
+  padding-right: 30%; */
 }
 
 
@@ -103,10 +104,10 @@ p{
     box-shadow: 0 1px;
     padding-bottom:1%;
     display:table;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-weight: bolder;
-    padding-left:0.5em;
-    padding-right:0.2em;
+    padding-left: 0.8vw;
+    padding-right: 0.3vw;
     color: #000000;
     /* margin-bottom:5%; */
     font-family: Papyrus, fantasy;
@@ -165,8 +166,8 @@ a{
     width: 100%;
     background-color: #FFFFF0;
     border-color:#FFFFF0;
-    border-radius: 2rem;
-    border-width:0.7rem;
+    border-radius: 3.3vw;
+    border-width: 1.1vw;
     padding: 1%;
     /* padding-right: 1%; */
     display: flex;
@@ -175,7 +176,7 @@ a{
     /* height: 20rem; */
 }
 .card:hover{    
-    border:#FFF985 0.7rem solid;
+    border:#FFF985 1.1vw solid;
 }
 .card_left{
     width: 30%;
@@ -253,7 +254,7 @@ a{
 }
 .card_content{
     font-size: 1.5vw;
-    padding-left:1.5rem;
+    padding-left:2.5vw;
     font-weight:600;
 }
 
@@ -268,7 +269,7 @@ a{
   z-index: 9999;
 } */
 /*  /5*3   */
-@media all and (max-width:60em){
+/* @media all and (max-width:60em){
     .card_name{
         font-size:1.8em;
     }
@@ -293,7 +294,7 @@ a{
     .card_icon{
         width: 2.1em;
     }
-}
+} */
 .graduate{
     color:#390099;
     font-weight:900;
