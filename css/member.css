@@ -350,20 +350,20 @@ p{
         font-size: 6vw;
     }
     .job_title{
-        font-size: 5vw;
+        font-size: 4vw;
     }
     .person_tag{
-        font-size: 4vw;
+        font-size: 3.5vw;
         text-align: center;
         justify-content: center;
         align-items: center;
     }
     .title_explain{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
     .person_data{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }.close_button{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 }
