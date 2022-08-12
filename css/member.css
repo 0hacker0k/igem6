@@ -6,6 +6,7 @@ li{
     text-align: left;
     justify-content: left;
     align-items: left;
+    width: 100%;
 }
 
 .full_size_image{
@@ -354,11 +355,16 @@ p{
     }
     .person_tag{
         font-size: 4vw;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     .title_explain{
         font-size: 3.5vw;
     }
     .person_data{
         font-size: 3.5vw;
+    }.close_button{
+        font-size:1.8rem;
     }
 }

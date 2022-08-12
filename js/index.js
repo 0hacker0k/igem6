@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 // $("#navbar").addClass("header-hide");
                 var item=document.getElementById("navbar");
                 item.style.top="-"+(item.clientHeight+1)+"px";
-            } else if(location.href.indexOf('webgame')==-1 && myWindow.scrollTop() < myPosition-15){
+            } else if(location.href.indexOf('webgame')==-1 && myWindow.scrollTop() < myPosition-20){
 
                 document.getElementById("navbar").style.top="0px";
                 // $("#navbar").removeClass("header-hide");
