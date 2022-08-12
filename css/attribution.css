@@ -45,7 +45,7 @@ body{
 .attribution_right{
     width: 70%;
     float: left;
-    padding-right: 5%;
+    padding-right: 2%;
     padding-left: 2%;
 }
 .intro{
@@ -167,7 +167,8 @@ a{
     border-color:#FFFFF0;
     border-radius: 2rem;
     border-width:0.7rem;
-    padding: 2%;
+    padding: 1%;
+    /* padding-right: 1%; */
     display: flex;
     flex-direction: row;
     margin-bottom: 7%;
@@ -207,9 +208,9 @@ a{
     flex-direction: row;
 }
 .card_name{
-    font-size: 3vw;
+    font-size: 2.5vw;
     /* width:100%; */
-    font-weight: bolder;
+    font-weight: 900;
     color: #EA2B1F;
     font-family: Papyrus, fantasy;
     margin-left:0%;
@@ -218,13 +219,14 @@ a{
     display: flex;
 }
 .card_icon_list{
-    width: 30%;
-    text-align: left;
-    display: inline-block;
+    display: table;
 	vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .card_icon{
-    width :33%;
+    width: 3.8vw;
     /* height:100%; */
     /* position: absolute; */
     top:0;
@@ -238,7 +240,7 @@ a{
     
 }
 .name_icon{
-    height:4vw;
+    width: 2.5vw;
     /* overflow: hidden; */
     /* 
     object-fit: cover;
@@ -278,6 +280,8 @@ a{
     }
     .title_label{
         font-size: 1.8em !important;
+    }.card_icon{
+        width: 2.7em;
     }
 }
 .graduate{
