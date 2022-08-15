@@ -5,61 +5,77 @@ body{
     /* align-items: top; */
 }
 .full_size_image{
-    text-align: left;
     width: 100%;
-    flex-wrap: wrap;
-    margin-top: 5%;
-    min-width:60rem;
-    margin-bottom: 10%;
-    display: table;
 }
 .sponsor_body{
     width: 100%;
-    height: 60%;
+    padding-bottom: 30%;
     display:table;
     position: relative;
+    margin-top: 5%;
     margin-bottom: 5%;
+    overflow: hidden;
 }
 
 .sponsor_rope{
-    top: 25%;
+    top: 0%;
     position: absolute;
     width: 50rem;
     left: calc(50rem*var(--i));
     z-index: 2;
+    overflow: hidden;
 }
 .sponsor_card{
     margin-left: 5%;
-    width: 25%;
+    width: 20%;
     height: 100%;
-    margin-bottom: 20%;
     display: block;
-    position: relative;
-    float:left;
+    position: absolute;
+    left: calc(30%*var(--i));
+    float: left;
 }
 /* .loading_jump{
     animation: ld_jump 1s linear infinite;
     animation-delay: calc(.1s*var(--i));
 } */
-.sponsor_paper{
-    top: 40%;
+.sponsor_logo{
+    top: calc(60% - var(--width)/2);
     position: absolute;
     left: 0;
     right: 0;
     margin: auto; 
     text-align: left;
-    height: 60%;
+    height: var(--width);
+    display: table;
+    z-index: 3;
+}
+.sponsor_paper{
+    top: 20%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    text-align: left;
+    height: 80%;
     display: table;
     z-index: 1;
 }
 .sponsor_clip{
-    top:10%;
+    top: -5%;
     position: absolute;
-    left: 0;        
+    left: 0;       
     right: 0;
     margin: auto; 
     text-align: left;
     height: 40%;
     display: table;
     z-index: 3;
+}
+@media all and (max-aspect-ratio:1/1){
+    .sponsor_body{
+        padding-bottom: 50%;
+    }
+    .sponsor_card{
+        width: 40%;
+    }
 }

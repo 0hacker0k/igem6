@@ -30,7 +30,7 @@ function view_to_pixels(value) {
 
 function locate_note(){
     notePosition = $('#attribution_left').offset().top;
-    temp=notePosition-noteheight*0.4;
+    temp=notePosition-((view_to_pixels("100vh")-note.clientHeight)/2);
     move_note();
 }
 function move_note(){
