@@ -58,25 +58,3 @@ function move_note2(){
 function note_stick(item){
     item.style.backgroundImage="url(img/note_untouch3.png)";
 }
-let lazyImages = []
-const option = {
-    root: null,
-    rootMargin: "200px 0px 200px 0px",
-    threshold: [0]
-}
-const observer = new IntersectionObserver(entries => {
-    entries.forEach( image => {
-        if(image.isIntersecting) {
-            image.target.src = image.target.dataset.src;
-            observer.unobserve(image.target);
-        }
-    });
-}, option);
-const imgGroup = document.getElementsByClassName("lazy");
-
-function watt(){
-    Array.prototype.forEach.call(imgGroup,element => observer.observe(element));
-}
-setTimeout(() => {
-    watt();
-}, 500);

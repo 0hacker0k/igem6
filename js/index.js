@@ -147,35 +147,25 @@ function change_list(id){
     }
     return;
 }
-// On document ready set the div height to window
-$(document).ready(function(){ 
-
-    // Assign a variable for the application being used
-    var nVer = navigator.appVersion;
-    // Assign a variable for the device being used
-    var nAgt = navigator.userAgent;
-    var nameOffset,verOffset,ix;
-
-
-    // First check to see if the platform is an iPhone or iPod
-    if(navigator.platform == 'iPhone' || navigator.platform == 'iPod'){
-        // In Safari, the true version is after "Safari" 
-        if ((verOffset=nAgt.indexOf('Safari'))!=-1) {
-          // Set a variable to use later
-          var mobileSafari = 'Safari';
+let lazyImages = []
+const option = {
+    root: null,
+    rootMargin: "200px 200px 200px 200px",
+    threshold: [0]
+}
+const observer = new IntersectionObserver(entries => {
+    entries.forEach( image => {
+        if(image.isIntersecting) {
+            image.target.src = image.target.dataset.src;
+            observer.unobserve(image.target);
         }
-    }
+    });
+}, option);
+const imgGroup = document.getElementsByClassName("lazy");
 
-  //===== FULL HEIGHT =====\\
-
-    // If is mobile Safari set window height +60
-    if (mobileSafari == 'Safari') { 
-        // Height + 60px
-        $('.full-height').css('height',(($(window).height()) + 60)+'px');
-    } else {
-        // Else use the default window height
-        $('.full-height').css({'height':(($(window).height()))+'px'});  
-    };
-
-
-});
+function watt(){
+    Array.prototype.forEach.call(imgGroup,element => observer.observe(element));
+}
+setTimeout(() => {
+    watt();
+}, 500);
