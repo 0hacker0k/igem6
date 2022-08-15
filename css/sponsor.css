@@ -8,6 +8,7 @@ body{
     width: 100%;
 }
 .sponsor_body{
+    z-index: 10;
     width: 100%;
     padding-bottom: 30%;
     display:table;
@@ -33,6 +34,7 @@ body{
     position: absolute;
     left: calc(30%*var(--i));
     float: left;
+    z-index: 3;
 }
 /* .loading_jump{
     animation: ld_jump 1s linear infinite;

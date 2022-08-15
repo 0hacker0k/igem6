@@ -1,7 +1,7 @@
 var card_wait=[];
 var card_run=[];
 var card_row=2;
-
+var all_id= new Map();
 var card_move=[];
 
 var myWindow = $(window); 
@@ -22,12 +22,18 @@ var screen_width=view_to_pixels("100vw");
 //     });  
 // });
 function stop_move(div){
-    if(div.classList.contains('sponsor_body'))
-        card_move[div.getAttribute("data-id")]=0;
+    var temp=div;
+    while(temp.getAttribute("data-id")==null){
+        temp=temp.parentNode;
+    }
+    card_move[all_id.get(temp.getAttribute("data-id"))]=0;
 }
 function start_move(div){
-    if(div.classList.contains('sponsor_body'))
-        card_move[div.getAttribute("data-id")]=1;
+    var temp=div;
+    while(temp.getAttribute("data-id")==null){
+        temp=temp.parentNode;
+    }
+    card_move[all_id.get(temp.getAttribute("data-id"))]=1;
 }
 function move_init(){
     var all_run=document.getElementsByClassName("sponsor_body");
@@ -37,6 +43,7 @@ function move_init(){
         card_run[i]=new Array();
     }
     for(var i=0;i<card_row;i++){
+        all_id.set(all_run[i].getAttribute("data-id"), i);
         var cards=all_run[i].getElementsByClassName("sponsor_card");
         var cards_length=cards.length;
         for(var j=0;j<cards_length;j++){
@@ -45,12 +52,6 @@ function move_init(){
         }
         all_run[i].onmouseover = function(event){stop_move(event.target)};
         all_run[i].onmouseout = function(event){start_move(event.target)};
-        // all_run[i].addEventListener("click", function (event) {
-        //     stop_move(i);
-        // }, true);
-        // all_run[i].addEventListener("mouseleave", function (event) {
-        //     start_move(i);
-        // }, true);
     }
     for(var i=0;i<card_row;i++){
         card_move[i]=1;
