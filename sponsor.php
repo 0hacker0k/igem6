@@ -23,13 +23,36 @@
     <div class="sponsor_body" data-id="sponsor_2">
         <img class="sponsor_rope" style="--i:0" src="<?php echo imgfile;?>/sponsor/rope.png" alt="">
         <img class="sponsor_rope" style="--i:1" src="<?php echo imgfile;?>/sponsor/rope.png" alt="">
-        <!-- a chunk -->
         <div class="sponsor_card">
             <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
             <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
             <img class="sponsor_logo" style="--width:50%" src="<?php echo imgfile;?>/brand.png" alt="">
         </div>
-        <!--  -->
+        <div class="sponsor_card">
+            <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
+            <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+            <img class="sponsor_logo" style="--width:50%" src="<?php echo imgfile;?>/human/8e.png" alt="">
+        </div>
+        <div class="sponsor_card">
+            <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
+            <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+            <img class="sponsor_logo" style="--width:50%" src="<?php echo imgfile;?>/human/5e.png" alt="">
+        </div>
+        <div class="sponsor_card">
+            <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
+            <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+            <img class="sponsor_logo" style="--width:50%" src="<?php echo imgfile;?>/human/9a.jpg" alt="">
+        </div>
+        <div class="sponsor_card">
+            <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
+            <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+            <img class="sponsor_logo" style="--width:50%" src="<?php echo imgfile;?>/human/7a.jpg" alt="">
+        </div>
+        <div class="sponsor_card">
+            <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
+            <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+            <img class="sponsor_logo" style="--width:50%" src="<?php echo imgfile;?>/human/4a.jpg" alt="">
+        </div>
     </div>
 
 
