@@ -11,16 +11,17 @@ var direction_control=0;
 function stop_move(div){
     var temp=div.target;
     temp.setAttribute("draggable","false");
-    temp.setAttribute("user-select","none");
+    // temp.setAttribute("user-select","none");
+    // temp.setAttribute("-webkit-user-select","none");
+    // temp.setAttribute("-moz-user-select","none");
+    // temp.setAttribute("-o-user-select","none");
     while(temp.getAttribute("data-id")==null){
         temp.setAttribute("draggable","false");
-        temp.setAttribute("user-select","none");
         temp=temp.parentNode;
     }
     card_move[all_id.get(temp.getAttribute("data-id"))]=0;
 }
 function start_move(div){
-    console.log(div);
     var temp=div.target;
     while(temp.getAttribute("data-id")==null){
         temp=temp.parentNode;
