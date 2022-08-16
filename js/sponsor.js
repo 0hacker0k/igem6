@@ -71,32 +71,32 @@ function move_init(){
             card_wait[i].push(cards[j]);
         }
         if(isMobile){
-            all_run[i].addEventListener('mousedown',
+            all_run[i].addEventListener('touchstart',
                 (event) => {
                     stop_move(event);
                     mouse_x=event.pageX;
                     mouse_y=event.pageY;
                 }
-            , false );
-            all_run[i].addEventListener('mousemove',
+            , {passive: true});
+            all_run[i].addEventListener('touchmove',
                 (event) => {
                     mouse_move(event);
                 }
-            , false );
-            all_run[i].addEventListener('mouseup',
+            , {passive: true});
+            all_run[i].addEventListener('touchend',
                 (event) => {
                     start_move(event);
                 }
-            , false );
+            , {passive: true});
         }else{
             all_run[i].addEventListener('mouseover',
                 (event) => {
-                    stop_move(event.target);
+                    stop_move(event);
                 }
             , false );
             all_run[i].addEventListener('mouseout',
                 (event) => {
-                    start_move(event.target);
+                    start_move(event);
                 }
             , false );
         }
@@ -167,7 +167,7 @@ function remove_px(string){
     return num;
 }
 function isMobileDevice(){
-    // return true;
+    return true;
     var mobileDevices = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone','Samsung','MiuiBrowser','XiaoMi'];
     var isMobileDevice=false;
     for(var i=0;i<mobileDevices.length;i++){
