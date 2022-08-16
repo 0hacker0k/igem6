@@ -3,7 +3,6 @@
     <?php include "./sub/config.php";?>
     <?php include "./sub/head.php";?>
     <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/sponsor.css">
-    <script src="<?php echo jsfile;?>/sponsor.js"></script>
 </head>
 <body onload="load_finish();">
     <?php include "./sub/header.php"?>
@@ -54,15 +53,6 @@
             <img class="sponsor_logo" style="--width:50%" src="<?php echo imgfile;?>/human/4a.jpg" alt="">
         </div>
     </div>
-
-
-
-    <script>
-        move_init();
-        card_moving();
-        window.onresize=function(){
-            screen_width=view_to_pixels("100vw");
-        };
-    </script>
-    <?php include "./sub/footer.php"?>   
+    <?php include "./sub/footer.php"?>
+    <script src="<?php echo jsfile;?>/sponsor.js"></script>
 </body>

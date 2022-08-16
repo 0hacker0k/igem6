@@ -141,10 +141,4 @@
 <style id="nav_style">
 
 </style>
-<script>
-    check_navbar();
-    window.onresize=function(){
-        check_navbar();
-    };
-    
-</script>
+

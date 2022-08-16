@@ -5,8 +5,6 @@
     <?php include "./sub/config.php";?>
     <?php include "./sub/head.php";?>
     <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook.css">
-    <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/notebook_each.css">
-    <script src="<?php echo jsfile;?>/notebook.js"></script>
 </head>
 
 <body onload="load_finish()">
@@ -68,24 +66,6 @@
             </div>
         </div>
     </div>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        if(urlParams.has('month')!=undefined && urlParams.has('group')!=undefined){
-            var group=urlParams.get('group');
-            var month=urlParams.get('month');
-            var goal="./notebook/notebook_"+group+"_"+Number(month)+".php"
-            $("#right_div").load(goal);
-            if (location.href.includes('?')) {
-                history.pushState({}, null, location.href.split('?')[0]);
-            }
-            const url = new URL(location.href);
-            url.searchParams.set('group', group);
-            history.pushState(null, '', url);
-            url.searchParams.set('month', x);
-            history.pushState(null, '', url);
-        }
-        
-    </script>
   <?php include "./sub/footer.php"?>
-
+    <script src="<?php echo jsfile;?>/notebook.js"></script>
 </body>

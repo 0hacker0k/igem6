@@ -25,3 +25,5 @@
 </footer>
 <script src="<?php echo jsfile;?>/bootstrap_js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="<?php echo jsfile;?>/bootstrap_js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="<?php echo jsfile;?>/jquery-3.6.0.min.js"></script>
+<script src="<?php echo jsfile;?>/index.js"></script>

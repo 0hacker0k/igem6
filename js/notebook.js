@@ -36,3 +36,18 @@ function switchbtn(id){
     // var month=x;
     // location.href = "./notebook_detail.php?group="+lab+"&month="+month;
 }
+const urlParams = new URLSearchParams(window.location.search);
+if(urlParams.has('month')!=undefined && urlParams.has('group')!=undefined){
+    var group=urlParams.get('group');
+    var month=urlParams.get('month');
+    var goal="./notebook/notebook_"+group+"_"+Number(month)+".php"
+    $("#right_div").load(goal);
+    if (location.href.includes('?')) {
+        history.pushState({}, null, location.href.split('?')[0]);
+    }
+    const url = new URL(location.href);
+    url.searchParams.set('group', group);
+    history.pushState(null, '', url);
+    url.searchParams.set('month', x);
+    history.pushState(null, '', url);
+}

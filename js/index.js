@@ -169,3 +169,9 @@ function watt(){
 setTimeout(() => {
     watt();
 }, 500);
+check_navbar();
+window.addEventListener('resize',
+    () => {
+        check_navbar();
+    }
+, false );

@@ -44,7 +44,6 @@
     <?php include "./sub/config.php";?>
     <?php include "./sub/head.php";?>
     <link rel="stylesheet" media="all" href="<?php echo cssfile;?>/attribution.css">
-    <script src="<?php echo jsfile;?>/attribution.js"></script>
 </head>
 
 <body onload="load_finish();locate_note();">
@@ -387,5 +386,6 @@
             ?>
         </div>
     </div>
-    <?php include "./sub/footer.php"?>   
+    <?php include "./sub/footer.php"?>
+    <script src="<?php echo jsfile;?>/attribution.js"></script>  
 </body>
