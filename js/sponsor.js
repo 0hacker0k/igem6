@@ -27,6 +27,7 @@ function start_move(div){
         temp=temp.parentNode;
     }
     card_move[all_id.get(temp.getAttribute("data-id"))]=1;
+    direction_control=0;
 }
 function mouse_move(div){
     var temp=div.target;
