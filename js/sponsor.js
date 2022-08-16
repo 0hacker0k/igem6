@@ -20,21 +20,11 @@ function stop_move(div){
     card_move[all_id.get(temp.getAttribute("data-id"))]=0;
 }
 function start_move(div){
+    console.log(div);
     var temp=div.target;
     while(temp.getAttribute("data-id")==null){
         temp=temp.parentNode;
     }
-    var i=all_id.get(temp.getAttribute("data-id"));
-    if(isMobile && card_move[i]==0){
-        var cards_length=card_run[i].length;
-        for(var j=0;j<cards_length;j++){
-            card_run[i][j].style.left=(remove_px(card_run[i][j].style.left)+div.pageX-mouse_x) + "px";
-        }
-    }
-    if(mouse_x<div.pageX)direction_control=1;
-    else if(mouse_x>div.pageX) direction_control=0;
-    mouse_x=div.pageX;
-    mouse_y=div.pageY;
     card_move[all_id.get(temp.getAttribute("data-id"))]=1;
 }
 function mouse_move(div){
@@ -46,13 +36,15 @@ function mouse_move(div){
     if(isMobile && card_move[i]==0){
         var cards_length=card_run[i].length;
         for(var j=0;j<cards_length;j++){
-            card_run[i][j].style.left=(remove_px(card_run[i][j].style.left)+div.pageX-mouse_x) + "px";
+            card_run[i][j].style.left=(remove_px(card_run[i][j].style.left)+div.targetTouches[0].pageX-mouse_x) + "px";
         }
+    }else{
+        return ;
     }
-    if(mouse_x<div.pageX)direction_control=1;
-    else if(mouse_x>div.pageX) direction_control=0;
-    mouse_x=div.pageX;
-    mouse_y=div.pageY;
+    if(mouse_x<div.targetTouches[0].pageX)direction_control=1;
+    else if(mouse_x>div.targetTouches[0].pageX) direction_control=0;
+    mouse_x=div.targetTouches[0].pageX;
+    mouse_y=div.targetTouches[0].pageY;
 }
 function move_init(){
     isMobile=isMobileDevice();
@@ -74,8 +66,8 @@ function move_init(){
             all_run[i].addEventListener('touchstart',
                 (event) => {
                     stop_move(event);
-                    mouse_x=event.pageX;
-                    mouse_y=event.pageY;
+                    mouse_x=event.targetTouches[0].pageX;
+                    mouse_y=event.targetTouches[0].pageY;
                 }
             , {passive: true});
             all_run[i].addEventListener('touchmove',
