@@ -159,7 +159,7 @@ function remove_px(string){
     return num;
 }
 function isMobileDevice(){
-    return true;
+    // return true;
     var mobileDevices = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone','Samsung','MiuiBrowser','XiaoMi'];
     var isMobileDevice=false;
     for(var i=0;i<mobileDevices.length;i++){
