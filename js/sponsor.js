@@ -120,7 +120,7 @@ function card_moving(){
             }
         }
         if(min_x>0){
-            if(card_wait[i][0]!=null && (!isMobile || direction_control[i]==1)){
+            if(card_wait[i][0]!=null){
                 card_run[i].unshift(card_wait[i].pop());
                 card_run[i][0].style.display="block";
                 if(card_run[i].length-2>=0){
