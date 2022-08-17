@@ -25,7 +25,7 @@ function start_move(div){
     }
     var i=all_id.get(temp.getAttribute("data-id"));
     card_move[i]=1;
-    direction_control[i]=0;
+    // direction_control[i]=0;
 }
 function mouse_move(div){
     var temp=div.target;
