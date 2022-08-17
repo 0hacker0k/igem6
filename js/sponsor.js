@@ -141,7 +141,10 @@ function card_moving(){
         if(card_move[i]==1){
             cards_length=card_run[i].length;
             for(var j=0;j<cards_length;j++){
-                card_run[i][j].style.left=(remove_px(card_run[i][j].style.left)-run_speed[i]) + "px";
+                if(direction_control[i]==0)
+                    card_run[i][j].style.left=(remove_px(card_run[i][j].style.left)-run_speed[i]) + "px";
+                else if(direction_control[i]==1)
+                    card_run[i][j].style.left=(remove_px(card_run[i][j].style.left)+run_speed[i]) + "px";
             }
         }
     }
