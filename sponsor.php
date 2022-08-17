@@ -8,7 +8,7 @@
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
     <img class="full_size_image" src="<?php echo imgfile;?>/human/sponsors_banner.jpg" alt=""> 
-    <div class="sponsor_body" data-id="sponsor_1">
+    <div class="sponsor_body" data-id="sponsor_1" data-speed="2">
         <img class="sponsor_rope" style="--i:0" src="<?php echo imgfile;?>/sponsor/rope.png" alt="">
         <img class="sponsor_rope" style="--i:1" src="<?php echo imgfile;?>/sponsor/rope.png" alt="">
         <!-- a chunk -->
@@ -19,7 +19,7 @@
         </div>
         <!--  -->
     </div>
-    <div class="sponsor_body" data-id="sponsor_2">
+    <div class="sponsor_body" data-id="sponsor_2" data-speed="2">
         <img class="sponsor_rope" style="--i:0" src="<?php echo imgfile;?>/sponsor/rope.png" alt="">
         <img class="sponsor_rope" style="--i:1" src="<?php echo imgfile;?>/sponsor/rope.png" alt="">
         <div class="sponsor_card">
