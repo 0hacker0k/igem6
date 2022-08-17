@@ -26,6 +26,12 @@
         <h1>Leader</h1>
         <div class="bulletin">
             <div id="carousel_member" class="carousel slide" data-bs-touch="false" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="4000">
                         <div class="a_group">
