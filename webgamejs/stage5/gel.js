@@ -1,22 +1,22 @@
 var desk_what = [
-            ['trashcan','','beaker','beaker','','','microwave','microwave','','trashcan'],
+            ['TAE','agarose','marker','sample','','beaker','beaker','','',''],
             ['','','','','','','','','',''],
-            ['','mod','','','tank','','marker','','',''],
-            ['','mod','','','','','','','sample',''],
-            ['','','pipette','pipette','','tank','marker','','',''],
             ['','','','','','','','','',''],
-            ['','','TAE','TAE','','','agarose','agarose','','']];
+            ['mod','','','','pipette','','','','',''],
+            ['mod','','','','','','','','',''],
+            ['','','','','','','','','','tank'],
+            ['','','microwave','microwave','','','trashcan','','','tank']];
 //  
 var things = desk_what;
 //桌子 7X8
 var desk_pos = [
-                [1,1,1,1,1,1,1,1,1,1],
-                [0,0,0,0,0,0,0,0,0,0],
-                [0,1,0,0,1,0,1,0,1,0],
-                [0,1,0,0,0,0,0,0,1,0],
-                [0,1,1,1,0,1,1,0,1,0],
-                [0,0,0,0,0,0,0,0,0,0],
-                [0,1,1,1,1,1,1,1,1,0]
+                [1,1,1,1,1,1,1,0,0,0],
+                [0,0,0,0,0,0,0,0,0,1],
+                [0,0,0,0,0,0,0,0,0,1],
+                [1,0,0,1,1,1,1,0,0,0],
+                [1,0,0,0,0,0,0,0,0,1],
+                [1,0,0,0,0,0,0,0,0,1],
+                [1,1,1,1,1,1,1,0,0,1]
             ];
 // var desk_pick = [
 //                 [0,0,0,0,0,0,0,0],
@@ -120,7 +120,7 @@ function create_stage5_take (){
     this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
 
     //人物、camera
-    player = this.physics.add.sprite(width*0.05, height*0.3, PLAYER_KEY);//this.centerX
+    player = this.physics.add.sprite(width*0.45, height*0.3, PLAYER_KEY);//this.centerX
     player.body.fixedRotation = true;
     player.setDisplaySize(player.width/10,player.height/10).setOrigin(0.5,0.9).refreshBody();
     this.physics.world.bounds.width=width;
