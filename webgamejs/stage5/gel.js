@@ -1,7 +1,7 @@
 var desk_what = [
             ['TAE','agarose','marker','sample','','beaker','beaker','','',''],
-            ['','','','','','','','','',''],
-            ['','','','','','','','','',''],
+            ['','','','','','','','','','uv'],
+            ['','','','','','','','','','gel_machine'],
             ['mod','','','','pipette','','','','',''],
             ['mod','','','','','','','','',''],
             ['','','','','','','','','','tank'],
@@ -60,6 +60,8 @@ function preload_stage5_take(){
     this.load.image("qte_half",'img/stage5/qte_bar_half.png');
     this.load.image("qte_perfect",'img/stage5/qte_bar_perfect.png');
     this.load.image("qte_bar",'img/stage5/qte_bar.png');
+    this.load.image("gel_machine",'img/stage5/gel_machine.png');
+    this.load.image("uv",'img/stage5/uv.png');
     // this.load.image("gel",'img/stage5/gel.png');
     //remind: change gel photo
     this.load.spritesheet('mod',
@@ -115,6 +117,7 @@ function create_stage5_take (){
     loading_transition(this,-500*width/800,0);
     var deskGroup = this.physics.add.staticGroup();
     var cant_move_item = this.physics.add.staticGroup();
+    var gel_list=[];
     //--------------------場景設定--------------------
     //背景
     this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
@@ -472,6 +475,9 @@ function create_stage5_take (){
                     desk[i][j].item.alert.alpha=0;
                     desk[i][j].item.alert.setTint(0x000000);
                     desk[i][j].item.alert.depth=100;
+                }else if(desk_what[i][j]=="uv"){
+                    desk[i][j].item.depth+=1;
+                    desk[i][j].item.alpha=0.65;
                 }
             }
         }
@@ -489,6 +495,10 @@ function create_stage5_take (){
             Object.setInteractive().setBodySize(Object.width,Object.height);
         }else if(what=="trashcan"){
             Object = trashcan.create(x, y+width*0.02, what).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
+        }else if(what=="uv"){
+            Object = cant_move_item.create(x, y+width*0.02, what).setDisplaySize(width*0.1,height*0.3).refreshBody();
+        }else if(what=="gel_machine"){
+            Object = cant_move_item.create(x+width*0.02, y+width*0.02-height*0.15, what).setDisplaySize(width*0.1,height*0.3).refreshBody();
         }else if(what=="sample" || what=="marker"){
             Object = cant_move_item.create(x, y, what).setDisplaySize(width*0.1/6,height*0.17/3).refreshBody();
         }else{
@@ -534,6 +544,8 @@ function create_stage5_take (){
                     tank_in(p, desk_entity.item);
                 }else if((desk_entity.item.type=="tank") && p.pick.type=="beaker"){
                     tank_change_TAE(p, desk_entity.item);
+                }else if((desk_entity.item.type=="uv" || desk_entity.item.type=="gel_machine") && p.pick.type=="gel"){
+                    gel_submit(p, desk_entity.item);
                 }
             }else{//player has nothing
                 if(desk_entity.item.type=="beaker" || desk_entity.item.type=="pipette" || desk_entity.item.type=="gel"){
@@ -1057,6 +1069,11 @@ function create_stage5_take (){
             },25);
         }
        
+    }
+    function gel_submit(p, item){
+        gel_list.push(p.pick);
+        p.pick.alpha=0;
+        p.pick=null;
     }
     var x,y,status=0;
     direct=this.add.image(x, y, 'direct').setDisplaySize(0.2*width,0.2*width);
