@@ -7,7 +7,6 @@ var desk_what = [
             ['','','','','','','','','',''],
             ['','','microwave','microwave','','','trashcan','','','']];
 //  
-var things = desk_what;
 //桌子 7X8
 var desk_pos = [
                 [1,1,1,1,1,1,1,0,0,0],
@@ -17,9 +16,7 @@ var desk_pos = [
                 [1,0,0,0,0,0,0,0,0,1],
                 [1,0,0,0,0,0,0,0,0,1],
                 [1,1,1,1,1,1,1,0,0,1]
-            ];             
-var picking;//人物拿取的物件
-var touching;
+            ];
 COLOR_PRIMARY = 0x4e342e;
 COLOR_LIGHT = 0x7b5e57;
 COLOR_DARK = 0x260e04;
@@ -93,16 +90,14 @@ function preload_stage5_take(){
     //this.load.audio('music',['aud/map/record.ogg','aud/map/record.mp3']);
     
 }
-
+var direction;
 var desk = new Array();
 var player;
 var keySpace;
-var islap=0;
-var ispick=0;
-var picking;
 var spot,spot_touch;
 var p_facing=2;
 var stop=0;
+var point_x,point_y;
 function create_stage5_take (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
