@@ -1169,11 +1169,21 @@ function create_stage5_take (){
         var count=0;
         where.input.on('pointerup', function (pointer) {
             count+=1;
-            setTimeout(function(){
-                gel_stop(gel_list,list_len,count);
-            },1000);
-            for(var i=0;i<list_len;i++){
-                gel_list[i].setVelocityX(-0.35*width);
+            if(count>=list_len+1){
+                console.log("hihi");
+                setTimeout(function(){
+
+                });
+                for(var i=0;i<list_len;i++){
+                    gel_list[i].setVelocityX(-0.35*width);
+                }
+            }else{
+                setTimeout(function(){
+                    gel_stop(gel_list,list_len,count);
+                },1000);
+                for(var i=0;i<list_len;i++){
+                    gel_list[i].setVelocityX(-0.35*width);
+                }
             }
         }, this);
     }
