@@ -65,7 +65,7 @@ function preload_stage5_take(){
     );
     this.load.spritesheet('gel',
         'img/stage5/gel.png',
-        { frameWidth: 713, frameHeight: 678 }
+        { frameWidth: 633, frameHeight: 602.5 }
     );
     this.load.spritesheet('microwave',
         'img/stage5/microwave.png',
