@@ -14,6 +14,7 @@ var spot,spot_touch;
 var p_facing=2;
 var stop=0;
 var point_x,point_y;
+var direction;
 function create (){
     loading_transition(this,this.cameras.main.scrollX+(-0.3)*width,this.cameras.main.scrollY+(0.26)*height);
     //--------------------場景設定--------------------
@@ -48,7 +49,7 @@ function create (){
     scoreText = this.add.text(400, 300, lan_text.hello, { fontSize: '32px', fill: '#000000' });
     // scoreText.setText('Game Over\nYour Score:' + score);
     //player.setBounce(0.2);//反彈
-    player.setCollideWorldBounds(true);//邊界設置為遊戲框
+    spot.setCollideWorldBounds(true);//邊界設置為遊戲框
     {
         this.anims.create({//橫向移動動畫
             key: 'movew_1',
@@ -117,16 +118,14 @@ function create (){
     status=0;
     direction=0;
     function enter(){//進入關卡
-        // alert(player.x);
-        // alert(player.y);
-        if(stop==0 && player.x>=80 && player.x<=145 && player.y>=555 && player.y<=600){
+        if(stop==0 && spot.x>=80 && spot.x<=145 && spot.y>=555 && spot.y<=600){
             //轉場設定
             finish_transition(this,cam.scrollX+(0.8)*width,cam.scrollY+(0.0)*height);
             setTimeout(function(){
                 load_page(stage_1_choose);
             },500);
             stop=1;
-        }else if(stop==0 && player.x>=1455 && player.x<=1520 && player.y>=555 && player.y<=600){
+        }else if(stop==0 && spot.x>=1455 && spot.x<=1520 && spot.y>=555 && spot.y<=600){
             finish_transition(this,cam.scrollX+(0.8)*width,cam.scrollY+(0.0)*height);
             setTimeout(function(){
                 load_page(stage_2_flop);
