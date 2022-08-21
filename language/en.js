@@ -18,5 +18,7 @@ lan_text=
 lan_stage1=
 {
     "vo_1":"When we want to express the protein we want by using a gene from a species, we will extract its all DNA first, which called “Genome”. I have extracted the DNA. Now you have to choose a gene from it.",
-    "pa_2":"Does the gene have to extract from the species?"
+    "pa_2":"Does the gene have to extract from the species?",
+    "vo_3":"You can also order the gene order you want from a biotech company. But this is free-to-play. So…you know…",
+    
 }

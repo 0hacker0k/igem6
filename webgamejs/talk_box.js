@@ -64,6 +64,7 @@ function createTextBox (scene, x, y, config, npc_key) {
                     //最後一頁，字跑完，talkbox消失，遊戲開始
                     this.setVisible(false);
                     this.setInteractive(false);
+                    this.done=1;
                     return;
                 }
                 this.typeNextPage();

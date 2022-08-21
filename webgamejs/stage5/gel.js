@@ -145,6 +145,7 @@ function create_stage5_take (){
             
         }
     }
+    //遊戲時間
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
     timer.time=5;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
@@ -153,6 +154,11 @@ function create_stage5_take (){
     //結算文字
     var ending_text = this.add.text(width*0.5, height*0.9, 'Tap to continue', { fontFamily: 'fantasy', fontSize: width*0.03+'px', fill: '#111111' })
     ending_text.setOrigin(0.5,0.5).alpha=0;
+    //分數
+    var score_text=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
+    var score=0;
+    score_text.alpha=0;
+    score_text.setText(score.toString());
     {//動畫畫禎
         //人物動畫
         {
@@ -714,30 +720,6 @@ function create_stage5_take (){
             if(beaker.ok==1){
                 mod.anims.play("mod_w");
                 mod.item=create_gel(mod.x,mod.y,beaker.score);
-                // mod.item=createObject(mod.x, mod.y, "gel",where).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
-                // mod.item.score=beaker.score;
-                // mod.item.alpha=0;
-                // mod.item.ok=0;
-                // mod.item.onuse=0;
-                // mod.item.run_time=0;
-                // mod.item.type="gel";
-                // mod.item.quality=4000;
-                // mod.item.sample=0;
-                // mod.item.marker=0;
-                // mod.item.qte_bar=cant_move_item.create(mod.x, mod.y, "qte_bar").setDisplaySize(width*0.1*2,width*0.1/12*2).setOrigin(0,0.5).refreshBody();
-                // mod.item.qte_bar.width=width*0.1*2;
-                // mod.item.qte_bar.height=width*0.1/12*2;
-                // mod.item.qte_bar.alpha=0;
-                // // mod.item.qte_bar.setTint();
-                // mod.item.qte_pointer=cant_move_item.create(mod.x, mod.y, "qte_pointer").setDisplaySize(mod.item.qte_bar.width/60,mod.item.qte_bar.width/6).setOrigin(0,0.5).refreshBody();
-                // mod.item.qte_pointer.alpha=0;
-                // mod.item.qte_pointer.setTint(0x9999ff);
-                // mod.item.qte_half=cant_move_item.create(mod.x, mod.y, "qte_half").setDisplaySize(mod.item.qte_bar.width*0.4,mod.item.qte_bar.width/12).setOrigin(0,0.5).refreshBody();
-                // mod.item.qte_half.alpha=0;
-                // mod.item.qte_half.setTint(0xffffbb);
-                // mod.item.qte_perfect=cant_move_item.create(mod.x, mod.y, "qte_perfect").setDisplaySize(mod.item.qte_bar.width*0.15,mod.item.qte_bar.width/12).setOrigin(0,0.5).refreshBody();
-                // mod.item.qte_perfect.alpha=0;
-                // mod.item.qte_perfect.setTint(0xffcccc);
                 mod.time=9;
                 if(beaker.c%2==0){
                     beaker.TAE-=1;
@@ -1151,36 +1133,72 @@ function create_stage5_take (){
             }player.destroy();
         }
     }
-
+    //+幾分
+    var plus_score = this.add.text(width*0.5, height*0.12, '', { fontFamily: 'fantasy', fontSize: width*0.03+'px', fill: '#111111' });
+    plus_score.setInteractive().setOrigin(0.5,0.5);
+    plus_score.alpha=0;
     function lighting_gel(gel_list){
+        //--結算畫面初始化--
         var list_len=gel_list.length;
         ending_text.alpha=1;
+        score_text.alpha=1;
         for(var i=0;i<list_len;i++){
             gel_list[i].setDisplaySize(width*0.3,width*0.3);
             gel_list[i].x=width*0.5+width*0.35*i;
             gel_list[i].y=height*0.5;
             gel_list[i].alpha=1;
         }
+        //-- --
         var count=0;
+        var act=0;
         where.input.on('pointerup', function (pointer) {
-            count+=1;
-            if(count>=list_len+1){
-                console.log("hihi");
-                setTimeout(function(){
-
-                });
-                for(var i=0;i<list_len;i++){
-                    gel_list[i].setVelocityX(-0.35*width);
+            if(act==0){//當沒在跑的時候
+                if(count<list_len){
+                    var tar_score = gel_list[count].score;
+                    score+=tar_score;
+                    score_text.setText(score.toString());
+                    
                 }
-            }else{
-                setTimeout(function(){
-                    gel_stop(gel_list,list_len,count);
-                },1000);
-                for(var i=0;i<list_len;i++){
-                    gel_list[i].setVelocityX(-0.35*width);
+                count+=1;
+                if(count==list_len+1){//跑完
+                    console.log("hihi");
+                    act==1;
+                    setTimeout(function(){//轉回map_1
+                        finish_transition(this,width,0);
+                        setTimeout(function(){
+                            load_page(map_1);
+                        },500);
+                    },1000);
+                    for(var i=0;i<list_len;i++){
+                        gel_list[i].setVelocityX(-0.35*width);
+                    }
+                }else{
+                    act=1;
+                    setTimeout(function(){
+                        gel_stop(gel_list,list_len,count);
+                        act=0;
+                    },1000);
+                    for(var i=0;i<list_len;i++){
+                        gel_list[i].setVelocityX(-0.35*width);
+                    }
+                    //plus_score跳出
+                    plus_score.alpha=1;
+                    plus_score.setText('+'+tar_score.toString());
+                    text_fade_out(plus_score);
+                    //plus_score.setVelocityY(-0.2*height);
+                    
                 }
             }
+            
         }, this);
+    }
+    function text_fade_out(text){
+        text.alpha-=0.1;
+        text.y=text.y-1.5;
+        if(text.alpha<=0)return ;
+        setTimeout(function(){
+            text_fade_out(text);
+        },50);
     }
     function gel_stop(gel_list,list_len,count){
         for(var i=0;i<list_len;i++){
@@ -1189,7 +1207,7 @@ function create_stage5_take (){
         }
         //Tino
     }
-
+    
     function create_gel(x,y,score){
         var temp;
         temp=createObject(x, y, "gel",where).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
@@ -1219,18 +1237,19 @@ function create_stage5_take (){
         change_skin_gel(temp);
         return temp;
     }
+    //test-結算膠
     var test;
-    test=create_gel(0,0,0);
+    test=create_gel(0,0,100);
     test.sample=1;
     change_skin_gel(test);
     gel_list.push(test);
 
-    test=create_gel(0,0,0);
+    test=create_gel(0,0,2000);
     test.marker=1;
     change_skin_gel(test);
     gel_list.push(test);
 
-    test=create_gel(0,0,0);
+    test=create_gel(0,0,30);
     test.sample=1;
     test.marker=1;
     change_skin_gel(test);

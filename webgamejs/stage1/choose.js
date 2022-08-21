@@ -88,26 +88,37 @@ function create_stage1_choose (){
         fixedWidth: width*0.55,
         fixedHeight: height*0.15,
     };
+
+    for(var i=0;i<lan_stage1;i++){
+        console.log(i);
+    }
+
     PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
-    
+    PACO.done=0;
+    Sprite.done=0;
     Sprite.start(lan_stage1.vo_1,50);
-    Sprite.on('complete', function(){
-        PACO.start(lan_stage1.pa_2,50);
-        console.log('hihi');
-    },this);
-    
-    
 
-    
     //.start(lan_stage1.vo_1, 50);
     
     //轉場動畫
     start_transition(this);
 }
 
+var descript_count=2;
 function update_stage1_choose (){//與外界有關的互動
     var temp=banner_width;
+    if(Sprite.done){
+        PACO.setInteractive().setVisible(true);
+        PACO.start(lan_stage1["pa_"+descript_count.toString()] ,50);
+        descript_count++;
+        Sprite.done=0;
+    }
+    if(PACO.done){
+        Sprite.setInteractive().setVisible(true);
+        Sprite.start(lan_stage1["vo_"+descript_count.toString()],50);
+        PACO.done=0;
+    }
     if(banner_status==0){
         banner.x=(width-banner_width)/2;
         banner.setDisplaySize(banner_width,0.15*height);
