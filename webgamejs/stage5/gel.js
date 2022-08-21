@@ -146,9 +146,13 @@ function create_stage5_take (){
         }
     }
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=50;
+    timer.time=5;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
+    //remind: string to variable(en and zh-tw)
+    //結算文字
+    var ending_text = this.add.text(width*0.5, height*0.9, 'Tap to continue', { fontFamily: 'fantasy', fontSize: width*0.03+'px', fill: '#111111' })
+    ending_text.setOrigin(0.5,0.5).alpha=0;
     {//動畫畫禎
         //人物動畫
         {
@@ -1113,7 +1117,8 @@ function create_stage5_take (){
         }
         lighting_gel(gel_list);
         start_transition(where);
-    } 
+    }
+
     function free_desk(desk){
         if(desk!=null){
             if(desk.item!=null){
@@ -1146,8 +1151,10 @@ function create_stage5_take (){
             }player.destroy();
         }
     }
+
     function lighting_gel(gel_list){
         var list_len=gel_list.length;
+        ending_text.alpha=1;
         for(var i=0;i<list_len;i++){
             gel_list[i].setDisplaySize(width*0.3,width*0.3);
             gel_list[i].x=width*0.5+width*0.35*i;
