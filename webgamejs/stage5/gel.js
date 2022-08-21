@@ -1,11 +1,11 @@
 var desk_what = [
-            ['TAE','agarose','marker','sample','','beaker','beaker','','',''],
+            ['TAE','agarose','marker','sample','','','tank','','',''],
             ['','','','','','','','','','uv'],
             ['','','','','','','','','','gel_machine'],
-            ['mod','','','','pipette','','','','',''],
+            ['mod','','','','pipette','beaker','beaker','','',''],
             ['mod','','','','','','','','',''],
-            ['','','','','','','','','','tank'],
-            ['','','microwave','microwave','','','trashcan','','','tank']];
+            ['','','','','','','','','',''],
+            ['','','microwave','microwave','','','trashcan','','','']];
 //  
 var things = desk_what;
 //桌子 7X8
@@ -63,7 +63,7 @@ function preload_stage5_take(){
     this.load.image("gel_machine",'img/stage5/gel_machine.png');
     this.load.image("uv",'img/stage5/uv.png');
     // this.load.image("gel",'img/stage5/gel.png');
-    //remind: change gel photo
+    //remind: change gel photo:DONE
     this.load.spritesheet('mod',
         'img/stage5/mod.png',
         { frameWidth: 928, frameHeight: 674 }
@@ -74,7 +74,7 @@ function preload_stage5_take(){
     );
     this.load.spritesheet('gel',
         'img/stage5/gel.png',
-        { frameWidth: 574, frameHeight: 561 }
+        { frameWidth: 713, frameHeight: 678 }
     );
     this.load.spritesheet('microwave',
         'img/stage5/microwave.png',
@@ -363,13 +363,13 @@ function create_stage5_take (){
                 repeat: -1
             });
             this.anims.create({
-                key: 'gel_sm',
+                key: 'gel_mm',
                 frames: this.anims.generateFrameNumbers("gel", { start: 2, end: 2 }),
                 frameRate: 5,
                 repeat: -1
             });
             this.anims.create({
-                key: 'gel_mm',
+                key: 'gel_s',
                 frames: this.anims.generateFrameNumbers("gel", { start: 3, end: 3 }),
                 frameRate: 5,
                 repeat: -1
@@ -381,7 +381,7 @@ function create_stage5_take (){
                 repeat: -1
             });
             this.anims.create({
-                key: 'gel_s',
+                key: 'gel_sm',
                 frames: this.anims.generateFrameNumbers("gel", { start: 5, end: 5 }),
                 frameRate: 5,
                 repeat: -1
@@ -945,9 +945,11 @@ function create_stage5_take (){
     function qte_pointer_move(p, gel, d, locate){
         if(keySpace.isDown){
             p.stop=0;
+            //QTE not so perfect
             if(gel.qte_pointer.x>=gel.qte_half.x && gel.qte_pointer.x<=gel.qte_half.x+gel.qte_bar.width*0.4){
                 gel.score+=50;
             }
+            //QTE perfect
             if(gel.qte_pointer.x>=gel.qte_perfect.x && gel.qte_pointer.x<=gel.qte_perfect.x+gel.qte_bar.width*0.15){
                 gel.score+=50;
             }

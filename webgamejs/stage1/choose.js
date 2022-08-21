@@ -92,7 +92,13 @@ function create_stage1_choose (){
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
     
     Sprite.start(lan_stage1.vo_1,50);
-    PACO.start(lan_stage1.pa_2,50);
+    Sprite.on('complete', function(){
+        PACO.start(lan_stage1.pa_2,50);
+        console.log('hihi');
+    },this);
+    
+    
+
     
     //.start(lan_stage1.vo_1, 50);
     
