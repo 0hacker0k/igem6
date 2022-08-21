@@ -29,12 +29,14 @@
                     <option value="zh-cn">簡體中文</option>
                 </select>
             </div>
-            <div onfocus="close_header()" id="game"></div>
+            <div id="game"></div>
         </div>
     </div>
     <?php include "sub/footer.php"?>
     <script>
-        close_header();
+        setTimeout(function(){
+            close_header();
+        },500);
     </script>
 <!-- <button onclick="load()">123123132</button> -->
 </body>

@@ -93,8 +93,11 @@ document.addEventListener('DOMContentLoaded', function(){
     });  
 });
 function close_header(){
-    var item=document.getElementById("navbar");
-    item.style.top="-"+(item.clientHeight+1)+"px";
+    if($(window).scrollTop()>0){
+         var item=document.getElementById("navbar");
+        item.style.top="-"+(item.clientHeight+1)+"px";
+    }
+   
 }
 function load_finish(){
     // return ;
@@ -113,7 +116,7 @@ function check_navbar(){
     }
     var navbar = document.getElementById("navbar").clientWidth;
     var logo = document.getElementById("logo").clientWidth;
-    if(navbar<=logo+nav_len*1.03){
+    if(navbar<=logo+nav_len*1.04){
         hide_mod=1;
         document.getElementById("nav_style").innerHTML=".dropdown{display: none;}.dropdown_rwd{display: block;}";
     }else{
