@@ -17,16 +17,7 @@ var desk_pos = [
                 [1,0,0,0,0,0,0,0,0,1],
                 [1,0,0,0,0,0,0,0,0,1],
                 [1,1,1,1,1,1,1,0,0,1]
-            ];
-// var desk_pick = [
-//                 [0,0,0,0,0,0,0,0],
-//                 [0,0,0,0,0,0,0,0],
-//                 [0,0,0,0,0,0,0,0],
-//                 [0,0,0,0,0,0,0,0],
-//                 [0,0,0,0,0,0,0,0],
-//                 [0,0,0,0,0,0,0,0],
-//                 [0,0,0,0,0,0,0,0],];
-                
+            ];             
 var picking;//人物拿取的物件
 var touching;
 COLOR_PRIMARY = 0x4e342e;
@@ -74,8 +65,8 @@ function preload_stage5_take(){
     );
     this.load.spritesheet('gel',
         'img/stage5/gel.png',
-        { frameWidth: 574, frameHeight: 561 }
-    );
+        { frameWidth: 713, frameHeight: 652 }
+    );//2139 1356
     this.load.spritesheet('microwave',
         'img/stage5/microwave.png',
         { frameWidth: 1173, frameHeight: 784 }
@@ -111,7 +102,7 @@ var ispick=0;
 var picking;
 var spot,spot_touch;
 var p_facing=2;
-
+var stop=0;
 function create_stage5_take (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
@@ -159,6 +150,10 @@ function create_stage5_take (){
             
         }
     }
+    var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
+    timer.time=5;
+    timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
+    timer.depth=30;
     {//動畫畫禎
         //人物動畫
         {
@@ -363,13 +358,13 @@ function create_stage5_take (){
                 repeat: -1
             });
             this.anims.create({
-                key: 'gel_sm',
+                key: 'gel_mm',
                 frames: this.anims.generateFrameNumbers("gel", { start: 2, end: 2 }),
                 frameRate: 5,
                 repeat: -1
             });
             this.anims.create({
-                key: 'gel_mm',
+                key: 'gel_s',
                 frames: this.anims.generateFrameNumbers("gel", { start: 3, end: 3 }),
                 frameRate: 5,
                 repeat: -1
@@ -381,7 +376,7 @@ function create_stage5_take (){
                 repeat: -1
             });
             this.anims.create({
-                key: 'gel_s',
+                key: 'gel_sm',
                 frames: this.anims.generateFrameNumbers("gel", { start: 5, end: 5 }),
                 frameRate: 5,
                 repeat: -1
@@ -701,31 +696,31 @@ function create_stage5_take (){
         if(mod.item==null){
             if(beaker.ok==1){
                 mod.anims.play("mod_w");
-                mod.item=createObject(mod.x, mod.y, "gel",where).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
-                // mod.item.anims.play("gel_")
-                mod.item.score=beaker.score;
-                mod.item.alpha=0;
-                mod.item.ok=0;
-                mod.item.onuse=0;
-                mod.item.run_time=0;
-                mod.item.type="gel";
-                mod.item.quality=4000;
-                mod.item.sample=0;
-                mod.item.marker=0;
-                mod.item.qte_bar=cant_move_item.create(mod.x, mod.y, "qte_bar").setDisplaySize(width*0.1*2,width*0.1/12*2).setOrigin(0,0.5).refreshBody();
-                mod.item.qte_bar.width=width*0.1*2;
-                mod.item.qte_bar.height=width*0.1/12*2;
-                mod.item.qte_bar.alpha=0;
-                // mod.item.qte_bar.setTint();
-                mod.item.qte_pointer=cant_move_item.create(mod.x, mod.y, "qte_pointer").setDisplaySize(mod.item.qte_bar.width/60,mod.item.qte_bar.width/6).setOrigin(0,0.5).refreshBody();
-                mod.item.qte_pointer.alpha=0;
-                mod.item.qte_pointer.setTint(0x9999ff);
-                mod.item.qte_half=cant_move_item.create(mod.x, mod.y, "qte_half").setDisplaySize(mod.item.qte_bar.width*0.4,mod.item.qte_bar.width/12).setOrigin(0,0.5).refreshBody();
-                mod.item.qte_half.alpha=0;
-                mod.item.qte_half.setTint(0xffffbb);
-                mod.item.qte_perfect=cant_move_item.create(mod.x, mod.y, "qte_perfect").setDisplaySize(mod.item.qte_bar.width*0.15,mod.item.qte_bar.width/12).setOrigin(0,0.5).refreshBody();
-                mod.item.qte_perfect.alpha=0;
-                mod.item.qte_perfect.setTint(0xffcccc);
+                mod.item=create_gel(mod.x,mod.y,beaker.score);
+                // mod.item=createObject(mod.x, mod.y, "gel",where).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
+                // mod.item.score=beaker.score;
+                // mod.item.alpha=0;
+                // mod.item.ok=0;
+                // mod.item.onuse=0;
+                // mod.item.run_time=0;
+                // mod.item.type="gel";
+                // mod.item.quality=4000;
+                // mod.item.sample=0;
+                // mod.item.marker=0;
+                // mod.item.qte_bar=cant_move_item.create(mod.x, mod.y, "qte_bar").setDisplaySize(width*0.1*2,width*0.1/12*2).setOrigin(0,0.5).refreshBody();
+                // mod.item.qte_bar.width=width*0.1*2;
+                // mod.item.qte_bar.height=width*0.1/12*2;
+                // mod.item.qte_bar.alpha=0;
+                // // mod.item.qte_bar.setTint();
+                // mod.item.qte_pointer=cant_move_item.create(mod.x, mod.y, "qte_pointer").setDisplaySize(mod.item.qte_bar.width/60,mod.item.qte_bar.width/6).setOrigin(0,0.5).refreshBody();
+                // mod.item.qte_pointer.alpha=0;
+                // mod.item.qte_pointer.setTint(0x9999ff);
+                // mod.item.qte_half=cant_move_item.create(mod.x, mod.y, "qte_half").setDisplaySize(mod.item.qte_bar.width*0.4,mod.item.qte_bar.width/12).setOrigin(0,0.5).refreshBody();
+                // mod.item.qte_half.alpha=0;
+                // mod.item.qte_half.setTint(0xffffbb);
+                // mod.item.qte_perfect=cant_move_item.create(mod.x, mod.y, "qte_perfect").setDisplaySize(mod.item.qte_bar.width*0.15,mod.item.qte_bar.width/12).setOrigin(0,0.5).refreshBody();
+                // mod.item.qte_perfect.alpha=0;
+                // mod.item.qte_perfect.setTint(0xffcccc);
                 mod.time=9;
                 if(beaker.c%2==0){
                     beaker.TAE-=1;
@@ -1075,6 +1070,141 @@ function create_stage5_take (){
         p.pick.alpha=0;
         p.pick=null;
     }
+    function time_count_down(timer){
+        timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
+        if(timer.time==0){
+            game_over();
+            return ;
+        }
+        timer.time-=1;
+        setTimeout(function(){
+            time_count_down(timer);
+        },1000);
+    }
+    function game_over(){
+        stop=1;
+        finish_transition(where,width,0);
+        setTimeout(function(){
+            free_all();
+        },500);
+    }
+    function free_all(){
+        free_player(player);
+        timer.destroy();
+        for(var i=0;i<7;i++){   //建立桌子
+            for(var j=0;j<10;j++){
+                free_desk(desk[i][j]);
+            }
+        }
+        lighting_gel(gel_list);
+        start_transition(where);
+    } 
+    function free_desk(desk){
+        if(desk!=null){
+            if(desk.item!=null){
+                if(desk.item.alert!=null){
+                    desk.item.alert.destroy();
+                }if(desk.item.qte_bar!=null){
+                    desk.item.qte_bar.destroy();
+                }if(desk.item.qte_pointer!=null){
+                    desk.item.qte_pointer.destroy();
+                }if(desk.item.qte_half!=null){
+                    desk.item.qte_half.destroy();
+                }if(desk.item.qte_perfect!=null){
+                    desk.item.qte_perfect.destroy();
+                }desk.item.destroy();
+            }desk.destroy();
+        }
+    }
+    function free_player(player){
+        if(player!=null){
+             if(player.pick!=null){
+                if(player.pick.qte_bar!=null){
+                    player.pick.qte_bar.destroy();
+                }if(player.pick.qte_pointer!=null){
+                    player.pick.qte_pointer.destroy();
+                }if(player.pick.qte_half!=null){
+                    player.pick.qte_half.destroy();
+                }if(player.pick.qte_perfect!=null){
+                    player.pick.qte_perfect.destroy();
+                }player.pick.destroy();
+            }player.destroy();
+        }
+    }
+    function lighting_gel(gel_list){
+        var list_len=gel_list.length;
+        for(var i=0;i<list_len;i++){
+            gel_list[i].setDisplaySize(width*0.3,width*0.3);
+            gel_list[i].x=width*0.5+width*0.35*i;
+            gel_list[i].y=height*0.5;
+            gel_list[i].alpha=1;
+        }
+        var count=0;
+        where.input.on('pointerup', function (pointer) {
+            count+=1;
+            setTimeout(function(){
+                gel_stop(gel_list,list_len,count);
+            },1000);
+            for(var i=0;i<list_len;i++){
+                gel_list[i].setVelocityX(-0.35*width);
+            }
+        }, this);
+    }
+    function gel_stop(gel_list,list_len,count){
+        for(var i=0;i<list_len;i++){
+            gel_list[i].setVelocityX(0);
+            gel_list[i].x=width*0.5+width*0.35*(i-count);
+        }
+        //Tino
+    }
+
+    function create_gel(x,y,score){
+        var temp;
+        temp=createObject(x, y, "gel",where).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
+        temp.score=score;
+        temp.alpha=0;
+        temp.ok=0;
+        temp.onuse=0;
+        temp.run_time=0;
+        temp.type="gel";
+        temp.quality=4000;
+        temp.sample=0;
+        temp.marker=0;
+        temp.qte_bar=cant_move_item.create(x, y, "qte_bar").setDisplaySize(width*0.1*2,width*0.1/12*2).setOrigin(0,0.5).refreshBody();
+        temp.qte_bar.width=width*0.1*2;
+        temp.qte_bar.height=width*0.1/12*2;
+        temp.qte_bar.alpha=0;
+        // temp.qte_bar.setTint();
+        temp.qte_pointer=cant_move_item.create(x, y, "qte_pointer").setDisplaySize(temp.qte_bar.width/60,temp.qte_bar.width/6).setOrigin(0,0.5).refreshBody();
+        temp.qte_pointer.alpha=0;
+        temp.qte_pointer.setTint(0x9999ff);
+        temp.qte_half=cant_move_item.create(x, y, "qte_half").setDisplaySize(temp.qte_bar.width*0.4,temp.qte_bar.width/12).setOrigin(0,0.5).refreshBody();
+        temp.qte_half.alpha=0;
+        temp.qte_half.setTint(0xffffbb);
+        temp.qte_perfect=cant_move_item.create(x, y, "qte_perfect").setDisplaySize(temp.qte_bar.width*0.15,temp.qte_bar.width/12).setOrigin(0,0.5).refreshBody();
+        temp.qte_perfect.alpha=0;
+        temp.qte_perfect.setTint(0xffcccc);
+        change_skin_gel(temp);
+        return temp;
+    }
+    var test;
+    test=create_gel(0,0,0);
+    test.sample=1;
+    change_skin_gel(test);
+    gel_list.push(test);
+
+    test=create_gel(0,0,0);
+    test.marker=1;
+    change_skin_gel(test);
+    gel_list.push(test);
+
+    test=create_gel(0,0,0);
+    test.sample=1;
+    test.marker=1;
+    change_skin_gel(test);
+    gel_list.push(test);
+
+
     var x,y,status=0;
     direct=this.add.image(x, y, 'direct').setDisplaySize(0.2*width,0.2*width);
     direct.alpha = 0;
@@ -1116,8 +1246,6 @@ function create_stage5_take (){
         direction=0;
         direct.alpha = 0;
     }, this);
-    stop=0;
-    start_transition(this);
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.depth=1023;
@@ -1129,7 +1257,7 @@ function create_stage5_take (){
     },this);
     //轉場動畫
     start_transition(this);
-
+    time_count_down(timer);
     // var content = `Phaser is a fast, free, and fun open source HTML5 game framework that offers WebGL and Canvas rendering across desktop and mobile web browsers. Games can be compiled to iOS, Android and native apps by using 3rd party tools. You can use JavaScript or TypeScript for development.`;
     // createTextBox(this, width*0.15, height*0.75, {
     //     wrapWidth: width*0.5,
