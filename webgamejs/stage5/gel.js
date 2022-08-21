@@ -76,8 +76,8 @@ function preload_stage5_take(){
         { frameWidth: 1075, frameHeight: 625 }
     );
     this.load.spritesheet('player',
-        'img/main/human3.png',
-        { frameWidth: 480, frameHeight: 1028 }
+        'img/main/human.png',
+        { frameWidth: 496, frameHeight: 1118 }
     );
     this.load.spritesheet('beaker',
         'img/stage5/beaker.png',
@@ -151,7 +151,7 @@ function create_stage5_take (){
         }
     }
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=5;
+    timer.time=50;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
     {//動畫畫禎
@@ -196,6 +196,24 @@ function create_stage5_take (){
             this.anims.create({//上不動
                 key: 'back',
                 frames: this.anims.generateFrameNumbers(PLAYER_KEY, { start: 3, end: 3 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({//橫向移動動畫
+                key: 'pick_1',
+                frames: this.anims.generateFrameNumbers(PLAYER_KEY, { start: 8, end: 8 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({//橫向移動動畫
+                key: 'pick_2',
+                frames: this.anims.generateFrameNumbers(PLAYER_KEY, { start: 9, end: 9 }),
+                frameRate: 5,
+                repeat: -1
+            });
+            this.anims.create({//橫向移動動畫
+                key: 'pick_0',
+                frames: this.anims.generateFrameNumbers(PLAYER_KEY, { start: 10, end: 10 }),
                 frameRate: 5,
                 repeat: -1
             });
@@ -1313,26 +1331,50 @@ function update_stage5_take (){//與外界有關的互動
             spot.setVelocityX(-s5_run_speed);
             player.flipX = 0;
             if((animate_f/animate_tick)%4==0){
-                player.anims.play('movew_1',true);
+                if(player.pick!=null)
+                    player.anims.play('pick_1',true);
+                else
+                    player.anims.play('movew_1',true);
             }else if((animate_f/animate_tick)%4==1){
-                player.anims.play('left',true);
+                if(player.pick!=null)
+                    player.anims.play('pick_0',true);
+                else
+                    player.anims.play('left',true);
             }else if((animate_f/animate_tick)%4==2){
-                player.anims.play('movew_2',true);
+                if(player.pick!=null)
+                    player.anims.play('pick_2',true);
+                else
+                    player.anims.play('movew_2',true);
             }else if((animate_f/animate_tick)%4==3){
-                player.anims.play('left',true);
+                if(player.pick!=null)
+                    player.anims.play('pick_0',true);
+                else
+                    player.anims.play('left',true);
             }
         }else if (cursors.right.isDown){
             p_facing=1;
             spot.setVelocityX(s5_run_speed);
             player.flipX = -1;
             if((animate_f/animate_tick)%4==0){
-                player.anims.play('movew_1',true);
+                if(player.pick!=null)
+                    player.anims.play('pick_1',true);
+                else
+                    player.anims.play('movew_1',true);
             }else if((animate_f/animate_tick)%4==1){
-                player.anims.play('left',true);
+                if(player.pick!=null)
+                    player.anims.play('pick_0',true);
+                else
+                    player.anims.play('left',true);
             }else if((animate_f/animate_tick)%4==2){
-                player.anims.play('movew_2',true);
+                if(player.pick!=null)
+                    player.anims.play('pick_2',true);
+                else
+                    player.anims.play('movew_2',true);
             }else if((animate_f/animate_tick)%4==3){
-                player.anims.play('left',true);
+                if(player.pick!=null)
+                    player.anims.play('pick_0',true);
+                else
+                    player.anims.play('left',true);
             }
         }else{
             switch(direction){
@@ -1342,11 +1384,17 @@ function update_stage5_take (){//與外界有關的互動
                     if((animate_f/animate_tick)%4==0){
                         player.anims.play('movew_1',true);
                     }else if((animate_f/animate_tick)%4==1){
-                        player.anims.play('left',true);
+                        if(player.pick!=null)
+                            player.anims.play('pick_0',true);
+                        else
+                            player.anims.play('left',true);
                     }else if((animate_f/animate_tick)%4==2){
                         player.anims.play('movew_2',true);
                     }else if((animate_f/animate_tick)%4==3){
-                        player.anims.play('left',true);
+                        if(player.pick!=null)
+                            player.anims.play('pick_0',true);
+                        else
+                            player.anims.play('left',true);
                     }
                     break;
                 case 2://下
@@ -1370,11 +1418,17 @@ function update_stage5_take (){//與外界有關的互動
                     if((animate_f/animate_tick)%4==0){
                         player.anims.play('movew_1',true);
                     }else if((animate_f/animate_tick)%4==1){
-                        player.anims.play('left',true);
+                        if(player.pick!=null)
+                            player.anims.play('pick_0',true);
+                        else
+                            player.anims.play('left',true);
                     }else if((animate_f/animate_tick)%4==2){
                         player.anims.play('movew_2',true);
                     }else if((animate_f/animate_tick)%4==3){
-                        player.anims.play('left',true);
+                        if(player.pick!=null)
+                            player.anims.play('pick_0',true);
+                        else
+                            player.anims.play('left',true);
                     }
                     break;
                 case 4://上
@@ -1398,13 +1452,19 @@ function update_stage5_take (){//與外界有關的互動
                         player.anims.play('back',true);
                     }else if(p_facing==3){
                         player.flipX = 0;
-                        player.anims.play('left',true);
+                        if(player.pick!=null)
+                            player.anims.play('pick_0',true);
+                        else
+                            player.anims.play('left',true);
                     }else if(p_facing==2){
                         player.flipX = 0;
                         player.anims.play('face',true);
                     }else if(p_facing==1){
                         player.flipX = -1;
-                        player.anims.play('left',true);
+                        if(player.pick!=null)
+                            player.anims.play('pick_0',true);
+                        else
+                            player.anims.play('left',true);
                     }animate_f=-1;
             }
         }
