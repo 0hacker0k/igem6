@@ -235,6 +235,20 @@ function create_stage1_pcr (){
         // end.alpha=alpha;
         // alpha+=0.01;
     }
+    //文字說明
+    TextBox_x=width*0.15;
+    TextBox_y=height*0.75;
+    var config =
+    {
+        wrapWidth: width*0.5,
+        fixedWidth: width*0.55,
+        fixedHeight: height*0.15,
+    };
+    //PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
+    Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
+    Sprite.start(lan_stage1_pcr.vo_1,50);
+    descript_count=2;
+    descript_limit=11;
     //back
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.on('pointerdown', function (){
@@ -248,5 +262,6 @@ function create_stage1_pcr (){
 }
 
 function update_stage1_pcr (){//與外界有關的互動
+    updateTalkbox(lan_stage1_pcr);
     // cursors = this.input.keyboard.createCursorKeys();
 }

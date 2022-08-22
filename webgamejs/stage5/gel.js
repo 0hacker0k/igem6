@@ -147,7 +147,7 @@ function create_stage5_take (){
     }
     //遊戲時間
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=5;
+    timer.time=150;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
     //remind: string to variable(en and zh-tw)
@@ -1297,6 +1297,23 @@ function create_stage5_take (){
         direction=0;
         direct.alpha = 0;
     }, this);
+    //文字說明
+    TextBox_x=width*0.15;
+    TextBox_y=height*0.75;
+    var config =
+    {
+        wrapWidth: width*0.5,
+        fixedWidth: width*0.55,
+        fixedHeight: height*0.15,
+    };
+    PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
+    Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
+    Sprite.depth=2000;
+    PACO.depth=1024;
+    PACO.setVisible(false).setInteractive(false);
+    Sprite.start(lan_stage2.vo_1,50);
+    descript_count=2;
+    descript_limit=13;
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.depth=1023;
@@ -1324,6 +1341,7 @@ function update_stage5_take (){//與外界有關的互動
     // console.log(this.cameras.main.scrollX,this.cameras.main.scrollY);
     spot.setVelocityX(0);
     spot.setVelocityY(0);
+    updateTalkbox(lan_stage2);
     if(stop==0 && player.stop==0){
         direct.x=player.x+point_x-width/2;
         direct.y=player.y+point_y-height/2;

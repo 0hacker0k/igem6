@@ -1,3 +1,8 @@
+var descript_count;//remind: set the limitation
+var descript_limit;
+var preisdone=0;
+var PACO;
+var Sprite;
 function load_talkbox(where){//載入動畫檔
     where.load.image('talkbox', 'img/main/green.png');
     where.load.image('nextPage', 'img/main/green.png');
@@ -64,7 +69,7 @@ function createTextBox (scene, x, y, config, npc_key) {
                     //最後一頁，字跑完，talkbox消失，遊戲開始
                     this.setVisible(false);
                     this.setInteractive(false);
-                    this.done=1;
+                    preisdone=1;
                     return;
                 }
                 this.typeNextPage();
@@ -88,6 +93,7 @@ function createTextBox (scene, x, y, config, npc_key) {
                 yoyo: false
             });
         }, textBox)
+    textBox.setDepth(1024);
     //textBox.setVisible(false);
     //.on('type', function () {
     //})
@@ -123,27 +129,23 @@ var getBBcodeText = function (scene, wrapWidth, fixedWidth, fixedHeight) {
         },
         maxLines: 3
     })
+
 }
-// function loading_transition (where,x,y){//載入黑畫面
-//     transition = where.physics.add.sprite(x, y, 'transition').setOrigin(0, 0).setDisplaySize(width*2.1,height*1.1);
-//     transition.depth = 1024;
-// }
-// function start_transition (where){//畫面漸亮
-//     transition.setVelocityX(-2500*width/800);
-//     function keep_move(){
-//         if(transition.x<-2.1*width){
-//             transition.setVelocityX(0);
-//         }else{
-//             anime=setTimeout(function(){
-//                 keep_move();
-//             },200);
-//         }
-            
-//     }keep_move();
-// }
-// function finish_transition (where,x,y){//畫面漸暗
-//     clearTimeout(anime);
-//     transition = where.physics.add.sprite(x, y, 'transition').setOrigin(0, 0).setDisplaySize(width*2.1,height*1.1);
-//     transition.depth = 1024;
-//     transition.setVelocityX(-2500*width/800);
-// }
+
+function updateTalkbox(lan){
+    if(descript_count<=descript_limit){
+        if(preisdone){
+            if(lan["pa_"+descript_count.toString()]!=undefined){
+                PACO.setInteractive().setVisible(true);
+                PACO.start(lan["pa_"+descript_count.toString()] ,50);
+                descript_count++;
+            }else if(lan["vo_"+descript_count.toString()]!=undefined){
+                Sprite.setInteractive().setVisible(true);
+                Sprite.start(lan["vo_"+descript_count.toString()],50);
+                descript_count++;
+            }
+            preisdone=0;
+        }
+    }  
+}
+
