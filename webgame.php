@@ -3,7 +3,6 @@
 <head>
     <?php include "sub/config.php"?>
     <?php include "sub/head.php"?>
-    <?php include "sub/gamehead.php"?>
     <meta charset="UTF-8" />
     <title>igem6 web game</title>
     <!-- <script src="phaser-3.55.2/dist/phaser.js"></script> -->
@@ -38,6 +37,7 @@
             close_header();
         },500);
     </script>
+    <?php include "sub/gamehead.php"?>
 <!-- <button onclick="load()">123123132</button> -->
 </body>
 </html>

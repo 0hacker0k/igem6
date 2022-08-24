@@ -2,8 +2,8 @@ var desk_what = [
             ['TAE','agarose','marker','sample','','','tank','','',''],
             ['','','','','','','','','','uv'],
             ['','','','','','','','','','gel_machine'],
-            ['','','','','pipette','beaker','beaker','','',''],
-            ['','','','','','','','','',''],
+            ['mod','','','','pipette','beaker','beaker','','',''],
+            ['mod','','','','','','','','',''],
             ['','','','','','','','','',''],
             ['','','microwave','microwave','','','trashcan','','','']];
 //  
@@ -148,7 +148,7 @@ function create_stage5_take (){
     }
     //遊戲時間
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=150;
+    timer.time=5;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
     //remind: string to variable(en and zh-tw)
@@ -556,6 +556,8 @@ function create_stage5_take (){
                 }else if((desk_entity.item.type=="sample" || desk_entity.item.type=="marker") && p.pick.type=="pipette"){
                     pipette_suction(p.pick, desk_entity.item);
                 }else if(desk_entity.item.type=="gel" && p.pick.type=="pipette" && p.pick.take!=""){
+                    // pipette_spit(p, p.pick, desk_entity.item);
+                }else if(desk_entity.item.type=="tank" && p.pick.type=="pipette" && p.pick.take!=""){
                     pipette_spit(p, p.pick, desk_entity.item);
                 }else if(desk_entity.item.type=="beaker" || desk_entity.item.type=="pipette" || desk_entity.item.type=="gel"){
                     swap_item(p, desk_entity);
@@ -574,7 +576,8 @@ function create_stage5_take (){
                 }else if(desk_entity.item.type=="mod"){
                     mod_out(p, desk_entity.item);
                 }else if(desk_entity.item.type=="tank"){
-                    tank_out(p, desk_entity.item);
+                    tank_run(p, desk_entity.item);
+                    // tank_out(p, desk_entity.item);
                 }
             }
         }else{//desk has nothing
@@ -781,6 +784,23 @@ function create_stage5_take (){
             tank.item.x=tank.x;
             tank.item.y=tank.y;
             tank.item.alpha=0;
+        }change_tank_skin(tank);
+    }
+    function tank_out(p, tank){
+        if(tank.item!="" && tank.item!=null){
+            p.pick=tank.item;
+            tank.item=null;
+            p.pick.alpha=1;
+            //remind: gel score should be add by gel.run_time when it commit.
+            p.pick.qte_bar.alpha=0;
+            p.pick.qte_half.alpha=0;
+            p.pick.qte_perfect.alpha=0;
+            p.pick.qte_pointer.alpha=0;
+            change_tank_skin(tank);
+        }
+    }
+    function tank_run(p, tank){
+        if(tank.item!=null && tank.has_TAE==1 && tank.item.onuse==0){
             tank.item.onuse=1;
             var qte_half=0.55*tank.item.qte_bar.width;
             var qte_perfect=0.67*tank.item.qte_bar.width;
@@ -800,23 +820,14 @@ function create_stage5_take (){
             tank.item.qte_pointer.x=tank.item.qte_bar.x+tank.item.qte_bar.width*tank.item.run_time*0.01;
             tank.item.qte_pointer.y=tank.item.y-height*0.07;
             tank.item.qte_pointer.alpha=1;
-            change_tank_skin(tank);
-            setTimeout(function(){
-                gel_run_time(tank, tank.item.qte_pointer.x);
-            },100);
-        }
-    }
-    function tank_out(p, tank){
-        if(tank.item!="" && tank.item!=null){
-            p.pick=tank.item;
-            tank.item=null;
-            p.pick.alpha=1;
-            //remind: gel score should be add by gel.run_time when it commit.
-            p.pick.qte_bar.alpha=0;
-            p.pick.qte_half.alpha=0;
-            p.pick.qte_perfect.alpha=0;
-            p.pick.qte_pointer.alpha=0;
-            change_tank_skin(tank);
+            if(tank.item.marker+tank.item.sample>0){
+                setTimeout(function(){
+                    gel_run_time(tank, tank.item.qte_pointer.x);
+                },100);
+            }
+        }else{
+            tank.item.onuse=0;
+            tank_out(p, tank);
         }
     }
     function gel_run_time(tank, locate){
@@ -857,10 +868,7 @@ function create_stage5_take (){
             tank.has_TAE=0;
             tank.TAE_concentration=0;
             p.pick.c=4;
-            
-            
             tank.alert.alpha=0;
-            // tank.alert.setTint(0x000000);
             change_skin_beaker(p.pick);
             change_tank_skin(tank);
         }
@@ -910,7 +918,10 @@ function create_stage5_take (){
             //remind: pipe skin
         }
     }
-    function pipette_spit(p, pipette, gel){
+    function pipette_spit(p, pipette, tank){
+        if(tank.has_TAE==0)return;
+        if(tank.item.type!="gel")return;
+        gel=tank.item;
         if(gel.onuse==0 && pipette.take!="" && gel.sample+gel.marker<2){
             gel.onuse=1;
             p.stop=1;
@@ -1073,7 +1084,9 @@ function create_stage5_take (){
         p.pick=null;
     }
     function time_count_down(timer){
-        timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
+        var time_now=Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+(timer.time%60);
+        if(timer.scene!=undefined)
+            timer.setText(time_now);
         if(timer.time==0){
             game_over();
             return ;
@@ -1133,9 +1146,11 @@ function create_stage5_take (){
                 }if(player.pick.qte_perfect!=null){
                     player.pick.qte_perfect.destroy();
                 }player.pick.destroy();
-            }player.destroy();
-            spot.destroy();
-            spot_touch.destroy();
+            }
+            player.alpha=0;
+            // player.destroy();
+        //     spot.destroy();
+        //     spot_touch.destroy();
         }
     }
     //+幾分
@@ -1165,34 +1180,28 @@ function create_stage5_take (){
                     
                 }
                 count+=1;
-                if(count==list_len+1){//跑完
-                    console.log("hihi");
-                    act==1;
+                act=1;
+                setTimeout(function(){
+                    gel_stop(gel_list,list_len,count);
+                    act=0;
+                },1000);
+                for(var i=0;i<list_len;i++){
+                    gel_list[i].setVelocityX(-0.35*width);
+                }
+                //plus_score跳出
+                plus_score.alpha=1;
+                plus_score.setText('+'+tar_score.toString());
+                text_fade_out(plus_score);
+                //plus_score.setVelocityY(-0.2*height);
+                if(count==list_len){//跑完
                     setTimeout(function(){//轉回map_1
                         finish_transition(this,width,0);
                         setTimeout(function(){
                             load_page(map_1);
                         },500);
                     },1000);
-                    for(var i=0;i<list_len;i++){
-                        gel_list[i].setVelocityX(-0.35*width);
-                    }
-                }else{
-                    act=1;
-                    setTimeout(function(){
-                        gel_stop(gel_list,list_len,count);
-                        act=0;
-                    },1000);
-                    for(var i=0;i<list_len;i++){
-                        gel_list[i].setVelocityX(-0.35*width);
-                    }
-                    //plus_score跳出
-                    plus_score.alpha=1;
-                    plus_score.setText('+'+tar_score.toString());
-                    text_fade_out(plus_score);
-                    //plus_score.setVelocityY(-0.2*height);
-                    
                 }
+                
             }
             
         }, this);
@@ -1344,8 +1353,11 @@ var s5_run_speed=400;
 function update_stage5_take (){//與外界有關的互動
     cursors = this.input.keyboard.createCursorKeys();
     // console.log(this.cameras.main.scrollX,this.cameras.main.scrollY);
-    spot.setVelocityX(0);
-    spot.setVelocityY(0);
+    if(spot!=undefined){
+        spot.setVelocityX(0);
+        spot.setVelocityY(0);
+    }
+    
     updateTalkbox(lan_stage2);
     if(stop==0 && player.stop==0){
         direct.x=player.x+point_x-width/2;
@@ -1522,6 +1534,7 @@ function update_stage5_take (){//與外界有關的互動
                     }animate_f=-1;
             }
         }
+        
     }
     animate_f++;
     if(animate_f>10000000)animate_f=0;

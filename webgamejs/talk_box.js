@@ -5,6 +5,7 @@ var PACO;
 var Sprite;
 var barrier=null;
 function load_talkbox(where){//載入動畫檔
+    barrier=null;
     where.load.image('talkbox', 'img/main/green.png');
     where.load.image('nextPage', 'img/main/green.png');
     where.load.scenePlugin({

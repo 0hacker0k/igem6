@@ -16,7 +16,7 @@ var stop=0;
 var point_x,point_y;
 var direction;
 function create (){
-    loading_transition(this,this.cameras.main.scrollX+(-0.3)*width,this.cameras.main.scrollY+(0.26)*height);
+    loading_transition(this,this.cameras.main.scrollX+(-0.3)*width,this.cameras.main.scrollY+(0.5)*height);
     //--------------------場景設定--------------------
     background=this.add.tileSprite(0, 0, 0,0, 'background').setOrigin(0, 0).setDisplaySize(width*2,height*2);//setScale: { x: 1, y: 2, stepY: 0.1 }
     platforms = this.physics.add.staticGroup();//分為靜態與動態，靜態的只有大小與位置，動態的有速度、加速度、反彈、碰撞。
