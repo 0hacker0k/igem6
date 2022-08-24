@@ -3,6 +3,7 @@ var descript_limit;
 var preisdone=0;
 var PACO;
 var Sprite;
+var barrier=null;
 function load_talkbox(where){//載入動畫檔
     where.load.image('talkbox', 'img/main/green.png');
     where.load.image('nextPage', 'img/main/green.png');
@@ -54,12 +55,13 @@ function createTextBox (scene, x, y, config, npc_key) {
         })
         .setOrigin(0)
         .layout();
-        
-    var barrier=scene.physics.add.sprite(0, 0, "green").setDisplaySize(width,height).setOrigin(0,0).refreshBody();
-    barrier.depth=1023;
-    barrier.alpha=0.0000001;
-    barrier.setInteractive();
-
+        if(barrier==null){
+            barrier=scene.physics.add.sprite(0, 0, "green").setDisplaySize(width,height).setOrigin(0,0).refreshBody();
+            barrier.depth=1023;
+            barrier.alpha=0.0000001;
+            barrier.setInteractive();
+            if(stop!=undefined)stop=1;
+        }
     textBox
         .setInteractive()
         .on('pointerdown', function () {
@@ -70,16 +72,19 @@ function createTextBox (scene, x, y, config, npc_key) {
                 this.stop(true);
             } else {
                 if(this.isLastPage){
-                    //最後一頁，字跑完，talkbox消失，遊戲開始
-                    barrier.setVisible(false);
                     this.setVisible(false);
                     this.setInteractive(false);
                     preisdone=1;
+                    if(descript_count>descript_limit){
+                        barrier.setVisible(false);
+                        barrier.setInteractive(false);
+                        console.log(barrier);
+                        if(stop!=undefined)stop=0;
+                    }
                     return;
                 }
                 this.typeNextPage();
             }
-            
         }, textBox)
         .on('pageend', function () {
             // if (this.isLastPage) {
