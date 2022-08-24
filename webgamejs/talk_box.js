@@ -76,9 +76,8 @@ function createTextBox (scene, x, y, config, npc_key) {
                     this.setInteractive(false);
                     preisdone=1;
                     if(descript_count>descript_limit){
-                        barrier.setVisible(false);
-                        barrier.setInteractive(false);
-                        console.log(barrier);
+                        barrier.destroy();
+                        barrier=null;
                         if(stop!=undefined)stop=0;
                     }
                     return;

@@ -191,7 +191,9 @@ function create_stage2_flop (){
     var time_text=this.add.text(width*0.70, height*0.05, '00:00', { fontFamily: 'fantasy', fontSize: (width*0.07).toString()+'px', fill: '#111111' });
     var time_clock;
     function time_count(){
-        count_time+=1;
+        if(stop==0){
+            count_time+=1;
+        }
         time_text.setText((count_time>=600?'':'0')+((Math.floor(count_time/60)).toString())+':'+((count_time%60)>=10?'':'0')+((Math.floor(count_time%60)).toString()));
         time_clock=setTimeout(function(){
             time_count();

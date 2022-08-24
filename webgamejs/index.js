@@ -13,6 +13,7 @@ const rexUI_path = "./webgamejs/rexUI.min.js";
 var COLOR_PRIMARY;
 var COLOR_LIGHT;
 var COLOR_DARK;
+var stop=0;
 var debug=1; //if in debug mod it will be set to 1
 var anime; //It is settimeout return value in anime
 var stop=0; //whether should stop the role
@@ -171,7 +172,7 @@ function load_page(page){
             default: 'arcade',
             arcade: {
                 gravity: { y: 0 },
-                debug: false
+                debug: true
             }
         },
         scene: page

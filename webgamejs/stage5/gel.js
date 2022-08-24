@@ -2,8 +2,8 @@ var desk_what = [
             ['TAE','agarose','marker','sample','','','tank','','',''],
             ['','','','','','','','','','uv'],
             ['','','','','','','','','','gel_machine'],
-            ['mod','','','','pipette','beaker','beaker','','',''],
-            ['mod','','','','','','','','',''],
+            ['','','','','pipette','beaker','beaker','','',''],
+            ['','','','','','','','','',''],
             ['','','','','','','','','',''],
             ['','','microwave','microwave','','','trashcan','','','']];
 //  
@@ -12,7 +12,7 @@ var desk_pos = [
                 [1,1,1,1,1,1,1,0,0,0],
                 [0,0,0,0,0,0,0,0,0,1],
                 [0,0,0,0,0,0,0,0,0,1],
-                [1,0,0,1,1,1,1,0,0,0],
+                [1,0,0,0,1,1,1,0,0,0],
                 [1,0,0,0,0,0,0,0,0,1],
                 [1,0,0,0,0,0,0,0,0,1],
                 [1,1,1,1,1,1,1,0,0,1]
@@ -96,7 +96,6 @@ var player;
 var keySpace;
 var spot,spot_touch;
 var p_facing=2;
-var stop=0;
 var point_x,point_y;
 function create_stage5_take (){
     //轉場設定
@@ -109,7 +108,7 @@ function create_stage5_take (){
     this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
 
     //人物、camera
-    player = this.physics.add.sprite(width*0.45, height*0.3, PLAYER_KEY);//this.centerX
+    player = this.physics.add.sprite(width*0.45, height*0.35, PLAYER_KEY);//this.centerX
     player.body.fixedRotation = true;
     player.setDisplaySize(player.width/10,player.height/10).setOrigin(0.5,0.9).refreshBody();
     this.physics.world.bounds.width=width;
@@ -131,11 +130,13 @@ function create_stage5_take (){
         desk[i] = new Array();
         for(var j=0;j<10;j++){
             if(desk_pos[i][j]){
-                desk[i][j] = deskGroup.create(j*width*0.1+width*0.05,i*height*0.12+height*0.22,'desk');
+                desk[i][j] = deskGroup.create((j+0.0 )*width*0.1+width*0.05,i*height*0.12+height*0.22,'desk');
                 desk[i][j].x+=0;
                 desk[i][j].y-=height*0.015;
-                desk[i][j].refreshBody();
-                desk[i][j].setBodySize(width*0.1,height*0.09,true);
+                // desk[i][j].refreshBody();
+                desk[i][j].x-=0.0005;
+                desk[i][j].setBodySize(width*0.099,height*0.12,true);
+                desk[i][j].x+=0.0005;
                 desk[i][j].y-=height*0.015;
                 desk[i][j].setDisplaySize(width*0.1,height*0.18,true);
                 desk[i][j].i=i;
@@ -520,8 +521,8 @@ function create_stage5_take (){
         }else if(what=="sample" || what=="marker"){
             Object = cant_move_item.create(x, y, what).setDisplaySize(width*0.1/6,height*0.17/3).refreshBody();
         }else{
-            Object = where.physics.add.sprite(x, y, what).setDisplaySize(width*0.1/2,height*0.17/2);
-            Object.setInteractive().setBodySize(Object.width,Object.height);
+            Object = where.physics.add.sprite(x, y, what).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
+            Object.setInteractive();
         }
         Object.type=what;
         return Object;
@@ -1077,7 +1078,9 @@ function create_stage5_take (){
             game_over();
             return ;
         }
-        timer.time-=1;
+        if(stop==0){
+            timer.time-=1;
+        }
         setTimeout(function(){
             time_count_down(timer);
         },1000);
@@ -1131,6 +1134,8 @@ function create_stage5_take (){
                     player.pick.qte_perfect.destroy();
                 }player.pick.destroy();
             }player.destroy();
+            spot.destroy();
+            spot_touch.destroy();
         }
     }
     //+幾分
