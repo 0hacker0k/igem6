@@ -54,7 +54,11 @@ function createTextBox (scene, x, y, config, npc_key) {
         })
         .setOrigin(0)
         .layout();
-    
+        
+    var barrier=scene.physics.add.sprite(0, 0, "green").setDisplaySize(width,height).setOrigin(0,0).refreshBody();
+    barrier.depth=1023;
+    barrier.alpha=0.0000001;
+    barrier.setInteractive();
 
     textBox
         .setInteractive()
@@ -67,6 +71,7 @@ function createTextBox (scene, x, y, config, npc_key) {
             } else {
                 if(this.isLastPage){
                     //最後一頁，字跑完，talkbox消失，遊戲開始
+                    barrier.setVisible(false);
                     this.setVisible(false);
                     this.setInteractive(false);
                     preisdone=1;
@@ -92,8 +97,11 @@ function createTextBox (scene, x, y, config, npc_key) {
                 repeat: 0, // -1: infinity
                 yoyo: false
             });
-        }, textBox)
+        }, textBox);
     textBox.setDepth(1024);
+    // .on('pointerdown', function (pointer) {
+    //     alert("QAQ");
+    // }, scene);
     //textBox.setVisible(false);
     //.on('type', function () {
     //})

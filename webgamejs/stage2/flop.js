@@ -235,6 +235,7 @@ function create_stage2_flop (){
     });
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
+    back.depth=1024;
     back.on('pointerdown', function (){
         finish_transition(this,width,0);
         setTimeout(function(){
