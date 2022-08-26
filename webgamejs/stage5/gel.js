@@ -150,7 +150,7 @@ function create_stage5_take (){
                     desk_entity.setBodySize(width*0.1,height*0.12*k,true);
                     desk_entity.y-=height*0.03-height*0.12*(k-1)/2;
                     desk_entity.setDisplaySize(width*0.1,height*0.18,true);
-                    desk_entity.alpha=0.1;
+                    desk_entity.alpha=0.0001;
                 }
             }
             
@@ -158,7 +158,7 @@ function create_stage5_take (){
     }
     //遊戲時間
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=1500;
+    timer.time=60;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
     //remind: string to variable(en and zh-tw)
@@ -491,7 +491,6 @@ function create_stage5_take (){
                     desk[i][j].item.alert.depth=100;
                 }else if(desk_what[i][j]=="pipette"){
                     desk[i][j].item.take="";
-                    desk[i][j].item.score=0;
                     desk[i][j].item.setDisplaySize(width*0.015,width*0.06).refreshBody();
                     desk[i][j].item.setAngle(45);
                 }else if(desk_what[i][j]=="tank"){
@@ -689,8 +688,9 @@ function create_stage5_take (){
             microwave.item=null;
             a_player.pick.alpha=1;
             microwave.anims.play("mw_d");
-            if(a_player.pick.ok==1)
-                a_player.pick.score+=(microwave.time>-4)?100:100-(microwave.time+3)*20;
+            if(a_player.pick.ok==1){
+                a_player.pick.score+=(microwave.time>-4)?100:100+(3+microwave.time)*15;
+            } 
             microwave.time=-12;
             microwave.alert.alpha=0;
         }
@@ -743,7 +743,7 @@ function create_stage5_take (){
         if(mod.item==null){
             if(beaker.ok==1){
                 mod.anims.play("mod_w");
-                mod.item=create_gel(mod.x,mod.y,beaker.score);
+                mod.item=create_gel(mod.x,mod.y,0,beaker.score);
                 mod.time=9;
                 if(beaker.c%2==0){
                     beaker.TAE-=1;
@@ -767,6 +767,8 @@ function create_stage5_take (){
             a_player.pick=mod.item;
             mod.item=null;
             a_player.pick.alpha=1;
+            if(a_player.pick.ok==1)
+                a_player.pick.mod_score+=(mod.time>-4)?100:100+(mod.time+3)*15;
             mod.time=-12;
             mod.alert.alpha=0;
             mod.anims.play("mod_n");
@@ -787,6 +789,7 @@ function create_stage5_take (){
             warning(3,0,mod.alert,1,0);
         }else if(mod.time==-12){
             mod.item.ok=0;
+            mod.item.setTint(0xaaaaaa);
             warning(20,0,mod.alert,1,0);
             //remind: change gel skin
             // mod.item.anims.play("");
@@ -811,7 +814,12 @@ function create_stage5_take (){
             p.pick=tank.item;
             tank.item=null;
             p.pick.alpha=1;
-            //remind: gel score should be add by gel.run_time when it commit.
+            if(p.pick.run_time>=55 && p.pick.run_time<=95)
+                p.pick.run_score+=50;
+            if(p.pick.run_time>=67 && p.pick.run_time<=82)
+                p.pick.run_score+=50;
+            if(p.pick.run_time>=100)
+                p.pick.run_score=-1;
             p.pick.qte_bar.alpha=0;
             p.pick.qte_half.alpha=0;
             p.pick.qte_perfect.alpha=0;
@@ -859,7 +867,7 @@ function create_stage5_take (){
             if(tank.TAE_concentration>0){
                 tank.TAE_concentration-=1;
             }
-            tank.item.quality-=(1000-tank.TAE_concentration)/100;
+            tank.item.TAE_score+=(tank.TAE_concentration)/500;
             tank.item.run_time+=1;
             locate+=tank.item.qte_bar.width*0.01;
             tank.item.qte_pointer.x=locate;
@@ -915,6 +923,10 @@ function create_stage5_take (){
                 if(p.pick.type=="beaker"){
                     beaker_zero(p.pick);
                 }else if(p.pick.type=="gel"){
+                    p.pick.qte_bar.destroy();
+                    p.pick.qte_half.destroy();
+                    p.pick.qte_perfect.destroy();
+                    p.pick.qte_pointer.destroy();
                     p.pick.destroy();
                     p.pick=null;
                 }else if(p.pick.type=="pipette"){
@@ -941,6 +953,7 @@ function create_stage5_take (){
     function pipette_spit(p, pipette, tank){
         if(tank.has_TAE==0)return;
         if(tank.item.type!="gel")return;
+        if(tank.item.run_time!=0)return;
         gel=tank.item;
         if(gel.onuse==0 && pipette.take!="" && gel.sample+gel.marker<2){
             gel.onuse=1;
@@ -971,13 +984,23 @@ function create_stage5_take (){
     function qte_pointer_move(p, gel, d, locate){
         if(keySpace.isDown){
             p.stop=0;
+            if(p.pick.take=="marker")
+                gel.marker_score+=20;
+            else if(p.pick.take=="sample")
+                gel.sample_score+=20;
             //QTE not so perfect
             if(gel.qte_pointer.x>=gel.qte_half.x && gel.qte_pointer.x<=gel.qte_half.x+gel.qte_bar.width*0.4){
-                gel.score+=50;
+                if(p.pick.take=="marker")
+                    gel.marker_score+=40;
+                else if(p.pick.take=="sample")
+                    gel.sample_score+=40;
             }
             //QTE perfect
             if(gel.qte_pointer.x>=gel.qte_perfect.x && gel.qte_pointer.x<=gel.qte_perfect.x+gel.qte_bar.width*0.15){
-                gel.score+=50;
+                if(p.pick.take=="marker")
+                    gel.marker_score+=40;
+                else if(p.pick.take=="sample")
+                    gel.sample_score+=40;
             }
             if(p.pick.take=="sample"){
                 gel.sample+=1;
@@ -985,7 +1008,6 @@ function create_stage5_take (){
                 gel.marker+=1;
             }
             change_skin_gel(gel);
-            //remind: change gel skin
             if(gel.marker+gel.sample==2){
                 gel.ok=1;
             }
@@ -999,7 +1021,6 @@ function create_stage5_take (){
             setTimeout(function(){
                 gel_fade_out(gel);
             },300);
-            console.log(gel.score);
             return ;
         }
         locate+=d*gel.qte_bar.width*0.0125;
@@ -1101,6 +1122,10 @@ function create_stage5_take (){
     function gel_submit(p, item){
         gel_list.push(p.pick);
         p.pick.alpha=0;
+        p.pick.qte_bar.destroy();
+        p.pick.qte_half.destroy();
+        p.pick.qte_perfect.destroy();
+        p.pick.qte_pointer.destroy();
         p.pick=null;
     }
     function time_count_down(timer){
@@ -1136,7 +1161,6 @@ function create_stage5_take (){
         lighting_gel(gel_list);
         start_transition(where);
     }
-
     function free_desk(desk){
         if(desk!=null){
             if(desk.item!=null){
@@ -1187,8 +1211,8 @@ function create_stage5_take (){
             gel_list[i].x=width*0.5+width*0.35*i;
             gel_list[i].y=height*0.5;
             gel_list[i].alpha=1;
+            gel_stop(gel_list,list_len,0);
         }
-        //-- --
         var count=0;
         var act=0;
         where.input.on('pointerup', function (pointer) {
@@ -1197,7 +1221,6 @@ function create_stage5_take (){
                     var tar_score = gel_list[count].score;
                     score+=tar_score;
                     score_text.setText(score.toString());
-                    
                 }
                 count+=1;
                 act=1;
@@ -1212,7 +1235,6 @@ function create_stage5_take (){
                 plus_score.alpha=1;
                 plus_score.setText('+'+tar_score.toString());
                 text_fade_out(plus_score);
-                //plus_score.setVelocityY(-0.2*height);
                 if(count==list_len){//跑完
                     setTimeout(function(){//轉回map_1
                         finish_transition(this,width,0);
@@ -1221,13 +1243,11 @@ function create_stage5_take (){
                         },500);
                     },1000);
                 }
-                
             }
-            
         }, this);
     }
     function text_fade_out(text){
-        text.alpha-=0.1;
+        text.alpha-=0.05;
         text.y=text.y-1.5;
         if(text.alpha<=0)return ;
         setTimeout(function(){
@@ -1239,19 +1259,56 @@ function create_stage5_take (){
             gel_list[i].setVelocityX(0);
             gel_list[i].x=width*0.5+width*0.35*(i-count);
         }
-        //Tino
+        var temp=gel_list[count];
+        if(temp.score==0){
+            temp.score+=temp.microwave_score+temp.mod_score+temp.sample_score;
+            temp.score+=temp.marker_score+temp.TAE_score+temp.run_score;
+        }
+        console.log("score:"+temp.score);
+        console.log("microwave:"+temp.microwave_score);
+        console.log("mod:"+temp.mod_score);
+        console.log("sample:"+temp.sample_score);
+        console.log("marker:"+temp.marker_score);
+        console.log("TAE:"+temp.TAE_score);
+        console.log("run:"+temp.run_score);
+        if(temp.run_score==0){
+            ending_text.setText("The time of electrophoresis is not enough.");
+        }else if(temp.run_score==-1){
+            ending_text.setText("The time of electrophoresis is too long.");
+        }else if(temp.marker_score<=20){
+            ending_text.setText("The marker of gel is crooked.");
+        }else if(temp.sample_score<=20){
+            ending_text.setText("The sample of gel is crooked.");
+        }else if(temp.mod_score<=30 || temp.microwave_score<=30){
+            ending_text.setText("The gel has been left in the air for too long.");
+        }else if(temp.TAE_score<=30){
+            ending_text.setText("The TAE concentration of electrophoresis is too low.");
+        }else if(temp.score<=300){
+            ending_text.setText("Well... It's ok...");
+        }else if(temp.score<=400){
+            ending_text.setText("Actually, not bad.");
+        }else if(temp.score<=500){
+            ending_text.setText("It's a excellent gel graph.");
+        }else if(temp.score<=600){
+            ending_text.setText("What a amazing gel graph.");
+        }
     }
     
-    function create_gel(x,y,score){
+    function create_gel(x,y,score=0,microwave_score=0,mod_score=0,sample_score=0,marker_score=0,TAE_score=0,run_score=0){
         var temp;
         temp=createObject(x, y, "gel",where).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
         temp.score=score;
+        temp.microwave_score=microwave_score;
+        temp.mod_score=mod_score;
+        temp.sample_score=sample_score;
+        temp.marker_score=marker_score;
+        temp.TAE_score=TAE_score;
+        temp.run_score=run_score;
         temp.alpha=0;
         temp.ok=0;
         temp.onuse=0;
         temp.run_time=0;
         temp.type="gel";
-        temp.quality=4000;
         temp.sample=0;
         temp.marker=0;
         temp.qte_bar=cant_move_item.create(x, y, "qte_bar").setDisplaySize(width*0.1*2,width*0.1/12*2).setOrigin(0,0.5).refreshBody();
@@ -1273,21 +1330,22 @@ function create_stage5_take (){
     }
     //test-結算膠
     var test;
-    test=create_gel(0,0,100);
+    // score,microwave_score,mod_score,sample_score,marker_score,TAE_score,run_score
+    test=create_gel(0,0,0,50,50,50,50,50,50);
     test.sample=1;
     change_skin_gel(test);
     gel_list.push(test);
 
-    test=create_gel(0,0,2000);
-    test.marker=1;
-    change_skin_gel(test);
-    gel_list.push(test);
+    // test=create_gel(0,0,0,100,100,50,50,50,20);
+    // test.marker=1;
+    // change_skin_gel(test);
+    // gel_list.push(test);
 
-    test=create_gel(0,0,30);
-    test.sample=1;
-    test.marker=1;
-    change_skin_gel(test);
-    gel_list.push(test);
+    // test=create_gel(0,0,0,100,100,50,50,50,100);
+    // test.sample=1;
+    // test.marker=1;
+    // change_skin_gel(test);
+    // gel_list.push(test);
 
 
     var x,y,status=0;
