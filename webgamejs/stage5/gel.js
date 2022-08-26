@@ -4,7 +4,7 @@ var desk_what = [
             ['','','','','','','','','','gel_machine'],
             ['mod','','','','pipette','beaker','beaker','','',''],
             ['mod','','','','','','','','',''],
-            ['','','','','','','','','',''],
+            ['','','','','','','','','','note'],
             ['','','microwave','microwave','','','trashcan','','','']];
 //  
 //桌子 7X8
@@ -50,6 +50,7 @@ function preload_stage5_take(){
     this.load.image("qte_bar",'img/stage5/qte_bar.png');
     this.load.image("gel_machine",'img/stage5/gel_machine.png');
     this.load.image("uv",'img/stage5/uv.png');
+    this.load.image("note",'img/stage5/note.png');
     // this.load.image("gel",'img/stage5/gel.png');
     //remind: change gel photo:DONE
     this.load.spritesheet('mod',
@@ -101,6 +102,7 @@ function create_stage5_take (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
     var deskGroup = this.physics.add.staticGroup();
+    var deskGroup_touch = this.physics.add.staticGroup();
     var cant_move_item = this.physics.add.staticGroup();
     var gel_list=[];
     //--------------------場景設定--------------------
@@ -130,25 +132,33 @@ function create_stage5_take (){
         desk[i] = new Array();
         for(var j=0;j<10;j++){
             if(desk_pos[i][j]){
-                desk[i][j] = deskGroup.create((j+0.0 )*width*0.1+width*0.05,i*height*0.12+height*0.22,'desk');
-                desk[i][j].x+=0;
-                desk[i][j].y-=height*0.015;
-                // desk[i][j].refreshBody();
-                desk[i][j].x-=0.0005;
+                desk[i][j] = deskGroup_touch.create(j*width*0.1+width*0.05,i*height*0.12+height*0.22,'desk');
                 desk[i][j].setBodySize(width*0.099,height*0.12,true);
-                desk[i][j].x+=0.0005;
-                desk[i][j].y-=height*0.015;
+                desk[i][j].y-=height*0.03;
                 desk[i][j].setDisplaySize(width*0.1,height*0.18,true);
                 desk[i][j].i=i;
                 desk[i][j].j=j;
+                desk[i][j].id=10*i+j;
                 desk[i][j].depth=5+i*2;
+                var desk_entity;
+                if(i>=6 || !desk_pos[i+1][j]){
+                    var k=1;
+                    while(i>0 && desk_pos[i-k][j]){
+                        k++;
+                    }
+                    desk_entity = deskGroup.create(j*width*0.1+width*0.05,(i-(k-1)/2)*height*0.12+height*0.22,'desk');
+                    desk_entity.setBodySize(width*0.1,height*0.12*k,true);
+                    desk_entity.y-=height*0.03-height*0.12*(k-1)/2;
+                    desk_entity.setDisplaySize(width*0.1,height*0.18,true);
+                    desk_entity.alpha=0.1;
+                }
             }
             
         }
     }
     //遊戲時間
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=5;
+    timer.time=1500;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
     //remind: string to variable(en and zh-tw)
@@ -501,8 +511,8 @@ function create_stage5_take (){
             }
         }
     }
-    this.physics.add.overlap(spot_touch, deskGroup, touch_table, null, this);
-    this.physics.add.collider(spot, deskGroup, null, null, this);
+    this.physics.add.overlap(spot_touch, deskGroup_touch, touch_table, null, this);
+    this.physics.add.collider(spot, deskGroup, null, null, this);//統一
     this.physics.add.overlap(spot_touch, trashcan, trashing, null, this);
     this.physics.add.collider(spot, trashcan, null, null, this);
     this.physics.add.collider(spot, banner, null, null, this);
@@ -513,7 +523,7 @@ function create_stage5_take (){
             Object = where.physics.add.sprite(x, y, what).setDisplaySize(width*0.1/2,height*0.17/2);
             Object.setInteractive().setBodySize(Object.width,Object.height);
         }else if(what=="trashcan"){
-            Object = trashcan.create(x, y+width*0.02, what).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
+            Object = trashcan.create(x, y+width*0.04, what).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
         }else if(what=="uv"){
             Object = cant_move_item.create(x, y+width*0.02, what).setDisplaySize(width*0.1,height*0.3).refreshBody();
         }else if(what=="gel_machine"){
@@ -528,16 +538,26 @@ function create_stage5_take (){
         return Object;
     }
     var action_record=0;
+    var action_list=[];
     function touch_table(spot_touch, desk_entity){
         i=desk_entity.i;
         j=desk_entity.j;
         if(keySpace.isDown){
-            if(action_record==0){
-                action_record=1;
-                action_in_thing(spot_touch.player, desk_entity);
+            if(action_list.indexOf(desk_entity.id)==-1){
+                action_list[action_record]=desk_entity;
+                action_record++;
             }
         }else{
-            action_record=0;
+            if(action_record>0){
+                var final_desk=action_list[0];
+                for(var k=1;k<action_record;k++){
+                    if((action_list[k].x-spot_touch.x)*(action_list[k].x-spot_touch.x)+(action_list[k].y-spot_touch.y)*(action_list[k].y-spot_touch.y)<(final_desk.x-spot_touch.x)*(final_desk.x-spot_touch.x)+(final_desk.y-spot_touch.y)*(final_desk.y-spot_touch.y))
+                        final_desk=action_list[k];
+                }
+                action_in_thing(spot_touch.player, final_desk);
+                action_record=0;
+                action_list.length=0;
+            }
         }
         
     }
@@ -1549,7 +1569,8 @@ function update_stage5_take (){//與外界有關的互動
             case 1://右
                 player.pick.x=player.x+width*0.02;
                 player.pick.y=player.y-width*0.03;
-                player.pick.depth=player.depth-0.5;
+                // player.pick.depth=player.depth-0.5;
+                player.pick.depth=100;
                 if(player.pick.type=="pipette"){
                     player.pick.setAngle(0);
                     player.pick.setDisplaySize(width*0.01,width*0.04);
@@ -1558,7 +1579,8 @@ function update_stage5_take (){//與外界有關的互動
             case 2://下
                 player.pick.x=player.x;
                 player.pick.y=player.y-width*0.03;
-                player.pick.depth=player.depth+0.5;
+                // player.pick.depth=player.depth+0.5;
+                player.pick.depth=100;
                 if(player.pick.type=="pipette"){
                     player.pick.setAngle(45);
                     player.pick.setDisplaySize(width*0.01,width*0.04);
@@ -1567,7 +1589,8 @@ function update_stage5_take (){//與外界有關的互動
             case 3://左
                 player.pick.x=player.x-width*0.02;
                 player.pick.y=player.y-width*0.03;
-                player.pick.depth=player.depth-0.5;
+                // player.pick.depth=player.depth-0.5;
+                player.pick.depth=100;
                 if(player.pick.type=="pipette"){
                     player.pick.setAngle(0);
                     player.pick.setDisplaySize(width*0.01,width*0.04);
