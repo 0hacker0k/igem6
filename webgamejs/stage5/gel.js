@@ -3,7 +3,7 @@ var desk_what = [
             ['','','','','','','','','','uv'],
             ['','','','','','','','','','gel_machine'],
             ['mod','','','','pipette','beaker','beaker','','',''],
-            ['mod','','','','','','','','',''],
+            ['mod','','','','','','','','','machine'],
             ['','','','','','','','','','note'],
             ['','','microwave','microwave','','','trashcan','','','']];
 //  
@@ -51,6 +51,7 @@ function preload_stage5_take(){
     this.load.image("gel_machine",'img/stage5/gel_machine.png');
     this.load.image("uv",'img/stage5/uv.png');
     this.load.image("note",'img/stage5/note.png');
+    this.load.image("machine",'img/main/green.png');
     // this.load.image("gel",'img/stage5/gel.png');
     //remind: change gel photo:DONE
     this.load.spritesheet('mod',
@@ -1271,7 +1272,13 @@ function create_stage5_take (){
         console.log("marker:"+temp.marker_score);
         console.log("TAE:"+temp.TAE_score);
         console.log("run:"+temp.run_score);
-        if(temp.run_score==0){
+        if(temp.sample+temp.marker==0){
+            ending_text.setText("There are nothing in the gel...");
+        }else if(temp.sample<0){
+            ending_text.setText("You have no sample.");
+        }else if(temp.marker<0){
+            ending_text.setText("You have no marker.");
+        }else if(temp.run_score==0){
             ending_text.setText("The time of electrophoresis is not enough.");
         }else if(temp.run_score==-1){
             ending_text.setText("The time of electrophoresis is too long.");

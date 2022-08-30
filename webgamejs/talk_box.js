@@ -63,10 +63,14 @@ function createTextBox (scene, x, y, config, npc_key) {
             barrier.setInteractive();
             if(stop!=undefined)stop=1;
         }
+    var tween;
+    var now_y= textBox.getElement('action').y;
     textBox
         .setInteractive()
         .on('pointerdown', function () {
             var icon = this.getElement('action').setVisible(false);
+            if(tween!=undefined)
+                tween.stop();
             this.resetChildVisibleState(icon);
             if (this.isTyping) {
                 //show all text
@@ -93,8 +97,8 @@ function createTextBox (scene, x, y, config, npc_key) {
             
             var icon = this.getElement('action').setVisible(true);
             this.resetChildVisibleState(icon);
-            icon.y -= 30;
-            var tween = scene.tweens.add({
+            icon.y = now_y;
+            tween = scene.tweens.add({
                 targets: icon,
                 y: '+=30', // '+=100'
                 ease: 'Bounce', // 'Cubic', 'Elastic', 'Bounce', 'Back'
