@@ -155,12 +155,16 @@ function create (){
             var temp_y=(pointer.y-y);
             if(temp_x >= Math.abs(temp_y)){
                 direction=1;
+                p_facing=1;
             }else if(-temp_x > Math.abs(temp_y)){
-                direction=3
+                direction=3;
+                p_facing=3;
             }else if(temp_y > Math.abs(temp_x)){
                 direction=2;
+                p_facing=2;
             }else if(-temp_y > Math.abs(temp_x)){
                 direction=4;
+                p_facing=4;
             }
             // console.log(direction);
         }

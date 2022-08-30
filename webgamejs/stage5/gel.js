@@ -1274,14 +1274,18 @@ function create_stage5_take (){
         console.log("run:"+temp.run_score);
         if(temp.sample+temp.marker==0){
             ending_text.setText("There are nothing in the gel...");
-        }else if(temp.sample<0){
+            temp.score=0;
+        }else if(temp.sample<1){
             ending_text.setText("You have no sample.");
-        }else if(temp.marker<0){
+            temp.score=0;
+        }else if(temp.marker<1){
             ending_text.setText("You have no marker.");
+            temp.score=0;
         }else if(temp.run_score==0){
             ending_text.setText("The time of electrophoresis is not enough.");
         }else if(temp.run_score==-1){
             ending_text.setText("The time of electrophoresis is too long.");
+            temp.score=0;
         }else if(temp.marker_score<=20){
             ending_text.setText("The marker of gel is crooked.");
         }else if(temp.sample_score<=20){
