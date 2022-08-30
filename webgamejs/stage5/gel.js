@@ -1145,6 +1145,7 @@ function create_stage5_take (){
         },1000);
     }
     function game_over(){
+        if(this.create.name!="create_stage5_take")return ;
         stop=1;
         finish_transition(where,width,0);
         setTimeout(function(){
