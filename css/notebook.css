@@ -2,7 +2,6 @@ body{
     font-family: "Comic Sans MS";
 }
 
-
 .red_title{
     color:#EA2B1F;
     font-weight:bolder;
@@ -148,9 +147,6 @@ hr{
   justify-self: center;
   text-align: center;
 }
-
-
-
 .notebook{
     margin-top: 5%;
     width: 100%;
@@ -164,3 +160,83 @@ li{
     float:left;
 }
 
+h1:not(.red_title){
+    color:black;
+    font-size: 120px !important;
+    text-align: center;
+    text-shadow: 0.02em 0.02em #AAAAAA;
+    background-color: #fffff0;
+    font-family: "Lucida Handwriting";
+}
+
+.week{
+    display: flex;
+    /* align-self: left; */
+    width: 100%;
+    margin-top: 3%;
+}
+
+.week_content{
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    /* padding-top:5%;
+    padding-bottom: 5%; */
+    word-wrap:break-word;
+    position: relative;
+}
+/* 1 em=>vw*(1/60*100) in 60rem */
+.word_content{
+    font-size: 1.67vw;
+    word-wrap:break-word;
+    padding-left:5%;
+}
+
+.title_content{
+    font-size: 3.33vw;
+}
+
+.final_exam{
+    color:#EA2B1F;
+    font-size: 1.67vw;
+}
+
+.square{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:5% 5% 5% 5%;
+}
+.center_img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    object-position: center center;
+    overflow: hidden;
+}
+.slide{
+    top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-inner{
+    height: 100%;
+}
+.carousel-item{
+    height: 100%;
+}
+/* .carousel-item-next{
+    transform:translateX(100%) !important;
+    animation: change_img;
+    animation-duration: 0.61s;
+    animation-timing-function: ease-in-out;
+}
