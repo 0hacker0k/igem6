@@ -248,11 +248,14 @@ p{
     font-size: 1.5em;
     font-weight: 700;
     display: table;
+
+    background-size: 100% 100%;
+    background-position: left;
 }
 .job_title{
     width :100%;
     position: relative;
-    color:#d6d256;
+    color:#d9bf98;
     font-weight: 400;
     display: table;
 }
@@ -262,14 +265,14 @@ p{
     display: flex;
     text-align: left;
     font-size: 2em;
-    color:#2c90d7;
+    color:#004aad;
     font-weight: 700;
 }
 .title_explain{
     width :100%;
     border: #000000 0.2em solid;
     border-radius: 1.5em;
-    color:red;
+    color:#ff1616;
     padding: 0.5em 0.5em;
     font-size: 1.2em;
     margin-top: 5%;

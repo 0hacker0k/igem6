@@ -12,7 +12,7 @@
                         <div class="card_img_div">
                             <img class="card_img lazy" data-src="<?php echo $popup_img;?>" alt="<?php echo $popup_img_alt;?>">
                         </div>
-                        <div class="person_name">
+                        <div class="person_name" style="background-image: url('<?php echo imgfile;?>/highlight.png')">
                             <?php echo $name;?>
                         </div>
                         <div class="job_title">
