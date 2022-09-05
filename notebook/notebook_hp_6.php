@@ -28,9 +28,9 @@
                         <ul>
                             <li class="final_exam">Final exam</li>
                             <br>
-                            <li>Planning fundraising</li>
-                            <br>
                             <li>Refining the interview abstracts for iHP (toward doctors)</li>
+                            <br>
+                            <li>Planning fundraising</li>
                         </ul>
                         </div>
                     </div>
@@ -46,17 +46,17 @@
                         
                         <div class="word_content">
                         <ul>
-                            <li>Brainstorming for collaboration</li>
-                            <br>
                             <li>Designing the game of campus walking (stage 1 & 2)</li>
                             <br>
-                            <li>Making props for promotion video</li>
+                            <li>Brainstorming for collaboration</li>
                             <br>
-                            <li>Confirming our fundraising methods</li>
+                            <li>Designing the interview abstracts for iHP (toward pharmacists)</li>
                             <br>
                             <li>Finishing the illustration of social media & the comic of the promotion video</li>
                             <br>
-                            <li>Designing the interview abstracts for iHP (toward pharmacists)</li>
+                            <li>Making props for promotion video</li>
+                            <br>
+                            <li>Confirming our fundraising methods</li>                     
                         </ul>
                         </div>
                     </div>
@@ -70,17 +70,15 @@
                         
                         <div class="word_content">
                         <ul>
-                            <li>Designing our team logo</li>
+                            <li>Designing stage 4 of the web game</li>
                             <br>
                             <li>Designing the game of campus walking (stage 3 & 4) and confirming the route planning.</li>
                             <br>
+                            <li>Refining the interview abstracts for iHP (toward pharmacists)</li>
+                            <br>
                             <li>Revising the marketing questionnaire.</li>
-                            <br>
-                            <li>Refining the interview abstracts for iHP (toward pharmacists)</li>
-                            <br>
-                            <li>Refining the interview abstracts for iHP (toward pharmacists)</li>
-                            <br>
-                            <li>Designing stage 4 of the web game</li>
+                            <br>                            
+                            <li>Designing our team logo</li>
                         </ul>
                         </div>
                     </div>
