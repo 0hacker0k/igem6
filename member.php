@@ -37,7 +37,7 @@
                         <div class="a_group">
                             <div class="leaders_title" style="--id:1">
                                 <div class="member_portrait">
-                                    Leaders
+                                    Members
                                 </div>
                             </div>
                             <div class="leaders_person" style="--id:2">
