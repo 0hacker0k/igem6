@@ -23,15 +23,15 @@
                                 <ul>
                                     <li>Designing stage 1 of the web game</li>
                                     <br>
-                                    <li>Brainstorming activities to integrate our project with the society</li>
-                                    <br>
-                                    <li>Deciding the form of promotion video</li>
-                                    <br>
                                     <li>Proposing the campus walking project</li>
+                                    <br>
+                                    <li>Brainstorming activities to integrate our project with the society</li>
                                     <br>
                                     <li>Designing the IHP structure</li>
                                     <br>
                                     <li>Designing for the target group of the marketing survey</li>
+                                    <br>
+                                    <li>Deciding the form of promotion video</li>
                                 </ul>
                             </div>
                         </div>
@@ -48,9 +48,9 @@
                             <div class="word_content">
                                 <ul>
                                     <li>Designing stage 2 of the web game</li>
-                                    <li>Plotting the outline of the promotion video</li>
                                     <li>Completing the story outline of the web game</li>
                                     <li>Refining the IHP route</li>
+                                    <li>Plotting the outline of the promotion video</li>
                                 </ul>
                             </div>
                         </div>
@@ -97,10 +97,10 @@
                             <div class="word_content">
                                 <ul>
                                     <li>Designing stage 3 of the web game</li>
-                                    <li>Planning Open Lab and elementary, junior high school education</li>
-                                    <li>Starting to run the CCU_iGEM Instagram</li>
                                     <li>Preparing the initial proposal on campus walking</li>
+                                    <li>Planning Open Lab and elementary, junior high school education</li>
                                     <li>Looking for appropriate experts for consulting CVD project</li>
+                                    <li>Starting to run the CCU_iGEM Instagram</li>
                                 </ul>
                             </div>
                         </div>
