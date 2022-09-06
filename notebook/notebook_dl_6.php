@@ -5,13 +5,13 @@
                         <div class="square">
                             <?php
                                 $id=1;
-                                $img_count=1;
-                                $img_src[0]=imgfile."/notebook/dl_5.png";
-                                // $img_src[1]=imgfile."/human/6a.jpg";
+                                $img_count=2;
+                                $img_src[0]=imgfile."/notebook/dl_6_1.png";
+                                $img_src[1]=imgfile."/notebook/dl_6_2.png";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_alt[0]="";
+                                $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -23,11 +23,11 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Coding notebook page of wiki</li>
+                                    <li>Quantitative Agar Faucet: Brainstorming a better design for gel quantantification</li>
                                     <br>
-                                    <li>Completing stage 3 of the web game</li>
+                                    <li>Web game: Completing the stage 3</li>
                                     <br>
-                                    <li>Seeking a better design to quantify the amount of agar (Gel Maker)</li>                         
+                                    <li>Wiki: Coding notebook page</li>                       
                                 </ul>
                             </div>
                         </div>
@@ -45,9 +45,9 @@
                                 <ul>
                                     <li class="final_exam">Final exam</li>
                                     <br>
-                                    <li>Designing the 2.0 version of Gel Maker</li>
+                                    <li>Quantitative Agar Faucet: Designing the 2.0 version</li>
                                     <br>
-                                    <li>Developing software for remote control of the Automatic Gel Machine</li>
+                                    <li>Gel preparation Machine: Developing the software for the remote control</li>
                                 </ul>
                             </div>
                         </div>
@@ -56,13 +56,13 @@
                         <div class="square">
                             <?php
                                 $id=2;
-                                $img_count=1;
-                                $img_src[0]=imgfile."/notebook/dl_6.png";
-                                // $img_src[1]=imgfile."/human/6a.jpg";
-                                // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_count=2;
+                                $img_src[0]=imgfile."/notebook/dl_7_1.png";
+                                $img_src[1]=imgfile."/notebook/dl_7_2.png";
+                                // $img_src[2]=imgfile."/notebook/dl_7_3.png";
+                                $img_alt[0]="";
+                                $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -76,12 +76,12 @@
                             <?php
                                 $id=3;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/dl_7.png";
+                                $img_src[0]=imgfile."/notebook/dl_8_1.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_alt[0]="";
+                                // $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -93,13 +93,11 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Coding notebook page of wiki</li>
+                                    <li>Quantitative Agar Faucet: Designing the on-off switch</li>
                                     <br>
-                                    <li>Editing the content of notebook (May)</li>
+                                    <li>Gel preparation Machine: Testing the components</li>
                                     <br>
-                                    <li>Functional test of components of the Automatic Gel Machine</li>
-                                    <br>
-                                    <li>Designing the on-off switch of Gel Maker</li>
+                                    <li>Wiki: Editing the content of notebook (May) and coding the notebook page</li>   
                                 </ul>
                             </div>
                         </div>
@@ -115,13 +113,9 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Illustrating portraits of members</li>
+                                    <li>Quantitative Agar Faucet: Adjusting the design of, considering the metal material used in a practical workshop</li>
                                     <br>
-                                    <li>Apply RWD (Responsive Web Design) to the header and footer of wiki</li>
-                                    <br>
-                                    <li>Designing our team logo</li>
-                                    <br>
-                                    <li>Adjusting the design of Gel Maker, considering the metal material used in a practical workshop</li>
+                                    <li>Wiki: Illustrating the portraits of members (Wet lab), applying RWD (Responsive Web Design) to the header and footer, and designing the team logo</li>
                                 </ul>
                             </div>
                         </div>
@@ -131,13 +125,13 @@
                         <div class="square">
                             <?php
                                 $id=4;
-                                $img_count=1;
-                                $img_src[0]=imgfile."/notebook/dl_8.jpg";
-                                // $img_src[1]=imgfile."/human/6a.jpg";
-                                // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_count=3;
+                                $img_src[0]=imgfile."/notebook/dl_9_1.png";
+                                $img_src[1]=imgfile."/notebook/dl_9_2.png";
+                                $img_src[2]=imgfile."/notebook/dl_9_3.png";
+                                $img_alt[0]="";
+                                $img_alt[1]="";
+                                $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
