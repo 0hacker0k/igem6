@@ -1,5 +1,4 @@
         <?php include "../sub/config.php";?>
-            <div class="pad">
                 <div class="week">
                     <div class="week_content">
                         <div class="square">
@@ -16,8 +15,8 @@
                             ?>
                         </div>
                     </div>
-                    <div class="week_content">
-                        <div class="square">
+                    <div class="auto_week_content">
+                        <div class="auto_square">
                             <h5 class="title_content">Week 1 (5/1~7)</h5>
                             
                             <div class="word_content">
@@ -37,8 +36,8 @@
 
                 <div class="week">
                     
-                    <div class="week_content">
-                        <div class="square">
+                    <div class="auto_week_content">
+                        <div class="auto_square">
                             <h5 class="title_content">Week 2 (5/8~14)</h5>
                             
                             <div class="word_content">
@@ -87,8 +86,8 @@
                             ?>
                         </div>
                     </div>
-                    <div class="week_content">
-                        <div class="square">
+                    <div class="auto_week_content">
+                        <div class="auto_square">
                             <h5 class="title_content">Week 3 (5/15~21)</h5>
                             
                             <div class="word_content">
@@ -102,8 +101,8 @@
 
                 <div class="week">
                     
-                    <div class="week_content">
-                        <div class="square">
+                    <div class="auto_week_content">
+                        <div class="auto_square">
                             <h5 class="title_content">Week 4 (5/22-28)</h5>
                             
                             <div class="word_content">
@@ -149,8 +148,8 @@
                             ?>
                         </div>
                     </div>
-                    <div class="week_content">
-                        <div class="square">
+                    <div class="auto_week_content">
+                        <div class="auto_square">
                             <h5 class="title_content">Week 5 (5/29~6/4)</h5>
                             
                             <div class="word_content">
@@ -167,5 +166,3 @@
                     </div>
                 </div>
 
-
-            </div>

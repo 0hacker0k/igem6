@@ -19,7 +19,9 @@ hr{
   margin-right:100px ;
   
 }
-
+ul{
+    display: table;
+}
 .mid_control{
     width:100%;
     display: flex;
@@ -96,6 +98,7 @@ hr{
     float: left;
     /* margin-left: 12rem; */
     border-radius:20px;
+    padding-top: 3%;
 }
 .leftlabel{
   color:white;
@@ -112,7 +115,13 @@ hr{
   right: 0px;
   font-family: "Comic Sans MS";
 }
-
+.current_toplabel {
+  background-color: #B86B3D;
+}
+.current_leftlabel{
+  position: relative;
+  left: 1rem;
+}
 .leftlabel:hover {
   position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
   left: 1rem;
@@ -171,11 +180,56 @@ h1:not(.red_title){
 
 .week{
     display: flex;
+    position: relative;
     /* align-self: left; */
     width: 100%;
-    margin-top: 3%;
+    /* margin-top: 3%; */
 }
-
+.week::after{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    background-color: #f2d6c7;
+    width: 80%;
+    height: 4px;
+    content:" ";
+    display:block;
+    transition: .4s .2s;
+    transform: translate(-50%, 0);
+}
+/* .week:hover::after{
+    width: 0%;
+} */
+.page_change{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page_button{
+    font-size: 2em;
+    word-wrap:break-word;
+    position: relative;
+    display: flex;
+    border-radius: 0.5em;
+    border: #f2d6c7 0.3em solid;
+    padding: 1%;
+    transition: 0.5s;
+    cursor:pointer;
+}
+.page_button:hover{
+    background-color: #f2d6c7;
+}
+.last{
+    float:left;
+}
+.next{
+    float: right;
+}
 .week_content{
     width: 50%;
     height: 0;
@@ -211,6 +265,16 @@ h1:not(.red_title){
     left: 0;
     padding:5% 5% 5% 5%;
 }
+.auto_square{
+    min-height: 100%;
+    position: relative;
+    padding:5% 5% 5% 5%;
+}
+.auto_week_content{
+    width: 50%;
+    word-wrap: break-word;
+    position: relative;
+}
 .center_img{
     width: 100%;
     height: 100%;
@@ -234,9 +298,12 @@ h1:not(.red_title){
 .carousel-item{
     height: 100%;
 }
-/* .carousel-item-next{
-    transform:translateX(100%) !important;
-    animation: change_img;
-    animation-duration: 0.61s;
-    animation-timing-function: ease-in-out;
+.invisible{
+    opacity:0;
+    /* display: none; */
 }
+/* @media all and (max-aspect-ratio:1/1){
+    .nav_control{
+        font-size: 1vw;
+    }
+} */

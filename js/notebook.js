@@ -23,8 +23,65 @@ function switchbtn(id){
             lab="hp";
             break;
     }
-    goal="./notebook/notebook_"+lab+"_"+x+".php";
-    $("#right_div").load(goal);
+    jump(lab);
+}
+const urlParams = new URLSearchParams(window.location.search);
+if(urlParams.has('month')!=undefined && urlParams.has('group')!=undefined){
+    var group=urlParams.get('group');
+    var month=urlParams.get('month');
+    var goal="./notebook/notebook_"+group+"_"+Number(month)+".php"
+    $("#content").load(goal);
+    x=Number(month);
+    switch(group){
+        case "wl":
+            y=10;
+            break;
+        case "dl":
+            y=20;
+            break;
+        case "hp":
+            y=30;
+            break;
+    }
+    jump(group);
+}
+
+
+function next_page(){
+    if(x<10)
+        x+=1;
+    var lab="wl";
+    switch(y){
+        case 10:
+            lab="wl";
+            break;
+        case 20:
+            lab="dl";
+            break;
+        case 30:
+            lab="hp";
+            break;
+    }jump(lab);
+}
+function last_page(){
+    if(x>5)
+        x-=1;
+    var lab="wl";
+    switch(y){
+        case 10:
+            lab="wl";
+            break;
+        case 20:
+            lab="dl";
+            break;
+        case 30:
+            lab="hp";
+            break;
+    }jump(lab);
+}
+function jump(lab){
+    var goal="./notebook/notebook_"+lab+"_"+x+".php";
+    $("#content").load(goal);
     if (location.href.includes('?')) {
         history.pushState({}, null, location.href.split('?')[0]);
     }
@@ -33,21 +90,40 @@ function switchbtn(id){
     history.pushState(null, '', url);
     url.searchParams.set('month', x);
     history.pushState(null, '', url);
-    // var month=x;
-    // location.href = "./notebook_detail.php?group="+lab+"&month="+month;
-}
-const urlParams = new URLSearchParams(window.location.search);
-if(urlParams.has('month')!=undefined && urlParams.has('group')!=undefined){
-    var group=urlParams.get('group');
-    var month=urlParams.get('month');
-    var goal="./notebook/notebook_"+group+"_"+Number(month)+".php"
-    $("#right_div").load(goal);
-    if (location.href.includes('?')) {
-        history.pushState({}, null, location.href.split('?')[0]);
+    var left_labels = document.getElementsByClassName("leftlabel");
+    for (i = 0; i < left_labels.length; i++) {
+        var left_label = left_labels[i];
+        if (left_label.classList.contains('current_leftlabel')) {
+            left_label.classList.remove('current_leftlabel');
+        }
     }
-    const url = new URL(location.href);
-    url.searchParams.set('group', group);
-    history.pushState(null, '', url);
-    url.searchParams.set('month', x);
-    history.pushState(null, '', url);
+    var top_labels = document.getElementsByClassName("toplabel");
+    for (i = 0; i < top_labels.length; i++) {
+        var top_label = top_labels[i];
+        if (top_label.classList.contains('current_toplabel')) {
+            top_label.classList.remove('current_toplabel');
+        }
+    }
+    left_labels[x-5].classList.toggle("current_leftlabel");
+    top_labels[y/10-1].classList.toggle("current_toplabel");
+    if(!(x>5)){
+        if (!document.getElementById("last").classList.contains('invisible')) {
+            document.getElementById("last").classList.toggle("invisible");
+        }
+    }else{
+        if (document.getElementById("last").classList.contains('invisible')) {
+            document.getElementById("last").classList.remove("invisible");
+        }
+        // alert("??");
+    }
+    if(!(x<10)){
+        if (!document.getElementById("next").classList.contains('invisible')) {
+            document.getElementById("next").classList.toggle("invisible");
+        }
+    }else{
+        if (document.getElementById("next").classList.contains('invisible')) {
+            document.getElementById("next").classList.remove("invisible");
+        }
+    }
+    $('html,body').animate({ scrollTop: 0 }, 0);
 }

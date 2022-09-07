@@ -1,5 +1,4 @@
 <?php include "../sub/config.php";?>
-            <div class="pad">
                 <div class="week">
                     <div class="week_content">
                         <div class="square">
@@ -16,9 +15,8 @@
                             ?>
                         </div>
                     </div>
-                    <div class="week_content">
-                        <div class="square">
-                        
+                    <div class="auto_week_content">
+                        <div class="auto_square">
                             <h5 class="title_content">Week 6 (6/5-11)</h5>
                             
                             <div class="word_content">
@@ -36,9 +34,8 @@
 
                 <div class="week">
                     
-                    <div class="week_content">
-                        <div class="square">
-                        
+                    <div class="auto_week_content">
+                        <div class="auto_square">
                             <h5 class="title_content">Week 7 (6/12-18)</h5>
                             
                             <div class="word_content">
@@ -86,9 +83,8 @@
                             ?>
                         </div>
                     </div>
-                    <div class="week_content">
-                        <div class="square">
-                        
+                    <div class="auto_week_content">
+                        <div class="auto_square">
                             <h5 class="title_content">Week 8 (6/19-25)</h5>
                             
                             <div class="word_content">
@@ -106,9 +102,8 @@
 
                 <div class="week">
                     
-                    <div class="week_content">
-                        <div class="square">
-                        
+                    <div class="auto_week_content">
+                        <div class="auto_square">
                             <h5 class="title_content">Week 9 (6/26-7/2)</h5>
                             
                             <div class="word_content">
@@ -137,5 +132,3 @@
                         </div>
                     </div>
                 </div>
-
-            </div>
