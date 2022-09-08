@@ -25,27 +25,7 @@ function switchbtn(id){
     }
     jump(lab);
 }
-const urlParams = new URLSearchParams(window.location.search);
-if(urlParams.has('month')!=undefined && urlParams.has('group')!=undefined){
-    var group=urlParams.get('group');
-    var month=urlParams.get('month');
-    var goal="./notebook/notebook_"+group+"_"+Number(month)+".php"
-    $("#content").load(goal);
-    x=Number(month);
-    switch(group){
-        case "wl":
-            y=10;
-            break;
-        case "dl":
-            y=20;
-            break;
-        case "hp":
-            y=30;
-            break;
-    }
-    jump(group);
-}
-
+var urlParams = new URLSearchParams(window.location.search);
 
 function next_page(){
     if(x<10)
@@ -106,6 +86,10 @@ function jump(lab){
     }
     left_labels[x-5].classList.toggle("current_leftlabel");
     top_labels[y/10-1].classList.toggle("current_toplabel");
+    control_button();
+}
+function control_button(){
+    urlParams = new URLSearchParams(window.location.search);
     if(!(x>5)){
         if (!document.getElementById("last").classList.contains('invisible')) {
             document.getElementById("last").classList.toggle("invisible");
@@ -114,7 +98,6 @@ function jump(lab){
         if (document.getElementById("last").classList.contains('invisible')) {
             document.getElementById("last").classList.remove("invisible");
         }
-        // alert("??");
     }
     if(!(x<10)){
         if (!document.getElementById("next").classList.contains('invisible')) {
@@ -125,5 +108,35 @@ function jump(lab){
             document.getElementById("next").classList.remove("invisible");
         }
     }
+    if(urlParams.has('month')==false || urlParams.has('group')==false){
+        if (!document.getElementById("next").classList.contains('invisible')) {
+            document.getElementById("next").classList.toggle("invisible");
+        }
+        if (!document.getElementById("last").classList.contains('invisible')) {
+            document.getElementById("last").classList.toggle("invisible");
+        }
+    }
+    
     $('html,body').animate({ scrollTop: 0 }, 0);
+}
+
+control_button();
+if(urlParams.has('month')==true && urlParams.has('group')==true){
+    var group=urlParams.get('group');
+    var month=urlParams.get('month');
+    var goal="./notebook/notebook_"+group+"_"+Number(month)+".php"
+    $("#content").load(goal);
+    x=Number(month);
+    switch(group){
+        case "wl":
+            y=10;
+            break;
+        case "dl":
+            y=20;
+            break;
+        case "hp":
+            y=30;
+            break;
+    }
+    jump(group);
 }
