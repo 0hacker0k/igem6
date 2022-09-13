@@ -52,13 +52,11 @@
                         <div class="square">
                     <?php
                         $id=2;
-                        $img_count=3;
+                        $img_count=2;
                         $img_src[0]=imgfile."/notebook/dl_2_1.png";
                         $img_src[1]=imgfile."/notebook/dl_2_2.png";
-                        $img_src[2]=imgfile."/notebook/dl_2_3.png";
                         $img_alt[0]="";
                         $img_alt[1]="";
-                        $img_alt[2]="";
                         include "../sub/carousel.php";
                     ?>
                         </div>

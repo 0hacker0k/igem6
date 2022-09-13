@@ -39,7 +39,7 @@
                 <button id="top_2" type="button" class="toplabel" onclick="switchbtn(20)">DRY LAB</button>
             </div>
             <div class="top_control">
-                <button id="top_3" type="button" class="toplabel" onclick="switchbtn(30)">HP</button>
+                <button id="top_3" type="button" class="toplabel" onclick="switchbtn(30)">HUMAN PRACTICE</button>
             </div>
             <!-- <div class="top_control">
                 <button id="top_4" type="button" class="toplabel" onclick="switchbtn(40)">TIMELINE</button> 
