@@ -4,9 +4,11 @@
                         <div class="square">
                             <?php
                                 $id=1;
-                                $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_6.jpg";
+                                $img_count=2;
+                                $img_src[0]=imgfile."/notebook/hp_6_1.png";
+                                $img_src[1]=imgfile."/notebook/hp_6_2.png";
                                 $img_alt[0]="";
+                                $img_alt[1]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -50,7 +52,7 @@
                             <?php
                                 $id=2;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_7.jpg";
+                                $img_src[0]=imgfile."/notebook/hp_7.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -64,7 +66,7 @@
                             <?php
                                 $id=3;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_8.jpg";
+                                $img_src[0]=imgfile."/notebook/hp_8.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>

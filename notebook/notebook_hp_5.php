@@ -8,9 +8,9 @@
                                 $img_src[0]=imgfile."/notebook/hp_1.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_alt[0]="";
+                                // $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -61,9 +61,9 @@
                                 $img_src[0]=imgfile."/notebook/hp_2.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_alt[0]="";
+                                // $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -80,9 +80,9 @@
                                 $img_src[0]=imgfile."/notebook/hp_3.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_alt[0]="";
+                                // $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -127,9 +127,9 @@
                                 $img_src[0]=imgfile."/notebook/hp_4.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_alt[0]="";
+                                // $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -146,9 +146,9 @@
                                 $img_src[0]=imgfile."/notebook/hp_5.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_alt[0]="";
+                                // $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>

@@ -5,12 +5,12 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_1.jpg";
+                                $img_src[0]=imgfile."/notebook/wl_1.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_alt[0]="";
+                                // $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -42,13 +42,13 @@
                             
                             <div class="word_content">
                             <ul>
-                                <li>Purifying pColdI and pSTV28 vectors for pfa genes expression in <i>E. Coli</i></li>
+                                <li>Purifying pColdI and pSTV28 vectors for pfa genes expression in <i>E. coli</i></li>
                                 <br>
                                 <li>Confirming that TTC couldn’t be applied to distinguish PUFA-producing bacteria from others</li>
                                 <br>
                                 <li>Confirming the ability of EPA production in MP-1</li>
                                 <br>
-                                <li>Designing the biobricks for <i>pfa</i> genes and <i>ACC</i> genes expression in <i>E. Coli</i></li>
+                                <li>Designing the biobricks for <i>pfa</i> genes and <i>ACC</i> genes expression in <i>E. coli</i></li>
                             </ul>
                             </div>
                         </div>
@@ -58,12 +58,12 @@
                             <?php
                                 $id=2;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_2.jpg";
+                                $img_src[0]=imgfile."/notebook/wl_2.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_alt[0]="";
+                                // $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -76,12 +76,12 @@
                             <?php
                                 $id=3;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_3.jpg";
+                                $img_src[0]=imgfile."/notebook/wl_3.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_alt[0]="";
+                                // $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -119,12 +119,12 @@
                             <?php
                                 $id=4;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_4.jpg";
+                                $img_src[0]=imgfile."/notebook/wl_4.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_alt[0]="";
+                                // $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -138,12 +138,12 @@
                             <?php
                                 $id=5;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_5.jpg";
+                                $img_src[0]=imgfile."/notebook/wl_5.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
-                                $img_alt[0]="SrRb";
-                                // $img_alt[1]="SRRB";
-                                // $img_alt[2]="srrb";
+                                $img_alt[0]="";
+                                // $img_alt[1]="";
+                                // $img_alt[2]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -154,11 +154,11 @@
                             
                             <div class="word_content">
                             <ul>
-                                <li>Purifying pSTV28 vectors for <i>ACC</i> genes expression in  <i><i>E. Coli</i></i></li>
+                                <li>Purifying pSTV28 vectors for <i>ACC</i> genes expression in  <i><i>E. coli</i></i></li>
                                 <br>
                                 <li>Cloning pfa genes from MP-1 by PCR</li>
                                 <br>
-                                <li>Redesigning the biobricks for <i>pfa</i> genes and <i>ACC</i> genes expression in <i>E. Coli</i></li>
+                                <li>Redesigning the biobricks for <i>pfa</i> genes and <i>ACC</i> genes expression in <i>E. coli</i></li>
                             
                             </ul>
                             </div>

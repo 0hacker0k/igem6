@@ -5,8 +5,8 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_6.jpg";
-                                $img_alt[0]="SrRb";
+                                $img_src[0]=imgfile."/notebook/wl_6.png";
+                                $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -46,8 +46,8 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_7.jpg.jpg";
-                                $img_alt[0]="SrRb";
+                                $img_src[0]=imgfile."/notebook/wl_7.png";
+                                $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -60,8 +60,8 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_5_3.jpg";
-                                $img_alt[0]="SrRb";
+                                $img_src[0]=imgfile."/notebook/wl_8.png";
+                                $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -74,7 +74,7 @@
                                 <ul>
                                     <li>Trying to ligate <i>pfa</i> genes (new design) to TA vectors for sequencing confirmation</li>
                                     <br>
-                                    <li>Purifying pET28a vectors for <i>ACC</i> genes expression in  <i>E. Coli</i></li>
+                                    <li>Purifying pET28a vectors for <i>ACC</i> genes expression in  <i>E. coli</i></li>
                                     <br>
                                     <li>Sequencing <i>pfaD</i></li>
                                 </ul>
@@ -110,8 +110,8 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_5_4.jpg";
-                                $img_alt[0]="SrRb";
+                                $img_src[0]=imgfile."/notebook/wl_9.png";
+                                $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>

@@ -5,8 +5,8 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_6.jpg";
-                                $img_alt[0]="SrRb";
+                                $img_src[0]=imgfile."/notebook/hp_10.png";
+                                $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -60,8 +60,8 @@
                             <?php
                                 $id=2;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_7.jpg";
-                                $img_alt[0]="SrRb";
+                                $img_src[0]=imgfile."/notebook/hp_11.png";
+                                $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -75,8 +75,8 @@
                             <?php
                                 $id=3;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_8.jpg";
-                                $img_alt[0]="SrRb";
+                                $img_src[0]=imgfile."/notebook/hp_12.png";
+                                $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -133,8 +133,8 @@
                             <?php
                                 $id=4;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_9.jpg";
-                                $img_alt[0]="SrRb";
+                                $img_src[0]=imgfile."/notebook/hp_13.png";
+                                $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
