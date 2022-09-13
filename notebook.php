@@ -66,8 +66,8 @@
                     </div>
                 </div>
                 <div class="page_change">
-                    <div id="last" class="last page_button" onclick="last_page()">Last Page</div>
-                    <div id="next" class="next page_button" onclick="next_page()">Next Page</div>
+                    <div id="last" class="last page_button" onclick="last_page()">Previous</div>
+                    <div id="next" class="next page_button" onclick="next_page()">Next</div>
                 </div>
             </div>
         </div>

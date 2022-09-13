@@ -17,13 +17,13 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>Sequencing pColdI - <i>pfa A1</i></li>
                                     <br>
-                                    <li></li>
+                                    <li>Trying to ligate <i>pfa E</i> gene into pSTV28</li>
                                     <br>
-                                    <li></li>
+                                    <li>Sequencing TA - <i>AccD1E</i></li>
                                     <br>
-                                    <li></li>                       
+                                    <li>Applying dual selection of ampicillin and chloramphenicol to pColdI and pSTV28 vectors transformed  <i>E. coli</i></li>                       
                                 </ul>
                             </div>
                         </div>
@@ -38,13 +38,11 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>Expressing the protein of pSTV28 - <i>pfa E</i> in <i>E. coli</i></li>
                                     <br>
-                                    <li></li>
+                                    <li>Trying to ligate <i>AccBC</i> gene into pET28a</li>
                                     <br>
-                                    <li></li>
-                                    <br>
-                                    <li></li>
+                                    <li>Trying to ligate <i>AccD1E</i> gene into pET28a</li>
                                 </ul>
                             </div>
                         </div>
@@ -80,13 +78,11 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>Amplifying <i>pfa A</i> by pfu polymerase PCR for sequencing confirmation</li>
                                     <br>
-                                    <li></li>
+                                    <li>Amplifying the codon-optimized <i>pfa B</i> (for DHA production) by pfu polymerase PCR for sequencing confirmation</li>
                                     <br>
-                                    <li></li>
-                                    <br>
-                                    <li></li>                   
+                                    <li>Amplifying the codon-optimized <i>pfa E</i> by pfu polymerase PCR for sequencing confirmation</li>                  
                                 </ul>
                             </div>
                         </div>
@@ -100,13 +96,13 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>Amplifying <i>pfa B</i> gene for EPA production by pfu polymerase PCR</li>
                                     <br>
-                                    <li></li>
+                                    <li>Sequencing TA - <i>AccD1</i></li>
                                     <br>
-                                    <li></li>
+                                    <li>Quantitating pSTV28 - <i>pfa E</i> for protein expression</li>
                                     <br>
-                                    <li></li>
+                                    <li>Trying to ligate <i>pfa B</i> gene into pSTV28</li>
                                 </ul>
                             </div>
                         </div>
@@ -142,13 +138,11 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>Cloning <i>pfa</i> genes from MP-1 by PCR</li>
                                     <br>
-                                    <li></li>
+                                    <li>Trying to ligate <i>pfa B</i> gene into pSTV28</li>
                                     <br>
-                                    <li></li>
-                                    <br>
-                                    <li></li>                   
+                                    <li>Optimizing the protein induction time of pSTV28-<i>pfaE</i></li>                  
                                 </ul>
                             </div>
                         </div>
