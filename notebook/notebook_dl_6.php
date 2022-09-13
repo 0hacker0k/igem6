@@ -108,7 +108,7 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Quantitative Agar Faucet: Adjusting the design of, considering the metal material used in a practical workshop</li>
+                                    <li>Quantitative Agar Faucet: Adjusting the design, considering the metal material used in a practical workshop</li>
                                     <br>
                                     <li>Wiki: Illustrating the portraits of members (Wet lab), applying RWD (Responsive Web Design) to the header and footer, and designing the team logo</li>
                                 </ul>
