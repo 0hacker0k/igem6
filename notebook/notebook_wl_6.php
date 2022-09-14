@@ -17,7 +17,7 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Cloning <i>pfa</i> genes from MP-1 by PCR (New design)</li>
+                                    <li>Cloning <i>pfa</i> genes from <i>Moritella marina</i> MP-1 by PCR (New design)</li>
                                     <br>
                                     <li>Starting to edit safety form</li>
                                     <br>
@@ -74,9 +74,9 @@
                                 <ul>
                                     <li>Trying to ligate <i>pfa</i> genes (new design) to TA vectors for sequencing confirmation</li>
                                     <br>
-                                    <li>Purifying pET28a vectors for <i>ACC</i> genes expression in  <i>E. coli</i></li>
+                                    <li>Purifying pET28a vectors for <i>Acc</i> gene expression in  <i>E. coli</i></li>
                                     <br>
-                                    <li>Sequencing <i>pfaD</i></li>
+                                    <li>Sequencing <i>pfa D</i></li>
                                 </ul>
                             </div>
                         </div>
