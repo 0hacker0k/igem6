@@ -42,7 +42,7 @@
                             
                             <div class="word_content">
                             <ul>
-                                <li>Purifying pColdI and pSTV28 vectors for pfa genes expression in <i>E. coli</i></li>
+                                <li>Purifying pColdI and pSTV28 vectors for <i>pfa</i> genes expression in <i>E. coli</i></li>
                                 <br>
                                 <li>Confirming that TTC couldn’t be applied to distinguish PUFA-producing bacteria from others</li>
                                 <br>
@@ -156,7 +156,7 @@
                             <ul>
                                 <li>Purifying pSTV28 vectors for <i>Acc</i> gene expression in  <i><i>E. coli</i></i></li>
                                 <br>
-                                <li>Cloning pfa genes from <i>Moritella marina</i> MP-1 by PCR</li>
+                                <li>Cloning <i>pfa</i> genes from <i>Moritella marina</i> MP-1 by PCR</li>
                                 <br>
                                 <li>Redesigning the biobricks for <i>pfa</i> genes and <i>Acc</i> gene expression in <i>E. coli</i></li>
                             
