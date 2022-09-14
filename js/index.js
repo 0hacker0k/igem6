@@ -183,7 +183,7 @@ function watt(){
         count_total++;
         setTimeout(() => {
             start_to_show(element);
-        }, count_total*400);
+        }, count_total*1000);
     });
 }
 check_navbar();
