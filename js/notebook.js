@@ -60,7 +60,12 @@ function last_page(){
     }jump(lab);
 }
 function jump(lab){
-    var goal="./notebook/notebook_"+lab+"_"+x+".php";
+    var goal;
+    if (location.href.includes('.php')) {
+        goal="./notebook/notebook_"+lab+"_"+x+".php";
+    }else{
+        goal="./notebook/notebook_"+lab+"_"+x+".html";
+    }
     $("#content").load(goal);
     if (location.href.includes('?')) {
         history.pushState({}, null, location.href.split('?')[0]);
@@ -124,7 +129,12 @@ control_button();
 if(urlParams.has('month')==true && urlParams.has('group')==true){
     var group=urlParams.get('group');
     var month=urlParams.get('month');
-    var goal="./notebook/notebook_"+group+"_"+Number(month)+".php"
+    var goal;
+    if (location.href.includes('.php')) {
+        goal="./notebook/notebook_"+group+"_"+Number(month)+".php";
+    }else{
+        goal="./notebook/notebook_"+group+"_"+Number(month)+".html";
+    }
     $("#content").load(goal);
     x=Number(month);
     switch(group){

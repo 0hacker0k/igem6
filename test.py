@@ -47,7 +47,7 @@ for file in all_php:
             path=path+file[0:file.rfind("/")]
             check_path(path)
             path+=file[file.rfind("/"):]
-            if file[-4:]==".jpg" or file[-4:]==".png":
+            if file[-4:]==".jpg" or file[-4:]==".png" or file[-4:]==".ttf" or file[-4:]==".ico":
                 shutil.copyfile(os.getcwd()+"/"+file, path)
             else:
                 f = open(path, 'w+',encoding = "UTF-8",newline='')

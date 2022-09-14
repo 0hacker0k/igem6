@@ -101,6 +101,7 @@ function close_header(){
 }
 function load_finish(){
     // return ;
+    watt();
     var loading=document.getElementById("loading");
     loading.style.visibility = "hidden";
     $(".loading").fadeOut();
@@ -159,19 +160,32 @@ const option = {
 const observer = new IntersectionObserver(entries => {
     entries.forEach( image => {
         if(image.isIntersecting) {
-            image.target.src = image.target.dataset.src;
-            observer.unobserve(image.target);
+            start_to_show(image.target);
+            // console.log("hi");
         }
     });
 }, option);
 const imgGroup = document.getElementsByClassName("lazy");
-
+// var count_lazy=0;
+function start_to_show(image){
+    // console.log(count_lazy++);
+    image.src = image.dataset.src;
+    observer.unobserve(image);
+    // if(image.classList.contains('lazy')){
+    //     image.classList.remove('lazy');
+    // }
+    // console.log(document.getElementsByClassName("lazy").length);
+}
 function watt(){
     Array.prototype.forEach.call(imgGroup,element => observer.observe(element));
+    var count_total=0;
+    Array.prototype.forEach.call(imgGroup,element => {
+        count_total++;
+        setTimeout(() => {
+            start_to_show(element);
+        }, count_total*400);
+    });
 }
-setTimeout(() => {
-    watt();
-}, 500);
 check_navbar();
 window.addEventListener('resize',
     () => {

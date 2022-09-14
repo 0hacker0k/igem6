@@ -6,7 +6,7 @@
         foreach ($files as $key => $value) {
             $path = realpath($dir . $locate . DIRECTORY_SEPARATOR . $value);
             if (!is_dir($path)) {
-                if($value=="phaser.min.js" || $value=="jquery-3.6.0.min.js" || strstr($value,'.')==".jpg" || strstr($value,'.')==".png" || strstr($value,'.')==".js" || strstr($value,'.')==".css" || (strstr($value,'.')==".php" && strcmp($value,'map.php')!=0)){
+                if(strrchr($value,'.')==".jpg" || strrchr($value,'.')==".png" || strrchr($value,'.')==".ico" || strrchr($value,'.')==".ttf" || strrchr($value,'.')==".js" || strrchr($value,'.')==".css" || strrchr($value,'.')==".map" || (strrchr($value,'.')==".php" && strcmp($value,'map.php')!=0)){
                     echo $locate."/".$value."\n";
                 }
             } else if ($value !="sub" && $value !="iot" && $value !="." && $value !=".." && $value !="testSrRb" && $value !="testijh") {
