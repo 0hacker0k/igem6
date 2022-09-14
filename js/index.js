@@ -165,26 +165,30 @@ const observer = new IntersectionObserver(entries => {
         }
     });
 }, option);
-const imgGroup = document.getElementsByClassName("lazy");
-// var count_lazy=0;
+var imgGroup = document.getElementsByClassName("lazy");
+var count_lazy=0;
 function start_to_show(image){
-    // console.log(count_lazy++);
+    console.log(count_lazy++);
     image.src = image.dataset.src;
     observer.unobserve(image);
-    // if(image.classList.contains('lazy')){
-    //     image.classList.remove('lazy');
-    // }
+    if(image.classList.contains('lazy')){
+        image.classList.remove('lazy');
+    }
     // console.log(document.getElementsByClassName("lazy").length);
+}
+function auto_show(){
+    imgGroup = document.getElementsByClassName("lazy");
+    if(imgGroup[0]!=null)
+        start_to_show(imgGroup[0]);
+    setTimeout(() => {
+        auto_show();
+    }, 1000);
 }
 function watt(){
     Array.prototype.forEach.call(imgGroup,element => observer.observe(element));
-    var count_total=0;
-    Array.prototype.forEach.call(imgGroup,element => {
-        count_total++;
-        setTimeout(() => {
-            start_to_show(element);
-        }, count_total*1000);
-    });
+    setTimeout(() => {
+        auto_show();
+    }, 1000);
 }
 check_navbar();
 window.addEventListener('resize',

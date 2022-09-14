@@ -51,7 +51,7 @@ function preload_stage5_take(){
     this.load.image("gel_machine",'img/stage5/gel_machine.png');
     this.load.image("uv",'img/stage5/uv.png');
     this.load.image("note",'img/stage5/note.png');
-    this.load.image("machine",'img/main/green.png');
+    this.load.image("machine",'img/stage5/gel_making_machine.png');
     // this.load.image("gel",'img/stage5/gel.png');
     //remind: change gel photo:DONE
     this.load.spritesheet('mod',
