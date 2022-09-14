@@ -245,10 +245,12 @@ h1:not(.red_title){
 .word_content{
     font-size: 1.67vw;
     word-wrap:break-word;
-    padding-left:5%;
+    padding-left:10%;
+    padding-right:10%;
 }
 
 .title_content{
+    padding-left:10%;
     font-size: 3.33vw;
 }
 
