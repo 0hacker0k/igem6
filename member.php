@@ -18,7 +18,7 @@
     <br>
     <div class="member_card row justify-content-around">
 
-        <div class="col-7">
+        <div class="col-10">
             <h1>Introduction</h1>
             <p>CCU_Taiwan is established in the year of 2017. Our team consists of twenty-one passionate students. We are a multidisciplinary team as our team members have different professional background from five departments.</p>
 
@@ -192,7 +192,7 @@
                 </ul>
             </p>";
             $title_explain="Chia-Hsieh always provides laughter for the team. Though there are different trivias that need to be dealt with, a meme is always a suitable cure for everyone.";
-            $popup_img="./img/human/members001.jpg";
+            $popup_img="/human/members001.jpg";
             $popup_img_alt="";
             $person_title="#MEME_SPREADER";
             $person_icon="🐸";
@@ -213,7 +213,7 @@
                 </ul>
             </p>";
             $title_explain="Yuan-Chi often tries to understand others’ emotions and helps to clear the air.";
-            $popup_img="./img/human/members002.jpg";
+            $popup_img="/human/members002.jpg";
             $popup_img_alt="";
             $person_title="#DISPUTE_MEDIATOR";
             $person_icon="🐨";
@@ -234,7 +234,7 @@
                 </ul>
             </p>";
             $title_explain="Yun-Chi tends to deal with her work at midnight and stays up late because  she has the highest efficiency during midnight.";
-            $popup_img="./img/human/members003.jpg";
+            $popup_img="/human/members003.jpg";
             $popup_img_alt="";
             $person_title="#MIDNIGHT_OVERWORKER";
             $person_icon="😢";
@@ -255,7 +255,7 @@
                 </ul>
             </p>";
             $title_explain="Ding-Hong has to get into the swing of every experiment and the content of lab work that we show on wiki. Thus, seldom does he sleep enough.";
-            $popup_img="./img/human/members004.jpg";
+            $popup_img="/human/members004.jpg";
             $popup_img_alt="";
             $person_title="#SLEEP_TERMINATOR";
             $person_icon="🍺";
@@ -276,7 +276,7 @@
                 </ul>
             </p>";
             $title_explain="Yu-Chen reminds everyone (especially the wet lab team members) to leave the lab on time and go back to sleep every day.";
-            $popup_img="./img/human/members005.jpg";
+            $popup_img="/human/members005.jpg";
             $popup_img_alt="";
             $person_title="#TIME_REMINDER";
             $person_icon="🤣";
@@ -297,7 +297,7 @@
                 </ul>
             </p>";
             $title_explain="Chen-Yu always tries to make experiments more methodically, finishing experiments as soon as possible, asking members not to waste time.";
-            $popup_img="./img/human/members006.jpg";
+            $popup_img="/human/members006.jpg";
             $popup_img_alt="";
             $person_title="#TIME_CHASER";
             $person_icon="🤔";
@@ -318,7 +318,7 @@
                 </ul>
             </p>";
             $title_explain="As a wet lab member, Chi-Huan disappeared whole July because of the music performance with his orchestra members.";
-            $popup_img="./img/human/members007.jpg";
+            $popup_img="/human/members007.jpg";
             $popup_img_alt="";
             $person_title="#JULY_DIVER";
             $person_icon="🐱";
@@ -339,7 +339,7 @@
                 </ul>
             </p>";
             $title_explain="Zoin is always chasing after the other people's experiments to complete the experiment records.";
-            $popup_img="./img/human/members008.jpg";
+            $popup_img="/human/members008.jpg";
             $popup_img_alt="";
             $person_title="#EXPERIMENTS_RECORDER";
             $person_icon="🌱";
@@ -360,7 +360,7 @@
                 </ul>
             </p>";
             $title_explain="Bo-Qin edits over 80% of slides for wet lab, especially illustrations and animations.";
-            $popup_img="./img/human/members009.jpg";
+            $popup_img="/human/members009.jpg";
             $popup_img_alt="";
             $person_title="#ILLUSTRATION_GENERATOR";
             $person_icon="😐";
@@ -381,7 +381,7 @@
                 </ul>
             </p>";
             $title_explain="Chi-Yang devoted his specialty in programming to make our wiki and web game perfect.";
-            $popup_img="./img/human/members010.jpg";
+            $popup_img="/human/members010.jpg";
             $popup_img_alt="";
             $person_title="#SOFTWARE_DEVELOPER";
             $person_icon="🥺";
@@ -402,7 +402,7 @@
                 </ul>
             </p>";
             $title_explain="Si-Ru always brings some snacks or drinks for our buddies. She takes care of not only the dry lab, but all the team members.";
-            $popup_img="./img/human/members011.jpg";
+            $popup_img="/human/members011.jpg";
             $popup_img_alt="";
             $person_title="#MEMBER_FEEDER";
             $person_icon="💍";
@@ -423,7 +423,7 @@
                 </ul>
             </p>";
             $title_explain="Hao-Fang sometimes provokes the  dry lab co-leader for some stupid reasons. Therefore, he has to apologize to Si-Ru once a day.";
-            $popup_img="./img/human/members012.jpg";
+            $popup_img="/human/members012.jpg";
             $popup_img_alt="";
             $person_title="#CO-LEADER_PROVOKER";
             $person_icon="😃";
@@ -444,7 +444,7 @@
                 </ul>
             </p>";
             $title_explain="Hao-Yuan seldom finishes work before the deadline.";
-            $popup_img="./img/human/members013.jpg";
+            $popup_img="/human/members013.jpg";
             $popup_img_alt="";
             $person_title="#PROGRESS_PROCRASTINATOR";
             $person_icon="🧀";
@@ -465,7 +465,7 @@
                 </ul>
             </p>";
             $title_explain="Yi-Yun is always laughing. Hahahahahahahahahahaha.";
-            $popup_img="./img/human/members014.jpg";
+            $popup_img="/human/members014.jpg";
             $popup_img_alt="";
             $person_title="#ALL-TIME_LAUGHER";
             $person_icon="🥰";
@@ -486,7 +486,7 @@
                 </ul>
             </p>";
             $title_explain="Peng-Jen created the character – <i> E. coli6 </i>.";
-            $popup_img="./img/human/members015.jpg";
+            $popup_img="/human/members015.jpg";
             $popup_img_alt="";
             $person_title="#E. COLI_INCUBATOR";
             $person_icon="🍠 ";
@@ -507,7 +507,7 @@
                 </ul>
             </p>";
             $title_explain="Guan-Chen usually carries many members’ lunch or dinner to the lab.";
-            $popup_img="./img/human/members016.jpg";
+            $popup_img="/human/members016.jpg";
             $popup_img_alt="";
             $person_title="#FOOD_DELIVER";
             $person_icon="🥫";
@@ -528,7 +528,7 @@
                 </ul>
             </p>";
             $title_explain="Yu-Qian helps the team speak English better. I can teach you better!";
-            $popup_img="./img/human/members017.jpg";
+            $popup_img="/human/members017.jpg";
             $popup_img_alt="";
             $person_title="#ENGLISH_TEACHER";
             $person_icon="😏";
@@ -549,7 +549,7 @@
                 </ul>
             </p>";
             $title_explain="Jung-Hsuan often forgets to reply to messages.";
-            $popup_img="./img/human/members018.jpg";
+            $popup_img="/human/members018.jpg";
             $popup_img_alt="";
             $person_title="#MESSAGE_IGNORER";
             $person_icon="🦊";
@@ -570,7 +570,7 @@
                 </ul>
             </p>";
             $title_explain="Wei-Chun holds a campus walking activity. Not just walking inside CCU campus, he has found his way to NCCU.";
-            $popup_img="./img/human/members019.jpg";
+            $popup_img="/human/members019.jpg";
             $popup_img_alt="";
             $person_title="#DANIEL_WALKER";
             $person_icon="🤩";
