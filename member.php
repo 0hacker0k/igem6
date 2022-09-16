@@ -23,7 +23,7 @@
             <p>CCU_Taiwan is established in the year of 2017. Our team consists of twenty-one passionate students. We are a multidisciplinary team as our team members have different professional background from five departments.</p>
 
         </div>
-        <h1>Leader</h1>
+        <h1>Members</h1>
         <div class="bulletin">
             <div id="carousel_member" class="carousel slide" data-bs-touch="false" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -37,7 +37,7 @@
                         <div class="a_group">
                             <div class="leaders_title" style="--id:1">
                                 <div class="member_portrait">
-                                    Members
+                                    Leaders
                                 </div>
                             </div>
                             <div class="leaders_person" style="--id:2">

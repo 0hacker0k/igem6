@@ -102,6 +102,7 @@ function close_header(){
 function load_finish(){
     // return ;
     watt();
+    check_navbar();
     var loading=document.getElementById("loading");
     loading.style.visibility = "hidden";
     $(".loading").fadeOut();
@@ -109,7 +110,8 @@ function load_finish(){
 }
 var nav_len=0;
 function check_navbar(){
-    if(nav_len==0){
+    if(hide_mod==0){
+        nav_len=0;
         var nav = document.getElementsByClassName("top_nav");
         for(var i=0;i<nav.length;i++){
             nav_len+=nav[i].clientWidth;
@@ -117,7 +119,7 @@ function check_navbar(){
     }
     var navbar = document.getElementById("navbar").clientWidth;
     var logo = document.getElementById("logo").clientWidth;
-    if(navbar<=logo+nav_len*1.04){
+    if(navbar*0.98<=logo+nav_len*1.0){
         hide_mod=1;
         document.getElementById("nav_style").innerHTML=".dropdown{display: none;}.dropdown_rwd{display: block;}";
     }else{
@@ -161,14 +163,13 @@ const observer = new IntersectionObserver(entries => {
     entries.forEach( image => {
         if(image.isIntersecting) {
             start_to_show(image.target);
-            // console.log("hi");
         }
     });
 }, option);
 var imgGroup = document.getElementsByClassName("lazy");
-var count_lazy=0;
+// var count_lazy=0;
 function start_to_show(image){
-    console.log(count_lazy++);
+    // console.log(count_lazy++);
     image.src = image.dataset.src;
     observer.unobserve(image);
     if(image.classList.contains('lazy')){

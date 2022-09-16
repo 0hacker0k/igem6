@@ -1,0 +1,2 @@
+<script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+{{ url_for('static', filename = 'bootstrap.bundle.min.js') }} js與css連結方法
