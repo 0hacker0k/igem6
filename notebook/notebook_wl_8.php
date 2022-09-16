@@ -78,11 +78,11 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Amplifying <i>pfa A</i> by pfu polymerase PCR for sequencing confirmation</li>
+                                    <li>Amplifying <i>pfa A</i> gene by pfu polymerase PCR for sequencing confirmation</li>
                                     <br>
-                                    <li>Amplifying the codon-optimized <i>pfa B</i> for DHA production by pfu polymerase PCR for sequencing confirmation</li>
+                                    <li>Amplifying the codon-optimized <i>pfa B</i> gene for DHA production by pfu polymerase PCR for sequencing confirmation</li>
                                     <br>
-                                    <li>Amplifying the codon-optimized <i>pfa E</i> by pfu polymerase PCR for sequencing confirmation</li>                  
+                                    <li>Amplifying the codon-optimized <i>pfa E</i> gene by pfu polymerase PCR for sequencing confirmation</li>                  
                                 </ul>
                             </div>
                         </div>

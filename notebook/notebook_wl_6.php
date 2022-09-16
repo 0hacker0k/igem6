@@ -21,7 +21,9 @@
                                     <br>
                                     <li>Starting to edit safety form</li>
                                     <br>
-                                    <li>Applying dual selection of ampicillin and chloramphenicol to pColdI and pSTV28 vectors transformed  <i>E. coli</i></li>                         
+                                    <li>Applying dual selection of ampicillin and chloramphenicol to pColdI and pSTV28 vectors transformed  <i>E. coli</i></li>
+                                    <br>
+                                    <li>Ordering <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> gene blocks from IDT company</li>                         
                                 </ul>
                             </div>
                         </div>
@@ -76,7 +78,9 @@
                                     <br>
                                     <li>Purifying pET28a vectors for <i>Acc</i> gene expression in  <i>E. coli</i></li>
                                     <br>
-                                    <li>Sequencing <i>pfa D</i></li>
+                                    <li>Sequencing TA-<i>pfa D</i></li>
+                                    <br>
+                                    <li>Getting <i>pfa B</i> and <i>pfa E</i> gene blocks from IDT company</li>
                                 </ul>
                             </div>
                         </div>

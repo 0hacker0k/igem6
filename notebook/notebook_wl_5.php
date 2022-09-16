@@ -93,6 +93,8 @@
                             <div class="word_content">
                                 <ul>
                                     <li>Cloning <i>pfa</i> genes from <i>Moritella marina</i> MP-1 by PCR</li>
+                                    <br>
+                                    <li>Ordering <i>pfa B</i> and <i>pfa E</i> gene blocks from IDT company</li>
                                 </ul>
                             </div>
                         </div>
@@ -107,7 +109,7 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Trying to ligate <i>pfa</i> genes to TA vectors for sequencing confirmation</li>
+                                    <li>Trying to ligate <i>pfa</i> genes into TA vectors for sequencing confirmation</li>
                                 </ul>
                             </div>
                         </div>
