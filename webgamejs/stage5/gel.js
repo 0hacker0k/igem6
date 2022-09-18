@@ -162,7 +162,7 @@ function create_stage5_take (){
     }
     //遊戲時間
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=5;
+    timer.time=80;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
     //remind: string to variable(en and zh-tw)
@@ -521,6 +521,18 @@ function create_stage5_take (){
                 }else if(desk_what[i][j]=="uv"){
                     desk[i][j].item.depth+=1;
                     desk[i][j].item.alpha=0.65;
+                }else if(desk_what[i][j]=="machine"){
+                    desk[i][j].item.TAE=0;
+                    desk[i][j].item.agar=0;
+                    desk[i][j].item.TAE_text=this.add.text(desk[i][j].item.x-width*0.05, desk[i][j].item.y-height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.02+'px', fill: '#111111' });
+                    desk[i][j].item.agar_text=this.add.text(desk[i][j].item.x+width*0.05, desk[i][j].item.y-height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.02+'px', fill: '#111111' });
+                    desk[i][j].item.gel=0;
+                    desk[i][j].item.runtime=16; //13*1.2
+                    desk[i][j].item.nowtime=-1;
+                    desk[i][j].item.alert=cant_move_item.create(desk[i][j].item.x, desk[i][j].item.y+width*0.02, "alert").setDisplaySize(width*0.03,width*0.03).setOrigin(0.5,0.5);
+                    // desk[i][j].item.alert.alpha=0;
+                    desk[i][j].item.alert.alpha=0;
+                    desk[i][j].item.alert.depth=100;
                 }
             }
         }
@@ -601,7 +613,10 @@ function create_stage5_take (){
                     tank_change_TAE(p, desk_entity.item);
                 }else if((desk_entity.item.type=="uv" || desk_entity.item.type=="gel_machine") && p.pick.type=="gel"){
                     gel_submit(p, desk_entity.item);
+                }else if(desk_entity.item.type=="machine" && p.pick.type=="beaker"){
+                    machine_add(p, desk_entity.item);
                 }
+                
             }else{//player has nothing
                 if(desk_entity.item.type=="beaker" || desk_entity.item.type=="pipette" || desk_entity.item.type=="gel"){
                     pick_thing(p, desk_entity.item, desk_entity);
@@ -1211,6 +1226,52 @@ function create_stage5_take (){
             // player.destroy();
         //     spot.destroy();
         //     spot_touch.destroy();
+        }
+    }
+    function machine_add(p, item){
+        if(p.pick.TAE==0 && p.pick.agar>0){
+            item.agar=(item.agar+p.pick.agar<=10)?item.agar+p.pick.agar:10;
+            p.pick.agar=(item.agar+p.pick.agar<=10)?0:item.agar+p.pick.agar-10;
+            change_skin_beaker(p.pick);
+            change_machine_text(item);
+        }else if(p.pick.TAE>0 && p.pick.agar==0){
+            item.agar=(item.agar+p.pick.agar<=10)?item.agar+p.pick.agar:10;
+            p.pick.agar=(item.agar+p.pick.agar<=10)?0:item.agar+p.pick.agar-10;
+            change_skin_beaker(p.pick);
+            change_machine_text(item);
+        }
+        if(item.TAE>0 && item.agar>0 && item.nowtime==-1){
+            machine_run(item);
+        }
+    }
+    function machine_run(machine){
+        if(machine.nowtime==-1){
+            machine.nowtime=0;
+            machine.agar-=1;
+            machine.TAE-=1;
+            change_machine_text(machine);
+        }
+        machine.nowtime+=1;
+        if(machine.nowtime<15){
+            setTimeout(function(){
+                machine_run(machine);
+            },1000);
+        }else if(machine.nowtime==15){
+            machine.gel+=1;
+            machine.nowtime=-1;
+            change_machine_text(machine);
+            if(machine.TAE>0 && machine.agar>0){
+                machine_run(machine);
+            }
+        }
+    }
+    function change_machine_text(machine){
+        machine.agar_text.setText(machine.agar+"/10");
+        machine.TAE_text.setText(machine.TAE+"/10");
+        if(machine.gel>0){
+            machine.alert.alpha=1;
+        }else{
+            machine.alert.alpha=0;
         }
     }
     //+幾分

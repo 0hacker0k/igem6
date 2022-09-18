@@ -6,8 +6,8 @@ var Sprite;
 var barrier=null;
 function load_talkbox(where){//載入動畫檔
     barrier=null;
-    where.load.image('talkbox', 'img/main/green.png');
-    where.load.image('nextPage', 'img/main/green.png');
+    where.load.image('talkbox', 'img/main/next.png');
+    where.load.image('nextPage', 'img/main/next.png');
     where.load.scenePlugin({
         key: 'rexuiplugin',
         url: rexUI_path,
@@ -43,7 +43,7 @@ function createTextBox (scene, x, y, config, npc_key) {
             //text: getBuiltInText(scene, wrapWidth, fixedWidth, fixedHeight),
             text: getBBcodeText(scene, wrapWidth, fixedWidth, fixedHeight),
 
-            action: scene.add.image(0, 0, 'nextPage').setTint(COLOR_LIGHT).setVisible(false),
+            action: scene.add.image(0, 0, 'nextPage').setDisplaySize(width*0.02,width*0.02).setTint(COLOR_LIGHT).setVisible(false),
             
             space: {
                 left: talkbox_size*2,
