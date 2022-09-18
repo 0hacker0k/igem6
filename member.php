@@ -242,7 +242,7 @@
         ?>
         <?php
             $id=4;
-            $name="Ding-Hong Chang";
+            $name="Ting-Hung Chang";
             $job_title="Leader of Wet Lab";
             $content="
             <p>
