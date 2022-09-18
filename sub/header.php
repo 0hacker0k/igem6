@@ -48,12 +48,14 @@
             <div onclick="click_bar('myDropdown4')" onmouseout="out_bar('myDropdown4')" onmouseover="in_bar('myDropdown4')" class="dropdown top_nav">
                 <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Human Practice</button>
                 <div id="myDropdown4" class="dropdown-content">
-                    <a href="#" class="dropdown-content_list click">Integrated Human Practice</a>
+                    <a href="#" class="dropdown-content_list click">Human Practice</a>
                     <a href="#" class="dropdown-content_list click">Education</a>
+                    <a href="#" class="dropdown-content_list click">Webgame</a>
                     <a href="#" class="dropdown-content_list click">Science Communication</a>
                     <a href="#" class="dropdown-content_list click">Collaboration</a>
                     <a href="#" class="dropdown-content_list click">Partnership</a>
                     <a href="#" class="dropdown-content_list click">Inclusivity</a>
+                    <a href="#" class="dropdown-content_list click">Integrated Human Practice</a>
                 </div>
 
             </div>
@@ -120,12 +122,14 @@
                 <a href="#" class="dropdown-content_list2 click">Part</a>
             </div>
             <div id="mylist4" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list2 click">Integrated Human Practice</a>
+                <a href="#" class="dropdown-content_list2 click">Human Practice</a>
                 <a href="#" class="dropdown-content_list2 click">Education</a>
+                <a href="#" class="dropdown-content_list2 click">Webgame</a>
                 <a href="#" class="dropdown-content_list2 click">Science Communication</a>
                 <a href="#" class="dropdown-content_list2 click">Collaboration</a>
                 <a href="#" class="dropdown-content_list2 click">Partnership</a>
                 <a href="#" class="dropdown-content_list2 click">Inclusivity</a>
+                <a href="#" class="dropdown-content_list2 click">Integrated Human Practice</a>
             </div>
             <div id="mylist8" class="dropdown-content nav_rwd">
                 <a href="#" class="dropdown-content_list2 click">Medals</a>
