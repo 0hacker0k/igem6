@@ -55,6 +55,7 @@ function preload_stage5_take(){
     this.load.image("uv",'img/stage5/uv.png');
     this.load.image("note",'img/stage5/note.png');
     this.load.image("machine",'img/stage5/gel_making_machine.png');
+    this.load.image('wifi','img/main/green.png');
     // this.load.image("gel",'img/stage5/gel.png');
     //remind: change gel photo:DONE
     this.load.spritesheet('mod',
@@ -122,6 +123,9 @@ function create_stage5_take (){
     player.depth = 5;
     player.pick=null;
     player.stop=0;
+    player.wifi=this.physics.add.image(player.x, player.y, "wifi", this).setDisplaySize(width/40,width/40).refreshBody();
+    player.wifi.alpha=0;
+    player.wifi.depth=99;
     spot=this.physics.add.image(player.x, player.y, "green", this).setDisplaySize(width/40,width/40).refreshBody();
     spot.alpha=0;
     spot_touch=this.physics.add.image(player.x, player.y, "green", this).setDisplaySize(width/25,width/25).refreshBody();
@@ -524,8 +528,10 @@ function create_stage5_take (){
                 }else if(desk_what[i][j]=="machine"){
                     desk[i][j].item.TAE=0;
                     desk[i][j].item.agar=0;
-                    desk[i][j].item.TAE_text=this.add.text(desk[i][j].item.x-width*0.05, desk[i][j].item.y-height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.02+'px', fill: '#111111' });
-                    desk[i][j].item.agar_text=this.add.text(desk[i][j].item.x+width*0.05, desk[i][j].item.y-height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.02+'px', fill: '#111111' });
+                    desk[i][j].item.TAE_text=this.add.text(desk[i][j].x-width*0.04, desk[i][j].y-height*0.1, '', { fontFamily: 'fantasy', fontSize: width*0.02+'px', fill: '#cc1111' });
+                    desk[i][j].item.agar_text=this.add.text(desk[i][j].x+width*0.02, desk[i][j].y-height*0.1, '', { fontFamily: 'fantasy', fontSize: width*0.02+'px', fill: '#cc1111' });
+                    desk[i][j].item.TAE_text.depth=99;
+                    desk[i][j].item.agar_text.depth=99;
                     desk[i][j].item.gel=0;
                     desk[i][j].item.runtime=16; //13*1.2
                     desk[i][j].item.nowtime=-1;
@@ -533,6 +539,9 @@ function create_stage5_take (){
                     // desk[i][j].item.alert.alpha=0;
                     desk[i][j].item.alert.alpha=0;
                     desk[i][j].item.alert.depth=100;
+                    desk[i][j].item.wifi=this.physics.add.image(desk[i][j].item.x+0.02*width, desk[i][j].item.y-height*0.02, "wifi", this).setDisplaySize(width/40,width/40).refreshBody();
+                    desk[i][j].item.wifi.alpha=0;
+                    desk[i][j].item.wifi.depth=99;
                 }
             }
         }
@@ -627,6 +636,8 @@ function create_stage5_take (){
                 }else if(desk_entity.item.type=="tank"){
                     tank_run(p, desk_entity.item);
                     // tank_out(p, desk_entity.item);
+                }else if(desk_entity.item.type=="machine"){
+                    machine_take_gel(p, desk_entity.item)
                 }
             }
         }else{//desk has nothing
@@ -1184,7 +1195,7 @@ function create_stage5_take (){
     function free_all(){
         free_player(player);
         timer.destroy();
-        for(var i=0;i<7;i++){   //建立桌子
+        for(var i=0;i<7;i++){   //移除桌子及其物件
             for(var j=0;j<10;j++){
                 free_desk(desk[i][j]);
             }
@@ -1205,13 +1216,20 @@ function create_stage5_take (){
                     desk.item.qte_half.destroy();
                 }if(desk.item.qte_perfect!=null){
                     desk.item.qte_perfect.destroy();
-                }desk.item.destroy();
+                }if(desk.item.TAE_text!=null){
+                    desk.item.TAE_text.destroy();
+                }if(desk.item.agar_text!=null){
+                    desk.item.agar_text.destroy();
+                }if(desk.item.wifi!=null){
+                    desk.item.wifi.destroy();
+                }
+                desk.item.destroy();
             }desk.destroy();
         }
     }
     function free_player(player){
         if(player!=null){
-             if(player.pick!=null){
+            if(player.pick!=null){
                 if(player.pick.qte_bar!=null){
                     player.pick.qte_bar.destroy();
                 }if(player.pick.qte_pointer!=null){
@@ -1221,6 +1239,8 @@ function create_stage5_take (){
                 }if(player.pick.qte_perfect!=null){
                     player.pick.qte_perfect.destroy();
                 }player.pick.destroy();
+            }if(player.wifi!=null){
+                player.wifi.destroy();
             }
             player.alpha=0;
             // player.destroy();
@@ -1230,21 +1250,33 @@ function create_stage5_take (){
     }
     function machine_add(p, item){
         if(p.pick.TAE==0 && p.pick.agar>0){
-            item.agar=(item.agar+p.pick.agar<=10)?item.agar+p.pick.agar:10;
-            p.pick.agar=(item.agar+p.pick.agar<=10)?0:item.agar+p.pick.agar-10;
+            if(item.agar+p.pick.agar<=10){
+                item.agar+=p.pick.agar;
+                p.pick.agar=0;
+            }else{
+                p.pick.agar=item.agar+p.pick.agar-10;
+                item.agar=10;
+            }
+            p.pick.c=p.pick.agar;
             change_skin_beaker(p.pick);
             change_machine_text(item);
         }else if(p.pick.TAE>0 && p.pick.agar==0){
-            item.agar=(item.agar+p.pick.agar<=10)?item.agar+p.pick.agar:10;
-            p.pick.agar=(item.agar+p.pick.agar<=10)?0:item.agar+p.pick.agar-10;
+            if(item.TAE+p.pick.TAE<=10){
+                item.TAE+=p.pick.TAE;
+                p.pick.TAE=0;
+            }else{
+                p.pick.TAE=item.TAE+p.pick.TAE-10;
+                item.TAE=10;
+            }
+            p.pick.c=p.pick.TAE;
             change_skin_beaker(p.pick);
             change_machine_text(item);
         }
         if(item.TAE>0 && item.agar>0 && item.nowtime==-1){
-            machine_run(item);
+            machine_run(p,item);
         }
     }
-    function machine_run(machine){
+    function machine_run(p,machine){
         if(machine.nowtime==-1){
             machine.nowtime=0;
             machine.agar-=1;
@@ -1254,16 +1286,49 @@ function create_stage5_take (){
         machine.nowtime+=1;
         if(machine.nowtime<15){
             setTimeout(function(){
-                machine_run(machine);
+                machine_run(p,machine);
             },1000);
         }else if(machine.nowtime==15){
             machine.gel+=1;
             machine.nowtime=-1;
+            wifi_alert(p,machine,1);
             change_machine_text(machine);
             if(machine.TAE>0 && machine.agar>0){
-                machine_run(machine);
+                machine_run(p,machine);
             }
         }
+    }
+    function wifi_alert(p,item,direction){
+        if(direction==0){
+            wifi_alert_in(p.wifi);
+            setTimeout(function(){
+                wifi_alert_in(item.wifi);
+            },1000);
+        }else{
+            wifi_alert_in(item.wifi);
+            setTimeout(function(){
+                wifi_alert_in(p.wifi);
+            },1000);
+        }
+    }
+    function wifi_alert_in(wifi){
+        wifi.alpha=1;
+        setTimeout(function(){
+            wifi.alpha=0;
+        },200);
+        setTimeout(function(){
+            wifi.alpha=1;
+        },400);
+        setTimeout(function(){
+            wifi.alpha=0;
+        },600);
+    }
+    function machine_take_gel(p, item){
+        if(item.gel<=0)return ;
+        p.pick=create_gel(0,0,0,100,100,0,0,0,0);
+        p.pick.alpha=1;
+        item.gel-=1;
+        change_machine_text(item);
     }
     function change_machine_text(machine){
         machine.agar_text.setText(machine.agar+"/10");
@@ -1737,6 +1802,8 @@ function update_stage5_take (){//與外界有關的互動
     player.y=spot.y;
     spot_touch.x=spot.x;
     spot_touch.y=spot.y;
+    player.wifi.x=player.x+0.02*width;
+    player.wifi.y=player.y-0.15*height;
     // i*height*0.12+height*0.22  0.1*height
     player.depth=6+Math.floor((player.y-height*0.16)/(height*0.12))*2;
     if(player.pick!=null){
