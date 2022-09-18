@@ -42,6 +42,9 @@ function preload_stage5_take(){
     this.load.image('direct', 'img/main/director.png');
     this.load.image('marker', 'img/stage5/marker.png');
     this.load.image('sample', 'img/stage5/sample.png');
+    this.load.image('gold','img/main/green.png');
+    this.load.image('silver','img/main/green.png');
+    this.load.image('bronze','img/main/green.png');
     // this.load.image('pipette', 'img/stage5/pipette.png');
     this.load.image("alert",'img/stage5/temp.png');
     this.load.image("qte_pointer",'img/stage5/qte_bar_pointer.png');
@@ -159,13 +162,14 @@ function create_stage5_take (){
     }
     //遊戲時間
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=60;
+    timer.time=5;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
     //remind: string to variable(en and zh-tw)
     //結算文字
     var ending_text = this.add.text(width*0.5, height*0.9, 'Tap to continue', { fontFamily: 'fantasy', fontSize: width*0.03+'px', fill: '#111111' })
     ending_text.setOrigin(0.5,0.5).alpha=0;
+    
     //分數
     var score_text=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
     var score=0;
@@ -466,7 +470,17 @@ function create_stage5_take (){
     }
     //碰撞、放器材
     keySpace = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
-    
+    //獎牌
+    // var medals=[];
+    // medals[0]=this.physics.add.image(width*0.63, height*0.75, "gold").setDisplaySize(width/15,width/15).setTint(0xff0000);
+    // medals[1]=this.physics.add.image(width*0.63, height*0.75, "silver").setDisplaySize(width/15,width/15).setTint(0x550000);
+    // medals[2]=this.physics.add.image(width*0.63, height*0.75, "bronze").setDisplaySize(width/15,width/15).setTint(0x110000);
+    // medals[0].alpha=0;
+    // medals[1].alpha=0;
+    // medals[2].alpha=0;
+    // medals[0].depth=65500;
+    // medals[1].depth=65500;
+    // medals[2].depth=65500;
     for(var i=0;i<7;i++){
         for(var j=0;j<10;j++){
             if(desk_what[i][j]!=''){//物件初始位置
@@ -1145,7 +1159,7 @@ function create_stage5_take (){
         },1000);
     }
     function game_over(){
-        if(this.create.name!="create_stage5_take")return ;
+        //if(this.create.name!="create_stage5_take")return ;
         stop=1;
         finish_transition(where,width,0);
         setTimeout(function(){
@@ -1203,6 +1217,7 @@ function create_stage5_take (){
     var plus_score = this.add.text(width*0.5, height*0.12, '', { fontFamily: 'fantasy', fontSize: width*0.03+'px', fill: '#111111' });
     plus_score.setInteractive().setOrigin(0.5,0.5);
     plus_score.alpha=0;
+    var medal_list=[];
     function lighting_gel(gel_list){
         //--結算畫面初始化--
         var list_len=gel_list.length;
@@ -1213,8 +1228,16 @@ function create_stage5_take (){
             gel_list[i].x=width*0.5+width*0.35*i;
             gel_list[i].y=height*0.5;
             gel_list[i].alpha=1;
-            gel_stop(gel_list,list_len,0);
+            //獎牌設置 width*0.63,height*0.75;
+            gel_list[i].medal=create_medal(gel_list[i].x+width*0.13, gel_list[i].y+height*0.25,gel_list[i].score);
+            gel_list[i].medal.alpha=1;
+            gel_list[i].medal.depth=65500;            
         }
+        gel_stop(gel_list,list_len,0);
+        
+        // for(var i=0;i<3;i++){
+        //     medals[i].alpha=1;
+        // }
         var count=0;
         var act=0;
         where.input.on('pointerup', function (pointer) {
@@ -1232,6 +1255,7 @@ function create_stage5_take (){
                 },1000);
                 for(var i=0;i<list_len;i++){
                     gel_list[i].setVelocityX(-0.35*width);
+                    gel_list[i].medal.setVelocityX(-0.35*width);
                 }
                 //plus_score跳出
                 plus_score.alpha=1;
@@ -1259,6 +1283,7 @@ function create_stage5_take (){
     function gel_stop(gel_list,list_len,count){
         for(var i=0;i<list_len;i++){
             gel_list[i].setVelocityX(0);
+            gel_list[i].medal.setVelocityX(0);
             gel_list[i].x=width*0.5+width*0.35*(i-count);
         }
         var temp=gel_list[count];
@@ -1266,6 +1291,7 @@ function create_stage5_take (){
             temp.score+=temp.microwave_score+temp.mod_score+temp.sample_score;
             temp.score+=temp.marker_score+temp.TAE_score+temp.run_score;
         }
+        //結算分數
         console.log("score:"+temp.score);
         console.log("microwave:"+temp.microwave_score);
         console.log("mod:"+temp.mod_score);
@@ -1273,6 +1299,7 @@ function create_stage5_take (){
         console.log("marker:"+temp.marker_score);
         console.log("TAE:"+temp.TAE_score);
         console.log("run:"+temp.run_score);
+        //gel說明
         if(temp.sample+temp.marker==0){
             ending_text.setText("There are nothing in the gel...");
             temp.score=0;
@@ -1304,6 +1331,21 @@ function create_stage5_take (){
         }else if(temp.score<=600){
             ending_text.setText("What a amazing gel graph.");
         }
+    }
+    function create_medal(x,y,score=0){
+        var temp;
+        console.log('MEDAL!');
+        if(score<=200){
+            temp = where.physics.add.image(x, y, "bronze").setDisplaySize(width/15,width/15).setTint(0x110000);
+            console.log('bronze');
+        }else if(score<=400){
+            temp = where.physics.add.image(x, y, "silver").setDisplaySize(width/15,width/15).setTint(0x550000);
+            console.log('silver');
+        }else if(score<=600){
+            temp = where.physics.add.image(x, y, "gold").setDisplaySize(width/15,width/15).setTint(0xff0000);
+            console.log('gold');
+        }
+        return temp;
     }
     
     function create_gel(x,y,score=0,microwave_score=0,mod_score=0,sample_score=0,marker_score=0,TAE_score=0,run_score=0){
@@ -1340,6 +1382,7 @@ function create_stage5_take (){
         change_skin_gel(temp);
         return temp;
     }
+
     //test-結算膠
     var test;
     // score,microwave_score,mod_score,sample_score,marker_score,TAE_score,run_score
@@ -1347,17 +1390,17 @@ function create_stage5_take (){
     test.sample=1;
     change_skin_gel(test);
     gel_list.push(test);
+    
+    test=create_gel(0,0,0,100,100,50,50,50,20);
+    test.marker=1;
+    change_skin_gel(test);
+    gel_list.push(test);
 
-    // test=create_gel(0,0,0,100,100,50,50,50,20);
-    // test.marker=1;
-    // change_skin_gel(test);
-    // gel_list.push(test);
-
-    // test=create_gel(0,0,0,100,100,50,50,50,100);
-    // test.sample=1;
-    // test.marker=1;
-    // change_skin_gel(test);
-    // gel_list.push(test);
+    test=create_gel(0,0,0,100,100,50,50,50,100);
+    test.sample=1;
+    test.marker=1;
+    change_skin_gel(test);
+    gel_list.push(test);
 
 
     var x,y,status=0;
