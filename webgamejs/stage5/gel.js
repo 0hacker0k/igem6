@@ -1334,6 +1334,7 @@ function create_stage5_take (){
     }
     function create_medal(x,y,score=0){
         var temp;
+        //remind: judge score still need adjust.
         console.log('MEDAL!');
         if(score<=200){
             temp = where.physics.add.image(x, y, "bronze").setDisplaySize(width/15,width/15).setTint(0x110000);
