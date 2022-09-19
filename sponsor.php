@@ -53,6 +53,29 @@
             <img class="sponsor_logo" style="--width:50%" src="<?php echo imgfile;?>/human/4a.jpg" alt="">
         </div>
     </div>
+    <div class="sponsor_body" data-id="sponsor_3" data-speed="2">
+        <img class="sponsor_rope" style="--i:0" src="<?php echo imgfile;?>/sponsor/rope.png" alt="">
+        <img class="sponsor_rope" style="--i:1" src="<?php echo imgfile;?>/sponsor/rope.png" alt="">
+        <!-- a chunk -->
+        <div class="sponsor_card">
+            <button type="button" class="sponsor_card_list_button" data-bs-toggle="modal" data-bs-target="#popup1">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <div class="sponsor_logo" style="--width:50%">Campus Walking</div>
+            </button>
+        </div>
+        
+        <!--  -->
+    </div>
+    <?php
+        $id=1;
+        $sponsor_title="Campus Walking";
+        $sponsor_content=
+            "<p>台糖</p>
+            <p>寶礦力</p>";
+        include "./sub/popup_in_sponsor.php";
+    ?>
+   
     <?php include "./sub/footer.php"?>
     <script src="<?php echo jsfile;?>/sponsor.js"></script>
 </body>

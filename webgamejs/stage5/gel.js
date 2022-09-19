@@ -1326,6 +1326,7 @@ function create_stage5_take (){
     function machine_take_gel(p, item){
         if(item.gel<=0)return ;
         p.pick=create_gel(0,0,0,100,100,0,0,0,0);
+        p.pick.ok=1;
         p.pick.alpha=1;
         item.gel-=1;
         change_machine_text(item);
