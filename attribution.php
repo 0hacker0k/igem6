@@ -166,7 +166,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Leaders</h1>
             </div>
             <?php
-                $name="Chia-Hsien Kung";
+                $name="Chia-Hsieh Kung";
                 $photo="/attributions/attributions001.jpg";
                 $icon1="1";
                 $icon2="presentation";
@@ -196,7 +196,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Wet Lab</h1>
             </div>
             <?php
-                $name="Ding-Hong Chang";
+                $name="Ting-Hung Chang";
                 $photo="/attributions/attributions004.jpg";
                 $icon1="leadership";
                 $icon2="presentation";

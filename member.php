@@ -179,7 +179,7 @@
         </div>
         <?php
             $id=1;
-            $name="Chia-Hsien Kung";
+            $name="Chia-Hsieh Kung";
             $job_title="Team Leader";
             $content="
             <p>
@@ -191,7 +191,7 @@
                 <li>Interest: Singing & watching short videos</li>            
                 </ul>
             </p>";
-            $title_explain="Chia-Hsieh always provides laughter for the team. Though there are different trivias that need to be dealt with, a meme is always a suitable cure for everyone.";
+            $title_explain="Chia-Hsieh always provides the laughter for the team. Though there are different trivia that need to be dealt with, a meme is always a suitable cure for everyone.";
             $popup_img="/human/members001.jpg";
             $popup_img_alt="";
             $person_title="#MEME_SPREADER";
@@ -233,7 +233,7 @@
                 <li>Interest: Reading & writing notes</li>            
                 </ul>
             </p>";
-            $title_explain="Yun-Chi tends to deal with her work at midnight and stays up late because  she has the highest efficiency during midnight.";
+            $title_explain="Yun-Chi tends to deal with her work at midnight and stays up late because she has the highest efficiency during midnight.";
             $popup_img="/human/members003.jpg";
             $popup_img_alt="";
             $person_title="#MIDNIGHT_OVERWORKER";
@@ -254,7 +254,7 @@
                 <li>Interest: Bothering Hao-Fang</li>            
                 </ul>
             </p>";
-            $title_explain="Ding-Hong has to get into the swing of every experiment and the content of lab work that we show on wiki. Thus, seldom does he sleep enough.";
+            $title_explain="Ting-Hung has to get into the swing of every experiment and the content of lab work that we show on the wiki. Thus, seldom does he sleep enough.";
             $popup_img="/human/members004.jpg";
             $popup_img_alt="";
             $person_title="#SLEEP_TERMINATOR";
@@ -296,7 +296,7 @@
                 <li>Interest: Making friends & Hanging out</li>            
                 </ul>
             </p>";
-            $title_explain="Chen-Yu always tries to make experiments more methodically, finishing experiments as soon as possible, asking members not to waste time.";
+            $title_explain="Chen-Yu always tries to make experiments more methodically, finishing experiments as soon as possible, and asking members not to waste time.";
             $popup_img="/human/members006.jpg";
             $popup_img_alt="";
             $person_title="#TIME_CHASER";
@@ -317,7 +317,7 @@
                 <li>Interest: Listening to music & Playing volleyball</li>            
                 </ul>
             </p>";
-            $title_explain="As a wet lab member, Chi-Huan disappeared whole July because of the music performance with his orchestra members.";
+            $title_explain="As a wet lab member, Chi-Huan disappeared for the whole of July because of the music performance with his orchestra members.";
             $popup_img="/human/members007.jpg";
             $popup_img_alt="";
             $person_title="#JULY_DIVER";
@@ -338,7 +338,7 @@
                 <li>Interest: Playing video games & Singing</li>            
                 </ul>
             </p>";
-            $title_explain="Zoin is always chasing after the other people's experiments to complete the experiment records.";
+            $title_explain="Zong-Ying is always chasing after other people's experiments to complete the experiment records.";
             $popup_img="/human/members008.jpg";
             $popup_img_alt="";
             $person_title="#EXPERIMENTS_RECORDER";
@@ -359,7 +359,7 @@
                 <li>Interest: Cycling</li>            
                 </ul>
             </p>";
-            $title_explain="Bo-Qin edits over 80% of slides for wet lab, especially illustrations and animations.";
+            $title_explain="Bo-Qin edits over 80% of slides for the wet lab, especially illustrations and animations.";
             $popup_img="/human/members009.jpg";
             $popup_img_alt="";
             $person_title="#ILLUSTRATION_GENERATOR";
@@ -380,7 +380,7 @@
                 <li>Interest: Trying something new</li>            
                 </ul>
             </p>";
-            $title_explain="Chi-Yang devoted his specialty in programming to make our wiki and web game perfect.";
+            $title_explain="Chi-Yang devoted his speciality to programming to make our wiki and web game perfect.";
             $popup_img="/human/members010.jpg";
             $popup_img_alt="";
             $person_title="#SOFTWARE_DEVELOPER";
@@ -401,7 +401,7 @@
                 <li>Interest: Singing during meeting & Swimming</li>            
                 </ul>
             </p>";
-            $title_explain="Si-Ru always brings some snacks or drinks for our buddies. She takes care of not only the dry lab, but all the team members.";
+            $title_explain="Si-Ru always brings some snacks or drinks for our buddies. She takes care of not only the dry lab but all the team members.";
             $popup_img="/human/members011.jpg";
             $popup_img_alt="";
             $person_title="#MEMBER_FEEDER";
@@ -422,7 +422,7 @@
                 <li>Interest: Taking a stroll</li>            
                 </ul>
             </p>";
-            $title_explain="Hao-Fang sometimes provokes the  dry lab co-leader for some stupid reasons. Therefore, he has to apologize to Si-Ru once a day.";
+            $title_explain="Hao-Fang sometimes provokes the dry lab co-leader for some stupid reasons. Therefore, he has to apologize to Si-Ru once a day.";
             $popup_img="/human/members012.jpg";
             $popup_img_alt="";
             $person_title="#CO-LEADER_PROVOKER";
@@ -485,7 +485,7 @@
                 <li>Interest: Painting & Reading novel</li>            
                 </ul>
             </p>";
-            $title_explain="Peng-Jen created the character – <i> E. coli6 </i>.";
+            $title_explain="Peng-Jen created the <i>E. coli</i> character–PACO .";
             $popup_img="/human/members015.jpg";
             $popup_img_alt="";
             $person_title="#E. COLI_INCUBATOR";
