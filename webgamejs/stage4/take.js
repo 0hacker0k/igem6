@@ -27,7 +27,7 @@ function preload_stage4_take(){
     });
     
 }
-
+var take_count=0;
 function create_stage4_take (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
@@ -156,7 +156,7 @@ function create_stage4_take (){
                 score_text.setText(score.toString());
                 dis_bac(i,j)
             }
-
+            
 
         },this);
     }
@@ -173,6 +173,14 @@ function create_stage4_take (){
     //bac掰
     function dis_bac(i,j){
         bacs[i][j].disableBody(true, true);
+        take_count++;
+        if(take_count==16){
+            finish_transition(this,width,0);
+            setTimeout(function(){
+                load_page(map_1);
+            },500);
+            stage_complete[4]=1;
+        }
     }
     //滑鼠放開
     this.input.on('pointerup', function (pointer) {
@@ -200,12 +208,14 @@ function create_stage4_take (){
     //     wrapWidth: 500,
     // })
     // .start(content, 50);
-    createTextBox(this, width*0.15, height*0.75, {
-        wrapWidth: width*0.5,
-        fixedWidth: width*0.55,
-        fixedHeight: height*0.15,
-    },'green')
-    .start(content,50);
+    
+    // remind: BUG, 對話框結束後不會開始遊戲
+    // createTextBox(this, width*0.15, height*0.75, {
+    //     wrapWidth: width*0.5,
+    //     fixedWidth: width*0.55,
+    //     fixedHeight: height*0.15,
+    // },'green')
+    // .start(content,50);
     
 }
 function update_stage4_take (){//與外界有關的互動

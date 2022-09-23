@@ -35,6 +35,7 @@ function preload_stage3_shoot(){
 var bullets;
 var bullets_queue=[];
 var common_array=[];
+var ecoli_count=0;
 function create_stage3_shoot (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
@@ -463,12 +464,22 @@ function create_stage3_shoot (){
             
         }
     }
-    //目標物死亡
+    //目標物死亡，並縮小
     function ecoli_die(ecoli,count){
         ecoli.setDisplaySize(width*0.06*count/40,height*0.06*count/40);
         ecoli.alpha=count/40;
         if(count==0){
             ecoli.disableBody(true, true);
+            ecoli_count++;
+            console.log(ecoli_count);
+            //所有ecoli被打下來
+            if(ecoli_count==26){
+                finish_transition(this,width,0);
+                setTimeout(function(){
+                    load_page(map_1);
+                },500);
+                stage_complete[3]=1;
+            }
         }else{
             setTimeout(function(){
                 ecoli_die(ecoli,count-1);
@@ -485,6 +496,18 @@ function create_stage3_shoot (){
     this.physics.add.collider(ecolis, bottom, dead_check, null, this);
     function dead_check(ecoli, bottom){
         var state=2;
+        
+        //結算判定
+        ecoli_count++;
+        console.log(ecoli_count);
+        if(ecoli_count==26){//所有ecoli被打下來
+            finish_transition(this,width,0);
+            setTimeout(function(){
+                load_page(map_1);
+            },500);
+            stage_complete[3]=1;
+        }
+
         if(ecoli.check==1||ecoli.check==-1)return ;
         for(var i=0;i<ecoli.plastid_count;i++){
             ecoli.plastid[i].type=-1;

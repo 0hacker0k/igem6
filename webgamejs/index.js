@@ -33,6 +33,16 @@ var level=0;
 var send_string="";
 gameOver=false;
 var getUrlString = location.href;
+/* 關卡通關過與否
+   index: 1~5，代表1~5關
+   value: 通關過為1，尚未為0
+*/
+var stage_complete = [];
+console.log('index');
+for(var i=1;i<=5;i++){
+    stage_complete[0]=1;
+    stage_complete[i]=0;
+}
 var url = new URL(getUrlString);
 //alert(location.host+location.pathname);
 var language=url.searchParams.get('lang');

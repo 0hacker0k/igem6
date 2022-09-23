@@ -1398,6 +1398,7 @@ function create_stage5_take (){
                         setTimeout(function(){
                             load_page(map_1);
                         },500);
+                        stage_complete[5]=1;
                     },1000);
                 }
             }

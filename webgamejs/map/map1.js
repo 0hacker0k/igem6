@@ -3,7 +3,7 @@ function preload (){
     load_transition(this);
     this.load.image('map', 'img/map/map.jpg');//載入一般圖片
     for(var i=1;i<=5;i++){
-        this.load.image('stage'+i, 'img/main/green.png');//載入一般圖片
+        this.load.image('stage'+i, 'img/map/NPC'+i+'.png');//載入一般圖片
     }
     if(debug==1){
         this.load.image('D_center', 'img/main/debug_center.png');
@@ -11,34 +11,96 @@ function preload (){
     }
     load_talkbox(this);
 }
-
+var where = this;
 function create (){
     loading_transition(this,this.cameras.main.scrollX+(-0.3)*width,this.cameras.main.scrollY+(0.5)*height);
     //--------------------場景設定--------------------
     map=this.add.tileSprite(0, 0, 0,0, 'map').setOrigin(0, 0).setDisplaySize(width,height);
     //--------------------人頭設定--------------------
+    console.log("loading map");
     var stage=[];
-    stage[1]=this.physics.add.sprite(width*0.33,height*0.55,'stage1').setDisplaySize(height*0.1,height*0.1).setInteractive();
-    stage[2]=this.physics.add.sprite(width*0.35,height*0.7,'stage2').setDisplaySize(height*0.1,height*0.1).setInteractive();
-    stage[3]=this.physics.add.sprite(width*0.36,height*0.42,'stage3').setDisplaySize(height*0.1,height*0.1).setInteractive();
-    stage[4]=this.physics.add.sprite(width*0.42,height*0.25,'stage4').setDisplaySize(height*0.1,height*0.1).setInteractive();
-    stage[5]=this.physics.add.sprite(width*0.47,height*0.15,'stage5').setDisplaySize(height*0.1,height*0.1).setInteractive();
-    stage[1].on('pointerover',function(){hover(1)},this);
-    stage[1].on('pointerout',function(){out(1)},this);
-    stage[2].on('pointerover',function(){hover(2)},this);
-    stage[2].on('pointerout',function(){out(2)},this);
-    stage[3].on('pointerover',function(){hover(3)},this);
-    stage[3].on('pointerout',function(){out(3)},this);
-    stage[4].on('pointerover',function(){hover(4)},this);
-    stage[4].on('pointerout',function(){out(4)},this);
-    stage[5].on('pointerover',function(){hover(5)},this);
-    stage[5].on('pointerout',function(){out(5)},this);
+    stage[1]=this.physics.add.sprite(width*0.33,height*0.55,'stage1');
+    stage[2]=this.physics.add.sprite(width*0.35,height*0.7,'stage2');
+    stage[3]=this.physics.add.sprite(width*0.36,height*0.42,'stage3');
+    stage[4]=this.physics.add.sprite(width*0.42,height*0.25,'stage4');
+    stage[5]=this.physics.add.sprite(width*0.47,height*0.15,'stage5');
+    for(var i=1;i<=5;i++){
+        stage[i].setDisplaySize(height*0.1,height*0.1)
+                .setInteractive();
+        if(stage_complete[i-1]!=1) stage[i].setTint(0x4F4F4F);
+    }
+    // for(var i=1;i<=5;i++){
+    //     stage[i].on('pointerover',function(){hover(i)},where);
+    //     stage[i].on('pointerout',function(){out(i)},where);
+    //     stage[i].on('pointerdown',function(){touch(i)},this);
+    // }
+
+    {//各種stage的按鈕
+        stage[1].on('pointerover',function(){hover(1)},this);
+        stage[1].on('pointerout',function(){out(1)},this);
+        stage[1].on('pointerdown',function(){touch(1)},this);
+        if(stage_complete[1]==1){
+            stage[2].on('pointerover',function(){hover(2)},this);
+            stage[2].on('pointerout',function(){out(2)},this);
+            stage[2].on('pointerdown',function(){touch(2)},this);
+        }
+        if(stage_complete[2]==1){
+            stage[3].on('pointerover',function(){hover(3)},this);
+            stage[3].on('pointerout',function(){out(3)},this);
+            stage[3].on('pointerdown',function(){touch(3)},this);
+        }
+        if(stage_complete[3]==1){
+            stage[4].on('pointerover',function(){hover(4)},this);
+            stage[4].on('pointerout',function(){out(4)},this);
+            stage[4].on('pointerdown',function(){touch(4)},this);
+        }
+        if(stage_complete[4]==1){
+            stage[5].on('pointerover',function(){hover(5)},this);
+            stage[5].on('pointerout',function(){out(5)},this);
+            stage[5].on('pointerdown',function(){touch(5)},this);
+        }
+    }
+
     function hover(id){
         stage[id].setTint(0x00ff00);
     }
     function out(id){
         stage[id].clearTint();
     }
+    function touch(id){
+        //remind: 應該要切到幻燈片->再來才是關卡
+        if(stop==0){//切換關卡
+            stop=1;
+            finish_transition((0.8)*width,(0.0)*height);
+            if(id==1){
+                setTimeout(function(){
+                    load_page(stage_1_choose);
+                },500);
+            }
+            if(id==2){
+                setTimeout(function(){
+                    load_page(stage_2_flop);
+                },500);
+            }
+            if(id==3){
+                setTimeout(function(){
+                    load_page(stage_3_shoot);
+                },500);
+            }
+            if(id==4){
+                setTimeout(function(){
+                    load_page(stage_4_take);
+                },500);
+            }
+            if(id==5){
+                setTimeout(function(){
+                    load_page(stage_5_gel);
+                },500);
+            }
+        }
+    }
+    
+
     // -----------------------文字-------------------------
     //scoreText = this.add.text(400, 300, lan_text.hello, { fontSize: '32px', fill: '#000000' });
 

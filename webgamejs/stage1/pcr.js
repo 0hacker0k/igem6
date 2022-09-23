@@ -227,6 +227,7 @@ function create_stage1_pcr (){
         sett=setTimeout(function(){
             end_stage1();
         },130);
+        stage_complete[1]=1;
         // if(alpha<1){
         //     setTimeout(function(){
         //         end_stage1();

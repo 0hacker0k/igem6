@@ -228,9 +228,11 @@ function create_stage2_flop (){
         sett=setTimeout(function(){
             end_stage1();
         },130);
+        
     }
     this.input.on('pointerup', function (pointer) {
         if(game_end==1){
+            stage_complete[2]=1;
             load_page(map_1);
             return ;
         }
