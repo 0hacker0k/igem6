@@ -73,6 +73,46 @@ body{
     display: table;
     z-index: 3;
 }
+.sponsor_list_paper{
+    top: 20%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    text-align: left;
+    height: 20%;
+    display: table;
+    z-index: 1;
+}
+.sponsor_list_logo{
+    top: calc(60% - var(--width)/2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    text-align: left;
+    /* height: var(--width); */
+    display: table;
+    z-index: 3;
+}
+.sponsor_card_list_button{
+    width: 100%;
+    height: 100%;
+    background-color: #00000000;
+    border-width: 0;
+}
+.sponsor_list{
+    top: 60%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: left;
+    /* height: 80%; */
+    display: table;
+    z-index: 4;
+}
+
 @media all and (max-aspect-ratio:1/1){
     .sponsor_body{
         padding-bottom: 50%;

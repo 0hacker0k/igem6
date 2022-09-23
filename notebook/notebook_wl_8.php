@@ -23,7 +23,7 @@
                                     <br>
                                     <li>Sequencing TA-<i>AccD1</i></li>
                                     <br>
-                                    <li>Applying dual selection of ampicillin and chloramphenicol to pColdI and pSTV28 vectors transformed  <i>E. coli</i></li>                       
+                                    <li>Applying chloramphenicol and ampicillin to confirm the co-existence of pCold and pSTV28 in <i>E. coli</i></li>                       
                                 </ul>
                             </div>
                         </div>
