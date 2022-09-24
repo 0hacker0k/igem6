@@ -6,6 +6,25 @@ body{
     width: 15%;
     right: 2%;
     transition: 1s;
+    z-index: 99;
+}
+#map:hover #go_top{
+    opacity: 1;
+}
+#map:hover #map_icon{
+    opacity: 0;
+}
+#map:hover #epa{
+    opacity: 0;
+}
+#go_top{
+    position: absolute;
+    /* display: block; */
+    width: 100%;
+    bottom: 2%;
+    right: 2%;
+    opacity: 0;
+    transition: 0.5s;
 }
 #map_icon{
     position: absolute;
@@ -13,6 +32,7 @@ body{
     width: 100%;
     bottom: 2%;
     right: 2%;
+    transition: 0.5s;
 }
 #epa{
     position: absolute;
@@ -28,7 +48,7 @@ body{
     justify-content: center; 
     align-items: center; 
     top: 200%;
-    height: 100%;
+    /* height: 100%; */
     flex-wrap: wrap;
 }
 .white_background{
@@ -57,7 +77,7 @@ body{
     position: absolute;
     width: 80%;
 }
-#first_page{
+.first_page{
     opacity: 0;
     display: flex;
     width: 100%;

@@ -134,8 +134,11 @@ HTMLImageElement.prototype.move_to=function(x,y){
     this.style.bottom=(map_icon.clientHeight*y)+"px";
     this.style.right=(map_icon.clientWidth*x)+"px";
 }
+function go_top(){
+    $('html,body').animate({ scrollTop: 0 }, 1000);
+}
 var parameter=document.getElementById("parameter");
-parameter.innerHTML = "#first_page{--nav_height: "+document.getElementById("navbar").clientHeight+"px;}";
+parameter.innerHTML = ".first_page{--nav_height: "+document.getElementById("navbar").clientHeight+"px;}";
 now_page=Math.floor($(window).scrollTop()/screen_height);
 screen_move($(window).scrollTop());
 // if (myWindow.scrollTop() > myPosition) {

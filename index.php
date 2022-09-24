@@ -12,31 +12,32 @@
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
     <div id="map" style="bottom: -100%;">
-        <img id="map_icon" src="<?php echo imgfile;?>/home/heart_icon.png">
+        <img id="map_icon" src="<?php echo imgfile;?>/home/heart-icon.png">
         <img id="epa" src="<?php echo imgfile;?>/drop.png">
+        <img id="go_top" onclick="go_top()" src="<?php echo imgfile;?>/home/go-to-top.png">
     </div>
     <style id="parameter"></style>
     <div class="page" style="top:200%;" id="page_1">
         <div class="typesetting_block">
-            <div id="first_page"></div>
-            <img id="team_name" src="<?php echo imgfile;?>/home/team_name.gif">
+            <div class="first_page"></div>
+            <img id="team_name" src="<?php echo imgfile;?>/home/team-name.gif">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_2">
-        <img id="team_name" src="<?php echo imgfile;?>/home/team_name.gif">
+        <img id="team_name" src="<?php echo imgfile;?>/home/team-name.gif">
     </div>
     <div class="page" style="top:200%;" id="page_3">
-        <img id="team_name" src="<?php echo imgfile;?>/home/team_name.gif">
+        <img id="team_name" src="<?php echo imgfile;?>/home/team-name.gif">
     </div>
     <div class="page" style="top:200%;" id="page_4">
-        <img id="map_of_world" src="<?php echo imgfile;?>/home/map_of_world.jpg">
+        <img id="map_of_world" src="<?php echo imgfile;?>/home/map-of-world.jpg">
         <div class="white_background">
             Cardiovascular disease (CVD) is one of the most severe diseases that took away millions of lives.
             In 2019, an estimated 17.9 million people died from CVD, representing 32% of all global deaths.
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_5">
-        <img id="team_name" src="<?php echo imgfile;?>/home/team_name.gif">
+        <img id="team_name" src="<?php echo imgfile;?>/home/team-name.gif">
     </div>
     <div class="page" style="top:200%;" id="page_6">
         <div class="white_background">
