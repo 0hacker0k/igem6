@@ -1,199 +1,158 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-var hide_mod=0;
-var isShow=0;
-var temp_down_nav=null;
-function out_bar(id) {
-    if(hide_mod==1){
-        return ;
-    }if(id==null)return ;
-    document.getElementById(id).classList.remove('show');
-    isShow=0;
-} 
-function in_bar(id) {
-    if(hide_mod==1){
-        return ;
-    }if(id==null)return ;
-    // e = event || window.event;
-    // e.wheel.preventDefault();
-    document.getElementById(id).classList.toggle("show");
-    isShow=1;
-}
-function click_bar(id) {
-    if(hide_mod==0){
-        return ;
-    }if(id==null)return ;
-    if(document.getElementById(id).classList.contains('show')){
-        document.getElementById(id).classList.remove('show');
-        isShow=0;
-        if(id=="myDropdown9"){
-            if(temp_down_nav!=null)
-                temp_down_nav.classList.remove('show');
-            temp_down_nav=null;
-            if(document.getElementById(id).classList.contains('helf_size')){
-                document.getElementById(id).classList.remove('helf_size');
-            }
+var map_icon = document.getElementById("map_icon");
+var button = document.getElementById("testBtn");
+var screen_height=window.innerHeight;
+var now_page;
+if (map_icon.classList && map_icon && button) {
+    button.onclick = function() {
+        if (this.value == '暂停') {
+            map_icon.classList.add('stop');
+            this.value = '播放';
+        } else {
+            map_icon.classList.remove('stop');
+            this.value = '暂停';
         }
-    }else{
-        document.getElementById(id).classList.toggle("show");
-        isShow=1;
-    }
+    };
 }
- 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-        if (!event.target.matches('.click')) {
-            isShow=0;
-            temp_down_nav=null;
-            var dropdowns = document.getElementsByClassName("show");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show') && !openDropdown.classList.contains('modal') && !openDropdown.classList.contains('modal-backdrop')) {
-                            openDropdown.classList.remove('show');
-                    }
-            }
-            dropdowns = document.getElementsByClassName("nav_rwd");
-            for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                    }
-            }
-            dropdowns = document.getElementById("myDropdown9").classList.remove('show');;
-            // if(document.getElementById("myDropdown9").classList.contains('helf_size')){
-            //     document.getElementById("myDropdown9").classList.remove('helf_size');
-            // }
-        }
-}
-function loadingFunction(){
-    $(".loading").delay(1000).fadeOut();
-}
+window.addEventListener('click',function(){
+    
+});
 document.addEventListener('DOMContentLoaded', function(){
     jQuery(function($){
         var myWindow = $(window); 
-        var myPosition = myWindow.scrollTop(); 
         myWindow.scroll(function(){
-            // alert(myPosition);
-        if (myPosition > 60) {
-            if (myWindow.scrollTop() > myPosition && isShow==0) {
-                // $("#navbar").addClass("header-hide");
-                var item=document.getElementById("navbar");
-                item.style.top="-"+(item.clientHeight+1)+"px";
-            } else if(location.href.indexOf('webgame')==-1 && myWindow.scrollTop() < myPosition-20){
-
-                document.getElementById("navbar").style.top="0px";
-                // $("#navbar").removeClass("header-hide");
-            }
-        }else if(myPosition <= 3){
-            document.getElementById("navbar").style.top="0px";
-        }
-        myPosition = myWindow.scrollTop();
+            screen_move(myWindow.scrollTop());
         }); 
     });  
 });
-function close_header(){
-    if($(window).scrollTop()>0){
-         var item=document.getElementById("navbar");
-        item.style.top="-"+(item.clientHeight+1)+"px";
-    }
-   
-}
-function load_finish(){
-    // return ;
-    watt();
-    check_navbar();
-    var loading=document.getElementById("loading");
-    loading.style.visibility = "hidden";
-    $(".loading").fadeOut();
-    
-}
-var nav_len=0;
-function check_navbar(){
-    if(hide_mod==0){
-        nav_len=0;
-        var nav = document.getElementsByClassName("top_nav");
-        for(var i=0;i<nav.length;i++){
-            nav_len+=nav[i].clientWidth;
+function screen_move(scroll){
+    var go_page=Math.floor(scroll/screen_height+1);
+    move_epa(go_page);
+    if(go_page>now_page){
+        var last_page=document.getElementById("page_"+(now_page));
+        var next_page=document.getElementById("page_"+(now_page+1));
+        if(last_page!=null){
+            last_page.style.top=((screen_height-last_page.clientHeight)/2-screen_height)+"px";
+            if(last_page.first==undefined){
+                last_page.first=1;
+            }else{
+                last_page.style.transition="1.0s";
+            }
+        }
+        if(next_page!=null){
+            next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
+            if(next_page.first==undefined){
+                next_page.style.transition="1.0s";
+            }
+        }
+    }else if(go_page<now_page){
+        var next_next_page=document.getElementById("page_"+(now_page-2));
+        var next_page=document.getElementById("page_"+(now_page-1));
+        var last_page=document.getElementById("page_"+(now_page));
+        if(next_next_page!=null){
+            next_next_page.style.top=(-screen_height)+"px";
+            if(next_next_page.first==undefined){
+                next_next_page.first=1;
+            }
+        }
+        if(next_page!=null){
+            next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
+            next_page.style.transition="1.0s";
+        }
+        if(last_page!=null){
+            last_page.style.top=(screen_height+(screen_height-last_page.clientHeight)/2)+"px";
         }
     }
-    var navbar = document.getElementById("navbar").clientWidth;
-    var logo = document.getElementById("logo").clientWidth;
-    if(navbar*0.98<=logo+nav_len*1.0){
-        hide_mod=1;
-        document.getElementById("nav_style").innerHTML=".dropdown{display: none;}.dropdown_rwd{display: block;}";
+    now_page=Math.floor(scroll/screen_height+1);
+};
+function move_epa(go_page){
+    console.log(go_page);
+    var epa=document.getElementById("epa");
+    var map_icon=document.getElementById("map_icon");
+    var map=document.getElementById("map");
+    if(go_page>=1 && go_page<=3){
+        map.style.bottom="-100%";
     }else{
-        hide_mod=0;
-        document.getElementById("nav_style").innerHTML=".dropdown{display: block;}.dropdown_rwd{display: none;}";
+        map.style.bottom="2%";
     }
-    document.getElementById("blank_top").style.height=(document.getElementById("normal_nav").clientHeight-2)+"px";
+    switch(go_page){
+        case 4:
+            epa.move_to(0.36,0.45);
+            break;
+        case 5:
+            epa.move_to(0.36,0.25);
+            break;
+        case 6:
+            epa.move_to(0.45,0.55);
+            break;
+        case 7:
+            epa.move_to(0.35,0.60);
+            break;
+        case 8:
+            epa.move_to(0.17,0.47);
+            break;
+        case 9:
+            epa.move_to(0.15,0.30);
+            break;
+        case 10:
+            epa.move_to(0.25,0.10);
+            break;
+        case 11:
+            epa.move_to(0.45,0.04);
+            break;
+        case 12:
+            epa.move_to(0.55,0.09);
+            break;
+        case 13:
+            epa.move_to(0.67,0.20);
+            break;
+        case 14:
+            epa.move_to(0.67,0.37);
+            break;
+        case 15:
+            epa.move_to(0.54,0.45);
+            break;
+        case 16:
+            epa.move_to(0.47,0.27);
+            break;
+        case 17:
+            epa.move_to(0.46,0.55);
+            break;
+        case 18:
+            epa.move_to(0.42,0.68);
+            break;
+        case 19:
+            epa.move_to(0.28,0.67);
+            break;
+        case 20:
+            epa.move_to(0.36,0.45);
+            break;
+        default:
+            ;
+    }
 }
+HTMLImageElement.prototype.move_to=function(x,y){
+    this.style.bottom=(map_icon.clientHeight*y)+"px";
+    this.style.right=(map_icon.clientWidth*x)+"px";
+}
+var parameter=document.getElementById("parameter");
+parameter.innerHTML = "#first_page{--nav_height: "+document.getElementById("navbar").clientHeight+"px;}";
+now_page=Math.floor($(window).scrollTop()/screen_height);
+screen_move($(window).scrollTop());
+// if (myWindow.scrollTop() > myPosition) {
+//     // $("#navbar").addClass("header-hide");
+//     var item=document.getElementById("navbar");
+//     item.style.top="-"+(item.clientHeight+1)+"px";
+// }
 
-function change_list(id){
-    if(hide_mod==0){
-        return ;
-    }
-    if(id==null)return ;
-    if(document.getElementById("mylist"+id)==undefined)return;
-    if(temp_down_nav!=null && temp_down_nav!=document.getElementById("mylist"+id)){
-        temp_down_nav.classList.remove('show');
-    }else{
-        // if(document.getElementById("myDropdown9").classList.contains('helf_size')){
-        //     document.getElementById("myDropdown9").classList.remove('helf_size');
-        // }else{
-        //     document.getElementById("myDropdown9").classList.toggle("helf_size");
-        // }
-    }
-    if(document.getElementById("mylist"+id).classList.contains('show')){
-        document.getElementById("mylist"+id).classList.remove('show');
-        temp_down_nav=null;
-    }else{
-        temp_down_nav=document.getElementById("mylist"+id);
-        document.getElementById("mylist"+id).classList.toggle("show");
-    }
-    return;
-}
-let lazyImages = []
-const option = {
-    root: null,
-    rootMargin: "200px 200px 200px 200px",
-    threshold: [0]
-}
-const observer = new IntersectionObserver(entries => {
-    entries.forEach( image => {
-        if(image.isIntersecting) {
-            start_to_show(image.target);
-        }
-    });
-}, option);
-var imgGroup = document.getElementsByClassName("lazy");
-// var count_lazy=0;
-function start_to_show(image){
-    // console.log(count_lazy++);
-    image.src = image.dataset.src;
-    observer.unobserve(image);
-    if(image.classList.contains('lazy')){
-        image.classList.remove('lazy');
-    }
-    // console.log(document.getElementsByClassName("lazy").length);
-}
-function auto_show(){
-    imgGroup = document.getElementsByClassName("lazy");
-    if(imgGroup[0]!=null)
-        start_to_show(imgGroup[0]);
-    setTimeout(() => {
-        auto_show();
-    }, 1000);
-}
-function watt(){
-    Array.prototype.forEach.call(imgGroup,element => observer.observe(element));
-    setTimeout(() => {
-        auto_show();
-    }, 1000);
-}
-check_navbar();
-window.addEventListener('resize',
-    () => {
-        check_navbar();
-    }
-, false );
+//  else if(location.href.indexOf('webgame')==-1 && myWindow.scrollTop() < myPosition-20){
+//     document.getElementById("navbar").style.top="0px";
+// }
+
+    // // alert(myPosition);
+    // if (myPosition > 60) {
+           
+    // }else if(myPosition <= 3){
+    //     document.getElementById("navbar").style.top="0px";
+    // }
+    // myPosition = myWindow.scrollTop();
+    
