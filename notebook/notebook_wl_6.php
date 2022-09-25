@@ -97,7 +97,7 @@
                                 <ul>
                                     <li>Using TA-cloning for sequencing confirmation of <i> pfa A1</i>, <i>pfa A2</i>, and <i>pfa C</i> genes</li>
                                     <br>
-                                    <li>Cloning <i>pfa B</i>, <i>pfa E</i>, and <i>pfa F</i> genes from gene block</li>
+                                    <li>Cloning <i>pfa B</i> and <i>pfa E</i> genes from gene block</li>
                                     <br>
                                     <li>Performing gradient PCR for optimization of <i>pfa A1</i> and <i>pfa A2</i> genes</li>
                                     <br>
