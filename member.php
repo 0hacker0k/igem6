@@ -465,7 +465,7 @@
                 </ul>
             </p>";
             $title_explain="Yi-Yun is always laughing. Hahahahahahahahahahaha.";
-            $popup_img="/human/members014.jpg";
+            $popup_img="/human/members114.jpg";
             $popup_img_alt="";
             $person_title="#ALL-TIME_LAUGHER";
             $person_icon="🥰";
@@ -549,7 +549,7 @@
                 </ul>
             </p>";
             $title_explain="Jung-Hsuan often forgets to reply to messages.";
-            $popup_img="/human/members018.jpg";
+            $popup_img="/human/members118.jpg";
             $popup_img_alt="";
             $person_title="#MESSAGE_IGNORER";
             $person_icon="🦊";
