@@ -13,11 +13,10 @@ function preload (){
 }
 var where = this;
 function create (){
-    loading_transition(this,this.cameras.main.scrollX+(-0.3)*width,this.cameras.main.scrollY+(0.5)*height);
+    loading_transition(this,-500*width/800,0);
     //--------------------場景設定--------------------
     map=this.add.tileSprite(0, 0, 0,0, 'map').setOrigin(0, 0).setDisplaySize(width,height);
     //--------------------人頭設定--------------------
-    console.log("loading map");
     var stage=[];
     stage[1]=this.physics.add.sprite(width*0.33,height*0.55,'stage1');
     stage[2]=this.physics.add.sprite(width*0.35,height*0.7,'stage2');
@@ -74,7 +73,7 @@ function create (){
             finish_transition((0.8)*width,(0.0)*height);
             if(id==1){
                 setTimeout(function(){
-                    load_page(stage_1_choose);
+                    load_page(stage_1_story);
                 },500);
             }
             if(id==2){
@@ -100,29 +99,6 @@ function create (){
         }
     }
     
-
-    // -----------------------文字-------------------------
-    //scoreText = this.add.text(400, 300, lan_text.hello, { fontSize: '32px', fill: '#000000' });
-
-    
-    
-    //function
-    function enter(){//進入關卡
-        if(stop==0 && spot.x>=80 && spot.x<=145 && spot.y>=555 && spot.y<=600){
-            //轉場設定
-            finish_transition(this,cam.scrollX+(0.8)*width,cam.scrollY+(0.0)*height);
-            setTimeout(function(){
-                load_page(stage_1_choose);
-            },500);
-            stop=1;
-        }else if(stop==0 && spot.x>=1455 && spot.x<=1520 && spot.y>=555 && spot.y<=600){
-            finish_transition(this,cam.scrollX+(0.8)*width,cam.scrollY+(0.0)*height);
-            setTimeout(function(){
-                load_page(stage_2_flop);
-            },500);
-            stop=1;
-        }
-    }
     //DEBUG
     if(debug==1){
         this.add.image(width/2, height/2, 'D_center').setOrigin(0.5, 0.5).setDisplaySize(10,10);

@@ -1600,7 +1600,7 @@ function create_stage5_take (){
         direction=0;
         direct.alpha = 0;
     }, this);
-    //文字說明
+    //對話框
     TextBox_x=width*0.15;
     TextBox_y=height*0.75;
     var config =
@@ -1613,9 +1613,9 @@ function create_stage5_take (){
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
     Sprite.depth=2000;
     PACO.depth=1024;
-    PACO.setVisible(false).setInteractive(false);
-    Sprite.start(lan_stage2.vo_1,50);
-    descript_count=2;
+    //PACO.setVisible(false).setInteractive(false);
+    //Sprite.start(lan_stage2.vo_1,50);
+    descript_count=1;
     descript_limit=13;
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);

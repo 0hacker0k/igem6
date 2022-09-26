@@ -96,11 +96,23 @@ function loadlanguage(){
     }
     load();
 }
+const stage_0_story={
+    key: 'stage_0_story',
+    preload: preload_story0,
+    create: create_story0,
+    update: update_story0
+}
 const map_1={
     key: 'map_1',
     preload: preload,
     create: create,
     update: update
+}
+const stage_1_story={
+    key: 'stage_1_story',
+    preload: preload_story1,
+    create: create_story1,
+    update: update_story1
 }
 const stage_1_choose={
     key: 'stage_1_choose',
@@ -151,6 +163,9 @@ function load(){
         switch(page){
             case "lobby":
                 load_page(map_1);
+                break;
+            case "story0":
+                load_page(stage_0_story);
                 break;
             case "stage1":
                 load_page(stage_1_choose);
