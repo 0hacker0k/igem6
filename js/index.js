@@ -31,7 +31,10 @@ function screen_move(scroll){
         var last_page=document.getElementById("page_"+(now_page));
         var next_page=document.getElementById("page_"+(now_page+1));
         if(last_page!=null){
-            last_page.style.top=((screen_height-last_page.clientHeight)/2-screen_height)+"px";
+            last_page.page_num=now_page;
+            if(other_animation(last_page,"down","last")){
+                last_page.style.top=((screen_height-last_page.clientHeight)/2-screen_height)+"px";
+            }
             if(last_page.first==undefined){
                 last_page.first=1;
             }else{
@@ -39,7 +42,10 @@ function screen_move(scroll){
             }
         }
         if(next_page!=null){
-            next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
+            next_page.page_num=now_page+1;
+            if(other_animation(next_page,"down","next")){
+                next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
+            }
             if(next_page.first==undefined){
                 next_page.style.transition="1.0s";
             }
@@ -65,6 +71,47 @@ function screen_move(scroll){
     }
     now_page=go_page;
 };
+function other_animation(page,direct,position){
+    if(direct=="down"){
+        if(position=="last"){
+            switch(page.page_num){
+                case 3:
+                    var earth = document.getElementById('earth');
+                    earth.style.transition="1.0s";
+                    earth.style.width='150%';
+                    earth.style.opacity='0';
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        earth.style.transition="0.0s";
+                        earth.style.width='50%';
+                        page.style.top=((screen_height-page.clientHeight)/2-screen_height)+"px";
+                        page.animate=setTimeout(() => {
+                            earth.style.opacity='1';
+                            page.animate=null;
+                        }, 1000);
+                    }, 1000);
+                    return false;
+            }
+        }else if(position=="next"){
+            switch(page.page_num){
+                case 4:
+                    // var map = document.getElementById('map_of_world');
+                    page.style.transition="0.0s";
+                    page.style.opacity="0";
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        page.style.transition="1.0s";
+                        page.style.opacity="1";
+                        page.animate=null;
+                    }, 1000);
+                    return true;
+            }
+        }
+    }else if(direct=="up"){
+
+    }
+    return true;
+}
 function move_epa(go_page){
     // console.log(go_page);
     var epa=document.getElementById("epa");

@@ -1,6 +1,5 @@
 <!doctype html> 
 <head>
-  
     <title>wiki</title>
     <meta charset="UTF-8" />
     <?php include "./sub/config.php";?>
@@ -20,14 +19,14 @@
     <div class="page" style="top:200%;" id="page_1">
         <div class="typesetting_block">
             <div class="first_page"></div>
-            <img id="team_name" src="<?php echo imgfile;?>/home/team-name.gif">
+            <img id="team_name" src="<?php echo imgfile;?>/home/team_name.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_2">
-        <img id="team_name" src="<?php echo imgfile;?>/home/team-name.gif">
+        <img id="team_name" src="<?php echo imgfile;?>/home/team_name.png">
     </div>
     <div class="page" style="top:200%;" id="page_3">
-        <img id="team_name" src="<?php echo imgfile;?>/home/earth-rotation.gif">
+        <img id="earth" src="<?php echo imgfile;?>/home/earth-rotation.gif">
     </div>
     <div class="page" style="top:200%;" id="page_4">
         <img id="map_of_world" src="<?php echo imgfile;?>/home/map-of-world.jpg">
@@ -37,7 +36,7 @@
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_5">
-        <img id="team_name" src="<?php echo imgfile;?>/home/team-name.gif">
+        <img id="team_name" src="<?php echo imgfile;?>/home/team_name.png">
     </div>
     <div class="page" style="top:200%;" id="page_6">
         <div class="white_background">

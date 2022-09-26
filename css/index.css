@@ -73,6 +73,14 @@ body{
     display: flex;
     width: 50%;
 }
+#earth{
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+    object-fit:contain;
+    object-position: center center;
+    transition: 1.0s;
+}
 #map_of_world{
     position: absolute;
     width: 80%;
