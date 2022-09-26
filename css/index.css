@@ -48,7 +48,7 @@ body{
     justify-content: center; 
     align-items: center; 
     top: 200%;
-    /* height: 100%; */
+    height: 100%;
     flex-wrap: wrap;
 }
 .white_background{
@@ -85,6 +85,7 @@ body{
 }
 .background{
     width: 100%;
+    height: 100vh;
 }
 .stop {
     animation-play-state: paused;

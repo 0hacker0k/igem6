@@ -27,7 +27,7 @@
         <img id="team_name" src="<?php echo imgfile;?>/home/team-name.gif">
     </div>
     <div class="page" style="top:200%;" id="page_3">
-        <img id="team_name" src="<?php echo imgfile;?>/home/team-name.gif">
+        <img id="team_name" src="<?php echo imgfile;?>/home/earth-rotation.gif">
     </div>
     <div class="page" style="top:200%;" id="page_4">
         <img id="map_of_world" src="<?php echo imgfile;?>/home/map-of-world.jpg">
@@ -79,18 +79,15 @@
     <img class="background" src="<?php echo imgfile;?>/stage1/background.png">
     <img class="background" src="<?php echo imgfile;?>/stage1/background.png">
     <img class="background" src="<?php echo imgfile;?>/stage1/background.png">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel.jpg">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel.jpg">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel.jpg">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel.jpg">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel.jpg">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel.jpg">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel.jpg">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel.jpg">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel.jpg">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel.jpg">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel.jpg">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel.jpg">
+    <img class="background" src="<?php echo imgfile;?>/stage1/background.png">
+    <img class="background" src="<?php echo imgfile;?>/home/vessel-1.png">
+    <img class="background" src="<?php echo imgfile;?>/home/vessel-2.png">
+    <img class="background" src="<?php echo imgfile;?>/home/vessel-3.png">
+    <img class="background" src="<?php echo imgfile;?>/home/vessel-4.png">
+    <img class="background" src="<?php echo imgfile;?>/home/vessel-5.png">
+    <img class="background" src="<?php echo imgfile;?>/home/vessel-6.png">
+    <img class="background" src="<?php echo imgfile;?>/home/vessel-7.png">
+    <img class="background" src="<?php echo imgfile;?>/home/vessel-8.png">
     <img class="background" src="<?php echo imgfile;?>/stage1/background.png">
     <!-- <div id="final_item"></div> -->
     <script>

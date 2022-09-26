@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });  
 });
 function screen_move(scroll){
-    var go_page=Math.floor(scroll/screen_height+1);
+    var go_page=Math.floor(scroll/screen_height+1.5);
     move_epa(go_page);
     if(go_page>now_page){
         var last_page=document.getElementById("page_"+(now_page));
@@ -59,13 +59,14 @@ function screen_move(scroll){
             next_page.style.transition="1.0s";
         }
         if(last_page!=null){
+            
             last_page.style.top=(screen_height+(screen_height-last_page.clientHeight)/2)+"px";
         }
     }
-    now_page=Math.floor(scroll/screen_height+1);
+    now_page=go_page;
 };
 function move_epa(go_page){
-    console.log(go_page);
+    // console.log(go_page);
     var epa=document.getElementById("epa");
     var map_icon=document.getElementById("map_icon");
     var map=document.getElementById("map");
@@ -141,6 +142,11 @@ var parameter=document.getElementById("parameter");
 parameter.innerHTML = ".first_page{--nav_height: "+document.getElementById("navbar").clientHeight+"px;}";
 now_page=Math.floor($(window).scrollTop()/screen_height);
 screen_move($(window).scrollTop());
+window.addEventListener('resize',
+    () => {
+        screen_height=window.innerHeight;
+    }
+    , false );
 // if (myWindow.scrollTop() > myPosition) {
 //     // $("#navbar").addClass("header-hide");
 //     var item=document.getElementById("navbar");
