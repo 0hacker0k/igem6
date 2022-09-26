@@ -105,6 +105,29 @@ lan_story1_after=
     "npc_9":"Break a leg!",
     "back_10":"PACO and fairy leave for stage two."
 }
+lan_story2=
+{
+    "back_1":"After the first stage, the second stage is waiting for him.",
+    "npc_2":"Wow, you really passed the first stage.",
+    "back_3":"A woman is standing in front of PACO.",
+    "pa_4":"Are you the priest responsible for the second stage?",
+    "npc_5":"Hey, what are you talking about? The best glamorous priest on the island is in front of you! But you don’t say anything about this!",
+    "vo_6":"According to your age, I don’t want to talk about anything.",
+    "npc_7":"The fairy is really churlish at present. It seems that the world outside this island doesn’t become advanced.",
+    "pa_8":"E. fairy, we might be polite to others.",
+    "vo_9":"So she can treat us like this?",
+    "pa_10":"Sorry, priest, we don’t do our best in politeness, it is my false.",
+    "vo_11":"PACO! Why do we need to show our regret to her?",
+    "npc_12":"It seems that you still have the sense, unlike the fairy…",
+    "pa_13":"Emmmm… sorry for bothering you, but my grandfather suffered from CVD, so it is an emergency for me to obtain the medicine to solve CVD. Can you tell us about the second stage?",
+    "npc_14":"Do you want to… rescue your grandfather?",
+    "pa_15":"Yes, because we don’t have a lot of time, please tell us the details about the challenge as soon as possible.",
+    "npc_16":"The only advice I can give you is: to give up as soon as possible.",
+    "pa_17":"What?",
+    "npc_18":"Giving up is the best choice, finding the antidote for EPA is a no-result way, keep going, and you will see more truth, the only thing you can obtain is remorse and pain.",
+    "pa_19":"Although it is a slim chance, I won’t give up easily, please tell me the solution to rescue my grandfather!",
+    "npc_20":"Please enter this area, it will bring you to the place where you receive the mission."
+}
 lan_stage2=
 {
     "vo_1":"In the previous stages, we got the target gene and amplified it by PCR.",
@@ -120,4 +143,18 @@ lan_stage2=
     "vo_11":"4. Gel imaging, irradiating the gel with UV light, taking the photo, and observing the result.",
     "vo_12":"Originally, we’ll dyeing the DNA by EtBr, a kind of carcinogen. But I will take care of it this time.",
     "pa_13":"What an amazing game welfare…"
+}
+lan_story2_after=
+{
+    "pa_1":"( It seems that some memory doesn’t belong to me swipe across my mind……? The person in the memory is the priest? )",
+    "npc_2":"Congratulations for pass the challenge! You can move on to the next stage.",
+    "pa_3":"Can I ask some questions before you become the priest? Why do you consider that we only can become aware of remorse?",
+    "npc_4":"Do you see the fragments of my memory…?",
+    "npc_5":"Let me tell you my story.",
+    "npc_6":"It’s a long story, about meeting the wrong person and having an adversity marriage… The reason I started my journey is because of my husband. He suffered from CVD for a long time. However, during the journey, I found that I was threatened by CVD too, so I became a CVD patient.",
+    "pa_7":"What is the association between your illness and your husband?",
+    "npc_8":"Because my husband cheated on me and planned to occupy our property, living with the other woman. However, he didn’t want to pay for the alimony after we divorced. So he added a lot of fatty, salty, and processed food to my diet, and it is the reason why I suffered from CVD. After finding this unexpected truth, the belief that I want to rescue my husband faltered, so I lost the qualifications to find the solution of CVD.",
+    "pa_9":"( This couple is amazing. )",
+    "npc_10":"You have a strong belief, so keep going on. Although I believe that the end of your path is remorse and pain, try to put yourself first.",
+    "npc_11":"This is the award – the Pstv28 which ligates the pfa B, pfa C, and pfa E, the journey of only sadness to you will continue."
 }

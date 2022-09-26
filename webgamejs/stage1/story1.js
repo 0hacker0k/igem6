@@ -8,7 +8,7 @@ var con=
     "lan":lan_story1,
     "slide":slide_story1,
     'descript_count':1,
-    'descript_limit':27
+    'descript_limit':19
 };
 
 function preload_story1 (){
