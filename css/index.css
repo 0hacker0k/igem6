@@ -71,7 +71,11 @@ body{
 }
 #team_name{
     display: flex;
-    width: 50%;
+    width: 70%;
+}
+#team_logo{
+    display: flex;
+    width: 55%;
 }
 #earth{
     position: absolute;

@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_2">
-        <img id="team_name" src="<?php echo imgfile;?>/home/team_name.png">
+        <img id="team_logo" src="<?php echo imgfile;?>/home/logo.png">
     </div>
     <div class="page" style="top:200%;" id="page_3">
         <img id="earth" src="<?php echo imgfile;?>/home/earth-rotation.gif">
@@ -74,11 +74,10 @@
             To generate an EPA supplement without potential contaminants, our team applied synthetic biology to produce pure EPA. 
         </div>
     </div>
-    
-    <img class="background" src="<?php echo imgfile;?>/stage1/background.png">
-    <img class="background" src="<?php echo imgfile;?>/stage1/background.png">
-    <img class="background" src="<?php echo imgfile;?>/stage1/background.png">
-    <img class="background" src="<?php echo imgfile;?>/stage1/background.png">
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
     <img class="background" src="<?php echo imgfile;?>/home/vessel-1.png">
     <img class="background" src="<?php echo imgfile;?>/home/vessel-2.png">
     <img class="background" src="<?php echo imgfile;?>/home/vessel-3.png">

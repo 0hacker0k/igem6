@@ -1,6 +1,7 @@
 var map_icon = document.getElementById("map_icon");
 var button = document.getElementById("testBtn");
 var screen_height=window.innerHeight;
+var screen_width=window.innerWidth;
 var now_page;
 if (map_icon.classList && map_icon && button) {
     button.onclick = function() {
@@ -26,89 +27,248 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 function screen_move(scroll){
     var go_page=Math.floor(scroll/screen_height+1.5);
-    move_epa(go_page);
-    if(go_page>now_page){
-        var last_page=document.getElementById("page_"+(now_page));
-        var next_page=document.getElementById("page_"+(now_page+1));
-        if(last_page!=null){
-            last_page.page_num=now_page;
-            if(other_animation(last_page,"down","last")){
-                last_page.style.top=((screen_height-last_page.clientHeight)/2-screen_height)+"px";
+    while(go_page!=now_page){
+        move_epa(go_page);
+        if(go_page>now_page){
+            var last_page=document.getElementById("page_"+(now_page));
+            var next_page=document.getElementById("page_"+(now_page+1));
+            if(last_page!=null){
+                last_page.page_num=now_page;
+                if(other_animation(last_page,"down","last")){
+                    last_page.style.top=((screen_height-last_page.clientHeight)/2-screen_height)+"px";
+                    if(last_page.first==undefined){
+                        last_page.first=1;
+                    }else{
+                        last_page.style.transition="1.0s";
+                    }
+                }
             }
-            if(last_page.first==undefined){
-                last_page.first=1;
-            }else{
-                last_page.style.transition="1.0s";
+            if(next_page!=null){
+                next_page.page_num=now_page+1;
+                if(other_animation(next_page,"down","next")){
+                    next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
+                    next_page.first=1;
+                    if(next_page.first==undefined){
+                        next_page.style.transition="1.0s";
+                    }
+                }
+            }
+        }else if(go_page<now_page){
+            var next_next_page=document.getElementById("page_"+(now_page-2));
+            var next_page=document.getElementById("page_"+(now_page-1));
+            var last_page=document.getElementById("page_"+(now_page));
+            if(next_next_page!=null){
+                next_next_page.style.top=(-screen_height)+"px";
+                if(next_next_page.first==undefined){
+                    next_next_page.first=1;
+                }
+            }
+            if(next_page!=null){
+                if(other_animation(next_page,"up","next")){
+                    next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
+                    if(next_page.first==undefined){
+                        next_page.first=1;
+                        next_page.style.transition="1.0s";
+                    }
+                }
+            }
+            if(last_page!=null){
+                if(other_animation(last_page,"up","last")){
+                    last_page.style.top=(screen_height+(screen_height-last_page.clientHeight)/2)+"px";
+                }
             }
         }
-        if(next_page!=null){
-            next_page.page_num=now_page+1;
-            if(other_animation(next_page,"down","next")){
-                next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
-            }
-            if(next_page.first==undefined){
-                next_page.style.transition="1.0s";
-            }
-        }
-    }else if(go_page<now_page){
-        var next_next_page=document.getElementById("page_"+(now_page-2));
-        var next_page=document.getElementById("page_"+(now_page-1));
-        var last_page=document.getElementById("page_"+(now_page));
-        if(next_next_page!=null){
-            next_next_page.style.top=(-screen_height)+"px";
-            if(next_next_page.first==undefined){
-                next_next_page.first=1;
-            }
-        }
-        if(next_page!=null){
-            next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
-            next_page.style.transition="1.0s";
-        }
-        if(last_page!=null){
-            
-            last_page.style.top=(screen_height+(screen_height-last_page.clientHeight)/2)+"px";
-        }
+        $('html,body').animate({ scrollTop: ((now_page-1)*screen_height) }, 1000);
+        now_page+=(go_page>now_page)?1:-1;
     }
-    now_page=go_page;
+    
 };
 function other_animation(page,direct,position){
+    // console.log(page,direct,position);
     if(direct=="down"){
         if(position=="last"){
             switch(page.page_num){
-                case 3:
-                    var earth = document.getElementById('earth');
-                    earth.style.transition="1.0s";
-                    earth.style.width='150%';
-                    earth.style.opacity='0';
+                case 1://pair1
+                    page.style.transition="1.0s";
+                    page.style.opacity='0';
                     if(page.animate!=null)clearTimeout(page.animate);
                     page.animate=setTimeout(() => {
-                        earth.style.transition="0.0s";
-                        earth.style.width='50%';
+                        page.style.transition="0.0s";
                         page.style.top=((screen_height-page.clientHeight)/2-screen_height)+"px";
                         page.animate=setTimeout(() => {
-                            earth.style.opacity='1';
+                            page.style.opacity='1';
                             page.animate=null;
                         }, 1000);
                     }, 1000);
                     return false;
+                case 2://pair2
+                        var logo = document.getElementById('team_logo');
+                        logo.style.transition="1.0s";
+                        logo.style.opacity="0";
+                        logo.style.width="55%";
+                        if(page.animate!=null)clearTimeout(page.animate);
+                        page.animate=setTimeout(() => {
+                            page.style.transition="0.0s";
+                            logo.style.transition="0.0s";
+                            page.style.top=((screen_height-page.clientHeight)/2-screen_height)+"px";
+                            logo.style.opacity="1";
+                            page.animate=null;
+                        }, 1000);
+                        return false;
+                case 3://pair3
+                    var earth = document.getElementById('earth');
+                    earth.style.transition="0.0s";
+                    earth.style.width='50%';
+                    earth.style.opacity='1';
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        earth.style.transition="1.0s";
+                        earth.style.width='150%';
+                        earth.style.opacity='0';
+                        page.animate=null;
+                    }, 1);
+                    return false;
             }
         }else if(position=="next"){
             switch(page.page_num){
-                case 4:
-                    // var map = document.getElementById('map_of_world');
+                case 2://pair4
+                    var logo = document.getElementById('team_logo');
                     page.style.transition="0.0s";
+                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    logo.style.marginTop="calc("+(document.getElementById("navbar").clientHeight*1.03)+"px - "+(screen_width*0.038)+"px)";
+                    logo.style.width="22%";
+                    logo.style.transition="0.0s";
+                    logo.style.opacity="1";
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        page.style.transition="1.0s";
+                        logo.style.transition="1.0s";
+                        logo.style.marginTop="0%";
+                        logo.style.width="55%";
+                        page.animate=null;
+                    }, 1);
+                    return false;
+                case 3://pair5
+                        page.style.transition="0.0s";
+                        page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                        page.style.opacity="0";
+                        var earth = document.getElementById('earth');
+                        earth.style.width="50%";
+                        earth.style.opacity="1";
+                        if(page.animate!=null)clearTimeout(page.animate);
+                        page.animate=setTimeout(() => {
+                            page.style.transition="1.0s";
+                            page.style.opacity="1";
+                            page.animate=null;
+                        }, 1);
+                        return false;
+                case 4://pair6
+                    page.style.transition="0.0s";
+                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
                     page.style.opacity="0";
                     if(page.animate!=null)clearTimeout(page.animate);
                     page.animate=setTimeout(() => {
                         page.style.transition="1.0s";
                         page.style.opacity="1";
                         page.animate=null;
-                    }, 1000);
-                    return true;
+                    }, 500);
+                    return false;
             }
         }
     }else if(direct=="up"){
-
+        if(position=="next"){
+            switch(page.page_num){
+                case 1://pair1
+                    page.style.transition="0.0s";
+                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    page.style.opacity='0';
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        page.style.transition="1.0s";
+                        page.style.opacity='1';
+                    }, 1);
+                    return false;
+                case 2://pair2
+                    var logo = document.getElementById('team_logo');
+                    page.style.transition="0.0s";
+                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    page.style.opacity="0";
+                    logo.style.opacity="1";
+                    logo.style.width="55%";
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        page.style.transition="1.0s";
+                        page.style.opacity="1";
+                        page.animate=null;
+                    }, 1);
+                    return false;
+                case 3://pair3
+                    var earth = document.getElementById('earth');
+                    earth.style.transition="0.0s";
+                    earth.style.width='150%';
+                    earth.style.opacity='0';
+                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    page.style.transition="0.0s";
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        earth.style.transition="1.0s";
+                        earth.style.opacity='1';
+                        earth.style.width='50%';
+                        page.style.transition="1.0s";
+                        page.animate=null;
+                    }, 1);
+                    return false;
+            }
+        }else if(position=="last"){
+            switch(page.page_num){
+                case 2://pair4
+                    var logo = document.getElementById('team_logo');
+                    page.style.transition="0.0s";
+                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    logo.style.transition="0.0s";
+                    logo.style.width="55%";
+                    logo.style.marginTop="0%";
+                    logo.style.opacity="1";
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        page.style.transition="1.0s";
+                        logo.style.transition="1.0s";
+                        logo.style.marginTop="calc("+(document.getElementById("navbar").clientHeight*1.03)+"px - "+(screen_width*0.038)+"px)";
+                        logo.style.width="22%";
+                        page.animate=setTimeout(() => {
+                            logo.style.transition="0.0s";
+                            logo.style.opacity="0";
+                            page.animate=null;
+                        }, 1000);
+                    }, 1);
+                    return false;
+                case 3://pair5
+                    var earth = document.getElementById('earth');
+                    earth.style.transition="0.0s";
+                    earth.style.width="50%";
+                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    page.style.transition="0.0s";
+                    page.style.opacity="1";
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        page.style.transition="1.0s";
+                        page.style.opacity="0";
+                        page.animate=null;
+                    }, 1);
+                    return false;
+                case 4://pair6
+                    page.style.transition="0.0s";
+                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    page.style.opacity="1";
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        page.style.transition="1.0s";
+                        page.style.opacity="0";
+                        page.animate=null;
+                    }, 1);
+                    return false;
+            }
+        }
     }
     return true;
 }
@@ -192,6 +352,7 @@ screen_move($(window).scrollTop());
 window.addEventListener('resize',
     () => {
         screen_height=window.innerHeight;
+        screen_width=window.innerWidth;
     }
     , false );
 // if (myWindow.scrollTop() > myPosition) {
