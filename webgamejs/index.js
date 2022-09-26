@@ -23,6 +23,7 @@ var width=set_width*scale; //the web game real window size(width)
 var height=set_height*scale; //the web game real window size(height)
 var role_x=width/2; //the x coordinate of role when the user back to map
 var role_y=height/2; //the y coordinate of role when the user back to map
+var con;//every storys' parameter. 
 var config;
 var score = 0;
 var scoreText;

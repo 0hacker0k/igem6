@@ -1,17 +1,16 @@
 debug=1;
-var con=
-{//直接調參數
-    "img_num_start":7,
-    "img_num_end":11,
-    "npc_key":'NPC1',
-    "next_page":stage_1_choose,
-    "lan":lan_story1,
-    "slide":slide_story1,
-    'descript_count':1,
-    'descript_limit':19
-};
-
 function preload_story1 (){
+    con=
+    {//直接調參數
+        "img_num_start":7,
+        "img_num_end":11,
+        "npc_key":'NPC1',
+        "next_page":stage_1_choose,
+        "lan":lan_story1,
+        "slide":slide_story1,
+        'descript_count':1,
+        'descript_limit':19
+    };
     load_transition(this);
     console.log(con);
     for(var i=con.img_num_start;i<=con.img_num_end;i++){
