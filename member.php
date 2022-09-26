@@ -255,7 +255,7 @@
                 </ul>
             </p>";
             $title_explain="Ting-Hung has to get into the swing of every experiment and the content of lab work that we show on the wiki. Thus, seldom does he sleep enough.";
-            $popup_img="/human/members004.jpg";
+            $popup_img="/human/members104.jpg";
             $popup_img_alt="";
             $person_title="#SLEEP_TERMINATOR";
             $person_icon="🍺";
@@ -276,7 +276,7 @@
                 </ul>
             </p>";
             $title_explain="Yu-Chen reminds everyone (especially the wet lab team members) to leave the lab on time and go back to sleep every day.";
-            $popup_img="/human/members005.jpg";
+            $popup_img="/human/members105.jpg";
             $popup_img_alt="";
             $person_title="#TIME_REMINDER";
             $person_icon="🤣";
@@ -297,7 +297,7 @@
                 </ul>
             </p>";
             $title_explain="Chen-Yu always tries to make experiments more methodically, finishing experiments as soon as possible, and asking members not to waste time.";
-            $popup_img="/human/members006.jpg";
+            $popup_img="/human/members106.jpg";
             $popup_img_alt="";
             $person_title="#TIME_CHASER";
             $person_icon="🤔";
@@ -318,7 +318,7 @@
                 </ul>
             </p>";
             $title_explain="As a wet lab member, Chi-Huan disappeared for the whole of July because of the music performance with his orchestra members.";
-            $popup_img="/human/members007.jpg";
+            $popup_img="/human/members107.jpg";
             $popup_img_alt="";
             $person_title="#JULY_DIVER";
             $person_icon="🐱";
@@ -339,7 +339,7 @@
                 </ul>
             </p>";
             $title_explain="Zong-Ying is always chasing after other people's experiments to complete the experiment records.";
-            $popup_img="/human/members008.jpg";
+            $popup_img="/human/members108.jpg";
             $popup_img_alt="";
             $person_title="#EXPERIMENTS_RECORDER";
             $person_icon="🌱";
@@ -360,7 +360,7 @@
                 </ul>
             </p>";
             $title_explain="Bo-Qin edits over 80% of slides for the wet lab, especially illustrations and animations.";
-            $popup_img="/human/members009.jpg";
+            $popup_img="/human/members109.jpg";
             $popup_img_alt="";
             $person_title="#ILLUSTRATION_GENERATOR";
             $person_icon="😐";
@@ -381,7 +381,7 @@
                 </ul>
             </p>";
             $title_explain="Chi-Yang devoted his speciality to programming to make our wiki and web game perfect.";
-            $popup_img="/human/members010.jpg";
+            $popup_img="/human/members110.jpg";
             $popup_img_alt="";
             $person_title="#SOFTWARE_DEVELOPER";
             $person_icon="🥺";
@@ -402,7 +402,7 @@
                 </ul>
             </p>";
             $title_explain="Si-Ru always brings some snacks or drinks for our buddies. She takes care of not only the dry lab but all the team members.";
-            $popup_img="/human/members011.jpg";
+            $popup_img="/human/members111.jpg";
             $popup_img_alt="";
             $person_title="#MEMBER_FEEDER";
             $person_icon="💍";
@@ -423,7 +423,7 @@
                 </ul>
             </p>";
             $title_explain="Hao-Fang sometimes provokes the dry lab co-leader for some stupid reasons. Therefore, he has to apologize to Si-Ru once a day.";
-            $popup_img="/human/members012.jpg";
+            $popup_img="/human/members112.jpg";
             $popup_img_alt="";
             $person_title="#CO-LEADER_PROVOKER";
             $person_icon="😃";
@@ -444,7 +444,7 @@
                 </ul>
             </p>";
             $title_explain="Hao-Yuan seldom finishes work before the deadline.";
-            $popup_img="/human/members013.jpg";
+            $popup_img="/human/members113.jpg";
             $popup_img_alt="";
             $person_title="#PROGRESS_PROCRASTINATOR";
             $person_icon="🧀";
@@ -486,7 +486,7 @@
                 </ul>
             </p>";
             $title_explain="Peng-Jen created the <i>E. coli</i> character–PACO .";
-            $popup_img="/human/members015.jpg";
+            $popup_img="/human/members115.jpg";
             $popup_img_alt="";
             $person_title="#E. COLI_INCUBATOR";
             $person_icon="🍠 ";
@@ -507,7 +507,7 @@
                 </ul>
             </p>";
             $title_explain="Guan-Chen usually carries many members’ lunch or dinner to the lab.";
-            $popup_img="/human/members016.jpg";
+            $popup_img="/human/members116.jpg";
             $popup_img_alt="";
             $person_title="#FOOD_DELIVER";
             $person_icon="🥫";
