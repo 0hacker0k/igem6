@@ -36,12 +36,16 @@
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_5">
-        <img id="team_name" src="<?php echo imgfile;?>/home/team_name.png">
+        <!-- <img id="team_name" src="<?php echo imgfile;?>/home/team_name.png"> -->
+        <img id="page5_epa" src="<?php echo imgfile;?>/home/page5_epa.png">
     </div>
     <div class="page" style="top:200%;" id="page_6">
         <div class="white_background">
             The living habits nowadays cause the excess intake of cholesterol from the modern diet,
             inducing the artery's low-density lipoproteins ( LDL ) accumulation. 
+        </div>
+        <div class="bottomleft">
+            <img class="bl-background" src="<?php echo imgfile;?>/home/bottomleft-background.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_7">
@@ -74,7 +78,7 @@
             To generate an EPA supplement without potential contaminants, our team applied synthetic biology to produce pure EPA. 
         </div>
     </div>
-    <div class="background"></div>
+    <div id="first_background" class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
