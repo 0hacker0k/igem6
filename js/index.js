@@ -26,10 +26,12 @@ document.addEventListener('DOMContentLoaded', function(){
     });  
 });
 var page_running=false;
+var going_top=false;
+
 function screen_move(scroll){
     if(page_running==true)return ;
     var go_page=Math.floor(scroll/screen_height+1.5);
-    if(go_page!=now_page){
+    if(go_page!=now_page && going_top==false){
         page_running=true;
         $('html,body').stop(true,false);
         $('html,body').animate({ scrollTop: ((go_page-1)*screen_height) }, 1000);
@@ -45,57 +47,63 @@ function screen_move(scroll){
             if(last_page!=null){
                 last_page.page_num=now_page;
                 if(other_animation(last_page,"down","last")){
-                    last_page.style.top=((screen_height-last_page.clientHeight)/2-screen_height)+"px";
-                    if(last_page.first==undefined){
-                        last_page.first=1;
-                    }else{
+                    last_page.style.top=((screen_height-last_page.clientHeight)/2)+"px";
+                    last_page.style.transition="0.0s";
+                    // if(last_page.animate!=null)clearTimeout(last_page.animate);
+                    last_page.animate=setTimeout(() => {
+                        last_page.style.top=((screen_height-last_page.clientHeight)/2-screen_height)+"px";
                         last_page.style.transition="1.0s";
-                    }
+                        last_page.animate=null;
+                    }, 1);
                 }
             }
             if(next_page!=null){
                 next_page.page_num=now_page+1;
                 if(other_animation(next_page,"down","next")){
-                    next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
-                    next_page.first=1;
-                    if(next_page.first==undefined){
+                    next_page.style.top=((screen_height-next_page.clientHeight)/2+screen_height)+"px";
+                    next_page.style.transition="0.0s";
+                    // if(next_page.animate!=null)clearTimeout(next_page.animate);
+                    next_page.animate=setTimeout(() => {
+                        next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
                         next_page.style.transition="1.0s";
-                    }
+                        next_page.animate=null;
+                    }, 1);
                 }
             }
         }else if(go_page<now_page){
-            var next_next_page=document.getElementById("page_"+(now_page-2));
             var next_page=document.getElementById("page_"+(now_page-1));
             var last_page=document.getElementById("page_"+(now_page));
-            if(next_next_page!=null){
-                next_next_page.style.top=(-screen_height)+"px";
-                if(next_next_page.first==undefined){
-                    next_next_page.first=1;
-                }
-            }
             if(next_page!=null){
                 if(other_animation(next_page,"up","next")){
-                    next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
-                    if(next_page.first==undefined){
-                        next_page.first=1;
+                    next_page.style.top=((screen_height-next_page.clientHeight)/2-screen_height)+"px";
+                    next_page.style.transition="0.0s";
+                    // if(next_page.animate!=null)clearTimeout(next_page.animate);
+                    next_page.animate=setTimeout(() => {
+                        next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
                         next_page.style.transition="1.0s";
-                    }
+                        next_page.animate=null;
+                    }, 1);
                 }
             }
             if(last_page!=null){
                 if(other_animation(last_page,"up","last")){
-                    last_page.style.top=(screen_height+(screen_height-last_page.clientHeight)/2)+"px";
+                    last_page.style.top=((screen_height-last_page.clientHeight)/2)+"px";
+                    last_page.style.transition="0.0s";
+                    // if(last_page.animate!=null)clearTimeout(last_page.animate);
+                    last_page.animate=setTimeout(() => {
+                        last_page.style.top=((screen_height-last_page.clientHeight)/2+screen_height)+"px";
+                        last_page.style.transition="1.0s";
+                        last_page.animate=null;
+                    }, 1);
                 }
             }
         }
         // var go_page=Math.floor(scroll/screen_height+1.5);
         now_page+=(go_page>now_page)?1:-1;
-        
     }
     
 };
 function other_animation(page,direct,position){
-    // console.log(page,direct,position);
     if(direct=="down"){
         if(position=="last"){
             switch(page.page_num){
@@ -377,16 +385,20 @@ function other_animation(page,direct,position){
         }
     }
     return true;
-}
+}//6
 function move_epa(go_page){
-    // console.log(go_page);
     var epa=document.getElementById("epa");
-    var map_icon=document.getElementById("map_icon");
+    var bottomleft=document.getElementById("bottomleft");
     var map=document.getElementById("map");
     if(go_page>=1 && go_page<=3){
         map.style.bottom="-100%";
     }else{
         map.style.bottom="2%";
+    }
+    if(go_page>=6 && go_page<=20){
+        bottomleft.style.bottom="0%";
+    }else{
+        bottomleft.style.bottom="-100%";
     }
     switch(go_page){
         case 4:
@@ -452,10 +464,10 @@ HTMLImageElement.prototype.move_to=function(x,y){
     this.style.right=(map_icon.clientWidth*x)+"px";
 }
 function go_top(){
-    page_running=true;
+    going_top=true;
     $('html,body').animate({ scrollTop: 0 }, 1000);
     setTimeout(() => {
-        page_running=false;
+        going_top=false;
         screen_move($(window).scrollTop());
     }, 1000);
     
@@ -464,7 +476,7 @@ var parameter=document.getElementById("parameter");
 parameter.innerHTML = ".first_page{--nav_height: "+document.getElementById("navbar").clientHeight+"px;}";
 parameter=document.getElementById("first_background");
 parameter.style = "--nav_height: "+document.getElementById("navbar").clientHeight+"px;";
-now_page=Math.floor($(window).scrollTop()/screen_height);
+now_page=Math.floor($(window).scrollTop()/screen_height+0.5);
 screen_move($(window).scrollTop());
 window.addEventListener('resize',
     () => {

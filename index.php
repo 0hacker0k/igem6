@@ -15,6 +15,9 @@
         <img id="epa" src="<?php echo imgfile;?>/drop.png">
         <img id="go_top" onclick="go_top()" src="<?php echo imgfile;?>/home/go-to-top.png">
     </div>
+    <div id="bottomleft">
+        <img class="bl-background" src="<?php echo imgfile;?>/home/bottomleft-background.png">
+    </div>
     <style id="parameter"></style>
     <div class="page" style="top:200%;" id="page_1">
         <div class="typesetting_block">
@@ -45,7 +48,9 @@
             inducing the artery's low-density lipoproteins ( LDL ) accumulation. 
         </div>
         <div class="bottomleft">
-            <img class="bl-background" src="<?php echo imgfile;?>/home/bottomleft-background.png">
+            <img class="illustration" id="page5-role1" src="<?php echo imgfile;?>/home/page5-role1.png">
+            <img class="illustration" id="page5-role2" src="<?php echo imgfile;?>/home/page5-role2.png">
+            <img class="illustration" id="page5-role3" src="<?php echo imgfile;?>/home/page5-role3.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_7">

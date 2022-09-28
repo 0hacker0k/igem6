@@ -79,6 +79,15 @@ body{
     justify-content: center; 
     align-items: center;
 }
+#bottomleft{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    padding-bottom: 30%;
+    transition: 1.0s;
+    /* overflow: hidden; */
+}
 .bottomleft{
     position: absolute;
     bottom: 0;
@@ -93,6 +102,10 @@ body{
     left: -20%;
     width: 120%;
     z-index: 0;
+}
+.illustration{
+    position: absolute;
+    z-index: 1;
 }
 #team_name{
     display: flex;
@@ -113,6 +126,28 @@ body{
 #map_of_world{
     position: absolute;
     width: 80%;
+}
+#page5-role1{
+    width: 40%;
+    /* height: 40%; */
+    bottom:6%;
+    left:2%;
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+}
+#page5-role2{
+    width: 30%;
+    /* height: 40%; */
+    bottom:6%;
+    left:60%;
+}
+#page5-role3{
+    width: 30%;
+    /* height: 40%; */
+    bottom:40%;
+    left:35%;
 }
 .first_page{
     opacity: 0;
