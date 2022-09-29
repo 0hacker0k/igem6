@@ -13,6 +13,9 @@ foreach($rs->fetchall() as $value){
         font-size: 4rem;
     }
 </style>
+<div style="width: 90%;margin: 5%;border: 1% solid;">
+    ;
+</div>
 <form class="size_mid" enctype="multipart/form-data" id="event_upload_form" method="post">
     <div>當前狀態</div>
     <div><?php echo $value['status'];?></div>
