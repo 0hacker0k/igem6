@@ -81,7 +81,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Ph.D. in Biomedical Science Institute, National Sun Yat-sen University</div>Aka 中正金城武";
+                $content="<div class='graduate'>Assistant Professor, Department of Biomedical Sciences</div>An essential role in building up the team. Dr. Weng guided us to consider the larger picture and story behind our concept, managed team schedules, and assisted in organizing human practice events.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -90,7 +90,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Ph.D. in Molecular Medicine, National Taiwan University</div>Dr. Yu helps team members to establish the whole vision, monitors the team process, and provides consulting on Wet lab experiments and HP activities.";
+                $content="<div class='graduate'>Assistant Professor, Department of Biomedical Sciences</div>An essential role in building up the team. Dr. Yu contributed to the experimental design, instructed safety requirements, and provided consulting on wet lab experiments and human practice events.";
                 include "sub/attribution_card.php";
             ?>
             <div id="2" class="title-label-div">
@@ -102,16 +102,16 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Ph.D. in Biophysical Chemistry, Yale University.</div>Dr. Lee builds up the laboratory and assists the executive affairs.";
+                $content="<div class='graduate'>Professor, Department of Biomedical Sciences</div>Dr. Lee shared her experience and reviewed the technicalities.";
                 include "sub/attribution_card.php";
             ?>
             <?php
-                $name="Michael Chan";
+                $name="Wing-Yan Chan";
                 $photo="/attributions/attributions202.jpg";
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Ph.D. in Anatomical and Cellular Pathology, The Chinese University of Hong Kong</div>";
+                $content="<div class='graduate'>Professor, Department of Biomedical Sciences</div>Dr. Chan provided support for the team concerning judging issues.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -120,7 +120,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Ph.D. in Microbial Immunity, National Yang-Ming University</div>Dr. Chen gives advice on experimental design, and instructs the wet lab experiments.";
+                $content="<div class='graduate'>Associate professor, Department of Biomedical Sciences</div>Dr. Chen gave insightful advises on our experimental designs and project feasibility.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -129,7 +129,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Ph.D. in Chemistry and Biochemistry, University of California</div>Dr. Lin helps team members to sharpen the original ideas, gives advice on dry lab experimental designs, instructs and provides technical resources of modeling.";
+                $content="<div class='graduate'>Assistant Professor, Department of Chemistry and Biochemistry</div>Dr. Lin helped us in evaluating the viability of our initial ideas and advised on dry lab hardware designs.";
                 include "sub/attribution_card.php";
             ?>
             <div id="3" class="title-label-div">
@@ -141,7 +141,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Ph.D. in Plant Breeding, Cornell University</div>Dr. Rau gave comments, corrections, and suggestions on the monthly team presentations, video scripts, picture book, and other English materials.";
+                $content="<div class='graduate'>Assistant Professor, Department of Electrical Engineering</div>Dr. Rau instructed and reviewed our monthly team presentation, and gave suggestions on our team wiki, team poster, and promotion video.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -150,7 +150,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Ph.D. in Linguistics, Cornell University</div>Dr. Rau gave comments, corrections, and suggestions on the monthly team presentations, video scripts, picture book, and other English materials.";
+                $content="<div class='graduate'>Professor, Graduate Institute of Linguistics</div>Dr. Rau instructed and reviewed our monthly team presentation, and gave suggestions on our team wiki, team poster, and promotion video.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -159,7 +159,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Ph.D. in Electronics Engineering, National Tsing Hua University</div>";
+                $content="<div class='graduate'>Adjunct Assistant Professor, Department of Mechanical Engineering</div>Dr. Wu instructed the overall hardware development, including creating technical drawings, essential machining skills and machine design.";
                 include "sub/attribution_card.php";
             ?>
             <div id="4" class="title-label-div">
@@ -171,7 +171,9 @@
                 $icon1="leadership";
                 $icon2="presentation";
                 $icon3="ihp";
-                $content="Team leader: Responsible for deciding the team’s target, integrating and communicating among groups, and team representative to other teams. Help the team coordinate the overall planning of external activities.";
+                $content="Team leader: 
+                <li>The team representative in external activities.</li>
+                <li>Responsible for determining the team’s target, integrating all groups, and coordinating the whole project.</li>";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -180,16 +182,20 @@
                 $icon1="leadership";
                 $icon2="presentation";
                 $icon3="hardware";
-                $content="Team Co-leader: Communicate between wet lab and dry lab. Responsible for enzyme cutting sites design in the wet lab group, and designing and establishing the hardware in the dry lab group.";
+                $content="Team Co-leader: 
+                <li>Bridge between wet lab and dry lab.</li>
+                <li>Responsible for designing plasmid, and establishing the hardware.</li>";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Yun-Chi Chiu";
                 $photo="/attributions/attributions003.jpg";
                 $icon1="experiment";
-                $icon2="";
-                $icon3="ihp";
-                $content="Team Co-leader: Communicate between wet lab and human practice. Responsible for gene design in the wet lab group, and assisting social media, IHP and open lab in the human practice group.";
+                $icon2="ihp";
+                $icon3="";
+                $content="Team Co-leader: 
+                <li>Bridge between wet lab and human practice.</li>
+                <li>Responsible for designing the gene expression, assisting social media, IHP, fundraising and Open Lab activity.</li>";
                 include "sub/attribution_card.php";
             ?>
             <div id="5" class="title-label-div">
@@ -201,7 +207,9 @@
                 $icon1="leadership";
                 $icon2="presentation";
                 $icon3="experiment";
-                $content="Wet lab leader: Responsible for scheduling the experiment, coordinating with other groups, gene design, cloning <i>pfa B</i> & <i>pfa C</i> & <i>pfa E</i> genes, purifying pSTV28 vector and the protein expression for pSTV28-<i>pfa E</i> & pET28a-<i>AccBC</i>.";
+                $content="Wet Lab leader: 
+                <li>Responsible for scheduling the experiment and coordinating with other groups.</li>
+                <li>Responsible for cloning pSTV28- <i>pfa B</i> - <i>pfa C</i> - <i>pfa E</i> and the protein expression.</li>";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -210,7 +218,9 @@
                 $icon1="presentation";
                 $icon2="experiment";
                 $icon3="education";
-                $content="Wet Lab co-leader: Responsible for assisting wet Lab leader with wet lab scheduling, gene design, cloning <i>pfa B</i> & <i>pfa C</i> & <i>pfa E</i> genes, purifying pSTV28 vector and the protein expression for pSTV28-<i>pfa E</i> & pET28a-<i>AccBC</i>.";
+                $content="Wet Lab co-leader: 
+                <li>Assisting wet Lab leader.</li>
+                <li>Responsible for cloning pSTV28- <i>pfa B</i> - <i>pfa C</i> - <i>pfa E</i> and the protein expression.</li>";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -219,7 +229,7 @@
                 $icon1="experiment";
                 $icon2="";
                 $icon3="";
-                $content="Responsible for gene design, cloning <i>pfa A</i> and <i>pfa D</i> genes, purifying pColdI vector and the protein expression for pColdI-<i>pfa D.</i>";
+                $content="Responsible for cloning pColdI - <i>pfa A</i> - <i>pfa D</i> and the protein expression.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -228,7 +238,7 @@
                 $icon1="";
                 $icon2="experiment";
                 $icon3="";
-                $content="Responsible for enzyme cutting sites design, cloning <i>AccBC</i> & <i>AccD1E</i> genes, purifying pET28a vector and triple antibiotics selection.";
+                $content="Responsible for cloning pET28a - <i>AccBC</i> - <i>AccD1E</i> and the protein expression.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -237,7 +247,8 @@
                 $icon1="experiment";
                 $icon2="wiki";
                 $icon3="";
-                $content="Responsible for enzyme cutting sites design, cloning <i>AccBC</i> & <i>AccD1E</i> genes, purifying pET28a vector and triple antibiotics selection.";
+                $content="<li>Responsible for cloning pET28a - <i>AccBC</i> - <i>AccD1E</i> and the protein expression.</li>
+                <li>Responsible for triple antibiotics selection.</li>";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -246,7 +257,7 @@
                 $icon1="slides_editor";
                 $icon2="experiment";
                 $icon3="";
-                $content="Responsible for enzyme cutting sites design, cloning <i>pfa A</i> and <i>pfa D</i> genes, purifying pColdI vector and the protein expression for pColdI-<i>pfa D.</i>";
+                $content="Responsible for cloning pColdI - <i>pfa A</i> - <i>pfa D</i> and the protein expression.";
                 include "sub/attribution_card.php";
             ?>
             <div id="6" class="title-label-div">
@@ -258,7 +269,8 @@
                 $icon1="leadership";
                 $icon2="software";
                 $icon3="hardware";
-                $content="Dry lab leader: Responsible for coordinating with other groups and coding the web game, wiki, as well as programs of the machine.";
+                $content="Dry lab leader: 
+                <li>Responsible for coordinating with other groups and coding the web game, wiki, as well as programs of the machine.</li>";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -267,15 +279,16 @@
                 $icon1="leadership";
                 $icon2="wiki";
                 $icon3="collaboration";
-                $content="Dry lab co-leader: Responsible for art designing of team wiki and team logo and proofreading the word contents of wiki and social media.";
+                $content="Dry lab co-leader: 
+                <li>Responsible for art designing of team wiki and team logo, and proofreading the word contents of wiki and social media.</li>";
                 include "sub/attribution_card.php";
             ?>
             <?php
                 $name="Hao-Fang Chan";
                 $photo="/attributions/attributions012.jpg";
                 $icon1="hardware";
-                $icon2="measurement";
-                $icon3="wiki";
+                $icon2="wiki";
+                $icon3="";
                 $content="Responsible for establishing the hardware and creating the animations.";
                 include "sub/attribution_card.php";
             ?>
@@ -288,7 +301,8 @@
                 $icon1="leadership";
                 $icon2="software";
                 $icon3="education";
-                $content="Human practice leader: Responsible for planning the structure of human practice works, coordinating with other groups and designing the web game.";
+                $content="Human practice leader: 
+                <li>Responsible for planning the structure of human practice works, coordinating with other groups and designing the web game.</li>";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -297,7 +311,8 @@
                 $icon1="slides_editor";
                 $icon2="education";
                 $icon3="wiki";
-                $content="Human practice co-leader: Responsible for planning the structure of human practice works, holding Open Lab and fundraising.";
+                $content="Human practice co-leader: 
+                <li>Responsible for planning the structure of human practice works, holding Open Lab and fundraising.</li>";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -354,7 +369,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="";
+                $content="<div class='graduate'>Department of Biomedical Sciences</div>He instructed web lab experiments and part registry, and assisted us in Open Lab activity.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -363,7 +378,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="";
+                $content="<div class='graduate'>Department of Chemical Engineering</div>He offered suggestions for the project's early brainstorming session.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -372,7 +387,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="";
+                $content="<div class='graduate'>Department of Biomedical Sciences</div>She gave helpful advice on team organization and external communication.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -381,7 +396,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="";
+                $content="<div class='graduate'>Department of Psychology</div>She gave helpful advice on team organization and external communication.";
                 include "sub/attribution_card.php";
             ?>
         </div>
