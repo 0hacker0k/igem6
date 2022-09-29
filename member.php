@@ -528,7 +528,7 @@
                 </ul>
             </p>";
             $title_explain="Yu-Qian helps the team speak English better. I can teach you better!";
-            $popup_img="/human/members017.jpg";
+            $popup_img="/human/members117.jpg";
             $popup_img_alt="";
             $person_title="#ENGLISH_TEACHER";
             $person_icon="😏";
