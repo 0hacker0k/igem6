@@ -10,11 +10,41 @@ foreach($rs->fetchall() as $value){
 ?>
 <style>
     .size_mid{
-        font-size: 4rem;
+        font-size: 4vw;
     }
 </style>
-<div style="width: 90%;margin: 5%;border: 1% solid;">
-    ;
+<div style="width: 90%;height: 40%;margin: calc(5% - 1rem);border: 1rem solid;">
+    <div style="width: 100%;height: 33%;text-align: center">
+        Status: 
+        <?php 
+            if($value['status']==0)
+                echo "Idle";
+            else if($value['status']==1)
+                echo "Working";
+            else if($value['status']==2)
+                echo "Pause";
+            else if($value['status']==3)
+                echo "Error";
+        ?>
+    </div>
+    <div style="width: 100%;height: 33%;text-align: center;display: flex;align-items: center;">
+        Process: 
+        <div style="padding: 0.1rem;border: 0<?php if($value['process']==1)echo ".1";?>rem">
+            Quantitative
+        </div>
+        <div style="padding: 0.1rem;border: 0<?php if($value['process']==2)echo ".1";?>rem">
+            Heating
+        </div>
+        <div style="padding: 0.1rem;border: 0<?php if($value['process']==3)echo ".1";?>rem">
+            Cool down
+        </div>
+        <div style="padding: 0.1rem;border: 0<?php if($value['process']==4)echo ".1";?>rem">
+            Demoulding
+        </div>
+    </div>
+    <div style="width: 100%;height: 33%;text-align: center;display: flex;align-items: center;">Address of running:<?php echo $value['port'];?>
+        ;
+    </div>
 </div>
 <form class="size_mid" enctype="multipart/form-data" id="event_upload_form" method="post">
     <div>當前狀態</div>
@@ -33,7 +63,7 @@ foreach($rs->fetchall() as $value){
     <input class="size_mid" type="text" id="cct_1" name="concentration" value="<?php echo $value['concentration'];?>" style="text-align: right;"/>
     <button class="size_mid" onclick="sub_cct()" type="button">-</button>
     <button class="size_mid" formaction="./lib.php?count=2" type="submit">送出</button>
-    <div>運行位址:<?php echo $value['port'];?></div>
+    
 </form>
 <?php 
 }
