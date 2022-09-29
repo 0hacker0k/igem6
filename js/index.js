@@ -148,6 +148,27 @@ function other_animation(page,direct,position){
                         page.animate=null;
                     }, 1);
                     return false;
+                case 13://pair9
+                    var logo = document.getElementById('team_logo_2');
+                    page.style.transition="0.0s";
+                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    logo.style.transition="0.0s";
+                    logo.style.width="55%";
+                    logo.style.marginTop="0%";
+                    logo.style.opacity="1";
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        page.style.transition="1.0s";
+                        logo.style.transition="1.0s";
+                        logo.style.marginTop=(-screen_width*0.035)+"px";
+                        logo.style.width="22%";
+                        page.animate=setTimeout(() => {
+                            logo.style.transition="0.0s";
+                            logo.style.opacity="0";
+                            page.animate=null;
+                        }, 1000);
+                    }, 1);
+                    return false;
             }
         }else if(position=="next"){
             switch(page.page_num){
@@ -240,6 +261,16 @@ function other_animation(page,direct,position){
                         }, 1);
                     }, 1000);
                     return false;
+                case 14://pair8
+                    page.style.transition="0.0s";
+                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    page.style.opacity='0';
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        page.style.transition="1.0s";
+                        page.style.opacity='1';
+                    }, 1);
+                    return false;
             }
         }
     }else if(direct=="up"){
@@ -286,7 +317,7 @@ function other_animation(page,direct,position){
                         page.animate=null;
                     }, 1);
                     return false;
-                case 5://pair8
+                case 5://pair-
                     var epa = document.getElementById('page5_epa');
                     page.style.transition="1.0s";
                     page.style.top=((screen_height-page.clientHeight)/2)+"px";
@@ -331,6 +362,24 @@ function other_animation(page,direct,position){
                             }, 1000);
                         }, 1);
                     }, 1000);
+                    return false;
+                case 13://pair9
+                    var logo = document.getElementById('team_logo_2');
+                    page.style.transition="0.0s";
+                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    page.style.opacity="1";
+                    logo.style.marginTop=(-screen_width*0.035)+"px";
+                    logo.style.width="22%";
+                    logo.style.transition="0.0s";
+                    logo.style.opacity="1";
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        page.style.transition="1.0s";
+                        logo.style.transition="1.0s";
+                        logo.style.marginTop="0%";
+                        logo.style.width="55%";
+                        page.animate=null;
+                    }, 1);
                     return false;
             }
         }else if(position=="last"){
@@ -381,6 +430,16 @@ function other_animation(page,direct,position){
                         page.animate=null;
                     }, 1);
                     return false;
+                case 14://pair8
+                    page.style.transition="0.0s";
+                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    page.style.opacity='1';
+                    if(page.animate!=null)clearTimeout(page.animate);
+                    page.animate=setTimeout(() => {
+                        page.style.transition="1.0s";
+                        page.style.opacity='0';
+                    }, 1);
+                    return false;
             }
         }
     }
@@ -395,7 +454,7 @@ function move_epa(go_page){
     }else{
         map.style.bottom="2%";
     }
-    if(go_page>=6 && go_page<=20){
+    if(go_page>=6 && go_page<=11){
         bottomleft.style.bottom="0%";
     }else{
         bottomleft.style.bottom="-100%";
@@ -459,6 +518,24 @@ function move_epa(go_page){
             ;
     }
 }
+function more_information(change,show_tag,hidden_tag){
+    var text=document.getElementById(change);
+    var triangle=text.getElementsByClassName("triangle_to_right");
+    var self=document.getElementById(show_tag);
+    var another=document.getElementById(hidden_tag);
+    if(triangle.length!=0){
+        triangle[0].classList.toggle("triangle_to_down");
+        triangle[0].classList.remove('triangle_to_right');
+        self.style="display: block;";
+        another.style="display: none;";
+    }else{
+        triangle=text.getElementsByClassName("triangle_to_down");
+        triangle[0].classList.toggle("triangle_to_right");
+        triangle[0].classList.remove('triangle_to_down');
+        self.style="display: none;";
+        another.style="display: block;";
+    }
+}
 HTMLImageElement.prototype.move_to=function(x,y){
     this.style.bottom=(map_icon.clientHeight*y)+"px";
     this.style.right=(map_icon.clientWidth*x)+"px";
@@ -476,14 +553,20 @@ var parameter=document.getElementById("parameter");
 parameter.innerHTML = ".first_page{--nav_height: "+document.getElementById("navbar").clientHeight+"px;}";
 parameter=document.getElementById("first_background");
 parameter.style = "--nav_height: "+document.getElementById("navbar").clientHeight+"px;";
+parameter=document.getElementById("page_12_content");
+parameter.style.top=(document.getElementById("page_12_white").clientHeight+1)+"px";
+
 now_page=Math.floor($(window).scrollTop()/screen_height+0.5);
 screen_move($(window).scrollTop());
 window.addEventListener('resize',
     () => {
         screen_height=window.innerHeight;
         screen_width=window.innerWidth;
+        parameter=document.getElementById("page_12_content");
+        parameter.style.top=(document.getElementById("page_12_white").clientHeight+1)+"px";
     }
     , false );
+
 // if (myWindow.scrollTop() > myPosition) {
 //     // $("#navbar").addClass("header-hide");
 //     var item=document.getElementById("navbar");

@@ -79,8 +79,41 @@
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_12">
-        <div class="white_background top_block">
+        <div id="page_12_white" class="white_background top_block">
             To generate an EPA supplement without potential contaminants, our team applied synthetic biology to produce pure EPA. 
+        </div>
+        <div id="page_12_content">
+            <div id="information1">
+                <li class="learn_more_title">
+                    Genes form deep-sea bacteria
+                </li>
+                <div id="learn_more_1" class="learn_more" onclick="more_information('learn_more_1','learn_more_1_content','information2')">
+                    <div class="triangle_to_right"></div>Learn more
+                </div>
+                <div id="learn_more_1_content" class="learn_more_content">
+                    The previous research shows that combination of the pfa genes of deep-sea bacteria Moritella marina MP-1 and Shewanella pneumatophori SCRC-2738 can produce EPA in  E. coli.
+                </div>
+            </div>
+            <div id="information2">
+                <li class="learn_more_title">
+                    Gene engineering
+                </li>
+                <div id="learn_more_2" class="learn_more" onclick="more_information('learn_more_2','learn_more_2_content','information1')">
+                    <div class="triangle_to_right"></div>Learn more
+                </div>
+                <div id="learn_more_2_content" class="learn_more_content">
+                    We cloned the pfa A, pfa C, pfa D, and pfa E genes from MP-1, and pfa B gene from SCRC-2738. All these five pfa genes are expressed in E. coli to produce EPA.
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_13">
+        <img id="team_logo_2" src="<?php echo imgfile;?>/home/logo.png">
+    </div>
+    <div class="page" style="top:200%;" id="page_14">
+        <div class="typesetting_block">
+            <img id="team_name_2" src="<?php echo imgfile;?>/home/team_name.png">
         </div>
     </div>
     <div id="first_background" class="background"></div>
@@ -95,7 +128,9 @@
     <img class="background" src="<?php echo imgfile;?>/home/vessel-6.png">
     <img class="background" src="<?php echo imgfile;?>/home/vessel-7.png">
     <img class="background" src="<?php echo imgfile;?>/home/vessel-8.png">
-    <img class="background" src="<?php echo imgfile;?>/stage1/background.png">
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
     <!-- <div id="final_item"></div> -->
     <script>
         var display_mod=0;
