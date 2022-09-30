@@ -34,7 +34,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Clinical Studies</h1>
             </div>
             <p>
-                &emsp;&emsp;Let's start with the mechanism of how EPA reduces the chance of CVD. The major cause of CVD is Atherosclerosis, which is caused by atheromas. When the endothelium cells of blood vessels get injured, fatty acids like low - density lipid ( LDL ) and cholesterol accumulates and forms atheromatous plaque, which leads to vascular sclerosis and causes the CVD further. EPA can reduce such a situation. According to the reference, EPA can induce the enzymes  producing the substances which can relax the smooth muscle cell and provide anti – inflammatory action, leading to the reduction of LDL, so the occurrence of CVD will decrease.
+                &emsp;&emsp;Let's start with the mechanism of how EPA reduces the chance of CVD. The major cause of CVD is Atherosclerosis, which is caused by atheromas. When the endothelium cells of blood vessels get injured, fatty acids like low-density lipid ( LDL ) and cholesterol accumulates and forms atheromatous plaque, which leads to vascular sclerosis and causes the CVD further. EPA can reduce such a situation. According to the reference, EPA can induce the enzymes  producing the substances which can relax the smooth muscle cell and provide anti-inflammatory action, leading to the reduction of LDL, so the occurrence of CVD will decrease.
             </p>
             <br>
             <div id="3" class="title-label-div">
@@ -79,13 +79,13 @@
                 <li>
                     <h2 class="biggerli">High purity:</h2>
                     <p>
-                        According to reference, pfa B in the pfa gene can decide the kind of omega – 3 bacteria produced. Compared with the fish oil, our PACOmega can more effectively focus on CVD prevention.
+                        According to reference, <i>pfa B</i> in the pfa gene can decide the kind of omega-3 bacteria produced. Compared with the fish oil, our PACOmega can more effectively focus on CVD prevention.
                     </p>
                 </li>
                 <li>
                     <h2 class="biggerli">Zero contamination of heavy metal and microplastics:</h2>
                     <p>
-                        Contrast with EPA extracted from fish oil, our PACOmega is extracted from E. coli, which can solve the problem of the contamination of heavy metal and microplastics.
+                        Contrast with EPA extracted from fish oil, our PACOmega is extracted from <i>E. coli</i>, which can solve the problem of the contamination of heavy metal and microplastics.
                     </p>
                 </li>
                 <li>
@@ -107,7 +107,7 @@
             <p>
                 <ol>
                     <li class=biggerli>
-                        Keeping on finishing our design, making sure the E. coli can produce EPA and improving production.
+                        Keeping on finishing our design, making sure the <i>E. coli</i> can produce EPA and improving production.
                     </li>
                     <li class=biggerli>
                         Transforming our EPA synthy system into the bacteria which is suitable for abundant production.
@@ -120,20 +120,14 @@
                 Reference:
                 <ol>
                     <li>
-                        Davis, M. S., J. Solbiati and J. E. Cronan, Jr. (2000). "Overproduction of acetyl-CoA carboxylase activity increases the rate of fatty acid biosynthesis in Escherichia coli." J Biol Chem 275(37): 28593-28598.
                     </li>
                     <li>
-                        Okuyama, H., Y. Orikasa, T. Nishida, K. Watanabe and N. Morita (2007). "Bacterial genes responsible for the biosynthesis of eicosapentaenoic and docosahexaenoic acids and their heterologous expression." Appl Environ Microbiol 73(3): 665-670.
                     </li>
                     <li>
-                        Orikasa, Y., T. Nishida, A. Yamada, R. Yu, K. Watanabe, A. Hase, N. Morita and H. Okuyama (2006). "Recombinant production of docosahexaenoic acid in a polyketide biosynthesis mode in Escherichia coli." Biotechnol Lett 28(22): 1841-1847.
-                    </li>
-                        Orikasa, Y., M. Tanaka, S. Sugihara, R. Hori, T. Nishida, A. Ueno, N. Morita, Y. Yano, K. Yamamoto, A. Shibahara, H. Hayashi, Y. Yamada, A. Yamada, R. Yu, K. Watanabe and H. Okuyama (2009). "pfaB products determine the molecular species produced in bacterial polyunsaturated fatty acid biosynthesis." FEMS Microbiol Lett 295(2): 170-176.
-                    <li>
-                        Orikasa, Y., A. Yamada, R. Yu, Y. Ito, T. Nishida, I. Yumoto, K. Watanabe and H. Okuyama (2004). "Characterization of the eicosapentaenoic acid biosynthesis gene cluster from Shewanella sp. strain SCRC-2738." Cell Mol Biol (Noisy-le-grand) 50(5): 625-630.
                     </li>
                     <li>
-                        Rosano, G. L. and E. A. Ceccarelli (2014). "Recombinant protein expression in Escherichia coli: advances and challenges." Front Microbiol 5: 172.
+                    </li>
+                    <li>
                     </li>
                     <br>
                     <br>
