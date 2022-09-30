@@ -89,8 +89,9 @@
                 <br>
                 <br>
 
-
+                
                 <p class="h25">
+                    Reference:
                     <ol>
                         <li>
                             Davis, M. S., J. Solbiati and J. E. Cronan, Jr. (2000). "Overproduction of acetyl-CoA carboxylase activity increases the rate of fatty acid biosynthesis in Escherichia coli." J Biol Chem 275(37): 28593-28598.
