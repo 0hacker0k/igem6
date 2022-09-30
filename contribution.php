@@ -29,10 +29,10 @@
         <div class="in_center">
             <div class="in_center">    
                 <p class="h15">
-                    1. We provided the biobricks containing the coding sequences of multisubunit enzyme pfa from the docosahexaenoic acid(DHA)-producing deep sea bacterial Moritella marina.
+                    1. We provided the biobricks containing the coding sequences of multisubunit enzyme pfa from the docosahexaenoic acid(DHA)-producing deep sea bacterial <i>Moritella marina</i>.
                 </p>
                 <p class="h25">
-                    &emsp;&emsp;In Moritella marina, the DHA production is mediated by multisubunit enzyme pfa through the Polyketide synthase (PKS) pathway (Okuyama, Orikasa et al. 2007). The multisubunit enzyme pfa includes five pfa genes, including pfa A, pfa B, pfa C, pfa D and pfaE. It had been reported that the ectopic co-expression of pfa A, pfa B, pfa C, pfa D and pfa E genes in E.coli. successfully induced the DHA production (Orikasa, Nishida et al. 2006).
+                    &emsp;&emsp;In <i>Moritella marina</i>, the DHA production is mediated by multisubunit enzyme pfa through the Polyketide synthase (PKS) pathway (Okuyama, Orikasa et al. 2007). The multisubunit enzyme pfa includes five pfa genes, including <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and pfaE. It had been reported that the ectopic co-expression of <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i> genes in <i>E. coli</i>. successfully induced the DHA production (Orikasa, Nishida et al. 2006).
                 </p>
                 <br>
                 <div class="img" style="--width:100%;">
@@ -41,10 +41,10 @@
                 <br>
                 <br>
                 <p class="h15">
-                    2. We provided the biobrick containing pfa B coding sequence from eicosapentaenoic acid (EPA)-producing deep sea bacterial Shewanella pneumatophore.
+                    2. We provided the biobrick containing <i>pfa B</i> coding sequence from eicosapentaenoic acid (EPA)-producing deep sea bacterial <i>Shewanella pneumatophore</i>.
                 </p>
                 <p class="h25">
-                    &emsp;&emsp;In Shewanella pneumatophore, the multisubunit enzyme pfa responsible for EPA biosynthesis is encoded by pfa A, pfa B, pfa C, pfa D and pfa E (Orikasa, Yamada et al. 2004). Orikasa et al. indicated that the replacement of pfa B from with Moritella marinawith pfa B from Shewanella pneumatophore could enhance the EPA production of multisubunit pfa from Moritella marina (Orikasa, Tanaka et al. 2009).
+                    &emsp;&emsp;In <i>Shewanella pneumatophore</i>, the multisubunit enzyme pfa responsible for EPA biosynthesis is encoded by <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i> (Orikasa, Yamada et al. 2004). Orikasa et al. indicated that the replacement of <i>pfa B</i> from with <i>Moritella marina</i>with <i>pfa B</i> from <i>Shewanella pneumatophore</i> could enhance the EPA production of multisubunit pfa from <i>Moritella marina</i> (Orikasa, Tanaka et al. 2009).
                 </p>
                 <br>
                 <div class="img" style="--width:100%;">
@@ -53,10 +53,10 @@
                 <br>
                 <br>
                 <p class="h15">
-                    3. We provided the biobricks containing the coding sequences of multisubunit acetyl-CoA carboxylase (ACC) from Corynebacterium glutamicum.
+                    3. We provided the biobricks containing the coding sequences of multisubunit acetyl-CoA carboxylase (ACC) from <i>Corynebacterium glutamicum</i>.
                 </p>
                 <p class="h25">
-                    &emsp;&emsp;The multisubunit enzyme ACC is responsible for the biosynthesis of malonyl-CoA, which is the raw material necessary for PUFA production. The ACC enzyme contains three Acc genes, including AccBC, AccD1 and AccE from Corynebacterium glutamicum. The ectopic expression of ACC enzyme can increase the rate of fatty acid synthesis (Davis, Solbiati et al. 2000).
+                    &emsp;&emsp;The multisubunit enzyme ACC is responsible for the biosynthesis of malonyl-CoA, which is the raw material necessary for PUFA production. The ACC enzyme contains three Acc genes, including <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> from <i>Corynebacterium glutamicum</i>. The ectopic expression of ACC enzyme can increase the rate of fatty acid synthesis (Davis, Solbiati et al. 2000).
                 </p>
                 <br>
                 <div class="img" style="--width:100%;">
@@ -65,10 +65,10 @@
                 <br>
                 <br>
                 <p class="h15">
-                    4. We improved the biobricks of AccBC, AccD1 and AccE.
+                    4. We improved the biobricks of <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i>.
                 </p>
                 <p class="h25">
-                    &emsp;&emsp;As a biobrick, we optimized the codons of AccBC, AccD1 and AccE to eliminate restriction enzyme sites of NdeI, EcoRI and XhoI. The AccBC has been mutated at the sites of 74, 879, 1659 and 1764 to avoiding been cutted by XhoI, and the site of 147 to avoiding been cutted by NdeI, and the the sites of 468 to avoiding been cutted by EcoRI. We also optimized the codons to eliminate the repeat sequences which may hamper the DNA synthesis. [CYY1] 
+                    &emsp;&emsp;As a biobrick, we optimized the codons of <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> to eliminate restriction enzyme sites of NdeI, EcoRI and XhoI. The <i>AccBC</i> has been mutated at the sites of 74, 879, 1659 and 1764 to avoiding been cutted by XhoI, and the site of 147 to avoiding been cutted by NdeI, and the the sites of 468 to avoiding been cutted by EcoRI. We also optimized the codons to eliminate the repeat sequences which may hamper the DNA synthesis. [CYY1] 
                 </p>
                 <br>
                 <div class="img" style="--width:100%;">
@@ -80,7 +80,7 @@
                     5. We designed the expression method for expressing large protein and swapping genes
                 </p>
                 <p class="h25">
-                    &emsp;&emsp;Among the five pfa genes (pfa A, pfa B, pfa C, pfa D and pfa E), pfa A and pfa C genes harbor the largest size (~8kb and ~6kb, respectively). Therefore, we decide to clone these two genes into different vectors to avoid the potential expression problem (Rosano and Ceccarelli 2014). The largest subunit, pfa A was cloned into the pColdI vector with pfa D (1.6kb) for expression, since this cold shock protein activating vector suits for expressing large proteins. The pfa C gene is cloned into pSTV28 vector with pfa B (2.6kb) and pfa E (0.6kb) genes. Accordingly, these two pfa expressing vector with similar sizes may avoid the problem of transformation efficiency caused by plasmid size (Rosano and Ceccarelli 2014).
+                    &emsp;&emsp;Among the five pfa genes (<i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i>), <i>pfa A</i> and <i>pfa C</i> genes harbor the largest size (~8kb and ~6kb, respectively). Therefore, we decide to clone these two genes into different vectors to avoid the potential expression problem (Rosano and Ceccarelli 2014). The largest subunit, <i>pfa A</i> was cloned into the pColdI vector with <i>pfa D</i> (1.6kb) for expression, since this cold shock protein activating vector suits for expressing large proteins. The <i>pfa C</i> gene is cloned into pSTV28 vector with <i>pfa B</i> (2.6kb) and <i>pfa E</i> (0.6kb) genes. Accordingly, these two pfa expressing vector with similar sizes may avoid the problem of transformation efficiency caused by plasmid size (Rosano and Ceccarelli 2014).
                 </p>
                 <br>
                 <div class="img" style="--width:100%;">
