@@ -31,8 +31,28 @@
                     <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
                 <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="a_group">
+                            <div class="PI1_title" style="--id:1">
+                                <div class="member_portrait">
+                                    PI
+                                </div>
+                            </div>
+                            <div class="PI1_person" style="--id:2">
+                                <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup1">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members001.jpg";?>" alt="">
+                                </button>
+                            </div>
+                            <div class="PI1_person" style="--id:3">
+                                <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup2">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members002.jpg";?>" alt="">
+                                </button>
+                            </div>                     
+                        </div>
+                    </div>
                     <div class="carousel-item active" data-bs-interval="4000">
                         <div class="a_group">
                             <div class="leaders_title" style="--id:1">
