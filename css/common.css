@@ -22,6 +22,12 @@ p{
     font-weight: 500;
     font-size: calc(1em + 1vw);
 }
+.h15{
+    font-weight: 800;
+}
+.h25{
+    color: #3C3D3E;
+}
 .article{
     text-align: center;
     width: 100%;
