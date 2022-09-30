@@ -31,7 +31,7 @@
                 1. We provided the biobricks containing the coding sequences of multisubunit enzyme pfa from the docosahexaenoic acid (DHA)-producing deep sea bacterial <i>Moritella marina</i>.
             </p>
             <p class="h25">
-                &emsp;&emsp;In <i>Moritella marina</i>, the DHA production is mediated by multisubunit enzyme pfa through the Polyketide synthase (PKS) pathway (Okuyama, Orikasa et al. 2007). The multisubunit enzyme pfa includes five pfa genes, including <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and pfaE. It had been reported that the ectopic co-expression of <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i> genes in <i>E. coli</i>. successfully induced the DHA production (Orikasa, Nishida et al. 2006).
+                &emsp;&emsp;In <i>Moritella marina</i>, the DHA production is mediated by multisubunit enzyme pfa through the Polyketide synthase (PKS) pathway (Okuyama, Orikasa et al. 2007). The multisubunit enzyme pfa includes five <i>pfa</i> genes, including <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i>. It had been reported that the ectopic co-expression of <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i> genes in <i>E. coli</i>. successfully induced the DHA production (Orikasa, Nishida et al. 2006).
             </p>
             <br>
             <div class="img" style="--width:100%;">
@@ -79,7 +79,7 @@
                 5. We designed the expression method for expressing large protein and swapping genes
             </p>
             <p class="h25">
-                &emsp;&emsp;Among the five pfa genes (<i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i>), <i>pfa A</i> and <i>pfa C</i> genes harbor the largest size (~8kb and ~6kb, respectively). Therefore, we decide to clone these two genes into different vectors to avoid the potential expression problem (Rosano and Ceccarelli 2014). The largest subunit, <i>pfa A</i> was cloned into the pColdI vector with <i>pfa D</i> (1.6kb) for expression, since this cold shock protein activating vector suits for expressing large proteins. The <i>pfa C</i> gene is cloned into pSTV28 vector with <i>pfa B</i> (2.6kb) and <i>pfa E</i> (0.6kb) genes. Accordingly, these two pfa expressing vector with similar sizes may avoid the problem of transformation efficiency caused by plasmid size (Rosano and Ceccarelli 2014).
+                &emsp;&emsp;Among the five <i>pfa</i> genes (<i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i>), <i>pfa A</i> and <i>pfa C</i> genes harbor the largest size (~8kb and ~6kb, respectively). Therefore, we decide to clone these two genes into different vectors to avoid the potential expression problem (Rosano and Ceccarelli 2014). The largest subunit, <i>pfa A</i> was cloned into the pColdI vector with <i>pfa D</i> (1.6kb) for expression, since this cold shock protein activated vector suits for expressing large proteins. The <i>pfa C</i> gene is cloned into pSTV28 vector with <i>pfa B</i> (2.3kb) and <i>pfa E</i> (0.6kb) genes. Accordingly, these two pfa expressing vector with similar sizes may avoid the problem of transformation efficiency caused by plasmid size (Rosano and Ceccarelli 2014).
             </p>
             <br>
             <div class="img" style="--width:100%;">
