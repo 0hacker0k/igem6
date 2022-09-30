@@ -1,3 +1,9 @@
+<script>
+    function in_bar(id){};
+    function out_bar(id){};
+    function click_bar(id){};
+</script>
+
 <header class="mid_size navbar navbar-light" id="navbar">
     <div class="topbar main-bg-color" id="normal_nav">
         <div class="logo d-inline-flex p-2 bd-highlight" id="logo">

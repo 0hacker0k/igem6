@@ -40,7 +40,7 @@ function move_note(){
             if(sticker!=null)
                 clearTimeout(sticker);
             note.style.top=(myPosition-temp)+"px";
-            note.style.backgroundImage="url(img/note_touch3.png)";
+            note.style.backgroundImage="url(img/note_touch.png)";
             sticker=setTimeout(function(){
                 note_stick(note);
             },300);
@@ -56,5 +56,5 @@ function move_note2(){
     }, 0.1);
 }
 function note_stick(item){
-    item.style.backgroundImage="url(img/note_untouch3.png)";
+    item.style.backgroundImage="url(img/note_untouch.png)";
 }

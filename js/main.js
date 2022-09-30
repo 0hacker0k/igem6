@@ -3,6 +3,7 @@ toggle between hiding and showing the dropdown content */
 var hide_mod=0;
 var isShow=0;
 var temp_down_nav=null;
+var display_mod=0;
 function out_bar(id) {
     if(hide_mod==1){
         return ;
@@ -80,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     // $("#navbar").addClass("header-hide");
                     var item=document.getElementById("navbar");
                     item.style.top="-"+(item.clientHeight+1)+"px";
-                } else if(location.href.indexOf('webgame')==-1 && myWindow.scrollTop() < myPosition-5 && (display_mod==undefined || display_mod==1)){
+                } else if(location.href.indexOf('webgame')==-1 && myWindow.scrollTop() < myPosition-5 && (display_mod==undefined || display_mod==0)){
 
                     document.getElementById("navbar").style.top="0px";
                     // $("#navbar").removeClass("header-hide");

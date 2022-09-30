@@ -133,7 +133,7 @@
     <div class="background"></div>
     <!-- <div id="final_item"></div> -->
     <script>
-        var display_mod=0;
+        var display_mod=1;
     </script>
     <?php include "./sub/footer.php"?>
     <script src="<?php echo jsfile;?>/index.js"></script>
