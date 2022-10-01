@@ -43,7 +43,6 @@ p{
     position: fixed;
     top:0%;
     left: 0%;
-    transition: 0.5s;
     /* width: 30%; */
     height: 100vh;
     /* width:calc(60% - 20rem); */

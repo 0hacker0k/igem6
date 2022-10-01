@@ -35,8 +35,8 @@
             </div>
             <div id="expansion" onclick="guide_toggle()">
                 <div class="overlap_item trapezoid"></div>
-                <div class="overlap_item triangle_to_left"></div>
-                <!-- <div class="overlap_item triangle_to_right"></div> -->
+                <!-- <div class="overlap_item triangle_to_left"></div> -->
+                <div class="overlap_item triangle_to_right"></div>
                 
             </div>
             

@@ -4,12 +4,16 @@ function guide_change(){
     var guide=document.getElementById("guide");
     var guide_content=document.getElementById("guide_content");
     var content=document.getElementsByClassName("in_center")[0];
-    
-    // console.log(guide[0].style);
     guide_content.style.paddingTop=document.getElementById("navbar").clientHeight+"px";
+    guide.style.left= "calc("+(-document.getElementById("guide_content").clientWidth)+"px)";// - 0.5em
+    guide.style.transition="0.0s";
+    setTimeout(() => {
+        guide.style.transition="0.5s";
+    }, 1);
     // if(guide.clientWidth+content.clientWidth+1>screen_width){
 
     // }
+    
 }
 // display_mod=1;
 function guide_toggle(){
