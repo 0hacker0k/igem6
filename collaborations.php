@@ -20,6 +20,34 @@
     </div>
     
     <div class="article">
+        <!-- <div class="marge" style="--width:calc(1em + 1vh)"></div> -->
+        <div class="guide" id="guide">
+            <div id="guide_content">
+                <a href="#1" onclick="display_mod=1;setTimeout(() => {display_mod=0;}, 100);">
+                    <div class="guide_label">
+                        COLLABORATION
+                    </div>
+                </a>
+                <a href="#2" onclick="display_mod=1;setTimeout(() => {display_mod=0;}, 100);">
+                    <div class="guide_label">
+                        Voices From Abroad
+                    </div>
+                </a>
+                <a href="#3" onclick="display_mod=1;setTimeout(() => {display_mod=0;}, 100);">
+                    <div class="guide_sub_label">
+                        guide_sub_label
+                    </div>
+                </a>
+            </div>
+            <div id="expansion" onclick="guide_toggle()">
+                <div class="overlap_item trapezoid"></div>
+                <div class="overlap_item triangle_to_left"></div>
+                <!-- <div class="overlap_item triangle_to_right"></div> -->
+                
+            </div>
+            
+            
+        </div>
         <div class="in_center">
             <div id="1" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">COLLABORATION</h1>
@@ -51,7 +79,7 @@
             </div>
             <div id="2" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Voices From Abroad</h1>
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Exeter</h1>
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Exeter</h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">

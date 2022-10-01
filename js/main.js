@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function(){
                     var item=document.getElementById("navbar");
                     item.style.top="-"+(item.clientHeight+1)+"px";
                 } else if(location.href.indexOf('webgame')==-1 && myWindow.scrollTop() < myPosition-5 && (display_mod==undefined || display_mod==0)){
-
                     document.getElementById("navbar").style.top="0px";
                     // $("#navbar").removeClass("header-hide");
                 }
