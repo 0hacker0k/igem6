@@ -28,6 +28,7 @@ function guide_toggle(){
 }
 function move_to(id){
     var target=$('#'+id).offset().top;
+    $('html,body').stop(true,false);
     $('html,body').animate({ scrollTop: target }, 1000);
 }
 

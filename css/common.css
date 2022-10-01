@@ -49,6 +49,7 @@ p{
     /* width:calc(60% - 20rem); */
 }
 .guide_label{
+    cursor: pointer;
     color: #3C3D3E;
     width: 100%;
     text-align: left;
@@ -68,6 +69,7 @@ p{
     transition: .4s .2s;
   }
 .guide_sub_label{
+    cursor: pointer;
     color: #3C3D3E;
     width: 100%;
     text-align: left;
