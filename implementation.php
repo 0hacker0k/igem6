@@ -108,23 +108,6 @@
             </p> 
             <br>
             <br>    
-            <p class="h25">
-                Reference:
-                <ol>
-                    <li>
-                    </li>
-                    <li>
-                    </li>
-                    <li>
-                    </li>
-                    <li>
-                    </li>
-                    <li>
-                    </li>
-                    <br>
-                    <br>
-                </ol>
-            </p>
         </div>
     </div>
     
