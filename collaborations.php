@@ -169,13 +169,13 @@
             </p>
             <p class="h25">SDG Conference</p>
             <p>
-                &emsp;&emsp;&emsp;To emphasize the importance of the Sustainable Development Goals (SDGs) and discuss how we can take actions to make the world a better place, we participated in a SDG conference held by Korea_HS online. The conference lasted two days and included several meaningingful agendas.
+                &emsp;&emsp;&emsp;To emphasize the importance of the Sustainable Development Goals (SDGs) and discuss how we can take action to make the world a better place, we participated in a SDG conference held by Korea_HS online. The conference lasted two days and included several meaningful agendas.
             </p>
             <p>
-                &emsp;&emsp;&emsp;On the first day, every presenter, including five iGEM teams and twelve individual clubs that are interested and contributed in achieving SDG goals presented every one of their projects and demonstrated how they linked with SDGs. On the second day, all the attendees parted into two groups and wrote a contract that includes ways to improve the world by implementing the SDG goals.
+                &emsp;&emsp;&emsp;On the first day, every presenter, including five iGEM teams and twelve individual clubs interested in and contributing to achieving SDG goals, presented every one of their projects and demonstrated how they linked with SDGs. On the second day, all the attendees were divided into two groups and wrote a contract that included ways to improve the world by implementing SDG goals.
             </p>
             <p>
-                &emsp;&emsp;&emsp;During this conference, we not only get to know how people and organizations all over the world are dedicated to improving all the existing problems in the world, we also get to think a step forward: How can we all link together and make the world better as a whole? This conference is a great benefit that takes all of us a step further toward the vision. We hope that there will be more and more similar opportunities that bring every individual that has devoted themselves to the same task together: To exchange our ideas, our projects, and most importantly, to share our dream of a brighter future.
+                &emsp;&emsp;&emsp;During this conference, we not only get to know how people and organizations worldwide are dedicated to improving all the existing problems in the world, but we also get to think a step forward: How can we all link together and make the world better as a whole? This conference is a great benefit that takes all of us a step further toward the vision. We hope there will be more and more similar opportunities that bring everyone who has devoted themselves to the same task together: To exchange our ideas, our projects, and most importantly, to share our dream of a brighter future.
             </p>
             <div class="full_block">
                 <div class="img" style="--width:35%;">
