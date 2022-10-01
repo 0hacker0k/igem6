@@ -61,9 +61,6 @@
                 &emsp;&emsp;When the symptoms above happen, the only way to solve it is seeking emergency healthcare. Luckily, we can do something to prevent us from getting CVD. Generally speaking, the elders are the main group who will get CVD easily. So, we not only held an activity to promote the concepts of CVD prevention, like doing sports more often, consuming less fried food, but also regarded them as our target users. But, CVD is a kind of degenerative disease, which means even if you are young, you still have the chance of getting CVD. As a result, during Open lab activity, we also emphasized the importance of CVD.
             </p>
             <br>
-            <p>
-                &emsp;&emsp;The bottle is made of deep colored plastic. Although the plastic can isolate major visible lights, we want to reduce the influence of lights to minimize. According to an expert's suggestion, the consumption for a person of EPA a day is 1 gram, and that will be contained in the capsule. Take the convenience into consideration, the capacity of the capsule for children under 12 year old is halving. The capsule shell is made of carrageenans in order to meet the needs of vegetarians. If there is a person who wants to try our product, they probably try it for a month. So, one bottle will contain thirty capsules. Otherwise, we will pack two or four bottles in one box for the people who are too lazy to buy the products frequently.
-            </p>
             <br>
             
             <br>
