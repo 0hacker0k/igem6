@@ -4,9 +4,9 @@
                         <div class="square">
                             <?php
                                 $id=1;
-                                $img_count=2;
-                                $img_src[0]=imgfile."/notebook/hp_14_1.png";
-                                $img_src[1]=imgfile."/notebook/hp_14_2.png";
+                                $img_count=1;
+                                $img_src[0]=imgfile."/notebook/hp_14.png";
+                                $img_src[1]=imgfile."";
                                 $img_alt[0]="";
                                 $img_alt[1]="";
                                 include "../sub/carousel.php";
@@ -19,13 +19,11 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>Completing illustrations of stage 5 of the web game</li>
                                     <br>
-                                    <li></li>
+                                    <li>Making a con-call with team Korea_HS to discuss further collaboration</li>
                                     <br>
-                                    <li></li>
-                                    <br>
-                                    <li></li>                       
+                                    <li>Filming the promotion video</li>                       
                                 </ul>
                             </div>
                         </div>
@@ -40,13 +38,13 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>Optimizing stage 5 of the web game</li>
                                     <br>
-                                    <li></li>
+                                    <li>Making the props of campus walking</li>
                                     <br>
-                                    <li></li>
+                                    <li>Holding the Open Lab activity for high school students</li>
                                     <br>
-                                    <li></li>
+                                    <li>Interviewing the dietitian, Miranda Chen</li>
                                 </ul>
                             </div>
                         </div>
@@ -82,13 +80,13 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>Composing web game stages description</li>
                                     <br>
-                                    <li></li>
+                                    <li>Participating in Taiwan iGEM meet ‘22, held by Taiwan Synbio Alliance</li>
                                     <br>
-                                    <li></li>
+                                    <li>Designing the interview abstracts for iHP (toward the Health Food Society of Taiwan)</li>
                                     <br>
-                                    <li></li>                   
+                                    <li>Interviewing the doctor</li>                   
                                 </ul>
                             </div>
                         </div>
@@ -102,13 +100,13 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>Adjusting the web game design according to the feedback from Taiwan iGEM meet ‘22</li>
                                     <br>
-                                    <li></li>
+                                    <li>Holding the "campus walking" for the elderly and public</li>
                                     <br>
-                                    <li></li>
+                                    <li>Making a con-call with team UCPH_iGEM to discuss further collaboration</li>
                                     <br>
-                                    <li></li>
+                                    <li>Designing the interview abstracts for iHP (toward sport scientist)</li>
                                 </ul>
                             </div>
                         </div>
@@ -146,13 +144,9 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>Composing the storyline of the web game </li>
                                     <br>
-                                    <li></li>
-                                    <br>
-                                    <li></li>
-                                    <br>
-                                    <li></li>                   
+                                    <li>Holding the TCUS entrepreneurship competition</li>                  
                                 </ul>
                             </div>
                         </div>
