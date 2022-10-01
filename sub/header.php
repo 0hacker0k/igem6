@@ -118,7 +118,6 @@
             <div id="mylist3" class="dropdown-content nav_rwd">
                 <a href="#" class="dropdown-content_list2 click">Protocol</a>
                 <a href="#" class="dropdown-content_list2 click">Engineering</a>
-                <a href="#" class="dropdown-content_list2 click">Measurement</a>
                 <a href="#" class="dropdown-content_list2 click">Model</a>
                 <a href="#" class="dropdown-content_list2 click">Result</a>
                 <a href="#" class="dropdown-content_list2 click">Part</a>
