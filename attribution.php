@@ -51,8 +51,7 @@
     <?php include "sub/loading.php"?>
     <div class="attribution_overview justify-content-around">
         <div class="col-7">
-            <h1>Overview</h1>
-            <p>CCU_Taiwan iGEM Team counts iGEM competition as a meaningful and challengeable project. During our iGEM journey, we want to give a massive thank you to everyone that giving us endless support, advice, and meanwhile professional teaching. Without those assists, we can't accomplish what we have gone through these days. We appreciate and are grateful for every single contribution given throughout our project.</p>
+            <h1>Attributions</h1>
         </div>
     </div>
     <div class="attribution_card justify-content-around">
