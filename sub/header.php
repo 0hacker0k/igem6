@@ -32,6 +32,7 @@
                     <a href="https://2022.igem.wiki/ccu-taiwan/contribution" class="dropdown-content_list click">Contribution</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/improve" class="dropdown-content_list click">Improvement</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/proof-of-concept" class="dropdown-content_list click">Proof of Concept</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/sustainable" class="dropdown-content_list click">Sustainable</a>
                 </div>
 
             </div>
@@ -42,8 +43,8 @@
                     <a href="#" class="dropdown-content_list click">Protocol</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/hardware" class="dropdown-content_list click">Hardware</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/engineering" class="dropdown-content_list click">Engineering</a>
-                    <a href="https://2022.igem.wiki/ccu-taiwan/results" class="dropdown-content_list click">Result</a>
-                    <a href="https://2022.igem.wiki/ccu-taiwan/parts" class="dropdown-content_list click">Part</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/results" class="dropdown-content_list click">Results</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/parts" class="dropdown-content_list click">Parts</a>
                 </div>
 
             </div>
@@ -53,8 +54,8 @@
                 <div id="myDropdown4" class="dropdown-content">
                     <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practice</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
-                    <a href="#" class="dropdown-content_list click">Webgame</a>
-                    <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Education & Communication</a>
+                    <a href="#" class="dropdown-content_list click">Web Game</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/collaborations" class="dropdown-content_list click">Collaborations</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/partnership" class="dropdown-content_list click">Partnership</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/inclusivity" class="dropdown-content_list click">Inclusivity</a>
@@ -102,34 +103,36 @@
         </div>
         <div class="nav_rwd sub_nav_rwd" style="display:table;">
             <div id="mylist1" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list2 click">Home</a>
-                <a href="#" class="dropdown-content_list2 click">Members</a>
-                <a href="#" class="dropdown-content_list2 click">Attributions</a>
-                <a href="#" class="dropdown-content_list2 click">Sponsors</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/index.html" class="dropdown-content_list click">Home</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/team" class="dropdown-content_list click">Members</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/attributions" class="dropdown-content_list click">Attributions</a>
+                    <a href="#" class="dropdown-content_list click">Sponsors</a>
             </div>
             <div id="mylist2" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list2 click">Description</a>
-                <a href="#" class="dropdown-content_list2 click">Design</a>
-                <a href="#" class="dropdown-content_list2 click">Implementation</a>
-                <a href="#" class="dropdown-content_list2 click">Contribution</a>
-                <a href="#" class="dropdown-content_list2 click">Improvement</a>
-                <a href="#" class="dropdown-content_list2 click">Proof of Concept</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/description" class="dropdown-content_list click">Description</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/implementation" class="dropdown-content_list click">Implementation</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/contribution" class="dropdown-content_list click">Contribution</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/improve" class="dropdown-content_list click">Improvement</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/proof-of-concept" class="dropdown-content_list click">Proof of Concept</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/sustainable" class="dropdown-content_list click">Sustainable</a>
             </div>
             <div id="mylist3" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list2 click">Protocol</a>
-                <a href="#" class="dropdown-content_list2 click">Engineering</a>
-                <a href="#" class="dropdown-content_list2 click">Result</a>
-                <a href="#" class="dropdown-content_list2 click">Part</a>
+                <a href="#" class="dropdown-content_list click">Protocol</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/hardware" class="dropdown-content_list click">Hardware</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/engineering" class="dropdown-content_list click">Engineering</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/results" class="dropdown-content_list click">Results</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/parts" class="dropdown-content_list click">Parts</a>
             </div>
             <div id="mylist4" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list2 click">Human Practice</a>
-                <a href="#" class="dropdown-content_list2 click">Education</a>
-                <a href="#" class="dropdown-content_list2 click">Webgame</a>
-                <a href="#" class="dropdown-content_list2 click">Science Communication</a>
-                <a href="#" class="dropdown-content_list2 click">Collaboration</a>
-                <a href="#" class="dropdown-content_list2 click">Partnership</a>
-                <a href="#" class="dropdown-content_list2 click">Inclusivity</a>
-                <a href="#" class="dropdown-content_list2 click">Integrated Human Practice</a>
+            <div id="myDropdown4" class="dropdown-content">
+                <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practice</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
+                <a href="#" class="dropdown-content_list click">Web Game</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/collaborations" class="dropdown-content_list click">Collaborations</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/partnership" class="dropdown-content_list click">Partnership</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/inclusivity" class="dropdown-content_list click">Inclusivity</a>
+                <a href="#" class="dropdown-content_list click">Integrated Human Practice</a>
             </div>
             <div id="mylist8" class="dropdown-content nav_rwd">
                 <a href="#" class="dropdown-content_list2 click">Medals</a>
