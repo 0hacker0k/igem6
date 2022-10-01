@@ -23,13 +23,13 @@
         <!-- <div class="marge" style="--width:calc(1em + 1vh)"></div> -->
         <div class="guide" id="guide">
             <div id="guide_content">
-                <div class="guide_label" onclick="move_to('1')">
+                <div class="guide_label" onclick="move_to_item('1')">
                     COLLABORATION
                 </div>
-                <div class="guide_label" onclick="move_to('2')">
+                <div class="guide_label" onclick="move_to_item('2')">
                     Voices From Abroad
                 </div>
-                <div class="guide_sub_label" onclick="move_to('3')">
+                <div class="guide_sub_label" onclick="move_to_item('3')">
                     guide_sub_label
                 </div>
             </div>

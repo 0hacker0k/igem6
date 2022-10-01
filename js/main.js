@@ -191,6 +191,11 @@ function watt(){
         auto_show();
     }, 1000);
 }
+function move_to_item(id){
+    var target=$('#'+id).offset().top;
+    $('html,body').stop(true,false);
+    $('html,body').animate({ scrollTop: target }, 1000);
+}
 check_navbar();
 window.addEventListener('resize',
     () => {

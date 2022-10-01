@@ -26,13 +26,6 @@ function guide_toggle(){
         triangle.classList.remove("triangle_to_left");
     }
 }
-function move_to(id){
-    var target=$('#'+id).offset().top;
-    $('html,body').stop(true,false);
-    $('html,body').animate({ scrollTop: target }, 1000);
-}
-
-
 
 window.addEventListener('resize',
     () => {
