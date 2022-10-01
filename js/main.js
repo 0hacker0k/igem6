@@ -191,10 +191,17 @@ function watt(){
         auto_show();
     }, 1000);
 }
+var move_to_item_temp=null;
 function move_to_item(id){
+    display_mod=1;
     var target=$('#'+id).offset().top;
     $('html,body').stop(true,false);
     $('html,body').animate({ scrollTop: target }, 1000);
+    if(move_to_item_temp!=null)clearTimeout(move_to_item_temp);
+    move_to_item_temp=setTimeout(() => {
+        display_mod=0;
+        move_to_item_temp=null;
+    }, 1000);
 }
 check_navbar();
 window.addEventListener('resize',

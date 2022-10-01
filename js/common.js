@@ -7,11 +7,11 @@ function guide_change(){
     
     // console.log(guide[0].style);
     guide_content.style.paddingTop=document.getElementById("navbar").clientHeight+"px";
-    if(guide.clientWidth+content.clientWidth+1>screen_width){
+    // if(guide.clientWidth+content.clientWidth+1>screen_width){
 
-    }
+    // }
 }
-display_mod=1;
+// display_mod=1;
 function guide_toggle(){
     var guide=document.getElementById("guide");
     var triangle=document.getElementsByClassName("triangle_to_left")[0];
