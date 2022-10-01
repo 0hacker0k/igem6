@@ -111,7 +111,6 @@
                 <a href="#" class="dropdown-content_list2 click">Description</a>
                 <a href="#" class="dropdown-content_list2 click">Design</a>
                 <a href="#" class="dropdown-content_list2 click">Implementation</a>
-                <a href="#" class="dropdown-content_list2 click">Entrepreneurship</a>
                 <a href="#" class="dropdown-content_list2 click">Contribution</a>
                 <a href="#" class="dropdown-content_list2 click">Improvement</a>
                 <a href="#" class="dropdown-content_list2 click">Proof of Concept</a>
