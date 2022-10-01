@@ -11,7 +11,7 @@ function guide_change(){
 
     }
 }
-
+display_mod=1;
 function guide_toggle(){
     var guide=document.getElementById("guide");
     var triangle=document.getElementsByClassName("triangle_to_left")[0];
@@ -26,7 +26,10 @@ function guide_toggle(){
         triangle.classList.remove("triangle_to_left");
     }
 }
-
+function move_to(id){
+    var target=$('#'+id).offset().top;
+    $('html,body').animate({ scrollTop: target }, 1000);
+}
 
 
 
