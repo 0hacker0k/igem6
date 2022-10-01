@@ -134,12 +134,43 @@
             <p class="h25">
                 &emsp;&emsp;After the event, we received real-life experience in fighting cardiovascular disease from a participant, providing us with a stronger impetus on promoting this issue. A man around 55 years old told us that he suffered from cardiovascular disease 10 years ago, but since he started to do aerobic exercise regularly, the condition has become better and better, and currently, he is no longer having cardiovascular disease. Although the research tells us that aerobic exercise is helpful for cardiovascular disease, it is really touching to hear the real experience through this event. We hope that through our efforts, more people in the world can understand this issue and try to change their lifestyles.
             </p>
-            <br>
-            <br>
-            <br>
+            <div class="full_block">
+                <div class="img" style="--width:80%;">
+                    <img src="<?php echo imgfile;?>/education/education10.jpg">
+                    <div class="triangle_to_top"></div>Warm-up exercise to avoid sports injuries
+                </div>
+            </div>
+            <div class="full_block">
+                <div class="img" style="--width:80%;">
+                    <img src="<?php echo imgfile;?>/education/education11.jpg">
+                    <div class="triangle_to_top"></div>Our staff explained how to prevent cardiovascular disease through the interactive game
+                </div>
+            </div>
+            <div class="full_block">
+                <div class="img" style="--width:80%;">
+                    <img src="<?php echo imgfile;?>/education/education12.jpg">
+                    <div class="triangle_to_top"></div>Taking the whole family to participate in our event
+                </div>
+            </div>
+            <div class="full_block">
+                <div class="img" style="--width:80%;">
+                    <img src="<?php echo imgfile;?>/education/education13.jpg">
+                    <div class="triangle_to_top"></div>Testing if every participant learns about the knowledge of the cardiovascular disease, it turns out that every participant knows about the whole concept of cardiovascular disease
+                </div>
+            </div>
+            <div class="full_block">
+                <div class="img" style="--width:80%;">
+                    <img src="<?php echo imgfile;?>/education/education14.jpg">
+                    <div class="triangle_to_top"></div>Group photo for the activity!
+
+                </div>
+            </div>
+            
         </div>
     </div>
-    
+    <br>
+    <br>
+    <br>
 
 
     <?php include "./sub/footer.php"?>
