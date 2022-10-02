@@ -59,8 +59,6 @@
                     <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/collaborations" class="dropdown-content_list click">Collaborations</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/partnership" class="dropdown-content_list click">Partnership</a>
-                    <a href="https://2022.igem.wiki/ccu-taiwan/inclusivity" class="dropdown-content_list click">Inclusivity</a>
-                    <a href="#" class="dropdown-content_list click">Integrated Human Practice</a>
                 </div>
 
             </div>
@@ -133,8 +131,6 @@
                 <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
                 <a href="https://2022.igem.wiki/ccu-taiwan/collaborations" class="dropdown-content_list click">Collaborations</a>
                 <a href="https://2022.igem.wiki/ccu-taiwan/partnership" class="dropdown-content_list click">Partnership</a>
-                <a href="https://2022.igem.wiki/ccu-taiwan/inclusivity" class="dropdown-content_list click">Inclusivity</a>
-                <a href="#" class="dropdown-content_list click">Integrated Human Practice</a>
             </div>
             <div id="mylist8" class="dropdown-content nav_rwd">
                 <a href="#" class="dropdown-content_list2 click">Medals</a>
