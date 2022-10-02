@@ -42,7 +42,7 @@
                                     <br>
                                     <li>Making the props of campus walking</li>
                                     <br>
-                                    <li>Holding the Open Lab activity for high school students</li>
+                                    <li>Holding the "Open Lab" activity for high school students</li>
                                     <br>
                                     <li>Interviewing the dietitian, Miranda Chen</li>
                                 </ul>
@@ -82,7 +82,7 @@
                                 <ul>
                                     <li>Composing web game stages description</li>
                                     <br>
-                                    <li>Participating in Taiwan iGEM meet ‘22, held by Taiwan Synbio Alliance</li>
+                                    <li>Participating in Taiwan iGEM meet '22, held by Taiwan Synbio Alliance</li>
                                     <br>
                                     <li>Designing the interview abstracts for iHP (toward the Health Food Society of Taiwan)</li>
                                     <br>
@@ -100,7 +100,7 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Adjusting the web game design according to the feedback from Taiwan iGEM meet ‘22</li>
+                                    <li>Adjusting the web game design according to the feedback from Taiwan iGEM meet '22</li>
                                     <br>
                                     <li>Holding the "campus walking" for the elderly and public</li>
                                     <br>
