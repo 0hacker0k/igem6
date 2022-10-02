@@ -51,9 +51,9 @@
             </div>
 
             <div onclick="click_bar('myDropdown4')" onmouseout="out_bar('myDropdown4')" onmouseover="in_bar('myDropdown4')" class="dropdown top_nav">
-                <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Human Practice</button>
+                <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Human Practices</button>
                 <div id="myDropdown4" class="dropdown-content">
-                    <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practice</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practices</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
                     <a href="#" class="dropdown-content_list click">Web Game</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
@@ -95,7 +95,7 @@
             <div onclick="change_list(1)" class="dropdown-content_list2 click">Team</div>
             <div onclick="change_list(2)" class="dropdown-content_list2 click">Project</div>
             <div onclick="change_list(3)" class="dropdown-content_list2 click">Labwork</div>
-            <div onclick="change_list(4)" class="dropdown-content_list2 click">Human Practice</div>
+            <div onclick="change_list(4)" class="dropdown-content_list2 click">Human Practices</div>
             <div onclick="change_list(5)" class="dropdown-content_list2 click">Notebook</div>
             <div onclick="change_list(6)" class="dropdown-content_list2 click">Safety</div>
             <div onclick="change_list(8)" class="dropdown-content_list2 click">Awards</div>
@@ -125,7 +125,7 @@
             </div>
             <div id="mylist4" class="dropdown-content nav_rwd">
             <div id="myDropdown4" class="dropdown-content">
-                <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practice</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practices</a>
                 <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
                 <a href="#" class="dropdown-content_list click">Web Game</a>
                 <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
