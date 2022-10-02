@@ -33,50 +33,11 @@
                 <div class="guide_label" onclick="move_to_item('2')">
                     Refining our PACOmega project
                 </div>
-                <div class="guide_sub_label" onclick="move_to_item('3')">
-                    Exeter
-                </div>
-                <div class="guide_sub_label" onclick="move_to_item('4')">
-                    Korea_HS
-                </div>
-                <div class="guide_sub_label" onclick="move_to_item('5')">
-                    Copenhagan
-                </div>
-                <div class="guide_sub_label" onclick="move_to_item('6')">
-                    Taiwan iGEM meet '22
-                </div>
-                <div class="guide_sub_label" onclick="move_to_item('7')">
-                    TCUS Entrepreneurship Competition</h2>
-                </div>
                 <div class="guide_label" onclick="move_to_item('8')">
                     United we stand
                 </div>
-                <div class="guide_sub_label" onclick="move_to_item('9')">
-                    Our PACOmega project - CCU_Taiwan
-                </div>
-                <div class="guide_sub_label" onclick="move_to_item('10')">
-                    The iGEM Theme Song project-iGEM_CSMU
-                </div>
-                <div class="guide_sub_label" onclick="move_to_item('11')">
-                    The iGEM Map project- NTHU_Taiwan
-                </div>
-                <div class="guide_sub_label" onclick="move_to_item('12')">
-                    The Alzheimer project - CU_Egypt
-                </div>
-                <div class="guide_sub_label" onclick="move_to_item('13')">
-                    The Badge Project-Korea_HS
-                </div>
-                <div class="guide_sub_label" onclick="move_to_item('14')">
-                    The SDG Conference- Korea_HS
-                </div>
                 <div class="guide_label" onclick="move_to_item('15')">
                     Together, we louder
-                </div>
-                <div class="guide_sub_label" onclick="move_to_item('16')">
-                    The Infographic Exchange Project- Gems_Taiwan, Korea_HS, Thailand_RS
-                </div>
-                <div class="guide_sub_label" onclick="move_to_item('17')">
-                    NCHU Taiwan iGEM youtube channel- NCHU_Taiwan
                 </div>
                 <div class="guide_label" onclick="move_to_item('18')">
                     Summary
@@ -335,7 +296,7 @@
                 </div>
             </div>
             <div class="full_block">
-                <div class="triangle_to_top"></div>Our infographic in English, Korean, and Thai           
+                <div class="triangle_to_top"></div>Our infographic in English, Korean,Norwegian and Thai           
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="17" class="title-label-div">
