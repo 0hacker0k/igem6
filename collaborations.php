@@ -10,12 +10,13 @@
 <body onload="load_finish();">
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
-    <img class="full_size_image" src="<?php echo imgfile;?>/human/attribution_banner.jpg" alt=""> 
     
     <div class="overview justify-content-around">
         <div class="col-7">
             <h1>Overview</h1>
-            <p>The process of our collaboration with various iGEM teams is a combination of communicating, learning, improving, and most important of all, a fruitful journey that brings the whole iGEM community closer together. We get to gain advice from others and participate in their projects, which is a mutualism for all of us. Now, scroll down and step on our wonderful journey of collaboration with us!</p>
+            <p>
+                This year, CCU_Taiwan tackles the problems of the CVD crisis by the PACOmega project. To refine our project and presentation, we reached out to other iGEM teams, professors, judges, and even the CEO of a biotech company. We also collaborated with local and global iGEMers to share each other's projects by storybook translation, website, and map. So now, please scroll down and step on our wonderful journey of collaboration with us!
+            </p>
         </div>
     </div>
     
@@ -44,7 +45,10 @@
         </div>
         <div class="in_center">
             <div id="1" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">COLLABORATION</h1>
+                <h1>Collaboration- Refining our PACOmega project</h1>
+            </div>
+            <div id="1" class="title-label-div">
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Project feedback From Abroad-Exeter</h1>
             </div>
             <p>
                 &emsp;&emsp;&emsp;During our IHP interview with the dietitian Miranda Chen, she told us that EPA supplement alone wasn't sufficient enough to prevent CVD. From her professional perspective, she suggested that we should also value the importance of having a healthy diet during daily life.

@@ -28,6 +28,7 @@
                 <button class="dropbtn click"><img class="drop click" src="<?php echo imgfile;?>/drop.png" alt="">Project</button>
                 <div id="myDropdown2" class="dropdown-content">
                     <a href="https://2022.igem.wiki/ccu-taiwan/description" class="dropdown-content_list click">Description</a>
+                    <a href="#" class="dropdown-content_list click">Design</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/implementation" class="dropdown-content_list click">Implementation</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/contribution" class="dropdown-content_list click">Contribution</a>
                     <a href="https://2022.igem.wiki/ccu-taiwan/improve" class="dropdown-content_list click">Improvement</a>
