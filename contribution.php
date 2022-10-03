@@ -49,7 +49,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;In <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>, the <i>pfa</i> gene cluster encoded five open reading frames, namely <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i>, and <i>pfa E</i>. Each gene contains none to several functional domains to perform carboxylation, dehydration, and reduction of the ketoacyl group and hydroxyl groups in PKS pathway. <i>In Moritella marina</i>, the <i>pfa</i> genes work together to generate docosahexaenoic acid (DHA), while <i>Shewanella pneumatophori</i> generated eicosapentaenoic acid (EPA). The exact functions of each pfa gene is unclear. To the best of our knowledge, the <i>pfa B</i> is the key molecule to determine the final product (e.g. EPA and DHA).
+                &emsp;&emsp;In <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>, the <i>pfa</i> gene cluster encoded five open reading frames, namely <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i>, and <i>pfa E</i>. Each gene contains none to several functional domains to perform carboxylation, dehydration, and reduction of the ketoacyl group and hydroxyl groups in PKS pathway. <i>In Moritella marina</i>, the <i>pfa</i> genes work together to generate docosahexaenoic acid (DHA), while <i>Shewanella pneumatophori</i> generated eicosapentaenoic acid (EPA). The exact functions of each <i>pfa</i> gene is unclear. To the best of our knowledge, the <i>pfa B</i> is the key molecule to determine the final product (e.g. EPA and DHA).
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
@@ -102,7 +102,7 @@
                 3. We provided the biobricks containing the coding sequences of multisubunit acetyl-CoA carboxylase (ACC) from <i>Corynebacterium glutamicum</i>.
             </p>
             <p class="h25">
-                &emsp;&emsp;The multisubunit enzyme ACC is responsible for the biosynthesis of malonyl-CoA, which is the raw material necessary for PUFA production. The ACC enzyme contains three Acc genes, including <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> from <i>Corynebacterium glutamicum</i>. The ectopic expression of ACC enzyme can increase the rate of fatty acid synthesis (Davis, Solbiati et al. 2000).
+                &emsp;&emsp;The multisubunit enzyme ACC is responsible for the biosynthesis of malonyl-CoA, which is the raw material necessary for PUFA production. The ACC enzyme contains three <i>Acc</i> genes, including <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> from <i>Corynebacterium glutamicum</i>. The ectopic expression of ACC enzyme can increase the rate of fatty acid synthesis (Davis, Solbiati et al. 2000).
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="img" style="--width:100%;">

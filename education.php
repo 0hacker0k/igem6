@@ -10,17 +10,12 @@
 <body onload="load_finish();">
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
+    <img class="full_size_image" src="<?php echo imgfile;?>/education/banner-education.png" alt=""> 
     
-    <div class="overview justify-content-around">
-        <div class="col-7">
-            <div id="1" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Education</h1>
-            </div>
-        </div>
-    </div>
     
     <div class="article">
         <div class="in_center">
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <h1>Overview</h1>
             <p>
                 &emsp;&emsp;Aside from the lab work, science communication plays as an essential role as the experimentation does in application. With proper interaction and brain-storming activities, we as responsible and reliable scientists, can truly share the same level of standpoints with our target audience and explore mutual communication. Therefore, we attempt to share information about synthetic biology and our project to relative communities.

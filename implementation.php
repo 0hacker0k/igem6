@@ -10,6 +10,7 @@
 <body onload="load_finish();">
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
+    <img class="full_size_image" src="<?php echo imgfile;?>/implementation/banner-implementation.png" alt=""> 
     
     <div class="overview justify-content-around">
         <div class="col-7">

@@ -49,11 +49,8 @@
 <body onload="load_finish();locate_note();">
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
-    <div class="attribution_overview justify-content-around">
-        <div class="col-7">
-            <h1>Attributions</h1>
-        </div>
-    </div>
+    <img class="full_size_image" src="<?php echo imgfile;?>/attributions/banner-attributions.png" alt=""> 
+    
     <div class="attribution_card justify-content-around">
         <div id="attribution_left" class="attribution_left">
             <div id="nav_note" class="attribution_nav" style="background-image:url('<?php echo imgfile;?>/note_untouch.png')">

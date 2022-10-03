@@ -10,20 +10,16 @@
 <body onload="load_finish();">
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
+    <img class="full_size_image" src="<?php echo imgfile;?>/proof/banner-proof.png" alt=""> 
     
     <div class="overview justify-content-around">
         <div class="col-7">
-            <div id="1" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Proof of Concept</h1>
-            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
                 Cardiovascular disease ( CVD ) is the leading cause of death globally. Our team establishes a new approach, PACOmega, to tackle this serious problem. We expect to prevent CVD through the promotion of a healthy lifestyle which can be simply separated into two parts, healthy diet and regular exercises. To start with diet and focus on increasing the intake of good oil, we use synthetic biology to produce pure EPA to solve the problem that EPA may be contaminated and are not vegan-friendly. In addition to producing pure EPA, considering the market advantage and improving the competitiveness of our products, we also design the experiments to increase the yield of EPA production.
             </p>
         </div>
     </div>
-
-    <br>
-    <br>
 
     <div class="article">
         <div class="in_center">
