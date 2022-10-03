@@ -34,8 +34,8 @@
     <div class="page" style="top:200%;" id="page_4">
         <img id="map_of_world" src="<?php echo imgfile;?>/home/map-of-world.jpg">
         <div class="white_background">
-            Cardiovascular disease (CVD) is one of the most severe diseases that took away millions of lives.
-            In 2019, an estimated 17.9 million people died from CVD, representing 32% of all global deaths.
+            Cardiovascular disease (CVD) is one of the most severe diseases worldwide. In 2019, an estimated 17.9 million people died from CVD, representing 32% of all global deaths.
+            <a href="###">[1]</a>
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_5">
