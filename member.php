@@ -9,7 +9,7 @@
 <body style="margin:0; padding:0; height:100vh;" onload="load_finish()">
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
-    <img class="full_size_image" src="<?php echo imgfile;?>/human/fullimage.jpg" alt="">
+    <img class="full_size_image" src="<?php echo imgfile;?>/human/banner-members.png" alt="">
     <br>
     <br>
     <br>
@@ -20,7 +20,7 @@
 
         <div class="col-10">
             <h1>Introduction</h1>
-            <p>CCU_Taiwan is established in the year of 2017. Our team consists of twenty-one passionate students. We are a multidisciplinary team as our team members have different professional background from five departments.</p>
+            <p>CCU_Taiwan is established in the year of 2017. Our team consists of nineteen passionate students. We are a multidisciplinary team as our team members have different professional background from six departments.</p>
 
         </div>
         <h1>Members</h1>

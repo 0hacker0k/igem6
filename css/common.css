@@ -224,5 +224,6 @@ h2{
     transform: translate(-50%, -50%);
 }
 .link_subtitle{
-    color: #A9fbd7;
+    background-color: #EAB464;
+    color:#3C3D3E;
 }

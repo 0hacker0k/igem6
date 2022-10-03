@@ -57,7 +57,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Refining our PACOmega project</h1>
             </div>
             <div id="3" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Project feedback From Abroad - Exeter</h2>
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Project feedback From Abroad - <a href="https://2022.igem.wiki/exeter/index.html" class="link_subtitle_no_bgc">Exeter</a></h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -72,7 +72,7 @@
                 &emsp;&emsp;&emsp;After the meeting, we got feedback and some questions to clarify deeper, and we also learned from their presentation skills. We changed our original lengthy and tedious slides into a more simplified and concise version.
             </p>
             <div id="4" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Project feedback From Abroad - Korea_HS</h2>
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Project feedback From Abroad - <a href="" class="link_subtitle_no_bgc">Korea_HS</a></h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -81,7 +81,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;Our virtual meeting with iGEM Korea_HS exchanged both of our projects’ ideas. We gave comments on each other’s presentations and asked questions about both of our improvements, including details about how we integrate into society and how to be innovative in promoting each of our projects. After the meeting, they asked us to participate in several of their projects and conferences (link of Korea_HS’s badge project), and we indeed gained a lot of new abilities and knowledge due to these collaboration opportunities.
+                &emsp;&emsp;Our virtual meeting with iGEM Korea_HS exchanged both of our projects’ ideas. We gave comments on each other’s presentations and asked questions about both of our improvements, including details about how we integrate into society and how to be innovative in promoting each of our projects. After the meeting, they asked us to participate in several of their projects and conferences, and we indeed gained a lot of new abilities and knowledge due to these collaboration opportunities.
             </p>
             <div id="5" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Project feedback From Abroad - Copenhagan</h2>
@@ -102,7 +102,7 @@
                 &emsp;&emsp;On 8/22, we joined <b>Taiwan iGEM meet '22</b> to exchange our ideas with other Taiwan iGEM teams. The NCKU_Tainan iGEM team hosted this meet-up, and the participants include NCHU_Taichung, iGEM NTHU, NYCU_Formosa, iGEM KCIS Xiugang, iGEM CSMU, iGEM Mingdao, GEMS Taiwan, NYCU_Taipei, and our team. During the conference, all participants gathered to discuss each team’s projects and gave concrete feedback in the hope of improving, including presentation and inspecting and learning each other’s posters.
             </p>
             <p>
-                &emsp;&emsp;After the conference, we were inspired to examine further our Quantitative Agar Faucet (link to DL’s quantitative agar faucet). As a result, we reached out to Prof. Lee (link to professor Lee’s IHP page) to explore potential development opportunities. Besides, this meetup gave us a chance to have deeper communication with teams around Taiwan and is a leading of many of the following collaborations, including the the iGEM theme song project with CSMU_Taiwan (link), iGEM map with NTHU_Taiwan (link), and the infographic exchange with Gems_Taiwan (link).
+                &emsp;&emsp;After the conference, we were inspired to examine further our Quantitative Agar Faucet. As a result, we reached out to Prof. Lee to explore potential development opportunities. Besides, this meetup gave us a chance to have deeper communication with teams around Taiwan and is a leading of many of the following collaborations, including the the iGEM theme song project with <a href="https://2022.igem.wiki/csmu-taiwan/education#public-education" class="link_subtitle">CSMU_Taiwan</a>, iGEM map with <a href="https://2022.igem.wiki/nthu-taiwan/map" class="link_subtitle">NTHU_Taiwan</a>, and the infographic exchange with <a href="https://2022.igem.wiki/gems-taiwan/partnership#infographicexhibition" class="link_subtitle">Gems_Taiwan</a>.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
@@ -127,7 +127,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="7" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Project feedback from local- TCUS Entrepreneurship Competition</h2>
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Project feedback from local<br/>TCUS Entrepreneurship Competition</h2>
             </div>
             <p>
                 &emsp;&emsp;With the experience in <b>Taiwan iGEM meet '22</b>, we hosted a competition for the teams in Taiwan Comprehensive University System (TCUS), including NCKU_Tainan and NCHU_Taichung, to attend and present projects on our CCU campus to imitate the competitive vibe. The competition let the participants be more prepared before the Grand Jamboree. Not only did we want to interchange ideas between different teams, but we also wanted to seek suggestions from experts already working in the bioscience industry. 
@@ -164,7 +164,7 @@
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Our PACOmega project - CCU_Taiwan</h2>
             </div>
             <p>
-                &emsp;&emsp;During our IHP interview with the dietitian Miranda Chen ( link to dietitian’s IHP page ), she told us that EPA supplement alone wasn’t sufficient enough to prevent CVD. From her professional perspective, she suggested that we should also value the importance of having a healthy diet during daily life.
+                &emsp;&emsp;During our IHP interview with the dietitian Miranda Chen, she told us that EPA supplement alone wasn’t sufficient enough to prevent CVD. From her professional perspective, she suggested that we should also value the importance of having a healthy diet during daily life.
             </p>
             <p>
                 &emsp;&emsp;To promote healthy diets to every citizen on this beautiful planet, we initiated a CVD-Free Cookbook, inviting iGEM teams from around the world to share special ingredients in their countries that are good for cardiovascular health. Therefore, our cookbook features cuisines that are exotic but also healthy so that people who intend to care for their vessels can check it out for ideas for daily diets.
@@ -186,14 +186,14 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="10" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The iGEM Theme Song project-iGEM_CSMU</h2>
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The iGEM Theme Song project - iGEM_CSMU</h2>
             </div>
             <p>
                 &emsp;&emsp;We got acquainted with iGEM_CSMU at <b>Taiwan iGEM Meet '22</b>. After the meet-up, they created an iGEM theme song and invited us to record the song and shoot the music video together. With a catchy melody and lyrics describing the days during the preparation of iGEM, we spread the joy and fun of participating in a synthetic biology competition. Also, iGEM_CSMU has translated the theme song into English, so the international iGEM community can share this song and its delight anywhere at any time.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="11" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The iGEM Map project- NTHU_Taiwan</h2>
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The iGEM Map project - NTHU_Taiwan</h2>
             </div>
             <p>
                 &emsp;&emsp;NTHU_Tawian created an iGEM map this year to promote the importance of synthetic biology and point out where these experiments are located in the world. They collected characters created by various iGEM groups and put it on a map so that everyone can immerse in this global village of synthetic biology. CCU_Taiwan, which is located in Minxiong, Chiayi, and our own iconic E. coli character can be found in the southern part of Taiwan!
@@ -234,7 +234,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="13" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The Badge Project-Korea_HS</h2>
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The Badge Project - Korea_HS</h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -246,7 +246,7 @@
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="14" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The SDG Conference- Korea_HS</h2>
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The SDG Conference - Korea_HS</h2>
             </div>
             <p>
                 &emsp;&emsp;To emphasize the importance of the Sustainable Development Goals (SDGs) and discuss how we can take action to make the world a better place, we participated in a SDG conference held by Korea_HS online. The conference lasted two days and included several meaningful agendas.
@@ -273,7 +273,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Together, we louder</h1>
             </div>
             <div id="16" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The Infographic Exchange Project<br/> <a href="###" class="link_subtitle">Gems_Taiwan</a>, Korea_HS, Thailand_RS</h2>
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The Infographic Exchange Project<br/> Gems_Taiwan, Korea_HS, Thailand_RS</h2>
             </div>
             <p>
                 &emsp;&emsp;This year, Gems_Taiwan, Korea_HS, and Thailand_RS partnered together and created an infographic exchange project. They gathered infographics from different iGEM teams and translated them into Mandarin, Korean, and Thai, to eliminate barriers between countries and let people who don't speak English be able to learn about iGEM projects. We participate in this project by giving our team’s infographic, hoping the world can know more about the crisis of cardiovascular disease and how we can provide a solution.
