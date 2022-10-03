@@ -198,6 +198,7 @@ function move_to_item(id){
     $('html,body').stop(true,false);
     $('html,body').animate({ scrollTop: target }, 1000);
     if(move_to_item_temp!=null)clearTimeout(move_to_item_temp);
+    close_header();
     move_to_item_temp=setTimeout(() => {
         display_mod=0;
         move_to_item_temp=null;
