@@ -130,25 +130,19 @@
             <p>
                 &emsp;&emsp;Together, we believe that the PACOmega project will show its value and become a good answer to the CVD crisis.
             </p>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p class="h25">
                 Reference:
-                <ol>
-                   <li>
-
-                   </li>
-                   <li>
-
-                   </li>
-                    <div class="marge" style="--width:calc(3em + 5vh)"></div>
-                    <div class="marge" style="--width:calc(3em + 5vh)"></div>
-                </ol>
             </p>
-
-
-
-
-
-
+            <ol>
+                <li>
+                    Sherratt, S. C. R., P. Libby, D. L. Bhatt and R. P. Mason (2022). "A biological rationale for the disparate effects of omega-3 fatty acids on cardiovascular disease outcomes." Prostaglandins Leukot Essent Fatty Acids 182: 102450.
+                </li>
+                <li>
+                    Peter, P. Toth, M. J. Chapman, K. G.Parhofer, J. R. Nelsone (2022). "Differentiating EPA from EPA/DHA in cardiovascular risk reduction." American Heart Journal Plus: Cardiology Research and Practice 17:100148
+                </li>
+            </ol>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
         </div>
     </div>
     

@@ -17,7 +17,6 @@
         <div class="in_center">
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <h1>Overview</h1>
-            
             <p>
                 &emsp;&emsp;Aside from the lab work, science communication plays an essential role as experimentation in the application. With proper interaction and brain-storming activities, we, as responsible and reliable scientists, can genuinely share the same level of standpoints with our target audience and explore mutual communication. Therefore, we attempt to share information about synthetic biology and our project with relative communities.
             </p>
@@ -33,6 +32,7 @@
             <p>
                 &emsp;&emsp;With those attempts, we sincerely hope that we can make efforts to bridge the gap between society and the academic field. And we are embracing multilateral collaboration.
             </p>        
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="2" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Open Lab</h1>
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Overview</h2>
@@ -40,6 +40,7 @@
             <p>
                 &emsp;&emsp;To prevent the CVD crisis, we devised a new way to synthesize pure EPA without contamination. However, the idea of synthetic biology may be too abstract for normal people to grab. Accordingly, to educate people how we synthesize pure EPA and the beauty of synthetic biology, we held the <b>Open Lab science camp</b> and invited high school students to get involved in synthetic biological experiments.
             </p>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/education/education01.jpg">
@@ -61,25 +62,19 @@
             <p>
                 &emsp;&emsp;As a result, we set rehearsals twice and invited peers on our campus with different majors to experience the course and make sure they could completely absorb the knowledge. In return, the peers gave us some advice to improve our teaching styles. To illustrate, the peers point out that some of the principles and technical terms are too abstruse to comprehend, they suggest that we use similes when expounding them. All this advice has ideally helped us complete an excellent activity.
             </p>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/education/education02.jpg">
                     <div class="triangle_to_top"></div>First rehearsals - our teambers with campus peers
                 </div>
             </div>
-            <iframe src="/education/education.pdf" width="60%"></iframe>
-
-
-
-
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
+            <div id="5" class="title-label-div">
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Record during the activity</h2>
+            </div>
             <p>
-                &emsp;&emsp;
-            </p>
-            
-            
-            <h1>Record during the activity</h1>
-            <p class="h25">
-                &emsp;&emsp;In the experiment, to allow the operator to observe the results more effectively and understand the effect of the technology we adopt, we used green fluorescent protein (GFP), which is often used as a reporter gene in synthetic biology as the target gene and has been significantly used in the research field. Also, we use pET15b as plasmid and transform into E. coli. During the experiment, we lead them to start with gene selection, PCR, gel electrophoresis, purification, ligation, and transformation sequentially. Finally, observing the E. coli that expresses GFP protein.
+                &emsp;&emsp;In the experiment, to allow the operator to observe the results more effectively and understand the effect of the technology we adopt, we used green fluorescent protein (GFP), which is often used as a reporter gene in synthetic biology, as the target gene and has been significantly used in the research field. Also, we use pET15b as plasmid and transform it into E. coli. During the experiment, we lead them to start with PCR, Gel electrophoresis, amplicon purification, ligation, and transformation sequentially. Finally, observing the E. coli that expresses GFP protein.
             </p>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -110,21 +105,37 @@
                     <img src="<?php echo imgfile;?>/education/education07.jpg">
                 </div>
             </div>
-            <h1>Feedback from participants</h1>
-            <p class="h25">
-                &emsp;&emsp;After the camp, we set up a quiz section through Kahoot, which is a platform that provides an interactive game to evaluate whether the participants have indeed obtained the knowledge. The data of results show that over 70% of them have well comprehended the principle we want to convey. Additionally, some participants also sent us a message after the activity, indicating that this activity efficiently piques their interest in synthetic biology, and also sets their misunderstanding with gene transfer straight.
+            <div id="6" class="title-label-div">
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Feedback from participants</h2>
+            </div>
+            <p>
+                &emsp;&emsp;After the camp, we set up a quiz section through Kahoot, which is a platform that provides an interactive game to evaluate whether the participants have indeed obtained the knowledge. The data of results show that over 70% of them have well understood the principle we want to convey. Additionally, some participants also sent us a message after the activity, indicating that this activity efficiently arouses their interest in synthetic biology, and also corrects their misunderstanding about gene modification.
             </p>
             <div class="full_block">
-                <div class="img" style="--width:40%;">
+                <div class="img" style="--width:49%;">
                     <img src="<?php echo imgfile;?>/education/education08.jpg">
                 </div>
-                <div class="img" style="--width:40%;">
+                <div class="img" style="--width:49%;">
                     <img src="<?php echo imgfile;?>/education/education09.jpg">
                 </div>
             </div>
             <div class="full_block">
                 <div class="triangle_to_top"></div>Kahoot section - first place (left) and top three (right) of the participants
             </div>
+
+
+            <p>
+                &emsp;&emsp;
+            </p>
+            
+            
+           
+            
+            
+            
+           
+            
+            
             <div id="3" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Campus walking</h1>
             </div>
