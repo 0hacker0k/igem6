@@ -31,6 +31,25 @@
 
     <div class="article">
         <div class="in_center">
+            <div class="guide" id="guide">
+                <div id="guide_content">
+                    <div class="guide_label" onclick="move_to_item('1')">
+                        solution for CVD
+                    </div>
+                    <div class="guide_label" onclick="move_to_item('2')">
+                        Learn
+                    </div>
+                    <div class="guide_label" onclick="move_to_item('3')">
+                        Explore
+                    </div>
+                </div>
+                <div id="expansion" onclick="guide_toggle()">
+                    <div class="overlap_item trapezoid"></div>
+                    <!-- <div class="overlap_item triangle_to_left"></div> -->
+                    <div class="overlap_item triangle_to_right"></div>
+                    
+                </div>    
+            </div>
             <div id="2" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Clinical Studies</h1>
             </div>
