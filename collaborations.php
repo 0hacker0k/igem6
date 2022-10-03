@@ -66,7 +66,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;&emsp;During our online meetup with the Exeter iGEM team, they gave us inspiration on how we could improve our presentation, and we helped each other in finding both of our shortcomings. They are working on the topic of synthetic silk-graphene composites, which is the potential candidate to reduce concerns over silk farming and plastic waste. Although our projects didn’t share similar approaches or goals, that gave us the opportunities to cut in a completely different and novel perspective on listening to others’ presentations.
+                &emsp;&emsp;&emsp;During our online meetup with the Exeter iGEM team, they gave us inspiration on how we could improve our presentation, and we helped each other in finding both of our shortcomings. They are working on the topic of synthetic silk-graphene composites, which is the potential candidate to reduce concerns over silk farming and plastic waste. Although our projects didn't share similar approaches or goals, that gave us the opportunities to cut in a completely different and novel perspective on listening to others' presentations.
             </p>
             <p>
                 &emsp;&emsp;&emsp;After the meeting, we got feedback and some questions to clarify deeper, and we also learned from their presentation skills. We changed our original lengthy and tedious slides into a more simplified and concise version.
@@ -81,7 +81,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;Our virtual meeting with iGEM Korea_HS exchanged both of our projects’ ideas. We gave comments on each other’s presentations and asked questions about both of our improvements, including details about how we integrate into society and how to be innovative in promoting each of our projects. After the meeting, they asked us to participate in several of their projects and conferences, and we indeed gained a lot of new abilities and knowledge due to these collaboration opportunities.
+                &emsp;&emsp;Our virtual meeting with iGEM Korea_HS exchanged both of our projects' ideas. We gave comments on each other's presentations and asked questions about both of our improvements, including details about how we integrate into society and how to be innovative in promoting each of our projects. After the meeting, they asked us to participate in several of their projects and conferences, and we indeed gained a lot of new abilities and knowledge due to these collaboration opportunities.
             </p>
             <div id="5" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Project feedback From Abroad - Copenhagan</h2>
@@ -93,13 +93,13 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;Our project and team Copenhagen’s share the same goal of protecting marine resources but in different approaches. They focused on making fishing nets, which take a great account of marine garbage nowaday, biodegradable; Whileist, our team tackled the problem of marine resources diminishing by producing EPA supplements that are commonly taken from fish and fish oil by synthetic biology. During our meeting, both of our teams shared our presentations and how we tackle the care of marine resources. Not only did we exchange opinions on both our projects, but they also gave us advice on our CVD-free cookbook to focus on Mediterranean diets due to their profession in food science, which we deeply appreciated.
+                &emsp;&emsp;Our project and team Copenhagen's share the same goal of protecting marine resources but in different approaches. They focused on making fishing nets, which take a great account of marine garbage nowaday, biodegradable; Whileist, our team tackled the problem of marine resources diminishing by producing EPA supplements that are commonly taken from fish and fish oil by synthetic biology. During our meeting, both of our teams shared our presentations and how we tackle the care of marine resources. Not only did we exchange opinions on both our projects, but they also gave us advice on our CVD-free cookbook to focus on Mediterranean diets due to their profession in food science, which we deeply appreciated.
             </p>
             <div id="6" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Project feedback from local - Taiwan iGEM meet '22</h2>
             </div>
             <p>
-                &emsp;&emsp;On 8/22, we joined <b>Taiwan iGEM meet '22</b> to exchange our ideas with other Taiwan iGEM teams. The NCKU_Tainan iGEM team hosted this meet-up, and the participants include NCHU_Taichung, iGEM NTHU, NYCU_Formosa, iGEM KCIS Xiugang, iGEM CSMU, iGEM Mingdao, GEMS Taiwan, NYCU_Taipei, and our team. During the conference, all participants gathered to discuss each team’s projects and gave concrete feedback in the hope of improving, including presentation and inspecting and learning each other’s posters.
+                &emsp;&emsp;On 8/22, we joined <b>Taiwan iGEM meet '22</b> to exchange our ideas with other Taiwan iGEM teams. The NCKU_Tainan iGEM team hosted this meet-up, and the participants include NCHU_Taichung, iGEM NTHU, NYCU_Formosa, iGEM KCIS Xiugang, iGEM CSMU, iGEM Mingdao, GEMS Taiwan, NYCU_Taipei, and our team. During the conference, all participants gathered to discuss each team's projects and gave concrete feedback in the hope of improving, including presentation and inspecting and learning each other's posters.
             </p>
             <p>
                 &emsp;&emsp;After the conference, we were inspired to examine further our Quantitative Agar Faucet. As a result, we reached out to Prof. Lee to explore potential development opportunities. Besides, this meetup gave us a chance to have deeper communication with teams around Taiwan and is a leading of many of the following collaborations, including the the iGEM theme song project with <a href="https://2022.igem.wiki/csmu-taiwan/education#public-education" class="link_subtitle">CSMU_Taiwan</a>, iGEM map with <a href="https://2022.igem.wiki/nthu-taiwan/map" class="link_subtitle">NTHU_Taiwan</a>, and the infographic exchange with <a href="https://2022.igem.wiki/gems-taiwan/partnership#infographicexhibition" class="link_subtitle">Gems_Taiwan</a>.
@@ -164,7 +164,7 @@
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Our PACOmega project - CCU_Taiwan</h2>
             </div>
             <p>
-                &emsp;&emsp;During our IHP interview with the dietitian Miranda Chen, she told us that EPA supplement alone wasn’t sufficient enough to prevent CVD. From her professional perspective, she suggested that we should also value the importance of having a healthy diet during daily life.
+                &emsp;&emsp;During our IHP interview with the dietitian Miranda Chen, she told us that EPA supplement alone wasn't sufficient enough to prevent CVD. From her professional perspective, she suggested that we should also value the importance of having a healthy diet during daily life.
             </p>
             <p>
                 &emsp;&emsp;To promote healthy diets to every citizen on this beautiful planet, we initiated a CVD-Free Cookbook, inviting iGEM teams from around the world to share special ingredients in their countries that are good for cardiovascular health. Therefore, our cookbook features cuisines that are exotic but also healthy so that people who intend to care for their vessels can check it out for ideas for daily diets.
@@ -210,7 +210,7 @@
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The Alzheimer project - CU_Egypt</h2>
             </div>
             <p>
-                &emsp;&emsp;This year, CU_Egypt is working on treating Alzheimer’s Disease, and they wrote a book to spread awareness of it. The content of the book is the diary of a patient that has Alzheimer’s Disease, and has knowledge of the disease contained. To have more people be cautious of Alzheimer's, they ask for different iGEM teams to help them translate the book into various languages. Our team helped translate their storybook into Chinese Mandarin for people in Sinophone districts to read and learn about Alzheimer’s disease, and we also obtained a lot of new knowledge during the process.
+                &emsp;&emsp;This year, CU_Egypt is working on treating Alzheimer's Disease, and they wrote a book to spread awareness of it. The content of the book is the diary of a patient that has Alzheimer's Disease, and has knowledge of the disease contained. To have more people be cautious of Alzheimer's, they ask for different iGEM teams to help them translate the book into various languages. Our team helped translate their storybook into Chinese Mandarin for people in Sinophone districts to read and learn about Alzheimer's disease, and we also obtained a lot of new knowledge during the process.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="left_block">
@@ -242,7 +242,7 @@
                 </div>
             </div>
             <p>
-                &emsp;&emsp;Korea_HS launched a project called the “iGEMers’ Badge Project” that gave iGEM teams opportunities to create their design for a badge. We gave them our badges, and Korea_HS shipped the badges back to us in Taiwan. It’s a meaningful project that connects all iGEMers together, creating a global iGEM community and connecting every one of us.
+                &emsp;&emsp;Korea_HS launched a project called the “iGEMers' Badge Project” that gave iGEM teams opportunities to create their design for a badge. We gave them our badges, and Korea_HS shipped the badges back to us in Taiwan. It's a meaningful project that connects all iGEMers together, creating a global iGEM community and connecting every one of us.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="14" class="title-label-div">
@@ -276,7 +276,7 @@
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The Infographic Exchange Project - <br/> Gems_Taiwan, Korea_HS, Thailand_RS</h2>
             </div>
             <p>
-                &emsp;&emsp;This year, Gems_Taiwan, Korea_HS, and Thailand_RS partnered together and created an infographic exchange project. They gathered infographics from different iGEM teams and translated them into Mandarin, Korean, and Thai, to eliminate barriers between countries and let people who don't speak English be able to learn about iGEM projects. We participate in this project by giving our team’s infographic, hoping the world can know more about the crisis of cardiovascular disease and how we can provide a solution.
+                &emsp;&emsp;This year, Gems_Taiwan, Korea_HS, and Thailand_RS partnered together and created an infographic exchange project. They gathered infographics from different iGEM teams and translated them into Mandarin, Korean, and Thai, to eliminate barriers between countries and let people who don't speak English be able to learn about iGEM projects. We participate in this project by giving our team's infographic, hoping the world can know more about the crisis of cardiovascular disease and how we can provide a solution.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">

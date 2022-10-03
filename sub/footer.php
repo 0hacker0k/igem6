@@ -2,19 +2,19 @@
     <section class="d-flex justify-content-center p-4">
         <div class="footer_div">
             <a href="https://www.facebook.com/ccuigemteam/" class="me-4 text-reset">
-                <div class="fab button_floating"><img src="<?php echo imgfile;?>/facebook.png" alt="" height="50px"></div>
+                <div class="fab button_floating"><img src="<?php echo imgfile;?>/facebook.png" alt="" style="height:60px;"></div>
             </a>
             <a href="https://www.instagram.com/ccuigem/" class="me-4 text-reset">
-                <div class="fab button_floating"><img src="<?php echo imgfile;?>/instagram.png" alt="" height="50px"></div>
+                <div class="fab button_floating"><img src="<?php echo imgfile;?>/instagram.png" alt="" style="height:60px;"></div>
             </a>
             <a href="" class="me-4 text-reset">
-                <div class="fab button_floating"><img src="<?php echo imgfile;?>/twitter.png" alt="" height="50px"></div>
+                <div class="fab button_floating"><img src="<?php echo imgfile;?>/twitter.png" alt="" style="height:60px;"></div>
             </a>
             <a href="https://www.youtube.com/channel/UCgqSdCx7Tj3ZyxOCJNlOADQ" class="me-4 text-reset">
-                <div class="fab button_floating"><img src="<?php echo imgfile;?>/youtube.png" alt="" height="50px"></div>
+                <div class="fab button_floating"><img src="<?php echo imgfile;?>/youtube.png" alt="" style="height:60px;"></div>
             </a>
             <a href="" class="me-4 text-reset">
-                <div class="fab button_floating"><img src="<?php echo imgfile;?>/gmail.png" alt="" height="50px"></div>
+                <div class="fab button_floating"><img src="<?php echo imgfile;?>/gmail.png" alt="" style="height:60px;"></div>
             </a>
         </div>
     </section>
