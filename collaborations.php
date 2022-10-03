@@ -152,8 +152,8 @@
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
-                    <img src="<?php echo imgfile;?>/collaborations/collaborations09.png"/>Our team presenting our project
-                    <div class="triangle_to_top"></div>           
+                    <img src="<?php echo imgfile;?>/collaborations/collaborations09.png"/>
+                    <div class="triangle_to_top"></div>Our team presenting our project           
                 </div>
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
