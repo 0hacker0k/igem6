@@ -1,38 +1,8 @@
 <?php
             function change_attr_icon($i){
                 switch($i){
-                    case 1:
-                        return "leadership";
-                        break;
-                    case 2:
-                        return "presentation";
-                        break;
-                    case 3:
-                        return "slides_editor";
-                        break;
-                    case 4:
-                        return "experiment";
-                        break;
-                    case 5:
-                        return "software";
-                        break;
-                    case 6:
-                        return "hardware";
-                        break;
-                    case 7:
-                        return "measurement";
-                        break;
-                    case 8:
-                        return "education";
-                        break;
-                    case 9:
-                        return "wiki";
-                        break;
-                    case 10:
-                        return "ihp";
-                        break;
-                    case 11:
-                        return "collaboration";
+                    case "原本的名字":
+                        return "要改成的名字";
                         break;
                     default:
                         return $i;
