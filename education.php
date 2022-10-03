@@ -21,16 +21,10 @@
                     Overview
                 </div>
                 <div class="guide_label" onclick="move_to_item('2')">
-                    Refining our PACOmega project
+                    Open Lab
                 </div>
-                <div class="guide_label" onclick="move_to_item('8')">
-                    United we stand
-                </div>
-                <div class="guide_label" onclick="move_to_item('15')">
-                    Together, we louder
-                </div>
-                <div class="guide_label" onclick="move_to_item('18')">
-                    Summary
+                <div class="guide_label" onclick="move_to_item('7')">
+                    Campus walking
                 </div>
             </div>
             <div id="expansion" onclick="guide_toggle()">
@@ -43,7 +37,9 @@
             
         </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
-            <h1>Overview</h1>
+            <div id="1" class="title-label-div">
+                <h1>Overview</h1>
+            </div>
             <p>
                 &emsp;&emsp;Aside from the lab work, science communication plays an essential role as experimentation in the application. With proper interaction and brain-storming activities, we, as responsible and reliable scientists, can genuinely share the same level of standpoints with our target audience and explore mutual communication. Therefore, we attempt to share information about synthetic biology and our project with relative communities.
             </p>
@@ -183,13 +179,13 @@
             <p>
                 &emsp;&emsp;We also went to the village and the elderly university in CCU to invite them to our activity in person, hoping our sincere invitation can interest them to participate in the event. In the promotion phase, we know that some of the elderly seldom have an outdoor activity, therefore, this reinforces us to provide a great opportunity for them to walk with us.
             </p>
-            <div id="" class="title-label-div">
+            <div id="10" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Record during the activity</h2>
             </div>
             <p>
                 &emsp;&emsp;On that day, almost a hundred people joined us in the event: “Walking with the elderly, walking to a better heart.” Through this event, we hope to raise public awareness through the interactive game, guiding them to know more about cardiovascular disease. Therefore, we set up 5 different games to interact with elderly along the walking route. The first game lets the public know about the severity of cardiovascular disease. The second game makes people know what type of living habit will lead to cardiovascular diseases. The third game leads people to think about how we prevent cardiovascular disease in every day’s food consumption. The fourth game teaches people how to prevent cardiovascular disease through different kinds of exercise. Last but not least, tested them if they got the ideas for the whole activity.
             </p>
-            <div id="" class="title-label-div">
+            <div id="11" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Feedback from participants</h2>
             </div>
             <p>
