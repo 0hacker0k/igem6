@@ -40,12 +40,15 @@
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/contribution/contribution02.png"/>
                     <div class="triangle_to_top"></div>The AT domain transfers the substrate to the ACP protein.
+                    </div>
+                </div>
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/contribution/contribution03.png"/>
                     <div class="triangle_to_top"></div>The functional domains
+                </div>
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
@@ -56,12 +59,14 @@
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/contribution/contribution04.png"/>
                     <div class="triangle_to_top"></div>The DHA-producing gene clusters
+                </div>
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/contribution/contribution05.png"/>
                     <div class="triangle_to_top"></div>The EPA-producing gene clusters
+                </div>
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">

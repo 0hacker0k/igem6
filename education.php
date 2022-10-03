@@ -17,29 +17,28 @@
         <div class="in_center">
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <h1>Overview</h1>
+            
             <p>
-                &emsp;&emsp;Aside from the lab work, science communication plays as an essential role as the experimentation does in application. With proper interaction and brain-storming activities, we as responsible and reliable scientists, can truly share the same level of standpoints with our target audience and explore mutual communication. Therefore, we attempt to share information about synthetic biology and our project to relative communities.
+                &emsp;&emsp;Aside from the lab work, science communication plays an essential role as experimentation in the application. With proper interaction and brain-storming activities, we, as responsible and reliable scientists, can genuinely share the same level of standpoints with our target audience and explore mutual communication. Therefore, we attempt to share information about synthetic biology and our project with relative communities.
             </p>
             <p>
-                &emsp;&emsp;Our education and science communication projects mainly focus on the two goals: a. introducing synthetic biology to the public and b. raise the awareness of CVD prevention. These two are tethered together because lacking any of it might end up failing to tell the whole story of our project: utilizing the synthetic biological way to create pure EPA supplements for arteries care. We have observed that most of the people we contacted have an ambiguous and one-sided understanding of these two fields. As a result, they have difficulty connecting them in a comprehensive way. We solve the problem by constructing a coherent story from the current problem to our resolution.
+                &emsp;&emsp;Our education and science communication projects mainly focus on two goals: <b>a.</b> introducing synthetic biology to the public and <b>b.</b> raise the awareness of CVD prevention. These two are tethered together because lacking any of it might end up failing to tell the whole story of our project: utilizing the synthetic biological way to create pure EPA supplements for artery care. We have observed that most contact people have a vague and one-sided understanding of these two fields. As a result, they have difficulty connecting them in a comprehensive way. We solve the problem by constructing a coherent story from the current issue to our resolution.
             </p>
             <p>
-                &emsp;&emsp;The story is as follows: To prevent CVD, we want to use EPA which has been proven to have a good effect on reducing cardiac events. Our approaches to CVD prevention include producing pure EPA by synthetic biology and promoting a healthy lifestyle.
+                &emsp;&emsp;The story is as follows: To prevent CVD, we want to use EPA, which has been proven to have a good effect on reducing cardiac events. Our approaches to CVD prevention include producing pure EPA by synthetic biology and promoting a healthy lifestyle.
             </p>
             <p>
-                &emsp;&emsp;Having this in mind, we held an Open Lab activity for high school students intended to share the synthetic biological experiments and initiated a campus walking activity to draw more attention to CVD prevention. In echoing the World Heart Day activity in Chiayi, we also gathered together on September 29th to send more information about the arterial care.
+                &emsp;&emsp;To make our idea more accessible, we designed a web game to promote CVD prevention virtually and remotely. Combining the idea of synthetic biology and CVD prevention, we created a storyline in which the main character, PACO, is dispatched on an adventure wrapped in the theme of experimentation to save her kingdom from illness.
             </p>
             <p>
-                &emsp;&emsp;To make our idea more accessible, we designed a web game to promote CVD prevention virtually and remotely. Combining the idea of synthetic biology and CVD prevention, we created a storyline in which the main character, PACO, is dispatched to an adventure that’s wrapped in the theme of experimentation to save her kingdom from illness.
-            </p>
-            <p>
-                &emsp;&emsp;With those attempts, we sincerely hope that we can really make efforts to bridge the gap between society and the academic field. And embracing multilateral collaboration.
-            </p>
+                &emsp;&emsp;With those attempts, we sincerely hope that we can make efforts to bridge the gap between society and the academic field. And we are embracing multilateral collaboration.
+            </p>        
             <div id="2" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Open Lab</h1>
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Overview</h2>
             </div>
             <p>
-                &emsp;&emsp;In order to prevent CVD, we came up with a new way to synthesize EPA without contamination. However, we found that the idea of synthetic biology is too abstract for normal people to grab. As a result, to get people familiar with how we synthesize pure EPA, we held an Open Lab science camp to invite every high school student to get involved in synthetic biological experiments.
+                &emsp;&emsp;To prevent the CVD crisis, we devised a new way to synthesize pure EPA without contamination. However, the idea of synthetic biology may be too abstract for normal people to grab. Accordingly, to educate people how we synthesize pure EPA and the beauty of synthetic biology, we held the <b>Open Lab science camp</b> and invited high school students to get involved in synthetic biological experiments.
             </p>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -47,15 +46,20 @@
                     <div class="triangle_to_top"></div>Group photo - our team members with the participants
                 </div>
             </div>
-            <h1>
-                How do we achieve the publicity of synthetic biology?
-            </h1>
-            <p class="h25">
-                &emsp;&emsp;To let participants precisely comprehend the production of our products, we decided to have participants conduct the experiments on hand. Meanwhile, with the explanation of the experimental principle and the importance of laboratory safety by our team members, we can provide participants with clear and comprehensive information on the technology we use.
+            <div id="3" class="title-label-div">
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">How do we achieve the publicity of synthetic biology?</h2>
+            </div>
+            <p>
+                &emsp;&emsp;To let participants precisely realize the concept of synthetic biology, we decided to have participants manually conducting the experiments. Meanwhile, with our team members' explanation of the experimental principle and the importance of laboratory safety, we can provide participants with clear and comprehensive information on the technology we use.
             </p>
-            <h1>Before the activity</h1>
-            <p class="h25">
-                &emsp;&emsp;Although we are well prepared with the course materials and experiment equipment that will be used in the course, it is uncertain for us to make sure whether the explanation and the teaching styles are suitable for people who have never met synthetic biology. As a result, we set rehearsals twice and invited peers in our campus with different majors to experience the course and make sure they can completely absorb the knowledge. They gave us some advice to improve our teaching styles. To illustrate, they find out that some of the principles and technical terms are too abstruse to comprehend, they suggest we use metaphors when expounding them. All these advices has perfectly helped us complete a excellent activity.
+            <div id="4" class="title-label-div">
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Before the activity</h2>
+            </div>
+            <p>
+                &emsp;&emsp;Although we are well prepared with the course materials and experiment equipment that will be used in the course, it is uncertain for us to make sure whether the explanation and the teaching styles are suitable for people who have never met synthetic biology.
+            </p>
+            <p>
+                &emsp;&emsp;As a result, we set rehearsals twice and invited peers on our campus with different majors to experience the course and make sure they could completely absorb the knowledge. In return, the peers gave us some advice to improve our teaching styles. To illustrate, the peers point out that some of the principles and technical terms are too abstruse to comprehend, they suggest that we use similes when expounding them. All this advice has ideally helped us complete an excellent activity.
             </p>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -63,6 +67,16 @@
                     <div class="triangle_to_top"></div>First rehearsals - our teambers with campus peers
                 </div>
             </div>
+            <iframe src="/education/education.pdf" width="60%"></iframe>
+
+
+
+
+            <p>
+                &emsp;&emsp;
+            </p>
+            
+            
             <h1>Record during the activity</h1>
             <p class="h25">
                 &emsp;&emsp;In the experiment, to allow the operator to observe the results more effectively and understand the effect of the technology we adopt, we used green fluorescent protein (GFP), which is often used as a reporter gene in synthetic biology as the target gene and has been significantly used in the research field. Also, we use pET15b as plasmid and transform into E. coli. During the experiment, we lead them to start with gene selection, PCR, gel electrophoresis, purification, ligation, and transformation sequentially. Finally, observing the E. coli that expresses GFP protein.
