@@ -192,7 +192,7 @@
                 </ul>
             </p>";
             $title_explain="Chia-Hsieh always provides the laughter for the team. Though there are different trivia that need to be dealt with, a meme is always a suitable cure for everyone.";
-            $popup_img="/human/members001.jpg";
+            $popup_img="/human/members101.jpg";
             $popup_img_alt="";
             $person_title="#MEME_SPREADER";
             $person_icon="🐸";
@@ -213,7 +213,7 @@
                 </ul>
             </p>";
             $title_explain="Yuan-Chi often tries to understand others’ emotions and helps to clear the air.";
-            $popup_img="/human/members002.jpg";
+            $popup_img="/human/members102.jpg";
             $popup_img_alt="";
             $person_title="#DISPUTE_MEDIATOR";
             $person_icon="🐨";
@@ -234,7 +234,7 @@
                 </ul>
             </p>";
             $title_explain="Yun-Chi tends to deal with her work at midnight and stays up late because she has the highest efficiency during midnight.";
-            $popup_img="/human/members003.jpg";
+            $popup_img="/human/members103.jpg";
             $popup_img_alt="";
             $person_title="#MIDNIGHT_OVERWORKER";
             $person_icon="😢";
