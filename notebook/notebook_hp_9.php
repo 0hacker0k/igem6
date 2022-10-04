@@ -5,7 +5,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."";
+                                $img_src[0]=imgfile."/notebook/hp-19.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -17,7 +17,12 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>                       
+                                    <li>
+                                        Preparing the initial proposal on Heartbeat mission - Whole-heartedly protection.
+                                    </li> 
+                                    <li>
+                                        Interviewing the secretary general of Health Food Society of Taiwan, Chang-Jer Wu PH.D.
+                                    </li>                      
                                 </ul>
                             </div>
                         </div>
@@ -32,7 +37,12 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>
+                                        Making the props of Heartbeat mission - Whole-heartedly protection.
+                                    </li>
+                                    <li>
+                                        Interviewing the sports scientist, Shuk-Fong Lee PH.D.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -42,7 +52,7 @@
                             <?php
                                 $id=2;
                                 $img_count=1;
-                                $img_src[0]=imgfile."";
+                                $img_src[0]=imgfile."/notebook/hp-20.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -68,7 +78,9 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>                  
+                                    <li>
+                                        Preparing the postcard for Heartbeat mission - Whole-heartedly protection.
+                                    </li>                  
                                 </ul>
                             </div>
                         </div>
@@ -82,7 +94,15 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>
+                                        Holding the "Heartbeat mission - Whole-heartedly protection" on World Heart Day.
+                                    </li>
+                                    <li>
+                                        Interviewing Yan-Chang Lee PH.D.
+                                    </li>
+                                    <li>
+                                        Interviewing the Chief Executive Officer of Trade Wind Biotech Co., Ltd. (TWBIO), Dr. Lance Chang.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -91,9 +111,11 @@
                         <div class="square">
                             <?php
                                 $id=4;
-                                $img_count=1;
-                                $img_src[0]=imgfile."";
+                                $img_count=2;
+                                $img_src[0]=imgfile."/notebook/hp-22-1.png";
+                                $img_src[1]=imgfile."/notebook/hp-22-2.png";
                                 $img_alt[0]="";
+                                $img_alt[1]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>

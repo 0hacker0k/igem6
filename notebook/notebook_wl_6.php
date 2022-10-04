@@ -21,7 +21,7 @@
                                     <br>
                                     <li>Starting to edit safety form</li>
                                     <br>
-                                    <li>Applying chloramphenicol and ampicillin to confirm the co-existence of pCold and pSTV28 in <i>E. coli</i></li>
+                                    <li>Applying chloramphenicol and ampicillin to confirm the coexistence of pCold and pSTV28 in <i>E. coli</i></li>
                                     <br>
                                     <li>Ordering <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> gene blocks from IDT company</li>                         
                                 </ul>

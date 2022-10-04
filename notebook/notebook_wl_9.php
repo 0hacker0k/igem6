@@ -17,7 +17,21 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>                       
+                                    <li>
+                                        Testing the quality of <i>pfa A1</i> primer
+                                    </li>
+                                    <li>
+                                        Trying to ligate <i>pfa B</i> gene into pSTV28
+                                    </li>
+                                    <li>
+                                        Expressing protein of pColdI-<i>pfa D</i> in <i>E. coli</i>
+                                    </li>
+                                    <li>
+                                        Sequencing the pET28a plasmid
+                                    </li>
+                                    <li>
+                                        Applying chloramphenicol and ampicillin to confirm the co-existence of pCold and pSTV28 in <i>E. coli</i>
+                                    </li>                       
                                 </ul>
                             </div>
                         </div>
@@ -32,7 +46,24 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>
+                                        Applying chloramphenicol, ampicillin and kanamycin to confirm the co-existence of pColdI, pSTV28 and pET28a in <i>E. coli</i>
+                                    </li>
+                                    <li>
+                                        Trying to ligate <i>AccBC</i> gene into pET28a
+                                    </li>
+                                    <li>
+                                        Trying to ligate <i>AccD1E</i> gene into pET28a
+                                    </li>
+                                    <li>
+                                        Trying to ligate <i>pfa B</i> gene into pSTV28
+                                    </li>
+                                    <li>
+                                        Expressing protein of pColdI-<i>pfa D</i> in <i>E. coli</i>
+                                    </li>
+                                    <li>
+                                        Expressing protein of pSTV28-<i>pfa E</i> in <i>E. coli</i>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -68,7 +99,30 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>                  
+                                    <li>
+                                        Trying to ligate <i>pfa A1</i> gene into pColdI
+                                    </li>       
+                                    <li>
+                                        Trying to ligate <i>pfa A</i> gene into pColdI
+                                    </li>
+                                    <li>
+                                        Trying to ligate <i>pfa B</i> gene into pSTV28
+                                    </li>   
+                                    <li>
+                                        Trying to ligate <i>AccBC</i> gene into pET28a
+                                    </li>
+                                    <li>
+                                        Trying to ligate <i>AccD1E</i> gene into pET28a
+                                    </li>  
+                                    <li>
+                                        Sequencing pSTV28-<i>pfa B</i> (for EPA production)
+                                    </li>     
+                                    <li>
+                                        Sequencing pColdI-<i>pfa A1</i> 
+                                    </li> 
+                                    <li>
+                                        Applying chloramphenicol, ampicillin and kanamycin to confirm the co-existence of pColdI, pSTV28 and pET28a in <i>E. coli</i>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
