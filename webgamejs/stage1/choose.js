@@ -90,8 +90,8 @@ function create_stage1_choose (){
     };
     PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
-    Sprite.start(lan_stage1.vo_1,50);
-    descript_count=2;
+    
+    descript_count=1;
     descript_limit=4;
     
     //.start(lan_stage1.vo_1, 50);

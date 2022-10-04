@@ -19,7 +19,7 @@ function load_talkbox(where){//載入動畫檔
     });
     where.load.image('PACO', 'img/main/PACO.png');
     where.load.image('Sprite', 'img/main/sprite.png');
-    where.load.image('back', 'img/map/backer.jpg');
+    where.load.image('backer', 'img/map/backer.jpg');
 }
 
 function loading_talkbox(where,x,y){

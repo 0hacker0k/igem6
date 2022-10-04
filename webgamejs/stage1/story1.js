@@ -43,7 +43,7 @@ function create_story1 (){
     };
     PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
-    back=new createTextBox(this, TextBox_x, TextBox_y, config, 'back');
+    back=new createTextBox(this, TextBox_x, TextBox_y, config, 'backer');
     npc=new createTextBox(this, TextBox_x, TextBox_y, config, con.npc_key);
     descript_count=con.descript_count;
     descript_limit=con.descript_limit;

@@ -32,7 +32,7 @@ function create_story0 (){
     
     PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
-    back=new createTextBox(this, TextBox_x, TextBox_y, config, 'back');
+    back=new createTextBox(this, TextBox_x, TextBox_y, config, 'backer');
     //back.start(lan_story0.back_1,50);
     descript_count=1;
     descript_limit=27;

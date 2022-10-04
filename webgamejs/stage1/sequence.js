@@ -266,7 +266,7 @@ function create_stage1_sequence (){
     };
     PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
-    Sprite.start(lan_stage1_seq.vo_1,50);
+    //Sprite.start(lan_stage1_seq.vo_1,50);
     descript_count=1;
     descript_limit=1;
     //back

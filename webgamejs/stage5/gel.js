@@ -12,7 +12,7 @@ var desk_pos = [
                 [1,1,1,1,1,1,1,0,0,0],
                 [0,0,0,0,0,0,0,0,0,1],
                 [0,0,0,0,0,0,0,0,0,1],
-                [1,0,0,0,1,1,1,0,0,0],
+                [1,0,0,1,1,1,1,0,0,0],
                 [1,0,0,0,0,0,0,0,0,1],
                 [1,0,0,0,0,0,0,0,0,1],
                 [1,1,1,1,1,1,1,0,0,1]
@@ -55,7 +55,7 @@ function preload_stage5_take(){
     this.load.image("uv",'img/stage5/uv.png');
     this.load.image("note",'img/stage5/note.png');
     this.load.image("machine",'img/stage5/gel_making_machine.png');
-    this.load.image('wifi','img/main/green.png');
+    this.load.image('wifi','img/stage5/wifi.png');
     //light gel
     this.load.image("lightgel",'img/stage5/lightgel.png');
     this.load.image("lightgel_broken",'img/stage5/lightgel-broken.png');
@@ -174,7 +174,7 @@ function create_stage5_take (){
     }
     //遊戲時間
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=5;
+    timer.time=120;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
     //remind: string to variable(en and zh-tw)
