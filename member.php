@@ -494,7 +494,7 @@
         ?>
         <?php
             $id=16;
-            $name="Guan-Chen Li";
+            $name="Kuan-Chen Lee";
             $job_title="Member of Human Practice";
             $content="
             <p>
@@ -570,7 +570,7 @@
                 </ul>
             </p>";
             $title_explain="Wei-Chun holds a campus walking activity. Not just walking inside CCU campus, he has found his way to NCCU.";
-            $popup_img="/human/members019.jpg";
+            $popup_img="/human/members119.jpg";
             $popup_img_alt="";
             $person_title="#DANIEL_WALKER";
             $person_icon="🤩";

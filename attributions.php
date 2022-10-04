@@ -290,7 +290,7 @@
                 include "sub/attribution_card.php";
             ?>
             <?php
-                $name="Guan-Chen Li";
+                $name="Kuan-Chen Lee";
                 $photo="/attributions/attributions016.jpg";
                 $icon1="wiki";
                 $icon2="";
