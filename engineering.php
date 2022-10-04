@@ -79,12 +79,11 @@
                 &emsp;&emsp;One important cause of CVD is the accumulation of oxidized low-density lipoprotein (LDL) in blood vessels, and taking the Omega-3 polyunsaturated fatty acid (PUFA), including the DHA and EPA, could efficiently slow down the CVD progression.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
-            <!-- <div class="full_block">
+            <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/engineering/engineering01.png"/>
-                    <div class="triangle_to_top"></div>           
                 </div>
-            </div> -->
+            </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="2" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Learn</h2>
@@ -93,12 +92,11 @@
                 &emsp;&emsp;The human body can synthesize DHA from α-linolenic acid (ALA), which is abundant in some plant oils. However, the conversion rate is extremely low, which was reported from 2-10% (Chiu, Su et al. 2008) to 0.01% (Hussein, Ah-Sing et al. 2005). Therefore, DHA-rich foods, such as fish, or DHA supplements are the two main sources for humans to get enough DHA. Notably, the DHA supplement is also purified from fishes, suggesting that the supplement of DHA will become a problem as the exhaustion of marine resources.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
-            <!-- <div class="full_block">
+            <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/engineering/engineering02.png"/>
-                    <div class="triangle_to_top"></div>           
                 </div>
-            </div> -->
+            </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="3" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Explore</h2>
