@@ -1,4 +1,4 @@
-var descript_count;//remind: set the limitation
+var descript_count;
 var descript_limit;
 var preisdone=0;
 var preslide;

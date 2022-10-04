@@ -247,8 +247,8 @@ function create_stage1_pcr (){
     };
     //PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
-    Sprite.start(lan_stage1_pcr.vo_1,50);
-    descript_count=2;
+    //Sprite.start(lan_stage1_pcr.vo_1,50);
+    descript_count=1;
     descript_limit=11;
     //back
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);

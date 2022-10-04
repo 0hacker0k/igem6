@@ -50,7 +50,7 @@ function create_story1 (){
     //轉去下個場
     this.input.on("pointerup",function(){
         if(stop==0){
-            finish_transition((0.8)*width,(0.0)*height);
+            finish_transition(this,(0.8)*width,(0.0)*height);
             setTimeout(function(){
                 load_page(con.next_page);
             },500);

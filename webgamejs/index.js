@@ -97,6 +97,12 @@ function loadlanguage(){
     }
     load();
 }
+const opening={
+    key: 'opening',
+    preload: preload_opening,
+    create: create_opening,
+    update: update_opening
+}
 const stage_0_story={
     key: 'stage_0_story',
     preload: preload_story0,
@@ -164,6 +170,9 @@ function load(){
         switch(page){
             case "lobby":
                 load_page(map_1);
+                break;
+            case "opening":
+                load_page(opening);
                 break;
             case "story0":
                 load_page(stage_0_story);

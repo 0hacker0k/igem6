@@ -201,22 +201,7 @@ function create_stage4_take (){
         },500);
     },this);
     //轉場動畫
-    start_transition(this);
-    
-    //Talk box
-    // createTextBox(this, 100, 100, {
-    //     wrapWidth: 500,
-    // })
-    // .start(content, 50);
-    
-    // remind: BUG, 對話框結束後不會開始遊戲
-    // createTextBox(this, width*0.15, height*0.75, {
-    //     wrapWidth: width*0.5,
-    //     fixedWidth: width*0.55,
-    //     fixedHeight: height*0.15,
-    // },'green')
-    // .start(content,50);
-    
+    start_transition(this);   
 }
 function update_stage4_take (){//與外界有關的互動
     

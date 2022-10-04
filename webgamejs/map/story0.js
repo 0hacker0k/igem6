@@ -38,7 +38,7 @@ function create_story0 (){
     descript_limit=27;
     this.input.on("pointerup",function(){
         if(stop==0){
-            finish_transition((0.8)*width,(0.0)*height);
+            finish_transition(this,(0.8)*width,(0.0)*height);
             setTimeout(function(){
                 load_page(map_1);
             },500);

@@ -1,5 +1,6 @@
 <script src="<?php echo webgamejsfile;?>/phaser.min.js"></script>
 <script src="<?php echo webgamejsfile;?>/rexUI.min.js"></script>
+<script src="<?php echo webgamejsfile;?>/map/opening.js"></script>
 <script src="<?php echo webgamejsfile;?>/map/map1.js"></script>
 <script src="<?php echo webgamejsfile;?>/map/story0.js"></script>
 <script src="<?php echo webgamejsfile;?>/stage1/choose.js"></script>

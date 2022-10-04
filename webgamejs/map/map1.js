@@ -70,7 +70,7 @@ function create (){
         //remind: 應該要切到幻燈片->再來才是關卡
         if(stop==0){//切換關卡
             stop=1;
-            finish_transition((0.8)*width,(0.0)*height);
+            finish_transition(this,(0.8)*width,(0.0)*height);
             if(id==1){
                 setTimeout(function(){
                     load_page(stage_1_story);
