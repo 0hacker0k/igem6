@@ -87,7 +87,7 @@
                                         Quantitative Agar Faucet: Turning the funnel and the screw thread by lathe
                                     </li>  
                                     <li>
-                                        Wiki: Editing the content of home page, collaboration, and integrated human practices.
+                                        Wiki: Editing the content of home page, collaboration, and integrated human practices
                                     </li>                
                                 </ul>
                             </div>

@@ -17,13 +17,13 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Planning courses for the Open Lab.</li>
+                                    <li>Planning courses for the Open Lab</li>
                                     <br>
-                                    <li>Designing the online cookbook of collaboration.</li>
+                                    <li>Designing the online cookbook of collaboration</li>
                                     <br>
-                                    <li>Illustrating the scenes of the promotion video.</li>
+                                    <li>Illustrating the scenes of the promotion video</li>
                                     <br>
-                                    <li>Posting member introductions on social media.</li>                         
+                                    <li>Posting member introductions on social media</li>                         
                                 </ul>
                             </div>
                         </div>
@@ -38,19 +38,19 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Completing illustrations of stage 4 of the web game and revising the story outline.</li>
+                                    <li>Completing illustrations of stage 4 of the web game and revising the story outline</li>
                                     <br>
-                                    <li>Completing the design of flyers for Campus walking.</li>
+                                    <li>Completing the design of flyers for Campus walking</li>
                                     <br>
-                                    <li>Planning the agenda and assigning tasks of the Open Lab.</li>
+                                    <li>Planning the agenda and assigning tasks of the Open Lab</li>
                                     <br>
-                                    <li>Designing the interview abstract (toward dietitians).</li>
+                                    <li>Designing the interview abstract (toward dietitians)</li>
                                     <br>
-                                    <li>Filming the promotion video.</li>
+                                    <li>Filming the promotion video</li>
                                     <br>
-                                    <li>Searching local businesses for fundraising.</li>
+                                    <li>Searching local businesses for fundraising</li>
                                     <br>
-                                    <li>Sending sponsorship emails to enterprises.</li>
+                                    <li>Sending sponsorship emails to enterprises</li>
                                 </ul>
                             </div>
                         </div>
@@ -87,17 +87,17 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Designing stage 5 of the web game and completing dialog boxes.</li>
+                                    <li>Designing stage 5 of the web game and completing dialog boxes</li>
                                     <br>
-                                    <li>Amending the venue of campus walking.</li>
+                                    <li>Amending the venue of campus walking</li>
                                     <br>
-                                    <li>Sending collaboration emails to other iGEM teams.</li>
+                                    <li>Sending collaboration emails to other iGEM teams</li>
                                     <br>
-                                    <li>Refining the interview abstract (toward dietitians).</li>
+                                    <li>Refining the interview abstract (toward dietitians)</li>
                                     <br>
-                                    <li>Designing the team business card and the poster for fundraising.</li>
+                                    <li>Designing the team business card and the poster for fundraising</li>
                                     <br>
-                                    <li>Promoting the Open Lab on our social media.</li>                     
+                                    <li>Promoting the Open Lab on our social media</li>                     
                                 </ul>
                             </div>
                         </div>
@@ -112,17 +112,17 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Completing illustrations of stage 5 of the web game.</li>
+                                    <li>Completing illustrations of stage 5 of the web game</li>
                                     <br>
-                                    <li>Visiting local villages to promote our campus walking.</li>
+                                    <li>Visiting local villages to promote our campus walking</li>
                                     <br>
-                                    <li>Composing teaching materials for the Open Lab.</li>
+                                    <li>Composing teaching materials for the Open Lab</li>
                                     <br>
-                                    <li>Compiling the rundown for the TCUS entrepreneurship competition.</li>
+                                    <li>Compiling the rundown for the TCUS entrepreneurship competition</li>
                                     <br>                            
-                                    <li>Interviewing the pharmacist, Chi-Kai Wu.</li>
+                                    <li>Interviewing the pharmacist, Chi-Kai Wu</li>
                                     <br>
-                                    <li>Sending sponsorship emails to enterprises.</li>
+                                    <li>Sending sponsorship emails to enterprises</li>
                                 </ul>
                             </div>
                         </div>
