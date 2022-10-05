@@ -173,7 +173,7 @@ function create_stage2_take (){
     }
     //遊戲時間
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=5;
+    timer.time=30;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
     //remind: string to variable(en and zh-tw)
@@ -555,7 +555,7 @@ function create_stage2_take (){
             Object = where.physics.add.sprite(x, y, what).setDisplaySize(width*0.1/2,height*0.17/2);
             Object.setInteractive().setBodySize(Object.width,Object.height);
         }else if(what=="trashcan"){
-            Object = trashcan.create(x, y+width*0.04, what).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
+            Object = trashcan.create(x, y+width*0.03, what).setDisplaySize(width*0.1/2,height*0.17/2).refreshBody();
         }else if(what=="uv"){
             Object = cant_move_item.create(x, y+width*0.02, what).setDisplaySize(width*0.1,height*0.3).refreshBody();
         }else if(what=="gel_machine"){
@@ -1391,16 +1391,6 @@ function create_stage2_take (){
                 plus_score.alpha=1;
                 plus_score.setText('+'+tar_score.toString());
                 text_fade_out(plus_score);
-                // if(count==list_len){//跑完
-                //     // setTimeout(function(){//轉回map_1
-                //     //     finish_transition(this,width,0);
-                //     //     setTimeout(function(){
-                //     //         load_page(map_1);
-                //     //     },500);
-                //     //     stage_complete[5]=1;
-                //     // },1000);
-                //     
-                // }
             }
         }, this);
     }
@@ -1498,16 +1488,16 @@ function create_stage2_take (){
     function create_medal(x,y,score=0){
         var temp;
         //remind: judge score still need adjust.
-        console.log('MEDAL!');
+        //console.log('MEDAL!');
         if(score<=200){
             temp = where.physics.add.image(x, y, "bronze").setDisplaySize(0.7*width/15,width/15);
-            console.log('bronze');
+            //console.log('bronze');
         }else if(score<=400){
             temp = where.physics.add.image(x, y, "silver").setDisplaySize(0.7*width/15,width/15);
-            console.log('silver');
+            //console.log('silver');
         }else if(score<=600){
             temp = where.physics.add.image(x, y, "gold").setDisplaySize(0.7*width/15,width/15);
-            console.log('gold');
+            //console.log('gold');
         }
         return temp;
     }
