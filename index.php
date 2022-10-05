@@ -8,6 +8,18 @@
 </head>
 
 <body onload="load_finish()">
+    <script>
+        window.onerror = function (msg, url, line) {
+            if (msg == "[IFRAME ERROR MESSAGE]") {
+                console.log(1);
+                return true
+            }
+            else {
+                console.log(2);
+                //do nothing
+            }
+        }
+    </script>
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
     <div id="map" style="bottom: -100%;">
@@ -180,13 +192,8 @@
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_16">
-        <div class="white_background">
-            <!-- promotion-video -->
-            <!-- <video width="320" height="240" controls>
-                <source src="https://video.igem.org/2fbde868-91d4-4572-badc-d3345267a38b" type="video/mp4">
-                Your browser does not support the video tag.
-            </video> -->
-            <video id="promotion-video" playsinline="playsinline" tabindex="-1" role="application" src="https://video.igem.org/722cad51-133d-4a44-8b3d-a17d41d03deb"></video>
+        <div class="promotion-video-div">
+            <iframe id="promotion-video" title="CCU_Taiwan: The EPA production from E. coli. to prevent cardiovascular diseases (2022) - Project Promotion [English]" src="https://video.igem.org/videos/embed/0f0c1ce3-b6fe-4ec3-b95b-b10aae022dee" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_17">
