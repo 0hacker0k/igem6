@@ -1,26 +1,17 @@
 function preload_stage1_pcr(){
     this.load.image('background', 'img/stage1/step_3_background.jpg');//載入一般圖片
     load_transition(this);
+    preload_congratulation(this);
     this.load.image('back', 'img/main/back.png');
-    for(var i=0;i<18;i++){
-        var i_0=i.toString();
-        var i_1=(i+1).toString();
-        var locate;
-        if(i+1<10){
-            locate='0'+i_1;
-        }else{
-            locate=i_1;
-        }
-        this.load.image('end'+i_0, 'img/stage1/congratulations/congratulations_'+locate+'.png');
-    }
-    this.load.image('end', 'img/stage1/congratulations.jpg');
     this.load.spritesheet('gene',
         'img/stage1/pcr/ATCG.png',
         { frameWidth: 220, frameHeight: 462 }
     );
 }
+
 function create_stage1_pcr (){
     //轉場設定
+    where=this;
     loading_transition(this,-500*width/800,0);
     
     //--------------------場景設定--------------------
@@ -130,18 +121,14 @@ function create_stage1_pcr (){
         final_y = dragY;
         final_object=gameObject;
     });
-    this.input.on('pointerdown', function (pointer, gameObject, dragX, dragY) {
-        // console.log(gameObject);
-        // console.log(dragX);
-        // console.log(dragY);
-        // console.log(input_string);
-    });
+    // this.input.on('pointerdown', function (pointer, gameObject, dragX, dragY) {
+    //     // console.log(gameObject);
+    //     // console.log(dragX);
+    //     // console.log(dragY);
+    //     // console.log(input_string);
+    // });
     var space=this;
     this.input.on('pointerup', function (pointer) {
-        if(game_end==1){
-            load_page(map_1);
-            return ;
-        }
         var status=0;
         var temp=0;
         for(var i=0;i<len;i++){
@@ -159,6 +146,7 @@ function create_stage1_pcr (){
                     status=0;
                 }
                 if(status==0){
+                    //remind: there's a error message, but doesn't matter
                     final_object.x=x2+(move_each_spacing*i);
                     final_object.y=y2;
                     //input_string[i]='N';
@@ -193,7 +181,7 @@ function create_stage1_pcr (){
             }
         }
         if(correct==len){
-            end_stage1();
+            end_stage(where,1);
         }
         //console.log(input_string);
         //alert(status);
@@ -208,34 +196,7 @@ function create_stage1_pcr (){
             bigger(object,count+1);
         },13);
     }
-    var end=this.physics.add.staticGroup();
-    var count=0;
-    var last_one=null;
-    var sett;
-    function end_stage1(){
-        if(last_one!=null){
-            last_one.alpha=0;
-        }
-        last_one=end.create(0, 0, 'end'+count.toString()).setOrigin(0, 0).setInteractive().setDisplaySize(width,height);
-        if(count<17){
-            count++;
-        }else{
-            count=16;
-            game_end=1;
-        }
-        clearTimeout(sett);
-        sett=setTimeout(function(){
-            end_stage1();
-        },130);
-        stage_complete[1]=1;
-        // if(alpha<1){
-        //     setTimeout(function(){
-        //         end_stage1();
-        //     },10);
-        // }
-        // end.alpha=alpha;
-        // alpha+=0.01;
-    }
+    create_congratulation(this,map_1);
     //文字說明
     TextBox_x=width*0.15;
     TextBox_y=height*0.75;

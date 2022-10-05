@@ -29,6 +29,8 @@ var score = 0;
 var scoreText;
 var game=null;
 var game_temp=null;
+var game_end=0;//trigger the scene after congratulation.
+var last_one=null;
 var platforms;
 var level=0;
 var send_string="";
