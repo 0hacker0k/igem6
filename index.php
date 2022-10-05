@@ -182,6 +182,9 @@
     <div class="page" style="top:200%;" id="page_16">
         <div class="white_background">
             promotion-video
+            <video src="https://video.igem.org/2fbde868-91d4-4572-badc-d3345267a38b">
+                
+            </video>
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_17">
