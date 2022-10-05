@@ -1,15 +1,20 @@
 body{
     height: 500%;
 }
+a{
+    cursor: pointer;
+    color: #0d6efd !important;
+    /* text-decoration: underline; */
+}
 #map{
     position: fixed;
     width: 15%;
     right: 2%;
     transition: 1s;
-    z-index: 99;
+    z-index: 11;
 }
 #map:hover #go_top{
-    opacity: 1;
+    opacity: 0.5;
 }
 #map:hover #map_icon{
     opacity: 0;
@@ -25,6 +30,7 @@ body{
     right: 2%;
     opacity: 0;
     transition: 0.5s;
+    /* z-index: 99; */
 }
 #map_icon{
     position: absolute;
@@ -33,11 +39,13 @@ body{
     bottom: 2%;
     right: 2%;
     transition: 0.5s;
+    /* z-index: -10; */
 }
 #epa{
     position: absolute;
     width: 17%;
     transition: 0.5s;
+    z-index: -10;
 }
 #page5_epa{
     --rotate:0deg;
@@ -59,6 +67,7 @@ body{
     top: 200%;
     height: 100%;
     flex-wrap: wrap;
+    z-index: 10;
 }
 .white_background{
     position: absolute;
@@ -91,6 +100,12 @@ body{
 #page_12_content{
     position: absolute;
     left: 10%;
+    font-size: calc(2vh + 1em);
+    width: calc(20vh + 40%);
+}
+#page_13_content{
+    position: absolute;
+    left: calc(35%);
     font-size: calc(2vh + 1em);
     width: calc(20vh + 40%);
 }
@@ -147,6 +162,9 @@ body{
     display: inline-block;
     margin-right: calc(1% + 0.2vh + 0.1em);
 }
+.reference{
+    font-size: calc(0.7vh + 0.35em);
+}
 #team_name{
     display: flex;
     width: 70%;
@@ -163,11 +181,11 @@ body{
     display: flex;
     width: 55%;
 }
-#page_13{
-    z-index: 10;
-}
 #page_14{
     z-index: 9;
+}
+#page_15{
+    z-index: 8;
 }
 #earth{
     position: absolute;
@@ -181,7 +199,7 @@ body{
     position: absolute;
     width: 80%;
 }
-#page5-role1{
+#page6-role1{
     width: 40%;
     /* height: 40%; */
     bottom:6%;
@@ -191,17 +209,104 @@ body{
     -o-transform:scaleX(-1);
     transform:scaleX(-1);
 }
-#page5-role2{
+#page6-role2{
     width: 30%;
     /* height: 40%; */
     bottom:6%;
     left:60%;
 }
-#page5-role3{
+#page6-role3{
     width: 30%;
     /* height: 40%; */
     bottom:40%;
     left:35%;
+}
+#page7-role1{
+    width: 30%;
+    /* height: 40%; */
+    bottom:6%;
+    left:2%;
+    /* -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1); */
+}
+#page7-role2{
+    width: 30%;
+    bottom:6%;
+    left:60%;
+}
+#page7-role3{
+    width: 25%;
+    bottom: 10%;
+    left: 25%;
+}
+#page7-role4{
+    width: 25%;
+    bottom: 10%;
+    left: 40%;
+}
+#page7-role5{
+    width: 25%;
+    bottom: 20%;
+    left: 35%;
+}
+#page8-role1{
+    width: 40%;
+    bottom:6%;
+    left:5%;
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+}
+#page8-role2{
+    width: 28%;
+    bottom:6%;
+    left:60%;
+}
+#page8-role3{
+    width: 28%;
+    bottom: 18%;
+    left: 45%;
+}
+#page9-role1{
+    width: 20%;
+    bottom:6%;
+    left:6%;
+}
+#page9-role2{
+    width: 45%;
+    bottom: 4%;
+    left: 40%;
+}
+#page10-role1{
+    width: 38%;
+    bottom:6%;
+    left:25%;
+}
+#page11-role1{
+    width: 55%;
+    bottom:4%;
+    left:15%;
+}
+#page12-role1{
+    width: 100%;
+    bottom:32%;
+    left:180%;
+    -moz-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+#page13-role1{
+    width: 100%;
+    bottom:10%;
+    left:20%;
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
 }
 .first_page{
     opacity: 0;
@@ -217,6 +322,7 @@ body{
 .stop {
     animation-play-state: paused;
 }
+
 @keyframes heart-burst {
   0% {
     background-position: 0%;

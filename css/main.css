@@ -63,15 +63,14 @@ ul{
     padding:0px;
 }
 
-li a{
+/* li a{
     display:block;
     padding:10px;
     text-decoration: none;
     color:#ffcae7;
     font-weight: 800;
     text-align: center;
-    /* margin-left:50px; */
-}
+} */
 .drop{
     width: 25px;
   }
