@@ -17,7 +17,8 @@
     
         // return $results;
     }
-    $val=getDirContents('D:/xampp/htdocs/igem6/');
+    // $val=getDirContents('D:/xampp/htdocs/igem6/');
+    $val=getDirContents('D:/application/htdocs/igem6');
     // $count=count($val);
     // echo $count."<br>";
     // for($i=0;$i<$count;$i++){

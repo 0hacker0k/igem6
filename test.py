@@ -3,8 +3,8 @@ import json
 from bs4 import BeautifulSoup
 import os
 import shutil
-
-port="60000"
+print("stage1")
+port="29292"
 def check_path(path):
     if os.path.isdir(path)==False:
         temp=path[0:path.rfind("/")]
@@ -15,7 +15,7 @@ def check_path(path):
         return
 
 
-
+print("stage2")
 
 context=""
 map="http://127.0.0.1:"+port+"/igem6/map.php"
@@ -34,6 +34,8 @@ all_php.pop()
 goal="http://127.0.0.1:"+port+"/igem6"
 # for i in range(0,total-1):#for迴圈格式
     #if "Gold" in allteam[i]:
+
+print("stage3")
 status=0
 for file in all_php:
     try:

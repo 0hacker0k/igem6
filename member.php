@@ -10,12 +10,8 @@
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
     <img class="full_size_image" src="<?php echo imgfile;?>/human/banner-members.png" alt="">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="marge" style="--width:calc(3em + 5vh)"></div>
+
     <div class="member_card row justify-content-around">
 
         <div class="col-10">
