@@ -58,6 +58,9 @@ a{
     -ms-transform:rotate(var(--rotate));
     transform:rotate(var(--rotate));
 }
+#promotion-video{
+    width: 80%;
+}
 .page{
     position: fixed;
     width: 100%;
@@ -102,12 +105,17 @@ a{
     left: 10%;
     font-size: calc(2vh + 1em);
     width: calc(20vh + 40%);
+    font-family: comic;
+    /* font-family: lhandw; */
+    /* font-family: papyrus; */
+    /* font-family: refsan; */
 }
 #page_13_content{
     position: absolute;
     left: calc(35%);
     font-size: calc(2vh + 1em);
     width: calc(20vh + 40%);
+    font-family: comic;
 }
 .learn_more_title{
     position: relative;
@@ -135,6 +143,7 @@ a{
     left: 0;
     width: 30%;
     padding-bottom: 30%;
+    z-index: -1000;
     /* overflow: hidden; */
 }
 .bl-background{

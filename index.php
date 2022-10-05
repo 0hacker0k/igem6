@@ -115,7 +115,7 @@
                     <div class="triangle_to_right"></div>Learn more
                 </div>
                 <div id="learn_more_1_content" class="learn_more_content">
-                    Previous research has shown that a combination of the pfa genes of deep-sea bacteria Moritella marina MP-1 and Shewanella pneumatophori SCRC-2738 can produce EPA in E. coli.
+                    Previous research has shown that a combination of the <i>pfa genes</i> of deep-sea bacteria <i>Moritella marina MP-1</i> and <i>Shewanella pneumatophori SCRC-2738</i> can produce EPA in <i>E. coli</i>.
                 </div>
             </div>
             <div id="information2">
@@ -126,7 +126,7 @@
                     <div class="triangle_to_right"></div>Learn more
                 </div>
                 <div id="learn_more_2_content" class="learn_more_content">
-                    We cloned the pfa A, pfa C, pfa D, and pfa E genes from MP-1, and pfa B gene from SCRC-2738. All these five pfa genes are expressed in E. coli to produce EPA <a onclick="index_move_to_page(17)">(Orikasa, Tanaka et al. 2009)</a>.
+                    We cloned the <i>pfa A, pfa C, pfa D</i>, and <i>pfa E</i> genes from <i>MP-1</i>, and <i>pfa B</i> gene from <i>SCRC-2738</i>. All these five pfa genes are expressed in <i>E. coli</i> to produce EPA <a onclick="index_move_to_page(17)">(Orikasa, Tanaka et al. 2009)</a>.
                 </div>
             </div>
         </div>
@@ -137,7 +137,7 @@
     </div>
     <div class="page" style="top:200%;" id="page_13">
         <div id="page_13_white" class="white_background top_block">
-            Cost is a core point for running a business. To reduce the cost, we increase the raw material of EPA in E. coli by expressing ACC complex, and add the chemical cerulenin to inhibit the competing fatty acid synthesis pathway.
+            Cost is a core point for running a business. To reduce the cost, we increase the raw material of EPA in <i>E. coli</i> by expressing ACC complex, and add the chemical cerulenin to inhibit the competing fatty acid synthesis pathway.
         </div>
         <div id="page_13_content">
             <div id="information3">
@@ -148,7 +148,7 @@
                     <div class="triangle_to_right"></div>Learn more
                 </div>
                 <div id="learn_more_3_content" class="learn_more_content">
-                    The ACC complex can increase malonyl-CoA, the raw material of EPA. The ACC genes (AccBC, AccD1, and AccE) were therefore cloned into the target plasmid and expressed in E. coli <a onclick="index_move_to_page(17)">(Giner-Robles, Lazaro et al. 2018)</a>.
+                    The ACC complex can increase malonyl-CoA, the raw material of EPA. The <i>ACC genes (AccBC, AccD1, and AccE)</i> were therefore cloned into the target plasmid and expressed in <i>E. coli</i> <a onclick="index_move_to_page(17)">(Giner-Robles, Lazaro et al. 2018)</a>.
                 </div>
             </div>
             <div id="information4">
@@ -159,7 +159,7 @@
                     <div class="triangle_to_right"></div>Learn more
                 </div>
                 <div id="learn_more_4_content" class="learn_more_content">
-                    Cerulenin inhibits the fatty acid synthesis pathway that competes with pfa genes in E. coli, thus increasing the efficiency of EPA production <a onclick="index_move_to_page(17)">(Satoh, Ozaki et al. 2020)</a>.
+                    Cerulenin inhibits the fatty acid synthesis pathway that competes with <i>pfa genes</i> in <i>E. coli</i>, thus increasing the efficiency of EPA production <a onclick="index_move_to_page(17)">(Satoh, Ozaki et al. 2020)</a>.
                 </div>
             </div>
         </div>
@@ -181,23 +181,25 @@
     </div>
     <div class="page" style="top:200%;" id="page_16">
         <div class="white_background">
-            promotion-video
-            <video src="https://video.igem.org/2fbde868-91d4-4572-badc-d3345267a38b">
-                
-            </video>
+            <!-- promotion-video -->
+            <!-- <video width="320" height="240" controls>
+                <source src="https://video.igem.org/2fbde868-91d4-4572-badc-d3345267a38b" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+            <video id="promotion-video" playsinline="playsinline" tabindex="-1" role="application" src="https://video.igem.org/722cad51-133d-4a44-8b3d-a17d41d03deb"></video>
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_17">
         <div class="white_background">
-            <li class="reference" id="r1">Abbasi, S., N. Soltani, B. Keshavarzi, F. Moore, A. Turner and M. Hassanaghaei (2018). "Microplastics in different tissues of fish and prawn from the Musa Estuary, Persian Gulf." Chemosphere 205: 80-87.</li>
-            <li class="reference" id="r2">Benvenga, S., F. Fama, L. G. Perdichizzi, A. Antonelli, G. Brenta, F. Vermiglio and M. Moleti (2022). "Fish and the Thyroid: A Janus Bifrons Relationship Caused by Pollutants and the Omega-3 Polyunsaturated Fatty Acids." Front Endocrinol (Lausanne) 13: 891233.</li>
-            <li class="reference" id="r3">Berger, M. and K. M. Naseem (2022). "Oxidised Low-Density Lipoprotein-Induced Platelet Hyperactivity-Receptors and Signalling Mechanisms." Int J Mol Sci 23(16).</li>
-            <li class="reference" id="r4">Giner-Robles, L., B. Lazaro, F. de la Cruz and G. Moncalian (2018). "fabH deletion increases DHA production in Escherichia coli expressing Pfa genes." Microb Cell Fact 17(1): 88.</li>
-            <li class="reference" id="r5">Hong, M. Y., J. Lumibao, P. Mistry, R. Saleh and E. Hoh (2015). "Fish Oil Contaminated with Persistent Organic Pollutants Reduces Antioxidant Capacity and Induces Oxidative Stress without Affecting Its Capacity to Lower Lipid Concentrations and Systemic Inflammation in Rats." J Nutr 145(5): 939-944.</li>
-            <li class="reference" id="r6">Orikasa, Y., M. Tanaka, S. Sugihara, R. Hori, T. Nishida, A. Ueno, N. Morita, Y. Yano, K. Yamamoto, A. Shibahara, H. Hayashi, Y. Yamada, A. Yamada, R. Yu, K. Watanabe and H. Okuyama (2009). "pfaB products determine the molecular species produced in bacterial polyunsaturated fatty acid biosynthesis." FEMS Microbiol Lett 295(2): 170-176.</li>
-            <li class="reference" id="r7">Peter P. Toth, M. John Chapman, Klaus G. Parhofer, John R. Nelson, Differentiating EPA from EPA/DHA in cardiovascular risk reduction, American Heart Journal Plus: Cardiology Research and Practice, Volume 17, 2022</li>
-            <li class="reference" id="r8">Satoh, S., M. Ozaki, S. Matsumoto, T. Nabatame, M. Kaku, T. Shudo, M. Asayama and S. Chohnan (2020). "Enhancement of fatty acid biosynthesis by exogenous acetyl-CoA carboxylase and pantothenate kinase in Escherichia coli." Biotechnol Lett 42(12): 2595-2605.</li>
-            <li class="reference" id="r9">Sherratt, S. C. R., P. Libby, D. L. Bhatt and R. P. Mason (2022). "A biological rationale for the disparate effects of omega-3 fatty acids on cardiovascular disease outcomes." Prostaglandins Leukot Essent Fatty Acids 182: 102450.</li>
+            <li class="reference" id="r1">Abbasi, S., N. Soltani, B. Keshavarzi, F. Moore, A. Turner and M. Hassanaghaei (2018). "Microplastics in different tissues of fish and prawn from the Musa Estuary, Persian Gulf." <i>Chemosphere</i> 205: 80-87.</li>
+            <li class="reference" id="r2">Benvenga, S., F. Fama, L. G. Perdichizzi, A. Antonelli, G. Brenta, F. Vermiglio and M. Moleti (2022). "Fish and the Thyroid: A Janus Bifrons Relationship Caused by Pollutants and the Omega-3 Polyunsaturated Fatty Acids." <i>Front Endocrinol (Lausanne)</i> 13: 891233.</li>
+            <li class="reference" id="r3">Berger, M. and K. M. Naseem (2022). "Oxidised Low-Density Lipoprotein-Induced Platelet Hyperactivity-Receptors and Signalling Mechanisms." <i>Int J Mol Sci</i> 23(16).</li>
+            <li class="reference" id="r4">Giner-Robles, L., B. Lazaro, F. de la Cruz and G. Moncalian (2018). "fabH deletion increases DHA production in Escherichia coli expressing Pfa genes." <i>Microb Cell Fact</i> 17(1): 88.</li>
+            <li class="reference" id="r5">Hong, M. Y., J. Lumibao, P. Mistry, R. Saleh and E. Hoh (2015). "Fish Oil Contaminated with Persistent Organic Pollutants Reduces Antioxidant Capacity and Induces Oxidative Stress without Affecting Its Capacity to Lower Lipid Concentrations and Systemic Inflammation in Rats." <i>J Nutr</i> 145(5): 939-944.</li>
+            <li class="reference" id="r6">Orikasa, Y., M. Tanaka, S. Sugihara, R. Hori, T. Nishida, A. Ueno, N. Morita, Y. Yano, K. Yamamoto, A. Shibahara, H. Hayashi, Y. Yamada, A. Yamada, R. Yu, K. Watanabe and H. Okuyama (2009). "pfaB products determine the molecular species produced in bacterial polyunsaturated fatty acid biosynthesis." <i>FEMS Microbiol Lett</i> 295(2): 170-176.</li>
+            <li class="reference" id="r7">Peter P. Toth, M. John Chapman, Klaus G. Parhofer, John R. Nelson (2022). "Differentiating EPA from EPA/DHA in cardiovascular risk reduction "<i>American Heart Journal Plus: Cardiology Research and Practice</i> 17</li>
+            <li class="reference" id="r8">Satoh, S., M. Ozaki, S. Matsumoto, T. Nabatame, M. Kaku, T. Shudo, M. Asayama and S. Chohnan (2020). "Enhancement of fatty acid biosynthesis by exogenous acetyl-CoA carboxylase and pantothenate kinase in Escherichia coli." <i>Biotechnol Lett</i> 42(12): 2595-2605.</li>
+            <li class="reference" id="r9">Sherratt, S. C. R., P. Libby, D. L. Bhatt and R. P. Mason (2022). "A biological rationale for the disparate effects of omega-3 fatty acids on cardiovascular disease outcomes." <i>Prostaglandins Leukot Essent Fatty Acids</i> 182: 102450.</li>
             <li class="reference" id="r10">WHO official website: <a href="https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)">https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)</a></li>
         </div>
     </div>
