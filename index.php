@@ -34,7 +34,7 @@
     <div class="page" style="top:200%;" id="page_4">
         <img id="map_of_world" src="<?php echo imgfile;?>/home/map-of-world.jpg">
         <div class="white_background">
-            Cardiovascular disease (CVD) is one of the most severe diseases worldwide. In 2019, an estimated 17.9 million people died from CVD, representing 32% of all global deaths.
+            Cardiovascular disease (CVD) is one of the moCardiovascular disease (CVD) is one of the most severe diseases worldwide. In 2019, an estimated 17.9 million people died from CVD, representing 32% of all global deaths (WHO official website).
             <a href="###">[1]</a>
         </div>
     </div>
@@ -44,8 +44,7 @@
     </div>
     <div class="page" style="top:200%;" id="page_6">
         <div class="white_background">
-            The living habits nowadays cause the excess intake of cholesterol from the modern diet,
-            inducing the artery's low-density lipoproteins ( LDL ) accumulation. 
+            Modern living habits and diet cause an excess intake of cholesterol, inducing the accumulation of oxidized low-density lipoproteins (LDL) in arteries.
         </div>
         <div class="bottomleft">
             <img class="illustration" id="page5-role1" src="<?php echo imgfile;?>/home/page5-role1.png">
@@ -60,7 +59,7 @@
     </div>
     <div class="page" style="top:200%;" id="page_8">
         <div class="white_background">
-            Recently, the daily intake of eicosapentaenoic acid (EPA) has been proven to reduce CVD efficiently and severe CVD causes death.
+            Recently, daily intake of eicosapentaenoic acid (EPA) has been proven to reduce CVD efficiently, reducing the chance of death.
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_9">
