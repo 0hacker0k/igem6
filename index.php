@@ -22,7 +22,7 @@
     <div class="page" style="top:200%;" id="page_1">
         <div class="typesetting_block">
             <div class="first_page"></div>
-            <img id="team_name" src="<?php echo imgfile;?>/home/team_name.png">
+            <img id="team_name" src="<?php echo imgfile;?>/home/team-name.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_2">
@@ -40,7 +40,7 @@
     </div>
     <div class="page" style="top:200%;" id="page_5">
         <!-- <img id="team_name" src="<?php echo imgfile;?>/home/team_name.png"> -->
-        <img id="page5_epa" src="<?php echo imgfile;?>/home/page5_epa.png">
+        <img id="page5_epa" src="<?php echo imgfile;?>/home/page5-epa.png">
     </div>
     <div class="page" style="top:200%;" id="page_6">
         <div class="white_background">
@@ -176,7 +176,7 @@
     </div>
     <div class="page" style="top:200%;" id="page_15">
         <div class="typesetting_block">
-            <img id="team_name_2" src="<?php echo imgfile;?>/home/team_name.png">
+            <img id="team_name_2" src="<?php echo imgfile;?>/home/team-name.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_16">
@@ -202,23 +202,28 @@
     <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
-    <img class="background" src="<?php echo imgfile;?>/home/vessel-1.png">
+    <div class="background"></div><!-- -->
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div><!-- -->
+    <!-- <img class="background" src="<?php echo imgfile;?>/home/vessel-1.png">
     <img class="background" src="<?php echo imgfile;?>/home/vessel-2.png">
     <img class="background" src="<?php echo imgfile;?>/home/vessel-3.png">
     <img class="background" src="<?php echo imgfile;?>/home/vessel-4.png">
     <img class="background" src="<?php echo imgfile;?>/home/vessel-5.png">
     <img class="background" src="<?php echo imgfile;?>/home/vessel-6.png">
     <img class="background" src="<?php echo imgfile;?>/home/vessel-7.png">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel-8.png">
+    <img class="background" src="<?php echo imgfile;?>/home/vessel-8.png"> -->
     <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
     <!-- <div id="final_item"></div> -->
-    <script>
-        var display_mod=1;
-    </script>
     <?php include "./sub/footer.php"?>
     <script src="<?php echo jsfile;?>/index.js"></script>
     <script>close_header();</script>
