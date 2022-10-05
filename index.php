@@ -108,6 +108,11 @@
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_13">
+        <div class="white_background">
+            reference
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_13">
         <img id="team_logo_2" src="<?php echo imgfile;?>/home/logo.png">
     </div>
     <div class="page" style="top:200%;" id="page_14">
@@ -127,6 +132,7 @@
     <img class="background" src="<?php echo imgfile;?>/home/vessel-6.png">
     <img class="background" src="<?php echo imgfile;?>/home/vessel-7.png">
     <img class="background" src="<?php echo imgfile;?>/home/vessel-8.png">
+    <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
