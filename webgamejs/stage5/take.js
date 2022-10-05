@@ -7,6 +7,7 @@ function preload_stage5_take(){
     debug = 0;
     this.load.image('background', 'img/stage5/background.jpg');//載入一般圖片
     load_transition(this);
+    preload_congratulation(this);
     this.load.image('bac', 'img/stage5/bac.png');
     this.load.image('bac_gel', 'img/stage5/Plate.png');
     this.load.image('back', 'img/main/back.png');
@@ -29,6 +30,7 @@ function preload_stage5_take(){
 }
 var take_count=0;
 function create_stage5_take (){
+    where=this;
     //轉場設定
     loading_transition(this,-500*width/800,0);
     
@@ -40,7 +42,7 @@ function create_stage5_take (){
     var bac_gel_size = 0.9*height;
     bac_gel.create(width/2, height/2, 'bac_gel').setOrigin(0.5, 0.5).setDisplaySize(bac_gel_size,bac_gel_size).refreshBody();
     //吉祥物
-    var isbacs=0;
+    var bacs_totalnum=16;
     var bacs=new Array();
     var bacs_disize = new Array();   
     for(var i=-2;i<=1;i++){
@@ -90,16 +92,16 @@ function create_stage5_take (){
             console.log("x="+pointer.x);
             console.log("y="+pointer.y);
         },this);
-        //x軸
 
+        //x軸
         for(var i=1;i<=10;i++){
             this.add.image(width/2, i*height/10, 'green').setOrigin(0.5, 0.5).setDisplaySize(width,0.001*height);
         }
+        
         //y軸
         for(var i=1;i<=10;i++){
             this.add.image(i*width/10, height/2, 'green').setOrigin(0.5, 0.5).setDisplaySize(0.001*width,height);
         }
-
     }
     //分數
     var score_text=this.add.text(width*0.98, height*0.15, '0', { fontFamily: 'fantasy', fontSize: (width*0.07).toString()+'px', fill: '#111111' }).setOrigin(1, 1);
@@ -144,20 +146,21 @@ function create_stage5_take (){
                 score+=1000;
                 score_text.setText(score.toString());
                 dis_bac(i,j)
-
+                
             }else if(0.015*height<delta_r && delta_r<=0.04*height){
                 console.log("Great");
                 score+=500;
                 score_text.setText(score.toString());
                 dis_bac(i,j)
+                
             }else{
                 console.log("Bad");
                 score+=100;
                 score_text.setText(score.toString());
                 dis_bac(i,j)
+                
             }
             
-
         },this);
     }
     //放大press
@@ -175,11 +178,7 @@ function create_stage5_take (){
         bacs[i][j].disableBody(true, true);
         take_count++;
         if(take_count==16){
-            finish_transition(this,width,0);
-            setTimeout(function(){
-                load_page(map_1);
-            },500);
-            stage_complete[4]=1;
+            end_stage(where,5);
         }
     }
     //滑鼠放開
@@ -191,6 +190,7 @@ function create_stage5_take (){
     },this);
     //loading_talkbox(this,500,500);
     
+    create_congratulation(this,map_1);
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.depth=1024;

@@ -25,16 +25,15 @@ function create_congratulation(where,nextscene=map_1){
             load_page(nextscene);
             return ;
         }
-    },where);    
+    },where);
 }
-// var end=where.physics.add.staticGroup();
 
 function end_stage(where,stageid){
     if(last_one!=null){
         last_one.alpha=0;
     }
     // console.log(where);
-    last_one=where.add.image(0, 0, 'end'+count.toString()).setOrigin(0, 0).setInteractive().setDisplaySize(width,height);
+    last_one=where.add.image(0, 0, 'end'+count.toString()).setOrigin(0, 0).setDisplaySize(width,height);
     if(count<17){
         count++;
     }else{

@@ -1,6 +1,7 @@
 function preload_stage4_shoot(){
     this.load.image('background', 'img/stage4/background.jpg');//載入一般圖片
     load_transition(this);
+    preload_congratulation(this);
     this.load.image('back', 'img/main/back.png');
     this.load.image('bar', 'img/main/green.png');
     this.load.image('ecoli', 'img/stage4/ecoli.png');
@@ -14,29 +15,13 @@ function preload_stage4_shoot(){
     for(var i=1;i<=5;i++){
         this.load.image('antibiotic_'+i.toString(), 'img/stage4/'+'antibiotic_'+i.toString()+'.png');
     }
-    // this.load.image('card_plasmid', 'img/stage2/card_back.jpg');
-    // this.load.image('card_target_gene', 'img/stage2/card_target_gene.jpg');
-    // for(var i=0;i<18;i++){
-    //     var i_0=i.toString();
-    //     var i_1=(i+1).toString();
-    //     var locate;
-    //     if(i+1<10){
-    //         locate='0'+i_1;
-    //     }else{
-    //         locate=i_1;
-    //     }
-    //     this.load.image('end'+i_0, 'img/stage1/congratulations/congratulations_'+locate+'.png');
-    // }
-    // this.load.spritesheet('card',
-    //     'img/stage2/card.jpg',
-    //     { frameWidth: 367, frameHeight: 519 }
-    // );
 }
 var bullets;
 var bullets_queue=[];
 var common_array=[];
 var ecoli_count=0;
 function create_stage4_shoot (){
+    where=this;
     //轉場設定
     loading_transition(this,-500*width/800,0);
     
@@ -501,11 +486,7 @@ function create_stage4_shoot (){
         ecoli_count++;
         console.log(ecoli_count);
         if(ecoli_count==26){//所有ecoli被打下來
-            finish_transition(this,width,0);
-            setTimeout(function(){
-                load_page(map_1);
-            },500);
-            stage_complete[3]=1;
+            end_stage(where,4);
         }
 
         if(ecoli.check==1||ecoli.check==-1)return ;
@@ -526,6 +507,7 @@ function create_stage4_shoot (){
         
     }
     // spinTween.oncomplete.add(this.winPrize, this);
+    create_congratulation(this,map_1);
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.depth=1024;

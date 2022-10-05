@@ -1,27 +1,15 @@
 function preload_stage3_flop(){
     this.load.image('background', 'img/stage3/background.png');//載入一般圖片
     load_transition(this);
+    preload_congratulation(this);
     this.load.image('back', 'img/main/back.png');
-    // this.load.image('card_back', 'img/stage3/card_back.jpg');
-    // this.load.image('card_plasmid', 'img/stage3/card_back.jpg');
-    // this.load.image('card_target_gene', 'img/stage3/card_target_gene.jpg');
-    for(var i=0;i<18;i++){
-        var i_0=i.toString();
-        var i_1=(i+1).toString();
-        var locate;
-        if(i+1<10){
-            locate='0'+i_1;
-        }else{
-            locate=i_1;
-        }
-        this.load.image('end'+i_0, 'img/stage1/congratulations/congratulations_'+locate+'.png');
-    }
     this.load.spritesheet('card',
         'img/stage3/card1.png',
         { frameWidth: 367, frameHeight: 519 }
     );
 }
 function create_stage3_flop (){
+    where=this;
     //轉場設定
     loading_transition(this,-500*width/800,0);
     
@@ -158,7 +146,8 @@ function create_stage3_flop (){
     function match(c1,c2,c3,c4,id){
         if(c1[id].alpha==0){
             if(flop==card_count){
-                end_stage1();
+                //end_stage1();
+                end_stage(where,3);
             }
             c1[id].setInteractive();
             c3.setInteractive();
@@ -208,35 +197,7 @@ function create_stage3_flop (){
     time_clock=setTimeout(function(){
         time_count();
     },1000);
-    var last_one=null;
-    var end=this.physics.add.staticGroup();
-    var count=0;
-    var sett;
-    var game_end=0;
-    function end_stage1(){
-        if(last_one!=null){
-            last_one.alpha=0;
-        }
-        last_one=end.create(0, 0, 'end'+count.toString()).setOrigin(0, 0).setInteractive().setDisplaySize(width,height);
-        if(count<17){
-            count++;
-        }else{
-            count=16;
-            game_end=1;
-        }
-        clearTimeout(sett);
-        sett=setTimeout(function(){
-            end_stage1();
-        },130);
-        
-    }
-    this.input.on('pointerup', function (pointer) {
-        if(game_end==1){
-            stage_complete[2]=1;
-            load_page(map_1);
-            return ;
-        }
-    });
+    create_congratulation(this,map_1);
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.depth=1024;
@@ -245,6 +206,7 @@ function create_stage3_flop (){
         setTimeout(function(){
             load_page(map_1);
         },500);
+        //end_stage(where,3);
     },this);
     //轉場動畫
     start_transition(this);

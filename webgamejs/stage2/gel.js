@@ -32,7 +32,7 @@ function preload_stage2_take(){
     this.load.image('back', 'img/main/back.png');
     load_talkbox(this);
     load_transition(this);
-
+    preload_congratulation(this);
     //else
     this.load.image('trashcan', 'img/stage2/trashcan.png');
     this.load.image('TAE', 'img/stage2/TAE.png');
@@ -173,7 +173,7 @@ function create_stage2_take (){
     }
     //遊戲時間
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=120;
+    timer.time=5;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
     //remind: string to variable(en and zh-tw)
@@ -1391,15 +1391,16 @@ function create_stage2_take (){
                 plus_score.alpha=1;
                 plus_score.setText('+'+tar_score.toString());
                 text_fade_out(plus_score);
-                if(count==list_len){//跑完
-                    setTimeout(function(){//轉回map_1
-                        finish_transition(this,width,0);
-                        setTimeout(function(){
-                            load_page(map_1);
-                        },500);
-                        stage_complete[5]=1;
-                    },1000);
-                }
+                // if(count==list_len){//跑完
+                //     // setTimeout(function(){//轉回map_1
+                //     //     finish_transition(this,width,0);
+                //     //     setTimeout(function(){
+                //     //         load_page(map_1);
+                //     //     },500);
+                //     //     stage_complete[5]=1;
+                //     // },1000);
+                //     
+                // }
             }
         }, this);
     }
@@ -1440,50 +1441,58 @@ function create_stage2_take (){
             gel_list[i].medal.setVelocityX(0);
             //gel_list[i].x=width*0.5+width*0.35*(i-count);
         }
-        var temp=gel_list[count];
-        if(temp.score==0){
-            temp.score+=temp.microwave_score+temp.mod_score+temp.sample_score;
-            temp.score+=temp.marker_score+temp.TAE_score+temp.run_score;
+        if(count<list_len){
+            var temp=gel_list[count];
+            if(temp.score==0){
+                temp.score+=temp.microwave_score+temp.mod_score+temp.sample_score;
+                temp.score+=temp.marker_score+temp.TAE_score+temp.run_score;
+            }
+            //結算分數
+            console.log("score:"+temp.score);
+            console.log("microwave:"+temp.microwave_score);
+            console.log("mod:"+temp.mod_score);
+            console.log("sample:"+temp.sample_score);
+            console.log("marker:"+temp.marker_score);
+            console.log("TAE:"+temp.TAE_score);
+            console.log("run:"+temp.run_score);
+            //gel說明
+            if(temp.sample+temp.marker==0){
+                ending_text.setText("There are nothing in the gel...");
+                temp.score=0;
+            }else if(temp.sample<1){
+                ending_text.setText("You have no sample.");
+                temp.score=0;
+            }else if(temp.marker<1){
+                ending_text.setText("You have no marker.");
+                temp.score=0;
+            }else if(temp.run_score==0){
+                ending_text.setText("The time of electrophoresis is not enough.");
+            }else if(temp.run_score==-1){
+                ending_text.setText("The time of electrophoresis is too long.");
+                temp.score=0;
+            }else if(temp.marker_score<=20){
+                ending_text.setText("The marker of gel is crooked.");
+            }else if(temp.sample_score<=20){
+                ending_text.setText("The sample of gel is crooked.");
+            }else if(temp.mod_score<=30 || temp.microwave_score<=30){
+                ending_text.setText("The gel has been left in the air for too long.");
+            }else if(temp.TAE_score<=30){
+                ending_text.setText("The TAE concentration of electrophoresis is too low.");
+            }else if(temp.score<=300){
+                ending_text.setText("Well... It's ok...");
+            }else if(temp.score<=400){
+                ending_text.setText("Actually, not bad.");
+            }else if(temp.score<=500){
+                ending_text.setText("It's a excellent gel graph.");
+            }else if(temp.score<=600){
+                ending_text.setText("What a amazing gel graph.");
+            }
         }
-        //結算分數
-        console.log("score:"+temp.score);
-        console.log("microwave:"+temp.microwave_score);
-        console.log("mod:"+temp.mod_score);
-        console.log("sample:"+temp.sample_score);
-        console.log("marker:"+temp.marker_score);
-        console.log("TAE:"+temp.TAE_score);
-        console.log("run:"+temp.run_score);
-        //gel說明
-        if(temp.sample+temp.marker==0){
-            ending_text.setText("There are nothing in the gel...");
-            temp.score=0;
-        }else if(temp.sample<1){
-            ending_text.setText("You have no sample.");
-            temp.score=0;
-        }else if(temp.marker<1){
-            ending_text.setText("You have no marker.");
-            temp.score=0;
-        }else if(temp.run_score==0){
-            ending_text.setText("The time of electrophoresis is not enough.");
-        }else if(temp.run_score==-1){
-            ending_text.setText("The time of electrophoresis is too long.");
-            temp.score=0;
-        }else if(temp.marker_score<=20){
-            ending_text.setText("The marker of gel is crooked.");
-        }else if(temp.sample_score<=20){
-            ending_text.setText("The sample of gel is crooked.");
-        }else if(temp.mod_score<=30 || temp.microwave_score<=30){
-            ending_text.setText("The gel has been left in the air for too long.");
-        }else if(temp.TAE_score<=30){
-            ending_text.setText("The TAE concentration of electrophoresis is too low.");
-        }else if(temp.score<=300){
-            ending_text.setText("Well... It's ok...");
-        }else if(temp.score<=400){
-            ending_text.setText("Actually, not bad.");
-        }else if(temp.score<=500){
-            ending_text.setText("It's a excellent gel graph.");
-        }else if(temp.score<=600){
-            ending_text.setText("What a amazing gel graph.");
+        if(count==list_len){
+            for(var i=0;i<list_len;i++){
+                gel_list[i].medal.alpha=0;
+            }
+            end_stage(where,2);
         }
     }
     function create_medal(x,y,score=0){
@@ -1599,6 +1608,7 @@ function create_stage2_take (){
         direction=0;
         direct.alpha = 0;
     }, this);
+    create_congratulation(this,map_1);
     //對話框
     TextBox_x=width*0.15;
     TextBox_y=height*0.75;
