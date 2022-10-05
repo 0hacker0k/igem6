@@ -7,9 +7,6 @@
             <a href="https://www.instagram.com/ccuigem/" class="me-4 text-reset">
                 <div class="fab button_floating"><img src="<?php echo imgfile;?>/instagram.png" alt="" style="height:60px;"></div>
             </a>
-            <a href="" class="me-4 text-reset">
-                <div class="fab button_floating"><img src="<?php echo imgfile;?>/twitter.png" alt="" style="height:60px;"></div>
-            </a>
             <a href="https://www.youtube.com/channel/UCgqSdCx7Tj3ZyxOCJNlOADQ" class="me-4 text-reset">
                 <div class="fab button_floating"><img src="<?php echo imgfile;?>/youtube.png" alt="" style="height:60px;"></div>
             </a>
@@ -18,10 +15,10 @@
             </a>
         </div>
     </section>
-    <div class="text-center p-2" style="color: #ffffff">
+    <!-- <div class="text-center p-2" style="color: #ffffff">
         Copyright © 2022 
         <a class="text-reset fw-bold" style="text-decoration:none;" href="https://www.ccu.edu.tw/">National Chung Cheng University All rights reserved</a>
-    </div>
+    </div> -->
 </footer>
 <script src="<?php echo jsfile;?>/bootstrap_js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="<?php echo jsfile;?>/bootstrap_js/bootstrap.min.js" crossorigin="anonymous"></script>
