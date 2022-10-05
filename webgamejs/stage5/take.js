@@ -3,16 +3,16 @@ COLOR_LIGHT = 0x7b5e57;
 COLOR_DARK = 0x260e04;
 var content = `Phaser is a fast, free, and fun open source HTML5 game framework that offers WebGL and Canvas rendering across desktop and mobile web browsers. Games can be compiled to iOS, Android and native apps by using 3rd party tools. You can use JavaScript or TypeScript for development.`;
 
-function preload_stage4_take(){
+function preload_stage5_take(){
     debug = 0;
-    this.load.image('background', 'img/stage4/background.jpg');//載入一般圖片
+    this.load.image('background', 'img/stage5/background.jpg');//載入一般圖片
     load_transition(this);
-    this.load.image('bac', 'img/stage4/bac.png');
-    this.load.image('bac_gel', 'img/stage4/Plate.png');
+    this.load.image('bac', 'img/stage5/bac.png');
+    this.load.image('bac_gel', 'img/stage5/Plate.png');
     this.load.image('back', 'img/main/back.png');
-    this.load.image('stick', 'img/stage4/stick.png');
-    this.load.image('pressure', 'img/stage4/pressure.png');
-    this.load.image('tube', 'img/stage4/tube.png');
+    this.load.image('stick', 'img/stage5/stick.png');
+    this.load.image('pressure', 'img/stage5/pressure.png');
+    this.load.image('tube', 'img/stage5/tube.png');
     this.load.image('stick_box', 'img/main/green.png');
     this.load.image('trashcan', 'img/main/green.png');
     load_talkbox(this);
@@ -28,7 +28,7 @@ function preload_stage4_take(){
     
 }
 var take_count=0;
-function create_stage4_take (){
+function create_stage5_take (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
     
@@ -203,7 +203,7 @@ function create_stage4_take (){
     //轉場動畫
     start_transition(this);   
 }
-function update_stage4_take (){//與外界有關的互動
+function update_stage5_take (){//與外界有關的互動
     
     
     // cursors = this.input.keyboard.createCursorKeys();

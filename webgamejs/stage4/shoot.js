@@ -1,18 +1,18 @@
-function preload_stage3_shoot(){
-    this.load.image('background', 'img/stage3/background.jpg');//載入一般圖片
+function preload_stage4_shoot(){
+    this.load.image('background', 'img/stage4/background.jpg');//載入一般圖片
     load_transition(this);
     this.load.image('back', 'img/main/back.png');
     this.load.image('bar', 'img/main/green.png');
-    this.load.image('ecoli', 'img/stage3/ecoli.png');
-    this.load.image('ecoli_break', 'img/stage3/ecoli_break.png');
-    this.load.image('aim', 'img/stage3/aim.png');
-    this.load.image('gun', 'img/stage3/gene_gun.png');
+    this.load.image('ecoli', 'img/stage4/ecoli.png');
+    this.load.image('ecoli_break', 'img/stage4/ecoli_break.png');
+    this.load.image('aim', 'img/stage4/aim.png');
+    this.load.image('gun', 'img/stage4/gene_gun.png');
     this.load.spritesheet('plastid',
-        'img/stage3/plastid.png',
+        'img/stage4/plastid.png',
         { frameWidth: 30, frameHeight: 30 }
     );
     for(var i=1;i<=5;i++){
-        this.load.image('antibiotic_'+i.toString(), 'img/stage3/'+'antibiotic_'+i.toString()+'.png');
+        this.load.image('antibiotic_'+i.toString(), 'img/stage4/'+'antibiotic_'+i.toString()+'.png');
     }
     // this.load.image('card_plasmid', 'img/stage2/card_back.jpg');
     // this.load.image('card_target_gene', 'img/stage2/card_target_gene.jpg');
@@ -36,7 +36,7 @@ var bullets;
 var bullets_queue=[];
 var common_array=[];
 var ecoli_count=0;
-function create_stage3_shoot (){
+function create_stage4_shoot (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
     
@@ -538,7 +538,7 @@ function create_stage3_shoot (){
     //轉場動畫
     start_transition(this);
 }
-function update_stage3_shoot (){//與外界有關的互動
+function update_stage4_shoot (){//與外界有關的互動
     bullets.children.entries.forEach(item =>  {
         if(item.y>height && item.type!=-1){
             item.setVelocityX(0);

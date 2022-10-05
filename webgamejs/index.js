@@ -139,30 +139,31 @@ const stage_1_pcr={
     create: create_stage1_pcr,
     update: update_stage1_pcr
 }
-const stage_2_flop={
-    key: 'stage_2_flop',
-    preload: preload_stage2_flop,
-    create: create_stage2_flop,
-    update: update_stage2_flop
+const stage_2_gel={
+    key: 'stage_2_gel',
+    preload: preload_stage2_take,
+    create: create_stage2_take,
+    update: update_stage2_take
 }
-const stage_3_shoot={
-    key: 'stage_3_shoot',
-    preload: preload_stage3_shoot,
-    create: create_stage3_shoot,
-    update: update_stage3_shoot
+const stage_3_flop={
+    key: 'stage_3_flop',
+    preload: preload_stage3_flop,
+    create: create_stage3_flop,
+    update: update_stage3_flop
 }
-const stage_4_take={
-    key: 'stage_4_take',
-    preload: preload_stage4_take,
-    create: create_stage4_take,
-    update: update_stage4_take
+const stage_4_shoot={
+    key: 'stage_4_shoot',
+    preload: preload_stage4_shoot,
+    create: create_stage4_shoot,
+    update: update_stage4_shoot
 }
-const stage_5_gel={
-    key: 'stage_5_gel',
+const stage_5_take={
+    key: 'stage_5_take',
     preload: preload_stage5_take,
     create: create_stage5_take,
     update: update_stage5_take
 }
+
 function load(){
     if(page==null){
         load_page(map_1);
@@ -181,16 +182,16 @@ function load(){
                 load_page(stage_1_choose);
                 break;
             case "stage2":
-                load_page(stage_2_flop);
+                load_page(stage_2_gel);
                 break;
             case "stage3":
-                load_page(stage_3_shoot);
+                load_page(stage_3_flop);
                 break;
             case "stage4":
-                load_page(stage_4_take);
+                load_page(stage_4_shoot);
                 break;
             case "stage5":
-                load_page(stage_5_gel);
+                load_page(stage_5_take);
                 break;
         }
     }

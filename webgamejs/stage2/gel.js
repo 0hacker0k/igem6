@@ -21,7 +21,7 @@ COLOR_PRIMARY = 0x4e342e;
 COLOR_LIGHT = 0x7b5e57;
 COLOR_DARK = 0x260e04;
 const PLAYER_KEY = 'player';
-function preload_stage5_take(){
+function preload_stage2_take(){
     //basic
     debug = 1;
     if(debug==1){
@@ -34,56 +34,55 @@ function preload_stage5_take(){
     load_transition(this);
 
     //else
-    this.load.image('trashcan', 'img/stage5/trashcan.png');
-    this.load.image('TAE', 'img/stage5/TAE.png');
-    this.load.image('agarose', 'img/stage5/agarose.png');
-    this.load.image('desk', 'img/stage5/desk.png');
-    this.load.image('background', 'img/stage5/background.jpg');
+    this.load.image('trashcan', 'img/stage2/trashcan.png');
+    this.load.image('TAE', 'img/stage2/TAE.png');
+    this.load.image('agarose', 'img/stage2/agarose.png');
+    this.load.image('desk', 'img/stage2/desk.png');
+    this.load.image('background', 'img/stage2/background.jpg');
     this.load.image('direct', 'img/main/director.png');
-    this.load.image('marker', 'img/stage5/marker.png');
-    this.load.image('sample', 'img/stage5/sample.png');
-    this.load.image('gold','img/stage5/gold.png');
-    this.load.image('silver','img/stage5/silver.png');
-    this.load.image('bronze','img/stage5/bronze.png');
-    // this.load.image('pipette', 'img/stage5/pipette.png');
-    this.load.image("alert",'img/stage5/temp.png');
-    this.load.image("qte_pointer",'img/stage5/qte_bar_pointer.png');
-    this.load.image("qte_half",'img/stage5/qte_bar_half.png');
-    this.load.image("qte_perfect",'img/stage5/qte_bar_perfect.png');
-    this.load.image("qte_bar",'img/stage5/qte_bar.png');
-    this.load.image("gel_machine",'img/stage5/gel_machine.png');
-    this.load.image("uv",'img/stage5/uv.png');
-    this.load.image("note",'img/stage5/note.png');
-    this.load.image("machine",'img/stage5/gel_making_machine.png');
-    this.load.image('wifi','img/stage5/wifi.png');
+    this.load.image('marker', 'img/stage2/marker.png');
+    this.load.image('sample', 'img/stage2/sample.png');
+    this.load.image('gold','img/stage2/gold.png');
+    this.load.image('silver','img/stage2/silver.png');
+    this.load.image('bronze','img/stage2/bronze.png');
+    // this.load.image('pipette', 'img/stage2/pipette.png');
+    this.load.image("alert",'img/stage2/temp.png');
+    this.load.image("qte_pointer",'img/stage2/qte_bar_pointer.png');
+    this.load.image("qte_half",'img/stage2/qte_bar_half.png');
+    this.load.image("qte_perfect",'img/stage2/qte_bar_perfect.png');
+    this.load.image("qte_bar",'img/stage2/qte_bar.png');
+    this.load.image("gel_machine",'img/stage2/gel_machine.png');
+    this.load.image("uv",'img/stage2/uv.png');
+    this.load.image("note",'img/stage2/note.png');
+    this.load.image("machine",'img/stage2/gel_making_machine.png');
+    this.load.image('wifi','img/stage2/wifi.png');
     //light gel
-    this.load.image("lightgel",'img/stage5/lightgel.png');
-    this.load.image("lightgel_broken",'img/stage5/lightgel-broken.png');
-    this.load.image("1m4s",'img/stage5/mssss.png');
-    this.load.image("5m",'img/stage5/mmmmm.png');
-    this.load.image("5s",'img/stage5/sssss.png');
-    this.load.image("1m4s_band",'img/stage5/mssss-band.png');
-    this.load.image("1m4s_tail",'img/stage5/mssss-tail.png');
-    // this.load.image("gel",'img/stage5/gel.png');
-    //remind: change gel photo:DONE
+    this.load.image("lightgel",'img/stage2/lightgel.png');
+    this.load.image("lightgel_broken",'img/stage2/lightgel-broken.png');
+    this.load.image("1m4s",'img/stage2/mssss.png');
+    this.load.image("5m",'img/stage2/mmmmm.png');
+    this.load.image("5s",'img/stage2/sssss.png');
+    this.load.image("1m4s_band",'img/stage2/mssss-band.png');
+    this.load.image("1m4s_tail",'img/stage2/mssss-tail.png');
+    // this.load.image("gel",'img/stage2/gel.png');
     this.load.spritesheet('mod',
-        'img/stage5/mod.png',
+        'img/stage2/mod.png',
         { frameWidth: 928, frameHeight: 674 }
     );
     this.load.spritesheet('pipette',
-        'img/stage5/pipette.png',
+        'img/stage2/pipette.png',
         { frameWidth: 421, frameHeight: 1741 }
     );
     this.load.spritesheet('gel',
-        'img/stage5/gel.png',
+        'img/stage2/gel.png',
         { frameWidth: 633, frameHeight: 602.5 }
     );
     this.load.spritesheet('microwave',
-        'img/stage5/microwave.png',
+        'img/stage2/microwave.png',
         { frameWidth: 1173, frameHeight: 784 }
     );
     this.load.spritesheet('tank',
-        'img/stage5/tank.png',
+        'img/stage2/tank.png',
         { frameWidth: 1075, frameHeight: 625 }
     );
     this.load.spritesheet('player',
@@ -91,7 +90,7 @@ function preload_stage5_take(){
         { frameWidth: 496, frameHeight: 1118 }
     );
     this.load.spritesheet('beaker',
-        'img/stage5/beaker.png',
+        'img/stage2/beaker.png',
         { frameWidth: 216, frameHeight: 281.75 }
     );
     //載入畫楨
@@ -111,7 +110,7 @@ var keySpace;
 var spot,spot_touch;
 var p_facing=2;
 var point_x,point_y;
-function create_stage5_take (){
+function create_stage2_take (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
     var deskGroup = this.physics.add.staticGroup();
@@ -1187,7 +1186,7 @@ function create_stage5_take (){
         },1000);
     }
     function game_over(){
-        //if(this.create.name!="create_stage5_take")return ;
+        //if(this.create.name!="create_stage2_take")return ;
         stop=1;
         finish_transition(where,width,0);
         setTimeout(function(){
@@ -1639,7 +1638,7 @@ function create_stage5_take (){
 var animate_f=0;
 var animate_tick=5;
 var s5_run_speed=400;
-function update_stage5_take (){//與外界有關的互動
+function update_stage2_take (){//與外界有關的互動
     cursors = this.input.keyboard.createCursorKeys();
     // console.log(this.cameras.main.scrollX,this.cameras.main.scrollY);
     if(spot!=undefined){

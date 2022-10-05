@@ -1,10 +1,10 @@
-function preload_stage2_flop(){
-    this.load.image('background', 'img/stage2/background.png');//載入一般圖片
+function preload_stage3_flop(){
+    this.load.image('background', 'img/stage3/background.png');//載入一般圖片
     load_transition(this);
     this.load.image('back', 'img/main/back.png');
-    // this.load.image('card_back', 'img/stage2/card_back.jpg');
-    // this.load.image('card_plasmid', 'img/stage2/card_back.jpg');
-    // this.load.image('card_target_gene', 'img/stage2/card_target_gene.jpg');
+    // this.load.image('card_back', 'img/stage3/card_back.jpg');
+    // this.load.image('card_plasmid', 'img/stage3/card_back.jpg');
+    // this.load.image('card_target_gene', 'img/stage3/card_target_gene.jpg');
     for(var i=0;i<18;i++){
         var i_0=i.toString();
         var i_1=(i+1).toString();
@@ -17,11 +17,11 @@ function preload_stage2_flop(){
         this.load.image('end'+i_0, 'img/stage1/congratulations/congratulations_'+locate+'.png');
     }
     this.load.spritesheet('card',
-        'img/stage2/card1.png',
+        'img/stage3/card1.png',
         { frameWidth: 367, frameHeight: 519 }
     );
 }
-function create_stage2_flop (){
+function create_stage3_flop (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
     
@@ -250,6 +250,6 @@ function create_stage2_flop (){
     start_transition(this);
 }
 
-function update_stage2_flop (){//與外界有關的互動
+function update_stage3_flop (){//與外界有關的互動
     // cursors = this.input.keyboard.createCursorKeys();
 }

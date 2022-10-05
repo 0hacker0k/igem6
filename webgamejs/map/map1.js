@@ -67,7 +67,6 @@ function create (){
         stage[id].clearTint();
     }
     function touch(id){
-        //remind: 應該要切到幻燈片->再來才是關卡
         if(stop==0){//切換關卡
             stop=1;
             finish_transition(this,(0.8)*width,(0.0)*height);
@@ -78,22 +77,22 @@ function create (){
             }
             if(id==2){
                 setTimeout(function(){
-                    load_page(stage_2_flop);
+                    load_page(stage_2_gel);
                 },500);
             }
             if(id==3){
                 setTimeout(function(){
-                    load_page(stage_3_shoot);
+                    load_page(stage_3_flop);
                 },500);
             }
             if(id==4){
                 setTimeout(function(){
-                    load_page(stage_4_take);
+                    load_page(stage_4_shoot);
                 },500);
             }
             if(id==5){
                 setTimeout(function(){
-                    load_page(stage_5_gel);
+                    load_page(stage_5_take);
                 },500);
             }
         }
