@@ -45,7 +45,7 @@ a{
     position: absolute;
     width: 17%;
     transition: 0.5s;
-    z-index: -10;
+    /* z-index: -10; */
 }
 #page5_epa{
     --rotate:0deg;

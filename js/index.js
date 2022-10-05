@@ -104,7 +104,6 @@ function screen_move(scroll){
             page.style.transition="0.0s";
             page.style.top=((screen_height-last_page.clientHeight)/2-screen_height)+"px";
             now_page+=(go_page>now_page)?1:-1;
-            console.log(go_page+" "+now_page);
         }
         now_page+=(go_page>now_page)?1:-1;
         status_temp=1;
@@ -506,13 +505,13 @@ function move_epa(go_page){
             epa.move_to(0.55,0.06);
             break;
         case 14:
-            epa.move_to(0.67,0.20);
+            epa.move_to(0.67,0.15);
             break;
         case 15:
-            epa.move_to(0.67,0.37);
+            epa.move_to(0.72,0.37);
             break;
         case 16:
-            epa.move_to(0.54,0.45);
+            epa.move_to(0.56,0.46);
             break;
         case 17:
             epa.move_to(0.47,0.27);
