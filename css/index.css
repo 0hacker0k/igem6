@@ -1,7 +1,7 @@
 body{
     height: 500%;
 }
-a{
+a:not([href]):not([class]){
     cursor: pointer;
     color: #0d6efd !important;
     /* text-decoration: underline; */
@@ -59,14 +59,19 @@ a{
     transform:rotate(var(--rotate));
 }
 .promotion-video-div{
-    width:100%;
-    height: 100%;
+    /* width:100%;
+    height: 100%; */
+    position: absolute;
+    background-color: #ffffffc0;
+    width: 100%;
+    font-size: calc(2vh + 1em);
+    padding: calc(6vh + 0.2em) calc(6vh + 0.2em);
+    z-index: 10;
 }
 #promotion-video{
-    --width: calc(80vw);
+    --width: calc(60vw);
     height: calc((var(--width) / 560) * 315);
     width: calc(var(--width));
-    
 }
 .page{
     position: fixed;
