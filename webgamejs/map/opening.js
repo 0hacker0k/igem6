@@ -1,7 +1,8 @@
-debug=0;
 function preload_opening (){
+    debug=0;
     load_transition(this);
     this.load.image('webgame', 'img/map/webgame.jpg');
+    this.load.image('start', 'img/map/start.png');
     if(debug==1){
         this.load.image('D_center', 'img/main/debug_center.png');
         this.load.image('green', 'img/main/green.png');
@@ -14,7 +15,9 @@ function create_opening (){
     //--------------------場景設定--------------------
     var webgame;
     webgame=this.physics.add.sprite(width/2,height/2,'webgame').setDisplaySize(width,height);
-    this.input.on("pointerup",function(){
+    var start;
+    start=this.physics.add.sprite(width*0.35,height*0.8,"start").setDisplaySize(width*0.12,height*0.12).setInteractive();
+    start.on("pointerup",function(){
         stop=1;
         finish_transition(this,(0.8)*width,(0.0)*height);
         setTimeout(function(){

@@ -165,10 +165,16 @@ const stage_5_take={
     create: create_stage5_take,
     update: update_stage5_take
 }
+const ending={
+    key: 'ending',
+    preload: preload_endingscene,
+    create: create_endingscene,
+    update: update_endingscene
+}
 
 function load(){
     if(page==null){
-        load_page(map_1);
+        load_page(opening);
     }else{
         switch(page){
             case "lobby":
@@ -195,6 +201,9 @@ function load(){
             case "stage5":
                 load_page(stage_5_take);
                 break;
+            case "ending":
+                load_page(ending);
+                break;
         }
     }
 }
@@ -209,7 +218,7 @@ function load_page(page){
             default: 'arcade',
             arcade: {
                 gravity: { y: 0 },
-                debug: true
+                debug: false
             }
         },
         scene: page
