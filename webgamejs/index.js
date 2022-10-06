@@ -143,9 +143,9 @@ const stage_1_pcr={
 }
 const stage_2_gel={
     key: 'stage_2_gel',
-    preload: preload_stage2_take,
-    create: create_stage2_take,
-    update: update_stage2_take
+    preload: preload_stage2_gel,
+    create: create_stage2_gel,
+    update: update_stage2_gel
 }
 const stage_3_flop={
     key: 'stage_3_flop',

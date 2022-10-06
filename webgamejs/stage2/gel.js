@@ -21,7 +21,7 @@ COLOR_PRIMARY = 0x4e342e;
 COLOR_LIGHT = 0x7b5e57;
 COLOR_DARK = 0x260e04;
 const PLAYER_KEY = 'player';
-function preload_stage2_take(){
+function preload_stage2_gel(){
     //basic
     debug = 1;
     if(debug==1){
@@ -53,7 +53,10 @@ function preload_stage2_take(){
     this.load.image("qte_bar",'img/stage2/qte_bar.png');
     this.load.image("gel_machine",'img/stage2/gel_machine.png');
     this.load.image("uv",'img/stage2/uv.png');
-    this.load.image("note",'img/stage2/note.png');
+    this.load.image("note",'img/stage2/Protocol.png');
+    this.load.image("protocol1","img/stage2/protocol1.jpg");
+    this.load.image("protocol2","img/stage2/protocol2.jpg");
+    this.load.image("protocol3","img/stage2/protocol3.jpg");
     this.load.image("machine",'img/stage2/gel_making_machine.png');
     this.load.image('wifi','img/stage2/wifi.png');
     //light gel
@@ -110,7 +113,7 @@ var keySpace;
 var spot,spot_touch;
 var p_facing=2;
 var point_x,point_y;
-function create_stage2_take (){
+function create_stage2_gel (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
     var deskGroup = this.physics.add.staticGroup();
@@ -185,7 +188,12 @@ function create_stage2_take (){
     var score=0;
     score_text.alpha=0;
     score_text.setText(score.toString());
-    //照膠圖
+    //Protocol
+    var protocols = [];
+    for (var i=0;i<3;i++){
+        protocols[i]= this.physics.add.image(width*0.05,height*(1.05+i),"protocol"+(i+1).toString()).setDisplaySize(width*0.9,height*0.9).setOrigin(0);
+        protocols[i].alpha=0;
+    }
 
     {//動畫畫禎
         //人物動畫
@@ -621,6 +629,8 @@ function create_stage2_take (){
                     gel_submit(p, desk_entity.item);
                 }else if(desk_entity.item.type=="machine" && p.pick.type=="beaker"){
                     machine_add(p, desk_entity.item);
+                }else if(desk_entity.item.type=="note"){
+                    show_protocol();
                 }
                 
             }else{//player has nothing
@@ -635,6 +645,8 @@ function create_stage2_take (){
                     // tank_out(p, desk_entity.item);
                 }else if(desk_entity.item.type=="machine"){
                     machine_take_gel(p, desk_entity.item)
+                }else if(desk_entity.item.type=="note"){
+                    show_protocol();
                 }
             }
         }else{//desk has nothing
@@ -1201,6 +1213,9 @@ function create_stage2_take (){
                 free_desk(desk[i][j]);
             }
         }
+        for(var i=0;i<3;i++){
+            protocols[i].destroy();
+        }
         lighting_gel(gel_list);
         start_transition(where);
     }
@@ -1341,6 +1356,38 @@ function create_stage2_take (){
             machine.alert.alpha=0;
         }
     }
+    var count_protocal=0;
+    var running_protocal=0;
+    function show_protocol(){
+        if(running_protocal==0){
+            player.stop=1;
+            running_protocal=1;
+            for(var i=0;i<3;i++){
+                protocols[i].alpha=1;
+                protocols[i].depth=65001+i;
+                protocols[i].setVelocityY(-height*2);
+            }
+            setTimeout(function(){
+                for(var i=0;i<3;i++){
+                    protocols[i].setVelocityY(0);
+                }
+                if(count_protocal<3){
+                    count_protocal++;
+                }else{
+                    for(var i=0;i<3;i++){
+                        protocols[i].x=width*0.05,
+                        protocols[i].y=height*(1.05+i);
+                    }
+                    count_protocal=0;
+                    player.stop=0;
+                    console.log(player.stop);
+                }
+                running_protocal=0;
+            },500)
+        }
+        
+
+    }
     //+幾分
     var plus_score = this.add.text(width*0.5, height*0.12, '', { fontFamily: 'fantasy', fontSize: width*0.03+'px', fill: '#111111' });
     plus_score.setInteractive().setOrigin(0.5,0.5);
@@ -1360,7 +1407,7 @@ function create_stage2_take (){
             //獎牌設置 width*0.63,height*0.75;
             gel_list[i].medal=create_medal(gel_list[i].x+width*0.13, gel_list[i].y+height*0.25,gel_list[i].score);
             gel_list[i].medal.alpha=1;
-            gel_list[i].medal.depth=65500;
+            gel_list[i].medal.depth=65000;
         }
         gel_stop(gel_list,list_len,0);
         
@@ -1638,7 +1685,7 @@ function create_stage2_take (){
 var animate_f=0;
 var animate_tick=5;
 var s5_run_speed=400;
-function update_stage2_take (){//與外界有關的互動
+function update_stage2_gel (){//與外界有關的互動
     cursors = this.input.keyboard.createCursorKeys();
     // console.log(this.cameras.main.scrollX,this.cameras.main.scrollY);
     if(spot!=undefined){
