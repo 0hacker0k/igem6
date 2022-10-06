@@ -20,6 +20,7 @@ var bullets;
 var bullets_queue=[];
 var common_array=[];
 var ecoli_count=0;
+var end4=0;
 function create_stage4_shoot (){
     where=this;
     //轉場設定
@@ -259,6 +260,7 @@ function create_stage4_shoot (){
         }
     }
     //目標物移動
+    var falling_timeout;
     function ecoli_falling(){
         ecolis.children.entries.forEach(item =>  {
             if(item.check==-1)return ;
@@ -312,7 +314,10 @@ function create_stage4_shoot (){
                 }
             }
         });
-        setTimeout(function(){
+        if(ecoli_count==26){//所有ecoli被打下來
+            end4 = 1;
+        }
+        falling_timeout = setTimeout(function(){
             ecoli_falling();
         },30);
     }ecoli_falling();
@@ -411,6 +416,7 @@ function create_stage4_shoot (){
             // bullet.disableBody(true, true);
             var ecoli_breaken = ecolis_breaken.create(ecoli.x, ecoli.y, 'ecoli_break').setOrigin(0.5, 0.5).setDisplaySize(width*0.06,height*0.06);
             ecoli_die(ecoli_breaken,40);
+            
             return ;
         }
         bullet.setVelocityX(0);
@@ -430,22 +436,24 @@ function create_stage4_shoot (){
                 state=0;
                 for(var j=0;j<5;j++){
                     if(ecoli.plastid[j].type==i+1){
-                        state=1;
+                        state=1;//都不一樣
                         break;
                     }
                 }
-                if(state==0){
+                if(state==0){//有重複的
                     state=2;
                     break;
                 }
             }
         }
         if(state==1){
-            ecoli.check=1;
+            ecoli.check=1;//開始進入ecoli_falling
             ecoli.disableBody(true, false);
             for(var i=0;i<5;i++){
                 ecoli.plastid[i].type=-1;
             }
+            ecoli_count++;
+            console.log(ecoli_count);
             
         }
     }
@@ -457,14 +465,6 @@ function create_stage4_shoot (){
             ecoli.disableBody(true, true);
             ecoli_count++;
             console.log(ecoli_count);
-            //所有ecoli被打下來
-            if(ecoli_count==26){
-                finish_transition(this,width,0);
-                setTimeout(function(){
-                    load_page(map_1);
-                },500);
-                stage_complete[3]=1;
-            }
         }else{
             setTimeout(function(){
                 ecoli_die(ecoli,count-1);
@@ -479,14 +479,12 @@ function create_stage4_shoot (){
     }
     //目標物與底線接觸
     this.physics.add.collider(ecolis, bottom, dead_check, null, this);
-    function dead_check(ecoli, bottom){
+    function dead_check(ecoli, bottom){//碰到雷射
         var state=2;
         
         //結算判定
-        ecoli_count++;
-        console.log(ecoli_count);
         if(ecoli_count==26){//所有ecoli被打下來
-            end_stage(where,4);
+            end4=1;
         }
 
         if(ecoli.check==1||ecoli.check==-1)return ;
@@ -516,10 +514,12 @@ function create_stage4_shoot (){
         setTimeout(function(){
             load_page(map_1);
         },500);
+        // ecoli_count=26;
     },this);
     //轉場動畫
     start_transition(this);
 }
+var stop=0;
 function update_stage4_shoot (){//與外界有關的互動
     bullets.children.entries.forEach(item =>  {
         if(item.y>height && item.type!=-1){
@@ -535,5 +535,9 @@ function update_stage4_shoot (){//與外界有關的互動
             item.alpha = 1;
         }*/
     });
+    if(end4==1&&stop==0){
+        end_stage(where,4);
+        stop=1;
+    }
     // cursors = this.input.keyboard.createCursorKeys();
 }
