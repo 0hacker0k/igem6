@@ -158,3 +158,11 @@ lan_story2_after=
     "npc_10":"You have a strong belief, so keep going on. Although I believe that the end of your path is remorse and pain, try to put yourself first.",
     "npc_11":"This is the award – the Pstv28 which ligates the pfa B, pfa C, and pfa E, the journey of only sadness to you will continue."
 }
+lan_ending_scene=
+[
+    "Credits",
+    "Creator : ",
+    "[align=right]Tino[/align]",
+    "[align=right]ellllllllllsssssstttt[/align]",
+    "texs"
+]
