@@ -176,7 +176,7 @@ function create_stage2_gel (){
     }
     //遊戲時間
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=120;
+    timer.time=5;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
     //remind: string to variable(en and zh-tw)
@@ -1405,6 +1405,13 @@ function create_stage2_gel (){
             //gel_list[i].alpha=1;
             gel_list[i].light = create_lightgel(gel_list[i].x,gel_list[i].y,gel_list[i]);
             //獎牌設置 width*0.63,height*0.75;
+            if(gel_list[i].score==0){
+                gel_list[i].score+=gel_list[i].microwave_score+gel_list[i].mod_score+gel_list[i].sample_score;
+                gel_list[i].score+=gel_list[i].marker_score+gel_list[i].TAE_score+gel_list[i].run_score;
+            }
+            if(gel_list[i].marker<1||gel_list[i].sample<1){
+                gel_list[i].score=0;
+            }
             gel_list[i].medal=create_medal(gel_list[i].x+width*0.13, gel_list[i].y+height*0.25,gel_list[i].score);
             gel_list[i].medal.alpha=1;
             gel_list[i].medal.depth=65000;
@@ -1587,12 +1594,12 @@ function create_stage2_gel (){
     //test-結算膠
     var test;
     // score,microwave_score,mod_score,sample_score,marker_score,TAE_score,run_score
-    test=create_gel(0,0,0,50,50,50,50,50,50);
+    test=create_gel(0,0,0,0,50,50,50,50,50);
     test.sample=1;
     change_skin_gel(test);
     gel_list.push(test);
     
-    test=create_gel(0,0,0,100,100,50,50,50,20);
+    test=create_gel(0,0,0,100,0,50,50,50,20);
     test.marker=1;
     change_skin_gel(test);
     gel_list.push(test);
