@@ -95,11 +95,11 @@
                     <div class="triangle_to_top"></div>First rehearsals - our members with campus peers
                 </div>
             </div>
-            <!-- <div class="full_block">
-                <div class="img" style="--width:100%;">
-                    <iframe src="<?php echo imgfile;?>/education/education.pdf" height="3%" width="100%"></iframe>
+            <div class="full_block">
+                <div class="pdf">
+                    <iframe src="<?php echo imgfile;?>/education/open-lab-textbook.pdf" height="100%" width="100%"></iframe>
                 </div>
-            </div> -->
+            </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="5" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Record during the activity</h2>

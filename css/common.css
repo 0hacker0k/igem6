@@ -227,3 +227,12 @@ h2{
     background-color: #EAB464;
     color:#3C3D3E;
 }
+.pdf{
+    /* display:block; */
+    width: calc(40vw + 20rem);
+    height: calc(0.6*(40vw + 20rem));
+    text-align: center;
+    font-size: calc(0.7em + 0.7vw);
+    margin: auto;
+    display: flex;
+}
