@@ -127,7 +127,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="7" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Project feedback from local - <br/>TCUS Entrepreneurship Competition</h2>
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Project feedback from local - TCUS Entrepreneurship Competition</h2>
             </div>
             <p>
                 &emsp;&emsp;With the experience in <b>Taiwan iGEM meet '22</b>, we hosted a competition for the teams in Taiwan Comprehensive University System (TCUS), including NCKU_Tainan and NCHU_Taichung, to attend and present projects on our CCU campus to imitate the competitive vibe. The competition let the participants be more prepared before the Grand Jamboree. Not only did we want to interchange ideas between different teams, but we also wanted to seek suggestions from experts already working in the bioscience industry. 
