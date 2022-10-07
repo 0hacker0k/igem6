@@ -64,8 +64,8 @@ a:not([href]):not([class]){
     position: absolute;
     background-color: #ffffffc0;
     width: 100%;
-    font-size: calc(1vw + 1em);
-    padding: calc(3vw + 0.2em) calc(3vw + 0.2em);
+    font-size: calc(1.6vw + 0.4em);
+    padding: calc(3vw + 0.2vw) calc(3vw + 0.2vw);
     z-index: 10;
 }
 #promotion-video{
@@ -75,12 +75,12 @@ a:not([href]):not([class]){
 }
 .page{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center; 
     align-items: center; 
     top: 200%;
-    height: 100%;
+    height: 100vh;
     flex-wrap: wrap;
     z-index: 10;
 }
@@ -88,8 +88,8 @@ a:not([href]):not([class]){
     position: absolute;
     background-color: #ffffffc0;
     width: 100%;
-    font-size: calc(1vw + 1em);
-    padding: calc(3vw + 0.2em) calc(3vw + 0.2em);
+    font-size: calc(1.6vw + 0.4em);
+    padding: calc(3vw + 0.2vw) calc(3vw + 0.2vw);
     z-index: 10;
 }
 .top_block{
@@ -115,7 +115,7 @@ a:not([href]):not([class]){
 #page_12_content{
     position: absolute;
     left: 10%;
-    font-size: calc(1vw + 1em);
+    font-size: calc(1.6vw + 0.4em);
     width: calc(20vw + 40%);
     font-family: comic;
     /* font-family: lhandw; */
@@ -125,7 +125,7 @@ a:not([href]):not([class]){
 #page_13_content{
     position: absolute;
     left: calc(35%);
-    font-size: calc(1vw + 1em);
+    font-size: calc(1.6vw + 0.4em);
     width: calc(20vw + 40%);
     font-family: comic;
 }
@@ -147,7 +147,7 @@ a:not([href]):not([class]){
 .learn_more_content{
     display: none;
     margin-left: 5%;
-    font-size: calc(1vw + 0.5em);
+    font-size: calc(1.2vw + 0.3em);
 }
 .bottomleft{
     position: absolute;
@@ -170,21 +170,21 @@ a:not([href]):not([class]){
     z-index: 1;
 }
 .triangle_to_right{
-    border-top: calc(0.25vw + 0.25em) solid transparent;
-    border-bottom: calc(0.25vw + 0.25em) solid transparent;
-    border-left: calc(0.5vw + 0.5em) solid #f2e2d2;
+    border-top: calc(0.4vw + 0.1em) solid transparent;
+    border-bottom: calc(0.4vw + 0.1em) solid transparent;
+    border-left: calc(0.8vw + 0.2em) solid #f2e2d2;
     display: inline-block;
     margin-right: 1%;
 }
 .triangle_to_down{
-    border-left: calc(0.25vw + 0.25em) solid transparent;
-    border-right: calc(0.25vw + 0.25em) solid transparent;
-    border-top: calc(0.5vw + 0.5em) solid #f2e2d2;
+    border-left: calc(0.4vw + 0.1em) solid transparent;
+    border-right: calc(0.4vw + 0.1em) solid transparent;
+    border-top: calc(0.8vw + 0.2em) solid #f2e2d2;
     display: inline-block;
     margin-right: 1%;
 }
 .reference{
-    font-size: calc(0.5vw + 0.35em);
+    font-size: calc(0.44vw + 0.11em);
 }
 #team_name{
     display: flex;
