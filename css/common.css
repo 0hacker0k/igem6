@@ -14,12 +14,12 @@ a{
     display: flex;
 }
 h1{
-    display:block;
     color: #EA2B1F;
     font-weight: bolder;
     font-size: calc(1.5em + 1.5vw);
-    max-width: calc(40vw + 20rem) !important;
-    word-break: break-all;
+    max-width: calc(40vw + 20rem);
+    word-break: break-word;
+    /* word-wrap: break-word; */
     /* padding-top: 100px;
     padding-bottom: 100px; */
 }
@@ -27,8 +27,9 @@ h2{
     /* position: absolute;
     left: 50% !important;
     transform: translate(-50%, 0%); */
-    max-width: calc(40vw + 20rem) !important;
-    word-break: break-all;
+    max-width: calc(40vw + 20rem);
+    word-break: break-word;
+    /* word-wrap: break-word !important; */
 }
 p{
     color: #3C3D3E;
@@ -148,7 +149,7 @@ img{
     background-repeat: no-repeat;
     color: #390099;
     padding: calc(0.5% + 0.2em) 4vw;
-    white-space:nowrap;
+    /* white-space:nowrap; */
     display: table;
     margin: auto;
 }

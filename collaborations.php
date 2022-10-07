@@ -270,7 +270,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Together, we louder</h1>
             </div>
             <div id="16" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The Infographic Exchange Project - <br/> Gems_Taiwan, Korea_HS, Thailand_RS</h2>
+                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The Infographic Exchange Project -  Gems_Taiwan, Korea_HS, Thailand_RS</h2>
             </div>
             <p>
                 &emsp;&emsp;This year, Gems_Taiwan, Korea_HS, and Thailand_RS partnered together and created an infographic exchange project. They gathered infographics from different iGEM teams and translated them into Mandarin, Korean, and Thai, to eliminate barriers between countries and let people who don't speak English be able to learn about iGEM projects. We participate in this project by giving our team's infographic, hoping the world can know more about the crisis of cardiovascular disease and how we can provide a solution.
