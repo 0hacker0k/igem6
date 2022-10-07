@@ -10,6 +10,51 @@
 <body onload="load_finish();">
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
+    <div class="guide" id="guide">
+        <div id="guide_content">
+            <div class="guide_label" onclick="move_to_item('1')">
+                solution for CVD
+            </div>
+            <div class="guide_sub_label" onclick="move_to_item('2')">
+                Learn
+            </div>
+            <div class="guide_sub_label" onclick="move_to_item('3')">
+                Explore
+            </div>
+            <div class="guide_sub_label" onclick="move_to_item('4')">
+                Design
+            </div>
+            <div class="guide_label" onclick="move_to_item('5')">
+                Expression promoter
+            </div>
+            <div class="guide_sub_label" onclick="move_to_item('6')">
+                Learn and Explore
+            </div>
+            <div class="guide_sub_label" onclick="move_to_item('7')">
+                Design
+            </div>
+            <div class="guide_sub_label" onclick="move_to_item('8')">
+                Redesign necessary
+            </div>
+            <div class="guide_label" onclick="move_to_item('9')">
+                EPA?
+            </div>
+            <div class="guide_sub_label" onclick="move_to_item('10')">
+                Explore
+            </div>
+            <div class="guide_sub_label" onclick="move_to_item('11')">
+                Build
+            </div>
+
+
+        </div>
+        <div id="expansion" onclick="guide_toggle()">
+            <div class="overlap_item trapezoid"></div>
+            <!-- <div class="overlap_item triangle_to_left"></div> -->
+            <div class="overlap_item triangle_to_right"></div>
+            
+        </div>    
+    </div>
     <img class="full_size_image" src="<?php echo imgfile;?>/engineering/banner-engineering.png" alt=""> 
 
     
@@ -24,51 +69,6 @@
 
     <div class="article">
         <div class="in_center">
-            <div class="guide" id="guide">
-                <div id="guide_content">
-                    <div class="guide_label" onclick="move_to_item('1')">
-                        solution for CVD
-                    </div>
-                    <div class="guide_sub_label" onclick="move_to_item('2')">
-                        Learn
-                    </div>
-                    <div class="guide_sub_label" onclick="move_to_item('3')">
-                        Explore
-                    </div>
-                    <div class="guide_sub_label" onclick="move_to_item('4')">
-                        Design
-                    </div>
-                    <div class="guide_label" onclick="move_to_item('5')">
-                        Expression promoter
-                    </div>
-                    <div class="guide_sub_label" onclick="move_to_item('6')">
-                        Learn and Explore
-                    </div>
-                    <div class="guide_sub_label" onclick="move_to_item('7')">
-                        Design
-                    </div>
-                    <div class="guide_sub_label" onclick="move_to_item('8')">
-                        Redesign necessary
-                    </div>
-                    <div class="guide_label" onclick="move_to_item('9')">
-                        EPA?
-                    </div>
-                    <div class="guide_sub_label" onclick="move_to_item('10')">
-                        Explore
-                    </div>
-                    <div class="guide_sub_label" onclick="move_to_item('11')">
-                        Build
-                    </div>
-
-
-                </div>
-                <div id="expansion" onclick="guide_toggle()">
-                    <div class="overlap_item trapezoid"></div>
-                    <!-- <div class="overlap_item triangle_to_left"></div> -->
-                    <div class="overlap_item triangle_to_right"></div>
-                    
-                </div>    
-            </div>
             <div id="1" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Identify the problem - <br/>solution for CVD</h1>
             </div>

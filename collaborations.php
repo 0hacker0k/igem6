@@ -10,6 +10,30 @@
 <body onload="load_finish();">
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
+    <div class="guide" id="guide">
+        <div id="guide_content">
+            <div class="guide_label" onclick="move_to_item('1')">
+                Overview
+            </div>
+            <div class="guide_label" onclick="move_to_item('2')">
+                Refining our PACOmega project
+            </div>
+            <div class="guide_label" onclick="move_to_item('8')">
+                United we stand
+            </div>
+            <div class="guide_label" onclick="move_to_item('15')">
+                Together, we louder
+            </div>
+            <div class="guide_label" onclick="move_to_item('18')">
+                Summary
+            </div>
+        </div>
+        <div id="expansion" onclick="guide_toggle()">
+            <div class="overlap_item trapezoid"></div>
+            <!-- <div class="overlap_item triangle_to_left"></div> -->
+            <div class="overlap_item triangle_to_right"></div>
+        </div>
+    </div>
     <img class="full_size_image" src="<?php echo imgfile;?>/collaborations/banner-collaborations.png" alt=""> 
     
     <div class="overview justify-content-around">
@@ -25,33 +49,6 @@
     
     <div class="article">
         <!-- <div class="marge" style="--width:calc(1em + 1vh)"></div> -->
-        <div class="guide" id="guide">
-            <div id="guide_content">
-                <div class="guide_label" onclick="move_to_item('1')">
-                    Overview
-                </div>
-                <div class="guide_label" onclick="move_to_item('2')">
-                    Refining our PACOmega project
-                </div>
-                <div class="guide_label" onclick="move_to_item('8')">
-                    United we stand
-                </div>
-                <div class="guide_label" onclick="move_to_item('15')">
-                    Together, we louder
-                </div>
-                <div class="guide_label" onclick="move_to_item('18')">
-                    Summary
-                </div>
-            </div>
-            <div id="expansion" onclick="guide_toggle()">
-                <div class="overlap_item trapezoid"></div>
-                <!-- <div class="overlap_item triangle_to_left"></div> -->
-                <div class="overlap_item triangle_to_right"></div>
-                
-            </div>
-            
-            
-        </div>
         <div class="in_center">
             <div id="2" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Refining our PACOmega project</h1>

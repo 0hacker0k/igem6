@@ -10,32 +10,28 @@
 <body onload="load_finish();">
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
+    <div class="guide" id="guide">
+        <div id="guide_content">
+            <div class="guide_label" onclick="move_to_item('1')">
+                Overview
+            </div>
+            <div class="guide_label" onclick="move_to_item('2')">
+                Open Lab
+            </div>
+            <div class="guide_label" onclick="move_to_item('7')">
+                Campus walking
+            </div>
+        </div>
+        <div id="expansion" onclick="guide_toggle()">
+            <div class="overlap_item trapezoid"></div>
+            <!-- <div class="overlap_item triangle_to_left"></div> -->
+            <div class="overlap_item triangle_to_right"></div>
+        </div>
+    </div>
     <img class="full_size_image" src="<?php echo imgfile;?>/education/banner-education.png" alt=""> 
-    
-    
     <div class="article">
         <div class="in_center">
-        <div class="guide" id="guide">
-            <div id="guide_content">
-                <div class="guide_label" onclick="move_to_item('1')">
-                    Overview
-                </div>
-                <div class="guide_label" onclick="move_to_item('2')">
-                    Open Lab
-                </div>
-                <div class="guide_label" onclick="move_to_item('7')">
-                    Campus walking
-                </div>
-            </div>
-            <div id="expansion" onclick="guide_toggle()">
-                <div class="overlap_item trapezoid"></div>
-                <!-- <div class="overlap_item triangle_to_left"></div> -->
-                <div class="overlap_item triangle_to_right"></div>
-                
-            </div>
-            
-            
-        </div>
+        
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="1" class="title-label-div">
                 <h1>Overview</h1>
