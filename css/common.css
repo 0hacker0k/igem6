@@ -24,6 +24,7 @@ p{
     color: #3C3D3E;
     font-weight: 500;
     font-size: calc(1em + 1vw);
+    word-break: break-all;
 }
 .h15{
     font-weight: 800;
