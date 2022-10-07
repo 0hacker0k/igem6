@@ -139,7 +139,7 @@ img{
     background-repeat: no-repeat;
     color:#FFFFFF;
     padding: calc(0.5% + 0.2em) 6vw;
-    white-space:nowrap;
+    /* white-space:nowrap; */
     display: table;
     margin: auto;
 }
