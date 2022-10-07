@@ -5,6 +5,8 @@ function guide_change(){
     var guide_content=document.getElementById("guide_content");
     var content=document.getElementsByClassName("in_center")[0];
     guide_content.style.paddingTop=document.getElementById("navbar").clientHeight+"px";
+    guide_content=screen_height+"px";
+    guide.style.height=screen_height+"px";
     guide.style.left= "calc("+(-document.getElementById("guide_content").clientWidth)+"px)";// - 0.5em
     guide.style.transition="0.0s";
     setTimeout(() => {
@@ -34,6 +36,8 @@ function guide_toggle(){
 window.addEventListener('resize',
     () => {
         guide_change();
+        screen_height=window.innerHeight;
+        screen_width=window.innerWidth
     }
 , false );
 guide_change();

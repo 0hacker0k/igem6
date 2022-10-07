@@ -93,14 +93,14 @@ p{
 }
 #guide_content{
     width: auto;
-    height: 100vh;
+    height: 100%;
     border-right: 0.5em solid #c46d5e;
     background-color: #fffff0;
     display : block;
     float:left;
 }
 #expansion{
-    margin-left:-1px;
+    margin-left:-3px;
     position: relative;
     width:2em;
     height: 100vh;
