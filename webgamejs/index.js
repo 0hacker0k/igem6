@@ -10,6 +10,7 @@ document.cookie = document.cookie + ";expires=" + exp.toGMTString();
 */
 //alert(document.cookie);
 const rexUI_path = "./webgamejs/rexUI.min.js";
+const prefix = "img"; 
 var COLOR_PRIMARY;
 var COLOR_LIGHT;
 var COLOR_DARK;

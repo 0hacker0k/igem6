@@ -37,42 +37,42 @@ function preload_stage5_take(){
     //basic
     debug = 1;
     if(debug==1){
-        this.load.image('D_center', 'img/main/debug_center.png');
-        this.load.image('green', 'img/main/green.png');
+        this.load.image('D_center', prefix+'/main/debug_center.png');
+        this.load.image('green', prefix+'/main/green.png');
     }
-    this.load.image('back', 'img/main/back.png');
+    this.load.image('back', prefix+'/main/back.png');
     load_talkbox(this);
     load_transition(this);
 
     //else
     
-    this.load.image('desk', 'img/stage5/desk.png');
+    this.load.image('desk', prefix+'/stage5/desk.png');
     
-    this.load.image('background', 'img/stage5/background.jpg');
-    this.load.image('direct', 'img/main/director.png');
-    this.load.image('mixer', 'img/stage5/mixer.png');
+    this.load.image('background', prefix+'/stage5/background.jpg');
+    this.load.image('direct', prefix+'/main/director.png');
+    this.load.image('mixer', prefix+'/stage5/mixer.png');
     for(var i=0;i<7;i++){
         for(var j=0;j<8;j++){
             if(desk_what[i][j]!=''){
-                this.load.image(desk_what[i][j], 'img/stage5/'+desk_what[i][j]+'.png');
+                this.load.image(desk_what[i][j], prefix+'/stage5/'+desk_what[i][j]+'.png');
             }
         }
     }
     for(var i=0;i<7;i++){
         for(var j=0;j<8;j++){
             if(desk_what[i][j]!=''){
-                this.load.image(desk_what[i][j],'img/stage5/temp.png');
+                this.load.image(desk_what[i][j],prefix+'/stage5/temp.png');
             }
             
         }
     }
     this.load.spritesheet('player',
-        'img/main/player.png',
+        prefix+'/main/player.png',
         { frameWidth: 64, frameHeight: 64 }
     );//載入畫楨
     
     this.load.spritesheet('human',
-    'img/main/human1.png',
+    prefix+'/main/human1.png',
     { frameWidth: 455, frameHeight: 1030 }
     );//載入畫楨
     //music

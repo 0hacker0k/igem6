@@ -1,10 +1,10 @@
 function preload_stage3_flop(){
-    this.load.image('background', 'img/stage3/background.png');//載入一般圖片
+    this.load.image('background', prefix+'/stage3/background.png');//載入一般圖片
     load_transition(this);
     preload_congratulation(this);
-    this.load.image('back', 'img/main/back.png');
+    this.load.image('back', prefix+'/main/back.png');
     this.load.spritesheet('card',
-        'img/stage3/card1.png',
+        prefix+'/stage3/card1.png',
         { frameWidth: 367, frameHeight: 519 }
     );
 }

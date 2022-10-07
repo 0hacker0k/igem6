@@ -1,13 +1,13 @@
 debug=1;
 function preload (){
     load_transition(this);
-    this.load.image('map', 'img/map/map.jpg');//載入一般圖片
+    this.load.image('map', prefix+'/map/map.jpg');//載入一般圖片
     for(var i=1;i<=5;i++){
-        this.load.image('stage'+i, 'img/map/NPC'+i+'.png');//載入一般圖片
+        this.load.image('stage'+i, prefix+'/map/NPC'+i+'.png');//載入一般圖片
     }
     if(debug==1){
-        this.load.image('D_center', 'img/main/debug_center.png');
-        this.load.image('green', 'img/main/green.png');
+        this.load.image('D_center', prefix+'/main/debug_center.png');
+        this.load.image('green', prefix+'/main/green.png');
     }
     load_talkbox(this);
 }

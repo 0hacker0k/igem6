@@ -14,15 +14,15 @@ function preload_story1 (){
     load_transition(this);
     console.log(con);
     for(var i=con.img_num_start;i<=con.img_num_end;i++){
-        this.load.image('slide'+i, 'img/slide/'+i+'.jpg');//載入一般圖片
+        this.load.image('slide'+i, prefix+'/slide/'+i+'.jpg');//載入一般圖片
     }
     
     if(debug==1){
-        this.load.image('D_center', 'img/main/debug_center.png');
-        this.load.image('green', 'img/main/green.png');
+        this.load.image('D_center', prefix+'/main/debug_center.png');
+        this.load.image('green', prefix+'/main/green.png');
     }
     load_talkbox(this);
-    this.load.image(con.npc_key, 'img/map/'+con.npc_key+'.png');
+    this.load.image(con.npc_key, prefix+'/map/'+con.npc_key+'.png');
 }
 
 function create_story1 (){

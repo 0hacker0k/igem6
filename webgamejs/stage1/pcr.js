@@ -1,10 +1,10 @@
 function preload_stage1_pcr(){
-    this.load.image('background', 'img/stage1/step_3_background.jpg');//載入一般圖片
+    this.load.image('background', prefix+'/stage1/step_3_background.jpg');//載入一般圖片
     load_transition(this);
     preload_congratulation(this);
-    this.load.image('back', 'img/main/back.png');
+    this.load.image('back', prefix+'/main/back.png');
     this.load.spritesheet('gene',
-        'img/stage1/pcr/ATCG.png',
+        prefix+'/stage1/pcr/ATCG.png',
         { frameWidth: 220, frameHeight: 462 }
     );
 }

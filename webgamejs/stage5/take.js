@@ -5,21 +5,21 @@ var content = `Phaser is a fast, free, and fun open source HTML5 game framework 
 
 function preload_stage5_take(){
     debug = 0;
-    this.load.image('background', 'img/stage5/background.jpg');//載入一般圖片
+    this.load.image('background', prefix+'/stage5/background.jpg');//載入一般圖片
     load_transition(this);
     preload_congratulation(this);
-    this.load.image('bac', 'img/stage5/bac.png');
-    this.load.image('bac_gel', 'img/stage5/Plate.png');
-    this.load.image('back', 'img/main/back.png');
-    this.load.image('stick', 'img/stage5/stick.png');
-    this.load.image('pressure', 'img/stage5/pressure.png');
-    this.load.image('tube', 'img/stage5/tube.png');
-    this.load.image('stick_box', 'img/main/green.png');
-    this.load.image('trashcan', 'img/main/green.png');
+    this.load.image('bac', prefix+'/stage5/bac.png');
+    this.load.image('bac_gel', prefix+'/stage5/Plate.png');
+    this.load.image('back', prefix+'/main/back.png');
+    this.load.image('stick', prefix+'/stage5/stick.png');
+    this.load.image('pressure', prefix+'/stage5/pressure.png');
+    this.load.image('tube', prefix+'/stage5/tube.png');
+    this.load.image('stick_box', prefix+'/main/green.png');
+    this.load.image('trashcan', prefix+'/main/green.png');
     load_talkbox(this);
     if(debug==1){
-        this.load.image('D_center', 'img/main/debug_center.png');
-        this.load.image('green', 'img/main/green.png');
+        this.load.image('D_center', prefix+'/main/debug_center.png');
+        this.load.image('green', prefix+'/main/green.png');
     }
     this.load.scenePlugin({
         key: 'rexuiplugin',

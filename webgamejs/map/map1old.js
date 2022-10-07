@@ -1,10 +1,10 @@
 function preload (){
     load_transition(this);
-    this.load.image('background', 'img/main/background.png');//載入一般圖片
-    this.load.image('stage1', 'img/main/green.png');//載入一般圖片
-    this.load.image('direct', 'img/main/director.png');
+    this.load.image('background', prefix+'/main/background.png');//載入一般圖片
+    this.load.image('stage1', prefix+'/main/green.png');//載入一般圖片
+    this.load.image('direct', prefix+'/main/director.png');
     this.load.spritesheet('player',
-        'img/main/human.png',
+        prefix+'/main/human.png',
         { frameWidth: 496, frameHeight: 1118 }
     );//載入畫楨
 }

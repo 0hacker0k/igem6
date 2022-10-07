@@ -33,5 +33,5 @@ function finish_transition (where,x,y){//畫面漸暗
 }
 function load_transition(where){//載入動畫檔
     load_talkbox(where);
-    where.load.image('transition', 'img/main/transition.png');
+    where.load.image('transition', prefix+'/main/transition.png');
 }

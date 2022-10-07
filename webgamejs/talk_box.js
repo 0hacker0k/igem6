@@ -10,16 +10,16 @@ var npc;
 var barrier=null;
 function load_talkbox(where){//載入動畫檔
     barrier=null;
-    where.load.image('talkbox', 'img/main/next.png');
-    where.load.image('nextPage', 'img/main/next.png');
+    where.load.image('talkbox', prefix+'/main/next.png');
+    where.load.image('nextPage', prefix+'/main/next.png');
     where.load.scenePlugin({
         key: 'rexuiplugin',
         url: rexUI_path,
         sceneKey: 'rexUI'
     });
-    where.load.image('PACO', 'img/main/PACO.png');
-    where.load.image('Sprite', 'img/main/sprite.png');
-    where.load.image('backer', 'img/map/backer.jpg');
+    where.load.image('PACO', prefix+'/main/PACO.png');
+    where.load.image('Sprite', prefix+'/main/sprite.png');
+    where.load.image('backer', prefix+'/map/backer.jpg');
 }
 
 function loading_talkbox(where,x,y){

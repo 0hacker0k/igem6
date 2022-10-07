@@ -14,9 +14,9 @@ function preload_congratulation(where){
         }else{
             locate=i_1;
         }
-        where.load.image('end'+i_0, 'img/stage1/congratulations/congratulations_'+locate+'.png');
+        where.load.image('end'+i_0, prefix+'/stage1/congratulations/congratulations_'+locate+'.png');
     }
-    where.load.image('end', 'img/stage1/congratulations.jpg');
+    where.load.image('end', prefix+'/stage1/congratulations.jpg');
 }
 
 function create_congratulation(where,nextscene=map_1){

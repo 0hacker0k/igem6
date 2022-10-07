@@ -25,81 +25,81 @@ function preload_stage2_gel(){
     //basic
     debug = 1;
     if(debug==1){
-        this.load.image('D_center', 'img/main/debug_center.png');
+        this.load.image('D_center', prefix+'/main/debug_center.png');
         
     }
-    this.load.image('green', 'img/main/green.png');
-    this.load.image('back', 'img/main/back.png');
+    this.load.image('green', prefix+'/main/green.png');
+    this.load.image('back', prefix+'/main/back.png');
     load_talkbox(this);
     load_transition(this);
     preload_congratulation(this);
     //else
-    this.load.image('trashcan', 'img/stage2/trashcan.png');
-    this.load.image('TAE', 'img/stage2/TAE.png');
-    this.load.image('agarose', 'img/stage2/agarose.png');
-    this.load.image('desk', 'img/stage2/desk.png');
-    this.load.image('background', 'img/stage2/background.jpg');
-    this.load.image('direct', 'img/main/director.png');
-    this.load.image('marker', 'img/stage2/marker.png');
-    this.load.image('sample', 'img/stage2/sample.png');
-    this.load.image('gold','img/stage2/gold.png');
-    this.load.image('silver','img/stage2/silver.png');
-    this.load.image('bronze','img/stage2/bronze.png');
-    // this.load.image('pipette', 'img/stage2/pipette.png');
-    this.load.image("alert",'img/stage2/temp.png');
-    this.load.image("qte_pointer",'img/stage2/qte_bar_pointer.png');
-    this.load.image("qte_half",'img/stage2/qte_bar_half.png');
-    this.load.image("qte_perfect",'img/stage2/qte_bar_perfect.png');
-    this.load.image("qte_bar",'img/stage2/qte_bar.png');
-    this.load.image("gel_machine",'img/stage2/gel_machine.png');
-    this.load.image("uv",'img/stage2/uv.png');
-    this.load.image("note",'img/stage2/Protocol.png');
+    this.load.image('trashcan', prefix+'/stage2/trashcan.png');
+    this.load.image('TAE', prefix+'/stage2/TAE.png');
+    this.load.image('agarose', prefix+'/stage2/agarose.png');
+    this.load.image('desk', prefix+'/stage2/desk.png');
+    this.load.image('background', prefix+'/stage2/background.jpg');
+    this.load.image('direct', prefix+'/main/director.png');
+    this.load.image('marker', prefix+'/stage2/marker.png');
+    this.load.image('sample', prefix+'/stage2/sample.png');
+    this.load.image('gold',prefix+'/stage2/gold.png');
+    this.load.image('silver',prefix+'/stage2/silver.png');
+    this.load.image('bronze',prefix+'/stage2/bronze.png');
+    // this.load.image('pipette', prefix+'/stage2/pipette.png');
+    this.load.image("alert",prefix+'/stage2/temp.png');
+    this.load.image("qte_pointer",prefix+'/stage2/qte_bar_pointer.png');
+    this.load.image("qte_half",prefix+'/stage2/qte_bar_half.png');
+    this.load.image("qte_perfect",prefix+'/stage2/qte_bar_perfect.png');
+    this.load.image("qte_bar",prefix+'/stage2/qte_bar.png');
+    this.load.image("gel_machine",prefix+'/stage2/gel_machine.png');
+    this.load.image("uv",prefix+'/stage2/uv.png');
+    this.load.image("note",prefix+'/stage2/Protocol.png');
     this.load.image("protocol1","img/stage2/protocol1.jpg");
     this.load.image("protocol2","img/stage2/protocol2.jpg");
     this.load.image("protocol3","img/stage2/protocol3.jpg");
-    this.load.image("machine",'img/stage2/gel_making_machine.png');
-    this.load.image('wifi','img/stage2/wifi.png');
+    this.load.image("machine",prefix+'/stage2/gel_making_machine.png');
+    this.load.image('wifi',prefix+'/stage2/wifi.png');
     //light gel
-    this.load.image("lightgel",'img/stage2/lightgel.png');
-    this.load.image("lightgel_broken",'img/stage2/lightgel-broken.png');
-    this.load.image("1m4s",'img/stage2/mssss.png');
-    this.load.image("5m",'img/stage2/mmmmm.png');
-    this.load.image("5s",'img/stage2/sssss.png');
-    this.load.image("1m4s_band",'img/stage2/mssss-band.png');
-    this.load.image("1m4s_tail",'img/stage2/mssss-tail.png');
-    // this.load.image("gel",'img/stage2/gel.png');
+    this.load.image("lightgel",prefix+'/stage2/lightgel.png');
+    this.load.image("lightgel_broken",prefix+'/stage2/lightgel-broken.png');
+    this.load.image("1m4s",prefix+'/stage2/mssss.png');
+    this.load.image("5m",prefix+'/stage2/mmmmm.png');
+    this.load.image("5s",prefix+'/stage2/sssss.png');
+    this.load.image("1m4s_band",prefix+'/stage2/mssss-band.png');
+    this.load.image("1m4s_tail",prefix+'/stage2/mssss-tail.png');
+    // this.load.image("gel",prefix+'/stage2/gel.png');
     this.load.spritesheet('mod',
-        'img/stage2/mod.png',
+        prefix+'/stage2/mod.png',
         { frameWidth: 928, frameHeight: 674 }
     );
     this.load.spritesheet('pipette',
-        'img/stage2/pipette.png',
+        prefix+'/stage2/pipette.png',
         { frameWidth: 421, frameHeight: 1741 }
     );
     this.load.spritesheet('gel',
-        'img/stage2/gel.png',
+        prefix+'/stage2/gel.png',
         { frameWidth: 633, frameHeight: 602.5 }
     );
     this.load.spritesheet('microwave',
-        'img/stage2/microwave.png',
+        prefix+'/stage2/microwave.png',
         { frameWidth: 1173, frameHeight: 784 }
     );
     this.load.spritesheet('tank',
-        'img/stage2/tank.png',
+        prefix+'/stage2/tank.png',
         { frameWidth: 1075, frameHeight: 625 }
     );
     this.load.spritesheet('player',
-        'img/main/human.png',
+        prefix+'/main/human.png',
         { frameWidth: 496, frameHeight: 1118 }
     );
     this.load.spritesheet('beaker',
-        'img/stage2/beaker.png',
+        prefix+'/stage2/beaker.png',
         { frameWidth: 216, frameHeight: 281.75 }
     );
     //載入畫楨
     //右靜止 
     // this.load.spritesheet('human',
-    // 'img/main/human2.png',
+    // prefix+'/main/human2.png',
     // { frameWidth: 464, frameHeight: 1028 }
     // );//載入畫楨
     //music
