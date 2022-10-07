@@ -14,7 +14,7 @@ function preload_congratulation(where){
         }else{
             locate=i_1;
         }
-        where.load.image('end'+i_0, prefix+'/stage1/congratulations/congratulations_'+locate+'.png');
+        where.load.image('end'+i_0, prefix+'/stage1/congratulations/congratulations-'+locate+'.png');
     }
     where.load.image('end', prefix+'/stage1/congratulations.jpg');
 }

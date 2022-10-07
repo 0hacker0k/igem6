@@ -4,7 +4,7 @@ function preload_opening (){
     this.load.image('webgame', prefix+'/map/webgame.jpg');
     this.load.image('start', prefix+'/map/start.png');
     if(debug==1){
-        this.load.image('D_center', prefix+'/main/debug_center.png');
+        this.load.image('D_center', prefix+'/main/debug-center.png');
         this.load.image('green', prefix+'/main/green.png');
     }
     load_talkbox(this);

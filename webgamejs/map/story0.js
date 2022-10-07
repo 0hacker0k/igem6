@@ -6,7 +6,7 @@ function preload_story0 (){
         this.load.image('slide'+i, prefix+'/slide/'+i+'.jpg');//載入一般圖片
     }
     if(debug==1){
-        this.load.image('D_center', prefix+'/main/debug_center.png');
+        this.load.image('D_center', prefix+'/main/debug-center.png');
         this.load.image('green', prefix+'/main/green.png');
     }
     load_talkbox(this);

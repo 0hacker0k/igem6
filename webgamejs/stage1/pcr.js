@@ -1,5 +1,5 @@
 function preload_stage1_pcr(){
-    this.load.image('background', prefix+'/stage1/step_3_background.jpg');//載入一般圖片
+    this.load.image('background', prefix+'/stage1/step-3-background.jpg');//載入一般圖片
     load_transition(this);
     preload_congratulation(this);
     this.load.image('back', prefix+'/main/back.png');

@@ -25,7 +25,7 @@ function preload_stage2_gel(){
     //basic
     debug = 1;
     if(debug==1){
-        this.load.image('D_center', prefix+'/main/debug_center.png');
+        this.load.image('D_center', prefix+'/main/debug-center.png');
         
     }
     this.load.image('green', prefix+'/main/green.png');
@@ -47,17 +47,17 @@ function preload_stage2_gel(){
     this.load.image('bronze',prefix+'/stage2/bronze.png');
     // this.load.image('pipette', prefix+'/stage2/pipette.png');
     this.load.image("alert",prefix+'/stage2/temp.png');
-    this.load.image("qte_pointer",prefix+'/stage2/qte_bar_pointer.png');
-    this.load.image("qte_half",prefix+'/stage2/qte_bar_half.png');
-    this.load.image("qte_perfect",prefix+'/stage2/qte_bar_perfect.png');
-    this.load.image("qte_bar",prefix+'/stage2/qte_bar.png');
-    this.load.image("gel_machine",prefix+'/stage2/gel_machine.png');
+    this.load.image("qte_pointer",prefix+'/stage2/qte-bar-pointer.png');
+    this.load.image("qte_half",prefix+'/stage2/qte-bar-half.png');
+    this.load.image("qte_perfect",prefix+'/stage2/qte-bar-perfect.png');
+    this.load.image("qte_bar",prefix+'/stage2/qte-bar.png');
+    this.load.image("gel_machine",prefix+'/stage2/gel-machine.png');
     this.load.image("uv",prefix+'/stage2/uv.png');
     this.load.image("note",prefix+'/stage2/Protocol.png');
     this.load.image("protocol1","img/stage2/protocol1.jpg");
     this.load.image("protocol2","img/stage2/protocol2.jpg");
     this.load.image("protocol3","img/stage2/protocol3.jpg");
-    this.load.image("machine",prefix+'/stage2/gel_making_machine.png');
+    this.load.image("machine",prefix+'/stage2/gel-making-machine.png');
     this.load.image('wifi',prefix+'/stage2/wifi.png');
     //light gel
     this.load.image("lightgel",prefix+'/stage2/lightgel.png');

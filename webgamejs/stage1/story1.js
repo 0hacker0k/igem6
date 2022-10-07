@@ -18,7 +18,7 @@ function preload_story1 (){
     }
     
     if(debug==1){
-        this.load.image('D_center', prefix+'/main/debug_center.png');
+        this.load.image('D_center', prefix+'/main/debug-center.png');
         this.load.image('green', prefix+'/main/green.png');
     }
     load_talkbox(this);

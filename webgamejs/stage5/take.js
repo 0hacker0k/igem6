@@ -18,7 +18,7 @@ function preload_stage5_take(){
     this.load.image('trashcan', prefix+'/main/green.png');
     load_talkbox(this);
     if(debug==1){
-        this.load.image('D_center', prefix+'/main/debug_center.png');
+        this.load.image('D_center', prefix+'/main/debug-center.png');
         this.load.image('green', prefix+'/main/green.png');
     }
     this.load.scenePlugin({

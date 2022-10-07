@@ -1,10 +1,10 @@
 function preload_stage1_sequence(){
-    this.load.image('background', prefix+'/stage1/step_2_background.jpg');//載入一般圖片
+    this.load.image('background', prefix+'/stage1/step-2-background.jpg');//載入一般圖片
     load_transition(this);
     
     this.load.image('back', prefix+'/main/back.png');
     this.load.spritesheet('check',
-        prefix+'/stage1/check_button.png',
+        prefix+'/stage1/check-button.png',
         { frameWidth: 250, frameHeight: 25 }
     );
     this.load.spritesheet('card',
@@ -12,7 +12,7 @@ function preload_stage1_sequence(){
         { frameWidth: 140, frameHeight: 192 }
     );//載入畫楨
     this.load.spritesheet('button',
-        prefix+'/stage1/small_ATCG.png',
+        prefix+'/stage1/small-ATCG.png',
         { frameWidth: 90, frameHeight: 90 }
     );
 }

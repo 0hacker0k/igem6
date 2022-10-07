@@ -1,5 +1,5 @@
 function preload_stage1_choose(){
-    this.load.image('background', prefix+'/stage1/step_1_background.jpg');//載入一般圖片
+    this.load.image('background', prefix+'/stage1/step-1-background.jpg');//載入一般圖片
     this.load.image('gene1', prefix+'/stage1/1.png');
     this.load.image('gene2', prefix+'/stage1/2.png');
     this.load.image('gene3', prefix+'/stage1/3.png');
