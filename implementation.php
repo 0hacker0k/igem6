@@ -12,16 +12,6 @@
     <?php include "sub/loading.php"?>
     <div class="guide" id="guide">
         <div id="guide_content">
-<<<<<<< HEAD
-            <div class="guide_label" onclick="move_to_item('1');guide_toggle()">
-                solution for CVD
-            </div>
-            <div class="guide_label" onclick="move_to_item('2');guide_toggle()">
-                Learn
-            </div>
-            <div class="guide_label" onclick="move_to_item('3');guide_toggle()">
-                Explore
-=======
             <div class="guide_label" onclick="move_to_item('1')">
                 Overview
             </div>
@@ -57,7 +47,6 @@
             </div>
             <div class="guide_sub_label" onclick="move_to_item('12')">
                 User’s information
->>>>>>> 511f67a4c8a55278a1937f540fb0519d01273278
             </div>
         </div>
         <div id="expansion" onclick="guide_toggle()">
