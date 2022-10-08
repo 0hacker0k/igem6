@@ -12,37 +12,37 @@
     <?php include "sub/loading.php"?>
     <div class="guide" id="guide">
         <div id="guide_content">
-            <div class="guide_label" onclick="move_to_item('1')">
+            <div class="guide_label" onclick="move_to_item('1');guide_toggle()">
                 solution for CVD
             </div>
-            <div class="guide_sub_label" onclick="move_to_item('2')">
+            <div class="guide_sub_label" onclick="move_to_item('2');guide_toggle()">
                 Learn
             </div>
-            <div class="guide_sub_label" onclick="move_to_item('3')">
+            <div class="guide_sub_label" onclick="move_to_item('3');guide_toggle()">
                 Explore
             </div>
-            <div class="guide_sub_label" onclick="move_to_item('4')">
+            <div class="guide_sub_label" onclick="move_to_item('4');guide_toggle()">
                 Design
             </div>
-            <div class="guide_label" onclick="move_to_item('5')">
+            <div class="guide_label" onclick="move_to_item('5');guide_toggle()">
                 Expression promoter
             </div>
-            <div class="guide_sub_label" onclick="move_to_item('6')">
+            <div class="guide_sub_label" onclick="move_to_item('6');guide_toggle()">
                 Learn and Explore
             </div>
-            <div class="guide_sub_label" onclick="move_to_item('7')">
+            <div class="guide_sub_label" onclick="move_to_item('7');guide_toggle()">
                 Design
             </div>
-            <div class="guide_sub_label" onclick="move_to_item('8')">
+            <div class="guide_sub_label" onclick="move_to_item('8');guide_toggle()">
                 Redesign necessary
             </div>
-            <div class="guide_label" onclick="move_to_item('9')">
+            <div class="guide_label" onclick="move_to_item('9');guide_toggle()">
                 EPA?
             </div>
-            <div class="guide_sub_label" onclick="move_to_item('10')">
+            <div class="guide_sub_label" onclick="move_to_item('10');guide_toggle()">
                 Explore
             </div>
-            <div class="guide_sub_label" onclick="move_to_item('11')">
+            <div class="guide_sub_label" onclick="move_to_item('11');guide_toggle()">
                 Build
             </div>
 

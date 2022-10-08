@@ -12,13 +12,13 @@
     <?php include "sub/loading.php"?>
     <div class="guide" id="guide">
         <div id="guide_content">
-            <div class="guide_label" onclick="move_to_item('1')">
+            <div class="guide_label" onclick="move_to_item('1');guide_toggle()">
                 Overview
             </div>
-            <div class="guide_label" onclick="move_to_item('2')">
+            <div class="guide_label" onclick="move_to_item('2');guide_toggle()">
                 Open Lab
             </div>
-            <div class="guide_label" onclick="move_to_item('7')">
+            <div class="guide_label" onclick="move_to_item('7');guide_toggle()">
                 Campus walking
             </div>
         </div>

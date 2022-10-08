@@ -55,7 +55,7 @@ p{
 }
 .guide{
     position: fixed;
-    top:0%;
+    bottom:0%;
     left: 0%;
     /* width: 30%; */
     z-index: 99;
