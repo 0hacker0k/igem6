@@ -26,6 +26,14 @@ var role_x=width/2; //the x coordinate of role when the user back to map
 var role_y=height/2; //the y coordinate of role when the user back to map
 var con;//every storys' parameter. 
 var config;
+const TextBox_x=width*0.15;
+const TextBox_y=height*0.75;
+const TalkBox_config =
+{
+    wrapWidth: width*0.5,
+    fixedWidth: width*0.55,
+    fixedHeight: height*0.15,
+};
 var score = 0;
 var scoreText;
 var game=null;

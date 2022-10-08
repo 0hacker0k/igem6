@@ -2,6 +2,7 @@ function preload_stage3_flop(){
     this.load.image('background', prefix+'/stage3/background.png');//載入一般圖片
     load_transition(this);
     preload_congratulation(this);
+    load_talkbox(this);
     this.load.image('back', prefix+'/main/back.png');
     this.load.spritesheet('card',
         prefix+'/stage3/card1.png',
@@ -198,6 +199,11 @@ function create_stage3_flop (){
         time_count();
     },1000);
     create_congratulation(this,map_1);
+    PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
+    Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
+
+    descript_count=1;
+    descript_limit=Object.keys(lan_stage3).length;
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.depth=1024;
@@ -213,5 +219,6 @@ function create_stage3_flop (){
 }
 
 function update_stage3_flop (){//與外界有關的互動
+    updateTalkbox(lan_stage3);
     // cursors = this.input.keyboard.createCursorKeys();
 }

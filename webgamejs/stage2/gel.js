@@ -1654,22 +1654,14 @@ function create_stage2_gel (){
     }, this);
     create_congratulation(this,map_1);
     //對話框
-    TextBox_x=width*0.15;
-    TextBox_y=height*0.75;
-    var config =
-    {
-        wrapWidth: width*0.5,
-        fixedWidth: width*0.55,
-        fixedHeight: height*0.15,
-    };
-    PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
-    Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
+    PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
+    Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
     Sprite.depth=2000;
     PACO.depth=1024;
     //PACO.setVisible(false).setInteractive(false);
     //Sprite.start(lan_stage2.vo_1,50);
     descript_count=1;
-    descript_limit=13;
+    descript_limit=descript_limit=Object.keys(lan_stage2).length;
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.depth=1024;

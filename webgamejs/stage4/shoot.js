@@ -191,41 +191,44 @@ function create_stage4_shoot (){
     var status=0;
     
     this.input.on('pointerup', function (pointer) {
-        if(cool_down!=0){
-            return ;
+        if(stop==0){
+            if(cool_down!=0){
+                return ;
+            }
+            // if(status){
+            //     status=0;
+            // }
+            var bullet;
+            if(bullets_queue.length>0){
+                bullet=bullets_queue.pop();
+                bullet.x=delta_x*scale1*(3)+gun.x;
+                bullet.y=delta_y*scale1*(3)+gun.y;
+                bullet.type=next_bullet.shift();
+                bullet.anims.play(bullet.type.toString());
+                bullet.setVisible(true);
+            }else{
+                bullet = bullets.create(delta_x*scale1*(3)+gun.x, delta_y*scale1*(3)+gun.y, 'plastid').setOrigin(0.5, 0.5).setDisplaySize(height*0.02,height*0.02);
+                bullet.refreshBody();
+                bullet.type=next_bullet.shift();
+                bullet.anims.play(bullet.type.toString());
+            }
+            next_bullet.push(myrand());
+            bullet.setAngle(angle);
+            bullet.setBounce(1);
+            // bullet.setCollideWorldBounds(true,0.5,0.5);
+            scale2=400/Math.sqrt((delta_x*delta_x)+(delta_y*delta_y));
+            bullet.setVelocityX(delta_x*scale2);
+            bullet.setVelocityY(delta_y*scale2);
+            cool_down=15;
+            first.x=gun.x;
+            first.y=gun.y;
+            first.anims.play(next_bullet[0].toString());
+            second.anims.play(next_bullet[1].toString());
+            cool_down_reduce_status=setTimeout(function(){
+                cool_down_reduce(cool_down);
+            },25);
         }
-        // if(status){
-        //     status=0;
-        // }
-        var bullet;
-        if(bullets_queue.length>0){
-            bullet=bullets_queue.pop();
-            bullet.x=delta_x*scale1*(3)+gun.x;
-            bullet.y=delta_y*scale1*(3)+gun.y;
-            bullet.type=next_bullet.shift();
-            bullet.anims.play(bullet.type.toString());
-            bullet.setVisible(true);
-        }else{
-            bullet = bullets.create(delta_x*scale1*(3)+gun.x, delta_y*scale1*(3)+gun.y, 'plastid').setOrigin(0.5, 0.5).setDisplaySize(height*0.02,height*0.02);
-            bullet.refreshBody();
-            bullet.type=next_bullet.shift();
-            bullet.anims.play(bullet.type.toString());
-        }
-        next_bullet.push(myrand());
-        bullet.setAngle(angle);
-        bullet.setBounce(1);
-        // bullet.setCollideWorldBounds(true,0.5,0.5);
-        scale2=400/Math.sqrt((delta_x*delta_x)+(delta_y*delta_y));
-        bullet.setVelocityX(delta_x*scale2);
-        bullet.setVelocityY(delta_y*scale2);
-        cool_down=15;
-        first.x=gun.x;
-        first.y=gun.y;
-        first.anims.play(next_bullet[0].toString());
-        second.anims.play(next_bullet[1].toString());
-        cool_down_reduce_status=setTimeout(function(){
-            cool_down_reduce(cool_down);
-        },25);
+        
     },this);
     //設定子彈冷卻時間
     function cool_down_reduce(count){
@@ -506,6 +509,11 @@ function create_stage4_shoot (){
     }
     // spinTween.oncomplete.add(this.winPrize, this);
     create_congratulation(this,map_1);
+    PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
+    Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
+    
+    descript_count=1;
+    descript_limit=Object.keys(lan_stage4).length;
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.depth=1024;
@@ -521,6 +529,7 @@ function create_stage4_shoot (){
 }
 var stop=0;
 function update_stage4_shoot (){//與外界有關的互動
+    updateTalkbox(lan_stage4);
     bullets.children.entries.forEach(item =>  {
         if(item.y>height && item.type!=-1){
             item.setVelocityX(0);

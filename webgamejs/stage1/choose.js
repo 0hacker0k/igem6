@@ -80,20 +80,20 @@ function create_stage1_choose (){
     },this);
 
     //文字說明
-    TextBox_x=width*0.15;
-    TextBox_y=height*0.75;
-    var config =
-    {
-        wrapWidth: width*0.5,
-        fixedWidth: width*0.55,
-        fixedHeight: height*0.15,
-    };
-    PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
-    Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
+    // TextBox_x=width*0.15;
+    // TextBox_y=height*0.75;
+    // var TalkBox_config =
+    // {
+    //     wrapWidth: width*0.5,
+    //     fixedWidth: width*0.55,
+    //     fixedHeight: height*0.15,
+    // };
+    PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
+    Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
+    back=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
     
     descript_count=1;
-    descript_limit=4;
-    
+    descript_limit=Object.keys(lan_stage1).length;
     //.start(lan_stage1.vo_1, 50);
     
     //轉場動畫
