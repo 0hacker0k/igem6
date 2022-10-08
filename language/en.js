@@ -23,8 +23,8 @@ lan_story0=
     "back_5":"The night before she sets out to find the antidote, she encounters a rod-shaped creature calling her name in her dream.",
     "pa_6":"Who are you...",
     "vo_7":"Ah! I'm sorry, I haven't introduced myself yet! I'm a fairy from a faraway island. My full name is Escherichia coli, you can call me E. fairy, I'm on the order of your parents to deliver to you to save the kingdom duty.",
-    "pa_8":"The kingdom? I don't understand, now that my grandfather is dying, there is no time to pay attention to you to save the kingdom. Also, how do you know my parents, my parents disappeared ten years ago.",
-    "vo_9":"Let me tell you the story, let's start with the crisis of the kingdom. Your grandfather and the kingdom are facing the same problems today. Because of the long-term unhealthy eating habits of the people of the kingdom, cardiovascular disease, also known as CVD, is becoming more and more serious.",
+    "pa_8":"The kingdom? I don't understand, now that my grandfather is dying, there is no time to pay attention to you to save the kingdom. Also, how do you know my parents? My parents disappeared ten years ago.",
+    "vo_9":"Let me tell you the story, let's start with the crisis of the kingdom. Your grandfather and the kingdom are facing the same problems today. Because of the long-term unhealthy eating habits of the kingdom's people, cardiovascular disease, also known as CVD, is becoming more serious.",
     "pa_10":"Cardiovascular disease? CVD?",
     "vo_11":"Cardiovascular disease, that is, diseases related to the heart and blood vessels. The common cause is the blockage of blood vessels caused by atherosclerosis, which leads to poor blood flow and causes various diseases, such as palpitations, dyspnea, and dizziness…",
     "pa_12":"I remember, these seem to be in the books my parents left.",
@@ -100,14 +100,15 @@ lan_story1_after=
 {
     "npc_1":"Congratulations! passing test one! Let me tell you my story. I am a researcher, doing all kinds of research, and my boss asked me to do tasks that are not my business and make me not have any time to sleep and dine. Therefore, they lead to an irregular routine. someday, I went to have a body examination, and I was diagnosed that I got the CVDs. to continue my life of research, I decided to find the antidote to cure me",
     "pa_2":"And then?",
-    "npc_3":"At the same, I dreamed of a thing called itself fairy, and it brought me to find the antidote. After passing tests, I found that it led me to find the god, and passing the forward test just to prove my determination of finding the antidote. But, did the god exist? The god which people dream of is just a spiritual comfort, and it doesn't determine your future, only you can define your future. And then, I gave up asking god for the antidote instead I decided to focus on the method of curing CVDs, but it was too late…",
-    "pa_4":"I see.",
-    "npc_5":"After the leading of the elf, you will get the relic left by god. when you collect 5 kinds of relics, it will completely appear the holy blessing, in test one, I will give you the relic, pfa AD gene - pCold1",
-    "vo_6":"PACO, give me the relic, i can preserve it for you",
-    "npc_7":"Adventurer, it’s time to continue test two. please remember it, the test will get difficult, hope you can be careful. By the way, when you take the adventure, please have a routine. don't sacrifice your health to save your grandfather.",
-    "pa_8":"Thanks for your care, and let’s go!",
-    "npc_9":"Break a leg!",
-    "back_10":"PACO and fairy leave for stage two."
+    "npc_3":"At the same, I dreamed of a thing called itself fairy, and it brought me to find the antidote. After passing tests, I found that it led me to find the god, and passing the forward test just to prove my determination of finding the antidote.",
+    "npc_4":"But, did the god exist? The god which people dream of is just a spiritual comfort, and it doesn't determine your future, only you can define your future. And then, I gave up asking god for the antidote instead I decided to focus on the method of curing CVDs, but it was too late…",
+    "pa_5":"I see.",
+    "npc_6":"After the leading of the elf, you will get the relic left by god. when you collect 5 kinds of relics, it will completely appear the holy blessing, in test one, I will give you the relic, pfa AD gene - pCold1",
+    "vo_7":"PACO, give me the relic, i can preserve it for you",
+    "npc_8":"Adventurer, it’s time to continue test two. please remember it, the test will get difficult, hope you can be careful. By the way, when you take the adventure, please have a routine. don't sacrifice your health to save your grandfather.",
+    "pa_9":"Thanks for your care, and let’s go!",
+    "npc_10":"Break a leg!",
+    "back_11":"PACO and fairy leave for stage two."
 }
 lan_story2=
 {

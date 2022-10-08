@@ -17,7 +17,7 @@ function load_talkbox(where){//載入動畫檔
         url: rexUI_path,
         sceneKey: 'rexUI'
     });
-    where.load.image('PACO', prefix+'/main/PACO.png');
+    where.load.image('PACO', prefix+'/main/paco.png');
     where.load.image('Sprite', prefix+'/main/sprite.png');
     where.load.image('backer', prefix+'/map/backer.jpg');
 }

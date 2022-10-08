@@ -80,14 +80,6 @@ function create_stage1_choose (){
     },this);
 
     //文字說明
-    // TextBox_x=width*0.15;
-    // TextBox_y=height*0.75;
-    // var TalkBox_config =
-    // {
-    //     wrapWidth: width*0.5,
-    //     fixedWidth: width*0.55,
-    //     fixedHeight: height*0.15,
-    // };
     PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
     back=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
