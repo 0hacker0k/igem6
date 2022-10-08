@@ -32,7 +32,7 @@
         <div class="in_center">
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;To engineer the PUFA-producing system in <i>E. coli</i>, we focused on the <i>pfa</i> genes from the deep sea bacterium <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>. In the deep sea bacterium, the <i>pfa</i> genes are translated into protein and cooperate together as a megasynthase to  synthesize PUFA by the polyketide synthase (PKS) pathway. The <i>pfa A</i>-D genes encode proteins containing many functional domains for PKS pathway, such as acyl carrier protein (ACP), 3-Ketoacyl-ACP reductase (KR), 3-Ketoacyl synthase (KS), 3-Hydroxydecanoyl-ACP dehydratase (DH), and acyltransferase (AT). The <i>pfa E</i> encodes phosphopantetheinyl transferase (PPTase). Each functional domain plays a role in modification of final products, carbon chain elongation and carrying intermediate products.
+                &emsp;&emsp;To engineer the PUFA-producing system in <i>E. coli</i>, we focused on the <i>pfa</i> genes from the deep sea bacterium <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>. In the deep sea bacterium, the <i>pfa</i> genes are translated into protein and cooperate together as a megasynthase to  synthesize PUFA by the polyketide synthase (PKS) pathway. The <i>pfa A-D</i> genes encode proteins containing many functional domains for PKS pathway, such as acyl carrier protein (ACP), 3-Ketoacyl-ACP reductase (KR), 3-Ketoacyl synthase (KS), 3-Hydroxydecanoyl-ACP dehydratase (DH), and acyltransferase (AT). The <i>pfa E</i> encodes phosphopantetheinyl transferase (PPTase). Each functional domain plays a role in modification of final products, carbon chain elongation and carrying intermediate products.
             </p>
             <p>
                 &emsp;&emsp;In brief, the PKS pathway starts from the activation of ACP by PPTase. After that, the AT domain will transfer the malonyl-CoA, which is the raw material of PUFA, to the ACPs. The backbone of malonyl-ACP will be further elongated by KS and AT domains, while KR, DH, ER domains are responsible for modification of the intermediate products. Finally, the PUFA will be produced.
@@ -82,7 +82,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;On the other hand, we also enhanced PUFA production through expressing acetyl-CoA carboxylase (ACC) from <i>Corynebacterium glutamicum</i> with <i>pfa</i> genes. The ACC protein is a multisubunit complex containing three subunits encoded by <i>AccBC</i>, <i>AccD1</i>, and <i>AccE</i>. The function of ACC is biosynthesis of malonyl-coA, the raw material of PUFA. With greater raw material, more PUFA can be produced by <i>E. coli</i> through our PUFA-producing system.
+                &emsp;&emsp;On the other hand, we also enhanced PUFA production through expressing acetyl-CoA carboxylase (ACC) from <i>Corynebacterium glutamicum</i> with <i>pfa</i> genes. The ACC protein is a multisubunit complex containing three subunits encoded by <i>AccBC</i>, <i>AccD1</i>, and <i>AccE</i>. The function of ACC is biosynthesis of malonyl-CoA, the raw material of PUFA. With greater raw material, more PUFA can be produced by <i>E. coli</i> through our PUFA-producing system.
             </p>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -106,7 +106,7 @@
                 2. We provided a biobrick containing <i>pfa B</i> coding sequence from the eicosapentaenoic acid (EPA)-producing deep sea bacteria <i>Shewanella pneumatophori</i>.
             </p>
             <p class="h25">
-                &emsp;&emsp;In <i>Shewanella pneumatophori</i>, the multisubunit enzyme pfa responsible for EPA biosynthesis is encoded by <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i> (Orikasa, Yamada et al. 2004). Orikasa et al. indicated that the replacement of <i>pfa B</i> from <i>Moritella marina</i> with <i>pfa B</i> from <i>Shewanella pneumatophori</i> could enhance the EPA production of multisubunit pfa from <i>Moritella marina</i> (Orikasa, Tanaka et al. 2009).
+                &emsp;&emsp;In <i>Shewanella pneumatophori</i>, the multisubunit enzyme pfa responsible for EPA biosynthesis is encoded by <i>pfa A</i>, <i>pfa B'</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i> (Orikasa, Yamada et al. 2004). Orikasa et al. indicated that the replacement of <i>pfa B</i> from <i>Moritella marina</i> with <i>pfa B'</i> from <i>Shewanella pneumatophori</i> could enhance the EPA production of multisubunit pfa from <i>Moritella marina</i> (Orikasa, Tanaka et al. 2009).
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="img" style="--width:100%;">
@@ -117,7 +117,7 @@
                 3. We provided biobricks containing the coding sequences of multisubunit acetyl-CoA carboxylase (ACC) from <i>Corynebacterium glutamicum</i>.
             </p>
             <p class="h25">
-                &emsp;&emsp;The multisubunit enzyme ACC is responsible for the biosynthesis of malonyl-CoA, which is the raw material necessary for PUFA production. The ACC enzyme contains three Acc genes, including <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> from <i>Corynebacterium glutamicum</i>. The ectopic expression of ACC enzyme can increase the rate of fatty acid synthesis (Davis, Solbiati et al. 2000).
+                &emsp;&emsp;The multisubunit enzyme ACC is responsible for the biosynthesis of malonyl-CoA, which is the raw material necessary for PUFA production. The ACC enzyme contains three <i>Acc</i> genes, including <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> from <i>Corynebacterium glutamicum</i>. The ectopic expression of ACC enzyme can increase the rate of fatty acid synthesis (Davis, Solbiati et al. 2000).
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="img" style="--width:100%;">
@@ -139,7 +139,7 @@
                 5. We designed the expression method for expressing large protein and swapping genes
             </p>
             <p class="h25">
-                &emsp;&emsp;Among the five <i>pfa</i> genes (<i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i>), <i>pfa A</i> and <i>pfa C</i> genes are the largest (~8kb and ~6kb, respectively). Therefore, we decided to clone these two genes into different vectors to avoid the potential expression problem (Rosano and Ceccarelli 2014). The largest subunit, <i>pfa A</i> was cloned into the pColdI vector with <i>pfa D</i> (1.6kb) for expression, since this cold shock protein activating vector is suited for expressing large proteins. The <i>pfa C</i> gene is cloned into pSTV28 vector with <i>pfa B</i> (2.6kb) and <i>pfa E</i> (0.6kb) genes. Accordingly, these two pfa-expressing vectors of similar size may avoid the problem of transformation efficiency caused by plasmid size (Rosano and Ceccarelli 2014). 
+                &emsp;&emsp;Among the five <i>pfa</i> genes (<i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i>), <i>pfa A</i> and <i>pfa C</i> genes are the largest (~8 kb and ~6 kb, respectively). Therefore, we decided to clone these two genes into different vectors to avoid the potential expression problem (Rosano and Ceccarelli 2014). The largest subunit, <i>pfa A</i> was cloned into the pColdI vector with <i>pfa D</i> (1.6 kb) for expression, since this cold shock protein activating vector is suited for expressing large proteins. The <i>pfa C</i> gene is cloned into pSTV28 vector with <i>pfa B'</i> (2.3 kb) and <i>pfa E</i> (0.6 kb) genes. Accordingly, these two pfa-expressing vectors of similar size may avoid the problem of transformation efficiency caused by plasmid size (Rosano and Ceccarelli 2014). 
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="img" style="--width:100%;">

@@ -6,6 +6,7 @@ a{
 }
 .full_size_image{
     width:100%;
+    padding-left: 30%;
 }
 .overview{
     text-align: center;
@@ -52,12 +53,13 @@ p{
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around !important;
+    padding-left:30%;
 }
 .guide{
     position: fixed;
     bottom:0%;
     left: 0%;
-    /* width: 30%; */
+    width: 30%;
     z-index: 99;
     height: 100vh;
     /* width:calc(60% - 20rem); */
@@ -81,7 +83,7 @@ p{
     height: 4px;
     background-color: #f00;
     transition: .4s .2s;
-  }
+}
 .guide_sub_label{
     cursor: pointer;
     color: #3C3D3E;
@@ -108,12 +110,12 @@ p{
     position: relative;
     width:2em;
     height: 100vh;
-    display : block;
+    display : none;
     float:left;
     cursor: pointer;
 }
 .in_center{
-    width: calc(40% + 20rem);
+    width: calc(60% + 8rem);
     text-align: left;
 }
 img{
@@ -243,4 +245,24 @@ img{
     font-size: calc(0.7em + 0.7vw);
     margin: auto;
     display: flex;
+}
+.overview{
+    padding-left:30%;
+}
+@media all and (max-aspect-ratio:1/1){
+    .overview{
+        padding-left:0%;
+    }
+    .article{
+        padding-left: 0%;
+    }
+    .guide{
+        width: auto;
+    }
+    #expansion{
+        display : block;
+    }
+    .full_size_image{
+        padding: 0;
+    }
 }
