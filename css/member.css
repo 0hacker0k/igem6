@@ -409,6 +409,48 @@ p{
         order: var(--id);
         padding-bottom: calc(40%/3*4);
     }
+    .primary_title{
+        width: 40%;
+        order: var(--id);
+        padding-bottom: calc(40%/3*4);
+    }
+    .primary_person{
+        width: 60%;
+        order: var(--id);
+        padding-bottom: calc(60%/3*4);
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .secondary_title{
+        width: 100%;
+        order: var(--id);
+        padding-bottom: calc(20%/3*4);
+    }
+    .secondary_person{
+        width: 35%;
+        order: var(--id);
+        padding-bottom: calc(35%/3*4);
+        margin-left: 32.5%;
+        margin-right: 32.5%;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+    }
+    .instructors_title{
+        width: 100%;
+        order: var(--id);
+        padding-bottom: calc(20%/3*4);
+    }
+    .instructors_person{
+        width: 35%;
+        order: var(--id);
+        padding-bottom: calc(35%/3*4);
+        margin-left: 32.5%;
+        margin-right: 32.5%;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+    }
     .modal-dialog{
         width:90%;
         min-width:0;
