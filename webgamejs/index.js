@@ -150,6 +150,12 @@ const stage_1_pcr={
     create: create_stage1_pcr,
     update: update_stage1_pcr
 }
+const stage_1_story_after={
+    key: 'stage_1_story_after',
+    preload: preload_story1_after,
+    create: create_story1_after,
+    update: update_story1_after
+}
 const stage_2_gel={
     key: 'stage_2_gel',
     preload: preload_stage2_gel,

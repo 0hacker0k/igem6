@@ -1,9 +1,9 @@
 debug=1;
-function preload_story1 (){
+function preload_story1_after (){
     con=
     {//直接調參數
         "img_num_start":12,
-        "img_num_end":14,
+        "img_num_end":15,
         "npc_key":'npc1',
         "next_page":map_1,
         "lan":lan_story1_after,
@@ -25,7 +25,7 @@ function preload_story1 (){
     this.load.image(con.npc_key, prefix+'/map/'+con.npc_key+'.png');
 }
 
-function create_story1 (){
+function create_story1_after (){
     loading_transition(this,-500*width/800,0);
     //--------------------場景設定--------------------
     //幻燈片
@@ -35,7 +35,7 @@ function create_story1 (){
     //對話框
     PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
-    back=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
+    backer=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
     npc=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, con.npc_key);
     descript_count=con.descript_count;
     descript_limit=con.descript_limit;
@@ -70,7 +70,7 @@ function create_story1 (){
     start_transition(this);
 }
 
-function update_story1 (){//與外界有關的互動
+function update_story1_after (){//與外界有關的互動
     if(descript_count<=descript_limit){
         updateTalkbox(con.lan,con.slide);
     }

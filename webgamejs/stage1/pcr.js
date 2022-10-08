@@ -196,7 +196,7 @@ function create_stage1_pcr (){
             bigger(object,count+1);
         },13);
     }
-    create_congratulation(this,map_1);
+    create_congratulation(this,stage_1_story_after);
     //文字說明
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
     backer=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');

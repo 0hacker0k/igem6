@@ -7,6 +7,7 @@
 <script src="<?php echo webgamejsfile;?>/stage1/sequence.js"></script>
 <script src="<?php echo webgamejsfile;?>/stage1/pcr.js"></script>
 <script src="<?php echo webgamejsfile;?>/stage1/story1.js"></script>
+<script src="<?php echo webgamejsfile;?>/stage1/story1-after.js"></script>
 <script src="<?php echo webgamejsfile;?>/stage2/gel.js"></script>
 <script src="<?php echo webgamejsfile;?>/stage3/flop.js"></script>
 <script src="<?php echo webgamejsfile;?>/stage4/shoot.js"></script>
