@@ -258,7 +258,7 @@ function create_stage1_sequence (){
     //文字說明
     PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
-    back=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
+    backer=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
     descript_count=1;
     descript_limit=descript_limit=Object.keys(lan_stage1_seq).length;
     //back

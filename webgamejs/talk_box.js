@@ -5,7 +5,7 @@ var preslide;
 var slides = [];
 var PACO;
 var Sprite;
-var back;
+var backer;
 var npc;
 var barrier=null;
 function load_talkbox(where){//載入動畫檔
@@ -172,8 +172,8 @@ function updateTalkbox(lan,slide=undefined){
                 Sprite.start(lan["vo_"+descript_count.toString()],50);
                 descript_count++;
             }else if(lan["back_"+descript_count.toString()]!=undefined){
-                back.setInteractive().setVisible(true);
-                back.start(lan["back_"+descript_count.toString()],50);
+                backer.setInteractive().setVisible(true);
+                backer.start(lan["back_"+descript_count.toString()],50);
                 descript_count++;
             }else if(lan["npc_"+descript_count.toString()]!=undefined){
                 npc.setInteractive().setVisible(true);

@@ -199,7 +199,7 @@ function create_stage1_pcr (){
     create_congratulation(this,map_1);
     //文字說明
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
-    back=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
+    backer=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
     descript_count=1;
     descript_limit=Object.keys(lan_stage1_pcr).length;
     //back

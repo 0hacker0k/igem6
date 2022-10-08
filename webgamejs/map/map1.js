@@ -3,7 +3,7 @@ function preload (){
     load_transition(this);
     this.load.image('map', prefix+'/map/map.jpg');//載入一般圖片
     for(var i=1;i<=5;i++){
-        this.load.image('stage'+i, prefix+'/map/NPC'+i+'.png');//載入一般圖片
+        this.load.image('stage'+i, prefix+'/map/npc'+i+'.png');//載入一般圖片
     }
     if(debug==1){
         this.load.image('D_center', prefix+'/main/debug-center.png');
