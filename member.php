@@ -27,6 +27,9 @@
                     <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carousel_member" data-bs-slide-to="6" aria-label="Slide 7"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="4000">
@@ -158,6 +161,83 @@
                             <div class="hp_person" style="--id:8">
                                 <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup19">
                                     <img class="person_img lazy" data-src="<?php echo imgfile."/human/members019.jpg";?>" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="a_group">
+                            <div class="primary_title" style="--id:1">
+                                <div class="member_portrait">
+                                    Primary Principal Investigator
+                                </div>
+                            </div>
+                            <div class="primary_person" style="--id:2">
+                                <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup20">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                </button>
+                            </div>
+                            <div class="primary_person" style="--id:3">
+                                <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup21">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="a_group">
+                            <div class="secondary_title" style="--id:1">
+                                <div class="member_portrait">
+                                    Secondary Principal Investigators
+                                </div>
+                            </div>
+                            <div class="secondary_person" style="--id:2">
+                                <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup22">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                </button>
+                            </div>
+                            <div class="secondary_person" style="--id:3">
+                                <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup23">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                </button>
+                            </div>
+                            <div class="secondary_person" style="--id:4">
+                                <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup24">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                </button>
+                            </div>
+                            <div class="secondary_person" style="--id:5">
+                                <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup25">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="a_group">
+                            <div class="instructors_title" style="--id:1">
+                                <div class="member_portrait">
+                                    Instructors
+                                </div>
+                            </div>
+                            <div class="instructors_person" style="--id:2">
+                                <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup26">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                </button>
+                            </div>
+                            <div class="instructors_person" style="--id:3">
+                                <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup27">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                </button>
+                            </div>
+                            <div class="instructors_person" style="--id:4">
+                                <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup28">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                </button>
+                            </div>
+                            <div class="instructors_person" style="--id:5">
+                                <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup29">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
                                 </button>
                             </div>
                         </div>
@@ -570,6 +650,156 @@
             $popup_img_alt="";
             $person_title="#DANIEL_WALKER";
             $person_icon="🤩";
+            include "./sub/popup.php";
+        ?>
+        <?php
+            $id=20;
+            $name="Name";
+            $job_title="Job title";
+            $content="
+            <p>
+                content
+            </p>";
+            $title_explain="just example";
+            $popup_img="/human/members115.jpg";
+            $popup_img_alt="SrRb always forgets me(alt).";
+            $person_title="#EXAMPLE";
+            $person_icon="🥺";
+            include "./sub/popup.php";
+        ?>
+        <?php
+            $id=21;
+            $name="Name";
+            $job_title="Job title";
+            $content="
+            <p>
+                content
+            </p>";
+            $title_explain="just example";
+            $popup_img="/human/members115.jpg";
+            $popup_img_alt="SrRb always forgets me(alt).";
+            $person_title="#EXAMPLE";
+            $person_icon="🥺";
+            include "./sub/popup.php";
+        ?>
+        <?php
+            $id=22;
+            $name="Name";
+            $job_title="Job title";
+            $content="
+            <p>
+                content
+            </p>";
+            $title_explain="just example";
+            $popup_img="/human/members115.jpg";
+            $popup_img_alt="SrRb always forgets me(alt).";
+            $person_title="#EXAMPLE";
+            $person_icon="🥺";
+            include "./sub/popup.php";
+        ?>
+        <?php
+            $id=23;
+            $name="Name";
+            $job_title="Job title";
+            $content="
+            <p>
+                content
+            </p>";
+            $title_explain="just example";
+            $popup_img="/human/members115.jpg";
+            $popup_img_alt="SrRb always forgets me(alt).";
+            $person_title="#EXAMPLE";
+            $person_icon="🥺";
+            include "./sub/popup.php";
+        ?>
+        <?php
+            $id=24;
+            $name="Name";
+            $job_title="Job title";
+            $content="
+            <p>
+                content
+            </p>";
+            $title_explain="just example";
+            $popup_img="/human/members115.jpg";
+            $popup_img_alt="SrRb always forgets me(alt).";
+            $person_title="#EXAMPLE";
+            $person_icon="🥺";
+            include "./sub/popup.php";
+        ?>
+        <?php
+            $id=25;
+            $name="Name";
+            $job_title="Job title";
+            $content="
+            <p>
+                content
+            </p>";
+            $title_explain="just example";
+            $popup_img="/human/members115.jpg";
+            $popup_img_alt="SrRb always forgets me(alt).";
+            $person_title="#EXAMPLE";
+            $person_icon="🥺";
+            include "./sub/popup.php";
+        ?>
+        <?php
+            $id=26;
+            $name="Name";
+            $job_title="Job title";
+            $content="
+            <p>
+                content
+            </p>";
+            $title_explain="just example";
+            $popup_img="/human/members115.jpg";
+            $popup_img_alt="SrRb always forgets me(alt).";
+            $person_title="#EXAMPLE";
+            $person_icon="🥺";
+            include "./sub/popup.php";
+        ?>
+        <?php
+            $id=27;
+            $name="Name";
+            $job_title="Job title";
+            $content="
+            <p>
+                content
+            </p>";
+            $title_explain="just example";
+            $popup_img="/human/members115.jpg";
+            $popup_img_alt="SrRb always forgets me(alt).";
+            $person_title="#EXAMPLE";
+            $person_icon="🥺";
+            include "./sub/popup.php";
+        ?>
+        <?php
+            $id=28;
+            $name="Name";
+            $job_title="Job title";
+            $content="
+            <p>
+                content
+            </p>";
+            $title_explain="just example";
+            $popup_img="/human/members115.jpg";
+            $popup_img_alt="SrRb always forgets me(alt).";
+            $person_title="#EXAMPLE";
+            $person_icon="🥺";
+            include "./sub/popup.php";
+        ?>
+        <?php
+            $id=29;
+            $name="Name";
+            $job_title="Job title";
+            $content="
+            <p>
+                content
+            </p>";
+            $title_explain="just example";
+            $popup_img="/human/members115.jpg";
+            $popup_img_alt="SrRb always forgets me(alt).";
+            $person_title="#EXAMPLE";
+            $person_icon="🥺";
             include "./sub/popup.php";
         ?>
     </div>

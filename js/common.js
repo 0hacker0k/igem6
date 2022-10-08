@@ -6,8 +6,8 @@ function guide_change(){
     var guide_control=document.getElementById("expansion");
     var content=document.getElementsByClassName("in_center")[0];
     guide_content.style.paddingTop=document.getElementById("navbar").clientHeight+"px";
-    guide_content=screen_height+"px";
-    guide_control=screen_height+"px";
+    guide_content.style.height=screen_height+"px";
+    guide_control.style.height=screen_height+"px";
     guide.style.height=screen_height+"px";
     guide.style.left= "calc("+(-document.getElementById("guide_content").clientWidth)+"px)";// - 0.5em
     guide.style.transition="0.0s";
