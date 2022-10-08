@@ -67,29 +67,33 @@ lan_story1={
 }
 lan_stage1=
 {
-    "vo_1":"When we want to express the protein we want by using a gene from a species, we will extract its all DNA first, which called “Genome”. I have extracted the DNA. Now you have to choose a gene from it.",
-    "pa_2":"Does the gene have to extract from the species?",
-    "vo_3":"You can also order the gene order you want from a biotech company. But this is free-to-play. So…you know…",
-    "pa_4":"Alright…"
+    "back_1":"DNA, deoxyribonucleic acid, consists of four kinds of nucleotide, and the nucleotide composes three subunit molecules: a nucleobase, a five-carbon sugar, and a phosphate group. DNA carries the genetic instructions to regulate our physiology.",
+    "vo_2":"When we want to express the gene from a species to produce the protein, we will extract its whole DNA first, called “Genome”. I have extracted the genome. Now you have to choose a gene from it.",
+    "pa_3":"Does the gene have to be extracted from the species??",
+    "vo_4":"You can also order the gene order you want from a biotech company. But this is free-to-play. So…you know…",
+    "pa_5":"Alright…",
+    "back_6":"(Click a sequence, choose the difficulty)"
 }
 lan_stage1_seq=
 {
-    "vo_1":"Well, looks like you have chosen a gene. Usually, you should know the whole sequence and (大小). However, due to some reason, you should guess the sequence by yourself."
+    "vo_1":"Well, looks like you have chosen a gene. Usually, you should know the whole sequence and gene size. However, due to some reason, you should guess the sequence by yourself.",
+    "back_2":"(Click the ATCG button, and try to find the gene sequence!)"
 }
 
 lan_stage1_pcr=
 {
-    "vo_1":"After finding the target gene sequence, we'll use polymerase chain reaction A.K.A. “PCR” to clone the target gene in quantity.",
-    "vo_2":"As the result, there’s sufficient DNA to use.",
+    "vo_1":"After finding the target gene sequence, we'll use polymerase chain reaction A.K.A. “PCR” to amplify the target gene.",
+    "vo_2":"As a result, there’s sufficient DNA to use.",
     "vo_3":"In PCR, we’ll add three solutions:",
-    "vo_4":"1. Template, the target gene we gonna amplify. As the same as the gene you just choose.",
-    "vo_5":"2. Primer, which can combine with the single-stranded DNA and define the range that PCR should clone.",
-    "vo_6":"3. Master Mix, various element that PCR require, including DNA polymerase and nucleotides.",
+    "vo_4":"1. Template, the target gene we're gonna amplify. As the same as the gene you just choose.",
+    "vo_5":"2. Primer, which can combine with the single-stranded DNA and define the range that PCR should amplify.",
+    "vo_6":"3. Master Mix, various elements that PCR require, including DNA polymerase and nucleotides.",
     "vo_7":"And through three stages:",
-    "vo_8":"1. Denaturation, using high temperature to split the DNA into single-stranded DNA.",
+    "vo_8":"1. Denaturation, using high temperature to break the double-stranded DNA into two single-stranded DNA.",
     "vo_9":"2. Annealing, using the primer to anneal with single-stranded DNA after cooling.",
     "vo_10":"3. Elongation, using DNA polymerase to make the sequence that is complementary to the target DNA by slightly increasing the temperature.",
-    "vo_11":"Now let’s try to elongate the DNA~"
+    "vo_11":"Now let’s try to elongate the DNA~",
+    "back_12":"( Drug the nucleotides ( ATCG ) into the complementary nitrogenous base.)"
 
 }
 lan_story1_after=
@@ -132,17 +136,16 @@ lan_stage2=
 {
     "vo_1":"In the previous stages, we got the target gene and amplified it by PCR.",
     "vo_2":"But there are two problems:",
-    "vo_3":"1. we can’t ensure the gene size that PCR amplified is right.",
-    "vo_4":"2. Expect the target gene, the other gene sequences might be left over after PCR.",
-    "vo_5":"3. Master Mix, various element that PCR require, including DNA polymerase and nucleotides.",
-    "vo_6":"Therefore, we gonna use “Gel electrophoresis” to analyze and extract the target gene.",
-    "vo_7":"In this stage, you will go through four steps:",
-    "vo_8":"1. Preparing gel, picking up the conical flask, adding TAE buffer and agarose, heating in the microwave, and pouring in the mold to cool.",
-    "vo_9":"2. Loading, picking up the pipette, taking and injecting the marker and the template into the well of the gel one by one.",
-    "vo_10":"3. Running gel, immersing the gel in the electrophoresis tank with TAE buffer, powering on, and waiting for a period of time.",
-    "vo_11":"4. Gel imaging, irradiating the gel with UV light, taking the photo, and observing the result.",
-    "vo_12":"Originally, we’ll dyeing the DNA by EtBr, a kind of carcinogen. But I will take care of it this time.",
-    "pa_13":"What an amazing game welfare…"
+    "vo_3":"1. We can’t ensure the gene size that PCR has amplified is right.",
+    "vo_4":"2. After PCR, we only need the target genes, however, there are some enzymes and buffers in the mixture, so we should remove them.",
+    "vo_5":"Therefore, we are going to use “Gel electrophoresis” to analyze and extract the target gene.",
+    "vo_6":"In this stage, you will go through four steps:",
+    "vo_7":"1. Preparing gel, picking up the conical flask, adding TAE buffer and agarose, heating in the microwave, and pouring in the mold to cool.",
+    "vo_8":"2. Loading marker & sample, picking up the pipette, taking and injecting the marker and the template into the well of the gel one by one.",
+    "vo_9":"3. Running gel electrophoresis, immersing the gel in the electrophoresis tank with TAE buffer, powering on, and waiting for a period of time.",
+    "vo_10":"4. Picturing the gel, irradiating the gel with UV light, taking pictures, and observing the result.",
+    "vo_11":"Originally, we’ll dye the DNA with a kind of carcinogen called EtBr. But I will take care of it this time.",
+    "pa_12":"What an amazing game welfare…"
 }
 lan_story2_after=
 {
@@ -157,6 +160,34 @@ lan_story2_after=
     "pa_9":"( This couple is amazing. )",
     "npc_10":"You have a strong belief, so keep going on. Although I believe that the end of your path is remorse and pain, try to put yourself first.",
     "npc_11":"This is the award – the Pstv28 which ligates the pfa B, pfa C, and pfa E, the journey of only sadness to you will continue."
+}
+lan_stage3=
+{
+    "vo_1":"Just now we separate the target gene by running the gel, but the target genes are still inside of the gel, so we need purification to obtain that very gene.",
+    "vo_2":"After obtaining the purified target gene, we have to connect it to the plasmid to let the gene express inside the E. coli. On the plasmid, there are several sequences with specific functions to control the expression of the target gene in E. coli.",
+    "vo_3":"To let them connect to each other, we will use the same ligase to digest on both the plasmid and the gene. After digestion, that it’s easier to connect the plasmid and the gene. Thanks for the abundant fortune! We’ve taken care of it, what you have to do now is to pair the plasmid and the corresponding gene. In you go!",
+    "pa_4":"What the frog?!",
+    "vo_5":"Remember the gene sequences and the corresponding plasmid of every card, finish the pairing!"
+}
+lan_stage4=
+{
+    "vo_1":"You have nailed the mission and successfully connected the target gene and plasmid. Now, to express this gene, we need to transform it into E. coli to express the plasmid.",
+    "pa_2":"Why choose E. coli?",
+    "vo_3":"Because culturing E. coli is very convenient and efficient, we use E. coli to conduct biological experiments a lot. As long as we transform the plasmid that has ligated the corresponding gene we want to express, we can get the gene or protein from E. coli.",
+    "pa_4":"Fabulous! I don’t see this in my textbooks!",
+    "vo_5":"What are we waiting for? Let’s dig in!"
+}
+lan_stage5=
+{
+    "pa_1":"How do I know whether the plasmids are transformed successfully into the E.coli?",
+    "vo_2":"If the plasmids are transformed successfully into the E. coli, after 16 hours, we can observe colonies on the plates contained with antibiotics. Those colonies probably contain the genes you want.",
+    "pa_3":"Cool! How does that work?",
+    "vo_4":"Because the genes of the plasmids, which have the ability to resist the antibiotic, are functioning. Hence, we can see these colonies. From the results of your operation, you’ve successfully transformed the plasmid which had ligated the corresponding gene into E. coli.",
+    "vo_5":"Now, we can pick up these colonies and culture them largely.",
+    "pa_6":"Why do we have to culture them largely? I thought we already had the target bacteria in hand.",
+    "vo_7":"Because we need a great amount of bacteria for further research, like extracting plasmids or proteins.",
+    "pa_8":"Ooh! I see!",
+    "vo_9":"To begin with, pick these colonies up!"
 }
 lan_ending_scene=
 [

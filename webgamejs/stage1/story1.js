@@ -9,7 +9,7 @@ function preload_story1 (){
         "lan":lan_story1,
         "slide":slide_story1,
         'descript_count':1,
-        'descript_limit':19
+        'descript_limit':Object.keys(lan_story1).length
     };
     load_transition(this);
     console.log(con);
@@ -33,18 +33,10 @@ function create_story1 (){
         slides[i]=this.add.image(0,0,'slide'+i).setOrigin(0).setDisplaySize(width,height).setVisible(false);
     }
     //對話框
-    TextBox_x=width*0.15;
-    TextBox_y=height*0.75;
-    var config =
-    {
-        wrapWidth: width*0.5,
-        fixedWidth: width*0.55,
-        fixedHeight: height*0.15,
-    };
-    PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
-    Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
-    back=new createTextBox(this, TextBox_x, TextBox_y, config, 'backer');
-    npc=new createTextBox(this, TextBox_x, TextBox_y, config, con.npc_key);
+    PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
+    Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
+    back=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
+    npc=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, con.npc_key);
     descript_count=con.descript_count;
     descript_limit=con.descript_limit;
     //轉去下個場

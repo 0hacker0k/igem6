@@ -21,21 +21,12 @@ function create_story0 (){
         slides[i]=this.add.image(0,0,'slide'+i).setOrigin(0).setDisplaySize(width,height).setVisible(false);
     }
     //對話框
-    TextBox_x=width*0.15;
-    TextBox_y=height*0.75;
-    var config =
-    {
-        wrapWidth: width*0.5,
-        fixedWidth: width*0.55,
-        fixedHeight: height*0.15,
-    };
-    
-    PACO=new createTextBox(this, TextBox_x, TextBox_y, config, 'PACO');
-    Sprite=new createTextBox(this, TextBox_x, TextBox_y, config, 'Sprite');
-    back=new createTextBox(this, TextBox_x, TextBox_y, config, 'backer');
+    PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
+    Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
+    back=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
     //back.start(lan_story0.back_1,50);
     descript_count=1;
-    descript_limit=27;
+    descript_limit=Object.keys(lan_story0).length;
     this.input.on("pointerup",function(){
         if(stop==0){
             finish_transition(this,(0.8)*width,(0.0)*height);

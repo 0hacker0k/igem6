@@ -34,100 +34,115 @@
     <div class="overview justify-content-around">
         <div class="col-7">
             <div id="1" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Implementation</h1>
-            </div>
+                <h1 class="title_label" style="color: #EA2B1F;">Overview</h1>
+            </div>    
             <p>
-                Being the most notorious, life-taking disease in this era, the Cardiovascular disease ( CVD ) issue is definitely urged to be resolved. 
-            </p>
-            <p>
-                To prevent CVD, we hope to use synthetic biology to produce pure Eicosapentaenoic acid ( EPA ) supplements serving as the uncontaminated, effective alternative. Applying this idea to reality, we had been challenged by many other experts. With their professional suggestions, we can shift the naive idea into a comprehensive resolution that can address the problem properly. In light of the marketing idea, we also plan to create an enhanced version of our product form to suit the market more.
+                Being the best known deadly disease of this era, cardiovascular disease (CVD) issue is definitely an issue that needs to be resolved. To prevent the CVD crisis, we established the PACOmega project to raise concern about CVD, and to provide an alternative source of eicosapentaenoic acid (EPA) supplements.
             </p>
         </div>
     </div>
 
-    <br>
-    <br>
+    
+    
 
     <div class="article">
         <div class="in_center">
-            <div id="2" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Clinical Studies</h1>
-            </div>
-            <p>
-                &emsp;&emsp;Let's start with the mechanism of how EPA reduces the chance of CVD. The major cause of CVD is Atherosclerosis, which is caused by atheromas. When the endothelium cells of blood vessels get injured, fatty acids like low-density lipid ( LDL ) and cholesterol accumulates and forms atheromatous plaque, which leads to vascular sclerosis and causes the CVD further. EPA can reduce such a situation. According to the reference, EPA can induce the enzymes  producing the substances which can relax the smooth muscle cell and provide anti-inflammatory action, leading to the reduction of LDL, so the occurrence of CVD will decrease.
-            </p>
-            <br>
-            <div id="3" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Target User</h1>
-            </div>
-            <p>
-                &emsp;&emsp;According to the statistical data of WHO, in 2021, there were 32% of the deaths caused by CVD in the world. In the meanwhile, in Taiwan, there were more than 42 thousand people dead because of CVD, only next to cancer. So the problem of CVD cannot be underestimated. The common symptom of CVD include: 
-            </p>
-            <ul>
-                <li class="biggerli">
-                    Chest pain, chest tightness, chest pressure and chest discomfort (angina)
-                </li>
-                <li class="biggerli">
-                    Shortness of breath
-                </li>
-                <li class="biggerli">
-                    Pain in the neck, jaw, throat, upper belly area or back
-                </li>
-                <li class="biggerli">
-                    Pain, numbness, weakness or coldness in the legs or arms if the blood vessels in those body areas are narrowed
-                </li>
-            </ul>
-            <p>
-                &emsp;&emsp;When the symptoms above happen, the only way to solve it is seeking emergency healthcare. Luckily, we can do something to prevent us from getting CVD. Generally speaking, the elders are the main group who will get CVD easily. So, we not only held an activity to promote the concepts of CVD prevention, like doing sports more often, consuming less fried food, but also regarded them as our target users. But, CVD is a kind of degenerative disease, which means even if you are young, you still have the chance of getting CVD. As a result, during Open lab activity, we also emphasized the importance of CVD.
-            </p>
-            <br>
-            <br>
             
-            <br>
-            <div id="6" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Advantage</h1>
-            </div>
+        
+
+            <p>
+                &emsp;&emsp;According to the statistical data of WHO, in 2019, 32% of deaths worldwide were caused by CVD. In Taiwan, severe CVD caused more than 42 thousand deaths. CVD is a progressive disease, which means that even if you are young, you still need to take care of your physical condition to reduce the risk of CVD in the future. 
+            </p>
+            
+            
+            <p>
+                &emsp;&emsp;Accordingly, we defined our target audiences (TAs) based on age. To reach out to our TAs and raise their concern about the CVD crisis, we planned the following activities: 
+            </p>
             <ul>
-                <li>
-                    <h2 class="biggerli">High purity:</h2>
-                    <p>
-                        According to reference, <i>pfa B</i> in the pfa gene can decide the kind of omega-3 bacteria produced. Compared with the fish oil, our PACOmega can more effectively focus on CVD prevention.
-                    </p>
+                <li class="biggerli">
+                    To reach out to the elderly TA efficiently, we consulted with the "Center for Innovative Research on Aging Society (CIRAS)" in our university. CIRAS pointed out that in-person communication is the most efficient way to convice the elderly of the importance of CVD prevention. Therefore, we held a campus walking activity to gather the local elderly and share about a healthy lifestyle using fun games and exercises (link to education).
                 </li>
-                <li>
-                    <h2 class="biggerli">Zero contamination of heavy metal and microplastics:</h2>
-                    <p>
-                        Contrast with EPA extracted from fish oil, our PACOmega is extracted from <i>E. coli</i>, which can solve the problem of the contamination of heavy metal and microplastics.
-                    </p>
+                <li class="biggerli">
+                    For the young TA, we shared information about the CVD crisis and had a special activity in downtown Chiayi on World Heart Day. Furthermore, to let the youth know that synthetic biology is also a solution for the CVD crisis, we held the Open lab activity to share the beauty of synthetic biology, the CVD crisis, and how the PACOmega project benefits CVD prevention (link to education). 
                 </li>
-                <li>
-                    <h2 class="biggerli">Vegetarian friendly</h2>
-                    <p>
-                        Major EPA source is fish oil, which is inconvenient for vegetarians. Therefore, we provide PACOmega, another source of EPA, when vegetarians reject the EPA from fish oil.
-                    </p>
+                <li class="biggerli">
+                    Finally, we thought about how to reach out to more people to promote CVD prevention. The answer was a simple web game, which is suitable for all ages and not limited to the local audience.  (link to education).
                 </li>
             </ul>
-            <div id="6" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Challenge</h1>
-            </div>
+
+
+
             <p>
-                &emsp;&emsp;According to the reference, we found that bacteria can produce pure EPA. However, the information of the actual production can be hardly found. We considered that the actual production is not big enough to be commercial. So, after making sure the EPA system we design works, we will transform it into the bacteria which is suitable for such work.
+                &emsp;&emsp;The common resource of EPA, fish and fish oils, might have some problems. For example, fish are at the top of the marine food chain. Therefore, contaminants, such as heavy metals and microplastics, may accumulate in the fish body and fish oil. Further, using fish as a source of EPA supplement will exhaust the marine resource in the future. Finally, the EPA from fish oil is not vegan-friendly. Since the number of vegetarians grows every year, a vegan-friendly EPA is a potential product for a new market. In addition, fish oils are a mixture of docosahexaenoic acid (DHA) and EPA, but a recent cohort study showed that the benefit of EPA for CVD prevention can be reduced to zero if mixed with DHA (Saini and Keum 2018, Sherratt, Libby et al. 2022). Together, we decided that a well-packaged, vegan-friendly, purified EPA would be our product.
             </p>
-            <div id="6" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Future Work</h1>
-            </div>
+
             <p>
+                &emsp;&emsp;To generate the alternative source of EPA, we decided to apply synthetic biology to produce EPA in E.Coli. Accordingly, we cloned the EPA-producing pfa genes from the deep sea bacteria Moritella marina and Shewanella pneumatophori. The cloned pfa genes were expressed in  E.Coli to generate EPA. Furthermore, we cloned and expressed AccBC, AccD1 and AccEgenes from Corynebacterium glutamicum with the pfa genes to enhance the EPA production. Finally, the EPA-rich bacteria will be harvested and EPA will be extracted by the Bligh & Dyer method in the lab or by supercritical fluid extraction in mass production. The full design is listed on the design page (link to design).
+            </p>
+
+            <p>
+                &emsp;&emsp;To make the purified EPA vegan-friendly, the enclosed capsule should not be made of an animal product, such as gelatin. Accordingly, we will choose carrageenans as the basic material for our vegan-friendly EPA capsule (Fauzi, Pudjiastuti et al. 2021).
+            </p>
+            
+            <div class="full_block">
+                <div class="img" style="--width:80%;">
+                    <img src="<?php echo imgfile;?>/implementation/implementation01.png"/>
+                </div>
+            </div>
+            
+
+            <p>
+                &emsp;&emsp;Since EPA is sensitive to the light, the storage bottle of EPA should be made of dark colored plastic. Alternatively, the EPA capsules could be packed in PTP Aluminum Foil.
+            </p>
+            <div class="full_block">
+                <div class="img" style="--width:80%;">
+                    <img src="<?php echo imgfile;?>/implementation/implementation02.png"/>
+                </div>
+            </div>
+            
+
+            <p>
+                &emsp;&emsp;There is no official daily recommended intake from the National Academies for EPA or DHA. However, the American Heart Association recommends 1 gram of EPA per day for adults and 0.5 gram EPA per day for children under 12 year old may promote cardiovascular health.  (Benvenga, Fama et al. 2022).  Accordingly, the minimum amount of EPA in each capsule should be 0.5 gram. Since the capsule will be slowly oxidized as the bottle is unsealed, the future product will be packed sixty capsules per bottle, one month usage for one adult.
+            </p>
+
+            <p>
+                &emsp;&emsp;To inform the customers, and as required by law, information for the user will be attached with the product.
+            </p>
+            <ul>
+                <li class="biggerli">Source </li>
+                <li class="biggerli">Product</li>
+                <li class="biggerli">Contents</li>
+                <li class="biggerli">Suggested dosage</li>
+                <li class="biggerli">Contraindications</li>
+                <li class="biggerli">Warnings</li>
+            </ul>
+            <p>
+                &emsp;&emsp;Together, we think that our PACOmega project will benefit the world.
+            </p>
+
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
+            
+            
+            
+            <p class="h25">
+                Reference:
                 <ol>
-                    <li class=biggerli>
-                        Keeping on finishing our design, making sure the <i>E. coli</i> can produce EPA and improving production.
+                    <li>
+                        Benvenga, S., F. Fama, L. G. Perdichizzi, A. Antonelli, G. Brenta, F. Vermiglio and M. Moleti (2022). "Fish and the Thyroid: A Janus Bifrons Relationship Caused by Pollutants and the Omega-3 Polyunsaturated Fatty Acids." Front Endocrinol (Lausanne) 13: 891233.
                     </li>
-                    <li class=biggerli>
-                        Transforming our EPA synthy system into the bacteria which is suitable for abundant production.
+                    <li>
+                        Fauzi, M., P. Pudjiastuti, A. C. Wibowo and E. Hendradi (2021). "Preparation, Properties and Potential of Carrageenan-Based Hard Capsules for Replacing Gelatine: A Review." Polymers (Basel) 13(16).
+                    </li>
+                    <li>
+                        Saini, R. K. and Y. S. Keum (2018). "Omega-3 and omega-6 polyunsaturated fatty acids: Dietary sources, metabolism, and significance - A review." Life Sci 203: 255-267.
+                    </li>
+                    <li>
+                        Sherratt, S. C. R., P. Libby, D. L. Bhatt and R. P. Mason (2022). "A biological rationale for the disparate effects of omega-3 fatty acids on cardiovascular disease outcomes." Prostaglandins Leukot Essent Fatty Acids 182: 102450.
                     </li>
                 </ol>
-            </p> 
-            <br>
-            <br>    
+            </p>
+                
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
         </div>
     </div>
     
