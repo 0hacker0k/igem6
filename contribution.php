@@ -17,11 +17,6 @@
         <div class="col-7">
             <div id="1" class="title-label-div">
                 <h1>Overview</h1>
-                <p>
-                    <b>
-                        CCU_TAIWAN contributed to polyunsaturated fatty acids (PUFAs) production by providing new biobricks and expression methods. 
-                    </b>
-                </p>
             </div>
         </div>
     </div>
@@ -30,6 +25,11 @@
 
     <div class="article">
         <div class="in_center">
+            <p>
+                <b>
+                    CCU_TAIWAN contributed to polyunsaturated fatty acids (PUFAs) production by providing new biobricks and expression methods. 
+                </b>
+            </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
                 &emsp;&emsp;To engineer the PUFA-producing system in <i>E. coli</i>, we focused on the <i>pfa</i> genes from the deep sea bacterium <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>. In the deep sea bacterium, the <i>pfa</i> genes are translated into protein and cooperate together as a megasynthase to  synthesize PUFA by the polyketide synthase (PKS) pathway. The <i>pfa A-D</i> genes encode proteins containing many functional domains for PKS pathway, such as acyl carrier protein (ACP), 3-Ketoacyl-ACP reductase (KR), 3-Ketoacyl synthase (KS), 3-Hydroxydecanoyl-ACP dehydratase (DH), and acyltransferase (AT). The <i>pfa E</i> encodes phosphopantetheinyl transferase (PPTase). Each functional domain plays a role in modification of final products, carbon chain elongation and carrying intermediate products.
@@ -84,6 +84,7 @@
             <p>
                 &emsp;&emsp;On the other hand, we also enhanced PUFA production through expressing acetyl-CoA carboxylase (ACC) from <i>Corynebacterium glutamicum</i> with <i>pfa</i> genes. The ACC protein is a multisubunit complex containing three subunits encoded by <i>AccBC</i>, <i>AccD1</i>, and <i>AccE</i>. The function of ACC is biosynthesis of malonyl-CoA, the raw material of PUFA. With greater raw material, more PUFA can be produced by <i>E. coli</i> through our PUFA-producing system.
             </p>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/contribution/contribution06.png"/>
@@ -92,10 +93,10 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p class="h15">
-                1. We provided biobricks containing the coding sequences of multisubunit enzyme pfa from the docosahexaenoic acid (DHA)-producing deep sea bacterial <i>Moritella marina</i>.    
+                1. We provided biobricks containing the coding sequences of multisubunit enzyme pfa from the docosahexaenoic acid (DHA)-producing deep sea bacteria <i>Moritella marina</i>.    
             </p>
             <p class="h25">
-                &emsp;&emsp;In <i>Moritella marina</i>, the DHA production is mediated by multisubunit enzyme pfa through the Polyketide synthase (PKS) pathway (Okuyama, Orikasa et al. 2007). The multisubunit enzyme pfa includes five <i>pfa</i> genes, including <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i>. It has been reported that the ectopic co-expression of <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i> genes in E.coli. successfully induced DHA production (Orikasa, Nishida et al. 2006).
+                &emsp;&emsp;In <i>Moritella marina</i>, the DHA production is mediated by multisubunit enzyme pfa through the Polyketide synthase (PKS) pathway (Okuyama, Orikasa et al. 2007). The multisubunit enzyme pfa includes five <i>pfa</i> genes, including <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i>. It has been reported that the ectopic co-expression of <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i> genes in <i>E.coli</i>. successfully induced DHA production (Orikasa, Nishida et al. 2006).
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="img" style="--width:100%;">

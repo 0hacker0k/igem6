@@ -114,7 +114,7 @@
             <div class="full_block">
                 <div class="img" style="--width:60%;">
                     <img src="<?php echo imgfile;?>/communication/communication03.png"/>
-                    <div class="triangle_to_top">Synthetic biology introduction on Instagram.</div>           
+                    <div class="triangle_to_top"></div>Synthetic biology introduction on Instagram.           
                 </div>
             </div>
             <div id="5" class="title-label-div">

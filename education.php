@@ -313,13 +313,13 @@
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
-                <div class="img" style="--width:30%;">
+                <div class="img" style="--width:33%;">
                     <img src="<?php echo imgfile;?>/education/education23.jpg">
                 </div>
-                <div class="img" style="--width:30%;">
+                <div class="img" style="--width:33%;">
                     <img src="<?php echo imgfile;?>/education/education24.jpg">
                 </div>
-                <div class="img" style="--width:30%;">
+                <div class="img" style="--width:33%;">
                     <img src="<?php echo imgfile;?>/education/education25.jpg">
                 </div>
             </div>
