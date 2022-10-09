@@ -528,7 +528,7 @@ lan_story6_final=
 }
 lan_ending_scene=
 [
-    "[weight=500][size="+((width*0.06).toString())+"][color=red]PACOmega[/color]-web game gratitude list[/size][/weight]",
+    "[weight=500][size="+((width*0.06).toString())+"][color=red]PACOmega[/color]-Web game gratitude list[/size][/weight]",
     "",
     "",
     "[weight=500][size="+((width*0.05).toString())+"]Director[/size][/weight]",
@@ -585,5 +585,11 @@ lan_ending_scene=
     "Ching-Chieh Weng",
     "Chun-Ying Yu",
     "Eugene C. Lin",
-    "Matilda Key"
+    "Matilda Key",
+    "NCKU_Tainan",
+    "NYCU_Formosa",
+    "",
+    "",
+    "",
+    "[size="+((width*0.06).toString())+"]Thanks for your playing!![/size]"
 ]

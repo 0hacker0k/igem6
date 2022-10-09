@@ -1,6 +1,6 @@
-debug=1;
 function preload (){
     load_transition(this);
+    debug=0;
     this.load.image('map', prefix+'/map/map.jpg');//載入一般圖片
     for(var i=1;i<=5;i++){
         this.load.image('stage'+i, prefix+'/map/npc'+i+'.png');//載入一般圖片
@@ -62,10 +62,10 @@ function create (){
     }
 
     function hover(id){
-        stage[id].setTint(0x00ff00);
+        stage[id].setDisplaySize(height*0.12,height*0.12);
     }
     function out(id){
-        stage[id].clearTint();
+        stage[id].setDisplaySize(height*0.1,height*0.1);
     }
     function touch(id){
         if(stop==0){//切換關卡
