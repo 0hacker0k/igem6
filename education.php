@@ -72,13 +72,13 @@
                 </div>
             </div>
             <div id="3" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">How do we publicize synthetic biology?</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">How do we publicize synthetic biology?</h2>
             </div>
             <p>
                 &emsp;&emsp;To help participants understand the concept of synthetic biology, we decided to have participants conduct the experiments themselves. Meanwhile, with our team members' explanation of the experimental principles and the importance of laboratory safety, we can provide participants with clear and comprehensive information on the technology we use.
             </p>
             <div id="4" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Before the activity</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Before the activity</h2>
             </div>
             <p>
                 &emsp;&emsp;Although we were well prepared, with the course materials and experimental equipment to be used in the course, we were uncertain whether our explanation and teaching style would be suitable for people with no experience in synthetic biology.
@@ -101,7 +101,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="5" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">During the activity</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">During the activity</h2>
             </div>
             <p>
                 &emsp;&emsp;In the experiment, to allow the participants to observe the results more easily and understand the effect of the technology, we used green fluorescent protein (GFP), which is often used as a reporter gene in synthetic biology, as the target gene, which has often been done in the research field. We used pET15b as the plasmid to transform it into <i>E. coli</i>. During the experiment, we lead them through the processes of PCR, Gel electrophoresis, amplicon purification, ligation, and transformation sequentially, finally observing the <i>E. coli</i> that expresses GFP protein.
@@ -142,7 +142,7 @@
                 </div>
             </div>
             <div id="6" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Feedback from participants</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Feedback from participants</h2>
             </div>
             <p>
                 &emsp;&emsp;After the camp, we set up a quiz using Kahoot, which is a platform that provides an interactive game to evaluate whether the participants have indeed obtained the knowledge. The data of results show that over 70% of them understood the principles we wanted to convey. Additionally, some participants also sent us messages after the activity, indicating that this activity aroused their interest in synthetic biology, and also corrected their misunderstandings about gene modification.
@@ -167,7 +167,7 @@
                 &emsp;&emsp;According to the official statistics from the Taiwanese government, the percentage of elderly living nearby (i.e. in MingXiong township) is the highest among regions in Taiwan, and correspondingly, the CVD crisis is more serious in MingXiong township. Hence, based on the research (Tian & Meng, 2019) and consultation with an exercise professor, we learned that aerobic exercise significantly affects lipid metabolism, and "walking" is the easiest aerobic exercise to achieve in everyone's daily life. As a result, we initiated a campus walking activity called "Walking with the elderly, walking to a better heart."
             </p>
             <div id="8" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Before the activity</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Before the activity</h2>
             </div>
             <p>
                 &emsp;&emsp;Ｗith the help of our adviser, Dr. Chan (link to website of Dr. Chan), we cooperated with the "Center for Innovative Research on Aging Society (CIRAS)" (link to website of CIRAS) at CCU to hold this activity. CIRAS provided us some advice about holding activities and shared experience on interacting with the elderly. For example, CIRAS suggested amended usage of specific terms in the interactive games to avoid misleading or confusing the elderly. 
@@ -176,13 +176,13 @@
                 &emsp;&emsp;We also went to the village and the elderly in CCU to invite them to our activity in person, hoping our sincere invitation could interest them to participate in the event. In the promotion phase, we found that some of the elderly seldom have an outdoor activity, therefore, this reinforces our desire to provide an opportunity for them to walk with us.
             </p>
             <div id="9" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">During the activity</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">During the activity</h2>
             </div>
             <p>
                 &emsp;&emsp;On the day of the event, almost a hundred people joined us in the event: "Walking with the elderly, walking to a better heart." Through this event, we hope to raise public awareness through the interactive games, guiding them to know more about cardiovascular disease. Therefore, we set up 5 different interactive games for the elderly along the walking route. The first game let the public know about the severity of cardiovascular disease. The second game let people know what types of living habits would lead to cardiovascular diseases. The third game caused people to think about how to prevent cardiovascular disease through daily food consumption. The fourth game taught people how to prevent cardiovascular disease through different kinds of exercise. Last but not least, we tested them to see if they understood the ideas from the whole activity.
             </p>
             <div id="10" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Feedback from participants</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Feedback from participants</h2>
             </div>
             <p>
                 &emsp;&emsp;After the event, we received a participant's response about his personal experience in fighting with CVDs, providing us with a stronger impetus to promote this issue. A man around 55 years old told us that he suffered from cardiovascular disease 10 years ago, but since he started to do aerobic exercise regularly, the condition has become better and better, and currently, his blood pressure and heart condition have returned to normal. Although research tells us that aerobic exercise is helpful for cardiovascular disease, it was really touching to hear a real experience through this event. We hope that through our efforts, more people can understand this issue and try to change their lifestyles.
@@ -237,7 +237,7 @@
                 </div>
             </div>
             <div id="12" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The design of our storyline</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The design of our storyline</h2>
             </div>
             <p>
                 &emsp;&emsp;To explain how we produce EPA by synthetic biology and to convey CVD information, we wrote a captivating story with an interesting plot to convey knowledge about CVD as players go through the situation personally.
@@ -246,7 +246,7 @@
                 &emsp;&emsp;The story is about a kingdom named PACOmega that was suffering from a serious CVD crisis. The main character, PACO, wanted to save her grandfather, who was tortured by CVD. She embarked on a journey to find solutions for the CVD crisis. During her journey, she encountered stages guarded by priests, and each priest had their own sorrowful stories related to the CVD crisis. Every time PACO completes a stage, she can get an element we use to synthesize EPA in our project. Finally, PACO overcomes all the difficulties and collects all the elements to synthesize EPA. Through the storyline design, we hope to help players realize the seriousness of the CVD crisis, the risk factors, and share information about CVD prevention.
             </p>
             <div id="13" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The design of game stages</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The design of game stages</h2>
             </div>
             <p>
                 &emsp;&emsp;The main design of the web game allows the players to focus more on the information delivered, by lowering the entry barrier. Thus, we applied familiar game forms, such as matching games, memory games, shooting games, and simulation games, to establish our game stages.
@@ -255,7 +255,7 @@
                 &emsp;&emsp;We designed our game stages to describe the main concepts in synthetic biology. However, we skipped some details to balance the game difficulty and reality, because it is not our goal to frustrate players. Totally, we generated five game stages.
             </p>
             <div id="14" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Stage 1 - the building blocks of DNA, base pairing, and the principle of PCR</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Stage 1 - the building blocks of DNA, base pairing, and the principle of PCR</h2>
             </div>
             <p>
                 &emsp;&emsp;DNA is a molecule made up of four types of bases: adenine (A), cytosine (C), guanine (G), and thymine (T). In the double stranded DNA, the base A pairs with T, and C pairs with G. 
@@ -279,7 +279,7 @@
                 </div>
             </div>
             <div id="15" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Stage 2 - Observing the PCR product: gel electrophoresis</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Stage 2 - Observing the PCR product: gel electrophoresis</h2>
             </div>
             <p>
                 &emsp;&emsp;To demonstrate the complicated steps of gel electrophoresis, we designed a game similar to the popular online simulation game, Overcooked. Players can operate the main character to make gel, load marker and sample, run gel electrophoresis, and take a picture of the gel. The result of the gel image is dependent on the operation in each step. For example, there's a Quick Time Event (QTE) that decides whether the player loads the marker or samples accurately or not. Another example is that if the TAE-agarose mixture is overheated or set aside too long, there will be cracks on the gel image when the picture is taken.
@@ -340,7 +340,7 @@
                 </div>
             </div>
             <div id="16" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Stage 3 - Ligation: the concept of complementary pairing</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Stage 3 - Ligation: the concept of complementary pairing</h2>
             </div>
             <p>
                 &emsp;&emsp;In stage 3, we convey the principle of successful ligation, complementary pairing, to the players. This principle is presented as a classic matching game. In this stage, there will be eighteen sequences and nine groups of complementary base pairs. Players must remember the nitrogenous base pair sequence and match the corresponding one as quickly as possible.
@@ -353,7 +353,7 @@
                 </div>
             </div>
             <div id="17" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Stage 4 - Transformation</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Stage 4 - Transformation</h2>
             </div>
             <p>
                 &emsp;&emsp;In stage 4, we simulate the actual situation of transformation. The players have to transform the plasmid into <i>E. coli</i> in this shooting game using a gene gun. To demonstrate the concept of antibiotic selection, we set a cordon of antibiotic selection at the bottom of the screen. The falling <i>E. coli</i> will only be able to pass this cordon if they contain the collection of five different colored antibiotic plasmids.
@@ -369,7 +369,7 @@
                 </div>
             </div>
             <div id="18" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Stage 5 - Picking colonies</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Stage 5 - Picking colonies</h2>
             </div>
             <p>
                 &emsp;&emsp;Finally, in stage 5, players will pick bacteria colonies and culture them. The players have to use a toothpick to select bacteria of different sizes. The factor of button-pressing time, which refers to choosing strength and colony size, will be related to the final score of this stage.
@@ -382,7 +382,7 @@
                 </div>
             </div>
             <div id="19" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The  interlude and postscript of game design</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The  interlude and postscript of game design</h2>
             </div>
             <p>
                 &emsp;&emsp;During the design phase, we came up with many ideas about the gameplays and art designs. One of these is the starting map, where the player can choose the stage they want to play. Although we were not sure how to design that at first, we came up with an original idea that we could combine an outline of the shape of Taiwan with the iGEM official logo. On one hand, the shape of Taiwan is similar to the <i>E. coli</i> on the logo, which can echo our project. On the other hand, we could promote Taiwan and iGEM competition to people worldwide.
@@ -430,7 +430,7 @@
                 </div>
             </div>
             <div id="20" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Future work</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Future work</h2>
             </div>
             <p>
                 &emsp;&emsp;Besides promoting synthetic biology and making synthetic biology products more acceptable, we hope that we can improve the game in both teaching and playing experience aspects, and also make some effort in the connection between real experiments and virtual game displays. In addition, we are dedicated to promoting the game and spreading this innovative approach to more people. Last but not least, we also hope that other iGEM teams can wisely utilize our novel idea to improve awareness of synthetic biology in the future.
@@ -442,13 +442,13 @@
                 &emsp;&emsp;World Heart Day, September 29th, is a global event created by the World Heart Federation to inform people around the world about the severeness of heart diseases and strokes. Since the PACOmega project targeted the prevention of CVD, we decided to advocate the idea of World Heart Day with our own event. We went to the Culture Park in the downtown area of Chiayi city and shared information about heart diseases, especially CVD.
             </p>
             <div id="22" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Advocacy for PACOmega</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Advocacy for PACOmega</h2>
             </div>
             <p>
                 &emsp;&emsp;To publicize CVD on World Heart day, we came up with several creative and interactive activities, including flyers, postcards, check-in boards and message boards, to draw the attention of the Chiayi citizens.
             </p>
             <div id="23" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Health Education Flyer</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Health Education Flyer</h2>
             </div>
             <p>
                 &emsp;&emsp;To find out what kind of CVD information the public is interested in, and what they wanted to know more about, we performed a preliminary survey and got 852 responses. The top two responses are as follows: Who are typical CVD patients and how can we prevent CVD. As a result, we put information about these two questions in our flyer.
@@ -465,7 +465,7 @@
                 </div>
             </div>
             <div id="24" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Checklist Health Declaration</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Checklist Health Declaration</h2>
             </div>
             <p>
                 &emsp;&emsp;In the Culture Park, we introduced CVD and ways of preventing CVD to citizens using our flyer. To be more interactive, we invited the respondents to fill in their health declaration about CVD prevention on a checklist.
@@ -486,7 +486,7 @@
                 <div class="triangle_to_top"></div>Residents and their checklists
             </div>
             <div id="25" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Message Board for Health Declaration</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Message Board for Health Declaration</h2>
             </div>
             <p>
                 &emsp;&emsp;In addition to the checklist, we also set up a message board for local residents to be creative, and think of what kind of actions they could take or have already taken to have a healthy heart. On the board, there is another fill in the blank question stating, "For my heart to be healthy, I'm willing to _______", and residents could write their own answers to this health declaration on the board.
@@ -507,7 +507,7 @@
                 <div class="triangle_to_top"></div>Residents writing their health declaration on the message board
             </div>
             <div id="26" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Postcards Regarding CVD Prevention</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Postcards Regarding CVD Prevention</h2>
             </div>
             <p>
                 &emsp;&emsp;After filling in the checklist or message board, we gave participants a postcard to express our thanks. We designed three kinds of postcards (as seen below) that suggested three methods associated with the PACOmega project to prevent CVDs, including healthy diet, exercising, and EPA supplements. Through these activities, the World Heart Day and also our PACOmega project could reach a broader audience.
@@ -528,7 +528,7 @@
                 </div>
             </div>
             <div id="27" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">What we shared and learned in the World Heart Day Event</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">What we shared and learned in the World Heart Day Event</h2>
             </div>
             <p>
                 &emsp;&emsp;In this World Heart Day event, we learned that people care about their health, but don't know how to implement it. Through message boards and checklists, we raised the awareness of Chiayi residents about the importance of preventing CVD through daily routines.
@@ -547,7 +547,7 @@
                 </div>
             </div>
             <div id="28" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Conclusion</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Conclusion</h2>
             </div>
             <p>
                 &emsp;&emsp;To better convey our project and synthetic biology, our education activities are not limited to a single method, instead, they are all age-appropriate and individually designed to meet the needs of different groups.
