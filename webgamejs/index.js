@@ -34,6 +34,7 @@ const TalkBox_config =
     fixedWidth: width*0.55,
     fixedHeight: height*0.15,
 };
+var audiovolume = 1;//audio
 var score = 0;
 var scoreText;
 var game=null;

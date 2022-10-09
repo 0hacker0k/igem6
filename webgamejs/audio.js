@@ -14,7 +14,7 @@ function create_audio(where,name="map"){//add sound and play
     var music_config=
     {
         // mute: false,
-        // volume: 1,
+        volume: audiovolume,
         // rate: 1,
         // detune: 0,
         // seek: 0,
@@ -22,6 +22,7 @@ function create_audio(where,name="map"){//add sound and play
         // delay: 0
     }
     music.play(music_config);
+    return music;
 }
 // function create_stageaudio(where){//add sound and play
 //     var music = where.sound.add("mapaudio");
