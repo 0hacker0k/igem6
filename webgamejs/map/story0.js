@@ -1,7 +1,7 @@
-debug=1;
+
 function preload_story0 (){
     load_transition(this);
-    
+    debug=0;
     for(var i=1;i<=6;i++){
         this.load.image('slide'+i, prefix+'/slide/'+i+'.jpg');//載入一般圖片
     }

@@ -1,4 +1,4 @@
-debug=1;
+
 function preload_story1 (){
     con=
     {//直接調參數
@@ -11,6 +11,7 @@ function preload_story1 (){
         'descript_count':1,
         'descript_limit':Object.keys(lan_story1).length
     };
+    debug=0;
     load_transition(this);
     console.log(con);
     for(var i=con.img_num_start;i<=con.img_num_end;i++){
