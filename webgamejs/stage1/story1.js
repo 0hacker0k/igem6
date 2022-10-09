@@ -35,7 +35,7 @@ function create_story1 (){
     //對話框
     PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
-    back=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
+    backer=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
     npc=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, con.npc_key);
     descript_count=con.descript_count;
     descript_limit=con.descript_limit;
