@@ -127,6 +127,15 @@
                 $content="<div class='graduate'>Adjunct Assistant Professor, Department of Mechanical Engineering</div>Dr. Wu instructed us in hardware development, including creating technical drawings, essential machining skills and machine design.";
                 include "sub/attribution_card.php";
             ?>
+            <?php
+                $name="Lance Chang";
+                $photo="/attributions/attributions304.jpg";
+                $icon1="";
+                $icon2="";
+                $icon3="";
+                $content="<div class='graduate'>Chief Executive Officer, Trade Wind Biotech Co., Ltd. (TWBIO)</div>Dr. Chang offered invaluable advice on our presentation and advised us on what types of products are feasible with our project.";
+                include "sub/attribution_card.php";
+            ?>
             <div id="4" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Leaders</h1>
             </div>
@@ -365,19 +374,161 @@
                 include "sub/attribution_card.php";
             ?>
             <div class="card" style="flex-direction: column;">
-                <?php
-                    $name="123";
-                    $job_title="123";
-                    $introdution="123";
-                    include "sub/attribution_card_2.php";
-                ?>
+                <div class="special_thanks">
+                    <?php
+                        $name="Zhang-Hua Fong";
+                        $job_title="President, National Chung Cheng University";
+                        $introdution="President Fong provided financial support for the team registration fee.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Hsien-Bin Huang";
+                        $job_title="Professor, Department of Biomedical Sciences, National Chung Cheng University";
+                        $introdution="Dr. Huang supplied us with experiment materials.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Wan Chia Chang";
+                        $job_title="Department of Arts and Creative Industries, National Dong Hwa University";
+                        $introdution="Ms. Chang illustrated our team portraits.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>   
                 <div class="dotted-line"></div>
-                <?php
-                    $name="456";
-                    $job_title="456";
-                    $introdution="456";
-                    include "sub/attribution_card_3.php";
-                ?>
+                <div class="special_thanks">
+                    <?php
+                        $name="Campus walking";
+                        $job_title="Center for Innovative Research on Aging Society, CCU";
+                        $introdution="Center for Innovative Research on Aging Society gave us financial support for the campus walking activity.";
+                        include "sub/attribution_card_3.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Feng-Ming Hao";
+                        $job_title="Vice president, National Chung Cheng University";
+                        $introdution="Mr. Hao gave full support on the campus walking, such as financial support and promotion resources.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Mei-Man Chen";
+                        $job_title="Office director, Center for Innovative Research on Aging Society, National Chung Cheng University";
+                        $introdution="Ms. Chen gave us suggestions on the details of preparation and promotions of the campus walking activity.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="dotted-line"></div>
+                <div class="special_thanks">
+                    <?php
+                        $name="TCUS entrepreneurship competition";
+                        $job_title="Career Development Center, CCU";
+                        $introdution="Career Development Center supported us with funds, facility rental, activity preparation and promotion for the Taiwan Comprehensive University System (TCUS) entrepreneurship competition.";
+                        include "sub/attribution_card_3.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Wun-Bin Gao";
+                        $job_title="Professor, Department of Adult and Continuing Education";
+                        $introdution="Dr. Gao assisted us with details of organization and preparation for the TCUS entrepreneurship competition.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Ren-Hao Lai";
+                        $job_title="Career Development Advisor, Career Development Center, National Chung Cheng University";
+                        $introdution="Mr. Lai assisted us in the preparation and the process of the TCUS entrepreneurship competition.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="I-Son Grace Ng";
+                        $job_title="Professor, Department of Chemical Engineering, National Cheng Kung University";
+                        $introdution="Dr. Ng was the guest speaker of the TCUS entrepreneurship competition.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Liang-Chun Wang";
+                        $job_title="Assistant Professor, Department of Marine Biotechnology and Resources,  National Sun Yat-sen University";
+                        $introdution="Dr. Wang was the guest speaker and the judge of the TCUS  entrepreneurship competition.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Lance Chang";
+                        $job_title="Chief Executive Officer, Trade Wind Biotech Co., Ltd. (TWBIO)";
+                        $introdution="Dr. Chang was the guest speaker and the judge of the TCUS entrepreneurship competition.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Shu-Yuan Yang";
+                        $job_title="Associate professor, Department of Biomedical Sciences, Chang Gung University";
+                        $introdution="Dr. Yang was the guest speaker and the judge of the TCUS entrepreneurship competition.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="dotted-line"></div>
+                <div class="special_thanks">
+                    <?php
+                        $name="IHP specialist";
+                        $job_title="";
+                        $introdution="";
+                        include "sub/attribution_card_3.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Chih-Kai Wu";
+                        $job_title="Pharmacist, Seven Star Pharmacy, Minxiong Township, Chiayi County";
+                        $introdution="Mr. Wu offered invaluable advice on the intake precautions for our product.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Yan-Chang Lee Ph.D.";
+                        $job_title="Postdoctoral fellow, Precision Molding Research Center, National Chung Cheng University";
+                        $introdution="Dr. Lee offered invaluable advice on our quantitative agar faucet and gel preparation machine design.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Chang-Jer Wu Ph.D.";
+                        $job_title="Secretary-general, Health Food Society of Taiwan";
+                        $introdution="Dr. Wu offered invaluable advice on the perspectives of the law and endotoxin to our product promotion.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Miranda Chen";
+                        $job_title="Dietitian, develop in self-media management";
+                        $introdution="Ms. Chen offered invaluable advice on the importance of the diet and exercise for CVD prevention.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
+                <div class="special_thanks">
+                    <?php
+                        $name="Shuk-Fong Lee";
+                        $job_title="Professor, Department of Athletic Sports, National Chung Cheng University";
+                        $introdution="Dr. Lee offered invaluable advice on exercising suggestions.";
+                        include "sub/attribution_card_2.php";
+                    ?>
+                </div>
             </div>
         </div>
     </div>
