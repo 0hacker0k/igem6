@@ -21,7 +21,7 @@
 }
 body{
   margin: 0;
-  background-color: #F2CCC3 !important;
+  background-image: linear-gradient(180deg, #F2CCC3, #fbcdb2 ,#FED8E0, #fcc7c5);
   font-family: papyrus;
   font-weight: 800;
   display: table;

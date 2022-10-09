@@ -249,7 +249,7 @@ img{
 .overview{
     padding-left:30%;
 }
-@media all and (max-aspect-ratio:1/1){
+/* @media all and (max-aspect-ratio:1/1){
     .overview{
         padding-left:0%;
     }
@@ -265,4 +265,19 @@ img{
     .full_size_image{
         padding: 0;
     }
+} */
+.overview{
+    padding-left:0%;
+}
+.article{
+    padding-left: 0%;
+}
+.guide{
+    width: auto;
+}
+#expansion{
+    display : block;
+}
+.full_size_image{
+    padding: 0;
 }
