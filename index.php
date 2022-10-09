@@ -46,7 +46,7 @@
     <div class="page" style="top:200%;" id="page_4">
         <img id="map_of_world" src="<?php echo imgfile;?>/home/map-of-world.jpg">
         <div class="white_background">
-            Cardiovascular disease (CVD) is one of the moCardiovascular disease (CVD) is one of the most severe diseases worldwide. In 2019, an estimated 17.9 million people died from CVD, representing 32% of all global deaths 
+            Cardiovascular disease (CVD) is one of the most severe diseases worldwide. In 2019, an estimated 17.9 million people died from CVD, representing 32% of all global deaths 
             <a href="https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)">(WHO official website).</a>
         </div>
     </div>
@@ -127,7 +127,7 @@
                     <div class="triangle_to_right"></div>Learn more
                 </div>
                 <div id="learn_more_1_content" class="learn_more_content">
-                    Previous research has shown that a combination of the <i>pfa genes</i> of deep-sea bacteria <i>Moritella marina MP-1</i> and <i>Shewanella pneumatophori SCRC-2738</i> can produce EPA in <i>E. coli</i>.
+                    Previous research has shown that a combination of the <i>pfa</i> genes of deep-sea bacteria <i>Moritella marina</i> MP-1 and <i>Shewanella pneumatophori</i> SCRC-2738 can produce EPA in <i>E. coli</i>.
                 </div>
             </div>
             <div id="information2">
@@ -138,7 +138,7 @@
                     <div class="triangle_to_right"></div>Learn more
                 </div>
                 <div id="learn_more_2_content" class="learn_more_content">
-                    We cloned the <i>pfa A, pfa C, pfa D</i>, and <i>pfa E</i> genes from <i>MP-1</i>, and <i>pfa B</i> gene from <i>SCRC-2738</i>. All these five pfa genes are expressed in <i>E. coli</i> to produce EPA <a onclick="index_move_to_page(17)">(Orikasa, Tanaka et al. 2009)</a>.
+                    We cloned the <i>pfa A</i>, <i>pfa C</i>, <i>pfa D</i>, and <i>pfa E</i> genes from MP-1, and <i>pfa B</i> gene from SCRC-2738. All these five <i>pfa</i> genes are expressed in <i>E. coli</i> to produce EPA <a onclick="index_move_to_page(17)">(Orikasa, Tanaka et al. 2009)</a>.
                 </div>
             </div>
         </div>
@@ -160,7 +160,7 @@
                     <div class="triangle_to_right"></div>Learn more
                 </div>
                 <div id="learn_more_3_content" class="learn_more_content">
-                    The ACC complex can increase malonyl-CoA, the raw material of EPA. The <i>ACC genes (AccBC, AccD1, and AccE)</i> were therefore cloned into the target plasmid and expressed in <i>E. coli</i> <a onclick="index_move_to_page(17)">(Giner-Robles, Lazaro et al. 2018)</a>.
+                    The ACC complex can increase malonyl-CoA, the raw material of EPA. The <i>ACC</i> genes (<i>AccBC</i>, <i>AccD1</i>, and <i>AccE</i>) were therefore cloned into the target plasmid and expressed in <i>E. coli</i> <a onclick="index_move_to_page(17)">(Giner-Robles, Lazaro et al. 2018)</a>.
                 </div>
             </div>
             <div id="information4">
@@ -171,7 +171,7 @@
                     <div class="triangle_to_right"></div>Learn more
                 </div>
                 <div id="learn_more_4_content" class="learn_more_content">
-                    Cerulenin inhibits the fatty acid synthesis pathway that competes with <i>pfa genes</i> in <i>E. coli</i>, thus increasing the efficiency of EPA production <a onclick="index_move_to_page(17)">(Satoh, Ozaki et al. 2020)</a>.
+                    Cerulenin inhibits the fatty acid synthesis pathway that competes with <i>pfa</i> genes in <i>E. coli</i>, thus increasing the efficiency of EPA production <a onclick="index_move_to_page(17)">(Satoh, Ozaki et al. 2020)</a>.
                 </div>
             </div>
         </div>

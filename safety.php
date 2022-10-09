@@ -78,13 +78,13 @@
             </div>
             <ul>
                 <li>
-                    <h3 style="background-color: #97dffc";><i><b>E. coli</b></i></h3>
+                    <h3><i><b>E. coli</b></i></h3>
                     <p>
                         &emsp;&emsp;Two strains of <i>E. col</i> are involved in our experiments, BL21(DE3) and DH5α, which are low risk to human beings. After each experiment, we bleach and autoclave the biowastes to ensure that the bacteria do not escape into the environment.
                     </p>
                 </li>
                 <li>
-                    <h3 style="background-color: #97dffc";><b>Product</b></h3>
+                    <h3><b>Product</b></h3>
                     <p>
                         &emsp;&emsp;The carrageenans as the basic material for our vegan-friendly EPA capsule.
                     </p>
@@ -95,7 +95,7 @@
             </div>
             <ul>
                 <li>
-                    <h3 style="background-color: #97dffc";><b>Endotoxin</b></h3>
+                    <h3><b>Endotoxin</b></h3>
                     <p>
                         &emsp;&emsp;To produce EPA, we transform the EPA-producing genes into <i>Escherichia coli</i>. As a gram‐negative bacteria, endotoxins in the outer cell membrane are released upon death. To avoid contamination by endotoxins in our final product, we explored  potential methods to remove endotoxins:
                     </p>
@@ -145,7 +145,7 @@
                     </ul>    
                 </li>
                 <li>
-                    <h3 style="background-color: #97dffc";>Extraction</h3>
+                    <h3>Extraction</h3>
                     <p>
                         &emsp;&emsp;To analyze the EPA:lipid ratio, we will extract the lipid product from the EPA-producing <i>E. coli</i> by the Folch method, then run High Performance Liquid Chromatography (HPLC). In the successive process, some hazardous chemicals will be used. These chemicals and their applications are listed as follows.
                     </p>  
@@ -176,7 +176,7 @@
                         &emsp;&emsp;According to the protocol, the methanol layer will be discarded. The chloroform layer containing lipids will be pooled and concentrated using a rotary evaporator, which evaporates the remaining chloroform. In the last step, sulfuric acid could be removed through elution.
                     </p>
 
-                    <h3 style="background-color: #97dffc";></h3>         
+                    <h3></h3>         
                 </li>
                 <li>
                     <h3 style="color: #613dc1";>Recommended daily allowance</h3>
@@ -189,11 +189,11 @@
             <div id="8" class="title-label-div">
                 <p class="h25">
                     Reference:
-                    <ol>
+                    <ul>
                         <li>
                             Schneier, M., Razdan, S., Miller, A. M., Briceno, M. E., & Barua, S. (2020). Current technologies to endotoxin detection and removal for biopharmaceutical purification. Biotechnology and Bioengineering, 117(8), 2588-2609.
                         </li>
-                    </ol>
+                    </ul>
                 </p>
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
