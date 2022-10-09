@@ -14,13 +14,13 @@ function create_endingscene(){
     loading_transition(this,-500*width/800,0);
     this.add.image(width/2,height/2,"black").setDisplaySize(width,height);
     var text_x=width/2;//初始位置
-    var text_y=height;
+    var text_y=height*1.2;
     group = this.add.group();
     for(var i=0;i<lan_ending_scene.length;i++){
         var text;
         var member;
         var lan;
-        var fontsize=(width*0.04).toString()+'px';
+        var fontsize=(width*0.038).toString()+'px';
         // if(key=='#'){
         //     fontsize=(width*0.07).toString()+'px'
         // }else if(key=='##'){
@@ -29,6 +29,7 @@ function create_endingscene(){
         //     fontsize=(width*0.04).toString()+'px'
         // }
         text = this.rexUI.add.BBCodeText(text_x,text_y,lan_ending_scene[i],{fontFamily: 'fantasy', fontSize: fontsize, color: '#ffffff' }).setOrigin(0.5);
+        text.setPadding(0,100,0,100)
         text.align = 'center';
         //text.setPadding(50,0,50,0);
         text.round=true;
