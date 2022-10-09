@@ -11,16 +11,16 @@ function guide_change(){
     guide_control.style.height=screen_height+"px";
     guide_control.style.marginTop=(screen_height*0.1)+"px";
     guide.style.height=(screen_height*1.1)+"px";
-    if(screen_height>screen_width){
+    // if(screen_height>screen_width){
         guide.style.left= "calc("+(-document.getElementById("guide_content").clientWidth)+"px)";// - 0.5em
         guide.style.transition="0.0s";
         setTimeout(() => {
             guide.style.transition="0.5s";
         }, 1);
-    }else{
-        guide.style.left= "0";// - 0.5em
-        guide.style.transition="0.0s";
-    }
+    // }else{
+    //     guide.style.left= "0";// - 0.5em
+    //     guide.style.transition="0.0s";
+    // }
     
     // if(guide.clientWidth+content.clientWidth+1>screen_width){
 
@@ -29,7 +29,7 @@ function guide_change(){
 }
 // display_mod=1;
 function guide_toggle(){
-    if(screen_height<screen_width)return ;
+    // if(screen_height<screen_width)return ;
     var guide=document.getElementById("guide");
     var triangle=document.getElementsByClassName("triangle_to_left")[0];
     if(triangle==undefined){
