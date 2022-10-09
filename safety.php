@@ -68,7 +68,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Laboratory Safety</h2>
             </div>
             <p>
-                &emsp;&emsp;The experiments in our project can be conducted in a biosafety level 1 laboratory.Bacterial transfers and work with volatile chemicals should be performed in biosafety cabinets and fume hoods, respectively. Besides, we also learned the proper use of and precautions for various machines in the laboratory, and understood what hazards may be encountered in the laboratory and how to deal with them if they occur. Furthermore, we must immediately report to our advisor or safety center if there is any accident or equipment damage.
+                &emsp;&emsp;The experiments in our project can be conducted in a biosafety level 1 laboratory. Bacterial transfers and work with volatile chemicals should be performed in biosafety cabinets and fume hoods, respectively. Besides, we also learned the proper use of and precautions for various machines in the laboratory, and understood what hazards may be encountered in the laboratory and how to deal with them if they occur. Furthermore, we must immediately report to our advisor or safety center if there is any accident or equipment damage.
             </p>
             <div id="5" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">PROJECT SAFETY</h1>
@@ -80,9 +80,10 @@
                 <li>
                     <h3><i><b>E. coli</b></i></h3>
                     <p>
-                        &emsp;&emsp;Two strains of <i>E. col</i> are involved in our experiments, BL21(DE3) and DH5α, which are low risk to human beings. After each experiment, we bleach and autoclave the biowastes to ensure that the bacteria do not escape into the environment.
+                        &emsp;&emsp;Two strains of <i>E. coli</i> are involved in our experiments, BL21 (DE3) and DH5α, which are low risk to human beings. After each experiment, we bleach and autoclave the biowastes to ensure that the bacteria do not escape into the environment.
                     </p>
                 </li>
+                <div class="marge" style="--width:calc(3em + 5vh)"></div>
                 <li>
                     <h3><b>Product</b></h3>
                     <p>
@@ -97,9 +98,11 @@
                 <li>
                     <h3><b>Endotoxin</b></h3>
                     <p>
-                        &emsp;&emsp;To produce EPA, we transform the EPA-producing genes into <i>Escherichia coli</i>. As a gram‐negative bacteria, endotoxins in the outer cell membrane are released upon death. To avoid contamination by endotoxins in our final product, we explored  potential methods to remove endotoxins:
+                        &emsp;&emsp;To produce EPA, we transform the EPA-producing genes into <i>E. coli</i>. As a gram‐negative bacteria, endotoxins in the outer cell membrane are released upon death. To avoid contamination by endotoxins in our final product, we explored  potential methods to remove endotoxins:
                     </p>
+                    
                     <ul>
+                        <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
                             <h3 style="color: #613dc1";>Ultrafiltration</h3>
                             <p>
@@ -109,24 +112,28 @@
                                 &emsp;&emsp;The main limitation associated with ultrafiltration is its limited endotoxin removal efficiency for molecules that are magnitudes smaller than endotoxin aggregates. This method is best suited for removing endotoxins from water, salts, and small molecule therapeutics that do not have an affinity for endotoxins.
                             </p>
                         </li>
+                        <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
                             <h3 style="color: #613dc1";>Solvent extraction</h3>
                             <p>
                                 &emsp;&emsp;Solvent extraction is used to separate endotoxins from target therapeutics based on their relative solubilities in two immiscible liquids. Endotoxin partitions in the organic phase, while hydrophilic target molecules remain in the aqueous phase.
                             </p>
                         </li>
+                        <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
                             <h3 style="color: #613dc1";>Anion‐exchange chromatography</h3>
                             <p>
                                 &emsp;&emsp;Anion‐exchange chromatography can be used to separate negatively charged endotoxins from positively charged molecules, such as basic proteins.
                             </p>
                         </li>
+                        <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
                             <h3 style="color: #613dc1";>Affinity chromatography</h3>
                             <p>
                                 &emsp;&emsp;Affinity chromatography is used to separate endotoxins from target molecules using highly specific interactions between endotoxins and a ligand bound to a stationary phase. Because of the specificity of the ligand, there is little to no product loss during separation. The target therapeutic molecule will elute with a greater velocity than endotoxin molecules due to specificity. The ligand chosen should have a strong interaction with endotoxins and a weak interaction with the target therapeutic molecule at separation conditions. Affinity chromatography can be used with a wide range of target molecules, including pDNA and proteins.
                             </p>
                         </li>
+                        <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
                             <h3 style="color: #613dc1";>Membrane adsorption</h3>
                             <p>
@@ -136,19 +143,22 @@
                                 &emsp;&emsp;In membrane adsorption, the same ligands used in affinity chromatography or resins used in ion‐exchange chromatography are bound to a support medium. The use of a membrane greatly improves flow rates and nearly eliminates diffusion limitations. Membranes can be made of cellulose, cellulose acetate, nylon, polyethylene vinyl acetate, polyvinyl alcohol, and polyvinylidene fluoride. The membrane capsules are single‐use, meaning there is no need for eluting, cleaning, or regenerating. The benefits of single‐use membranes include a decreased chance of product contamination, reduced process time and decreased buffer volume due to the decrease in required cleaning steps.
                             </p>                          
                         </li>
+                        <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
                             <h3 style="color: #613dc1";>Conclusion</h3>
                             <p>
-                                &emsp;&emsp;Due to the limitations of each method, we will conduct additional research both in theory and in practice to select the most cost‐effective way(s) for us to deal with endotoxins. After we successfully prove the feasibility of our EPA-producing system in <i>Escherichia coli</i>, we will further apply this system in Nissle 1917, which is a FDA proven bacterial species for producing nutritional supplements.
+                                &emsp;&emsp;Due to the limitations of each method, we will conduct additional research both in theory and in practice to select the most cost‐effective way(s) for us to deal with endotoxins. After we successfully prove the feasibility of our EPA-producing system in <i>E. coli</i>, we will further apply this system in Nissle 1917, which is a FDA proven bacterial species for producing nutritional supplements.
                             </p>
                         </li>
                     </ul>    
                 </li>
+                <div class="marge" style="--width:calc(3em + 5vh)"></div>
                 <li>
                     <h3>Extraction</h3>
                     <p>
-                        &emsp;&emsp;To analyze the EPA:lipid ratio, we will extract the lipid product from the EPA-producing <i>E. coli</i> by the Folch method, then run High Performance Liquid Chromatography (HPLC). In the successive process, some hazardous chemicals will be used. These chemicals and their applications are listed as follows.
+                        &emsp;&emsp;To analyze the EPA : lipid ratio, we will extract the lipid product from the EPA-producing <i>E. coli</i> by the Folch method, then run High Performance Liquid Chromatography (HPLC). In the successive process, some hazardous chemicals will be used. These chemicals and their applications are listed as follows.
                     </p>  
+                    <div class="marge" style="--width:calc(3em + 5vh)"></div>
                     <p style="color: #613dc1";>
                         1. Methanol and chloroform will be used as solvents to extract lipids.
                     </p>
@@ -158,26 +168,28 @@
                     <p style="color: #EA2B1F";>
                         Caution: chloroform can be toxic if inhaled or swallowed. Exposure to chloroform may also cause cancer.
                     </p>
-
+                    <div class="marge" style="--width:calc(3em + 5vh)"></div>
                     <p style="color: #613dc1";>
                         2. Ethanol is applied to conduct transesterification to convert the extracted lipids into FAEEs (fatty acid ethyl esters).
                     </p>
                     <p style="color: #EA2B1F";>
                         Caution: high concentrations may damage a fetus. Contact can irritate the skin and eyes. Prolonged or repeated exposure can cause drying and cracking of the skin with peeling, redness and itching.
                     </p>
-                
+                    <div class="marge" style="--width:calc(3em + 5vh)"></div>
                     <p style="color: #613dc1";>
                         3. Sulfuric acid is used as a catalyst in transesterification.
                     </p>
                     <p style="color: #EA2B1F";>
                         Caution: Sulfuric acid can cause severe burns at high concentrations. It can decompose proteins and lipids by amide and ester hydrolysis when contacting living tissues. Also, its strong dehydrating property on carbohydrates will cause secondary thermal burns due to extra heat. If ingested, it damages internal organs severely.
                     </p>  
+                    <div class="marge" style="--width:calc(3em + 5vh)"></div>
                     <p>
                         &emsp;&emsp;According to the protocol, the methanol layer will be discarded. The chloroform layer containing lipids will be pooled and concentrated using a rotary evaporator, which evaporates the remaining chloroform. In the last step, sulfuric acid could be removed through elution.
                     </p>
 
                     <h3></h3>         
                 </li>
+                <div class="marge" style="--width:calc(3em + 5vh)"></div>
                 <li>
                     <h3 style="color: #613dc1";>Recommended daily allowance</h3>
                     <p>
@@ -185,8 +197,8 @@
                     </p>
                 </li>
             </ul>
-            
-            <div id="8" class="title-label-div">
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
+            <div id="8" class="h25">
                 <p class="h25">
                     Reference:
                     <ul>

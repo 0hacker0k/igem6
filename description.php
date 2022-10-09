@@ -85,7 +85,7 @@
                 &emsp;&emsp;Therefore, we decided to apply synthetic biology to generate pure and vegan-friendly EPA.
             </p>
             <p>
-                &emsp;&emsp;To produce pure EPA, we decided to express the EPA-producing genes <i>pfa A</i>, <i>pfa C</i>, <i>pfa D</i>, and <i>pfa E</i> (from <i>Moritella marina</i> MP-1), and the <i>pfa B</i> gene (from <i>Shewanella pneumatophori</i>) in <i>E. coli</i>. In addition, we planned to increase the raw material, malonyl-CoA, to enhance EPA production through co-expressing the ACC complex (from Corynebacterium glutamicum) with <i>pfa</i> genes. Finally, the chemical cerulenin will be added to inhibit the competing fatty acid synthesis pathway and consequently enhance the function of <i>pfa</i> genes.
+                &emsp;&emsp;To produce pure EPA, we decided to express the EPA-producing genes <i>pfa A</i>, <i>pfa C</i>, <i>pfa D</i>, and <i>pfa E</i> (from <i>Moritella marina</i> MP-1), and the <i>pfa B'</i> gene (from <i>Shewanella pneumatophori</i>) in <i>E. coli</i>. In addition, we planned to increase the raw material, malonyl-CoA, to enhance EPA production through co-expressing the ACC complex (from Corynebacterium glutamicum) with <i>pfa</i> genes. Finally, the chemical cerulenin will be added to inhibit the competing fatty acid synthesis pathway and consequently enhance the function of <i>pfa</i> genes.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
