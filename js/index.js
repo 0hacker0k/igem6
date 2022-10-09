@@ -3,20 +3,6 @@ var button = document.getElementById("testBtn");
 var screen_height=window.innerHeight;
 var screen_width=window.innerWidth;
 var now_page;
-if (map_icon.classList && map_icon && button) {
-    button.onclick = function() {
-        if (this.value == '暂停') {
-            map_icon.classList.add('stop');
-            this.value = '播放';
-        } else {
-            map_icon.classList.remove('stop');
-            this.value = '暂停';
-        }
-    };
-}
-window.addEventListener('click',function(){
-    
-});
 document.addEventListener('DOMContentLoaded', function(){
     jQuery(function($){
         var myWindow = $(window); 
@@ -57,11 +43,26 @@ function screen_move(scroll){
                     next_page.style.top=((screen_height-next_page.clientHeight)/2+screen_height)+"px";
                     next_page.style.transition="0.0s";
                     next_page.style.opacity=1;
+                    // var page_text=next_page.getElementsByClassName("white_background")[0];
+                    // var text_temp;
+                    // if(page_text!=undefined){
+                        
+                    //     text_temp=page_text.getBoundingClientRect().top;
+                    //     console.log(text_temp);
+                    //     page_text.style.transition="0.0s";
+                    //     page_text.style.top=screen_height+"px";
+                    // }
                     if(next_page.animate!=null)clearTimeout(next_page.animate);
                     next_page.animate=setTimeout(() => {
                         next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
                         next_page.style.transition="1.0s";
                         next_page.animate=null;
+                        // if(page_text!=undefined){
+                        //     setTimeout(() => {
+                        //         page_text.style.transition="1.0s";
+                        //         page_text.style.top=text_temp+"px";
+                        //     }, 1000);
+                        // }
                     }, 1);
                 }
             }

@@ -89,7 +89,7 @@ a:not([href]):not([class]){
     background-color: #ffffffc0;
     width: 100%;
     font-size: calc(1.6vw + 0.4em);
-    padding: calc(3vw + 0.2vw) calc(3vw + 0.2vw);
+    padding: calc(3vw + 0.2vw) calc(25vw);
     z-index: 10;
 }
 .top_block{
@@ -272,8 +272,18 @@ a:not([href]):not([class]){
     bottom: 20%;
     left: 35%;
 }
+#page7-role6{
+    width: 8%;
+    bottom: 42%;
+    left: 52%;
+}
+#page7-role7{
+    width: 8%;
+    bottom: 42%;
+    left: 42%;
+}
 #page8-role1{
-    width: 40%;
+    width: 28%;
     bottom:6%;
     left:5%;
     -moz-transform:scaleX(-1);
@@ -282,14 +292,14 @@ a:not([href]):not([class]){
     transform:scaleX(-1);
 }
 #page8-role2{
-    width: 28%;
+    width: 27%;
     bottom:6%;
-    left:60%;
+    left: 65%;
 }
 #page8-role3{
-    width: 28%;
-    bottom: 18%;
-    left: 45%;
+    width: 30%;
+    bottom: 6%;
+    left: 40%;
 }
 #page9-role1{
     width: 20%;
@@ -301,10 +311,25 @@ a:not([href]):not([class]){
     bottom: 4%;
     left: 40%;
 }
+#page9-role3{
+    width: 25%;
+    bottom: 38%;
+    left: 21%;
+}
 #page10-role1{
     width: 38%;
     bottom:6%;
     left:25%;
+}
+#page10-role2{
+    width: 45%;
+    bottom:6%;
+    left:5%;
+}
+#page10-role3{
+    width: 45%;
+    bottom:6%;
+    left:40%;
 }
 #page11-role1{
     width: 55%;

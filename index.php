@@ -46,7 +46,8 @@
     <div class="page" style="top:200%;" id="page_4">
         <img id="map_of_world" src="<?php echo imgfile;?>/home/map-of-world.jpg">
         <div class="white_background">
-            Cardiovascular disease (CVD) is one of the most severe diseases worldwide. In 2019, an estimated 17.9 million people died from CVD, representing 32% of all global deaths 
+            Cardiovascular disease (CVD) is one of the most severe diseases that took away millions of lives.
+            <br/>In 2019, an estimated 17.9 million people died from CVD, representing 32% of all global deaths.
             <a href="https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)">(WHO official website).</a>
         </div>
     </div>
@@ -56,7 +57,7 @@
     </div>
     <div class="page" style="top:200%;" id="page_6">
         <div class="white_background">
-            Modern living habits and diet cause an excess intake of cholesterol, inducing the accumulation of oxidized low-density lipoproteins (LDL) in arteries. 
+            The living habits nowadays cause the excess intake of cholesterol from the modern diet, inducing the accumulation of oxidized low-density lipoproteins ( LDL ) in arteries.
         </div>
         <div class="bottomleft">
             <img class="illustration" id="page6-role1" src="<?php echo imgfile;?>/home/page6-role1.png">
@@ -66,7 +67,7 @@
     </div>
     <div class="page" style="top:200%;" id="page_7">
         <div class="white_background">
-            The LDL accumulation impedes blood flow and damages the arteries, which leads to atherosclerosis, the severe form of CVD <a onclick="index_move_to_page(17)">(Berger and Naseem 2022)</a>.
+            The oxidized LDL accumulation impedes blood flow and damages the arteries, which leads to atherosclerosis, the severe CVD <a onclick="index_move_to_page(17)">(Berger and Naseem 2022)</a>.
         </div>
         <div class="bottomleft">
             <img class="illustration" id="page7-role3" src="<?php echo imgfile;?>/home/page7-role3.png">
@@ -74,26 +75,30 @@
             <img class="illustration" id="page7-role5" src="<?php echo imgfile;?>/home/page7-role3.png">
             <img class="illustration" id="page7-role1" src="<?php echo imgfile;?>/home/page7-role1.png">
             <img class="illustration" id="page7-role2" src="<?php echo imgfile;?>/home/page7-role2.png">
+            <img class="illustration" id="page7-role6" src="<?php echo imgfile;?>/home/page7-role4.png">
+            <img class="illustration" id="page7-role7" src="<?php echo imgfile;?>/home/page7-role4.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_8">
         <div class="white_background">
-            Recently, daily intake of eicosapentaenoic acid (EPA) has been proven to reduce CVD efficiently, reducing the chance of death <a onclick="index_move_to_page(17)">(Peter, Joho et al. 2022)</a>.
+            Recently, the daily intake of eicosapentaenoic acid (EPA) has been proven to reduce CVD efficiently and severe CVD causes death
+            <a onclick="index_move_to_page(17)">(Peter, Joho et al. 2022)</a>.
         </div>
         <div class="bottomleft">
             <img class="illustration" id="page8-role1" src="<?php echo imgfile;?>/home/page8-role1.png">
-            <img class="illustration" id="page8-role3" src="<?php echo imgfile;?>/home/page6-role2.png">
-            <img class="illustration" id="page8-role2" src="<?php echo imgfile;?>/home/page6-role2.png">
+            <img class="illustration" id="page8-role2" src="<?php echo imgfile;?>/home/page8-role3.png">
+            <img class="illustration" id="page8-role3" src="<?php echo imgfile;?>/home/page8-role2.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_9">
         <div class="white_background">
-            EPA reduces CVD in two ways. In the arteries, EPA can split heme into biliverdin, free iron, and carbon monoxide to reduce free radicals and thus reduce oxidized LDL accumulation. EPA can also relax the surrounding smooth muscle to avoid severe CVD by enhancing nitric oxide production <a onclick="index_move_to_page(17)">(Sherratt, Libby et al. 2022)</a>.
+            EPA reduces CVDs in two aspects. In arteries, EPA can split heme into biliverdin, free iron, and carbon monoxide to clean the free radicals and reduce oxidative LDL accumulation. EPA can also relax the surrounding smooth muscle to avoid severe CVDs by enhancing nitric oxide production 
+            <a onclick="index_move_to_page(17)">(Sherratt, Libby et al. 2022)</a>.
         </div>
         <div class="bottomleft">
             <img class="illustration" id="page9-role1" src="<?php echo imgfile;?>/home/page7-role1.png">
             <img class="illustration" id="page9-role2" src="<?php echo imgfile;?>/home/page9-role1.png">
-            <!-- <img class="illustration" id="page9-role2" src="<?php echo imgfile;?>/home/page6-role2.png"> -->
+            <img class="illustration" id="page9-role3" src="<?php echo imgfile;?>/home/page9-role2.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_10">
@@ -101,8 +106,9 @@
             However, the major source of EPA, fish oil, comes from marine fish, which are the end consumers in the food chain, leading to the accumulation of heavy metals and microplastics.
         </div>
         <div class="bottomleft">
+            <img class="illustration" id="page10-role2" src="<?php echo imgfile;?>/home/page10-role2.png">
             <img class="illustration" id="page10-role1" src="<?php echo imgfile;?>/home/page10-role1.png">
-            <!-- <img class="illustration" id="page10-role2" src="<?php echo imgfile;?>/home/page9-role1.png"> -->
+            <img class="illustration" id="page10-role3" src="<?php echo imgfile;?>/home/page10-role2.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_11">
@@ -121,7 +127,7 @@
         <div id="page_12_content">
             <div id="information1">
                 <li class="learn_more_title">
-                    Genes form deep-sea bacteria
+                    EPA producing gene 
                 </li>
                 <div id="learn_more_1" class="learn_more" onclick="more_information('learn_more_1','learn_more_1_content','information2')">
                     <div class="triangle_to_right"></div>Learn more

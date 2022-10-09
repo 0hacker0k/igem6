@@ -364,6 +364,21 @@
                 $content="<div class='graduate'>Department of Psychology</div>Ms. Nga gave helpful advice on team organization and external communication.";
                 include "sub/attribution_card.php";
             ?>
+            <div class="card" style="flex-direction: column;">
+                <?php
+                    $name="123";
+                    $job_title="123";
+                    $introdution="123";
+                    include "sub/attribution_card_2.php";
+                ?>
+                <div class="dotted-line"></div>
+                <?php
+                    $name="456";
+                    $job_title="456";
+                    $introdution="456";
+                    include "sub/attribution_card_3.php";
+                ?>
+            </div>
         </div>
     </div>
     <?php include "./sub/footer.php"?>
