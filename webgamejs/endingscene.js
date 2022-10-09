@@ -13,6 +13,7 @@ function preload_endingscene(){
 var group=undefined;
 function create_endingscene(){
     loading_transition(this,-500*width/800,0);
+    create_audio(this);
     this.add.image(width/2,height/2,"black").setDisplaySize(width,height);
     var text_x=width/2;//初始位置
     var text_y=height*1.5;
