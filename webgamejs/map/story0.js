@@ -10,11 +10,13 @@ function preload_story0 (){
         this.load.image('green', prefix+'/main/green.png');
     }
     load_talkbox(this);
+    
 
 }
 
 function create_story0 (){
     loading_transition(this,-500*width/800,0);
+    create_audio(this);
     //--------------------場景設定--------------------
     //幻燈片
     for(var i=1;i<=6;i++){

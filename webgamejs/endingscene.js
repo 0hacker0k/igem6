@@ -1,12 +1,13 @@
 
 function preload_endingscene(){
     load_transition(this);
-    this.load.image("black","img/map/blacksquare.png");
+    this.load.image("black",prefix+"/map/blacksquare.png");
     this.load.scenePlugin({
         key: 'rexuiplugin',
         url: rexUI_path,
         sceneKey: 'rexUI'
     });
+    this.load.image("logo",prefix+"/map/brand.png");
     
 }
 var group=undefined;
@@ -14,8 +15,11 @@ function create_endingscene(){
     loading_transition(this,-500*width/800,0);
     this.add.image(width/2,height/2,"black").setDisplaySize(width,height);
     var text_x=width/2;//初始位置
-    var text_y=height*1.2;
+    var text_y=height*1.5;
     group = this.add.group();
+    logo = this.add.image(text_x,text_y-height*0.3,"logo");
+    logo.setDisplaySize(logo.width*0.125,logo.height*0.125);
+    group.add(logo,true);
     for(var i=0;i<lan_ending_scene.length;i++){
         var text;
         var member;

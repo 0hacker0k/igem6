@@ -8,6 +8,7 @@ function preload_stage1_choose(){
     this.load.image('banner', prefix+'/stage1/banner.png');
     load_talkbox(this);
     load_transition(this);
+    
 }
 var banner_status=0;
 var banner;
@@ -21,6 +22,7 @@ function create_stage1_choose (){
     load_page(stage_1_pcr);*/
     //轉場設定
     loading_transition(this,-500*width/800,0);
+    create_audio(this,"stage");
     //--------------------場景設定--------------------
     this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
     this.add.image(width*0.2, height*0.1, 'DNA').setOrigin(0, 0).setDisplaySize(height*0.8,height*0.8);

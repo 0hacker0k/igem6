@@ -116,6 +116,7 @@ var point_x,point_y;
 function create_stage2_gel (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
+    create_audio(this,"stage");
     var deskGroup = this.physics.add.staticGroup();
     var deskGroup_touch = this.physics.add.staticGroup();
     var cant_move_item = this.physics.add.staticGroup();
@@ -176,7 +177,7 @@ function create_stage2_gel (){
     }
     //遊戲時間
     var timer=this.add.text(width*0.88, height*0.02, '', { fontFamily: 'fantasy', fontSize: width*0.05+'px', fill: '#111111' });
-    timer.time=5;
+    timer.time=120;
     timer.setText(Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+timer.time%60);
     timer.depth=30;
     //remind: string to variable(en and zh-tw)

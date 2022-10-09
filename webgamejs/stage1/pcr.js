@@ -1,6 +1,7 @@
 function preload_stage1_pcr(){
     this.load.image('background', prefix+'/stage1/step-3-background.jpg');//載入一般圖片
     load_transition(this);
+    
     preload_congratulation(this);
     this.load.image('back', prefix+'/main/back.png');
     this.load.spritesheet('gene',
@@ -13,7 +14,7 @@ function create_stage1_pcr (){
     //轉場設定
     where=this;
     loading_transition(this,-500*width/800,0);
-    
+    create_audio(this,"stage");
     //--------------------場景設定--------------------
     this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
     {//畫禎設定

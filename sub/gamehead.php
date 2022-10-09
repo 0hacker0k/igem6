@@ -14,6 +14,7 @@
 <script src="<?php echo webgamejsfile;?>/stage5/take.js"></script>
 <script src="<?php echo webgamejsfile;?>/play/shoot.js"></script>
 <script src="<?php echo webgamejsfile;?>/play/billiard.js"></script>
+<script src="<?php echo webgamejsfile;?>/audio.js"></script>
 <script src="<?php echo webgamejsfile;?>/change.js"></script>
 <script src="<?php echo webgamejsfile;?>/congratulation.js"></script>
 <script src="<?php echo webgamejsfile;?>/endingscene.js"></script>

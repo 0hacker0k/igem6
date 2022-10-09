@@ -562,7 +562,7 @@ lan_ending_scene=
     "Yun-Chi Chiu",
     "Yi-Yun Lee",
     "",
-    "[size="+((width*0.05).toString())+"]Sound Composer",
+    "[size="+((width*0.05).toString())+"]Sound Composer[/size]",
     "",
     "Chia-Hsieh Kung",
     "",
@@ -583,7 +583,8 @@ lan_ending_scene=
     "[size="+((width*0.05).toString())+"]Special Thanks[/size]",
     "",
     "Ching-Chieh Weng",
-    "Chun-Ying Yu ",
-    "Eugene C. Lin"
+    "Chun-Ying Yu",
+    "Eugene C. Lin",
+    "Matilda Key"
 
 ]

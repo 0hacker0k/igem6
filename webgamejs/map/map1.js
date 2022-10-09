@@ -14,6 +14,7 @@ function preload (){
 var where = this;
 function create (){
     loading_transition(this,-500*width/800,0);
+    create_audio(this);
     //--------------------場景設定--------------------
     map=this.add.tileSprite(0, 0, 0,0, 'map').setOrigin(0, 0).setDisplaySize(width,height);
     //--------------------人頭設定--------------------

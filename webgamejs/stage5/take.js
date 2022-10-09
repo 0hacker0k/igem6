@@ -32,6 +32,7 @@ function create_stage5_take (){
     where=this;
     //轉場設定
     loading_transition(this,-500*width/800,0);
+    create_audio(this,"stage");
     
     //--------------------場景設定--------------------
     //背景

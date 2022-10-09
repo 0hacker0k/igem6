@@ -13,6 +13,8 @@ function create_stage3_flop (){
     where=this;
     //轉場設定
     loading_transition(this,-500*width/800,0);
+    create_audio(this,"stage");
+    
     
     //--------------------場景設定--------------------
     this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);

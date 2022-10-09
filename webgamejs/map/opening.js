@@ -12,6 +12,7 @@ function preload_opening (){
 var where = this;
 function create_opening (){
     loading_transition(this,-500*width/800,0);
+    create_audio(this);
     //--------------------場景設定--------------------
     var webgame;
     webgame=this.physics.add.sprite(width/2,height/2,'webgame').setDisplaySize(width,height);

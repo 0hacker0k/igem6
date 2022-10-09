@@ -27,6 +27,8 @@ function preload_story1 (){
 
 function create_story1 (){
     loading_transition(this,-500*width/800,0);
+    create_audio(this);
+    
     //--------------------場景設定--------------------
     //幻燈片
     for(var i=con.img_num_start;i<=con.img_num_end;i++){

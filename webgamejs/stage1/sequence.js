@@ -23,6 +23,7 @@ var output="";
 function create_stage1_sequence (){
     //轉場設定
     loading_transition(this,-500*width/800,0);
+    create_audio(this,"stage");
     //--------------------場景設定--------------------
     this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(width,height);
     platforms = this.physics.add.staticGroup();//分為靜態與動態，靜態的只有大小與位置，動態的有速度、加速度、反彈、碰撞。
