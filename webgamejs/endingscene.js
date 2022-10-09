@@ -1,14 +1,17 @@
 
 function preload_endingscene(){
+    load_transition(this);
     this.load.image("black","img/map/blacksquare.png");
     this.load.scenePlugin({
         key: 'rexuiplugin',
         url: rexUI_path,
         sceneKey: 'rexUI'
     });
+    
 }
 var group=undefined;
 function create_endingscene(){
+    loading_transition(this,-500*width/800,0);
     this.add.image(width/2,height/2,"black").setDisplaySize(width,height);
     var text_x=width/2;//初始位置
     var text_y=height;
@@ -25,13 +28,15 @@ function create_endingscene(){
         // }else{
         //     fontsize=(width*0.04).toString()+'px'
         // }
-        text = this.rexUI.add.BBCodeText(text_x,text_y,lan_ending_scene[i],{fontFamily: 'fantasy', fontSize: fontsize, color: '#ffffff' });
-        //text.align = 'center';
+        text = this.rexUI.add.BBCodeText(text_x,text_y,lan_ending_scene[i],{fontFamily: 'fantasy', fontSize: fontsize, color: '#ffffff' }).setOrigin(0.5);
+        text.align = 'center';
         //text.setPadding(50,0,50,0);
         text.round=true;
         group.add(text,true);
         text_y+=height*0.1;
         //text.setVelocityY(height*(-0.05));
+        //轉場動畫
+        start_transition(this);
     }
     
 }

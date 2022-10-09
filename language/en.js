@@ -530,7 +530,7 @@ lan_ending_scene=
 [
     "Credits",
     "Creator : ",
-    "[align=right]Tino[/align]",
-    "[align=right]ellllllllllsssssstttt[/align]",
+    "Tino",
+    "ellllllllllsssssstttt",
     "texs"
 ]
