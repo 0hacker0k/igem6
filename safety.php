@@ -104,7 +104,7 @@
                     <ul>
                         <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
-                            <h3 style="color: #613dc1";>Ultrafiltration</h3>
+                            <h3 style="color: #800000";>Ultrafiltration</h3>
                             <p>
                                 &emsp;&emsp;On a small scale, the endotoxin micelles and vesicles can be separated from water, salts, and small target therapeutic molecules through size exclusion in ultrafiltration. Factors that affect the removal of endotoxins include the size distribution of molecules in solution, interactions with target molecules, target protein concentrations, and the presence of detergents. 
                             </p>
@@ -114,28 +114,28 @@
                         </li>
                         <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
-                            <h3 style="color: #613dc1";>Solvent extraction</h3>
+                            <h3 style="color: #800000";>Solvent extraction</h3>
                             <p>
                                 &emsp;&emsp;Solvent extraction is used to separate endotoxins from target therapeutics based on their relative solubilities in two immiscible liquids. Endotoxin partitions in the organic phase, while hydrophilic target molecules remain in the aqueous phase.
                             </p>
                         </li>
                         <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
-                            <h3 style="color: #613dc1";>Anion‐exchange chromatography</h3>
+                            <h3 style="color: #800000";>Anion‐exchange chromatography</h3>
                             <p>
                                 &emsp;&emsp;Anion‐exchange chromatography can be used to separate negatively charged endotoxins from positively charged molecules, such as basic proteins.
                             </p>
                         </li>
                         <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
-                            <h3 style="color: #613dc1";>Affinity chromatography</h3>
+                            <h3 style="color: #800000";>Affinity chromatography</h3>
                             <p>
                                 &emsp;&emsp;Affinity chromatography is used to separate endotoxins from target molecules using highly specific interactions between endotoxins and a ligand bound to a stationary phase. Because of the specificity of the ligand, there is little to no product loss during separation. The target therapeutic molecule will elute with a greater velocity than endotoxin molecules due to specificity. The ligand chosen should have a strong interaction with endotoxins and a weak interaction with the target therapeutic molecule at separation conditions. Affinity chromatography can be used with a wide range of target molecules, including pDNA and proteins.
                             </p>
                         </li>
                         <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
-                            <h3 style="color: #613dc1";>Membrane adsorption</h3>
+                            <h3 style="color: #800000";>Membrane adsorption</h3>
                             <p>
                                 &emsp;&emsp;Membrane adsorption exploits the same mechanisms used in affinity and ion‐exchange chromatography but offers a reduced processing time and initial investment. Similar to affinity chromatography, a product yield near 100% can be achieved.
                             </p>
@@ -145,7 +145,7 @@
                         </li>
                         <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
-                            <h3 style="color: #613dc1";>Conclusion</h3>
+                            <h3 style="color: #800000";>Conclusion</h3>
                             <p>
                                 &emsp;&emsp;Due to the limitations of each method, we will conduct additional research both in theory and in practice to select the most cost‐effective way(s) for us to deal with endotoxins. After we successfully prove the feasibility of our EPA-producing system in <i>E. coli</i>, we will further apply this system in Nissle 1917, which is a FDA proven bacterial species for producing nutritional supplements.
                             </p>
@@ -159,7 +159,7 @@
                         &emsp;&emsp;To analyze the EPA : lipid ratio, we will extract the lipid product from the EPA-producing <i>E. coli</i> by the Folch method, then run High Performance Liquid Chromatography (HPLC). In the successive process, some hazardous chemicals will be used. These chemicals and their applications are listed as follows.
                     </p>  
                     <div class="marge" style="--width:calc(3em + 5vh)"></div>
-                    <p style="color: #613dc1";>
+                    <p style="color: #800000";>
                         1. Methanol and chloroform will be used as solvents to extract lipids.
                     </p>
                     <p style="color: #EA2B1F";>
@@ -169,14 +169,14 @@
                         Caution: chloroform can be toxic if inhaled or swallowed. Exposure to chloroform may also cause cancer.
                     </p>
                     <div class="marge" style="--width:calc(3em + 5vh)"></div>
-                    <p style="color: #613dc1";>
+                    <p style="color: #800000";>
                         2. Ethanol is applied to conduct transesterification to convert the extracted lipids into FAEEs (fatty acid ethyl esters).
                     </p>
                     <p style="color: #EA2B1F";>
                         Caution: high concentrations may damage a fetus. Contact can irritate the skin and eyes. Prolonged or repeated exposure can cause drying and cracking of the skin with peeling, redness and itching.
                     </p>
                     <div class="marge" style="--width:calc(3em + 5vh)"></div>
-                    <p style="color: #613dc1";>
+                    <p style="color: #800000";>
                         3. Sulfuric acid is used as a catalyst in transesterification.
                     </p>
                     <p style="color: #EA2B1F";>
@@ -191,7 +191,7 @@
                 </li>
                 <div class="marge" style="--width:calc(3em + 5vh)"></div>
                 <li>
-                    <h3 style="color: #613dc1";>Recommended daily allowance</h3>
+                    <h3 style="color: #800000";>Recommended daily allowance</h3>
                     <p>
                         &emsp;&emsp;According to the American Heart Association, the EPA recommended daily allowance for CVD prevention is 1 g. Therefore, the amount of EPA will be set at 0.5 g in each capsule. Also, we will indicate that the consumers should avoid taking more than two capsules for adults and one for children per day. Besides, we will show the EPA content of the capsule and the recommended daily allowance on the package.
                     </p>
