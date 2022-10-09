@@ -24,7 +24,7 @@
     <div class="article">
         <div class="in_center">
             <div id="2" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Producing EPA</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Producing EPA</h2>
             </div>
             <p class="h25">
                 &emsp;&emsp;To generate EPA successfully, we design to express the EPA-producing <i>pfa</i> genes from deep-sea bacteria <i>Moritella marina</i>, and the <i>pfa B</i> gene is from <i>Shewanella pneumatophori</i>. Therefore, we amplify the <i>pfa</i> genes including <i>pfa A1</i>, <i>pfa A2</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i> by PCR. Then we purified these amplicons to digest with the corresponding restriction enzymes also the designed vectors which are pColdI and pSTV28. After collecting all digested amplicons and vectors, we would ligate <i>pfa A</i> and <i>pfa D</i> genes into the pColdI vector and the <i>pfa B</i>, <i>pfa C</i>, <i>pfa E</i> genes were ligated into the pSTV28 vector. The cloned <i>pfa</i> genes were then co-expressed in <i>E. coli</i>. to produce EPA.
@@ -39,7 +39,7 @@
                 &emsp;&emsp;3. We did the protein expression of pColdI-<i>pfa D</i> and pSTV28-<i>pfa E</i> to confirm our design vector can express <i>pfa</i> genes.
             </p>
             <div id="2" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Increasing EPA Production</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Increasing EPA Production</h2>
             </div>
             <p class="h25">
                 &emsp;&emsp;The efficient EPA production in <i>E. coli</i> is associated with market advantage. The Acc complex has been improved that it can increase the malonyl-CoA, the EPA precursor. We use the Acc complex to increase the EPA production. To express the ACC complex, we amplified the <i>Acc</i> genes including <i>AccBC</i>, AccD1 and AccE. Then we purified these genes to digest with the corresponding restriction enzymes also the designed vectors which is pET28a. Therefore, we ligate these <i>Acc</i> genes into pET28a and transform this plasmid into <i>E. coli</i>. to enhance the yield of EPA production. In addition, we add chemical cerulenin to inhibit the competing fatty acid synthesis pathway in <i>E. coli</i> and consequently enhance the function of <i>pfa</i> genes. 

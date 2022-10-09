@@ -89,7 +89,7 @@
                 &emsp;&emsp;Synthetic biology is a new concept to the public, so we need to build better societal understanding of this new technology, eliminate doubts, and increase the acceptance of products of biological technology. We use the internet to spread the ideas, since it can share the information of synthetic biology to all ages regardless of location. We applied two online tools, Web game and social media, to promote the concept more effectively. 
             </p>
             <div id="3" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Web game</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Web game</h2>
             </div>
             <p>
                 &emsp;&emsp;Compared to learning the experimental process through a textbook, web games are a more interesting approach for the current generation. By fusing basic steps of synthetic biological experiments and an inspiring story line, we can make the game more immersive. Moreover, since people can play our web game on any device, distance barriers are overcome. In the game, players need to accomplish five main stages to learn the principles of PCR, gel electrophoresis, ligation, transformation and choosing a colony. By enjoying our game, people can experience the principles of synthetic biology without going to a practical lab or purchasing expensive experiment tools. 
@@ -106,7 +106,7 @@
                 <div class="triangle_to_top"></div> Web game fusing synthetic biological experiments and an inspiring story line.          
             </div>
             <div id="4" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Social media</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Social media</h2>
             </div>
             <p>
                 &emsp;&emsp;Social media is a very popular way to convey information nowadays. To spread the idea of synthetic biology more effectively, using social media for promotion is essential. As a result, we used Instagram and Facebook to share our ideas to the public with the assistance of an algorithm. We posted the information about the common applications of synthetic biology, and shared the result of the activities we held to the public. Sometimes we also mentioned the daily activities of our team, making life in the laboratory more approachable for people. 
@@ -118,7 +118,7 @@
                 </div>
             </div>
             <div id="5" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">World Heart Day event</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">World Heart Day event</h2>
             </div>
             <p>
                 &emsp;&emsp;9/29 is global World Heart Day. To support the holiday, we planned an event to promote our PACOmega project and the concept of healthy diet and regular exercise to the public. We prepared a message board for people, asking them to share their good habits that are beneficial for the prevention of CVD. They could also write what changes they were willing to make to improve their overall health. 
@@ -136,7 +136,7 @@
                 &emsp;&emsp;To better understand the needs of our target audiences for science communication, we performed surveys to collect opinions from students in our college. The questions included CVD information, EPA supplements, and synthetic biology. After the survey, we aimed to better be able to share the power of synthetic biology with various kinds of people. For those who are new to synthetic biology and show interest, we prepared activities that converted textbook knowledge into actual experience. Moreover, through these activities we can also educate people how we synthesize pure EPA, making people more willing to accept the PACOmega project and consume the product. 
             </p>
             <div id="7" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Open lab</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Open lab</h2>
             </div>
             <p>
                 &emsp;&emsp;To educate teenagers about synthetic biology, we held an Open Lab science camp that invited high school students. During the Open Lab activity, the students participated in PCR, gel electrophoresis, amplicon purification, ligation, and transformation. Finally, they were able to observe the <i>E. coli</i> plate that expressed the target gene. In order to allow students to observe the final result more clearly, we applied green fluorescent protein (GFP) as the expressed gene in the experiment. By including several basic experiment processes of synthetic biology, we tried to make students more familiar with the new technology in an enjoyable activity. 
@@ -148,7 +148,7 @@
                 </div>
             </div>
             <div id="8" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Campus walking activity</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Campus walking activity</h2>
             </div>
             <p>
                 &emsp;&emsp;To make people aware of the seriousness of CVD and how we deal with the CVD crisis with synthetic biology, we held a campus walking activity for local elderly. In the event, we designed five simple games to help people understand the CVD crisis and how we fight with it by synthetic biology. Through the simple games, even elders could enjoy the process of playing and learning. Thus we successfully combined an interesting way of gaining knowledge about how to prevent the dreadful disease with an event encouraging physical activity. 
@@ -160,7 +160,7 @@
                 </div>
             </div>
             <div id="9" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">The TCUS entrepreneurship competition</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The TCUS entrepreneurship competition</h2>
             </div>
             <p>
                 &emsp;&emsp;To communicate with the industry, we decided to hold the TCUS entrepreneurship competition, in collaboration with NCKU_Tainan. In this competition, we invited the academic professor and CEO of a synthetic biology company to share their experiences in translating ideas into products. This also led to win-win cooperation, making more novel and interesting ideas come true. 
@@ -185,7 +185,7 @@
                 &emsp;&emsp;In regard to the focus of our project, to utilize synthetic biology to generate EPA for CVD prevention, it’s possible for us to meet unforeseen problems. To deal with this, besides getting advice from experts, we also hunted for connections with groups experienced in synthetic biology to give us some advice. Through the process, by learning and understanding the project mutually, we not only exchanged suggestions and received more feedback to accomplish our project, but found more similarities between teams, developed collaboration opportunities, and achieved a win-win relationship. 
             </p>
             <div id="12" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Taiwan iGEM meet '22</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Taiwan iGEM meet '22</h2>
             </div>
             <p>
                 &emsp;&emsp;On 8/22 we participated in the Taiwan iGEM meet ‘22, a conference for TAIWAN IGEM teams and participants to learn about every team’s project, discuss the projects, and get feedback from every Taiwan IGEM team for improvement and inspiration. 
@@ -203,7 +203,7 @@
                 </div>
             </div>
             <div id="13" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Asian Federation of Biotechnology (AFOB) - AFOB Regional Symposium (ARS)</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Asian Federation of Biotechnology (AFOB) - AFOB Regional Symposium (ARS)</h2>
             </div>
             <p>
                 &emsp;&emsp;Asian Federation of Biotechnology (AFOB) is a non-profit organization established in 2008, committed to enhancing the exchange of knowledge, skills, and people, to complement and support events and research related to biotechnology, and promote the awareness of beneficial uses of biotechnology to the public. The AFOB Regional Symposium (ARS), is the annual conference for people in the biotechnology field to exchange ideas on projects and gain inspiration. 

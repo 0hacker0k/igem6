@@ -59,13 +59,13 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">BIOSAFETY</h1>
             </div>
             <div id="3" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Personal safety</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Personal safety</h2>
             </div>
             <p>
                 &emsp;&emsp;Before we started our work in the lab, all the team members had to receive training courses in which we learned the importance of safety rules, including that eating and drinking are not allowed in the lab and never conducting experiments alone. Also, we should wear personal protection equipment, such as lab coats, gloves, and goggles, when conducting experiments.
             </p>
             <div id="4" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Laboratory Safety</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Laboratory Safety</h2>
             </div>
             <p>
                 &emsp;&emsp;The experiments in our project can be conducted in a biosafety level 1 laboratory.Bacterial transfers and work with volatile chemicals should be performed in biosafety cabinets and fume hoods, respectively. Besides, we also learned the proper use of and precautions for various machines in the laboratory, and understood what hazards may be encountered in the laboratory and how to deal with them if they occur. Furthermore, we must immediately report to our advisor or safety center if there is any accident or equipment damage.
@@ -74,7 +74,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">PROJECT SAFETY</h1>
             </div>
             <div id="6" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Environmental safety</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Environmental safety</h2>
             </div>
             <ul>
                 <li>
@@ -91,7 +91,7 @@
                 </li>
             </ul>
             <div id="7" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('/igem6/img/highlight.png')">Application safety</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Application safety</h2>
             </div>
             <ul>
                 <li>
