@@ -33,6 +33,7 @@
                     <a href="#6" onclick="move_note2()"><div class="nav_control nav_control_b"><li>Dry lab</li></div></a>
                     <a href="#7" onclick="move_note2()"><div class="nav_control nav_control_b"><li>Human practice</li></div></a>
                     <a href="#8" onclick="move_note2()"><div class="nav_control nav_control_a"><li>Advisors</li></div></a>
+                    <a href="#9" onclick="move_note2()"><div class="nav_control nav_control_a"><li>Special thanks</li></div></a>
                 </div>    
             </div>
         </div>
@@ -373,6 +374,9 @@
                 $content="<div class='graduate'>Department of Psychology</div>Ms. Nga gave helpful advice on team organization and external communication.";
                 include "sub/attribution_card.php";
             ?>
+            <div id="9" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Special Thanks</h1>
+            </div>
             <div class="card" style="flex-direction: column;">
                 <div class="special_thanks">
                     <?php
