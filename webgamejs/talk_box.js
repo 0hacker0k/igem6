@@ -48,7 +48,7 @@ function createTextBox (scene, x, y, config, npc_key) {
             //text: getBuiltInText(scene, wrapWidth, fixedWidth, fixedHeight),
             text: getBBcodeText(scene, wrapWidth, fixedWidth, fixedHeight),
 
-            action: scene.add.image(0, 0, 'nextPage').setDisplaySize(width*0.02,width*0.02).setTint(COLOR_LIGHT).setVisible(false),
+            action: scene.add.image(0, 0, 'nextPage').setDisplaySize(width*0.02,width*0.02).setVisible(false),
             
             space: {
                 left: talkbox_size*2,

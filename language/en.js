@@ -524,7 +524,7 @@ lan_story6_final=
     "pa_13":"I know grandpa, I'm sorry I can't save you, but I will use the experimental skills learned in the stage and the daily prevention knowledge and EPA to bring into the whole kingdom to prevent the problem of CVD from the root.",
     "back_14":"PACO holds E. coli high, and the relic inside E. coli shines brightly.",
     "back_15":"Two years later, under the Kingdom's policy of synthesizing EPA with PACO and promoting healthy living habits, the rate of CVD has been greatly reduced, and residents live a life of regular diet and healthy work and rest. Although PACO's grandfather finally passed away because of CVD, the influence she brought now deeply affects the whole society.",
-    "back_16":"The end.",
+    "back_16":"The end."
 }
 lan_ending_scene=
 [
@@ -586,5 +586,4 @@ lan_ending_scene=
     "Chun-Ying Yu",
     "Eugene C. Lin",
     "Matilda Key"
-
 ]
