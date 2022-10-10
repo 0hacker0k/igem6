@@ -32,7 +32,7 @@
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;In our PACOmega project, the acetyl-CoA carboxylase (ACC) is applied to enhance the EPA production in <i>E. coli</i>. The acetyl-CoA carboxylase of <i>C. glutamicum</i> is made up of alpha-subunit (<i>AccBC</i>), beta-subunit (AccD1/DtsR1), epsilon-subunit (AccE).
+                &emsp;&emsp;In our PACOmega project, the acetyl-CoA carboxylase (ACC) is applied to enhance the EPA production in <i>E. coli</i>. The acetyl-CoA carboxylase of <i>C. glutamicum</i> is made up of alpha-subunit (<i>AccBC</i>), beta-subunit (<i>AccD1/DtsR1</i>), epsilon-subunit (<i>AccE</i>).
             </p>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -42,7 +42,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;Our improved biobrick is based on the existing part from the previous iGEM team. AccBC (BBa_K2560251) and AccD1/DstR1 (BBa_K2560252) from <i>C. glutamicum</i> had been designed to express in <i>V. natriegens</i> to promote the conversion from acetyl-CoA into malonyl-CoA. To express the <i>AccE</i> with <i>AccBC</i> and <i>AccD1</i> in <i>E. coli</i> and eliminate the iGEM official restriction enzyme sites, we improved this biobrick by codon-optimization for <i>E. coli</i> expression and removal of the restriction enzyme cutting sites for EcoRI, PstI, SpeI, NotI and XbaI.
+                &emsp;&emsp;Our improved biobrick is based on the existing part from the previous iGEM team. <i>AccBC</i> (BBa_K2560251) and <i>AccD1/DstR1</i> (BBa_K2560252) from <i>C. glutamicum</i> had been designed to express in <i>V. natriegens</i> to promote the conversion from acetyl-CoA into malonyl-CoA. To express the <i>AccE</i> with <i>AccBC</i> and <i>AccD1</i> in <i>E. coli</i> and eliminate the iGEM official restriction enzyme sites, we improved this biobrick by codon-optimization for <i>E. coli</i> expression and removal of the restriction enzyme cutting sites for EcoRI, PstI, SpeI, NotI and XbaI.
             </p>
             <div id="3" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The optimized sequence of <i>AccBC</i></h2>
