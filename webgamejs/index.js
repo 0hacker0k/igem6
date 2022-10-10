@@ -217,6 +217,24 @@ const stage_5_take={
     create: create_stage5_take,
     update: update_stage5_take
 }
+const stage_6_story_determination={
+    key: 'stage_6_story_determination',
+    preload: preload_story6_determination,
+    create: create_story6_determination,
+    update: update_story6_determination
+}
+const stage_6_story_awaken={
+    key: 'stage_6_story_awaken',
+    preload: preload_story6_awaken,
+    create: create_story6_awaken,
+    update: update_story6_awaken
+}
+const stage_6_story_final={
+    key: 'stage_6_story_final',
+    preload: preload_story6_final,
+    create: create_story6_final,
+    update: update_story6_final
+}
 const ending={
     key: 'ending',
     preload: preload_endingscene,
@@ -252,6 +270,12 @@ function load(){
                 break;
             case "stage5":
                 load_page(stage_5_take);
+                break;
+            case "story6":
+                load_page(stage_6_story_determination);
+                break;
+            case "story6-final":
+                load_page(stage_6_story_final);
                 break;
             case "ending":
                 load_page(ending);

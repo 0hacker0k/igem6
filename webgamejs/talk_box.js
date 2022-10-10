@@ -7,6 +7,9 @@ var PACO;
 var Sprite;
 var backer;
 var npc;
+var stranger;
+var hero;
+var grandpa;
 var barrier=null;
 var skiptalk=null;
 function load_talkbox(where){//載入動畫檔
@@ -21,6 +24,9 @@ function load_talkbox(where){//載入動畫檔
     where.load.image('PACO', prefix+'/main/paco.png');
     where.load.image('Sprite', prefix+'/main/sprite.png');
     where.load.image('backer', prefix+'/map/backer.jpg');
+    where.load.image('hero', prefix+'/map/hero.png');
+    where.load.image('stranger', prefix+'/map/stranger.png');
+    where.load.image('grandpa', prefix+'/map/grandpa.png');
 }
 
 function loading_talkbox(where,x,y){
@@ -179,6 +185,18 @@ function updateTalkbox(lan,slide=undefined){
             }else if(lan["npc_"+descript_count.toString()]!=undefined){
                 npc.setInteractive().setVisible(true);
                 npc.start(lan["npc_"+descript_count.toString()],50);
+                descript_count++;
+            }else if(lan["?_"+descript_count.toString()]!=undefined){
+                stranger.setInteractive().setVisible(true);
+                stranger.start(lan["?_"+descript_count.toString()],50);
+                descript_count++;
+            }else if(lan["hero_"+descript_count.toString()]!=undefined){
+                hero.setInteractive().setVisible(true);
+                hero.start(lan["hero_"+descript_count.toString()],50);
+                descript_count++;
+            }else if(lan["grand_"+descript_count.toString()]!=undefined){
+                grandpa.setInteractive().setVisible(true);
+                grandpa.start(lan["grand_"+descript_count.toString()],50);
                 descript_count++;
             }
             preisdone=0;

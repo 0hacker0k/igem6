@@ -1,15 +1,15 @@
 
-function preload_story1_after (){
+function preload_story6_determination (){
     con=
     {//直接調參數
-        "img_num_start":12,
-        "img_num_end":15,
-        "npc_key":'npc1',
-        "next_page":map_1,
-        "lan":lan_story1_after,
-        "slide":slide_story1_after,
+        "img_num_start":42,
+        "img_num_end":54,
+        "npc_key":'npc5',
+        "next_page":stage_6_story_awaken,
+        "lan":lan_story6_determination,
+        "slide":slide_story6_determination,
         'descript_count':1,
-        'descript_limit':Object.keys(lan_story1_after).length
+        'descript_limit':Object.keys(lan_story6_determination).length
     };
     debug=0;
     load_transition(this);
@@ -26,9 +26,10 @@ function preload_story1_after (){
     this.load.image(con.npc_key, prefix+'/map/'+con.npc_key+'.png');
 }
 
-function create_story1_after (){
+function create_story6_determination (){
     loading_transition(this,-500*width/800,0);
     create_audio(this);
+    
     //--------------------場景設定--------------------
     //幻燈片
     for(var i=con.img_num_start;i<=con.img_num_end;i++){
@@ -39,6 +40,9 @@ function create_story1_after (){
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
     backer=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
     npc=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, con.npc_key);
+    hero=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'hero');
+    stranger=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'stranger');
+    
     descript_count=con.descript_count;
     descript_limit=con.descript_limit;
     //轉去下個場
@@ -69,10 +73,11 @@ function create_story1_after (){
 
     }
     //stop=0;
+    console.log(descript_limit);
     start_transition(this);
 }
 
-function update_story1_after (){//與外界有關的互動
+function update_story6_determination (){//與外界有關的互動
     if(descript_count<=descript_limit){
         updateTalkbox(con.lan,con.slide);
     }
