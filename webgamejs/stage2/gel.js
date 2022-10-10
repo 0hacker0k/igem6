@@ -26,7 +26,6 @@ function preload_stage2_gel(){
     debug = 1;
     if(debug==1){
         this.load.image('D_center', prefix+'/main/debug-center.png');
-        
     }
     this.load.image('green', prefix+'/main/green.png');
     this.load.image('back', prefix+'/main/back.png');
@@ -40,6 +39,7 @@ function preload_stage2_gel(){
     this.load.image('desk', prefix+'/stage2/desk.png');
     this.load.image('background', prefix+'/stage2/background.jpg');
     this.load.image('direct', prefix+'/main/director.png');
+    this.load.image('hand', prefix+'/stage2/hand.png');
     this.load.image('marker', prefix+'/stage2/marker.png');
     this.load.image('sample', prefix+'/stage2/sample.png');
     this.load.image('gold',prefix+'/stage2/gold.png');
@@ -110,6 +110,7 @@ var direction;
 var desk = new Array();
 var player;
 var keySpace;
+var isHand=0;
 var spot,spot_touch;
 var p_facing=2;
 var point_x,point_y;
@@ -583,7 +584,7 @@ function create_stage2_gel (){
     function touch_table(spot_touch, desk_entity){
         i=desk_entity.i;
         j=desk_entity.j;
-        if(keySpace.isDown){
+        if(keySpace.isDown||isHand){
             if(action_list.indexOf(desk_entity.id)==-1){
                 action_list[action_record]=desk_entity;
                 action_record++;
@@ -971,7 +972,7 @@ function create_stage2_gel (){
         }
     }
     function trashing(spot_touch, trashcan){
-        if(keySpace.isDown){
+        if(keySpace.isDown||isHand){
             var p=spot_touch.player;
             if(p.pick!=null){
                 if(p.pick.type=="beaker"){
@@ -1037,7 +1038,7 @@ function create_stage2_gel (){
     }
     //sample、marker分數: 基本20，一般60，完美100，
     function qte_pointer_move(p, gel, d, locate){
-        if(keySpace.isDown){
+        if(keySpace.isDown||isHand){
             p.stop=0;
             if(p.pick.take=="marker")
                 gel.marker_score+=20;
@@ -1614,15 +1615,31 @@ function create_stage2_gel (){
 
     var x,y,status=0;
     direct=this.add.image(x, y, 'direct').setDisplaySize(0.2*width,0.2*width);
+    direct.depth = 60000;
     direct.alpha = 0;
+    if(isMobileDevice()){
+        hand = this.add.image(width*0.75,height*0.75,"hand").setDisplaySize(width*0.075,width*0.075).setInteractive();
+        hand.alpha=0.5;
+        hand.depth=60001;
+        hand.on("pointerdown", function(pointer){
+            isHand=1;
+            hand.setDisplaySize(width*0.09,width*0.09);
+        },this);
+        hand.on("pointerup", function(pointer){
+            isHand=0;
+            hand.setDisplaySize(width*0.075,width*0.075);
+        },this);
+    }
     this.input.on('pointerdown', function (pointer) {
         x=pointer.x;
         y=pointer.y;
+        direct.x=x;
+        direct.y=y;
         status=1;
         point_x=x;
         point_y=y;
         if(isMobileDevice()){
-            direct.alpha = 1;
+            if(stop!=1) direct.alpha = 1;
         }
         // console.log(stage.x);
     }, this);
@@ -1653,6 +1670,23 @@ function create_stage2_gel (){
         direction=0;
         direct.alpha = 0;
     }, this);
+    //DEBUG
+    if(debug==1){
+        this.add.image(width/2, height/2, 'D_center').setOrigin(0.5, 0.5).setDisplaySize(10,10);
+        this.input.on('pointerdown', function (pointer) {
+            console.log("x="+pointer.x);
+            console.log("y="+pointer.y);
+        },this);
+        //x軸
+        for(var i=1;i<=10;i++){
+            this.add.image(width/2, i*height/10, 'green').setOrigin(0.5, 0.5).setDisplaySize(width,0.001*height);
+        }
+        //y軸
+        for(var i=1;i<=10;i++){
+            this.add.image(i*width/10, height/2, 'green').setOrigin(0.5, 0.5).setDisplaySize(0.001*width,height);
+        }
+
+    }
     create_congratulation(this,map_1);
     //對話框
     PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
@@ -1675,12 +1709,6 @@ function create_stage2_gel (){
     //轉場動畫
     start_transition(this);
     time_count_down(timer);
-    // var content = `Phaser is a fast, free, and fun open source HTML5 game framework that offers WebGL and Canvas rendering across desktop and mobile web browsers. Games can be compiled to iOS, Android and native apps by using 3rd party tools. You can use JavaScript or TypeScript for development.`;
-    // createTextBox(this, width*0.15, height*0.75, {
-    //     wrapWidth: width*0.5,
-    //     fixedWidth: width*0.55,
-    //     fixedHeight: height*0.15,
-    // },'green').start(content, 50);
 }
 var animate_f=0;
 var animate_tick=5;
@@ -1695,8 +1723,8 @@ function update_stage2_gel (){//與外界有關的互動
     
     updateTalkbox(lan_stage2);
     if(stop==0 && player.stop==0){
-        direct.x=player.x+point_x-width/2;
-        direct.y=player.y+point_y-height/2;
+        // direct.x=point_x-width/2;
+        // direct.y=point_y-height/2;
         if (cursors.up.isDown){
             p_facing=4;
             spot.setVelocityY(-s5_run_speed);
