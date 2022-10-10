@@ -191,6 +191,7 @@ function create_stage5_take (){
     //loading_talkbox(this,500,500);
     PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
+    backer=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
     descript_count=1;
     descript_limit=Object.keys(lan_stage5).length;
     create_congratulation(this,map_1);

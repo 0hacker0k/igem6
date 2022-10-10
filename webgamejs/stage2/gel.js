@@ -1617,19 +1617,20 @@ function create_stage2_gel (){
     direct=this.add.image(x, y, 'direct').setDisplaySize(0.2*width,0.2*width);
     direct.depth = 60000;
     direct.alpha = 0;
-    if(isMobileDevice()){
-        hand = this.add.image(width*0.75,height*0.75,"hand").setDisplaySize(width*0.075,width*0.075).setInteractive();
-        hand.alpha=0.5;
-        hand.depth=60001;
-        hand.on("pointerdown", function(pointer){
-            isHand=1;
-            hand.setDisplaySize(width*0.09,width*0.09);
-        },this);
-        hand.on("pointerup", function(pointer){
-            isHand=0;
-            hand.setDisplaySize(width*0.075,width*0.075);
-        },this);
-    }
+
+    hand = this.add.image(width*0.75,height*0.75,"hand").setDisplaySize(width*0.075,width*0.075).setInteractive();
+    hand.alpha=0;
+    hand.depth=60001;
+    hand.on("pointerdown", function(pointer){
+        isHand=1;
+        hand.setDisplaySize(width*0.09,width*0.09);
+    },this);
+    hand.on("pointerup", function(pointer){
+        if(stop==0) hand.alpha=0.5;
+        isHand=0;
+        hand.setDisplaySize(width*0.075,width*0.075);
+    },this);
+    
     this.input.on('pointerdown', function (pointer) {
         x=pointer.x;
         y=pointer.y;
@@ -1639,14 +1640,14 @@ function create_stage2_gel (){
         point_x=x;
         point_y=y;
         if(isMobileDevice()){
-            if(stop!=1) direct.alpha = 1;
+            if((point_x<width/2)&&stop!=1) direct.alpha = 0.8;
         }
         // console.log(stage.x);
     }, this);
     this.input.on('pointermove', function (pointer) {
         point_x=x;
         point_y=y;
-        if(status!=0){
+        if(status!=0&&(point_x<width/2)){
             var temp_x=(pointer.x-x);
             var temp_y=(pointer.y-y);
             if(temp_x >= Math.abs(temp_y)){
@@ -1669,6 +1670,9 @@ function create_stage2_gel (){
         status=0;
         direction=0;
         direct.alpha = 0;
+        if(isMobileDevice()){
+            if(stop==0) hand.alpha=0.5;
+        }
     }, this);
     //DEBUG
     if(debug==1){
@@ -1691,6 +1695,7 @@ function create_stage2_gel (){
     //對話框
     PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
+    backer=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
     Sprite.depth=2000;
     PACO.depth=1024;
     //PACO.setVisible(false).setInteractive(false);
@@ -1725,6 +1730,7 @@ function update_stage2_gel (){//與外界有關的互動
     if(stop==0 && player.stop==0){
         // direct.x=point_x-width/2;
         // direct.y=point_y-height/2;
+        
         if (cursors.up.isDown){
             p_facing=4;
             spot.setVelocityY(-s5_run_speed);

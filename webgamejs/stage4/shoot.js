@@ -512,7 +512,7 @@ function create_stage4_shoot (){
     create_congratulation(this,stage_4_story_after);
     PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
-    
+    backer=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
     descript_count=1;
     descript_limit=Object.keys(lan_stage4).length;
     //返回

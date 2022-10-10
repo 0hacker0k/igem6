@@ -8,6 +8,7 @@ var Sprite;
 var backer;
 var npc;
 var barrier=null;
+var skiptalk=null;
 function load_talkbox(where){//載入動畫檔
     barrier=null;
     where.load.image('talkbox', prefix+'/main/next.png');

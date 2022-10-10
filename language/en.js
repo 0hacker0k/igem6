@@ -146,7 +146,9 @@ lan_stage2=
     "vo_9":"3. Running gel electrophoresis, immersing the gel in the electrophoresis tank with TAE buffer, powering on, and waiting for a period of time.",
     "vo_10":"4. Picturing the gel, irradiating the gel with UV light, taking pictures, and observing the result.",
     "vo_11":"Originally, we’ll dye the DNA with a kind of carcinogen called EtBr. But I will take care of it this time.",
-    "pa_12":"What an amazing game welfare…"
+    "pa_12":"What an amazing game welfare…",
+    "back_13":"(Use up, down, left and right keys to control PACO, and use SPACE to interact something.)",
+    "back_14":"(There's a protocol at right-bottom. Try to interact it first!)"
 }
 lan_story2_after=
 {
@@ -224,7 +226,8 @@ lan_stage4=
     "pa_2":"Why choose E. coli?",
     "vo_3":"Because culturing E. coli is very convenient and efficient, we use E. coli to conduct biological experiments a lot. As long as we transform the plasmid that has ligated the corresponding gene we want to express, we can get the gene or protein from E. coli.",
     "pa_4":"Fabulous! I don’t see this in my textbooks!",
-    "vo_5":"What are we waiting for? Let’s dig in!"
+    "vo_5":"What are we waiting for? Let’s dig in!",
+    "back_6":"(Shoot five different color plasmids into one E.coli, make them pass through the antibiotic laser!)"
 }
 lan_story4_after=
 {
@@ -269,7 +272,8 @@ lan_stage5=
     "pa_6":"Why do we have to culture them largely? I thought we already had the target bacteria in hand.",
     "vo_7":"Because we need a great amount of bacteria for further research, like extracting plasmids or proteins.",
     "pa_8":"Ooh! I see!",
-    "vo_9":"To begin with, pick these colonies up!"
+    "vo_9":"To begin with, pick these colonies up!",
+    "back_10":"(Press and release left-click at the right time to pick up the E.coli!)"
 }
 lan_story5_after=
 {
@@ -565,12 +569,13 @@ lan_ending_scene=
     "[size="+((width*0.05).toString())+"]Sound Composer[/size]",
     "",
     "Chia-Hsieh Kung",
+    "Chi-Huan Zheng",
     "",
     "[size="+((width*0.05).toString())+"]Quality Control[/size]",
     "",
     "All members of PACOmega",
     "",
-    "[size="+((width*0.05).toString())+"]Experience Adviser[/size]",
+    "[size="+((width*0.05).toString())+"]Experiment Adviser[/size]",
     "",
     "Yun-Chi Chiu", 
     "Ting-Hung Chang", 
