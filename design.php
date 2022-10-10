@@ -10,7 +10,35 @@
 <body onload="load_finish();">
     <?php include "./sub/header.php"?>
     <?php include "sub/loading.php"?>
-    <img class="full_size_image" src="<?php echo imgfile;?>/design/banner-design.png" alt=""> 
+    <img class="full_size_image" src="<?php echo imgfile;?>/design/banner-design.png" alt="">
+    <div class="guide" id="guide">
+        <div id="guide_content">
+            <div class="guide_label" onclick="move_to_item('1');guide_toggle()">
+                Overview
+            </div>
+            <div class="guide_sub_label" onclick="move_to_item('2');guide_toggle()">
+                The mechanism of <i>pfa</i> genes in PUFA production
+            </div>
+            <div class="guide_sub_label" onclick="move_to_item('3');guide_toggle()">
+                The arrangement of <i>pfa</i> genes in expression vectors
+            </div>
+            <div class="guide_sub_label" onclick="move_to_item('4');guide_toggle()">
+                The design of vector for expressing <i>Acc</i> genes
+            </div>
+            <div class="guide_sub_label" onclick="move_to_item('5');guide_toggle()">
+                Increasing PUFA production using cerulenin
+            </div>
+            <div class="guide_label" onclick="move_to_item('6');guide_toggle()">
+                Reference
+            </div>
+        </div>
+
+        <div id="expansion" onclick="guide_toggle()">
+            <div class="overlap_item trapezoid"></div>
+            <!-- <div class="overlap_item triangle_to_left"></div> -->
+            <div class="overlap_item triangle_to_right"></div>
+        </div>    
+    </div> 
 
     
     <div class="overview justify-content-around">
@@ -32,8 +60,8 @@
             <p>
                 &emsp;&emsp;Finally, since the function of ACC is to produce malonyl-CoA, the raw material of fatty acid, we designed the addition of the chemical cerulenin to block the competing fatty acid synthesis pathway and in turn enhance the biogenesis of PUFA (Wan et al., 2016, Giner-Robles et al., 2018).
             </p>
-            <div id="" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The mechanism of <i>pfa</i> genes in PUFA production.</h2>
+            <div id="2" class="title-label-div">
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The mechanism of <i>pfa</i> genes in PUFA production</h2>
             </div>
             <p>
                 &emsp;&emsp;In the deep-sea bacteria <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>, the <i>pfa</i> genes are translated into protein and cooperate as a mega-synthase to synthesize PUFA by the polyketide synthase (PKS) pathway. The <i>pfa A-D</i> genes encode proteins containing many functional domains for the PKS pathway, such as acyl carrier protein (ACP), 3-Ketoacyl-ACP reductase (KR), 3-Ketoacyl synthase (KS), 3-Hydroxydecanoyl-ACP dehydratase (DH), and acyltransferase (AT). The <i>pfa E</i> gene encodes phosphopantetheinyl transferase (PPTase).
@@ -88,7 +116,7 @@
                     <div class="triangle_to_top"></div>Figure 5: The EPA-producing gene clusters
                 </div>
             </div>
-            <div id="" class="title-label-div">
+            <div id="3" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The arrangement of <i>pfa</i> genes in expression vectors</h2>
             </div>
             <p>
@@ -129,7 +157,7 @@
             <p>
                 &emsp;&emsp;All the sequences of the <i>pfa</i> genes and designed clones are provided in the basic and composition parts.
             </p>
-            <div id="" class="title-label-div">
+            <div id="4" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The design of vector for expressing <i>Acc</i> genes</h2>
             </div>
             <p>
@@ -153,7 +181,7 @@
                 </div>
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
-            <div id="" class="title-label-div">
+            <div id="5" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Increasing PUFA production using cerulenin</h2>
             </div>
             <p>
@@ -172,49 +200,57 @@
                 </div>
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
+                <div class="img" style="--width:80%;">
+                    <img src="<?php echo imgfile;?>/design/design13.png"/>
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
-                &emsp;&emsp;The function of the chemical cerulenin is to inhibit FabB and FabF, two main synthases in the FAS pathway. Furthermore, previous reports showed that the exogenous pfa system was not inhibited by cerulenin in <i>E. coli</i>. Thus addition of the chemical cerulenin to the Acc and <i>pfa</i> genes co-expressed in <i>E. coli</i> should increase the PUFA production.
+                &emsp;&emsp;The function of the chemical cerulenin is to inhibit FabB and FabF, two main synthases in the FAS pathway. Furthermore, previous reports showed that the exogenous pfa system was not inhibited by cerulenin in <i>E. coli</i>. Thus, addition of the chemical cerulenin to the <i>E. coli</i> which co-express the <i>pfa</i> genes and <i>Acc</i> genes should increase the PUFA production.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
-            <p class="h25">
-                Reference:
-                <ol>
-                    <li>
-                        Davis, M. S., J. Solbiati and J. E. Cronan, Jr. (2000). "Overproduction of acetyl-CoA carboxylase activity increases the rate of fatty acid biosynthesis in Escherichia coli." J Biol Chem 275(37): 28593-28598.
-                    </li>
-                    <li>
-                        Giner-Robles, L., B. Lazaro, F. de la Cruz and G. Moncalian (2018). "fabH deletion increases DHA production in Escherichia coli expressing Pfa genes." Microb Cell Fact 17(1): 88.
-                    </li>
-                    <li>
-                        Gao, X., Wang, P., & Tang, Y. (2010). Engineered polyketide biosynthesis and biocatalysis in Escherichia coli. Applied microbiology and biotechnology, 88(6), 1233-1242.
-                    </li>
-                    <li>
-                        Li-Beisson, Y., Shorrosh, B., Beisson, F., Andersson, M. X., Arondel, V., Bates, P. D., ... & Ohlrogge, J. (2013). Acyl-lipid metabolism. The 	Arabidopsis book/American Society of Plant Biologists, 11.
-                    </li>
-                    <li>
-                        Mason, R. P., S. C. R. Sherratt and R. H. Eckel (2022). "Omega-3-fatty acids: Do they prevent cardiovascular disease?" Best Pract Res Clin Endocrinol Metab: 101681.
-                    </li>
-                    <li>
-                        Mindrebo, J. T., Patel, A., Misson, L. E., Kim, W. E., Davis, T. D., Ni, Q. Z., ... & Burkart, M. D. (2020). 1.04-Structural Basis of Acyl-Carrier Protein Interactions in Fatty Acid and Polyketide Biosynthesis. Comprehensive Natural Products III, 61.
-                    </li>
-                    <li>
-                        Orikasa, Y., T. Nishida, A. Yamada, R. Yu, K. Watanabe, A. Hase, N. Morita and H. Okuyama (2006). "Recombinant production of docosahexaenoic acid in a polyketide biosynthesis mode in Escherichia coli." Biotechnol Lett 28(22): 1841-1847.
-                    </li>
-                    <li>
-                        Orikasa, Y., M. Tanaka, S. Sugihara, R. Hori, T. Nishida, A. Ueno, N. Morita, Y. Yano, K. Yamamoto, A. Shibahara, H. Hayashi, Y. Yamada, A. Yamada, R. Yu, K. Watanabe and H. Okuyama (2009). "pfaB products determine the molecular species produced in bacterial polyunsaturated fatty acid biosynthesis." FEMS Microbiol Lett 295(2): 170-176.
-                    </li>
-                    <li>
-                        Rosano, G. L. and E. A. Ceccarelli (2014). "Recombinant protein expression in Escherichia coli: advances and challenges." Front Microbiol 5: 172
-                    </li>
-                    <li>
-                        Sherratt, S. C. R., P. Libby, D. L. Bhatt and R. P. Mason (2022). "A biological rationale for the disparate effects of omega-3 fatty acids on cardiovascular disease outcomes." Prostaglandins Leukot Essent Fatty Acids 182: 102450.
-                    </li>
-                    <li>
-                        Wan, X., Y. F. Peng, X. R. Zhou, Y. M. Gong, F. H. Huang and G. Moncalian (2016). "Effect of cerulenin on fatty acid composition and gene expression pattern of DHA-producing strain Colwellia psychrerythraea strain 34H." Microb Cell Fact 15: 30.
-                    </li>
-                </ol>
-                <div class="marge" style="--width:calc(3em + 5vh)"></div>
-            </p>
+            <div id="6" class="h25">
+                <p class="h25">
+                    Reference:
+                    <ol>
+                        <li>
+                            Davis, M. S., J. Solbiati and J. E. Cronan, Jr. (2000). "Overproduction of acetyl-CoA carboxylase activity increases the rate of fatty acid biosynthesis in Escherichia coli." J Biol Chem 275(37): 28593-28598.
+                        </li>
+                        <li>
+                            Giner-Robles, L., B. Lazaro, F. de la Cruz and G. Moncalian (2018). "fabH deletion increases DHA production in Escherichia coli expressing Pfa genes." Microb Cell Fact 17(1): 88.
+                        </li>
+                        <li>
+                            Gao, X., Wang, P., & Tang, Y. (2010). Engineered polyketide biosynthesis and biocatalysis in Escherichia coli. Applied microbiology and biotechnology, 88(6), 1233-1242.
+                        </li>
+                        <li>
+                            Li-Beisson, Y., Shorrosh, B., Beisson, F., Andersson, M. X., Arondel, V., Bates, P. D., ... & Ohlrogge, J. (2013). Acyl-lipid metabolism. The 	Arabidopsis book/American Society of Plant Biologists, 11.
+                        </li>
+                        <li>
+                            Mason, R. P., S. C. R. Sherratt and R. H. Eckel (2022). "Omega-3-fatty acids: Do they prevent cardiovascular disease?" Best Pract Res Clin Endocrinol Metab: 101681.
+                        </li>
+                        <li>
+                            Mindrebo, J. T., Patel, A., Misson, L. E., Kim, W. E., Davis, T. D., Ni, Q. Z., ... & Burkart, M. D. (2020). 1.04-Structural Basis of Acyl-Carrier Protein Interactions in Fatty Acid and Polyketide Biosynthesis. Comprehensive Natural Products III, 61.
+                        </li>
+                        <li>
+                            Orikasa, Y., T. Nishida, A. Yamada, R. Yu, K. Watanabe, A. Hase, N. Morita and H. Okuyama (2006). "Recombinant production of docosahexaenoic acid in a polyketide biosynthesis mode in Escherichia coli." Biotechnol Lett 28(22): 1841-1847.
+                        </li>
+                        <li>
+                            Orikasa, Y., M. Tanaka, S. Sugihara, R. Hori, T. Nishida, A. Ueno, N. Morita, Y. Yano, K. Yamamoto, A. Shibahara, H. Hayashi, Y. Yamada, A. Yamada, R. Yu, K. Watanabe and H. Okuyama (2009). "pfaB products determine the molecular species produced in bacterial polyunsaturated fatty acid biosynthesis." FEMS Microbiol Lett 295(2): 170-176.
+                        </li>
+                        <li>
+                            Rosano, G. L. and E. A. Ceccarelli (2014). "Recombinant protein expression in Escherichia coli: advances and challenges." Front Microbiol 5: 172
+                        </li>
+                        <li>
+                            Sherratt, S. C. R., P. Libby, D. L. Bhatt and R. P. Mason (2022). "A biological rationale for the disparate effects of omega-3 fatty acids on cardiovascular disease outcomes." Prostaglandins Leukot Essent Fatty Acids 182: 102450.
+                        </li>
+                        <li>
+                            Wan, X., Y. F. Peng, X. R. Zhou, Y. M. Gong, F. H. Huang and G. Moncalian (2016). "Effect of cerulenin on fatty acid composition and gene expression pattern of DHA-producing strain Colwellia psychrerythraea strain 34H." Microb Cell Fact 15: 30.
+                        </li>
+                    </ol>
+                </p>
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>    
         </div>
     </div>
     

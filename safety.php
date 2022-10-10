@@ -68,7 +68,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Laboratory Safety</h2>
             </div>
             <p>
-                &emsp;&emsp;The experiments in our project can be conducted in a biosafety level 1 laboratory. In addition, the operation of bacterial and volatile chemicals should be performed in the biosafety cabinets and fume hoods, respectively. Besides, we also learn the use and precautions of various machinery in the laboratory, and understand what hazards might be encountered in the laboratory and how to deal with them when they occur. Furthermore, we must immediately report to our advisor or safety center if there is any accident or equipment damage.
+                &emsp;&emsp;The experiments in our project can be conducted in a biosafety level 1 laboratory. In addition, the operation of bacteria and volatile chemicals should be performed in the biosafety cabinets and fume hoods, respectively. Besides, we also learn the use and precautions of various machinery in the laboratory, and understand what hazards might be encountered in the laboratory and how to deal with them when they occur. Furthermore, we must immediately report to our advisor or safety center if there is any accident or equipment damage.
             </p>
             <div id="5" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">PROJECT SAFETY</h1>
@@ -80,7 +80,7 @@
                 <li>
                     <h3><i><b>E. coli</b></i></h3>
                     <p>
-                        &emsp;&emsp;Two strains of <i>E. coli</i> BL21 (DE3) and DH5α are applied in the experiments. These two stains belong to the biosafety level 1, which are low risk to human beings. According to the biosafety rules in experiment operation, all the biowastes will be  sterilized by autoclaving, and the environment will be sterilized by bleaching or decontaminated by 75% EtOH.
+                        &emsp;&emsp;Two strains of <i>E. coli</i> BL21 (DE3) and DH5α are applied in the experiments. These two strains belong to the biosafety level 1, which are low risk to human beings. According to the biosafety rules in experiment operation, all the biowastes will be  sterilized by autoclaving, and the environment will be sterilized by bleaching or decontaminated by 75% EtOH.
                     </p>
                 </li>
                 <div class="marge" style="--width:calc(3em + 5vh)"></div>
@@ -98,7 +98,7 @@
                 <li>
                     <h3><b>Endotoxin</b></h3>
                     <p>
-                        &emsp;&emsp;To produce EPA, we transform the EPA-producing genes into Escherichia coli. As gram‐negative bacteria, endotoxins in the outer cell membrane are released upon death. To avoid the contamination of endotoxin in our final product, we explore the  potential methods to remove endotoxins:
+                        &emsp;&emsp;To produce EPA, we transform the EPA-producing genes into <i>E. coli</i>. As gram‐negative bacteria, endotoxins in the outer cell membrane are released upon death. To avoid the contamination of endotoxin in our final product, we explore the  potential methods to remove endotoxins:
                     </p>
                     
                     <ul>
@@ -132,25 +132,25 @@
                 </li>
                 <div class="marge" style="--width:calc(3em + 5vh)"></div>
                 <li>
-                    <h3>Extraction</h3>
+                    <h3><b>Extraction</b></h3>
                     <p>
-                        &emsp;&emsp;The Folch method extraction and High Performance Liquid Chromatography (HPLC) will be applied to analyze the EPA: lipid ratio. In the successive process, some hazardous chemicals will be used. These chemicals and their applications are listed as follows.
+                        &emsp;&emsp;The Folch method extraction and High Performance Liquid Chromatography (HPLC) will be applied to analyze the EPA : lipid ratio. In the successive process, some hazardous chemicals will be used. These chemicals and their applications are listed as follows.
                     </p>  
                     <div class="marge" style="--width:calc(3em + 5vh)"></div>
                     <p style="color: #800000";>
                         1. Methanol and chloroform will be used as solvents to extract lipids.
                     </p>
                     <p style="color: #EA2B1F";>
-                        Caution: methanol is a poisonous substance that can be absorbed through the eyes, skin, lungs, and digestive system.  Overexposure can cause death.                    </p>
+                        Caution: Methanol is a poisonous substance that can be absorbed through the eyes, skin, lungs, and digestive system.  Overexposure can cause death.                    </p>
                     <p style="color: #EA2B1F";>
-                        Caution: chloroform can be toxic if inhaled or swallowed. Exposure to chloroform may also cause cancer.
+                        Caution: Chloroform can be toxic if inhaled or swallowed. Exposure to chloroform may also cause cancer.
                     </p>
                     <div class="marge" style="--width:calc(3em + 5vh)"></div>
                     <p style="color: #800000";>
-                        2. Ethanol is applied to conduct transesterification to convert the extracted lipids into FAEEs (fatty acid ethyl esters).
+                        2. Ethanol is applied to conduct transesterification to convert the extracted lipids into fatty acid ethyl esters (FAEEs).
                     </p>
                     <p style="color: #EA2B1F";>
-                        Caution: high concentrations may damage a fetus. Contact can irritate the skin and eyes. Prolonged or repeated exposure can cause drying and cracking of the skin with peeling, redness and itching.
+                        Caution: High concentrations may damage a fetus. Contact can irritate the skin and eyes. Prolonged or repeated exposure can cause drying and cracking of the skin with peeling, redness and itching.
                     </p>
                     <div class="marge" style="--width:calc(3em + 5vh)"></div>
                     <p style="color: #800000";>
