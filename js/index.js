@@ -161,7 +161,7 @@ function other_animation(page,direct,position){
                         page.animate=null;
                     }, 1);
                     return false;
-                case 14://pair9
+                case 18://pair9
                     var logo = document.getElementById('team_logo_2');
                     page.style.transition="0.0s";
                     page.style.top=((screen_height-page.clientHeight)/2)+"px";
@@ -169,15 +169,24 @@ function other_animation(page,direct,position){
                     logo.style.width="55%";
                     logo.style.marginTop="0%";
                     logo.style.opacity="1";
+                    var text = page.getElementsByClassName('white_background')[0];
+                    text.style.transition="0.0s";
+                    text.style.opacity="1";
                     if(page.animate!=null)clearTimeout(page.animate);
                     page.animate=setTimeout(() => {
                         page.style.transition="1.0s";
                         logo.style.transition="1.0s";
                         logo.style.marginTop=(-screen_width*0.035)+"px";
                         logo.style.width="22%";
+                        text.style.transition="1.0s";
+                        text.style.opacity="0";
                         page.animate=setTimeout(() => {
+                            page.style.transition="0.0s";
+                            page.style.opacity="0";
                             logo.style.transition="0.0s";
-                            logo.style.opacity="0";
+                            logo.style.opacity="1";
+                            text.style.transition="0.0s";
+                            text.style.opacity="1";
                             page.animate=null;
                         }, 1000);
                     }, 1);
@@ -243,27 +252,27 @@ function other_animation(page,direct,position){
                         epa.style.opacity="1";
                         page.animate=setTimeout(() => {
                             epa.style.transition="1.0s linear";
-                            epa.style.top=((screen_height*0.7-epa.clientHeight))+"px";
-                            epa.style.left=(screen_width*0.3)+"px";
+                            epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
+                            epa.style.left=(screen_width*0.415)+"px";
                             page.animate=setTimeout(() => {
                                 epa.style.transition="0.25s linear";
-                                epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
-                                epa.style.left=(screen_width*0.415)+"px";
+                                epa.style.top=((screen_height*0.46-epa.clientHeight))+"px";
+                                epa.style.left=(screen_width*0.53)+"px";
                                 page.animate=setTimeout(() => {
-                                    epa.style.top=((screen_height*0.5-epa.clientHeight))+"px";
-                                    epa.style.left=(screen_width*0.53)+"px";
+                                    epa.style.top=((screen_height*0.42-epa.clientHeight))+"px";
+                                    epa.style.left=(screen_width*0.645)+"px";
                                     page.animate=setTimeout(() => {
                                         epa.style.top=((screen_height*0.46-epa.clientHeight))+"px";
-                                        epa.style.left=(screen_width*0.645)+"px";
+                                        epa.style.left=(screen_width*0.76)+"px";
                                         page.animate=setTimeout(() => {
-                                            epa.style.top=((screen_height*0.5-epa.clientHeight))+"px";
-                                            epa.style.left=(screen_width*0.76)+"px";
+                                            epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
+                                            epa.style.left=(screen_width*0.875)+"px";
                                             page.animate=setTimeout(() => {
-                                                epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
-                                                epa.style.left=(screen_width*0.875)+"px";
+                                                epa.style.top=((screen_height*0.78-epa.clientHeight))+"px";
+                                                epa.style.left=(screen_width*0.99)+"px";
                                                 page.animate=setTimeout(() => {
-                                                    epa.style.top=((screen_height*0.7-epa.clientHeight))+"px";
-                                                    epa.style.left=(screen_width*1)+"px";
+                                                    epa.style.top=((screen_height*1.06-epa.clientHeight))+"px";
+                                                    epa.style.left=(screen_width*1.105)+"px";
                                                     page.animate=null;
                                                 }, 250);
                                             }, 250);
@@ -274,7 +283,7 @@ function other_animation(page,direct,position){
                         }, 1);
                     }, 1000);
                     return false;
-                case 15://pair8
+                case 19://pair8
                     page.style.transition="0.0s";
                     page.style.top=((screen_height-page.clientHeight)/2)+"px";
                     page.style.opacity='0';
@@ -345,27 +354,27 @@ function other_animation(page,direct,position){
                         epa.style.opacity="1";
                         page.animate=setTimeout(() => {
                             epa.style.transition="1.0s linear";
-                            epa.style.top=((screen_height*0.7-epa.clientHeight))+"px";
-                            epa.style.left=(screen_width*0.3)+"px";
+                            epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
+                            epa.style.left=(screen_width*0.415)+"px";
                             page.animate=setTimeout(() => {
                                 epa.style.transition="0.25s linear";
-                                epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
-                                epa.style.left=(screen_width*0.45)+"px";
+                                epa.style.top=((screen_height*0.46-epa.clientHeight))+"px";
+                                epa.style.left=(screen_width*0.53)+"px";
                                 page.animate=setTimeout(() => {
-                                    epa.style.top=((screen_height*0.5-epa.clientHeight))+"px";
-                                    epa.style.left=(screen_width*0.55)+"px";
+                                    epa.style.top=((screen_height*0.42-epa.clientHeight))+"px";
+                                    epa.style.left=(screen_width*0.645)+"px";
                                     page.animate=setTimeout(() => {
                                         epa.style.top=((screen_height*0.46-epa.clientHeight))+"px";
-                                        epa.style.left=(screen_width*0.65)+"px";
+                                        epa.style.left=(screen_width*0.76)+"px";
                                         page.animate=setTimeout(() => {
-                                            epa.style.top=((screen_height*0.5-epa.clientHeight))+"px";
-                                            epa.style.left=(screen_width*0.75)+"px";
+                                            epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
+                                            epa.style.left=(screen_width*0.875)+"px";
                                             page.animate=setTimeout(() => {
-                                                epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
-                                                epa.style.left=(screen_width*0.85)+"px";
+                                                epa.style.top=((screen_height*0.78-epa.clientHeight))+"px";
+                                                epa.style.left=(screen_width*0.99)+"px";
                                                 page.animate=setTimeout(() => {
-                                                    epa.style.top=((screen_height*0.7-epa.clientHeight))+"px";
-                                                    epa.style.left=(screen_width*1)+"px";
+                                                    epa.style.top=((screen_height*1.06-epa.clientHeight))+"px";
+                                                    epa.style.left=(screen_width*1.105)+"px";
                                                     page.animate=null;
                                                 }, 250);
                                             }, 250);
@@ -376,7 +385,7 @@ function other_animation(page,direct,position){
                         }, 1);
                     }, 1000);
                     return false;
-                case 14://pair9
+                case 18://pair9
                     var logo = document.getElementById('team_logo_2');
                     page.style.transition="0.0s";
                     page.style.top=((screen_height-page.clientHeight)/2)+"px";
@@ -385,12 +394,17 @@ function other_animation(page,direct,position){
                     logo.style.width="22%";
                     logo.style.transition="0.0s";
                     logo.style.opacity="1";
+                    var text = page.getElementsByClassName('white_background')[0];
+                    text.style.transition="0.0s";
+                    text.style.opacity="0";
                     if(page.animate!=null)clearTimeout(page.animate);
                     page.animate=setTimeout(() => {
                         page.style.transition="1.0s";
                         logo.style.transition="1.0s";
                         logo.style.marginTop="0%";
                         logo.style.width="55%";
+                        text.style.transition="1.0s";
+                        text.style.opacity="1";
                         page.animate=null;
                     }, 1);
                     return false;
@@ -443,7 +457,7 @@ function other_animation(page,direct,position){
                         page.animate=null;
                     }, 1);
                     return false;
-                case 15://pair8
+                case 19://pair8
                     page.style.transition="0.0s";
                     page.style.top=((screen_height-page.clientHeight)/2)+"px";
                     page.style.opacity='1';
@@ -460,18 +474,18 @@ function other_animation(page,direct,position){
 }//6
 function move_epa(go_page){
     var epa=document.getElementById("epa");
-    var bottomleft=document.getElementById("bottomleft");
+    // var bottomleft=document.getElementById("bottomleft");
     var map=document.getElementById("map");
-    if(go_page>=4 && go_page<=16){
+    if(go_page>=4 && go_page<=18){
         map.style.bottom="2%";
     }else{
         map.style.bottom="-100%";
     }
-    if(go_page>=6 && go_page<=11){
-        bottomleft.style.bottom="0%";
-    }else{
-        bottomleft.style.bottom="-100%";
-    }
+    // if(go_page>=6 && go_page<=11){
+    //     bottomleft.style.bottom="0%";
+    // }else{
+    //     bottomleft.style.bottom="-100%";
+    // }
     switch(go_page){
         case 4:
             epa.move_to(0.37,0.45);
@@ -513,13 +527,13 @@ function move_epa(go_page){
             epa.move_to(0.56,0.46);
             break;
         case 17:
-            epa.move_to(0.47,0.27);
+            epa.move_to(0.49,0.30);
             break;
         case 18:
             epa.move_to(0.46,0.55);
             break;
         case 19:
-            epa.move_to(0.42,0.68);
+            epa.move_to(0.46,0.70);
             break;
         case 20:
             epa.move_to(0.28,0.67);
@@ -535,18 +549,23 @@ function more_information(change,show_tag,hidden_tag){
     var text=document.getElementById(change);
     var triangle=text.getElementsByClassName("triangle_to_right");
     var self=document.getElementById(show_tag);
-    var another=document.getElementById(hidden_tag);
+    var another=null;
+    if(hidden_tag!=null){
+        another=document.getElementById(hidden_tag);
+    }
     if(triangle.length!=0){
         triangle[0].classList.toggle("triangle_to_down");
         triangle[0].classList.remove('triangle_to_right');
         self.style="display: block;";
-        another.style="display: none;";
+        if(another!=null)
+            another.style="display: none;";
     }else{
         triangle=text.getElementsByClassName("triangle_to_down");
         triangle[0].classList.toggle("triangle_to_right");
         triangle[0].classList.remove('triangle_to_down');
         self.style="display: none;";
-        another.style="display: block;";
+        if(another!=null)
+            another.style="display: block;";
     }
 }
 HTMLImageElement.prototype.move_to=function(x,y){
@@ -581,9 +600,16 @@ parameter.innerHTML = ".first_page{--nav_height: "+document.getElementById("navb
 parameter=document.getElementById("first_background");
 parameter.style = "--nav_height: "+document.getElementById("navbar").clientHeight+"px;";
 parameter=document.getElementById("page_12_content");
-parameter.style.top=(document.getElementById("page_12_white").clientHeight+1)+"px";
+parameter.style.top=(document.getElementById("page_12_white").clientHeight+document.getElementById("page_12_white").offsetTop+1)+"px";
 parameter=document.getElementById("page_13_content");
-parameter.style.top=(document.getElementById("page_13_white").clientHeight+1)+"px";
+parameter.style.top=(document.getElementById("page_13_white").clientHeight+document.getElementById("page_13_white").offsetTop+1)+"px";
+parameter=document.getElementById("page12-roles");
+parameter.style.top=(document.getElementById("page_12_white").clientHeight+document.getElementById("page_12_white").offsetTop+1)+"px";
+parameter=document.getElementById("page13-roles");
+parameter.style.top=(document.getElementById("page_13_white").clientHeight+document.getElementById("page_13_white").offsetTop+1)+"px";
+
+
+
 now_page=Math.floor($(window).scrollTop()/screen_height+0.5);
 screen_move($(window).scrollTop());
 display_mod=1;
@@ -592,9 +618,13 @@ window.addEventListener('resize',
         screen_height=window.innerHeight;
         screen_width=window.innerWidth;
         parameter=document.getElementById("page_12_content");
-        parameter.style.top=(document.getElementById("page_12_white").clientHeight+1)+"px";
+        parameter.style.top=(document.getElementById("page_12_white").clientHeight+document.getElementById("page_12_white").offsetTop+1)+"px";
         parameter=document.getElementById("page_13_content");
-        parameter.style.top=(document.getElementById("page_13_white").clientHeight+1)+"px";
+        parameter.style.top=(document.getElementById("page_13_white").clientHeight+document.getElementById("page_13_white").offsetTop+1)+"px";
+        parameter=document.getElementById("page12-roles");
+        parameter.style.top=(document.getElementById("page_12_white").clientHeight+document.getElementById("page_12_white").offsetTop+1)+"px";
+        parameter=document.getElementById("page13-roles");
+        parameter.style.top=(document.getElementById("page_13_white").clientHeight+document.getElementById("page_13_white").offsetTop+1)+"px";
     }
     , false );
 

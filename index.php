@@ -12,7 +12,7 @@
         window.onerror = function (msg, url, line) {
             if (msg == "[IFRAME ERROR MESSAGE]") {
                 console.log(1);
-                return true
+                return true;
             }
             else {
                 console.log(2);
@@ -26,9 +26,6 @@
         <img id="map_icon" src="<?php echo imgfile;?>/home/heart-icon.png">
         <img id="epa" src="<?php echo imgfile;?>/drop.png">
         <img id="go_top" onclick="go_top()" src="<?php echo imgfile;?>/home/go-to-top.png">
-    </div>
-    <div id="bottomleft">
-        <img class="bl-background" src="<?php echo imgfile;?>/home/bottomleft-background.png">
     </div>
     <style id="parameter"></style>
     <div class="page" style="top:200%;" id="page_1">
@@ -52,24 +49,28 @@
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_5">
-        <!-- <img id="team_name" src="<?php echo imgfile;?>/home/team_name.png"> -->
+        <img class="page_background" src="<?php echo imgfile;?>/home/vessel-1.png"/>
         <img id="page5_epa" src="<?php echo imgfile;?>/home/page5-epa.png">
     </div>
     <div class="page" style="top:200%;" id="page_6">
+        <img class="page_background" src="<?php echo imgfile;?>/home/vessel-2.png"/>
         <div class="white_background">
             The living habits nowadays cause the excess intake of cholesterol from the modern diet, inducing the accumulation of oxidized low-density lipoproteins ( LDL ) in arteries.
         </div>
         <div class="bottomleft">
+            <img class="illustration bottomleft-background" src="<?php echo imgfile;?>/home/bottomleft-background.png">
             <img class="illustration" id="page6-role1" src="<?php echo imgfile;?>/home/page6-role1.png">
             <img class="illustration" id="page6-role2" src="<?php echo imgfile;?>/home/page6-role2.png">
             <img class="illustration" id="page6-role3" src="<?php echo imgfile;?>/home/page6-role3.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_7">
+        <img class="page_background" src="<?php echo imgfile;?>/home/vessel-3.png"/>
         <div class="white_background">
             The oxidized LDL accumulation impedes blood flow and damages the arteries, which leads to atherosclerosis, the severe CVD <a onclick="index_move_to_page(17)">(Berger and Naseem 2022)</a>.
         </div>
         <div class="bottomleft">
+            <img class="illustration bottomleft-background" src="<?php echo imgfile;?>/home/bottomleft-background.png">
             <img class="illustration" id="page7-role3" src="<?php echo imgfile;?>/home/page7-role3.png">
             <img class="illustration" id="page7-role4" src="<?php echo imgfile;?>/home/page7-role3.png">
             <img class="illustration" id="page7-role5" src="<?php echo imgfile;?>/home/page7-role3.png">
@@ -80,47 +81,56 @@
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_8">
+        <img class="page_background" src="<?php echo imgfile;?>/home/vessel-4.png"/>
         <div class="white_background">
             Recently, the daily intake of eicosapentaenoic acid (EPA) has been proven to reduce CVD efficiently and severe CVD causes death
             <a onclick="index_move_to_page(17)">(Peter, Joho et al. 2022)</a>.
         </div>
         <div class="bottomleft">
+            <img class="illustration bottomleft-background" src="<?php echo imgfile;?>/home/bottomleft-background.png">
             <img class="illustration" id="page8-role1" src="<?php echo imgfile;?>/home/page8-role1.png">
             <img class="illustration" id="page8-role2" src="<?php echo imgfile;?>/home/page8-role3.png">
             <img class="illustration" id="page8-role3" src="<?php echo imgfile;?>/home/page8-role2.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_9">
+        <img class="page_background" src="<?php echo imgfile;?>/home/vessel-5.png"/>
         <div class="white_background">
             EPA reduces CVDs in two aspects. In arteries, EPA can split heme into biliverdin, free iron, and carbon monoxide to clean the free radicals and reduce oxidative LDL accumulation. EPA can also relax the surrounding smooth muscle to avoid severe CVDs by enhancing nitric oxide production 
             <a onclick="index_move_to_page(17)">(Sherratt, Libby et al. 2022)</a>.
         </div>
         <div class="bottomleft">
+            <img class="illustration bottomleft-background" src="<?php echo imgfile;?>/home/bottomleft-background.png">
             <img class="illustration" id="page9-role1" src="<?php echo imgfile;?>/home/page7-role1.png">
             <img class="illustration" id="page9-role2" src="<?php echo imgfile;?>/home/page9-role1.png">
             <img class="illustration" id="page9-role3" src="<?php echo imgfile;?>/home/page9-role2.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_10">
+        <img class="page_background" src="<?php echo imgfile;?>/home/vessel-6.png"/>
         <div class="white_background">
             However, the major source of EPA, fish oil, comes from marine fish, which are the end consumers in the food chain, leading to the accumulation of heavy metals and microplastics.
         </div>
         <div class="bottomleft">
+            <img class="illustration bottomleft-background" src="<?php echo imgfile;?>/home/bottomleft-background.png">
             <img class="illustration" id="page10-role2" src="<?php echo imgfile;?>/home/page10-role2.png">
             <img class="illustration" id="page10-role1" src="<?php echo imgfile;?>/home/page10-role1.png">
             <img class="illustration" id="page10-role3" src="<?php echo imgfile;?>/home/page10-role2.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_11">
+        <img class="page_background" src="<?php echo imgfile;?>/home/vessel-7.png"/>
         <div class="white_background">
             Therefore, the development of a new EPA source is necessary to cover future consumption and avoid potential contamination <a onclick="index_move_to_page(17)">(Hong, Lumibao et al. 2015, Abbasi, Soltani et al. 2018, Benvenga, Fama et al. 2022)</a>.
         </div>
         <div class="bottomleft">
+            <img class="illustration bottomleft-background" src="<?php echo imgfile;?>/home/bottomleft-background.png">
             <img class="illustration" id="page11-role1" src="<?php echo imgfile;?>/home/page11-role1.png">
             <!-- <img class="illustration" id="page10-role2" src="<?php echo imgfile;?>/home/page9-role1.png"> -->
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_12">
+        <img class="page_background" src="<?php echo imgfile;?>/home/vessel-8.png"/>
         <div id="page_12_white" class="white_background top_block">
             To generate an EPA supplement without potential contaminants, our team applied synthetic biology to produce pure EPA.
         </div>
@@ -148,12 +158,12 @@
                 </div>
             </div>
         </div>
-        <div class="bottomleft">
-            <img class="illustration" id="page12-role1" src="<?php echo imgfile;?>/home/page12-role1.png">
-            <!-- <img class="illustration" id="page10-role2" src="<?php echo imgfile;?>/home/page9-role1.png"> -->
+        <div class="illustration" id="page12-roles">
+            <img id="page12-role1" src="<?php echo imgfile;?>/home/page12-role1.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_13">
+        <img class="page_background" src="<?php echo imgfile;?>/home/vessel-9.png"/>
         <div id="page_13_white" class="white_background top_block">
             Cost is a core point for running a business. To reduce the cost, we increase the raw material of EPA in <i>E. coli</i> by expressing ACC complex, and add the chemical cerulenin to inhibit the competing fatty acid synthesis pathway.
         </div>
@@ -181,28 +191,70 @@
                 </div>
             </div>
         </div>
-        <div class="bottomleft">
-            <img class="illustration" id="page13-role1" src="<?php echo imgfile;?>/home/page13-role1.png">
-            <!-- <img class="illustration" id="page10-role2" src="<?php echo imgfile;?>/home/page9-role1.png"> -->
+        <div class="illustration" id="page13-roles">
+            <img id="page13-role1" src="<?php echo imgfile;?>/home/page13-role1.png">
         </div>
     </div>
 
 
-
     <div class="page" style="top:200%;" id="page_14">
-        <img id="team_logo_2" src="<?php echo imgfile;?>/home/logo.png">
+        <img class="page_background" src="<?php echo imgfile;?>/home/vessel-10.png"/>
+        <div class="page_center">
+            <div id="page_14_content">
+                Integrated to the society
+            </div>
+            <img id="page_14_img" src="<?php echo imgfile;?>/home/page14-background.png">
+        </div>
     </div>
     <div class="page" style="top:200%;" id="page_15">
+        <div class="white_background">
+            To integrate our project into society, we share CVD knowledge with the elderly through campus walking activity and synthetic biology with teenagers through open lab activity.
+            <div class="learn_more">
+                <a href="{{ url_for('pages', page='education') }}" class="learn_more_a">
+                    <div class="triangle_to_right"></div>Learn more
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_16">
+        <img id="page_16_background" src="<?php echo imgfile;?>/home/page16-background.png">
+        <div class="white_background">
+            We also launched a web game for all ages, which overcomes the urban-rural gap to introduce knowledge about synthetic biology.
+            <div class="learn_more">
+                <a href="{{ url_for('pages', page='webgame') }}" class="learn_more_a">
+                    <div class="triangle_to_right"></div>Learn more
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_17">
+        <img id="page_17_background" src="<?php echo imgfile;?>/home/page17-background.png">
+        <div class="white_background">
+            To polish our project, we first discussed with other iGEM teams and gathered feedback from experts and potential EPA users. To start a business in the future, we held an innovation & entrepreneurship competition to bridge Taiwan iGEM teams with biotech entrepreneurs and synthetic biologists.
+            <div class="learn_more">
+                <a href="{{ url_for('pages', page='collaborations') }}" class="learn_more_a">
+                    <div class="triangle_to_right"></div>Learn more
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_18">
+        <img id="team_logo_2" src="<?php echo imgfile;?>/home/logo.png">
+        <div class="white_background">
+            Together, PACOmega is an inclusive project dedicated to raising public awareness of CVD and eliminating the distance between synthetic biology and the public. In addition, we keep searching for opportunities and preparing for future entrepreneurship to produce EPA supplements - The Pure Artery Omega, PACOmega.
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_19">
         <div class="typesetting_block">
             <img id="team_name_2" src="<?php echo imgfile;?>/home/team-name.png">
         </div>
     </div>
-    <div class="page" style="top:200%;" id="page_16">
+    <div class="page" style="top:200%;" id="page_20">
         <div class="promotion-video-div">
             <iframe id="promotion-video" title="CCU_Taiwan: The EPA production from E. coli. to prevent cardiovascular diseases (2022) - Project Promotion [English]" src="https://video.igem.org/videos/embed/0f0c1ce3-b6fe-4ec3-b95b-b10aae022dee" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
         </div>
     </div>
-    <div class="page" style="top:200%;" id="page_17">
+    <div class="page" style="top:200%;" id="page_21">
         <div class="white_background">
             <li class="reference" id="r1">Abbasi, S., N. Soltani, B. Keshavarzi, F. Moore, A. Turner and M. Hassanaghaei (2018). "Microplastics in different tissues of fish and prawn from the Musa Estuary, Persian Gulf." <i>Chemosphere</i> 205: 80-87.</li>
             <li class="reference" id="r2">Benvenga, S., F. Fama, L. G. Perdichizzi, A. Antonelli, G. Brenta, F. Vermiglio and M. Moleti (2022). "Fish and the Thyroid: A Janus Bifrons Relationship Caused by Pollutants and the Omega-3 Polyunsaturated Fatty Acids." <i>Front Endocrinol (Lausanne)</i> 13: 891233.</li>
@@ -220,22 +272,20 @@
     <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
-    <div class="background"></div><!-- -->
+    <!-- -->
     <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
-    <div class="background"></div><!-- -->
-    <!-- <img class="background" src="<?php echo imgfile;?>/home/vessel-1.png">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel-2.png">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel-3.png">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel-4.png">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel-5.png">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel-6.png">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel-7.png">
-    <img class="background" src="<?php echo imgfile;?>/home/vessel-8.png"> -->
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <!-- -->
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
     <div class="background"></div>
