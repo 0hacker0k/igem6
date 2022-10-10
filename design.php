@@ -41,24 +41,28 @@
             <p>
                 &emsp;&emsp;These functional domains in <i>pfa</i> genes are involved in the extension and modification of the intermediates and formation of the final PUFA products. In brief, the PKS pathway starts from the activation of ACP by <i>pfa E</i> (PPTase). After that, the AT domain will transfer the malonyl-CoA, which is the raw material of PUFA, to the ACPs. The backbone of malonyl-ACP will be further elongated by KS and AT domains, while KR, DH, ER domains are responsible for modification of the intermediate products. Finally, the PUFA will be produced.(Gao, Wang & Tang, 2010; Mindrebo et al., 2020)
             </p>
-            <!-- <div class="full_block">
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/design/design01.png"/>
                     <div class="triangle_to_top"></div>Figure 1: The ACP proteins are activated by the PPTase, giving ACPs the ability to transfer the intermediate product to interact with other functional domains.
                 </div>
-            </div> -->
-            <!-- <div class="full_block">
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/design/design02.png"/>
                     <div class="triangle_to_top"></div>Figure 2: The AT domain transfers the substrate to the ACP protein.
                 </div>
-            </div> -->
-            <!-- <div class="full_block">
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/design/design03.png"/>
                     <div class="triangle_to_top"></div>Figure 3: the elongation and modification of the backbone of  PUFA.
                 </div>
-            </div> -->
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
                 The functional domains:
                 <br/>KS: Catalyzes a decarboxylative Claisen-like condensation reaction to extend the carbon chain of polyketide. 
@@ -66,21 +70,24 @@
                 <br/>KR: Reduces β-ketone groups to hydroxyl groups.
                 <br/>ER: Reduces enoyl groups to alkyl groups.
             </p>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
                 &emsp;&emsp;In <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>, the pfa gene cluster encodes five open reading frames, namely <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i>, and <i>pfa E</i>. Each gene contains one or more functional domains to perform carboxylation, dehydration, and reduction of the ketoacyl group and hydroxyl groups in the PKS pathway. In <i>Moritella marina</i>, the <i>pfa</i> genes work together to generate DHA, while <i>Shewanella pneumatophori</i> generates EPA. The exact functions of <i>pfa A-D</i> genes are unclear. To the best of our knowledge, the <i>pfa B</i> gene is the key molecule to determine the final product (e.g. EPA and DHA)  (Orikasa et al. 2009).
             </p>
-            <!-- <div class="full_block">
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/design/design04.png"/>
                     <div class="triangle_to_top"></div>Figure 4: The DHA-producing gene clusters
                 </div>
-            </div> -->
-            <!-- <div class="full_block">
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/design/design05.png"/>
                     <div class="triangle_to_top"></div>Figure 5: The EPA-producing gene clusters
                 </div>
-            </div> -->
+            </div>
             <div id="" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The arrangement of <i>pfa</i> genes in expression vectors</h2>
             </div>
@@ -96,21 +103,29 @@
             <p>
                 &emsp;&emsp;To clone <i>pfa A</i> and <i>pfa D</i> into pColdI vector, we first divided the <i>pfa A</i> gene into two parts, <i>pfa A1</i> (4 kb) and <i>pfa A2</i> (4 kb), since the length of the pfa A gene makes PCR amplification difficult. The restriction enzymes (REs) for cloning are carefully selected to avoid destroying <i>pfa A</i> or <i>pfa D</i> genes during cloning. Ribosome binding sites (RBS) are introduced in front of the <i>pfa A</i> and <i>pfa D</i> by PCR, Finally, we selected NdeI and EcoR1 for cloning <i>pfa A1</i>, EcoRI and SacII for cloning <i>pfa A2</i>, as well as SacII and XbaI for <i>pfa D</i>.
             </p>
-            <!-- <div class="full_block">
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/design/design06.png"/>
-                    <div class="triangle_to_top"></div>
                 </div>
-            </div> -->
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
                 &emsp;&emsp;To clone the <i>pfa B</i>, <i>pfa C</i>, and <i>pfa E</i> genes into the pSTV28 vector, REs BamHI and SacI were selected for <i>pfa C</i> cloning, and the RBS were introduced by PCR. The purchased <i>pfa B'</i>, for DHA production (<i>Moritella marina</i>), <i>pfa B</i>, for EPA production (<i>Shewanella pneumatophori</i>) and <i>pfa E</i> genes were codon-optimized to avoid RE digestion of BamHI and SacI. Finally, we selected EcoRI and BamHI for cloning the <i>pfa B</i> gene, and SacI and HindIII for cloning the <i>pfa E</i> gene. Since the <i>pfa B'</i> (<i>Moritella marina</i>) and <i>pfa B</i> (<i>Shewanella pneumatophori</i>) are both codon-optimized, it is easy to switch these two <i>pfa B</i> genes using the same REs.
             </p>
-            <!-- <div class="full_block">
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/design/design07.png"/>
-                    <div class="triangle_to_top"></div>
                 </div>
-            </div> -->
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
+                <div class="img" style="--width:80%;">
+                    <img src="<?php echo imgfile;?>/design/design08.png"/>
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
                 &emsp;&emsp;All the sequences of the <i>pfa</i> genes and designed clones are provided in the basic and composition parts.
             </p>
@@ -120,43 +135,47 @@
             <p>
                 &emsp;&emsp;To enhance EPA production, we decided to express <i>Acc</i> genes from Corynebacterium glutamicum, <i>AccBC</i> (1.8 kb), <i>AccD1</i> (1.6 kb) and <i>AccE</i> (0.3 kb), in <i>E. coli</i>. The protein translated from <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> genes could form the functional Acetyl-CoA carboxylase (ACC) to produce malonyl-CoA. The reaction includes two steps. In the first step, the ATP-dependent biotin carboxylase (AccBC) catalyzes the transfer of a carboxyl group to biotin, which is linked to the biotin carboxyl carrier protein (ACCE). In the second step, the transcarboxylase (<i>AccD1</i>) transferred the carboxyl group from carboxybiotin to acetyl-CoA to form malonyl-CoA.
             </p>
-            <!-- <div class="full_block">
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
                 <div class="img" style="--width:80%;">
-                    <img src="<?php echo imgfile;?>/design/design08.png"/>
-                    <div class="triangle_to_top"></div>
+                    <img src="<?php echo imgfile;?>/design/design09.png"/>
+                    <div class="triangle_to_top"></div>The function of <i>Acc</i> genes
                 </div>
-            </div> -->
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
                 &emsp;&emsp;In our ACC expression design, the biobricks of <i>Acc</i> genes are all ordered and codon-optimized for expression in <i>E. coli</i> For convenience, we ordered the <i>AccBC</i> gene with RBS as one biobrick, while the <i>AccD1</i> and <i>AccE</i> were ordered with their RBSs as one biobrick. The REs flanking the <i>AccBC</i> biobrick are NdeI and EcoRI, while the REs flanking the <i>AccD1</i> and <i>AccE</i> biobrick are EcoRI and XbaI. These two biobricks will be cloned into the pET28a vector with the selected REs.
             </p>
-            <!-- <div class="full_block">
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
                 <div class="img" style="--width:80%;">
-                    <img src="<?php echo imgfile;?>/design/design09.png"/>
-                    <div class="triangle_to_top"></div>
+                    <img src="<?php echo imgfile;?>/design/design10.png"/>
                 </div>
-            </div> -->
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <div id="" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Increasing PUFA production using cerulenin</h2>
             </div>
             <p>
                 &emsp;&emsp;In <i>E. coli</i>, the endogenous fatty acid synthesis (FAS) pathway is responsible for the fatty acid synthesis. In the FAS pathway, FabH initiates the fatty acid synthesis by condensing the acetyl-CoA and Malonyl-ACP (Acyl carrier protein) into 3-Ketoacyl-ACP. The 3-Ketoacyl-ACP is further elongated by FabB and FabF.
             </p>
-            <!-- <div class="full_block">
-                <div class="img" style="--width:80%;">
-                    <img src="<?php echo imgfile;?>/design/design10.png"/>
-                    <div class="triangle_to_top"></div>
-                </div>
-            </div> -->
-            <!-- <div class="full_block">
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/design/design11.png"/>
-                    <div class="triangle_to_top"></div>
                 </div>
-            </div> -->
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="full_block">
+                <div class="img" style="--width:80%;">
+                    <img src="<?php echo imgfile;?>/design/design12.png"/>
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
                 &emsp;&emsp;The function of the chemical cerulenin is to inhibit FabB and FabF, two main synthases in the FAS pathway. Furthermore, previous reports showed that the exogenous pfa system was not inhibited by cerulenin in <i>E. coli</i>. Thus addition of the chemical cerulenin to the Acc and <i>pfa</i> genes co-expressed in <i>E. coli</i> should increase the PUFA production.
             </p>
-            
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p class="h25">
                 Reference:
                 <ol>
