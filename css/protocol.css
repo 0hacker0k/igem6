@@ -12,7 +12,9 @@
     width: 85%;
     float: left;
     overflow: auto;
-    height: 60em;
+    min-height: 60em;
+    max-height: 100%;
+    height: 100%;
     /* font-family: 'comic'; */
     /* font-family: 'lhandw'; */
     /* font-family: 'papyrus'; */
@@ -34,30 +36,71 @@
     padding-bottom: 5%;
 }
 .content{
-    width: 100%;
+    width: 90%;
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 2%;
     padding-bottom: 2%;
     display: none;
+    margin:0 auto;
+    font-size: 1.2em;
+}
+p{
+    margin-left:6%;
 }
 h1{
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     width: 100%;
     text-align: center;
 }
-._1_{
+h2{
+    margin-bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+.bracket{
     counter-reset: item
 }
-ol { counter-reset: item }
-.bracket>li{ display: block }
-.bracket>li:before { content: "(" counters(item, ".") ") "; counter-increment: item }
+ul li{
+    list-style-type:disc;
+    margin-left:2%;
+}
+.bracket>li,.same>li{
+    display: block;
+}
+.bracket>li:before { 
+    /* counter-reset: item; */
+    content: "(" counters(item, ".") ") ";
+    counter-increment: item;
+}
+.same-counter{
+    counter-reset: item_same;
+}
+.same>li:before { 
+    content: "(" counters(item_same, ".") ") ";
+    counter-increment: item_same;
+}
 .normal>li{ 
     margin-left: 3%;
 }
 .marge{
     width:100%;
     height:var(--width);
+}
+table{
+    margin-left:6%;
+    margin-bottom: 1em;
+    /* width:100%; */
+    
+}
+table tbody tr td,table thead tr th{
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    width: auto;
+    font-size: 1.2em;
+    border-collapse: collapse;
 }
 .full_size_image{
     width:100%;
@@ -68,8 +111,27 @@ ol { counter-reset: item }
 .normal_table>thead{
     background-color: crimson;
 }
-.line_table tr th{
-    
+.line_table tbody tr td,.line_table thead tr th{
+    border: solid black 0.1em;
+}
+li{
+    margin-bottom: 1em;
+}
+.half_div{
+    width: 50%;
+    display : block;
+    float:left;
+    padding-left:1%;
+    padding-right:1%;
+    padding-top:0.5%;
+    padding-bottom:0.5%;
+}
+.align-center{
+    text-align: center;
+}
+.table-center{
+    margin-left:auto; 
+    margin-right:auto;
 }
 /* .normal_table>tbody{
     background-color: white;
