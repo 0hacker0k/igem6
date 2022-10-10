@@ -23,7 +23,7 @@ COLOR_DARK = 0x260e04;
 const PLAYER_KEY = 'player';
 function preload_stage2_gel(){
     //basic
-    debug = 1;
+    debug = 0;
     if(debug==1){
         this.load.image('D_center', prefix+'/main/debug-center.png');
     }
