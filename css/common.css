@@ -197,6 +197,11 @@ img{
     font-weight: 750;
     font-size: calc(1em + 1vw);
 }
+.biggerlis{
+    font-weight: 750;
+    font-size: calc(1em + 1vw);
+    color:#f76f8e;
+}
 .marge{
     width:100%;
     height:var(--width);

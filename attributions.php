@@ -204,7 +204,7 @@
                 $icon1="experiment";
                 $icon2="";
                 $icon3="";
-                $content="Responsible for cloning pColdI - <i>pfa A</i> - <i>pfa D</i> and their protein expression.";
+                $content="Responsible for cloning pColdI - <i>pfa A</i> - <i>pfa D</i>.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -213,7 +213,7 @@
                 $icon1="";
                 $icon2="experiment";
                 $icon3="";
-                $content="Responsible for cloning pET28a - <i>AccBC</i> - <i>AccD1E</i> and their protein expression.";
+                $content="Responsible for cloning pET28a - <i>AccBC</i> - <i>AccD1E</i>.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -222,7 +222,7 @@
                 $icon1="experiment";
                 $icon2="wiki";
                 $icon3="";
-                $content="<li>Responsible for cloning pET28a - <i>AccBC</i> - <i>AccD1E</i> and their protein expression.</li>
+                $content="<li>Responsible for cloning pET28a - <i>AccBC</i> - <i>AccD1E</i>.</li>
                 <li>Responsible for triple antibiotic selection.</li>";
                 include "sub/attribution_card.php";
             ?>
@@ -232,7 +232,7 @@
                 $icon1="slides_editor";
                 $icon2="experiment";
                 $icon3="";
-                $content="Responsible for cloning pColdI - <i>pfa A</i> - <i>pfa D</i> and their protein expression.";
+                $content="Responsible for cloning pColdI - <i>pfa A</i> - <i>pfa D</i>.";
                 include "sub/attribution_card.php";
             ?>
             <div id="6" class="title-label-div">
