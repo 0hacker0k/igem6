@@ -1,0 +1,79 @@
+.main_div{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.left_div{
+    width: 15%;
+    float: left;
+    font-family: 'refsan';
+}
+.right_div{
+    width: 85%;
+    float: left;
+    overflow: auto;
+    height: 60em;
+    /* font-family: 'comic'; */
+    /* font-family: 'lhandw'; */
+    /* font-family: 'papyrus'; */
+    font-family: 'refsan';
+    font-weight: 900;
+}
+.page_tag{
+    cursor: pointer;
+    text-align: center;
+    font-size: 1vw;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.content{
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: none;
+}
+h1{
+    margin-bottom: 2%;
+    width: 100%;
+    text-align: center;
+}
+._1_{
+    counter-reset: item
+}
+ol { counter-reset: item }
+.bracket>li{ display: block }
+.bracket>li:before { content: "(" counters(item, ".") ") "; counter-increment: item }
+.normal>li{ 
+    margin-left: 3%;
+}
+.marge{
+    width:100%;
+    height:var(--width);
+}
+.full_size_image{
+    width:100%;
+}
+.normal_table{
+    border-style: solid;
+}
+.normal_table>thead{
+    background-color: crimson;
+}
+.line_table tr th{
+    
+}
+/* .normal_table>tbody{
+    background-color: white;
+} */
+/* table tbody tr:nth-child(odd) {
+
+} */
