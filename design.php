@@ -72,7 +72,7 @@
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
-                &emsp;&emsp;In <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>, the pfa gene cluster encodes five open reading frames, namely <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i>, and <i>pfa E</i>. Each gene contains one or more functional domains to perform carboxylation, dehydration, and reduction of the ketoacyl group and hydroxyl groups in the PKS pathway. In <i>Moritella marina</i>, the <i>pfa</i> genes work together to generate DHA, while <i>Shewanella pneumatophori</i> generates EPA. The exact functions of <i>pfa A-D</i> genes are unclear. To the best of our knowledge, the <i>pfa B</i> gene is the key molecule to determine the final product (e.g. EPA and DHA)  (Orikasa et al. 2009).
+                &emsp;&emsp;In <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>, the <i>pfa</i> gene cluster encodes five open reading frames, namely <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i>, and <i>pfa E</i>. Each gene contains one or more functional domains to perform carboxylation, dehydration, and reduction of the ketoacyl group and hydroxyl groups in the PKS pathway. In <i>Moritella marina</i>, the <i>pfa</i> genes work together to generate DHA, while <i>Shewanella pneumatophori</i> generates EPA. The exact functions of <i>pfa A-D</i> genes are unclear. To the best of our knowledge, the <i>pfa B</i> gene is the key molecule to determine the final product (e.g. EPA and DHA)  (Orikasa et al. 2009).
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <div class="full_block">
