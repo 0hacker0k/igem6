@@ -52,7 +52,7 @@
     <div class="article">
         <div class="in_center">
             <p>
-                &emsp;&emsp;In the PACOmega project, our initial idea was to generate an alternative resource of docosahexaenoic acid (DHA) for CVD prevention. Orikasa et al. showed that the co-expression of <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i> from <i>Moritella marina</i> promoted DHA production in <i>E. coli</i>. (Orikasa et al., 2006). Accordingly, we designed and built the biobricks for DHA production. However, several studies published this year suggested that eicosapentaenoic acid (EPA), but not DHA, is the main effector in Omega-3 polyunsaturated acid (PUFA) mediated CVD prevention (Mason et al., 2022; Sherratt et al., 2022). To re-design the biobricks for EPA expression without changing the main theme, we explored more references. Fortunately, we learned that swapping the original <i>pfa B</i> gene with that from EPA-producing <i>Shewanella pneumatophori</i> can switch DHA production to EPA production (Orikasa et al., 2009). Therefore, we designed a switchable PUFA system which can produce either DHA or EPA in <i>E. coli</i>. by exchanging the origin of the <i>pfa B</i> gene. 
+                &emsp;&emsp;In the PACOmega project, our initial idea was to generate an alternative resource of docosahexaenoic acid (DHA) for CVD prevention. Orikasa et al. showed that the co-expression of <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i> and <i>pfa E</i> from <i>Moritella marina</i> promoted DHA production in <i>E. coli</i> (Orikasa et al., 2006). Accordingly, we designed and built the biobricks for DHA production. However, several studies published this year suggested that eicosapentaenoic acid (EPA), but not DHA, is the main effector in Omega-3 polyunsaturated fatty acid (PUFA) mediated CVD prevention (Mason et al., 2022; Sherratt et al., 2022). To re-design the biobricks for EPA expression without changing the main theme, we explored more references. Fortunately, we learned that swapping the original <i>pfa B</i> gene with that from EPA-producing <i>Shewanella pneumatophori</i> can switch DHA production to EPA production (Orikasa et al., 2009). Therefore, we modified the original DHA synthesis system to a switchable PUFA synthesis system by exchanging the origin of <i>pfa B</i> gene. 
             </p>
             <p>
                 &emsp;&emsp;Furthermore, we decided to enhance the PUFA production in our switchable design. Accordingly, we searched the literature and found that ectopic expression of acetyl-CoA carboxylase (ACC) enhances biogenesis of fatty acid (Davis et al., 2000). Therefore, we designed a co-expression system of <i>Acc</i> genes with <i>pfa</i> genes to enhance PUFA production.
@@ -64,10 +64,10 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The mechanism of <i>pfa</i> genes in PUFA production</h2>
             </div>
             <p>
-                &emsp;&emsp;In the deep-sea bacteria <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>, the <i>pfa</i> genes are translated into protein and cooperate as a mega-synthase to synthesize PUFA by the polyketide synthase (PKS) pathway. The <i>pfa A-D</i> genes encode proteins containing many functional domains for the PKS pathway, such as acyl carrier protein (ACP), 3-Ketoacyl-ACP reductase (KR), 3-Ketoacyl synthase (KS), 3-Hydroxydecanoyl-ACP dehydratase (DH), and acyltransferase (AT). The <i>pfa E</i> gene encodes phosphopantetheinyl transferase (PPTase).
+                &emsp;&emsp;In the deep-sea bacteria <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>, the <i>pfa</i> genes are translated into protein and cooperate as a megasynthase to synthesize PUFA by the polyketide synthase (PKS) pathway. The <i>pfa A-D</i> genes encode proteins containing many functional domains for the PKS pathway, such as acyl carrier protein (ACP), 3-Ketoacyl-ACP reductase (KR), 3-Ketoacyl synthase (KS), 3-Hydroxydecanoyl-ACP dehydratase (DH), and acyltransferase (AT). The <i>pfa E</i> gene encodes phosphopantetheinyl transferase (PPTase).
             </p>
             <p>
-                &emsp;&emsp;These functional domains in <i>pfa</i> genes are involved in the extension and modification of the intermediates and formation of the final PUFA products. In brief, the PKS pathway starts from the activation of ACP by <i>pfa E</i> (PPTase). After that, the AT domain will transfer the malonyl-CoA, which is the raw material of PUFA, to the ACPs. The backbone of malonyl-ACP will be further elongated by KS and AT domains, while KR, DH, ER domains are responsible for modification of the intermediate products. Finally, the PUFA will be produced.(Gao, Wang & Tang, 2010; Mindrebo et al., 2020)
+                &emsp;&emsp;These functional domains in <i>pfa</i> genes are involved in the extension and modification of the intermediates and formation of the final PUFA products. In brief, the PKS pathway starts from the activation of ACP by pfa E (PPTase). After that, the AT domain will transfer the malonyl-CoA, which is the raw material of PUFA, to the ACPs. The backbone of malonyl-ACP will be further elongated by KS and AT domains, while KR, DH, ER domains are responsible for modification of the intermediate products. Finally, the PUFA will be produced. (Gao, Wang & Tang, 2010; Mindrebo et al., 2020)
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <div class="full_block">
@@ -129,7 +129,7 @@
                 &emsp;&emsp;Because of the size limitation, it is too costly or impossible to order biobricks of <i>pfa A</i> (~8 kb) and <i>pfa C</i> (~6 kb) from the company. To keep the cost in a reasonable range, we decided to clone the endogenous <i>pfa A</i>, <i>pfa C</i>, and <i>pfa D</i> genes from <i>Moritella marina</i> by PCR, while <i>pfa B</i> (<i>Moritella marina</i>), <i>pfa B'</i> (<i>Shewanella pneumatophori</i>) and <i>pfa E</i> genes were ordered. 
             </p>
             <p>
-                &emsp;&emsp;To clone <i>pfa A</i> and <i>pfa D</i> into pColdI vector, we first divided the <i>pfa A</i> gene into two parts, <i>pfa A1</i> (4 kb) and <i>pfa A2</i> (4 kb), since the length of the pfa A gene makes PCR amplification difficult. The restriction enzymes (REs) for cloning are carefully selected to avoid destroying <i>pfa A</i> or <i>pfa D</i> genes during cloning. Ribosome binding sites (RBS) are introduced in front of the <i>pfa A</i> and <i>pfa D</i> by PCR, Finally, we selected NdeI and EcoR1 for cloning <i>pfa A1</i>, EcoRI and SacII for cloning <i>pfa A2</i>, as well as SacII and XbaI for <i>pfa D</i>.
+                &emsp;&emsp;To clone <i>pfa A</i> and <i>pfa D</i> into pColdI vector, we first divided the <i>pfa A</i> gene into two parts, <i>pfa A1</i> (4 kb) and <i>pfa A2</i> (4 kb), since the length of the <i>pfa A</i> gene makes PCR amplification difficult. The restriction enzymes (REs) for cloning are carefully selected to avoid destroying <i>pfa A</i> or <i>pfa D</i> genes during cloning. Ribosome binding sites (RBS) are introduced in front of the <i>pfa A</i> and <i>pfa D</i> by PCR, Finally, we selected NdeI and EcoR1 for cloning <i>pfa A1</i>, EcoRI and SacII for cloning <i>pfa A2</i>, as well as SacII and XbaI for <i>pfa D</i>.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <div class="full_block">
@@ -139,7 +139,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
-                &emsp;&emsp;To clone the <i>pfa B</i>, <i>pfa C</i>, and <i>pfa E</i> genes into the pSTV28 vector, REs BamHI and SacI were selected for <i>pfa C</i> cloning, and the RBS were introduced by PCR. The purchased <i>pfa B'</i>, for DHA production (<i>Moritella marina</i>), <i>pfa B</i>, for EPA production (<i>Shewanella pneumatophori</i>) and <i>pfa E</i> genes were codon-optimized to avoid RE digestion of BamHI and SacI. Finally, we selected EcoRI and BamHI for cloning the <i>pfa B</i> gene, and SacI and HindIII for cloning the <i>pfa E</i> gene. Since the <i>pfa B'</i> (<i>Moritella marina</i>) and <i>pfa B</i> (<i>Shewanella pneumatophori</i>) are both codon-optimized, it is easy to switch these two <i>pfa B</i> genes using the same REs.
+                &emsp;&emsp;To clone the <i>pfa B</i>, <i>pfa C</i>, and <i>pfa E</i> genes into the pSTV28 vector, REs BamHI and SacI were selected for <i>pfa C</i> cloning, and the RBS were introduced by PCR. The purchased <i>pfa B</i>, for DHA production (<i>Moritella marina</i>), <i>pfa B'</i>, for EPA production (<i>Shewanella pneumatophori</i>) and <i>pfa E</i> genes were codon-optimized to avoid RE digestion of BamHI and SacI. Finally, we selected EcoRI and BamHI for cloning the <i>pfa B</i> gene, and SacI and HindIII for cloning the <i>pfa E</i> gene. Since the <i>pfa B'</i> (<i>Moritella marina</i>) and <i>pfa B</i> (<i>Shewanella pneumatophori</i>) are both codon-optimized, it is easy to switch these two <i>pfa B</i> genes using the same REs.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <div class="full_block">
@@ -161,7 +161,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The design of vector for expressing <i>Acc</i> genes</h2>
             </div>
             <p>
-                &emsp;&emsp;To enhance EPA production, we decided to express <i>Acc</i> genes from Corynebacterium glutamicum, <i>AccBC</i> (1.8 kb), <i>AccD1</i> (1.6 kb) and <i>AccE</i> (0.3 kb), in <i>E. coli</i>. The protein translated from <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> genes could form the functional Acetyl-CoA carboxylase (ACC) to produce malonyl-CoA. The reaction includes two steps. In the first step, the ATP-dependent biotin carboxylase (AccBC) catalyzes the transfer of a carboxyl group to biotin, which is linked to the biotin carboxyl carrier protein (ACCE). In the second step, the transcarboxylase (<i>AccD1</i>) transferred the carboxyl group from carboxybiotin to acetyl-CoA to form malonyl-CoA.
+                &emsp;&emsp;To enhance EPA production, we decided to express <i>Acc</i> genes from Corynebacterium glutamicum, <i>AccBC</i> (1.8 kb), <i>AccD1</i> (1.6 kb) and <i>AccE</i> (0.3 kb), in <i>E. coli</i>. The protein translated from <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> genes could form the functional Acetyl-CoA carboxylase (ACC) to produce malonyl-CoA. The reaction includes two steps. In the first step, the ATP-dependent biotin carboxylase (ACCBC) catalyzes the transfer of a carboxyl group to biotin, which is linked to the biotin carboxyl carrier protein (ACCE). In the second step, the transcarboxylase (ACCD1) transferred the carboxyl group from carboxybiotin to acetyl-CoA to form malonyl-CoA.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <div class="full_block">
@@ -172,7 +172,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
-                &emsp;&emsp;In our ACC expression design, the biobricks of <i>Acc</i> genes are all ordered and codon-optimized for expression in <i>E. coli</i> For convenience, we ordered the <i>AccBC</i> gene with RBS as one biobrick, while the <i>AccD1</i> and <i>AccE</i> were ordered with their RBSs as one biobrick. The REs flanking the <i>AccBC</i> biobrick are NdeI and EcoRI, while the REs flanking the <i>AccD1</i> and <i>AccE</i> biobrick are EcoRI and XbaI. These two biobricks will be cloned into the pET28a vector with the selected REs.
+                &emsp;&emsp;In our ACC expression design, the biobricks of <i>Acc</i> genes are all ordered and codon-optimized for expression in <i>E. coli</i> For convenience, we ordered the <i>AccBC</i> gene with RBS as one biobrick, while the <i>AccD1</i> and <i>AccE</i> were ordered with their RBSs as the other biobrick. The REs flanking the <i>AccBC</i> biobrick are NdeI and EcoRI, while the REs flanking the <i>AccD1</i> and <i>AccE</i> biobrick are EcoRI and XbaI. These two biobricks will be cloned into the pET28a vector with the selected REs.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <div class="full_block">
@@ -185,7 +185,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Increasing PUFA production using cerulenin</h2>
             </div>
             <p>
-                &emsp;&emsp;In <i>E. coli</i>, the endogenous fatty acid synthesis (FAS) pathway is responsible for the fatty acid synthesis. In the FAS pathway, FabH initiates the fatty acid synthesis by condensing the acetyl-CoA and Malonyl-ACP (Acyl carrier protein) into 3-Ketoacyl-ACP. The 3-Ketoacyl-ACP is further elongated by FabB and FabF.
+                &emsp;&emsp;In <i>E. coli</i>, the endogenous fatty acid synthesis (FAS) pathway is responsible for the fatty acid synthesis. In the FAS pathway, FabH initiates the fatty acid synthesis by condensing the acetyl-CoA and malonyl-ACP (Acyl carrier protein) into 3-Ketoacyl-ACP. The 3-Ketoacyl-ACP is further elongated by FabB and FabF.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <div class="full_block">
@@ -197,12 +197,6 @@
             <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/design/design12.png"/>
-                </div>
-            </div>
-            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
-            <div class="full_block">
-                <div class="img" style="--width:80%;">
-                    <img src="<?php echo imgfile;?>/design/design13.png"/>
                 </div>
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      

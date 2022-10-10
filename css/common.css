@@ -44,6 +44,10 @@ p{
     font-weight: 800;
     color: #800000;
 }
+.h13{
+    font-weight: 700;
+    color: #806074;
+}
 .h25{
     color: #3C3D3E;
 }
@@ -202,6 +206,10 @@ img{
     font-size: calc(1em + 1vw);
     color:#f76f8e;
 }
+.biggerliss{
+    font-weight: 500;
+    font-size: calc(1em + 1vw);
+}
 .marge{
     width:100%;
     height:var(--width);
@@ -312,16 +320,16 @@ img{
     background-color: #eee
   }
   table thead {
-    background-color: #f76f8e;
+    background-color: #B77B8D;
     color: white;
   }
   table thead th:first-child {
     border-radius: 5px 0 0 0;
-    border: 1px solid #f76f8e;
+    border: 1px solid #B77B8D;
   }
   table thead th:last-child {
     border-radius: 0 5px 0 0;
-    border-right: 1px solid #f76f8e;
+    border-right: 1px solid #B77B8D;
   }
   table tbody tr:last-child td:first-child {
     border-radius: 0 0 0 5px;
