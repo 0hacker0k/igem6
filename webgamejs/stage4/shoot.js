@@ -509,7 +509,7 @@ function create_stage4_shoot (){
         
     }
     // spinTween.oncomplete.add(this.winPrize, this);
-    create_congratulation(this,map_1);
+    create_congratulation(this,stage_4_story_after);
     PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
     

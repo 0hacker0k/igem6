@@ -200,7 +200,7 @@ function create_stage3_flop (){
     time_clock=setTimeout(function(){
         time_count();
     },1000);
-    create_congratulation(this,map_1);
+    create_congratulation(this,stage_3_story_after);
     PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');
 

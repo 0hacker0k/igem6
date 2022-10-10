@@ -157,11 +157,29 @@ const stage_1_story_after={
     create: create_story1_after,
     update: update_story1_after
 }
+const stage_2_story={
+    key: 'stage_2_story',
+    preload: preload_story2,
+    create: create_story2,
+    update: update_story2
+}
 const stage_2_gel={
     key: 'stage_2_gel',
     preload: preload_stage2_gel,
     create: create_stage2_gel,
     update: update_stage2_gel
+}
+const stage_2_story_after={
+    key: 'stage_2_story_after',
+    preload: preload_story2_after,
+    create: create_story2_after,
+    update: update_story2_after
+}
+const stage_3_story={
+    key: 'stage_3_story',
+    preload: preload_story3,
+    create: create_story3,
+    update: update_story3
 }
 const stage_3_flop={
     key: 'stage_3_flop',
@@ -169,11 +187,29 @@ const stage_3_flop={
     create: create_stage3_flop,
     update: update_stage3_flop
 }
+const stage_3_story_after={
+    key: 'stage_3_story_after',
+    preload: preload_story3_after,
+    create: create_story3_after,
+    update: update_story3_after
+}
+const stage_4_story={
+    key: 'stage_4_story',
+    preload: preload_story4,
+    create: create_story4,
+    update: update_story4
+}
 const stage_4_shoot={
     key: 'stage_4_shoot',
     preload: preload_stage4_shoot,
     create: create_stage4_shoot,
     update: update_stage4_shoot
+}
+const stage_4_story_after={
+    key: 'stage_4_story_after',
+    preload: preload_story4_after,
+    create: create_story4_after,
+    update: update_story4_after
 }
 const stage_5_take={
     key: 'stage_5_take',

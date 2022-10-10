@@ -1687,7 +1687,7 @@ function create_stage2_gel (){
         }
 
     }
-    create_congratulation(this,map_1);
+    create_congratulation(this,stage_2_story_after);
     //對話框
     PACO=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'PACO');
     Sprite=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'Sprite');

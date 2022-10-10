@@ -78,17 +78,17 @@ function create (){
             }
             if(id==2){
                 setTimeout(function(){
-                    load_page(stage_2_gel);
+                    load_page(stage_2_story);
                 },500);
             }
             if(id==3){
                 setTimeout(function(){
-                    load_page(stage_3_flop);
+                    load_page(stage_3_story);
                 },500);
             }
             if(id==4){
                 setTimeout(function(){
-                    load_page(stage_4_shoot);
+                    load_page(stage_4_story);
                 },500);
             }
             if(id==5){
