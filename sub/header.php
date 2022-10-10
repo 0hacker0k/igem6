@@ -124,7 +124,6 @@
                 <a href="https://2022.igem.wiki/ccu-taiwan/parts" class="dropdown-content_list click">Parts</a>
             </div>
             <div id="mylist4" class="dropdown-content nav_rwd">
-            <div id="myDropdown4" class="dropdown-content">
                 <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practices</a>
                 <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
                 <a href="#" class="dropdown-content_list click">Web Game</a>

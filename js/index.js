@@ -43,26 +43,24 @@ function screen_move(scroll){
                     next_page.style.top=((screen_height-next_page.clientHeight)/2+screen_height)+"px";
                     next_page.style.transition="0.0s";
                     next_page.style.opacity=1;
-                    // var page_text=next_page.getElementsByClassName("white_background")[0];
-                    // var text_temp;
-                    // if(page_text!=undefined){
-                        
-                    //     text_temp=page_text.getBoundingClientRect().top;
-                    //     console.log(text_temp);
-                    //     page_text.style.transition="0.0s";
-                    //     page_text.style.top=screen_height+"px";
-                    // }
+                    var page_text=next_page.getElementsByClassName("white_background")[0];
+                    var text_temp;
+                    if(page_text!=undefined){
+                        text_temp=page_text.offsetTop;
+                        page_text.style.transition="0.0s";
+                        page_text.style.top=screen_height+"px";
+                    }
                     if(next_page.animate!=null)clearTimeout(next_page.animate);
                     next_page.animate=setTimeout(() => {
                         next_page.style.top=((screen_height-next_page.clientHeight)/2)+"px";
                         next_page.style.transition="1.0s";
                         next_page.animate=null;
-                        // if(page_text!=undefined){
-                        //     setTimeout(() => {
-                        //         page_text.style.transition="1.0s";
-                        //         page_text.style.top=text_temp+"px";
-                        //     }, 1000);
-                        // }
+                        if(page_text!=undefined){
+                            setTimeout(() => {
+                                page_text.style.transition="1.0s";
+                                page_text.style.top=text_temp+"px";
+                            }, 500);
+                        }
                     }, 1);
                 }
             }
