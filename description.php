@@ -85,7 +85,7 @@
                 &emsp;&emsp;Therefore, we decided to apply synthetic biology to generate pure and vegan-friendly EPA.
             </p>
             <p>
-                &emsp;&emsp;To produce pure EPA, we decided to express the EPA-producing genes <i>pfa A</i>, <i>pfa C</i>, <i>pfa D</i>, and <i>pfa E</i> (from <i>Moritella marina</i> MP-1), and the <i>pfa B'</i> gene (from <i>Shewanella pneumatophori</i>) in <i>E. coli</i>. In addition, we planned to increase the raw material, malonyl-CoA, to enhance EPA production through co-expressing the ACC complex (from Corynebacterium glutamicum) with <i>pfa</i> genes. Finally, the chemical cerulenin will be added to inhibit the competing fatty acid synthesis pathway and consequently enhance the function of <i>pfa</i> genes.
+                &emsp;&emsp;To produce pure EPA, we decided to express the EPA-producing genes <i>pfa A</i>, <i>pfa C</i>, <i>pfa D</i>, and <i>pfa E</i> (from <i>Moritella marina</i>), and the <i>pfa B'</i> gene (from <i>Shewanella pneumatophori</i>) in <i>E. coli</i>. In addition, we planned to increase the raw material, malonyl-CoA, to enhance EPA production through co-expressing the ACC complex (from Corynebacterium glutamicum) with <i>pfa</i> genes. Finally, the chemical cerulenin will be added to inhibit the competing fatty acid synthesis pathway and consequently enhance the function of <i>pfa</i> genes.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
@@ -101,7 +101,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;EPA is one of the answers to solve the CVD crisis. However, there are still other risk factors associated with CVDs. To prevent CVD in a more comprehensive way, we consulted the dietitian Miranda Chen. She pointed out that CVD prevention should begin with the optimization of daily routines, particularly daily exercises and diet, and that such cultivation of healthy daily habits can improve vascular health.
+                &emsp;&emsp;EPA is one of the answers to solve the CVD crisis. However, there are still other risk factors associated with CVDs. To prevent CVD in a more comprehensive way, we consulted the <a href="https://2022.igem.wiki/ccu-taiwan/human-practices#13" class="link_subtitle">dietitian Miranda Chen</a>. She pointed out that CVD prevention should begin with the optimization of daily routines, particularly daily exercises and diet, and that such cultivation of healthy daily habits can improve vascular health.
             </p>
             <p>
                 &emsp;&emsp;Accordingly, we decided to raise public awareness of CVD severity and draw more attention to CVD prevention. Concurrently, we also tried to emphasize the importance of a healthy lifestyle. These ideas all came together to form  the PACOmega project.
@@ -112,20 +112,15 @@
                     <img src="<?php echo imgfile;?>/description/description09.png"/>
                 </div>
             </div>
-            <div class="full_block">
-                <div class="img" style="--width:80%;">
-                    <img src="<?php echo imgfile;?>/description/description10.png"/>
-                </div>
-            </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
                 &emsp;&emsp;In the PACOmega project, we divided our solution of CVD prevention into two parts. The first is healthy living and the second is  healthy eating.
             </p>
             <p>
-                &emsp;&emsp;For the healthy living part, we promoted the concept of healthy diet through online cookbooks, and promoted regular exercise through a campus walking activity. We also generated a web game and held an openlab activity to share information about the CVD crisis and the beauty of synthetic biology.
+                &emsp;&emsp;For the healthy living part, we promoted regular exercise through a <a href="https://2022.igem.wiki/ccu-taiwan/education#7" class="link_subtitle">campus walking activity</a>.In addition, we  generated a <a href="https://2022.igem.wiki/ccu-taiwan/webgame" class="link_subtitle">web game</a> and held an <a href="https://2022.igem.wiki/ccu-taiwan/education#2" class="link_subtitle">Open Lab activity</a> to share information about the CVD crisis and the beauty of synthetic biology.
             </p>
             <p>
-                &emsp;&emsp;In the healthy eating part, we applied synthetic biology to produce pure EPA. This approach will provide an alternative source of EPA supplement, which covers what fish oils can not achieve.
+                &emsp;&emsp;In the healthy eating part, we <a href="https://2022.igem.wiki/ccu-taiwan/education" class="link_subtitle">promoted the concept</a> of healthy diet through online cookbooks. Also, we applied synthetic biology to produce pure EPA. This approach will provide an alternative source of EPA supplement, which covers what fish oils can not achieve.
             </p>
             <p>
                 &emsp;&emsp;Together, we believe that the PACOmega project will be a valuable addition to solving the CVD crisis.
