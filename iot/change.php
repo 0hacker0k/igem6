@@ -81,9 +81,9 @@ foreach($rs->fetchall() as $value){
     <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?command=1" type="submit">Run</button></div>
     <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?command=2" type="submit">Clear</button></div>
     <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?command=3" type="submit">Emergency Stop</button></div>
-    <div style="width: 24%;"><button class="size_mid" onclick="add_count()" type="button">+</button></div>
+    <div style="width: 24%;font-size: 3vw;"><button class="size_mid" onclick="add_count()" type="button">+</button></div>
     <div style="width: 24%;">Count</div>
-    <div style="width: 24%;"><button class="size_mid" onclick="sub_count()" type="button">-</button></div>
+    <div style="width: 24%;font-size: 3vw;"><button class="size_mid" onclick="sub_count()" type="button">-</button></div>
     <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?count=1" type="submit">Submit</button></div>
     <div style="width: 24%;"><button class="size_mid" onclick="add_cct()" type="button">+</button></div>
     <div style="width: 24%;">Concentration(%)</div>
