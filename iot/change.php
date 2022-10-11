@@ -41,7 +41,7 @@ foreach($rs->fetchall() as $value){
 </style>
 <form class="size_mid center" enctype="multipart/form-data" id="event_upload_form" method="post">
     <div style="text-align: center;padding:5%;width: 80%;margin: calc(5% - 2rem);border: 1rem solid;">
-        <div class="center" style="width: 100%;text-align: center">
+        <div class="center" style="width: 100%;text-align: left">
             Status: 
             <?php 
                 if($value['status']==0)
@@ -55,7 +55,7 @@ foreach($rs->fetchall() as $value){
             ?>
         </div>
         <div class="center" style="width: 100%;text-align: center;display: flex;align-items: center;">
-            Process: 
+            Process :&emsp; 
             <div style="padding: 0.1rem 0.5rem;border: 0<?php if($value['process']==1)echo ".1";?>rem">
                 Quantitative
             </div>
@@ -70,14 +70,14 @@ foreach($rs->fetchall() as $value){
             </div>
         </div>
         <div class="center" style="width: 100%;text-align: center;display: flex;align-items: center;">
-            Address of running:<?php echo $value['port'];?>
+            Address of running :&emsp;<?php echo $value['port'];?>
         </div>
         <div class="center" style="width: 100%;text-align: center;display: flex;align-items: center;">
-            <div>Count</div>
+            <div>Count &emsp;</div>
             <input class="size_mid" type="text" id="count_1" name="count" value="<?php echo $value['count'];?>" style="text-align: right;width:10%;"/>
         </div>
         <div class="center" style="width: 100%;text-align: center;display: flex;align-items: center;">    
-            <div>Concentration(%)</div>   
+            <div>Concentration(%) &emsp;</div>   
             <input class="size_mid" type="text" id="cct_1" name="concentration" value="<?php echo $value['concentration'];?>" style="text-align: right;width:10%;"/>
         </div>
     </div>
