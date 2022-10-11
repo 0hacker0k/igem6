@@ -56,16 +56,16 @@ foreach($rs->fetchall() as $value){
         </div>
         <div class="center" style="width: 100%;text-align: center;display: flex;align-items: center;">
             Process: 
-            <div style="padding: 0.1rem;border: 0<?php if($value['process']==1)echo ".1";?>rem">
+            <div style="padding: 0.1rem 0.5rem;border: 0<?php if($value['process']==1)echo ".1";?>rem">
                 Quantitative
             </div>
-            <div style="padding: 0.1rem;border: 0<?php if($value['process']==2)echo ".1";?>rem">
+            <div style="padding: 0.1rem 0.5rem;border: 0<?php if($value['process']==2)echo ".1";?>rem">
                 Heating
             </div>
-            <div style="padding: 0.1rem;border: 0<?php if($value['process']==3)echo ".1";?>rem">
+            <div style="padding: 0.1rem 0.5rem;border: 0<?php if($value['process']==3)echo ".1";?>rem">
                 Cool down
             </div>
-            <div style="padding: 0.1rem;border: 0<?php if($value['process']==4)echo ".1";?>rem">
+            <div style="padding: 0.1rem 0.5rem;border: 0<?php if($value['process']==4)echo ".1";?>rem">
                 Demoulding
             </div>
         </div>
