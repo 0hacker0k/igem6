@@ -67,14 +67,14 @@ foreach($rs->fetchall() as $value){
         </div>
         <div class="center" style="width: 100%;text-align: center;display: flex;align-items: center;">
             <div>Count</div>
-            <input class="size_mid" type="text" id="count_1" name="count" value="<?php echo $value['count'];?>" style="text-align: right;"/>
+            <input class="size_mid" type="text" id="count_1" name="count" value="<?php echo $value['count'];?>" style="text-align: right;width:10%;"/>
         </div>
         <div class="center" style="width: 100%;text-align: center;display: flex;align-items: center;">
             Address of running:<?php echo $value['port'];?>
         </div>
         <div class="center" style="width: 100%;text-align: center;display: flex;align-items: center;">    
             <div>Concentration(%)</div>   
-            <input class="size_mid" type="text" id="cct_1" name="concentration" value="<?php echo $value['concentration'];?>" style="text-align: right;"/>
+            <input class="size_mid" type="text" id="cct_1" name="concentration" value="<?php echo $value['concentration'];?>" style="text-align: right;width:10%;"/>
         </div>
     </div>
     <div style="width: 25%;"><button class="size_mid" formaction="./lib.php?command=0" type="submit">Pause</button></div>
