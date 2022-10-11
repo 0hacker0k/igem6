@@ -34,6 +34,10 @@ foreach($rs->fetchall() as $value){
         margin-top:1%;
         margin-bottom:1%;
     }
+    .pad{
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+    }
 </style>
 <form class="size_mid center" enctype="multipart/form-data" id="event_upload_form" method="post">
     <div style="text-align: center;padding:5%;width: 80%;margin: calc(5% - 2rem);border: 1rem solid;">
@@ -80,18 +84,18 @@ foreach($rs->fetchall() as $value){
             <input class="size_mid" type="text" id="cct_1" name="concentration" value="<?php echo $value['concentration'];?>" style="text-align: right;width:10%;"/>
         </div>
     </div>
-    <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?command=0" type="submit">Pause</button></div>
-    <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?command=1" type="submit">Run</button></div>
-    <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?command=2" type="submit">Clear</button></div>
-    <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?command=3" type="submit">Emergency Stop</button></div>
+    <div style="width: 24%;"><button class="size_mid pad" formaction="./lib.php?command=0" type="submit">Pause</button></div>
+    <div style="width: 24%;"><button class="size_mid pad" formaction="./lib.php?command=1" type="submit">Run</button></div>
+    <div style="width: 24%;"><button class="size_mid pad" formaction="./lib.php?command=2" type="submit">Clear</button></div>
+    <div style="width: 24%;"><button class="size_mid pad" formaction="./lib.php?command=3" type="submit">Emergency Stop</button></div>
     <div style="width: 24%;"><button class="size_big" onclick="add_count()" type="button">+</button></div>
     <div style="width: 24%;">Count</div>
     <div style="width: 24%;"><button class="size_big" onclick="sub_count()" type="button">-</button></div>
-    <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?count=1" type="submit">Submit</button></div>
+    <div style="width: 24%;"><button class="size_mid pad" formaction="./lib.php?count=1" type="submit">Submit</button></div>
     <div style="width: 24%;"><button class="size_big" onclick="add_cct()" type="button">+</button></div>
     <div style="width: 24%;">Concentration(%)</div>
     <div style="width: 24%;"><button class="size_big" onclick="sub_cct()" type="button">-</button></div>
-    <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?count=2" type="submit">Submit</button></div>
+    <div style="width: 24%;"><button class="size_mid pad" formaction="./lib.php?count=2" type="submit">Submit</button></div>
 </form>
 <?php 
 }
