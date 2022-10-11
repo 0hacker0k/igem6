@@ -35,8 +35,8 @@ foreach($rs->fetchall() as $value){
         margin-bottom:1%;
     }
     .pad{
-        padding-top: 1.5vw;
-        padding-bottom: 1.5vw;
+        padding-top: 1.2vw;
+        padding-bottom: 1.2vw;
     }
 </style>
 <form class="size_mid center" enctype="multipart/form-data" id="event_upload_form" method="post">
