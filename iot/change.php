@@ -33,7 +33,7 @@ foreach($rs->fetchall() as $value){
     }
 </style>
 <form class="size_mid center" enctype="multipart/form-data" id="event_upload_form" method="post">
-    <div class="center" style="text-align: center;padding:5%;width: 80%;margin: calc(5% - 2rem);border: 1rem solid;">
+    <div style="text-align: center;padding:5%;width: 80%;margin: calc(5% - 2rem);border: 1rem solid;">
         <div class="center" style="width: 100%;text-align: center">
             Status: 
             <?php 
