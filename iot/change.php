@@ -15,7 +15,7 @@ foreach($rs->fetchall() as $value){
 </style>
 <form class="size_mid" enctype="multipart/form-data" id="event_upload_form" method="post">
     <div style="width: 90%;margin: calc(5% - 1rem);border: 1rem solid;">
-        <div style="width: 100%;height: 33%;text-align: center">
+        <div style="width: 100%;text-align: center">
             Status: 
             <?php 
                 if($value['status']==0)
@@ -28,7 +28,7 @@ foreach($rs->fetchall() as $value){
                     echo "Error";
             ?>
         </div>
-        <div style="width: 100%;height: 33%;text-align: center;display: flex;align-items: center;">
+        <div style="width: 100%;text-align: center;display: flex;align-items: center;">
             Process: 
             <div style="padding: 0.1rem;border: 0<?php if($value['process']==1)echo ".1";?>rem">
                 Quantitative
@@ -43,11 +43,11 @@ foreach($rs->fetchall() as $value){
                 Demoulding
             </div>
         </div>
-        <div style="width: 100%;height: 33%;text-align: center;display: flex;align-items: center;">Address of running:<?php echo $value['port'];?>
+        <div style="width: 100%;text-align: center;display: flex;align-items: center;">Address of running:<?php echo $value['port'];?>
             <div>Count</div>
             <input class="size_mid" type="text" id="count_1" name="count" value="<?php echo $value['count'];?>" style="text-align: right;"/>
         </div>
-        <div style="width: 100%;height: 33%;text-align: center;display: flex;align-items: center;">Address of running:<?php echo $value['port'];?>
+        <div style="width: 100%;text-align: center;display: flex;align-items: center;">Address of running:<?php echo $value['port'];?>
             <div>Concentration(%)</div>   
             <input class="size_mid" type="text" id="cct_1" name="concentration" value="<?php echo $value['concentration'];?>" style="text-align: right;"/>
         </div>
