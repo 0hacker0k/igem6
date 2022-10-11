@@ -28,7 +28,7 @@
             <div class="guide_sub_label" onclick="move_to_item('5');guide_toggle()">
                 Increasing PUFA production using cerulenin
             </div>
-            <div class="guide_label" onclick="move_to_item('6');guide_toggle()">
+            <div class="guide_sub_label" onclick="move_to_item('6');guide_toggle()">
                 Reference
             </div>
         </div>

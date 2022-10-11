@@ -24,7 +24,7 @@
             <div class="guide_sub_label" onclick="move_to_item('6')">
                 Goal 14
             </div>
-            <div class="guide_label" onclick="move_to_item('8')">
+            <div class="guide_sub_label" onclick="move_to_item('8')">
                 The SDGs Conference
             </div>
         </div>

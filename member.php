@@ -14,12 +14,7 @@
 
     <div class="member_card row justify-content-around">
 
-        <div class="col-10">
-            <h1>Introduction</h1>
-            <p>CCU_Taiwan is established in the year of 2017. Our team consists of nineteen passionate students. We are a multidisciplinary team as our team members have different professional background from six departments.</p>
-
-        </div>
-        <h1>Members</h1>
+        
         <div class="bulletin">
             <div id="carousel_member" class="carousel slide" data-bs-touch="false" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -174,12 +169,12 @@
                             </div>
                             <div class="primary_person" style="--id:2">
                                 <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup20">
-                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members202.jpg";?>" alt="">
                                 </button>
                             </div>
                             <div class="primary_person" style="--id:3">
                                 <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup21">
-                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members201.jpg";?>" alt="">
                                 </button>
                             </div>
                         </div>
@@ -193,22 +188,22 @@
                             </div>
                             <div class="secondary_person" style="--id:2">
                                 <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup22">
-                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members301.jpg";?>" alt="">
                                 </button>
                             </div>
                             <div class="secondary_person" style="--id:3">
                                 <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup23">
-                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members302.jpg";?>" alt="">
                                 </button>
                             </div>
                             <div class="secondary_person" style="--id:4">
                                 <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup24">
-                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members303.jpg";?>" alt="">
                                 </button>
                             </div>
                             <div class="secondary_person" style="--id:5">
                                 <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup25">
-                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members304.jpg";?>" alt="">
                                 </button>
                             </div>
                         </div>
@@ -222,22 +217,22 @@
                             </div>
                             <div class="instructors_person" style="--id:2">
                                 <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup26">
-                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members401.jpg";?>" alt="">
                                 </button>
                             </div>
                             <div class="instructors_person" style="--id:3">
                                 <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup27">
-                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members402.jpg";?>" alt="">
                                 </button>
                             </div>
                             <div class="instructors_person" style="--id:4">
                                 <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup28">
-                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members403.jpg";?>" alt="">
                                 </button>
                             </div>
                             <div class="instructors_person" style="--id:5">
                                 <button type="button" class="member_portrait" data-bs-toggle="modal" data-bs-target="#popup29">
-                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members015.jpg";?>" alt="">
+                                    <img class="person_img lazy" data-src="<?php echo imgfile."/human/members404.jpg";?>" alt="">
                                 </button>
                             </div>
                         </div>
@@ -654,77 +649,77 @@
         ?>
         <?php
             $id=20;
-            $name="Name";
-            $job_title="Job title";
+            $name="";
+            $job_title="";
             $content="
             <p>
-                content
+                Specialties: Transgenic mice (pancreatic adenocarcinoma, colorectal cancer), Cancer stem cell, Cancer cell biology, Stem cell
             </p>";
-            $title_explain="just example";
-            $popup_img="/human/members115.jpg";
-            $popup_img_alt="SrRb always forgets me(alt).";
-            $person_title="#EXAMPLE";
-            $person_icon="🥺";
+            $title_explain="Assistant Professor, Department of Biomedical Sciences";
+            $popup_img="/human/members202.jpg";
+            $popup_img_alt="";
+            $person_title="Ching-Chieh Weng";
+            $person_icon="";
             include "./sub/popup.php";
         ?>
         <?php
             $id=21;
-            $name="Name";
-            $job_title="Job title";
+            $name="";
+            $job_title="";
             $content="
             <p>
-                content
+                Specialties: Stem cell biology, Cellular biology, Molecular biology
             </p>";
-            $title_explain="just example";
-            $popup_img="/human/members115.jpg";
-            $popup_img_alt="SrRb always forgets me(alt).";
-            $person_title="#EXAMPLE";
-            $person_icon="🥺";
+            $title_explain="Assistant Professor, Department of Biomedical Sciences";
+            $popup_img="/human/members201.jpg";
+            $popup_img_alt="";
+            $person_title="Chun-Ying Yu";
+            $person_icon="";
             include "./sub/popup.php";
         ?>
         <?php
             $id=22;
-            $name="Name";
-            $job_title="Job title";
+            $name="";
+            $job_title="";
             $content="
             <p>
-                content
+                Specialties: Biochemistry, Biophysics, Molecular Modeling
             </p>";
-            $title_explain="just example";
-            $popup_img="/human/members115.jpg";
-            $popup_img_alt="SrRb always forgets me(alt).";
-            $person_title="#EXAMPLE";
-            $person_icon="🥺";
+            $title_explain="Professor, Department of Biomedical Sciences";
+            $popup_img="/human/members301.jpg";
+            $popup_img_alt="";
+            $person_title="Cheng-I Lee";
+            $person_icon="";
             include "./sub/popup.php";
         ?>
         <?php
             $id=23;
-            $name="Name";
-            $job_title="Job title";
+            $name="";
+            $job_title="";
             $content="
             <p>
-                content
+                Specialties: Cancer Epigenomics, Bioinformatics
             </p>";
-            $title_explain="just example";
-            $popup_img="/human/members115.jpg";
-            $popup_img_alt="SrRb always forgets me(alt).";
-            $person_title="#EXAMPLE";
-            $person_icon="🥺";
+            $title_explain="Professor, Department of Biomedical Sciences";
+            $popup_img="/human/members302.jpg";
+            $popup_img_alt="";
+            $person_title="Wing-Yan Chan";
+            $person_icon="";
             include "./sub/popup.php";
         ?>
         <?php
             $id=24;
-            $name="Name";
-            $job_title="Job title";
+            $name="";
+            $job_title="";
             $content="
             <p>
-                content
+                Specialties: RNA Molecular Biology, Yeast Genetics
             </p>";
-            $title_explain="just example";
-            $popup_img="/human/members115.jpg";
-            $popup_img_alt="SrRb always forgets me(alt).";
-            $person_title="#EXAMPLE";
-            $person_icon="🥺";
+            $title_explain="Associate professor, Department of Biomedical Sciences";
+            $popup_img="/human/members303.jpg";
+            $popup_img_alt="";
+            $person_title="Hau-Ren Chen";
+            $person_icon="";
             include "./sub/popup.php";
         ?>
         <?php
@@ -733,73 +728,73 @@
             $job_title="Job title";
             $content="
             <p>
-                content
+                Specialties: Magnetic resonance spectroscopy and imaging, Physical chemistry, and Biophysics
             </p>";
-            $title_explain="just example";
-            $popup_img="/human/members115.jpg";
-            $popup_img_alt="SrRb always forgets me(alt).";
-            $person_title="#EXAMPLE";
-            $person_icon="🥺";
+            $title_explain="Assistant Professor, Department of Chemistry and Biochemistry";
+            $popup_img="/human/members304.jpg";
+            $popup_img_alt="";
+            $person_title="Eugene C. Lin";
+            $person_icon="";
             include "./sub/popup.php";
         ?>
         <?php
             $id=26;
-            $name="Name";
-            $job_title="Job title";
+            $name="";
+            $job_title="";
             $content="
             <p>
-                content
+                Specialties: Advanced English Technical Writing
             </p>";
-            $title_explain="just example";
-            $popup_img="/human/members115.jpg";
-            $popup_img_alt="SrRb always forgets me(alt).";
-            $person_title="#EXAMPLE";
-            $person_icon="🥺";
+            $title_explain="Assistant Professor, Department of Electrical Engineering";
+            $popup_img="/human/members401.jpg";
+            $popup_img_alt="";
+            $person_title="Gerald Rau";
+            $person_icon="";
             include "./sub/popup.php";
         ?>
         <?php
             $id=27;
-            $name="Name";
-            $job_title="Job title";
+            $name="";
+            $job_title="";
             $content="
             <p>
-                content
+                Specialties: Sociolinguistics, Austronesian linguistics, Applied linguistics
             </p>";
-            $title_explain="just example";
-            $popup_img="/human/members115.jpg";
-            $popup_img_alt="SrRb always forgets me(alt).";
-            $person_title="#EXAMPLE";
-            $person_icon="🥺";
+            $title_explain="Professor, Graduate Institute of Linguistics";
+            $popup_img="/human/members402.jpg";
+            $popup_img_alt="";
+            $person_title="Victoria Rau";
+            $person_icon="";
             include "./sub/popup.php";
         ?>
         <?php
             $id=28;
-            $name="Name";
-            $job_title="Job title";
+            $name="";
+            $job_title="";
             $content="
             <p>
-                content
+            Specialties: Lab & Factory Management and Equipment Maintenance, Occupational Safety and Health Management
             </p>";
-            $title_explain="just example";
-            $popup_img="/human/members115.jpg";
-            $popup_img_alt="SrRb always forgets me(alt).";
-            $person_title="#EXAMPLE";
-            $person_icon="🥺";
+            $title_explain="Adjunct Assistant Professor, Department of Mechanical Engineering";
+            $popup_img="/human/members403.jpg";
+            $popup_img_alt="";
+            $person_title="Hsiang-Chiu Wu";
+            $person_icon="";
             include "./sub/popup.php";
         ?>
         <?php
             $id=29;
-            $name="Name";
-            $job_title="Job title";
+            $name="";
+            $job_title="";
             $content="
             <p>
-                content
+                Dr. Chang Chang helps sharpen our project and gives us directions for experimental design and entrepreneurship.
             </p>";
-            $title_explain="just example";
-            $popup_img="/human/members115.jpg";
-            $popup_img_alt="SrRb always forgets me(alt).";
-            $person_title="#EXAMPLE";
-            $person_icon="🥺";
+            $title_explain="Chief Executive Officer, Trade Wind Biotech Co., Ltd. (TWBIO)";
+            $popup_img="/human/members404.jpg";
+            $popup_img_alt="";
+            $person_title="Lance Chang";
+            $person_icon="";
             include "./sub/popup.php";
         ?>
     </div>
