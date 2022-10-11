@@ -54,7 +54,7 @@ var stage_complete = [];
 console.log('index');
 for(var i=1;i<=5;i++){
     stage_complete[0]=1;
-    stage_complete[i]=1;
+    stage_complete[i]=0;
 }
 var url = new URL(getUrlString);
 //alert(location.host+location.pathname);

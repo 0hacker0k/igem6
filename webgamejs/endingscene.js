@@ -42,9 +42,9 @@ function create_endingscene(){
         text_y+=height*0.1;
         //text.setVelocityY(height*(-0.05));
         //轉場動畫
-        start_transition(this);
+        
     }
-    
+    start_transition(this);
 }
 
 function update_endingscene(){

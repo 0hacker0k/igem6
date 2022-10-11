@@ -23,7 +23,7 @@ function load_talkbox(where){//載入動畫檔
     });
     where.load.image('PACO', prefix+'/main/paco.png');
     where.load.image('Sprite', prefix+'/main/sprite.png');
-    where.load.image('backer', prefix+'/map/backer.jpg');
+    where.load.image('backer', prefix+'/map/backer3.png');
     where.load.image('hero', prefix+'/map/hero.png');
     where.load.image('stranger', prefix+'/map/stranger.png');
     where.load.image('grandpa', prefix+'/map/grandpa.png');
@@ -42,6 +42,12 @@ function createTextBox (scene, x, y, config, npc_key) {
     var wrapWidth = GetValue(config, 'wrapWidth', 0);
     var fixedWidth = GetValue(config, 'fixedWidth', 0);
     var fixedHeight = GetValue(config, 'fixedHeight', 0);
+    var iconset;
+    // if(npc_key=="backer"){
+    //     iconset = scene.rexUI.add.roundRectangle(0, 0, fixedWidth*0.01, fixedWidth*0.01, 0, COLOR_PRIMARY);
+    // }else{
+    //     iconset = scene.add.image(0, 0, npc_key).setDisplaySize(fixedWidth*0.1,fixedWidth*0.1);
+    // }
     var textBox = scene.rexUI.add.textBox({
             x: x,
             y: y,
@@ -49,7 +55,7 @@ function createTextBox (scene, x, y, config, npc_key) {
             background: scene.rexUI.add.roundRectangle(0, 0, 2, 2, 20, COLOR_PRIMARY)
                 .setStrokeStyle(2, COLOR_LIGHT),
 
-            icon: scene.add.image(0, 0, npc_key).setDisplaySize(fixedWidth*0.1,fixedWidth*0.1),//卡關
+            icon: scene.add.image(0, 0, npc_key).setDisplaySize(fixedWidth*0.1,fixedWidth*0.1),
             //icon: scene.rexUI.add.roundRectangle(0, 0, 2, 2, 20, COLOR_DARK),
             //iconMask: true,
             //text: getBuiltInText(scene, wrapWidth, fixedWidth, fixedHeight),
@@ -68,6 +74,8 @@ function createTextBox (scene, x, y, config, npc_key) {
         })
         .setOrigin(0)
         .layout();
+        
+        textBox.alpha=0.8;
         if(barrier==null){
             barrier=scene.physics.add.sprite(0, 0, "green").setDisplaySize(width,height).setOrigin(0,0).refreshBody();
             barrier.depth=1023;
