@@ -35,8 +35,8 @@ foreach($rs->fetchall() as $value){
         margin-bottom:1%;
     }
     .pad{
-        padding-top: 0.5vw;
-        padding-bottom: 0.5vw;
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
     }
 </style>
 <form class="size_mid center" enctype="multipart/form-data" id="event_upload_form" method="post">
@@ -89,11 +89,11 @@ foreach($rs->fetchall() as $value){
     <div style="width: 24%;"><button class="size_mid pad" formaction="./lib.php?command=2" type="submit">Clear</button></div>
     <div style="width: 24%;"><button class="size_mid pad" formaction="./lib.php?command=3" type="submit">Emergency Stop</button></div>
     <div style="width: 24%;"><button class="size_big" onclick="add_count()" type="button">+</button></div>
-    <div style="width: 24%;">Count</div>
+    <div style="width: 24%;" class="pad">Count</div>
     <div style="width: 24%;"><button class="size_big" onclick="sub_count()" type="button">-</button></div>
     <div style="width: 24%;"><button class="size_mid pad" formaction="./lib.php?count=1" type="submit">Submit</button></div>
     <div style="width: 24%;"><button class="size_big" onclick="add_cct()" type="button">+</button></div>
-    <div style="width: 24%;">Concentration(%)</div>
+    <div style="width: 24%;" class="pad">Concentration(%)</div>
     <div style="width: 24%;"><button class="size_big" onclick="sub_cct()" type="button">-</button></div>
     <div style="width: 24%;"><button class="size_mid pad" formaction="./lib.php?count=2" type="submit">Submit</button></div>
 </form>
