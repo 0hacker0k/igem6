@@ -12,6 +12,9 @@ foreach($rs->fetchall() as $value){
     .size_mid{
         font-size: 2vw;
     }
+    .size_big{
+        font-size: 4vw;
+    }
     .sameline{
         float:left;
 
@@ -81,13 +84,13 @@ foreach($rs->fetchall() as $value){
     <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?command=1" type="submit">Run</button></div>
     <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?command=2" type="submit">Clear</button></div>
     <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?command=3" type="submit">Emergency Stop</button></div>
-    <div style="width: 24%;font-size: 3vw;"><button onclick="add_count()" type="button">+</button></div>
+    <div style="width: 24%;"><button class="size_big" onclick="add_count()" type="button">+</button></div>
     <div style="width: 24%;">Count</div>
-    <div style="width: 24%;font-size: 3vw;"><button onclick="sub_count()" type="button">-</button></div>
+    <div style="width: 24%;"><button class="size_big" onclick="sub_count()" type="button">-</button></div>
     <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?count=1" type="submit">Submit</button></div>
-    <div style="width: 24%;"><button onclick="add_cct()" type="button">+</button></div>
+    <div style="width: 24%;"><button class="size_big" onclick="add_cct()" type="button">+</button></div>
     <div style="width: 24%;">Concentration(%)</div>
-    <div style="width: 24%;"><button onclick="sub_cct()" type="button">-</button></div>
+    <div style="width: 24%;"><button class="size_big" onclick="sub_cct()" type="button">-</button></div>
     <div style="width: 24%;"><button class="size_mid" formaction="./lib.php?count=2" type="submit">Submit</button></div>
 </form>
 <?php 
