@@ -31,8 +31,8 @@ foreach($rs->fetchall() as $value){
         width:80%;
         margin-left:10%;
         margin-right:10%;
-        margin-top:1%;
-        margin-bottom:1%;
+        margin-top:3%;
+        margin-bottom:3%;
     }
     .pad{
         padding-top: 1.22vw;
