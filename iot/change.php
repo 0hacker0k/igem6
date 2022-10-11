@@ -12,8 +12,20 @@ foreach($rs->fetchall() as $value){
     .size_mid{
         font-size: 2vw;
     }
+    .sameline{
+        float:left;
+
+    }
+    .center{
+        margin: 0px auto;
+	    text-align: center;
+    }
+    .center div {
+        display: inline-block;
+        vertical-align: top;
+    }
 </style>
-<form class="size_mid" enctype="multipart/form-data" id="event_upload_form" method="post">
+<form class="size_mid center" enctype="multipart/form-data" id="event_upload_form" method="post">
     <div style="width: 90%;margin: calc(5% - 1rem);border: 1rem solid;">
         <div style="width: 100%;text-align: center">
             Status: 
@@ -43,29 +55,33 @@ foreach($rs->fetchall() as $value){
                 Demoulding
             </div>
         </div>
-        <div style="width: 100%;text-align: center;display: flex;align-items: center;">Address of running:<?php echo $value['port'];?>
+        <div style="width: 100%;text-align: center;display: flex;align-items: center;">
+            Address of running:<?php echo $value['port'];?>
+        </div>
+        <div style="width: 100%;text-align: center;display: flex;align-items: center;">
             <div>Count</div>
             <input class="size_mid" type="text" id="count_1" name="count" value="<?php echo $value['count'];?>" style="text-align: right;"/>
         </div>
-        <div style="width: 100%;text-align: center;display: flex;align-items: center;">Address of running:<?php echo $value['port'];?>
+        <div style="width: 100%;text-align: center;display: flex;align-items: center;">
+            Address of running:<?php echo $value['port'];?>
+        </div>
+        <div style="width: 100%;text-align: center;display: flex;align-items: center;">    
             <div>Concentration(%)</div>   
             <input class="size_mid" type="text" id="cct_1" name="concentration" value="<?php echo $value['concentration'];?>" style="text-align: right;"/>
         </div>
     </div>
-    <button class="size_mid" formaction="./lib.php?command=0" type="submit">Pause</button>
-    <button class="size_mid" formaction="./lib.php?command=1" type="submit">Run</button>
-    <button class="size_mid" formaction="./lib.php?command=2" type="submit">Clear</button>
-    <button class="size_mid" formaction="./lib.php?command=3" type="submit">Emergency Stop</button>
-    <button class="size_mid" onclick="add_count()" type="button">+</button>
+    <div ><button class="size_mid" formaction="./lib.php?command=0" type="submit">Pause</button></div>
+    <div><button class="size_mid" formaction="./lib.php?command=1" type="submit">Run</button></div>
+    <div><button class="size_mid" formaction="./lib.php?command=2" type="submit">Clear</button></div>
+    <div><button class="size_mid" formaction="./lib.php?command=3" type="submit">Emergency Stop</button></div>
+    <div><button class="size_mid" onclick="add_count()" type="button">+</button></div>
     <div>Count</div>
-    <button class="size_mid" onclick="sub_count()" type="button">-</button>
-    <button class="size_mid" formaction="./lib.php?count=1" type="submit">Submit</button>
-
-    <button class="size_mid" onclick="add_cct()" type="button">+</button>
+    <div><button class="size_mid" onclick="sub_count()" type="button">-</button></div>
+    <div><button class="size_mid" formaction="./lib.php?count=1" type="submit">Submit</button></div>
+    <div><button class="size_mid" onclick="add_cct()" type="button">+</button></div>
     <div>Concentration(%)</div>
-    <button class="size_mid" onclick="sub_cct()" type="button">-</button>
-    <button class="size_mid" formaction="./lib.php?count=2" type="submit">Submit</button>
-    
+    <div><button class="size_mid" onclick="sub_cct()" type="button">-</button></div>
+    <div><button class="size_mid" formaction="./lib.php?count=2" type="submit">Submit</button></div>
 </form>
 <?php 
 }
