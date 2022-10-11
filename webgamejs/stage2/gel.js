@@ -1594,23 +1594,23 @@ function create_stage2_gel (){
     }
 
     //test-結算膠
-    var test;
-    // score,microwave_score,mod_score,sample_score,marker_score,TAE_score,run_score
-    test=create_gel(0,0,0,0,50,50,50,50,50);
-    test.sample=1;
-    change_skin_gel(test);
-    gel_list.push(test);
+    // var test;
+    // // score,microwave_score,mod_score,sample_score,marker_score,TAE_score,run_score
+    // test=create_gel(0,0,0,0,50,50,50,50,50);
+    // test.sample=1;
+    // change_skin_gel(test);
+    // gel_list.push(test);
     
-    test=create_gel(0,0,0,100,0,50,50,50,20);
-    test.marker=1;
-    change_skin_gel(test);
-    gel_list.push(test);
+    // test=create_gel(0,0,0,100,0,50,50,50,20);
+    // test.marker=1;
+    // change_skin_gel(test);
+    // gel_list.push(test);
 
-    test=create_gel(0,0,0,100,100,50,50,50,100);
-    test.sample=1;
-    test.marker=1;
-    change_skin_gel(test);
-    gel_list.push(test);
+    // test=create_gel(0,0,0,100,100,50,50,50,100);
+    // test.sample=1;
+    // test.marker=1;
+    // change_skin_gel(test);
+    // gel_list.push(test);
 
 
     var x,y,status=0;
