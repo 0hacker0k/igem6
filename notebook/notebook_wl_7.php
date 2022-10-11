@@ -17,9 +17,9 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Getting <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> gene blocks from the IDT company</li>
+                                    <li>Getting <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> gene blocks from IDT</li>
                                     <br>
-                                    <li>Amplifying <i>Acc</i> gene by PCR using taq DNA polymerase, and ligated into TA vectors for sequencing confirmation</li>                       
+                                    <li>Amplifying <i>Acc</i> genes by PCR, using taq DNA polymerase, and ligating into TA vectors for sequencing confirmation</li>                       
                                 </ul>
                             </div>
                         </div>
@@ -38,9 +38,9 @@
                                     <br>
                                     <li>Confirming the sequences of TA-<i>AccBC</i> and TA-<i>pfa E</i></li>
                                     <br>
-                                    <li>Cloning <i>pfa A1</i>, <i>pfa C</i>, and <i>pfa D</i> genes from <i>Moritella marina</i> MP-1 by PCR using pfu DNA polymerases</li>
+                                    <li>Cloning <i>pfa A1</i>, <i>pfa C</i>, and <i>pfa D</i> genes from <i>Moritella marina</i> MP-1 by PCR, using pfu DNA polymerases</li>
                                     <br>
-                                    <li>Amplifying <i>pfa B</i> gene from gene block by PCR using pfu DNA polymerases</li>
+                                    <li>Amplifying <i>pfa B</i> gene from gene block by PCR, using pfu DNA polymerases</li>
                                     <br>
                                     <li>Trying to ligate <i>pfa D</i> gene into pColdI</li>
                                     <br>
@@ -84,13 +84,13 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Order the new primers for colony PCR and sequencing</li>
+                                    <li>Order new primers for colony PCR and sequencing</li>
                                     <br>
                                     <li>Sequencing TA-<i>AccD1E</i></li>
                                     <br>
-                                    <li>Cloning <i>pfa A1</i>, <i>pfa C</i>, and <i>pfa D</i> genes from <i>Moritella marina</i> MP-1 by PCR using pfu DNA polymerases</li>
+                                    <li>Cloning <i>pfa A1</i>, <i>pfa C</i>, and <i>pfa D</i> genes from <i>Moritella marina</i> MP-1 by PCR, using pfu DNA polymerases</li>
                                     <br>
-                                    <li>Testing the ideal condition of ampicillin and chloramphenicol for the co-expression of pColdI and pSTV28</li>                   
+                                    <li>Testing the ideal conditions of ampicillin and chloramphenicol to identify co-expression of pColdI and pSTV28</li>                   
                                 </ul>
                             </div>
                         </div>

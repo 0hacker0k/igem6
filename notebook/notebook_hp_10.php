@@ -5,7 +5,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."";
+                                $img_src[0]=imgfile."/notebook/hp-23.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -17,14 +17,14 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>Completing the web game</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="week">
+                <!-- <div class="week">
                     
                     <div class="auto_week_content">
                         <div class="auto_square">
@@ -48,4 +48,4 @@
                             ?>
                         </div>
                     </div>
-                </div>
+                </div> -->

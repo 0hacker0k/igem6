@@ -40,7 +40,7 @@
                                 <ul>
                                     <li>Optimizing stage 5 of the web game</li>
                                     <br>
-                                    <li>Making the props of campus walking</li>
+                                    <li>Making the props for the campus walking activity</li>
                                     <br>
                                     <li>Holding the "Open Lab" activity for high school students</li>
                                     <br>
@@ -80,13 +80,13 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Composing web game stages description</li>
+                                    <li>Composing web game stages descriptions</li>
                                     <br>
                                     <li>Participating in Taiwan iGEM meet '22, held by Taiwan Synbio Alliance</li>
                                     <br>
-                                    <li>Designing the interview abstracts for iHP (toward the Health Food Society of Taiwan)</li>
+                                    <li>Designing interview abstracts for iHP (for the Health Food Society of Taiwan)</li>
                                     <br>
-                                    <li>Interviewing the doctor</li>                   
+                                    <li>Interviewing the doctor, (name witheld by request)</li>                   
                                 </ul>
                             </div>
                         </div>
@@ -102,11 +102,11 @@
                                 <ul>
                                     <li>Adjusting the web game design according to the feedback from Taiwan iGEM meet '22</li>
                                     <br>
-                                    <li>Holding the "campus walking" for the elderly and public</li>
+                                    <li>Holding the "campus walking" activity for the elderly and public</li>
                                     <br>
                                     <li>Making a con-call with team UCPH_iGEM to discuss further collaboration</li>
                                     <br>
-                                    <li>Designing the interview abstracts for iHP (toward sport scientist)</li>
+                                    <li>Designing interview abstracts for iHP (for sports scientist)</li>
                                 </ul>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Composing the storyline of the web game </li>
+                                    <li>Composing the storyline for the web game </li>
                                     <br>
                                     <li>Holding the TCUS entrepreneurship competition</li>                  
                                 </ul>

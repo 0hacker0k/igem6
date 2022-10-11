@@ -68,7 +68,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Professor, Department of Biomedical Sciences</div>Dr. Lee shared her experience with past iGEM teams and reviewed the technicalities.";
+                $content="<div class='graduate'>Professor, Department of Biomedical Sciences</div>Dr. Lee shared her experience with past iGEM teams and reviewed the technical issues.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -77,7 +77,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Professor, Department of Biomedical Sciences</div>Dr. Chan provided support for the team concerning judging issues.";
+                $content="<div class='graduate'>Professor, Department of Biomedical Sciences</div>Dr. Chan provided support for the team concerning judging practices.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -86,7 +86,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Associate professor, Department of Biomedical Sciences</div>Dr. Chen gave insightful advice on our experimental designs and project feasibility.";
+                $content="<div class='graduate'>Associate professor, Department of Biomedical Sciences</div>Dr. Chen gave insightful advice on our experimental design and project feasibility.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -95,7 +95,7 @@
                 $icon1="";
                 $icon2="";
                 $icon3="";
-                $content="<div class='graduate'>Assistant Professor, Department of Chemistry and Biochemistry</div>Dr. Lin helped us in evaluating the viability of our initial ideas and advised on dry lab hardware designs.";
+                $content="<div class='graduate'>Assistant Professor, Department of Chemistry and Biochemistry</div>Dr. Lin helped us evaluate the viability of our initial ideas and advised on dry lab hardware designs.";
                 include "sub/attribution_card.php";
             ?>
             <div id="3" class="title-label-div">
@@ -184,7 +184,8 @@
                 $icon3="experiment";
                 $content="Wet Lab leader: 
                 <li>Responsible for scheduling the experiment and coordinating with other groups.</li>
-                <li>Responsible for cloning pSTV28- <i>pfa B</i> - <i>pfa C</i> - <i>pfa E</i> and their protein expression.</li>";
+                <li>Responsible for cloning pSTV28- <i>pfa B</i> - <i>pfa C</i> - <i>pfa E</i> and their protein expression.</li>
+                <li>Responsible for pET28a - <i>AccBC</i> - <i>AccD1E</i> protein expression.</li>";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -195,7 +196,8 @@
                 $icon3="education";
                 $content="Wet Lab co-leader: 
                 <li>Assisting wet lab leader.</li>
-                <li>Responsible for cloning pSTV28- <i>pfa B</i> - <i>pfa C</i> - <i>pfa E</i> and their protein expression.</li>";
+                <li>Responsible for cloning pSTV28- <i>pfa B</i> - <i>pfa C</i> - <i>pfa E</i> and their protein expression.</li>
+                <li>Responsible for pET28a - <i>AccBC</i> - <i>AccD1E</i> protein expression.</li>";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -204,7 +206,7 @@
                 $icon1="experiment";
                 $icon2="";
                 $icon3="";
-                $content="Responsible for cloning pColdI - <i>pfa A</i> - <i>pfa D</i>.";
+                $content="Responsible for cloning pColdI - <i>pfa A</i> - <i>pfa D</i> and their protein expression.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -213,7 +215,7 @@
                 $icon1="";
                 $icon2="experiment";
                 $icon3="";
-                $content="Responsible for cloning pET28a - <i>AccBC</i> - <i>AccD1E</i>.";
+                $content="Responsible for cloning pET28a - <i>AccBC</i> - <i>AccD1E</i> and their protein expression.";
                 include "sub/attribution_card.php";
             ?>
             <?php
@@ -229,7 +231,7 @@
             <?php
                 $name="Bo-Qin Wu";
                 $photo="/attributions/attributions009.jpg";
-                $icon1="slides_editor";
+                $icon1="slides-editor";
                 $icon2="experiment";
                 $icon3="";
                 $content="Responsible for cloning pColdI - <i>pfa A</i> - <i>pfa D</i>.";
@@ -283,7 +285,7 @@
             <?php
                 $name="Yi-Yun Lee";
                 $photo="/attributions/attributions014.jpg";
-                $icon1="slides_editor";
+                $icon1="slides-editor";
                 $icon2="education";
                 $icon3="wiki";
                 $content="Human practice co-leader: 
@@ -406,7 +408,7 @@
                 <div class="special_thanks">
                     <?php
                         $name="Campus walking";
-                        $job_title="Center for Innovative Research on Aging Society, CCU";
+                        $job_title="Center for Innovative Research on Aging Society, National Chung Cheng University";
                         $introdution="Center for Innovative Research on Aging Society gave us financial support for the campus walking activity.";
                         include "sub/attribution_card_3.php";
                     ?>
@@ -431,7 +433,7 @@
                 <div class="special_thanks">
                     <?php
                         $name="TCUS entrepreneurship competition";
-                        $job_title="Career Development Center, CCU";
+                        $job_title="Career Development Center, National Chung Cheng University";
                         $introdution="Career Development Center supported us with funds, facility rental, activity preparation and promotion for the Taiwan Comprehensive University System (TCUS) entrepreneurship competition.";
                         include "sub/attribution_card_3.php";
                     ?>

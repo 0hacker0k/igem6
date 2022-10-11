@@ -4,9 +4,11 @@
                         <div class="square">
                             <?php
                                 $id=1;
-                                $img_count=1;
-                                $img_src[0]=imgfile."";
+                                $img_count=2;
+                                $img_src[0]=imgfile."/notebook/dl-23-1.png";
                                 $img_alt[0]="";
+                                $img_src[1]=imgfile."/notebook/dl-23-2.png";
+                                $img_alt[1]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>
@@ -17,14 +19,19 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>
+                                        Gel preparation machine: Assembling the upper mold and the lower mold
+                                    </li>
+                                    <li>
+                                        Wiki: Uploading all the pages and applying RWD (Responsive Web Design)
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="week">
+                <!-- <div class="week">
                     
                     <div class="auto_week_content">
                         <div class="auto_square">
@@ -48,4 +55,4 @@
                             ?>
                         </div>
                     </div>
-                </div>
+                </div> -->

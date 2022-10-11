@@ -18,10 +18,10 @@
                             <div class="word_content">
                                 <ul>
                                     <li>
-                                        Preparing the initial proposal on Heartbeat mission - Whole-heartedly protection.
+                                        Preparing the initial proposal for the Heartbeat mission - Whole-hearted protection
                                     </li> 
                                     <li>
-                                        Interviewing the secretary general of Health Food Society of Taiwan, Chang-Jer Wu PH.D.
+                                        Interviewing the secretary general of Health Food Society of Taiwan, Chang-Jer Wu Ph.D.
                                     </li>                      
                                 </ul>
                             </div>
@@ -38,10 +38,10 @@
                             <div class="word_content">
                                 <ul>
                                     <li>
-                                        Making the props of Heartbeat mission - Whole-heartedly protection.
+                                        Making the props for the Heartbeat mission - Whole-hearted protection
                                     </li>
                                     <li>
-                                        Interviewing the sports scientist, Shuk-Fong Lee PH.D.
+                                        Interviewing sports scientist, Shuk-Fong Lee Ph.D.
                                     </li>
                                 </ul>
                             </div>
@@ -66,7 +66,7 @@
                             <?php
                                 $id=3;
                                 $img_count=1;
-                                $img_src[0]=imgfile."";
+                                $img_src[0]=imgfile."/notebook/hp-21.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -79,7 +79,7 @@
                             <div class="word_content">
                                 <ul>
                                     <li>
-                                        Preparing the postcard for Heartbeat mission - Whole-heartedly protection.
+                                        Preparing postcards for the Heartbeat mission - Whole-hearted protection
                                     </li>                  
                                 </ul>
                             </div>
@@ -95,13 +95,13 @@
                             <div class="word_content">
                                 <ul>
                                     <li>
-                                        Holding the "Heartbeat mission - Whole-heartedly protection" on World Heart Day.
+                                        Holding the "Heartbeat mission - Whole-hearted protection" on World Heart Day
                                     </li>
                                     <li>
-                                        Interviewing Yan-Chang Lee PH.D.
+                                        Interviewing Yan-Chang Lee Ph.D.
                                     </li>
                                     <li>
-                                        Interviewing the Chief Executive Officer of Trade Wind Biotech Co., Ltd. (TWBIO), Dr. Lance Chang.
+                                        Interviewing the Chief Executive Officer of Trade Wind Biotech Co., Ltd. (TWBIO), Lance Chang, Ph.D.
                                     </li>
                                 </ul>
                             </div>

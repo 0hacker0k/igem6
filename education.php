@@ -46,7 +46,7 @@
                 &emsp;&emsp;Aside from lab work, education and science communication play an essential role in science research. With proper interaction and brain-storming activities, we, as responsible and reliable scientists, can genuinely understand the viewpoint of our target audience to foster mutual communication. Therefore, we attempted to share information about synthetic biology and our project with various communities.
             </p>
             <p>
-                &emsp;&emsp;Our education and science communication projects mainly focus on two goals: <b>a.</b> introducing synthetic biology to the public and <b>b.</b> raising awareness of CVD prevention. These two are tethered together because lack of either would fail to tell the whole story of our project: utilizing synthetic biology to create pure EPA supplements for cardiovascular care. We have observed that most people have a vague and one-sided understanding of these two fields. As a result, they have difficulty connecting them in a comprehensive way. We attempted to solve this problem by constructing a brand-new concept linking the health issue to our resolution.
+                &emsp;&emsp;Our education and science communication projects mainly focus on two goals: <b>a.</b> introducing synthetic biology to the public and <b>b.</b> raising awareness of CVD prevention. We have observed that most people have a vague and one-sided understanding of these two fields. As a result, they have difficulty connecting them in a comprehensive way. We attempted to solve this problem by constructing a brand-new concept linking the health issue to our resolution.
             </p>
             <p>
                 &emsp;&emsp;The revolutionary concept  is as follows: To prevent CVD, we want to use EPA, which has been proven to have a positive effect on reducing cardiac events. Our approaches to CVD prevention include producing pure EPA by synthetic biology and promoting a healthy lifestyle.
@@ -59,7 +59,7 @@
             </p>       
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="2" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Open Lab</h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Bridging the Gap – Open Lab</h1>
             </div>
             <p>
                 &emsp;&emsp;To prevent the CVD crisis, we devised a new way to synthesize pure EPA without contamination. However, the idea of synthetic biology may be too abstract for normal people to grab. Accordingly, to educate people on how we synthesize pure EPA and the beauty of synthetic biology, we held an <b>Open Lab science camp</b> and invited high school students to get involved in synthetic biology experiments.
@@ -164,7 +164,7 @@
             </div>
         <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="7" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Campus walking</h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Balanced sight, Balanced life – Campus walking</h1>
             </div>
             <p>
                 &emsp;&emsp;According to the official statistics from the Taiwanese government, the percentage of elderly living nearby (i.e. in MingXiong township) is the highest among regions in Taiwan, and correspondingly, the CVD crisis is more serious in MingXiong township. Hence, based on the research (Tian & Meng, 2019) and consultation with an <a href="https://2022.igem.wiki/ccu-taiwan/human-practices#12" class="link_subtitle">exercise professor</a>, we learned that aerobic exercise significantly affects lipid metabolism, and "walking" is the easiest aerobic exercise to achieve in everyone's daily life. As a result, we initiated a campus walking activity called "Walking with the elderly, walking to a better heart."
@@ -233,7 +233,7 @@
                 </div>
             </div>
             <div id="11" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Web game</h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Accessible material – Web game</h1>
             </div>
             <p>
                 &emsp;&emsp;To promote the concept of synthetic biology and our PACOmega project without the limitation of distance, we decided to produce a web game with a captivating story with an interesting plot about the CVD crisis and how to prevent CVD. This web game also describes how we produce EPA by synthetic biology to help prevent CVD. To meet the needs of both local and global audiences, we wrote it in both Chinese and English. Also, we used easy terms to describe the adventure of PACOmega, making the web game suitable for all ages. Through this web game, we are sure that people can understand the big picture about CVD and synthetic biology.
@@ -438,7 +438,7 @@
                 &emsp;&emsp;Besides promoting synthetic biology and making synthetic biology products more acceptable, we hope that we can improve the game in both teaching and playing experience aspects, and also make some effort in the connection between real experiments and virtual game displays. In addition, we are dedicated to promoting the game and spreading this innovative approach to more people. Last but not least, we also hope that other iGEM teams can wisely utilize our novel idea to improve awareness of synthetic biology in the future.
             </p>
             <div id="21" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">World Heart Day</h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Practical Interaction – World Heart Day</h1>
             </div>
             <p>
                 &emsp;&emsp;World Heart Day, September 29th, is a global event created by the World Heart Federation to inform people around the world about the severeness of heart diseases and strokes. Since the PACOmega project targeted the prevention of CVD, we decided to advocate the idea of World Heart Day with our own event. We went to the Culture Park in the downtown area of Chiayi city and shared information about heart diseases, especially CVD.

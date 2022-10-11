@@ -5,7 +5,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."";
+                                $img_src[0]=imgfile."/notebook/wl-19.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -73,7 +73,7 @@
                             <?php
                                 $id=2;
                                 $img_count=1;
-                                $img_src[0]=imgfile."";
+                                $img_src[0]=imgfile."/notebook/wl-20.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -87,7 +87,7 @@
                             <?php
                                 $id=3;
                                 $img_count=1;
-                                $img_src[0]=imgfile."";
+                                $img_src[0]=imgfile."/notebook/wl-21.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -136,7 +136,30 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>
+                                        Trying to ligate <i>pfa A1</i> gene into pColdI
+                                    </li>
+                                    <li>
+                                        Trying to ligate <i>pfa A</i> gene into pColdI
+                                    </li>
+                                    <li>
+                                        Trying to ligate <i>pfa B</i> gene into pSTV28
+                                    </li>
+                                    <li>
+                                        Trying to ligate <i>AccBC</i> gene into pET28a
+                                    </li>
+                                    <li>
+                                        Trying to ligate <i>AccD1E</i> gene into pET28a
+                                    </li>
+                                    <li>
+                                        Applying chloramphenicol, ampicillin and kanamycin to confirm the co-existence of pColdI, pSTV28 and pET28a in <i>E. coli</i>
+                                    </li>
+                                    <li>
+                                        Sequencing pSTV28-<i>pfa B</i> (for DHA production)
+                                    </li>
+                                    <li>
+                                        Expressing protein of pSTV28-<i>pfa B</i> in <i>E. coli</i>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -146,7 +169,7 @@
                             <?php
                                 $id=4;
                                 $img_count=1;
-                                $img_src[0]=imgfile."";
+                                $img_src[0]=imgfile."/notebook/wl-22.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>

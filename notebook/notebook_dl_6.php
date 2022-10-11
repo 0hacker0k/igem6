@@ -23,7 +23,7 @@
                                 <ul>
                                     <li>Quantitative Agar Faucet: Brainstorming a better design for gel quantantification</li>
                                     <br>
-                                    <li>Web game: Completing the stage 3</li>
+                                    <li>Web game: Completing stage 3</li>
                                     <br>
                                     <li>Wiki: Coding notebook page</li>                       
                                 </ul>
@@ -40,7 +40,7 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li class="final_exam">Final exam</li>
+                                    <li class="final_exam">Final exam week, little work</li>
                                     <br>
                                     <li>Quantitative Agar Faucet: Designing the 2.0 version</li>
                                     <br>
@@ -93,7 +93,7 @@
                                     <br>
                                     <li>Gel preparation Machine: Testing the components</li>
                                     <br>
-                                    <li>Wiki: Editing the content of notebook (May) and coding the notebook page</li>   
+                                    <li>Wiki: Editing the contents of notebook (May) and coding the notebook page</li>   
                                 </ul>
                             </div>
                         </div>

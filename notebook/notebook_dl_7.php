@@ -46,7 +46,7 @@
                             
                             <div class="word_content">
                             <ul>
-                                <li>Quantitative Agar Faucet: Determine the final version of the mechanical drawing</li>
+                                <li>Quantitative Agar Faucet: Determining the final version of the mechanical drawing</li>
                                 <br>
                                 <li>Gel preparation Machine: Designing the heating device and the demolding platform and using Raspberry Pi's GPIO Pins to read the signal from buttons</li>
                                 <br>
@@ -124,7 +124,7 @@
                                     <br>
                                     <li>Gel preparation Machine: Designing the boxes for storing TAE buffer and agarose</li>
                                     <br>
-                                    <li>Web game: Redesigning and coding the stage 5</li>
+                                    <li>Web game: Redesigning and coding stage 5</li>
                                     <br>
                                     <li>Wiki: Illustrating the portraits of members (Dry lab), designing the appearance of sponsors, refactoring notebook page, and redesigning the animation of the loading page</li>
                                 </ul>

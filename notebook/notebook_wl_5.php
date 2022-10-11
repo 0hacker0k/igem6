@@ -23,7 +23,7 @@
                             <ul>
                                 <li>Exploring the pathway of how FAS and PKS systems produce fatty acid</li>
                                 <br>
-                                <li>Exploring the mechanism of how <i>Acc</i> gene increases the yield of DHA in Thraustochytrids</li>
+                                <li>Exploring the mechanism of how the <i>Acc</i> gene increases the yield of DHA in Thraustochytrids</li>
                                 <br>
                                 <li>Exploring the mechanism of how cerulenin increases the yield of DHA</li>
                                 <br>
@@ -44,11 +44,11 @@
                             <ul>
                                 <li>Purifying pColdI and pSTV28 vectors for <i>pfa</i> genes expression in <i>E. coli</i></li>
                                 <br>
-                                <li>Confirming that TTC couldn’t be applied to distinguish PUFA-producing bacteria from others</li>
+                                <li>Confirming that TTC could not be applied to distinguish PUFA-producing bacteria from others</li>
                                 <br>
-                                <li>Confirming the ability of EPA production in <i>Moritella marina</i> MP-1</li>
+                                <li>Confirming the EPA production ability of <i>Moritella marina</i> MP-1</li>
                                 <br>
-                                <li>Designing the biobricks for <i>pfa</i> genes and <i>Acc</i> gene expression in <i>E. coli</i></li>
+                                <li>Designing the biobricks for <i>pfa</i> genes and <i>Acc</i> genes expression in <i>E. coli</i></li>
                             </ul>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                                 <ul>
                                     <li>Cloning <i>pfa</i> genes from <i>Moritella marina</i> MP-1 by PCR</li>
                                     <br>
-                                    <li>Ordering <i>pfa B</i> and <i>pfa E</i> gene blocks from IDT company</li>
+                                    <li>Ordering <i>pfa B</i> and <i>pfa E</i> gene blocks from Integrated DNA Technologies (IDT)</li>
                                 </ul>
                             </div>
                         </div>
@@ -156,11 +156,11 @@
                             
                             <div class="word_content">
                             <ul>
-                                <li>Purifying pSTV28 vectors for <i>Acc</i> gene expression in  <i><i>E. coli</i></i></li>
+                                <li>Purifying pSTV28 vectors for <i>Acc</i> genes expression in  <i><i>E. coli</i></i></li>
                                 <br>
                                 <li>Cloning <i>pfa</i> genes from <i>Moritella marina</i> MP-1 by PCR</li>
                                 <br>
-                                <li>Redesigning the biobricks for <i>pfa</i> genes and <i>Acc</i> gene expression in <i>E. coli</i></li>
+                                <li>Redesigning the biobricks for <i>pfa</i> genes and <i>Acc</i> genes expression in <i>E. coli</i></li>
                             
                             </ul>
                             </div>

@@ -26,7 +26,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;This global CVD crisis made us notice that CVD is also a serious problem in Taiwan. According to the official statistics, heart disease is the second leading cause of death, 21569 deaths per year, while the first cause, cancer, leads to 48784 deaths per year. However, If we consider all vascular diseases, such as cerebrovascular diseases, diabetes, hypertensive diseases, and kidney diseases, the number of CVD-related deaths is far more than those caused by cancer. This observation suggested that CVD is also an important issue in Taiwan.
+                &emsp;&emsp;This global CVD crisis made us notice that CVD is also a serious problem in Taiwan. According to the official statistics, heart disease is the second leading cause of death, around 22 thousands deaths per year, while the first cause, cancer, leads to 48 thousands deaths per year. However, If we consider all vascular diseases, such as cerebrovascular diseases, diabetes, hypertensive diseases, and kidney diseases, the number of CVD-related deaths is far more than those caused by cancer. This observation suggested that CVD is also an important issue in Taiwan.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
@@ -59,7 +59,7 @@
                 &emsp;&emsp;To find a potential solution, we first consulted a cardiologist (name not shown, by request) from National Taiwan University Hospital. From our discussion, we learned that, due to the unexpected and violent features of serious CVDs, early CVD prevention is better than therapy. One important cause of CVD is the accumulation of oxidized low-density lipoprotein (LDL) in blood vessels, but taking eicosapentaenoic acid (EPA) supplements can reduce the risk of CVDs (Sherratt, Libby et al. 2022).
             </p>
             <p>
-                &emsp;&emsp;EPA can prevent CVDs in several ways. In arteries, EPA preserves the membrane structure and regulates cholesterol distribution. In blood cells, EPA can split heme into several reducers to remove free radicals, and prevent the oxidation of LDL. Consequently, EPA decreases the inflammation caused by oxidative LDL. In the vascular environment, EPA can also relax the surrounding smooth muscle by enhancing nitric oxide production to avoid severe CVDs (Peter, John et al. 2022). Accordingly, EPA sounds like a promising candidate as a dietary supplement.
+                &emsp;&emsp;EPA can prevent CVDs in several ways. In arteries, EPA preserves the membrane structure and regulates cholesterol distribution. In blood cells, EPA can split heme into several reducers to remove free radicals, and reduce the oxidative LDL accumulation. Consequently, EPA prevents the inflammation caused by oxidative LDL. In the vascular environment, EPA can also relax the surrounding smooth muscle by enhancing nitric oxide production to avoid severe CVDs (Peter, John et al. 2022). Accordingly, EPA sounds like a promising candidate as a dietary supplement.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
@@ -72,7 +72,7 @@
                 &emsp;&emsp;However, our further survey showed that the common sources of EPA, fish and fish oils, might have some problems. 
             </p>
             <p>
-                &emsp;&emsp;First, fish oils are a mixture of docosahexaenoic acid (DHA) and EPA, and a recent cohort study showed that the benefit of EPA for CVD prevention can be reduced to zero if mixed with DHA (Sherratt, Libby et al. 2022). Next, fish are the top of the marine food chain, so contaminants, such as heavy metals and microplastics, may accumulate in the fish and fish oil. In addition, using fish as a source of EPA will exhaust the marine resources. Finally, the EPA from fish oil is not vegan-friendly. The population of vegetarians is considerable and keeps increasing. Because most sources of EPA are non-vegan, a vegan-friendly EPA may open the new market. 
+                &emsp;&emsp;First, fish oils are a mixture of docosahexaenoic acid (DHA) and EPA, and a recent cohort study showed that the benefit of EPA for CVD prevention can be abolished if mixed with DHA (Sherratt, Libby et al. 2022). Next, fish are the top of the marine food chain, so contaminants, such as heavy metals and microplastics, may accumulate in the fish and fish oil. In addition, using fish as a source of EPA will exhaust the marine resources. Finally, the EPA from fish oil is not vegan-friendly. The population of vegetarians is considerable and keeps increasing. Because most sources of EPA are non-vegan, a vegan-friendly EPA may open the new market. 
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
@@ -135,6 +135,10 @@
                 </li>
                 <li>
                     Peter, P. Toth, M. J. Chapman, K. G.Parhofer, J. R. Nelsone (2022). "Differentiating EPA from EPA/DHA in cardiovascular risk reduction." American Heart Journal Plus: Cardiology Research and Practice 17:100148
+                </li>
+                <li>
+                    Creative Designed By 17174125 From
+                    <ahref="https://zh.lovepik.com/image-401869152/heart-disease.html">LovePik.com</a>
                 </li>
             </ol>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>

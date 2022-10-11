@@ -19,11 +19,11 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Drawing up the budget for campus walking</li>
+                                    <li>Drawing up the budget for the campus walking activity</li>
                                     <br>
                                     <li>Outreaching programs of Open Lab and education</li>
                                     <br>
-                                    <li>Designing the interview abstracts for iHP (toward doctors)</li>                         
+                                    <li>Designing interview abstracts for iHP (for doctors)</li>                         
                                 </ul>
                             </div>
                         </div>
@@ -38,9 +38,9 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li class="final_exam">Final exam</li>
+                                    <li class="final_exam">Final exam week, limited work</li>
                                     <br>
-                                    <li>Refining the interview abstracts for iHP (toward doctors)</li>
+                                    <li>Refining interview abstracts for iHP (for doctors)</li>
                                     <br>
                                     <li>Planning fundraising</li>
                                 </ul>
@@ -78,13 +78,13 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Designing the game of campus walking (stage 1 & 2)</li>
+                                    <li>Designing educational games for the campus walking activity (stages 1 & 2)</li>
                                     <br>
                                     <li>Brainstorming for collaboration</li>
                                     <br>
-                                    <li>Designing the interview abstracts for iHP (toward pharmacists)</li>
+                                    <li>Designing interview abstracts for iHP (for pharmacists)</li>
                                     <br>
-                                    <li>Finishing the illustration of social media & the comic of the promotion video</li>
+                                    <li>Finishing the illustrations for social media & the animation for the promotion video</li>
                                     <br>
                                     <li>Making props for promotion video</li>
                                     <br>
@@ -105,11 +105,11 @@
                                 <ul>
                                     <li>Designing stage 4 of the web game</li>
                                     <br>
-                                    <li>Designing the game of campus walking (stage 3 & 4) and confirming the route planning.</li>
+                                    <li>Designing educational games for the campus walking activity (stages 3 & 4) and confirming the route</li>
                                     <br>
-                                    <li>Refining the interview abstracts for iHP (toward pharmacists)</li>
+                                    <li>Refining interview abstracts for iHP (for pharmacists)</li>
                                     <br>
-                                    <li>Revising the marketing questionnaire.</li>
+                                    <li>Revising the marketing questionnaire</li>
                                     <br>                            
                                     <li>Designing our team logo</li>
                                 </ul>

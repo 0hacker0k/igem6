@@ -46,7 +46,7 @@
             </p>
         </div>
     </div>
-    
+    <div class="marge" style="--width:calc(3em + 5vh)"></div>
     <div class="article">
         <!-- <div class="marge" style="--width:calc(1em + 1vh)"></div> -->
         <div class="in_center">
@@ -99,7 +99,7 @@
                 &emsp;&emsp;On 8/22, we joined <b>Taiwan iGEM meet ‘22</b>, a live conference, to exchange our ideas with other Taiwan iGEM teams. The <a href="https://2022.igem.wiki/ncku-tainan/collaborations" class="link_subtitle">NCKU_Tainan</a> iGEM team hosted this meet-up, and the participants included <a href="https://2022.igem.wiki/nchu-taichung/" class="link_subtitle">NCHU_Taichung</a>, <a href="https://2022.igem.wiki/nthu-taiwan/collaborations" class="link_subtitle">iGEM NTHU</a>, <a href="https://2022.igem.wiki/nycu-formosa/collaborations" class="link_subtitle">NYCU_Formosa</a>, <a href="https://2022.igem.wiki/kcis-xiugang-taipei/collaborations" class="link_subtitle">iGEM KCIS Xiugang</a>, <a href="https://2022.igem.wiki/csmu-taiwan/collaborations#taiwanigemmeet22" class="link_subtitle">iGEM CSMU</a>, <a href="https://2022.igem.wiki/mingdao/collaborations#NCKU_Tainan%202022%20and%20Taiwan%20iGEMers%20Jamboree" class="link_subtitle">iGEM Mingdao</a>, <a href="https://2022.igem.wiki/gems-taiwan/collaborations#Taiwan-Synbio-Alliance-Meetup" class="link_subtitle">GEMS Taiwan</a>, <a href="https://2022.igem.wiki/nycu-taipei/partnership#collaboration" class="link_subtitle">NYCU_Taipei</a>, and our team. During the conference, all participants gathered to discuss each team’s projects and gave concrete feedback in the hope of improving, including presentation and inspecting and learning from each other’s posters.
             </p>
             <p>
-                &emsp;&emsp;After the conference, we were inspired to examine further our Quantitative Agar Faucet. As a result, we reached out to Prof. Lee to explore potential development opportunities. Besides, this meetup gave us a chance to have deeper communication with teams around Taiwan and led to many of the following collaborations, including the iGEM theme song project with CSMU_Taiwan, iGEM map with NTHU_Taiwan, and the infographic exchange with Gems_Taiwan.
+                &emsp;&emsp;After the conference, we were inspired to examine further our <a href="https://2022.igem.wiki/ccu-taiwan/hardware#2" class="link_subtitle">Quantitative Agar Faucet</a>. As a result, we reached out to <a href="https://2022.igem.wiki/ccu-taiwan/human-practices#18" class="link_subtitle">Dr. Lee</a> to explore potential development opportunities. Besides, this meetup gave us a chance to have deeper communication with teams around Taiwan and led to many of the following collaborations, including the iGEM theme song project with CSMU_Taiwan, iGEM map with NTHU_Taiwan, and the infographic exchange with Gems_Taiwan.
             </p>            
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
@@ -161,13 +161,13 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Our PACOmega project - <i>CCU_Taiwan</i></h2>
             </div>
             <p>
-                &emsp;&emsp;During our IHP interview with dietitian Miranda Chen, she told us that an EPA supplement alone wasn’t sufficient to prevent CVD. From her professional perspective, she suggested that we should also emphasize the importance of having a healthy diet and daily life.
+                &emsp;&emsp;During our IHP interview with <a href="https://2022.igem.wiki/ccu-taiwan/human-practices#13" class="link_subtitle">dietitian Miranda Chen</a>, she told us that an EPA supplement alone wasn’t sufficient to prevent CVD. From her professional perspective, she suggested that we should also emphasize the importance of having a healthy diet and daily life.
             </p>
             <p>
                 &emsp;&emsp;To promote healthy diets for every citizen on this beautiful planet, we initiated a CVD-Free Cookbook, inviting iGEM teams from around the world to share special recipes from their countries that are good for cardiovascular health. Therefore, our cookbook features cuisines that are exotic but also healthy so that people who intend to care for their vessels can check it out for ideas for daily diets.
             </p>
             <p>
-                &emsp;&emsp;Our CookBook partner teams are: <a href="https://2022.igem.wiki/mingdao/collaborations#CCU_Taiwan" class="link_subtitle">Mingdao iGEM</a>, <a href="https://2022.igem.wiki/nycu-formosa/collaborations" class="link_subtitle">NYCU_Formosa</a>, <a href="https://2022.igem.wiki/ncku-tainan/collaborations" class="link_subtitle">NCKU_Tainan</a>, <a href="https://2022.igem.wiki/gems-taiwan/collaborations#CCU-Taiwan" class="link_subtitle">Gems_Taiwan</a>, <a href="https://2022.igem.wiki/korea-hs/collaborations" class="link_subtitle">Korea_HS</a>, <a href="https://2022.igem.wiki/ucopenhagen/collaborations#item2" class="link_subtitle">Copenhagen</a>, <a href="https://2022.igem.wiki/csmu-taiwan/collaborations#themesong" class="link_subtitle">iGEM_CSMU</a>, and <a href="https://2022.igem.wiki/cu-egypt/collaborations.html" class="link_subtitle">CU_Egypt</a>.
+                &emsp;&emsp;Our CookBook partner teams are: <a href="https://2022.igem.wiki/mingdao/collaborations#CCU_Taiwan" class="link_subtitle">Mingdao iGEM</a>, <a href="https://2022.igem.wiki/nycu-formosa/collaborations" class="link_subtitle">NYCU_Formosa</a>, <a href="https://2022.igem.wiki/ncku-tainan/collaborations" class="link_subtitle">NCKU_Tainan</a>, <a href="https://2022.igem.wiki/gems-taiwan/collaborations#CCU-Taiwan" class="link_subtitle">Gems_Taiwan</a>, <a href="https://2022.igem.wiki/korea-hs/" class="link_subtitle">Korea_HS</a>, <a href="https://2022.igem.wiki/ucopenhagen/collaborations#item2" class="link_subtitle">Copenhagen</a>, <a href="https://2022.igem.wiki/csmu-taiwan/collaborations#themesong" class="link_subtitle">iGEM_CSMU</a>, and <a href="https://2022.igem.wiki/cu-egypt/collaborations.html" class="link_subtitle">CU_Egypt</a>.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
@@ -238,6 +238,7 @@
                     <img src="<?php echo imgfile;?>/collaborations/collaborations17.png"/>
                 </div>
             </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
                 &emsp;&emsp;<a href="https://2022.igem.wiki/korea-hs/collaborations" class="link_subtitle">Korea_HS</a> launched a project called the “iGEMers’ Badge Project” that gave iGEM teams opportunities to create their design for a badge. We gave them our badges, and Korea_HS shipped the badges back to us in Taiwan. It’s a meaningful project that connects all iGEMers together, creating a global iGEM community and connecting every one of us.
             </p>
@@ -254,6 +255,7 @@
             <p>
                 &emsp;&emsp;During this conference, we not only got to know how people and organizations worldwide are dedicated to improving all the existing problems in the world, but we also got to think a step forward: How can we all link together and make the world better as a whole? This conference was a great benefit that took all of us a step further toward the vision. We hope there will be more and more similar opportunities that bring everyone who has devoted themselves to the same task together: To exchange our ideas, our projects, and most importantly, to share our dream of a brighter future.
             </p>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
                 <div class="img" style="--width:40%;">
                     <img src="<?php echo imgfile;?>/collaborations/collaborations18.png"/>
@@ -275,19 +277,18 @@
             <p>
                 &emsp;&emsp;This year, <a href="https://2022.igem.wiki/gems-taiwan/partnership" class="link_subtitle">Gems_Taiwan</a>, Korea_HS, Thailand_RIS, and <a href="https://2022.igem.wiki/uioslo-norway/partnership" class="link_subtitle">UiOslo_Norway</a> partnered together to create an infographic exchange project. We gathered infographics from different iGEM teams and translated them into Mandarin, Korean, Thai, and Norwegian, to eliminate barriers between countries and allow people who don't speak English to learn about iGEM projects. We participated in this project by giving our team’s infographic, hoping the world can know more about the crisis of cardiovascular disease and how we can provide a solution.
             </p>
-            <div class="left_block">
-                <div class="img" style="--width:49%;">
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
+            <div class="full_block">
+                <div class="img" style="--width:23%;">
                     <img src="<?php echo imgfile;?>/collaborations/collaborations20.png"/>
                 </div>
-                <div class="img" style="--width:49%;">
+                <div class="img" style="--width:23%;">
                     <img src="<?php echo imgfile;?>/collaborations/collaborations21.png"/>
                 </div>
-            </div>
-            <div class="left_block">
-                <div class="img" style="--width:49%;">
+                <div class="img" style="--width:23%;">
                     <img src="<?php echo imgfile;?>/collaborations/collaborations22.png"/>
                 </div>
-                <div class="img" style="--width:49%;">
+                <div class="img" style="--width:23%;">
                     <img src="<?php echo imgfile;?>/collaborations/collaborations23.png"/>
                 </div>
             </div>

@@ -23,7 +23,7 @@
                                     <br>
                                     <li>Sequencing TA-<i>AccD1</i></li>
                                     <br>
-                                    <li>Applying chloramphenicol and ampicillin to confirm the coexistence of pCold and pSTV28 in <i>E. coli</i></li>                       
+                                    <li>Applying chloramphenicol and ampicillin to confirm the co existence of pColdI and pSTV28 in <i>E.coli</i></li>                       
                                 </ul>
                             </div>
                         </div>

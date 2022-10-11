@@ -5,7 +5,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/dl-19.mp4";
+                                $img_src[0]=imgfile."/notebook/dl-19.gif";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -18,7 +18,7 @@
                             <div class="word_content">
                                 <ul>
                                     <li>
-                                        Machine animations: Creating the demolding motion by Blender 
+                                        Machine animations: Creating the demolding motion using Blender 
                                     </li>                     
                                     <li>
                                         Wiki: Applying user friendly interface to notebook page
@@ -102,7 +102,12 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li></li>
+                                    <li>
+                                        Agar faucet: Printing out and testing the agarose box
+                                    </li>
+                                    <li>
+                                        Gel preparation machine: Assembling the gel storage box
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -111,9 +116,11 @@
                         <div class="square">
                             <?php
                                 $id=4;
-                                $img_count=1;
-                                $img_src[0]=imgfile."";
+                                $img_count=2;
+                                $img_src[0]=imgfile."/notebook/dl-22-1.png";
+                                $img_src[1]=imgfile."/notebook/dl-22-2.png";
                                 $img_alt[0]="";
+                                $img_alt[1]="";
                                 include "../sub/carousel.php";
                             ?>
                         </div>

@@ -21,7 +21,7 @@
                                 <ul>
                                     <li>Gel preparation Machine: Designing a new TAE box and the slope for transporting the gel to the storing box</li>
                                     <br>
-                                    <li>Web game:  Rearranging the layout of objects and adding image layers of the stage 5</li>
+                                    <li>Web game: Rearranging the layout of objects and adding image layers for stage 5</li>
                                     <br>
                                     <li>Wiki: Updating attributions page and importing fonts</li>
                                 </ul>
@@ -40,7 +40,7 @@
                                 <ul>
                                     <li>Gel preparation Machine: Designing a new TAE straw</li>
                                     <br>
-                                    <li>Machine animations: Creating the shaking motion by Creo</li>
+                                    <li>Machine animations: Creating the shaking motion using Creo</li>
                                     <br>
                                     <li>Wiki: Editing the content of notebook (June) and refactoring member page</li>
                                 </ul>
@@ -86,7 +86,7 @@
                                 <ul>
                                     <li>Gel preparation Machine: Printing out and testing the new TAE straw</li>
                                     <br>
-                                    <li>Machine animations: Creating the demolding motion by Creo</li>
+                                    <li>Machine animations: Creating the demolding motion using Creo</li>
                                     <br>
                                     <li>Wiki: Coding attributions page and applying lazy loading to member page</li>                  
                                 </ul>
@@ -106,7 +106,7 @@
                                     <br>
                                     <li>Machine animations: Importing files into Blender to make 3D animations</li>
                                     <br>
-                                    <li>Web game:  Adding the scoreboard of the stage 5 and updating the settings of the dialog box</li>
+                                    <li>Web game: Adding the scoreboard of stage 5 and updating the settings of the dialog box</li>
                                 </ul>
                             </div>
                         </div>

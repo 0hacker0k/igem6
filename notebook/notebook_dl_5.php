@@ -22,7 +22,7 @@
                                 <ul>
                                     <li>Quantitative Agar Faucet: Designing the first version</li>
                                     <br>
-                                    <li>Web game: Coding the stage 1</li>
+                                    <li>Web game: Coding stage 1</li>
                                     <br>
                                     <li>Wiki: Choosing color tickets according to the topic of cardiovascular disease</li>
                                 </ul>
@@ -39,11 +39,11 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Quantitative Agar Faucet: Measuring the screw thread of the serum bottle to avoid the leakage</li>
+                                    <li>Quantitative Agar Faucet: Measuring the screw thread of the serum bottle to avoid leakage</li>
                                     <br>
-                                    <li>Web game: Completing the stage 1</li>
+                                    <li>Web game: Completing stage 1</li>
                                     <br>
-                                    <li>Wiki: Designing the header, footer, and home of the wiki</li>
+                                    <li>Wiki: Designing the header, footer, and home page of the wiki</li>
                                 </ul>
                             </div>
                         </div>
@@ -85,13 +85,13 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Quantitative Agar Faucet: Optimizing the controlling the loading amount of gel</li>
+                                    <li>Quantitative Agar Faucet: Optimizing the control of the loading amount of gel</li>
                                     <br>
                                     <li>Gel preparation Machine: Completing the conceptual design</li>
                                     <br>
-                                    <li>Web game: Coding the stage 2</li>
+                                    <li>Web game: Coding stage 2</li>
                                     <br>
-                                    <li>Wiki: Designing the appearance of members page</li>
+                                    <li>Wiki: Designing the appearance of the members page</li>
                     
                                 </ul>
                             </div>
@@ -107,13 +107,13 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li>Quantitative Agar Faucet: introducing an O-ring to further prevent the leakage</li>
+                                    <li>Quantitative Agar Faucet: introducing an O-ring to further prevent leakage</li>
                                     <br>
-                                    <li>Gel preparation Machine: Determining the function design</li>
+                                    <li>Gel preparation Machine: Determining the functional design</li>
                                     <br>
-                                    <li>Web game: Completing the stage 2</li>
+                                    <li>Web game: Completing stage 2</li>
                                     <br>
-                                    <li>Wiki: Filling the content of members page and coding the loading page</li>
+                                    <li>Wiki: Filling the contents of the members page and coding the loading page</li>
                                 </ul>
                             </div>
                         </div>
@@ -164,9 +164,9 @@
                                     <br>
                                     <li>Gel preparation Machine: Purchasing components</li>
                                     <br>
-                                    <li>Web game: Coding the stage 3</li>
+                                    <li>Web game: Coding stage 3</li>
                                     <br>
-                                    <li>Wiki: Designing the appearance of notebook page</li>
+                                    <li>Wiki: Designing the appearance of the notebook page</li>
                                 </ul>
                             </div>
                         </div>

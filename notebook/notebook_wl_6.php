@@ -21,9 +21,9 @@
                                     <br>
                                     <li>Starting to edit safety form</li>
                                     <br>
-                                    <li>Applying chloramphenicol and ampicillin to confirm the coexistence of pCold and pSTV28 in <i>E. coli</i></li>
+                                    <li>Applying chloramphenicol and ampicillin to confirm the co existence of pColdI and pSTV28 in <i>E.coli</i></li>
                                     <br>
-                                    <li>Ordering <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> gene blocks from IDT company</li>                         
+                                    <li>Ordering <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> gene blocks from IDT</li>                         
                                 </ul>
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                             
                             <div class="word_content">
                                 <ul>
-                                    <li class="final_exam">Final exam</li>
+                                    <li class="final_exam">Final exam week, no lab work</li>
                                 </ul>
                             </div>
                         </div>
@@ -76,11 +76,11 @@
                                 <ul>
                                     <li>Trying to ligate <i>pfa</i> genes (new design) to TA vectors for sequencing confirmation</li>
                                     <br>
-                                    <li>Purifying pET28a vectors for <i>Acc</i> gene expression in  <i>E. coli</i></li>
+                                    <li>Purifying pET28a vectors for <i>Acc</i> genes expression in  <i>E. coli</i></li>
                                     <br>
                                     <li>Sequencing TA-<i>pfa D</i></li>
                                     <br>
-                                    <li>Getting <i>pfa B</i> and <i>pfa E</i> gene blocks from IDT company</li>
+                                    <li>Getting <i>pfa B</i> and <i>pfa E</i> gene blocks from IDT</li>
                                 </ul>
                             </div>
                         </div>
