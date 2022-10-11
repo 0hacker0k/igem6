@@ -536,7 +536,7 @@ function create_stage2_gel (){
                     desk[i][j].item.TAE=0;
                     desk[i][j].item.agar=0;
                     desk[i][j].item.TAE_text=this.add.text(desk[i][j].x-width*0.04, desk[i][j].y-height*0.1, '', { fontFamily: 'fantasy', fontSize: width*0.02+'px', fill: '#cc1111' });
-                    desk[i][j].item.agar_text=this.add.text(desk[i][j].x+width*0.02, desk[i][j].y-height*0.1, '', { fontFamily: 'fantasy', fontSize: width*0.02+'px', fill: '#cc1111' });
+                    desk[i][j].item.agar_text=this.add.text(desk[i][j].x+width*0.01, desk[i][j].y-height*0.1, '', { fontFamily: 'fantasy', fontSize: width*0.02+'px', fill: '#cc1111' });
                     desk[i][j].item.TAE_text.depth=99;
                     desk[i][j].item.agar_text.depth=99;
                     desk[i][j].item.gel=0;
@@ -1177,12 +1177,15 @@ function create_stage2_gel (){
     }
     function gel_submit(p, item){
         gel_list.push(p.pick);
+        console.log("submit");
+        console.log(p.pick);
         p.pick.alpha=0;
         p.pick.qte_bar.destroy();
         p.pick.qte_half.destroy();
         p.pick.qte_perfect.destroy();
         p.pick.qte_pointer.destroy();
         p.pick=null;
+        
     }
     function time_count_down(timer){
         var time_now=Math.floor(timer.time/60)+":"+(timer.time%60<10?'0':"")+(timer.time%60);
@@ -1415,6 +1418,7 @@ function create_stage2_gel (){
                 gel_list[i].score=0;
             }
             gel_list[i].medal=create_medal(gel_list[i].x+width*0.13, gel_list[i].y+height*0.25,gel_list[i].score);
+            console.log(gel_list[i].medal);
             gel_list[i].medal.alpha=1;
             gel_list[i].medal.depth=65000;
         }
@@ -1544,16 +1548,13 @@ function create_stage2_gel (){
     function create_medal(x,y,score=0){
         var temp;
         //remind: judge score still need adjust.
-        //console.log('MEDAL!');
+        console.log("medel");
         if(score<=200){
             temp = where.physics.add.image(x, y, "bronze").setDisplaySize(0.7*width/15,width/15);
-            //console.log('bronze');
         }else if(score<=400){
             temp = where.physics.add.image(x, y, "silver").setDisplaySize(0.7*width/15,width/15);
-            //console.log('silver');
-        }else if(score<=600){
+        }else{
             temp = where.physics.add.image(x, y, "gold").setDisplaySize(0.7*width/15,width/15);
-            //console.log('gold');
         }
         return temp;
     }
@@ -1594,8 +1595,8 @@ function create_stage2_gel (){
     }
 
     //test-結算膠
-    // var test;
-    // // score,microwave_score,mod_score,sample_score,marker_score,TAE_score,run_score
+    var test;
+    // score,microwave_score,mod_score,sample_score,marker_score,TAE_score,run_score
     // test=create_gel(0,0,0,0,50,50,50,50,50);
     // test.sample=1;
     // change_skin_gel(test);

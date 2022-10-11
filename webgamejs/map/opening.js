@@ -20,49 +20,49 @@ function create_opening (){
     webgame=this.physics.add.sprite(width/2,height/2,'webgame').setDisplaySize(width,height);
     var start;
     start=this.physics.add.sprite(width*0.35,height*0.8,"start").setDisplaySize(width*0.12,height*0.12).setInteractive();
-    var loudbutton;
-    var mutebutton;
-    loudbutton = this.physics.add.sprite(width*0.63,height*0.8,"loudbutton").setDisplaySize(width*0.12,height*0.12).setInteractive();
-    mutebutton = this.physics.add.sprite(width*0.63,height*0.8,"mutebutton").setDisplaySize(width*0.12,height*0.12);
-    mutebutton.alpha=0;
-    start.on("pointerup",function(){
-        stop=1;
-        finish_transition(this,(0.8)*width,(0.0)*height);
-        setTimeout(function(){
-            load_page(stage_0_story);
-        },500);
-    },this);
-    start.on("pointerover",function(){
-        start.setDisplaySize(width*0.14,height*0.14);
-    },this);
-    start.on("pointerout",function(){
-        start.setDisplaySize(width*0.12,height*0.12);
-    },this);
+    // var loudbutton;
+    // var mutebutton;
+    // loudbutton = this.physics.add.sprite(width*0.63,height*0.8,"loudbutton").setDisplaySize(width*0.12,height*0.12).setInteractive();
+    // mutebutton = this.physics.add.sprite(width*0.63,height*0.8,"mutebutton").setDisplaySize(width*0.12,height*0.12);
+    // mutebutton.alpha=0;
+    // start.on("pointerup",function(){
+    //     stop=1;
+    //     finish_transition(this,(0.8)*width,(0.0)*height);
+    //     setTimeout(function(){
+    //         load_page(stage_0_story);
+    //     },500);
+    // },this);
+    // start.on("pointerover",function(){
+    //     start.setDisplaySize(width*0.14,height*0.14);
+    // },this);
+    // start.on("pointerout",function(){
+    //     start.setDisplaySize(width*0.12,height*0.12);
+    // },this);
 
-    loudbutton.on("pointerup",function(){
-        if(music.mute){
-            music.setMute(false);
-            audiovolume=1;
-            //換圖
-            loudbutton.alpha=1;
-            mutebutton.alpha=0;
-        }else{
-            music.setMute(true);
-            audiovolume=0;
-            //換圖
-            loudbutton.alpha=0.0001;
-            mutebutton.alpha=1;
-        }
+    // loudbutton.on("pointerup",function(){
+    //     if(music.mute){
+    //         music.setMute(false);
+    //         audiovolume=1;
+    //         //換圖
+    //         loudbutton.alpha=1;
+    //         mutebutton.alpha=0;
+    //     }else{
+    //         music.setMute(true);
+    //         audiovolume=0;
+    //         //換圖
+    //         loudbutton.alpha=0.0001;
+    //         mutebutton.alpha=1;
+    //     }
         
-    },this);
-    loudbutton.on("pointerover",function(){
-        loudbutton.setDisplaySize(width*0.14,height*0.14);
-        mutebutton.setDisplaySize(width*0.14,height*0.14);
-    },this);
-    loudbutton.on("pointerout",function(){
-        loudbutton.setDisplaySize(width*0.12,height*0.12);
-        mutebutton.setDisplaySize(width*0.12,height*0.12);
-    },this);
+    // },this);
+    // loudbutton.on("pointerover",function(){
+    //     loudbutton.setDisplaySize(width*0.14,height*0.14);
+    //     mutebutton.setDisplaySize(width*0.14,height*0.14);
+    // },this);
+    // loudbutton.on("pointerout",function(){
+    //     loudbutton.setDisplaySize(width*0.12,height*0.12);
+    //     mutebutton.setDisplaySize(width*0.12,height*0.12);
+    // },this);
 
     //DEBUG
     if(debug==1){
