@@ -7,6 +7,9 @@ body{
 .full_size_image{
     width: 100%;
 }
+a{
+    text-decoration: none;
+}
 .sponsor_body{
     z-index: 10;
     width: 100%;

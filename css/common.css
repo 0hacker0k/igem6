@@ -122,7 +122,7 @@ p{
     width: calc(60% + 8rem);
     text-align: left;
 }
-img{
+.img img{
     width: 100%;
 }
 .img{

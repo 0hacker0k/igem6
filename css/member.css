@@ -115,8 +115,8 @@ p{
     hue-rotate(90deg)色相翻轉 
     blur(5px)模糊 
     opacity(30%)透明 */
-    -webkit-filter: brightness(70%) contrast(200%);
-    filter: brightness(70%) contrast(200%);
+    /* -webkit-filter: brightness(70%) contrast(200%);
+    filter: brightness(70%) contrast(200%); */
 }
 .wet_lab_title{
     width: 38%;

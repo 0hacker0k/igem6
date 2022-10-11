@@ -112,7 +112,7 @@ function card_moving(){
             if(card_wait[i][0]!=null && (!isMobile || direction_control[i]==0)){
                 card_run[i].push(card_wait[i].shift());
                 card_run[i][card_run[i].length-1].style.display="block";
-                if(card_run[i].length-2>=0){
+                if(card_run[i].length-2>=0 && (remove_px(card_run[i][card_run[i].length-2].style.left)+card_run[i][card_run[i].length-2].clientWidth)>=screen_width){
                     card_run[i][card_run[i].length-1].style.left=(remove_px(card_run[i][card_run[i].length-2].style.left)+card_run[i][card_run[i].length-2].clientWidth)+"px";
                 }else{
                     card_run[i][card_run[i].length-1].style.left=screen_width+"px";
