@@ -55,16 +55,18 @@
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/contribution/contribution03.png"/>
                     <div class="triangle_to_top"></div>Figure 3: the elongation and modification of the backbone of  PUFA.
-                        <br/>The functional domains:
-                        <br/>KS: Catalyzes a decarboxylative Claisen-like condensation reaction to extend the carbon chain of polyketide.
-                        <br/>DH: Reduces hydroxyl groups to enoyl groups.
-                        <br/>KR: Reduces β-ketone groups to hydroxyl groups.
-                        <br/>ER: Reduces enoyl groups to alkyl groups.
                 </div>
             </div>
-            <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;In <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>, the <i>pfa</i> gene cluster encodes five open reading frames, namely <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i>, and <i>pfa E</i>. Each gene contains up to several functional domains to perform carboxylation, dehydration, and reduction of the ketoacyl group and hydroxyl groups in the PKS pathway. In <i>Moritella marina</i>, the <i>pfa</i> genes work together to generate docosahexaenoic acid (DHA), while <i>Shewanella pneumatophori</i> generates eicosapentaenoic acid (EPA). The exact functions of each <i>pfa</i> gene are unclear. To the best of our knowledge, the <i>pfa B</i> is the key molecule to determine the final product (e.g. EPA and DHA).
+                <br/>The functional domains:
+                <br/>KS: Catalyzes a decarboxylative Claisen-like condensation reaction to extend the carbon chain of polyketide.
+                <br/>DH: Reduces hydroxyl groups to enoyl groups.
+                <br/>KR: Reduces β-ketone groups to hydroxyl groups.
+                <br/>ER: Reduces enoyl groups to alkyl groups.
+            </p>
+            <div class="marge" style="--width:calc(4em + 5vh)"></div>
+            <p>
+                &emsp;&emsp;In <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>, the <i>pfa</i> gene cluster encodes five open reading frames, namely <i>pfa A</i>, <i>pfa B</i>, <i>pfa C</i>, <i>pfa D</i>, and <i>pfa E</i>. Each gene contains up to several functional domains to perform carboxylation, dehydration, and reduction of the ketoacyl group and double bonds of the carbon chain in the PKS pathway. In <i>Moritella marina</i>, the <i>pfa</i> genes work together to generate docosahexaenoic acid (DHA), while <i>Shewanella pneumatophori</i> generates eicosapentaenoic acid (EPA). The exact functions of each <i>pfa</i> gene are unclear. To the best of our knowledge, the <i>pfa B</i> is the key molecule to determine the final product (e.g. EPA and DHA).
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">

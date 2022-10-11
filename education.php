@@ -46,10 +46,10 @@
                 &emsp;&emsp;Aside from lab work, education and science communication play an essential role in science research. With proper interaction and brain-storming activities, we, as responsible and reliable scientists, can genuinely understand the viewpoint of our target audience to foster mutual communication. Therefore, we attempted to share information about synthetic biology and our project with various communities.
             </p>
             <p>
-                &emsp;&emsp;Our education and science communication projects mainly focus on two goals: <b>a.</b> introducing synthetic biology to the public and <b>b.</b> raising awareness of CVD prevention. These two are tethered together because lack of either would fail to tell the whole story of our project: utilizing synthetic biology to create pure EPA supplements for cardiovascular care. We have observed that most people have a vague and one-sided understanding of these two fields. As a result, they have difficulty connecting them in a comprehensive way. We attempted to solve this problem by constructing a coherent story linking the health issue to our resolution.
+                &emsp;&emsp;Our education and science communication projects mainly focus on two goals: <b>a.</b> introducing synthetic biology to the public and <b>b.</b> raising awareness of CVD prevention. These two are tethered together because lack of either would fail to tell the whole story of our project: utilizing synthetic biology to create pure EPA supplements for cardiovascular care. We have observed that most people have a vague and one-sided understanding of these two fields. As a result, they have difficulty connecting them in a comprehensive way. We attempted to solve this problem by constructing a brand-new concept linking the health issue to our resolution.
             </p>
             <p>
-                &emsp;&emsp;The story is as follows: To prevent CVD, we want to use EPA, which has been proven to have a positive effect on reducing cardiac events. Our approaches to CVD prevention include producing pure EPA by synthetic biology and promoting a healthy lifestyle.
+                &emsp;&emsp;The revolutionary concept  is as follows: To prevent CVD, we want to use EPA, which has been proven to have a positive effect on reducing cardiac events. Our approaches to CVD prevention include producing pure EPA by synthetic biology and promoting a healthy lifestyle.
             </p>
             <p>
                 &emsp;&emsp;Having this in mind, we held an Open Lab activity for high school students intended to share synthetic biology experiments and we initiated a campus walking activity to draw more attention to CVD prevention. To support the World Heart Day activities in Chiayi, we gathered together on September 29th to provide more information about arterial care.
@@ -99,12 +99,15 @@
                     <iframe src="<?php echo imgfile;?>/education/open-lab-textbook.pdf" height="100%" width="100%"></iframe>
                 </div>
             </div>
+            <div class="full_block">
+                <div class="triangle_to_top"></div>Open Lab course handout
+            </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="5" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">During the activity</h2>
             </div>
             <p>
-                &emsp;&emsp;In the experiment, to allow the participants to observe the results more easily and understand the effect of the technology, we used green fluorescent protein (GFP), which is often used as a reporter gene in synthetic biology, as the target gene, which has often been done in the research field. We used pET15b as the plasmid to transform it into <i>E. coli</i>. During the experiment, we lead them through the processes of PCR, Gel electrophoresis, amplicon purification, ligation, and transformation sequentially, finally observing the <i>E. coli</i> that expresses GFP protein.
+                &emsp;&emsp;In the experiment, to allow the participants to observe the results more easily and understand the effect of the technology, we used green fluorescent protein (GFP), which is often used as a reporter gene in synthetic biology, as the target gene. This operation has often been done in the research field. In the process, we ligated the GFP gene into pET15b, using pET15b as the plasmid to transform it into <i>E. coli</i>. During the experiment, we lead them through the processes of PCR, Gel electrophoresis, amplicon purification, ligation, and transformation sequentially, finally observing the <i>E. coli</i> that expresses GFP protein.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
@@ -164,17 +167,23 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Campus walking</h1>
             </div>
             <p>
-                &emsp;&emsp;According to the official statistics from the Taiwanese government, the percentage of elderly living nearby (i.e. in MingXiong township) is the highest among regions in Taiwan, and correspondingly, the CVD crisis is more serious in MingXiong township. Hence, based on the research (Tian & Meng, 2019) and consultation with an exercise professor, we learned that aerobic exercise significantly affects lipid metabolism, and "walking" is the easiest aerobic exercise to achieve in everyone's daily life. As a result, we initiated a campus walking activity called "Walking with the elderly, walking to a better heart."
+                &emsp;&emsp;According to the official statistics from the Taiwanese government, the percentage of elderly living nearby (i.e. in MingXiong township) is the highest among regions in Taiwan, and correspondingly, the CVD crisis is more serious in MingXiong township. Hence, based on the research (Tian & Meng, 2019) and consultation with an <a href="https://2022.igem.wiki/ccu-taiwan/human-practices#12" class="link_subtitle">exercise professor</a>, we learned that aerobic exercise significantly affects lipid metabolism, and "walking" is the easiest aerobic exercise to achieve in everyone's daily life. As a result, we initiated a campus walking activity called "Walking with the elderly, walking to a better heart."
             </p>
             <div id="8" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Before the activity</h2>
             </div>
             <p>
-                &emsp;&emsp;Ｗith the help of our adviser, Dr. Chan (link to website of Dr. Chan), we cooperated with the "Center for Innovative Research on Aging Society (CIRAS)" (link to website of CIRAS) at CCU to hold this activity. CIRAS provided us some advice about holding activities and shared experience on interacting with the elderly. For example, CIRAS suggested amended usage of specific terms in the interactive games to avoid misleading or confusing the elderly. 
+                &emsp;&emsp;Ｗith the help of our adviser, <a href="https://admbio.ccu.edu.tw/zh-tw/teacher_info.php?key=biowyc" class="link_subtitle">Dr. Chan</a>, we cooperated with the "<a href="http://agei.ccu.edu.tw/CIRAS/index.php" class="link_subtitle">Center for Innovative Research on Aging Society (CIRAS)</a>" at CCU to hold this activity. CIRAS provided us some advice about holding activities and shared experience on interacting with the elderly. For example, CIRAS suggested amended usage of specific terms in the interactive games to avoid misleading or confusing the elderly. 
             </p>
             <p>
                 &emsp;&emsp;We also went to the village and the elderly in CCU to invite them to our activity in person, hoping our sincere invitation could interest them to participate in the event. In the promotion phase, we found that some of the elderly seldom have an outdoor activity, therefore, this reinforces our desire to provide an opportunity for them to walk with us.
             </p>
+            <div class="full_block">
+                <div class="img" style="--width:80%;">
+                    <img src="<?php echo imgfile;?>/education/education095.jpg">
+                    <div class="triangle_to_top"></div>Invite the elderly to our campus walking in the village
+                </div>
+            </div>
             <div id="9" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">During the activity</h2>
             </div>
@@ -227,13 +236,13 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Web game</h1>
             </div>
             <p>
-                &emsp;&emsp;To promote the concept of synthetic biology and our PACOmega project without the limitation of distance, we decided to produce a web game with a captivating story with an interesting plot about the CVD crisis and how to prevent CVD. This web game also describes how we produce EPA by synthetic biology to help prevent CVD. To meet the needs of both local and global audiences, we wrote it in both Chinese and English. We used easy terms to describe the adventure of PACOmega, making the web game suitable for all ages. Through this web game, we are sure that people can understand the big picture about CVD and synthetic biology.
+                &emsp;&emsp;To promote the concept of synthetic biology and our PACOmega project without the limitation of distance, we decided to produce a web game with a captivating story with an interesting plot about the CVD crisis and how to prevent CVD. This web game also describes how we produce EPA by synthetic biology to help prevent CVD. To meet the needs of both local and global audiences, we wrote it in both Chinese and English. Also, we used easy terms to describe the adventure of PACOmega, making the web game suitable for all ages. Through this web game, we are sure that people can understand the big picture about CVD and synthetic biology.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/education/education15.jpg">
-                    <div class="triangle_to_top"></div>The opening of PACOmega web game
+                    <div class="triangle_to_top"></div>The opening of <a href="https://2022.igem.wiki/ccu-taiwan/webgame" class="link_subtitle">PACOmega web game</a>
                 </div>
             </div>
             <div id="12" class="title-label-div">
@@ -359,7 +368,7 @@
                 &emsp;&emsp;In stage 4, we simulate the actual situation of transformation. The players have to transform the plasmid into <i>E. coli</i> in this shooting game using a gene gun. To demonstrate the concept of antibiotic selection, we set a cordon of antibiotic selection at the bottom of the screen. The falling <i>E. coli</i> will only be able to pass this cordon if they contain the collection of five different colored antibiotic plasmids.
             </p>
             <p>
-                &emsp;&emsp;The <i>E. coli</i> that sucessfully pass the cordon will be used in stage 5 to express protein.
+                &emsp;&emsp;The <i>E. coli</i> that successfully pass the cordon will be used in stage 5 to express protein.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
@@ -372,7 +381,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Stage 5 - Picking colonies</h2>
             </div>
             <p>
-                &emsp;&emsp;Finally, in stage 5, players will pick bacteria colonies and culture them. The players have to use a toothpick to select bacteria of different sizes. The factor of button-pressing time, which refers to choosing strength and colony size, will be related to the final score of this stage.
+                &emsp;&emsp;Finally, in stage 5, players will pick bacteria colonies and culture them. The players have to use a toothpick to select colonies of different sizes. The factor of button-pressing time, which refers to choosing strength and colony size, will be related to the final score of this stage.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
@@ -396,7 +405,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
-                &emsp;&emsp;However, as we joined the Taiwan iGEM meet '22, we found that our idea accidentally matched the conference icon.
+                &emsp;&emsp;However, as we joined the <a href="https://2022.igem.wiki/ccu-taiwan/collaborations#6" class="link_subtitle">Taiwan iGEM meet '22</a>, we found that our idea accidentally matched the conference icon.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">
@@ -412,13 +421,6 @@
             <p>
                 &emsp;&emsp;We sincerely requested her permission to use a similar design in the map of our web game. She said she was happy that we liked her design and agreed to our request as long as we use it without commercial use or distribution.
             </p>
-            <div class="marge" style="--width:calc(3em + 5vh)"></div>
-            <div class="full_block">
-                <div class="img" style="--width:60%;">
-                    <img src="<?php echo imgfile;?>/education/education33.jpg">
-                    <div class="triangle_to_top"></div>Permission from Matilda Key
-                </div>
-            </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p>
                 &emsp;&emsp;Finally, the starting map looks like this:
@@ -441,9 +443,16 @@
             <p>
                 &emsp;&emsp;World Heart Day, September 29th, is a global event created by the World Heart Federation to inform people around the world about the severeness of heart diseases and strokes. Since the PACOmega project targeted the prevention of CVD, we decided to advocate the idea of World Heart Day with our own event. We went to the Culture Park in the downtown area of Chiayi city and shared information about heart diseases, especially CVD.
             </p>
-            <div id="22" class="title-label-div">
+            <div class="marge" style="--width:calc(2em + 2vh)"></div><div id="22" class="title-label-div">
+            <div class="full_block">
+                <div class="img" style="--width:30%;">
+                    <img src="<?php echo imgfile;?>/education/education345.jpg">
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div><div id="22" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Advocacy for PACOmega</h2>
             </div>
+            
             <p>
                 &emsp;&emsp;To publicize CVD on World Heart day, we came up with several creative and interactive activities, including flyers, postcards, check-in boards and message boards, to draw the attention of the Chiayi citizens.
             </p>
@@ -454,7 +463,7 @@
                 &emsp;&emsp;To find out what kind of CVD information the public is interested in, and what they wanted to know more about, we performed a preliminary survey and got 852 responses. The top two responses are as follows: Who are typical CVD patients and how can we prevent CVD. As a result, we put information about these two questions in our flyer.
             </p>
             <div class="full_block">
-                <div class="img" style="--width:40%;">
+                <div class="img" style="--width:90%;">
                     <img src="<?php echo imgfile;?>/education/education35.jpg">
                 </div>
             </div>
