@@ -45,16 +45,16 @@
                 &emsp;&emsp;Our improved biobrick is based on the existing part from the previous iGEM team. <i>AccBC</i> (BBa_K2560251) and <i>AccD1/DstR1</i> (BBa_K2560252) from <i>C. glutamicum</i> had been designed to express in <i>V. natriegens</i> to promote the conversion from acetyl-CoA into malonyl-CoA. To express the <i>AccE</i> with <i>AccBC</i> and <i>AccD1</i> in <i>E. coli</i> and eliminate the iGEM official restriction enzyme sites, we improved this biobrick by codon-optimization for <i>E. coli</i> expression and removal of the restriction enzyme cutting sites for EcoRI, PstI, SpeI, NotI and XbaI.
             </p>
             <p>
-                &emsp;&emsp;For the optimized sequence, please view on our part registry page.
+                &emsp;&emsp;For the optimized sequences, please view on our part registry page.
             </p>
             <p class="h15">
-                <a href="http://parts.igem.org/Part:BBa_K4131001" class="link_subtitle">AccBC</a>
+                <a href="http://parts.igem.org/Part:BBa_K4131001" class="link_subtitle"><i>AccBC</i></a>
             </p>
             <p class="h15">
-                <a href="http://parts.igem.org/Part:BBa_K4131000" class="link_subtitle">AccD1</a>
+                <a href="http://parts.igem.org/Part:BBa_K4131000" class="link_subtitle"><i>AccD1</i></a>
             </p>
             <p class="h15">
-                <a href="http://parts.igem.org/Part:BBa_K4131002" class="link_subtitle">AccE</a>
+                <a href="http://parts.igem.org/Part:BBa_K4131002" class="link_subtitle"><i>AccE</i></a>
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             

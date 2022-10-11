@@ -142,7 +142,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Design</h2>
             </div>
             <p>
-                &emsp;&emsp;Accordingly, we designed the <i>pfa A</i> and <i>pfa D</i> gene under the control of the CspA promoter, while <i>pfa B</i>, <i>pfa C</i> and <i>pfa E</i> are under the control of the lac inducible promoter. 
+                &emsp;&emsp;Accordingly, we designed the <i>pfa A</i> and <i>pfa D</i> genes under the control of the CspA promoter, while <i>pfa B'</i>, <i>pfa C</i> and <i>pfa E</i> genes are under the control of the lac inducible promoter. 
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div class="full_block">

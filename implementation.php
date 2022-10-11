@@ -81,7 +81,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Rationale</h2>
             </div>
             <p>
-                &emsp;&emsp;According to the statistical data of WHO, in 2019, 32% of deaths worldwide were caused by CVD. In Taiwan, severe CVD caused more than 42 thousand deaths. CVD is a progressive disease, which means that even if you are young, you still need to take care of your physical condition to reduce the risk of CVD in the future. 
+                &emsp;&emsp;According to the statistical data of World Health Organization, in 2019, 32% of deaths worldwide were caused by CVD. In Taiwan, severe CVD caused more than 42 thousand deaths. CVD is a progressive disease, which means that even if one person is young, he or she still needs to take care of their physical condition to reduce the risk of CVD in the future. 
             </p>
             <div id="4" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Activities and Target audiences</h2>
@@ -91,13 +91,13 @@
             </p>
             <ul>
                 <li class="biggerli">
-                    To reach out to the elderly TA efficiently, we consulted with the "Center for Innovative Research on Aging Society (CIRAS)" in our university. CIRAS pointed out that in-person communication is the most efficient way to convice the elderly of the importance of CVD prevention. Therefore, we held a campus walking activity to gather the local elderly and share about a healthy lifestyle using fun games and exercises (link to education).
+                    To reach out to the elderly TA efficiently, we consulted with the "Center for Innovative Research on Aging Society (CIRAS)" in our university. CIRAS pointed out that in-person communication is the most efficient way to convice the elderly of the importance of CVD prevention. Therefore, we held a <a href="https://2022.igem.wiki/ccu-taiwan/education#7" class="link_subtitle">campus walking activity</a> to gather the local elderly and share about a healthy lifestyle using fun games and exercises (link to education).
                 </li>
                 <li class="biggerli">
-                    For the young TA, we shared information about the CVD crisis and had a special activity in downtown Chiayi on World Heart Day. Furthermore, to let the youth know that synthetic biology is also a solution for the CVD crisis, we held the Open lab activity to share the beauty of synthetic biology, the CVD crisis, and how the PACOmega project benefits CVD prevention (link to education). 
+                    For the young TA, we shared information about the CVD crisis and had a special activity in downtown Chiayi on <a href="https://2022.igem.wiki/ccu-taiwan/education#21" class="link_subtitle">World Heart Day</a>. Furthermore, to let the youth know that synthetic biology is also a solution for the CVD crisis, we held the <a href="https://2022.igem.wiki/ccu-taiwan/education#2" class="link_subtitle">Open lab activity</a> to share the beauty of synthetic biology, the CVD crisis, and how the PACOmega project benefits CVD prevention (link to education). 
                 </li>
                 <li class="biggerli">
-                    Finally, we thought about how to reach out to more people to promote CVD prevention. The answer was a simple web game, which is suitable for all ages and not limited to the local audience.  (link to education).
+                    Finally, we thought about how to reach out to more people to promote CVD prevention. The answer was a simple <a href="https://2022.igem.wiki/ccu-taiwan/webgame" class="link_subtitle">web game</a>, which is suitable for all ages and not limited to the local audience.  (link to education).
                 </li>
             </ul>
             <div id="5" class="title-label-div">
@@ -107,7 +107,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Rationale</h2>
             </div>  
             <p>
-                &emsp;&emsp;The common resource of EPA, fish and fish oils, might have some problems. For example, fish are at the top of the marine food chain. Therefore, contaminants, such as heavy metals and microplastics, may accumulate in the fish body and fish oil. Further, using fish as a source of EPA supplement will exhaust the marine resource in the future. Finally, the EPA from fish oil is not vegan-friendly. Since the number of vegetarians grows every year, a vegan-friendly EPA is a potential product for a new market. In addition, fish oils are a mixture of docosahexaenoic acid (DHA) and EPA, but a recent cohort study showed that the benefit of EPA for CVD prevention can be reduced to zero if mixed with DHA (Saini and Keum 2018, Sherratt, Libby et al. 2022). Together, we decided that a well-packaged, vegan-friendly, purified EPA would be our product.
+                &emsp;&emsp;The common resource of EPA, fish and fish oils, might have some problems. For example, fish are at the top of the marine food chain. Therefore, contaminants, such as heavy metals and microplastics, may accumulate in the fish body and fish oil. Further, using fish as a source of EPA supplement will exhaust the marine resource in the future. Finally, the EPA from fish oil is not vegan-friendly. Since the number of vegetarians grow in recent years, a vegan-friendly EPA is a potential product for a new market. In addition, fish oils are a mixture of docosahexaenoic acid (DHA) and EPA, but a recent cohort study showed that the benefit of EPA for CVD prevention can be abolished if mixed with DHA (Saini and Keum 2018, Sherratt, Libby et al. 2022). Together, we decided that a well-packaged, vegan-friendly, purified EPA would be our product.
             </p>
             <div id="7" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Product Design</h1>
@@ -116,7 +116,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Synthetic biology based EPA generation</h2>
             </div>  
             <p>
-                &emsp;&emsp;To generate the alternative source of EPA, we decided to apply synthetic biology to produce EPA in <i>E.Coli</i>. Accordingly, we cloned the EPA-producing <i>pfa</i> genes from the deep sea bacteria <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>. The cloned <i>pfa</i> genes were expressed in  <i>E.Coli</i> to generate EPA. Furthermore, we cloned and expressed <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> genes from <i>Corynebacterium glutamicum</i> with the <i>pfa</i> genes to enhance the EPA production. Finally, the EPA-rich bacteria will be harvested and EPA will be extracted by the Folch method in the lab or by supercritical fluid extraction in mass production. The full design is listed on the design page.
+                &emsp;&emsp;To generate the alternative source of EPA, we decided to apply synthetic biology to produce EPA in <i>E.coli</i>. Accordingly, we cloned the EPA-producing <i>pfa</i> genes from the deep sea bacteria <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>. The cloned <i>pfa</i> genes were expressed in  <i>E.coli</i> to generate EPA. Furthermore, we cloned and expressed <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> genes from <i>Corynebacterium glutamicum</i> with the <i>pfa</i> genes to enhance the EPA production. Finally, the EPA-rich bacteria will be harvested and EPA will be extracted by the Folch method in the lab or by supercritical fluid extraction in mass production. The full design is listed on the <a href="https://2022.igem.wiki/ccu-taiwan/design" class="link_subtitle">design</a> page.
             </p>
             <div id="9" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Final EPA product - Vegan-friendly capsule</h2>
@@ -144,7 +144,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Final EPA product - Defining the dosage</h2>
             </div>
             <p>
-                &emsp;&emsp;There is no official daily recommended intake from the National Academies for EPA or DHA. However, the American Heart Association recommends 1 gram of EPA per day for adults and 0.5 gram EPA per day for children under 12 year old may promote cardiovascular health.  (Benvenga, Fama et al. 2022).  Accordingly, the minimum amount of EPA in each capsule should be 0.5 gram. Since the capsule will be slowly oxidized as the bottle is unsealed, the future product will be packed sixty capsules per bottle, one month usage for one adult.
+                &emsp;&emsp;There is no official daily recommended intake from the National Academies for EPA or DHA. However, the American Heart Association recommends 1 gram EPA per day for adults and 0.5 gram EPA per day for children under 12 year old may promote cardiovascular health.  (Benvenga, Fama et al. 2022).  Accordingly, the minimum amount of EPA in each capsule should be 0.5 gram. Since the capsule will be slowly oxidized as the bottle is unsealed, the future product will be packed sixty capsules per bottle, one month usage for one adult.
             </p>
             <div id="12" class="title-label-div">
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Final EPA product - User’s information</h2>
