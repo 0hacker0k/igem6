@@ -61,7 +61,7 @@ window.onclick = function(event) {
                             openDropdown.classList.remove('show');
                     }
             }
-            dropdowns = document.getElementById("myDropdown9").classList.remove('show');;
+            dropdowns = document.getElementById("myDropdown9").classList.remove('show');
             // if(document.getElementById("myDropdown9").classList.contains('helf_size')){
             //     document.getElementById("myDropdown9").classList.remove('helf_size');
             // }
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     document.getElementById("navbar").style.top="0px";
                     // $("#navbar").removeClass("header-hide");
                 }
-            }else if(myPosition <= 5){
+            }else if(myPosition <= 25){
                 document.getElementById("navbar").style.top="0px";
             }
             myPosition = myWindow.scrollTop();

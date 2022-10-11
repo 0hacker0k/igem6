@@ -14,29 +14,29 @@
         <!-- a chunk -->
         <a href="https://www.ccu.edu.tw/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:22%" src="<?php echo imgfile;?>/sponsor/sponsors03.png" alt="">
             </div>
         </a>
         <a href="https://www.ccu.edu.tw/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:40%" src="<?php echo imgfile;?>/sponsor/sponsors42.png" alt="">
             </div>
         </a>
         <a href="https://www.ccu.edu.tw/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:50%" src="<?php echo imgfile;?>/sponsor/sponsors04.png" alt="">
             </div>
         </a>
         <a href="https://www-alumni.ccu.edu.tw/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:50%" src="<?php echo imgfile;?>/sponsor/sponsors05.png" alt="">
             </div>
         </a>
@@ -47,48 +47,48 @@
         <img class="sponsor_rope" style="--i:1" src="<?php echo imgfile;?>/sponsor/rope.png" alt="">
         <a href="https://www.taisugar.com.tw/chinese/index.aspx">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:10%" src="<?php echo imgfile;?>/sponsor/sponsors14.png" alt="">
             </div>
         </a>
         <a href="https://www.grapeking.com.tw/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:12%" src="<?php echo imgfile;?>/sponsor/sponsors13.png" alt="">
             </div>
         </a>
         <div class="sponsor_card">
-            <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-            <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+            <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+            <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
             <img class="sponsor_logo" style="--width:20%" src="<?php echo imgfile;?>/sponsor/sponsors10.png" alt="">
         </div>
         <div class="sponsor_card">
             <button type="button" class="sponsor_card_list_button" data-bs-toggle="modal" data-bs-target="#popup1">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:50%" src="<?php echo imgfile;?>/sponsor/sponsors29.png" alt="">
             </button>
         </div>
         <a href="http://agei.ccu.edu.tw/CIRAS/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:20%" src="<?php echo imgfile;?>/sponsor/sponsors11.png" alt="">
             </div>
         </a>
         <a href="https://www.pocari.com.tw/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:35%" src="<?php echo imgfile;?>/sponsor/sponsors12.png" alt="">
             </div>
         </a>
         <div class="sponsor_card">
             <button type="button" class="sponsor_card_list_button" data-bs-toggle="modal" data-bs-target="#popup2">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:50%" src="<?php echo imgfile;?>/sponsor/sponsors30.png" alt="">
             </button>
         </div>
@@ -99,55 +99,55 @@
         <!-- a chunk -->
         <a href="https://www.mathworks.com/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:10%" src="<?php echo imgfile;?>/sponsor/sponsors21.png" alt="">
             </div>
         </a>
         <a href="https://www.genscript.com/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:20%" src="<?php echo imgfile;?>/sponsor/sponsors22.png" alt="">
             </div>
         </a>
         <div class="sponsor_card">
-            <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-            <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+            <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+            <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
             <img class="sponsor_logo" style="--width:30%" src="<?php echo imgfile;?>/sponsor/sponsors23.png" alt="">
         </div>
         <a href="https://www.beckmancoulter.com/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:20%" src="<?php echo imgfile;?>/sponsor/sponsors24.png" alt="">
             </div>
         </a>
         <a href="https://www.twistbioscience.com/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:35%" src="<?php echo imgfile;?>/sponsor/sponsors25.png" alt="">
             </div>
         </a>
         <a href="https://www.openphilanthropy.org/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:15%" src="<?php echo imgfile;?>/sponsor/sponsors26.png" alt="">
             </div>
         </a>
         <a href="https://www.ginkgobioworks.com/">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:30%" src="<?php echo imgfile;?>/sponsor/sponsors27.png" alt="">
             </div>
         </a>
         <a href="https://sg.idtdna.com/pages">
             <div class="sponsor_card">
-                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip_white.png" alt="">
-                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper_white.png" alt="">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
                 <img class="sponsor_logo" style="--width:30%" src="<?php echo imgfile;?>/sponsor/sponsors28.png" alt="">
             </div>
         </a>
