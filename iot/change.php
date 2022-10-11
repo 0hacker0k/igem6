@@ -14,7 +14,7 @@ foreach($rs->fetchall() as $value){
     }
 </style>
 <form class="size_mid" enctype="multipart/form-data" id="event_upload_form" method="post">
-    <div style="width: 90%;height: 40%;margin: calc(5% - 1rem);border: 1rem solid;">
+    <div style="width: 90%;margin: calc(5% - 1rem);border: 1rem solid;">
         <div style="width: 100%;height: 33%;text-align: center">
             Status: 
             <?php 
