@@ -134,7 +134,7 @@
                 &emsp;&emsp;In addition to these activities, CCU_Taiwan and NCKU_Tainan also searched for a connection between our projects, and came up with a crazy idea to try to combine our projects. One common point lies in the high risk of CVD for astronauts. Astronauts who travel beyond the earth’s magnetic field are more likely to suffer from CVDs, which may be caused by radiation-induced high blood pressure. (Delp, Charvat, et. al. 2016). 
             </p>
             <p>
-                &emsp;&emsp;Since EPA has been confirmed to relax blood vessels (Sherratt, Libby et al. 2022), we and NCKU_Tainan hope to produce an E. coli that could survive the radiation of space to produce EPA supplements. This naive idea may be too crazy, but we believe that one day this crazy idea may turn out to be another new business. 
+                &emsp;&emsp;Since EPA has been confirmed to relax blood vessels (Sherratt, Libby et al. 2022), we and NCKU_Tainan hope to produce an <i>E. coli</i> that could survive the radiation of space to produce EPA supplements. This naive idea may be too crazy, but we believe that one day this crazy idea may turn out to be another new business. 
             </p>
             <p class="h25">
                 Reference:
