@@ -17,6 +17,7 @@ function create_endingscene(){
     this.add.image(width/2,height/2,"black").setDisplaySize(width,height);
     var text_x=width/2;//初始位置
     var text_y=height*1.5;
+    var lastone;
     group = this.add.group();
     logo = this.add.image(text_x,text_y-height*0.3,"logo");
     logo.setDisplaySize(logo.width*0.125,logo.height*0.125);
@@ -38,12 +39,29 @@ function create_endingscene(){
         text.align = 'center';
         //text.setPadding(50,0,50,0);
         text.round=true;
+        if(i==lan_ending_scene.length-1) lastone=text;
         group.add(text,true);
         text_y+=height*0.1;
         //text.setVelocityY(height*(-0.05));
         //轉場動畫
         
     }
+    var bcmt;
+    function backtomap(){
+        if(lastone.y<=(-height*0.1)){
+            clearTimeout(bcmt);
+            finish_transition(this,(0.8)*width,(0.0)*height);
+            setTimeout(function(){
+                load_page(map_1);
+            },500);
+            stop=1;
+        }else{
+            bcmt=setTimeout(function(){
+                backtomap()
+            },800);
+        }
+        //console.log(lastone.y)
+    }backtomap();
     start_transition(this);
 }
 
