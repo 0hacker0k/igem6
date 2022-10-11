@@ -25,19 +25,19 @@ function create_opening (){
     // loudbutton = this.physics.add.sprite(width*0.63,height*0.8,"loudbutton").setDisplaySize(width*0.12,height*0.12).setInteractive();
     // mutebutton = this.physics.add.sprite(width*0.63,height*0.8,"mutebutton").setDisplaySize(width*0.12,height*0.12);
     // mutebutton.alpha=0;
-    // start.on("pointerup",function(){
-    //     stop=1;
-    //     finish_transition(this,(0.8)*width,(0.0)*height);
-    //     setTimeout(function(){
-    //         load_page(stage_0_story);
-    //     },500);
-    // },this);
-    // start.on("pointerover",function(){
-    //     start.setDisplaySize(width*0.14,height*0.14);
-    // },this);
-    // start.on("pointerout",function(){
-    //     start.setDisplaySize(width*0.12,height*0.12);
-    // },this);
+    start.on("pointerup",function(){
+        stop=1;
+        finish_transition(this,(0.8)*width,(0.0)*height);
+        setTimeout(function(){
+            load_page(stage_0_story);
+        },500);
+    },this);
+    start.on("pointerover",function(){
+        start.setDisplaySize(width*0.14,height*0.14);
+    },this);
+    start.on("pointerout",function(){
+        start.setDisplaySize(width*0.12,height*0.12);
+    },this);
 
     // loudbutton.on("pointerup",function(){
     //     if(music.mute){
