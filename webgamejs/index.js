@@ -51,7 +51,7 @@ var getUrlString = location.href;
    value: 通關過為1，尚未為0
 */
 var stage_complete = [];
-console.log('index');
+//console.log('index');
 for(var i=1;i<=5;i++){
     stage_complete[0]=1;
     stage_complete[i]=0;
@@ -211,11 +211,23 @@ const stage_4_story_after={
     create: create_story4_after,
     update: update_story4_after
 }
+const stage_5_story={
+    key: 'stage_5_story',
+    preload: preload_story5,
+    create: create_story5,
+    update: update_story5
+}
 const stage_5_take={
     key: 'stage_5_take',
     preload: preload_stage5_take,
     create: create_stage5_take,
     update: update_stage5_take
+}
+const stage_5_story_after={
+    key: 'stage_5_story_after',
+    preload: preload_story5_after,
+    create: create_story5_after,
+    update: update_story5_after
 }
 const stage_6_story_determination={
     key: 'stage_6_story_determination',

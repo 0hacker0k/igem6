@@ -93,7 +93,7 @@ function create (){
             }
             if(id==5){
                 setTimeout(function(){
-                    load_page(stage_5_take);
+                    load_page(stage_5_story);
                 },500);
             }
         }
