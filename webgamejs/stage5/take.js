@@ -194,7 +194,7 @@ function create_stage5_take (){
     backer=new createTextBox(this, TextBox_x, TextBox_y, TalkBox_config, 'backer');
     descript_count=1;
     descript_limit=Object.keys(lan_stage5).length;
-    create_congratulation(this,map_1);
+    create_congratulation(this,stage_5_story_after);
     //返回
     var back=this.physics.add.sprite(width*0.02, height*0.03, 'back').setOrigin(0, 0).setInteractive().setDisplaySize(height*0.1,height*0.1);
     back.depth=1024;
