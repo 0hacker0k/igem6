@@ -52,7 +52,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Goal 3</h1>
             </div>
             <div id="3" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Ensure healthy lives and promote well-being for all at all ages</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Ensure healthy lives and promote well-being for all at all ages</h2>
             </div>
             <p>
                 &emsp;&emsp;"By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being"
@@ -64,7 +64,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Goal 10</h1>
             </div>
             <div id="5" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Reduce inequality within and among countries</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Reduce inequality within and among countries</h2>
             </div>
             <p>
                 &emsp;&emsp;In Chiayi country, there are many rural schools located in the mountains, or in fishing villages without sufficient resources. Resource allocation is always a serious problem in the rural region in Taiwan. The original aim of our Open Lab activity was sharing synthetic biology. However, unexpectedly, we faced the reality of the urban-rural education gap. Our university already has teams supporting the education of rural students. Since teaching resources are important in education, we think that we may reduce the workload of rural teachers by providing convenient and affordable laboratory equipment. Thus, we designed a manual gel pouring machine, which is more affordable than an expensive electronic one. We hope to contribute our effort, step by step, to reduce the inequality between rural and urban areas.
@@ -73,7 +73,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Goal 14</h1>
             </div>
             <div id="7" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Conserve and sustainably use the oceans, seas and marine resources for sustainable development</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Conserve and sustainably use the oceans, seas and marine resources for sustainable development</h2>
             </div>
             <p>
                 &emsp;&emsp;Although we knew the positive role played by EPA in CVD prevention, since EPA can decrease LDL accumulation and inflammation, the common sources of EPA are fish and fish oil. Marine fish, especially those rich in Omega-3 PUFAs, are a limited resource. People tried to replace marine fish with krill as a source of EPA, but this action severely reduced the number of whales (Armstrong and Siegried, 1991; Prado-Cabrero and Nolan, 2021).
@@ -95,14 +95,14 @@
             
             <p class="h25">
                 Reference:
-                <ul>
+                <ol>
                     <li>
                         Armstrong, A., & Siegfried, W. (1991). Consumption of Antarctic krill by Minke whales. Antarctic Science, 3 (1), 13-18.
                     </li>
                     <li>
                         Prado-Cabrero, A., Nolan, J.M. (2021).Omega-3 nutraceuticals, climate change and threats to the environment: The cases of Antarctic krill and <i>Calanus finmarchicus. Ambio</i> 50, 1184–1199.
                     </li>
-                </ul>
+                </ol>
             </p>          
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
         </div>

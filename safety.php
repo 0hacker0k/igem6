@@ -59,13 +59,13 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">BIOSAFETY</h1>
             </div>
             <div id="3" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Personal safety</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Personal safety</h2>
             </div>
             <p>
                 &emsp;&emsp;Before we started our work in the lab, all the team members had to receive training courses in which we learned the importance of safety rules, including that eating and drinking are not allowed in the lab, and never operating experiments alone. Also, we should wear personal protection equipment, such as lab coats, gloves, and goggles, as operating experiments.
             </p>
             <div id="4" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Laboratory Safety</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Laboratory Safety</h2>
             </div>
             <p>
                 &emsp;&emsp;The experiments in our project can be conducted in a biosafety level 1 laboratory. In addition, the operation of bacteria and volatile chemicals should be performed in the biosafety cabinets and fume hoods, respectively. Besides, we also learn the use and precautions of various machinery in the laboratory, and understand what hazards might be encountered in the laboratory and how to deal with them when they occur. Furthermore, we must immediately report to our advisor or safety center if there is any accident or equipment damage.
@@ -74,29 +74,29 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">PROJECT SAFETY</h1>
             </div>
             <div id="6" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Environmental safety</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Environmental safety</h2>
             </div>
             <ul>
                 <li>
-                    <h3><i><b>E. coli</b></i></h3>
+                    <p class="h13"><i><b>E. coli</b></i></p>
                     <p>
                         &emsp;&emsp;Two strains of <i>E. coli</i> BL21 (DE3) and DH5α are applied in the experiments. These two strains belong to the biosafety level 1, which are low risk to human beings. According to the biosafety rules in experiment operation, all the biowastes will be  sterilized by autoclaving, and the environment will be sterilized by bleaching or decontaminated by 75% EtOH.
                     </p>
                 </li>
                 <div class="marge" style="--width:calc(3em + 5vh)"></div>
                 <li>
-                    <h3><b>Product</b></h3>
+                    <p class="h13"><b>Product</b></p>
                     <p>
                         &emsp;&emsp;We choose carrageenans as the basic material for EPA capsules. Carrageenans are linear sulfated polysaccharides that are extracted from various genera of red algae. It is biodegradable, and non-toxic, and also won’t interfere with the environment.
                     </p>
                 </li>
             </ul>
             <div id="7" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Application safety</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Application safety</h2>
             </div>
             <ul>
                 <li>
-                    <h3><b>Endotoxin</b></h3>
+                    <p class="h13"><b>Endotoxin</b></p>
                     <p>
                         &emsp;&emsp;To produce EPA, we transform the EPA-producing genes into <i>E. coli</i>. As gram‐negative bacteria, endotoxins in the outer cell membrane are released upon death. To avoid the contamination of endotoxin in our final product, we explore the  potential methods to remove endotoxins:
                     </p>
@@ -104,27 +104,27 @@
                     <ul>
                         <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
-                            <h3 style="color: #800000";>Ultrafiltration</h3>
+                            <p class="h18">Ultrafiltration</p>
                             <p>
                                 &emsp;&emsp;In small scale, the endotoxin micelles and vesicles can be separated from water, salts, and small target therapeutic molecules through size exclusion in ultrafiltration. The main limitation associated with ultrafiltration is its limited endotoxin removal efficiency for molecules that are magnitudes smaller than endotoxin aggregates.
                             </p>
                         </li>
                         <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
-                            <h3 style="color: #800000";>Affinity chromatography</h3>
+                            <p class="h18">Affinity chromatography</p>
                             <p>
                                 &emsp;&emsp;Affinity chromatography is used to separate endotoxins from target molecules using highly specific interactions between endotoxins and a ligand bound to a stationary phase. Because of the specificity of the ligand, there is little to no product loss during separation. 
                             </p>
                         </li>
                         <div class="marge" style="--width:calc(3em + 5vh)"></div>
                         <li>
-                            <h3 style="color: #800000";>Membrane adsorption</h3>
+                            <p class="h18">Membrane adsorption</p>
                             <p>
                                 &emsp;&emsp;Membrane adsorption exploits the same mechanisms used in affinity and ion‐exchange chromatography but offers a reduced processing time and initial investment. Similar to affinity chromatography, a product yield near 100% can be achieved.
                             </p>                         
                         </li>
                         <div class="marge" style="--width:calc(3em + 5vh)"></div>
-                        <h3 style="color: #800000";><b>Conclusion</b></h3>
+                        <p class="h18"><b>Conclusion</b></p>
                         <p>
                             &emsp;&emsp;Due to the limits of each method, the selected method for endotoxin removement and safety concern will depend on the final products. Alternatively, we may shift our system to Nissle 1917, which is a FDA proven bacterial species for producing nutritional supplements.
                         </p>
@@ -132,7 +132,7 @@
                 </li>
                 <div class="marge" style="--width:calc(3em + 5vh)"></div>
                 <li>
-                    <h3><b>Extraction</b></h3>
+                    <p class="h13"><b>Extraction</b></p>
                     <p>
                         &emsp;&emsp;The Folch method extraction and High Performance Liquid Chromatography (HPLC) will be applied to analyze the EPA : lipid ratio. In the successive process, some hazardous chemicals will be used. These chemicals and their applications are listed as follows.
                     </p>  
@@ -164,11 +164,11 @@
                         &emsp;&emsp;According to the protocol, the methanol layer will be discarded. The chloroform layer containing lipids will be pooled and concentrated using a rotary evaporator, which evaporates the remaining chloroform. In the last step, sulfuric acid could be removed through elution.
                     </p>
 
-                    <h3></h3>         
+                    <p class="h13"></p>         
                 </li>
                 <div class="marge" style="--width:calc(3em + 5vh)"></div>
                 <li>
-                    <h3>Recommended daily allowance</h3>
+                    <p class="h13">Recommended daily allowance</p>
                     <p>
                         &emsp;&emsp;According to the American Heart Association, the EPA recommended daily allowance for CVD prevention is 1 g. Therefore, the amount of EPA will be set at 0.5 g in each capsule. Also, we will indicate that the consumers should avoid taking more than two capsules for adults and one for children per day. Besides, we will show the EPA content of the capsule and the recommended daily allowance on the package.
                     </p>

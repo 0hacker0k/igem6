@@ -51,7 +51,7 @@
                 <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Agar faucet</h2>
             </div>
             <p>
-                &emsp;&emsp;Initially, we tested our ideas and generated a prototype of an agar faucet with a 3D printer. The first prototype had an agar bottle cap, which was abandoned because it was not <b>air-tight</b> or user friendly. Therefore, we rebuilt the design and generated a prototype agar faucet using PLA material and a 3D printer. This PLA-based agar faucet works well, was convenient, and allowed standardization. Next, we turned to improving this agar faucet using <b>aluminum</b>, to allow for sterilization. Finally, according to <b>feedback from the users</b>, we decided to evolve the agar faucet into an <b>agar revolver</b> in the future.
+                &emsp;&emsp;Initially, we tested our ideas and generated a prototype of an agar faucet with a 3D printer. The first prototype had an agar bottle cap, which was abandoned because it was not <b>air-tight</b> or user friendly. Therefore, we rebuilt the design and generated a prototype agar faucet using PLA material and a 3D printer. This PLA-based agar faucet works well, is convenient, and allows standardization. Next, we turned to improving this agar faucet using <b>aluminum</b>, to allow for sterilization. Finally, according to <b>feedback from the users</b>, we decided to evolve the agar faucet into an <b>agar revolver</b> in the future.
             </p>
             <div id="" class="title-label-div">
                 <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Gel preparation machine</h2>
@@ -63,12 +63,12 @@
             <p>
                 &emsp;&emsp;With the agar faucet and gel preparation machine, we hope to contribute resources and ideas to this society to help reduce the urban-rural gap.
             </p>
-            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>      
             <div id="2" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Agar faucet</h1>
             </div> 
             <div id="" class="title-label-div">
-                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')"><b>Agar bottle cap</b> - intuitive design</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Agar bottle cap - intuitive design</h2>
             </div>
             <p>
                 &emsp;&emsp;The tilt-shaped agar cap was composed of a <b>cap with a metric thread</b>, and a <b>tub-shaped container</b> with a bevel to pour agar.
@@ -77,19 +77,19 @@
             <ul>
                 <li>
                     <h2 class="h18">Tilt shape</h2>
-                    <p>The tilt shape helps the agar liquid flowing out smoothly for convenience.</p>
+                    <p>&emsp;&emsp;The tilt shape helps the agar liquid flowing out smoothly for convenience.</p>
                 </li>
                 <li>
                     <h2 class="h18">Cap with Metric thread:</h2>
-                    <p>The metric thread could fit the common serum bottle, which is a general container in a biology lab.</p>
+                    <p>&emsp;&emsp;The metric thread could fit the common serum bottle, which is a general container in a biology lab.</p>
                 </li>
                 <li>
                     <h2 class="h18">Tub-shape container</h2>
-                    <p>This could help us to pour a quantitative amount of agar from bevel.</p>
+                    <p>&emsp;&emsp;This could help us to pour a quantitative amount of agar from bevel.</p>
                 </li>
                 <li>
                     <h2 class="h18">Pressure-control button</h2>
-                    <p>The pressure-control makes it easy to control the amount of liquid agar flowing into the tub.</p>
+                    <p>&emsp;&emsp;The pressure-control makes it easy to control the amount of liquid agar flowing into the tub.</p>
                 </li>
             </ul>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>      
@@ -116,7 +116,7 @@
                     <img src="<?php echo imgfile;?>/hardware/hardware03.png"/>
                     <div class="triangle_to_top"></div>Test o-ring
                 </div>
-                <div class="img" style="--width:28%;">
+                <div class="img" style="--width:32%;">
                     <img src="<?php echo imgfile;?>/hardware/hardware04.png"/>
                     <div class="triangle_to_top"></div>Adjust thread
                 </div>
@@ -136,19 +136,19 @@
                 <li>
                     <h2 class="h18">Handle</h2>
                     <p>
-                        This lets the user more easily hold the faucet with a container on it.   
+                        &emsp;&emsp;This lets the user more easily hold the faucet with a container on it.   
                     </p>
                 </li>
                 <li>
                     <h2 class="h18">Funnel shaped channel</h2>
                     <p>
-                        The funnel shape helps to control the flow rate.
+                        &emsp;&emsp;The funnel shape helps to control the flow rate.
                     </p>
                 </li>
                 <li>
                     <h2 class="h18">Flow blocker</h2>
                     <p>
-                        Helps users to control the gel using leverage.
+                        &emsp;&emsp;Helps users to control the gel using leverage.
                     </p>
                 </li>
             </ul>
@@ -157,6 +157,20 @@
                 <div class="img" style="--width:60%;">
                     <img src="<?php echo imgfile;?>/hardware/hardware05.png"/>
                     <div class="triangle_to_top"></div>Agar faucet
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>      
+            <p class="h13">
+                Quantification results
+            </p>
+            <p>
+                &emsp;&emsp;To examine whether the agar faucet assists the standardization of agar plates, we respectively weighted 13 agar plates poured by agar faucet or by hand. The box plot of the quantization result  indicated that the weight of agar plates made by agar faucett is more precise, as compared to manual ones. Therefore, we moved to deal with other questions: the sterilization requirement and the speed of operation.
+            </p>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>      
+            <div class="full_block">
+                <div class="img" style="--width:60%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware065.png"/>
+                    <div class="triangle_to_top"></div>The accuracy between two methods
                 </div>
             </div>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>      
@@ -188,25 +202,25 @@
                 <li>
                     <h2 class="h18">Flow blocker (blue)</h2>
                     <p>
-                        The parts of the flow blocker are processed by sawing and the pillar drilling machine. After production, the components will be welded together.
+                        &emsp;&emsp;The parts of the flow blocker are processed by sawing and the pillar drilling machine. After processing, the components will be welded together.
                     </p>
                 </li>
                 <li>
                     <h2 class="h18">Thread (yellow)</h2>
                     <p>
-                        We first turned the outer diameter to the proper size by lathe, and then drilled and bored the internal diameter to fit the diameter of the funnel. Finally, we used a gearbox to make the inner thread.
+                        &emsp;&emsp;We first turned the outer diameter to the proper size by lathe, and then drilled and bored the internal diameter to fit the diameter of the funnel. Finally, we adjusted the blueprint of the agar faucet, and separated the agar faucet into four pieces to produce.
                     </p>
                 </li>
                 <li>
                     <h2 class="h18">Funnel (green)</h2>
                     <p>
-                        The largest and smallest outer diameters of the funnel shape, the funnel and the channel, respectively, are turned by lathe. The taper of the funnel is turned by swiveling the turning tool, and the inner diameter of the funnel is bored with a pillar drilling machine. Finally the bevel of the channel is cut by a milling machine.
+                        &emsp;&emsp;The largest and smallest outer diameters of the funnel shape, the funnel and the channel, respectively, are turned by lathe. The taper of the funnel is turned by swiveling the turning tool, and the inner diameter of the funnel is bored with a pillar drilling machine. Finally the bevel of the channel is cut by a milling machine.
                     </p>
                 </li>
                 <li>
                     <h2 class="h18">Handle (purple)</h2>
                     <p>
-                        We turned the outer diameter to the proper size using a lathe, and cut the curved surface to fit the outside diameter of the thread with a milling machine.
+                        &emsp;&emsp;We turned the outer diameter to the proper size using a lathe, and cut the curved surface to fit the outside diameter of the thread with a milling machine.
                     </p>
                 </li>
             </ul>   
@@ -219,33 +233,40 @@
             </div>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>      
             <div id="" class="title-label-div">
-                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Future improvements on the agar faucet - agar revolver</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Speeding up the agar faucet - agar revolver</h2>
             </div>
             <p>
-                &emsp;&emsp;After discussing with Dr. Lee from the precision molding research center, we came up with a new idea – Agar revolver. The agar revolver will be composed of the following three parts:
+                &emsp;&emsp;After discussing with <a href="https://2022.igem.wiki/ccu-taiwan/human-practices#18" class="link_subtitle">Dr. Lee</a> from the precision molding research center, we came up with a new idea – Agar revolver. The agar revolver will be composed of the following three parts:
             </p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>      
             <ul>
                 <li>
                     <h2 class="h18">Thread</h2>
                     <p>
-                        This part includes a metric thread to fit the common serum bottle.
+                        &emsp;&emsp;This part includes a metric thread to fit the common serum bottle.
                     </p>
                 </li>
                 <li>
                     <h2 class="h18">Chambers</h2>
                     <p>
-                        The chambers will look like the cylinder of a revolver.The agar will be loaded into chambers one by one.
+                        &emsp;&emsp;The chambers will look like the cylinder of a revolver.The agar will be loaded into chambers one by one.
                     </p>
                 </li>
                 <li>
                     <h2 class="h18">Wheel</h2>
                     <p>
-                        The wheel will turn the chambers one by one to the exit barrel.
+                        &emsp;&emsp;The wheel will turn the chambers one by one to the exit barrel.
                     </p>
                 </li>
             </ul>
-            <div class="marge" style="--width:calc(3em + 5vh)"></div>      
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>      
+            <div class="full_block">
+                <div class="img" style="--width:40%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware085.png"/>
+                    <div class="triangle_to_top"></div>Agar revolver
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div><div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <div id="3" class="title-label-div">
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Gel Preparation Machine</h1>
             </div>
@@ -308,21 +329,42 @@
             </p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>      
             <div class="full_block">
-                <div class="img" style="--width:20%;">
+                <div class="img" style="--width:25%;">
                     <img src="<?php echo imgfile;?>/hardware/hardware12.png"/>
                     <div class="triangle_to_top"></div>Front elevation (TAE box)
                 </div>
-                <div class="img" style="--width:20%;">
+                <div class="img" style="--width:25%;">
                     <img src="<?php echo imgfile;?>/hardware/hardware13.png"/>
-                    <div class="triangle_to_top"></div>End elevation (TAE box) 
+                    <div class="triangle_to_top"></div>Corss section of front elevation (TAE box) 
                 </div>
-                <div class="img" style="--width:20%;">
+                <div class="img" style="--width:25%;">
                     <img src="<?php echo imgfile;?>/hardware/hardware14.png"/>
-                    <div class="triangle_to_top"></div>Plan elevation (TAE box)
+                    <div class="triangle_to_top"></div>End elevation (TAE box)
                 </div>
-                <div class="img" style="--width:20%;">
+            </div>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>      
+            <div class="full_block">
+                <div class="img" style="--width:25%;">
                     <img src="<?php echo imgfile;?>/hardware/hardware15.png"/>
+                    <div class="triangle_to_top"></div>The route of TAE (TAE box)
+                </div>
+                <div class="img" style="--width:25%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware155.png"/>
                     <div class="triangle_to_top"></div>Agarose box
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>      
+            <div class="full_block">
+                <div class="img" style="--width:95%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware14.gif"/>
+                    <div class="triangle_to_top"></div>TAE screw animation
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>      
+            <div class="full_block">
+                <div class="img" style="--width:95%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware15.gif"/>
+                    <div class="triangle_to_top"></div>Agarose screw animation
                 </div>
             </div>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>
@@ -346,11 +388,8 @@
             </p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>      
             <div class="full_block">
-                <div class="img" style="--width:40%;">
-                    <img src="<?php echo imgfile;?>/hardware/hardware16.png"/>
-                </div>
-                <div class="img" style="--width:40%;">
-                    <img src="<?php echo imgfile;?>/hardware/hardware17.png"/>
+                <div class="img" style="--width:95%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware16.gif"/>
                 </div>
             </div>
             <div class="full_block">
@@ -368,8 +407,8 @@
             </p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>      
             <div class="full_block">
-                <div class="img" style="--width:60%;">
-                    <img src="<?php echo imgfile;?>/hardware/hardware18.png"/>
+                <div class="img" style="--width:95%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware18.gif"/>
                     <div class="triangle_to_top"></div>Upper mold
                 </div>
             </div>
@@ -439,27 +478,27 @@
             <div class="marge" style="--width:calc(2em + 2vh)"></div>
             <h2 class="h13">Passive buzzer</h2>
             <p>
-                Through controlling the ratio of 1 and 0 signals, we can create a unique sound for warning or finish.
+            &emsp;&emsp;Through controlling the ratio of 1 and 0 signals, we can create a unique sound for warning or finish.
             </p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>
             <h2 class="h13">Seven-segment display</h2>
             <p>
-                To illustrate the information needed by the user, we control the signal from the CLK pin and two DIO pins.
+                &emsp;&emsp;To illustrate the information needed by the user, we control the signal from the CLK pin and two DIO pins.
             </p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>
             <h2 class="h13">Gear motor and heating coil</h2>
             <p>
-                We need to apply 24 volts to drive the gear motor and heating coil but the Raspberry Pi can only supply 3 volts. To solve this problem, we use a relay to control another power supply.
+                &emsp;&emsp;We need to apply 24 volts to drive the gear motor and heating coil but the Raspberry Pi can only supply 3 volts. To solve this problem, we use a relay to control another power supply.
             </p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>
             <h2 class="h13">Motor for piston</h2>
             <p>
-                Raspberry Pi cannot achieve concurrent and countercurrent signals of 5 volt, but this is what we need to control the clockwise and counterclockwise rotation of the motor. Thus, we apply a motor controller module to help us to control the direction of rotation of the motor. 
+                &emsp;&emsp;Raspberry Pi cannot achieve concurrent and countercurrent signals of 5 volt, but this is what we need to control the clockwise and counterclockwise rotation of the motor. Thus, we apply a motor controller module to help us to control the direction of rotation of the motor. 
             </p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>
             <h2 class="h13">Stepper motor linear actuator</h2>
             <p>
-                This is a relatively special motor. It cannot be controlled simply by transmitting electric current. Instead, it needs four pins to output the signal sequentially so that the motor can function. Therefore, we also use the motor controller module to change the output and input signal of different pins.
+                &emsp;&emsp;This is a relatively special motor. It cannot be controlled simply by transmitting electric current. Instead, it needs four pins to output the signal sequentially so that the motor can function. Therefore, we also use the motor controller module to change the output and input signal of different pins.
             </p>     
             <div class="marge" style="--width:calc(2em + 2vh)"></div>
             <h2 class="h13">Raspberry Pi</h2>
@@ -472,10 +511,16 @@
                 &emsp;&emsp;We use a website to build a user interface available to users. By using php programming language manipulating mysql database, user commands and status messages from Raspberry Pi can be stored and exchanged.
             </p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>
+            <div class="full_block">
+                <div class="img" style="--width:60%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware215.png"/>
+                    <div class="triangle_to_top"></div>User interface
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>
             <p>
                 &emsp;&emsp;For users, we can operate the data on the server through a specific website, indirectly controlling the operation of the Raspberry Pi. We can also check the current operating state of the Raspberry Pi on the website.
             </p>
-            <div class="marge" style="--width:calc(2em + 2vh)"></div>
             <div id="" class="title-label-div">
                 <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Manufacturing</h2>
             </div>
@@ -485,21 +530,38 @@
             <h2 class="h13">Machining</h2>
             <p>&emsp;&emsp;In order to allow our product to withstand moist heat sterilization, a widely used method in the laboratory, we made a model, completing most of the process in our factory classroom.</p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>
-            <p class="h18">
-                <b>Saw:</b> Cutting metal sheets, metal rods and acrylic boards
-            </p>
-            <p class="h18">
-                <b>Lathe:</b> turn and drill the metal rod
-            </p>
-            <p class="h18">
-                <b>Milling machine:</b> cut metal sheets, conduct face milling and side milling operations
-            </p>
-            <p class="h18">
-                <b>Vertical band saw:</b> cut the acrylic board
-            </p>
-            <p class="h18">
-                <b>Pillar drill:</b> drill out metal workpieces and acrylic boards
-            </p>
+            <ul>    
+            <li>
+                    <h2 class="h18">Saw</h2>
+                    <p>
+                        &emsp;&emsp;Cutting metal sheets, metal rods and acrylic boards.
+                    </p>
+                </li>
+                <li>
+                <h2 class="h18">Lathe</h2>
+                <p>
+                    &emsp;&emsp;Turning and drilling the metal rod.
+                </p>
+                </li>
+                <li>
+                <h2 class="h18">Milling machine</h2>
+                <p>
+                    &emsp;&emsp;Cutting metal sheets and conducting face milling and side milling operations.
+                </p>
+                </li>
+                <li>
+                <h2 class="h18">Vertical band saw</h2>
+                <p>
+                    &emsp;&emsp;Cutting the acrylic board.
+                </p>
+                </li>
+                <li>
+                <h2 class="h18">Pillar drill</h2>
+                <p>
+                    &emsp;&emsp;Drilling out metal workpieces and acrylic boards
+                </p>
+                </li>
+            </ul>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>      
             <p>
                 &emsp;&emsp;We could not even imagine how much time and money we would need to spend if we did not have access to those tools. Processing in the factory not only saved us lots of time but also taught us a lot!
@@ -507,10 +569,10 @@
             </div>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>      
             <div class="full_block">
-                <div class="img" style="--width:40%;">
+                <div class="img" style="--width:30%;">
                     <img src="<?php echo imgfile;?>/hardware/hardware22.png"/>
                 </div>
-                <div class="img" style="--width:40%;">
+                <div class="img" style="--width:30%;">
                     <img src="<?php echo imgfile;?>/hardware/hardware23.png"/>
                 </div>
             </div>

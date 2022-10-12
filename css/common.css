@@ -348,10 +348,10 @@ p{
     /* white-space:nowrap; */
     display: table;
     margin: auto;
-    font-weight: bolder;
-    font-size: calc(1.5em + 1.5vw);
+    font-weight: 750;
+    font-size: calc(1.25em + 1.5vw);
 }
 .h18{
-    font-weight: 700;
+    font-weight: 650;
     color: #9C8AA8;
 }
