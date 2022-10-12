@@ -5,7 +5,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_1.png";
+                                $img_src[0]=imgfile."/notebook/hp-1.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
                                 $img_alt[0]="";
@@ -58,7 +58,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_2.png";
+                                $img_src[0]=imgfile."/notebook/hp-2.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
                                 $img_alt[0]="";
@@ -77,7 +77,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_3.png";
+                                $img_src[0]=imgfile."/notebook/hp-3.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
                                 $img_alt[0]="";
@@ -124,7 +124,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_4.png";
+                                $img_src[0]=imgfile."/notebook/hp-4.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
                                 $img_alt[0]="";
@@ -143,7 +143,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_5.png";
+                                $img_src[0]=imgfile."/notebook/hp-5.png";
                                 // $img_src[1]=imgfile."/human/6a.jpg";
                                 // $img_src[2]=imgfile."/human/3a.jpg";
                                 $img_alt[0]="";

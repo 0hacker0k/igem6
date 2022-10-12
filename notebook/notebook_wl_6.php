@@ -5,7 +5,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_6.png";
+                                $img_src[0]=imgfile."/notebook/wl-6.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -48,7 +48,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_7.png";
+                                $img_src[0]=imgfile."/notebook/wl-7.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -62,7 +62,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_8.png";
+                                $img_src[0]=imgfile."/notebook/wl-8.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -114,7 +114,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_9.png";
+                                $img_src[0]=imgfile."/notebook/wl-9.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>

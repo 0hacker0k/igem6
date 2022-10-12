@@ -5,8 +5,8 @@
                             <?php
                                 $id=1;
                                 $img_count=2;
-                                $img_src[0]=imgfile."/notebook/hp_6_1.png";
-                                $img_src[1]=imgfile."/notebook/hp_6_2.png";
+                                $img_src[0]=imgfile."/notebook/hp-6-1.png";
+                                $img_src[1]=imgfile."/notebook/hp-6-2.png";
                                 $img_alt[0]="";
                                 $img_alt[1]="";
                                 include "../sub/carousel.php";
@@ -52,7 +52,7 @@
                             <?php
                                 $id=2;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_7.png";
+                                $img_src[0]=imgfile."/notebook/hp-7.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -66,7 +66,7 @@
                             <?php
                                 $id=3;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_8.png";
+                                $img_src[0]=imgfile."/notebook/hp-8.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -121,7 +121,7 @@
                             <?php
                                 $id=4;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_9.png";
+                                $img_src[0]=imgfile."/notebook/hp-9.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>

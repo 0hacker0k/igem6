@@ -5,7 +5,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_14.png";
+                                $img_src[0]=imgfile."/notebook/wl-14.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -52,7 +52,7 @@
                             <?php
                                 $id=2;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_15.png";
+                                $img_src[0]=imgfile."/notebook/wl-15.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -66,7 +66,7 @@
                             <?php
                                 $id=3;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_16.png";
+                                $img_src[0]=imgfile."/notebook/wl-16.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -112,7 +112,7 @@
                             <?php
                                 $id=4;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_17.png";
+                                $img_src[0]=imgfile."/notebook/wl-17.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -126,7 +126,7 @@
                             <?php
                                 $id=3;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/wl_18.png";
+                                $img_src[0]=imgfile."/notebook/wl-18.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>

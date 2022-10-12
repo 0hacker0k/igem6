@@ -5,9 +5,9 @@
                             <?php
                                 $id=1;
                                 $img_count=3;
-                                $img_src[0]=imgfile."/notebook/dl_1_1.png";
-                                $img_src[1]=imgfile."/notebook/dl_1_2.png";
-                                $img_src[2]=imgfile."/notebook/dl_1_3.png";
+                                $img_src[0]=imgfile."/notebook/dl-1-1.png";
+                                $img_src[1]=imgfile."/notebook/dl-1-2.png";
+                                $img_src[2]=imgfile."/notebook/dl-1-3.png";
                                 $img_alt[0]="";
                                 $img_alt[1]="";
                                 $img_alt[2]="";
@@ -53,8 +53,8 @@
                     <?php
                         $id=2;
                         $img_count=2;
-                        $img_src[0]=imgfile."/notebook/dl_2_1.png";
-                        $img_src[1]=imgfile."/notebook/dl_2_2.png";
+                        $img_src[0]=imgfile."/notebook/dl-2-1.png";
+                        $img_src[1]=imgfile."/notebook/dl-2-2.png";
                         $img_alt[0]="";
                         $img_alt[1]="";
                         include "../sub/carousel.php";
@@ -69,9 +69,9 @@
                         <?php
                             $id=3;
                             $img_count=3;
-                            $img_src[0]=imgfile."/notebook/dl_3_1.png";
-                            $img_src[1]=imgfile."/notebook/dl_3_2.png";
-                            $img_src[2]=imgfile."/notebook/dl_3_3.png";
+                            $img_src[0]=imgfile."/notebook/dl-3-1.png";
+                            $img_src[1]=imgfile."/notebook/dl-3-2.png";
+                            $img_src[2]=imgfile."/notebook/dl-3-3.png";
                             $img_alt[0]="";
                             $img_alt[1]="";
                             $img_alt[2]="";
@@ -125,8 +125,8 @@
                         <?php
                             $id=4;
                             $img_count=2;
-                            $img_src[0]=imgfile."/notebook/dl_4_1.png";
-                            $img_src[1]=imgfile."/notebook/dl_4_2.png";
+                            $img_src[0]=imgfile."/notebook/dl-4-1.png";
+                            $img_src[1]=imgfile."/notebook/dl-4-2.png";
                             // $img_src[2]=imgfile."/human/3a.jpg";
                             $img_alt[0]="";
                             $img_alt[1]="";
@@ -144,9 +144,9 @@
                         <?php
                             $id=5;
                             $img_count=3;
-                            $img_src[0]=imgfile."/notebook/dl_5_1.png";
-                            $img_src[1]=imgfile."/notebook/dl_5_2.png";
-                            $img_src[2]=imgfile."/notebook/dl_5_3.png";
+                            $img_src[0]=imgfile."/notebook/dl-5-1.png";
+                            $img_src[1]=imgfile."/notebook/dl-5-2.png";
+                            $img_src[2]=imgfile."/notebook/dl-5-3.png";
                             $img_alt[0]="";
                             $img_alt[1]="";
                             $img_alt[2]="";

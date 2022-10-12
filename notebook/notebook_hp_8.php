@@ -5,7 +5,7 @@
                             <?php
                                 $id=1;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_14.png";
+                                $img_src[0]=imgfile."/notebook/hp-14.png";
                                 $img_src[1]=imgfile."";
                                 $img_alt[0]="";
                                 $img_alt[1]="";
@@ -54,7 +54,7 @@
                             <?php
                                 $id=2;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_15.png";
+                                $img_src[0]=imgfile."/notebook/hp-15.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -68,7 +68,7 @@
                             <?php
                                 $id=3;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_16.png";
+                                $img_src[0]=imgfile."/notebook/hp-16.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
@@ -116,8 +116,8 @@
                             <?php
                                 $id=4;
                                 $img_count=2;
-                                $img_src[0]=imgfile."/notebook/hp_17_1.png";
-                                $img_src[1]=imgfile."/notebook/hp_17_2.png";
+                                $img_src[0]=imgfile."/notebook/hp-17-1.png";
+                                $img_src[1]=imgfile."/notebook/hp-17-2.png";
                                 $img_alt[0]="";
                                 $img_alt[1]="";
                                 include "../sub/carousel.php";
@@ -132,7 +132,7 @@
                             <?php
                                 $id=3;
                                 $img_count=1;
-                                $img_src[0]=imgfile."/notebook/hp_18.png";
+                                $img_src[0]=imgfile."/notebook/hp-18.png";
                                 $img_alt[0]="";
                                 include "../sub/carousel.php";
                             ?>
