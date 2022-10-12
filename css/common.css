@@ -126,6 +126,7 @@ p{
 .img img{
     width: 100%;
     border-radius: 1.5vw;
+    vertical-align: top;
 }
 .img{
     /* display:block; */
@@ -189,7 +190,8 @@ p{
     margin-left: 0;
     text-align: center;
     /* display: flex; */
-    justify-content: center;   
+    justify-content: center;
+    font-size: calc(0.7em + 0.7vw);
 }
 .triangle_to_top{
     border-top: calc(0.35em + 0.35vw) solid transparent;
@@ -321,8 +323,11 @@ p{
   table tbody tr:nth-child(odd){
     background-color: #eee
   }
+  table tbody tr:nth-child(even){
+    background-color: rgb(241, 191, 125)
+  }
   table thead {
-    background-color: #B77B8D;
+    background-color: #cb4827;
     color: white;
   }
   table thead th:first-child {

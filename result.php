@@ -169,7 +169,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The TA cloning of <i>pfa D</i> and sequencing confirmation</h2>
             </div>
             <p>
-                &emsp;&emsp;After gel electrophoresis, the <i>pfa D</i> amplicon is purified from agarose gel and ligated with TA-vector. The ligated TA-<i>pfa D</i> was then transformed into DH5α, and the colonies after antibiotics (Amp) selection were subjected into colony PCR.
+                &emsp;&emsp;After gel electrophoresis, the <i>pfa D</i> amplicon is purified from agarose gel and ligated with TA-vector. The ligated TA-<i>pfa D</i> was then transformed into <i>E. coli</i> DH5α strain, and the colonies after antibiotic (Amp) selection were subjected into colony PCR.
             </p>
             <div class="full_block">
                 <div class="img" style="--width:85%;">
@@ -203,10 +203,10 @@
                 &emsp;&emsp;Finally, we sequence-confirmed the TA-<i>pfa D</i>.
             </p>
             <div id="" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Cloning of <i>pfa D</i> into the pColdI vector.</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The cloning of <i>pfa D</i> into pColdI vector.</h2>
             </div>
             <p>
-                &emsp;&emsp;The <i>pfa D</i> amplicon is exercised from the TA-<i>pfa D</i> vector by SacII and XbaI digestion, and the purified amplicon is ligated into pColdI vector. The colonies grown after standard transformation were examined by colony PCR using a primer pair recognizing <i>pfa D</i>-1369F and pCold-R. The size of the target amplicon of colony PCR is 0.3 kb in length.
+                &emsp;&emsp;The <i>pfa D</i> amplicon is exercised from the TA-<i>pfa D</i> vector by SacII and XbaI digestion, and the purified amplicon is ligated into pColdI vector. The colonies grown after standard transformation were examined by colony PCR using a primer pair recognizing <i>pfa D</i>-1369F and pColdI-R. The size of the target amplicon of colony PCR is 0.3 kb in length.
             </p>
             <div class="marge" style="--width:calc(1em + 1vh)"></div>      
             <p>
@@ -216,7 +216,7 @@
                 &emsp;&emsp;<i>pfa D</i> 1369-F: TCTTCACGCTGGTCAAACAC
             </p>
             <p class="biggerlis">
-                &emsp;&emsp;pCold-R: CCAAATGGCAGGGATCTTAG
+                &emsp;&emsp;pColdI-R: CCAAATGGCAGGGATCTTAG
             </p>
             <div class="marge" style="--width:calc(1em + 1vh)"></div>      
             <div class="full_block">
@@ -264,7 +264,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <div id="2" class="title-label-div">
-                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Cloning pSTV28-<i>pfa B</i>-<i>pfa C</i>-<i>pfa E</i></h1>
+                <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Cloning<br/>pSTV28-<i>pfa B</i>-<i>pfa C</i>-<i>pfa E</i></h1>
             </div>
             <h1>Major experiment:</h1>
             <ol>
@@ -319,7 +319,7 @@
                 </div>
             </div>
             <div id="" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Amplifying the <i>pfa B</i> by PCR</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Amplifying the <i>pfa B'</i> by PCR</h2>
             </div>
             <p>
                 &emsp;&emsp;To clone the <i>pfa B'</i> (~2.3 kb) from the synthesized gene block by company, we designed the forward primer with a restriction enzyme EcoRI site at the 5' terminal, while the 3' terminal of reverse primer is ended by restriction enzyme BamHI site. The PCR amplification is performed by the designed primer pair and pfu DNA polymerase.
@@ -406,7 +406,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The TA cloning of <i>pfa E</i> and sequencing confirmation</h2>
             </div>
             <p>
-                &emsp;&emsp;After gel electrophoresis, the <i>pfa E</i> amplicon is purified from agarose gel and ligated with TA-vector. The ligated TA-<i>pfa E</i> was then transformed into DH5α, and the colonies after antibiotics (Amp) selection were subjected into colony PCR.
+                &emsp;&emsp;After gel electrophoresis, the <i>pfa E</i> amplicon is purified from agarose gel and ligated with TA-vector. The ligated TA-<i>pfa E</i> was then transformed into <i>E. coli</i> DH5α strain, and the colonies after antibiotic (Amp) selection were subjected into colony PCR.
             </p>
             <div class="full_block">
                 <div class="img" style="--width:50%;">
@@ -426,7 +426,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
-                &emsp;&emsp;The clones with correct restriction digestion map (2.7 kb for TA vector and 0.8 kb for <i>pfa E</i>) were subjected to sequencing confirmation. 
+                &emsp;&emsp;The clones with correct restriction digestion map (2.7 kb for TA vector and 0.8 kb for <i>pfa E</i>) were subjected into sequencing confirmation. 
             </p>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -439,7 +439,7 @@
                 &emsp;&emsp;Finally, we sequence-confirmed the TA-<i>pfa E</i>.
             </p>
             <div id="" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Cloning of <i>pfa E</i> into the pSTV28 vector</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The cloning of <i>pfa E</i> into pSTV28 vector</h2>
             </div>
             <p>
                 &emsp;&emsp;The <i>pfa E</i> amplicon is exercised from the TA-<i>pfa E</i> vector by SacI and HindIII digestion, and the purified amplicon is ligated into pSTV28 vector. The colonies grown after standard transformation were examined by colony PCR using a primer pair recognizing SacI-RBS-<i>pfa E</i>-F and HindIII-<i>pfa E</i>-R. The size of the target amplicon of colony PCR is 0.8 kb in length.
@@ -573,7 +573,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The TA cloning of <i>AccBC</i>  and sequencing confirmation</h2>
             </div>
             <p>
-                &emsp;&emsp;After gel electrophoresis, the <i>AccBC</i>  amplicon is purified from agarose gel and ligated with TA-vector. The ligated TA-<i>AccBC</i>  was then transformed into DH5α, and the colonies after antibiotics (Amp) selection were subjected into colony PCR.
+                &emsp;&emsp;After gel electrophoresis, the <i>AccBC</i>  amplicon is purified from agarose gel and ligated with TA-vector. The ligated TA-<i>AccBC</i>  was then transformed into <i>E. coli</i> DH5α strain, and the colonies after antibiotic (Amp) selection were subjected into colony PCR.
             </p>
             <div class="full_block">
                 <div class="img" style="--width:85%;">
@@ -593,7 +593,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
-                &emsp;&emsp;The clones with correct restriction digestion map (2.7 kb for TA vector and 1.8 kb for <i>AccBC</i> ) were subjected to sequencing confirmation. 
+                &emsp;&emsp;The clones with correct restriction digestion map (2.7 kb for TA vector and 1.8 kb for <i>AccBC</i> ) were subjected into sequencing confirmation. 
             </p>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -635,7 +635,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The TA cloning of <i>AccD1E</i> and sequencing confirmation</h2>
             </div>
             <p>
-                &emsp;&emsp;After gel electrophoresis, the <i>AccD1E</i> amplicon is purified from agarose gel and ligated with TA-vector. The ligated TA-<i>AccD1E</i> was then transformed into DH5α, and the colonies after antibiotics (Amp) selection were subjected into colony PCR.
+                &emsp;&emsp;After gel electrophoresis, the <i>AccD1E</i> amplicon is purified from agarose gel and ligated with TA-vector. The ligated TA-<i>AccD1E</i> was then transformed into <i>E. coli</i> DH5α strain, and the colonies after antibiotic (Amp) selection were subjected into colony PCR.
             </p>
             <div class="full_block">
                 <div class="img" style="--width:85%;">
@@ -655,7 +655,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
             <p>
-                &emsp;&emsp;The clones with correct restriction digestion map (2.7 kb for TA vector and 2 kb for <i>AccD1E</i>) were subjected to sequencing confirmation.
+                &emsp;&emsp;The clones with correct restriction digestion map (2.7 kb for TA vector and 2 kb for <i>AccD1E</i>) were subjected into sequencing confirmation.
             </p>
             <div class="marge" style="--width:calc(1em + 1vh)"></div>      
             <div class="full_block">
@@ -669,7 +669,7 @@
                 &emsp;&emsp;Finally, we sequence-confirmed the TA-<i>AccD1E</i>.
             </p>
             <div id="" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Cloning of <i>AccD1E</i> into the pET28a vector.</h2>
+                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The cloning of <i>AccD1E</i> into pET28a vector.</h2>
             </div>
             <p>
                 &emsp;&emsp;The <i>AccD1E</i> amplicon is exercised from the TA-<i>AccD1E</i> vector by EcoRI and XhoI digestion, and the purified amplicon is ligated into pET28a vector. The colonies grown after standard transformation were examined by colony PCR using a primer pair recognizing <i>AccD1E</i>-1721 F and T7 terminator. The size of the target amplicon of colony PCR is 0.3 kb in length.
@@ -796,7 +796,7 @@
                 <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Conducting triple antibiotics selection</h2>
             </div>
             <p>
-                &emsp;&emsp;To confirm that the <i>pfa</i>-expressing vectors (pColdI and pSTV28) can be co-expressed with pET28a (kanamycin resistant) vector, we performed the triple antibiotics selection. 
+                &emsp;&emsp;To confirm that the pfa-expressing vectors (pColdI and pSTV28) can be co-expressed with pET28a (kanamycin resistant) vector, we performed the triple antibiotics selection. 
             </p>
             <p>
                 &emsp;&emsp;According to the result of double antibiotics selection, we start the triple antibiotics selection with fixing the concentration of Amp (50 μg/ml) and Cm (10 μg/ml). However, the condition is too harsh when adding kanamycin as the third antibiotic, and only a few colonies survived. We then decreased the concentration of chloramphenicol to 5 μg/ml, and performed triple antibiotics selection with 1.25 μg/ml, 2.5 μg/ml and 5 μg/ml kanamycin. 
