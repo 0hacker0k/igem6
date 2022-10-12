@@ -54,9 +54,9 @@ function preload_stage2_gel(){
     this.load.image("gel_machine",prefix+'/stage2/gel-machine.png');
     this.load.image("uv",prefix+'/stage2/uv.png');
     this.load.image("note",prefix+'/stage2/protocol.png');
-    this.load.image("protocol1","img/stage2/protocol1.jpg");
-    this.load.image("protocol2","img/stage2/protocol2.jpg");
-    this.load.image("protocol3","img/stage2/protocol3.jpg");
+    this.load.image("protocol1",prefix+"/stage2/protocol1.jpg");
+    this.load.image("protocol2",prefix+"/stage2/protocol2.jpg");
+    this.load.image("protocol3",prefix+"/stage2/protocol3.jpg");
     this.load.image("machine",prefix+'/stage2/gel-making-machine.png');
     this.load.image('wifi',prefix+'/stage2/wifi.png');
     //light gel
