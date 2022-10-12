@@ -20,7 +20,7 @@
                 Pfu polymerase PCR
             </div>
             <div onclick="protocol_change('3')" class="page_tag" style="background-color: #e8f1f2;">
-                PCR Cleanup
+                PCR cleanup
             </div>
             <div onclick="protocol_change('4')" class="page_tag" style="background-color: #e5ecf4;">
                 Ligation
@@ -274,7 +274,7 @@
                 </table>
             </div>
             <div id="3" class="content">
-                <h1>PCR Cleanup</h1>
+                <h1>PCR cleanup</h1>
                 <ol class="normal">
                     <li>
                         Sample Preparation
@@ -295,7 +295,7 @@
                             </li>
                             <li>
                                 Transfer the sample mixture to the DFH Column.Centrifuge at 14-16,000 xg for 30 seconds.
-                                Discard the flow-through and place the DFH Column back in the 2ml Collection Tube.
+                                Discard the flow-through and place the DFH Column back in the 2 ml Collection Tube.
                             </li>
                         </ul>
                     </li>
@@ -531,7 +531,8 @@
                         Harvesting
                         <ul>
                             <li>
-                                Transfer 1.5 ml of cultured bacterial cells (1-2 x 10<sup>9</sup> <li>E. coli</i> grown in TB medium) to a 1.5
+                                Transfer 1.5 ml of cultured bacterial cells (1-2 x 10<sup>9</sup>
+                            <li>E. coli</i> grown in TB medium) to a 1.5
                                 ml microcentrifuge tube.
                             </li>
                             <li>
@@ -621,7 +622,8 @@
                                 then place the PDH Column back in the 2 ml Collection Tube.
                             </li>
                             <li>
-                                Centrifuge at 14-16,000 x g for 3 minutes at room temperature to dry the column matrix. Transfer the dried PDH Column to a new microcentrifuge tube.
+                                Centrifuge at 14-16,000 x g for 3 minutes at room temperature to dry the column matrix.
+                                Transfer the dried PDH Column to a new microcentrifuge tube.
                             </li>
                         </ul>
                     </li>
@@ -741,7 +743,7 @@
                             </li>
                             <li>
                                 Transfer 800 μl of the sample mixture to the DFH Column.Centrifuge at 14-16,000 xg for 30
-                                seconds. Discard the flow-through and place the DFH Column back in the 2ml Collection Tube.
+                                seconds. Discard the flow-through and place the DFH Column back in the 2 ml Collection Tube.
                             </li>
                             <li>
                                 If the sample mixture is more than 800 μl, repeat the DNA Binding step.
@@ -793,10 +795,13 @@
                         Warm required amount of B-PER Complete Reagent (5ml reagent/g of biomass) to room temperature.
                     </li>
                 </ol>
-                <div class="normal">Optional: Add salts, reducing agents, chelators or protease inhibitors to B-PER Complete Reagent.</div>
+                <div class="normal">Optional: Add salts, reducing agents, chelators or protease inhibitors to B-PER Complete
+                    Reagent.</div>
                 <div class="marge" style="--width:calc(1em)"></div>
-                <div class="normal">Note: Add 1mM EDTA final concentration to B-PER Complete Reagent (i.e., 2 μL of 0.5M EDTA per ml of B-PER
-                Complete Reagent) for lysis of recently prepared Gram-negative cells (e.g., <li>E. coli</i> BL21 strain).</div>
+                <div class="normal">Note: Add 1mM EDTA final concentration to B-PER Complete Reagent (i.e., 2 μL of 0.5M
+                    EDTA per ml of B-PER
+                    Complete Reagent) for lysis of recently prepared Gram-negative cells (e.g., <li>E. coli</i> BL21
+                        strain).</div>
                 <div class="marge" style="--width:calc(1em)"></div>
                 <ol class="normal" start="3">
                     <li>
@@ -811,10 +816,12 @@
                         proteins.
                     </li>
                 </ol>
-                <div class="normal">Note: If a large percentage of over-expressed protein remains in the pellet, the protein of interest may be
-                expressed in inclusion bodies. Use the Inclusion Body Solubilization Reagent (Product No. 78115) or alter
-                the expression conditions to minimize inclusion body formation.</div>
-                
+                <div class="normal">Note: If a large percentage of over-expressed protein remains in the pellet, the protein
+                    of interest may be
+                    expressed in inclusion bodies. Use the Inclusion Body Solubilization Reagent (Product No. 78115) or
+                    alter
+                    the expression conditions to minimize inclusion body formation.</div>
+
             </div>
             <div id="11" class="content">
                 <h1>Protein quantification</h1>
@@ -1381,13 +1388,14 @@
                 <h1>Recipe For 0.8% Gel preparation</h1>
                 <ol class="normal">
                     <li>
-                        Mix 1.6 g agarose with 200 ml 1x TAE, and boil in a microwavable flask by microwave for 1-3 min, until the agarose is completely dissolved.
+                        Mix 1.6 g agarose with 200 ml 1x TAE, and boil in a microwavable flask by microwave for 1-3 min,
+                        until the agarose is completely dissolved.
                     </li>
                     <li>
                         Cool down the agarose solution for a while.
                     </li>
                     <li>
-                        Add ethidium bromide (EtBr) to the agarose solution. 
+                        Add ethidium bromide (EtBr) to the agarose solution.
                     </li>
                     <li>
                         Pour the agarose into a gel tray with the well comb in place.
@@ -1400,13 +1408,14 @@
                 <h1>Recipe For 2% Gel preparation</h1>
                 <ol class="normal" start="6">
                     <li>
-                        Mix 4 g agarose with 200 ml 1x TAE, and boil in a microwavable flask by microwave for 1-3 min, until the agarose is completely dissolved.
+                        Mix 4 g agarose with 200 ml 1x TAE, and boil in a microwavable flask by microwave for 1-3 min, until
+                        the agarose is completely dissolved.
                     </li>
                     <li>
                         Cool down the agarose solution for a while.
                     </li>
                     <li>
-                        Add ethidium bromide (EtBr) to the agarose solution. 
+                        Add ethidium bromide (EtBr) to the agarose solution.
                     </li>
                     <li>
                         Pour the agarose into a gel tray with the well comb in place.
