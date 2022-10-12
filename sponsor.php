@@ -59,11 +59,13 @@
                 <img class="sponsor_logo" style="--width:12%" src="<?php echo imgfile;?>/sponsor/sponsors13.png" alt="">
             </div>
         </a>
-        <div class="sponsor_card">
-            <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
-            <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
-            <img class="sponsor_logo" style="--width:20%" src="<?php echo imgfile;?>/sponsor/sponsors10.png" alt="">
-        </div>
+        <a href="https://www.twbioscience.com/">
+            <div class="sponsor_card">
+                <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
+                <img class="sponsor_paper" src="<?php echo imgfile;?>/sponsor/paper-white.png" alt="">
+                <img class="sponsor_logo" style="--width:20%" src="<?php echo imgfile;?>/sponsor/sponsors10.png" alt="">
+            </div>
+        </a>
         <div class="sponsor_card">
             <button type="button" class="sponsor_card_list_button" data-bs-toggle="modal" data-bs-target="#popup1">
                 <img class="sponsor_clip" src="<?php echo imgfile;?>/sponsor/clip-white.png" alt="">
@@ -161,7 +163,7 @@
             <p>嘉德中醫</p>
             <p>新福本百草堂</p>
             <a href='https://www.medfirst.com.tw/?lang=zh-TW'><p>杏一醫療器材</p></a>
-            a href='https://www.greattree.com.tw/'><p>大樹藥局</p></a>
+            <a href='https://www.greattree.com.tw/'><p>大樹藥局</p></a>
             <p>太和大藥局</p>
             <p>田金佩皮膚科診所</p>
             <p>大明藥局</p>

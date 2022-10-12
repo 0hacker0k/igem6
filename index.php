@@ -139,7 +139,7 @@
                 <li class="learn_more_title">
                     EPA producing gene 
                 </li>
-                <div id="learn_more_1" class="learn_more" onclick="more_information('learn_more_1','learn_more_1_content','information2')">
+                <div id="learn_more_1" class="learn_more" onclick="more_information('learn_more_1','learn_more_1_content','information2');photo_change('page12-roles','page12-role2','page12-role1')">
                     <div class="triangle_to_right"></div>Learn more
                 </div>
                 <div id="learn_more_1_content" class="learn_more_content">
@@ -150,7 +150,7 @@
                 <li class="learn_more_title">
                     Gene engineering
                 </li>
-                <div id="learn_more_2" class="learn_more" onclick="more_information('learn_more_2','learn_more_2_content','information1')">
+                <div id="learn_more_2" class="learn_more" onclick="more_information('learn_more_2','learn_more_2_content','information1');photo_change('page12-roles','page12-role3','page12-role1')">
                     <div class="triangle_to_right"></div>Learn more
                 </div>
                 <div id="learn_more_2_content" class="learn_more_content">
@@ -160,6 +160,8 @@
         </div>
         <div class="illustration" id="page12-roles">
             <img id="page12-role1" src="<?php echo imgfile;?>/home/page12-role1.png">
+            <img id="page12-role2" src="<?php echo imgfile;?>/home/page12-role2.png">
+            <img id="page12-role3" src="<?php echo imgfile;?>/home/page12-role3.png">
         </div>
     </div>
     <div class="page" style="top:200%;" id="page_13">
@@ -172,7 +174,7 @@
                 <li class="learn_more_title">
                     Acc complex
                 </li>
-                <div id="learn_more_3" class="learn_more" onclick="more_information('learn_more_3','learn_more_3_content','information4')">
+                <div id="learn_more_3" class="learn_more" onclick="more_information('learn_more_3','learn_more_3_content','information4');photo_change('page13-roles','page13-role2','page13-role1')">
                     <div class="triangle_to_right"></div>Learn more
                 </div>
                 <div id="learn_more_3_content" class="learn_more_content">
@@ -183,7 +185,7 @@
                 <li class="learn_more_title">
                     Chemical cerulenin
                 </li>
-                <div id="learn_more_4" class="learn_more" onclick="more_information('learn_more_4','learn_more_4_content','information3')">
+                <div id="learn_more_4" class="learn_more" onclick="more_information('learn_more_4','learn_more_4_content','information3');photo_change('page13-roles','page13-role3','page13-role1')">
                     <div class="triangle_to_right"></div>Learn more
                 </div>
                 <div id="learn_more_4_content" class="learn_more_content">
@@ -193,6 +195,8 @@
         </div>
         <div class="illustration" id="page13-roles">
             <img id="page13-role1" src="<?php echo imgfile;?>/home/page13-role1.png">
+            <img id="page13-role2" src="<?php echo imgfile;?>/home/page13-role2.png">
+            <img id="page13-role3" src="<?php echo imgfile;?>/home/page13-role3.png">
         </div>
     </div>
 

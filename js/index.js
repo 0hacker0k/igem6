@@ -239,8 +239,8 @@ function other_animation(page,direct,position){
                     return false;
                 case 5://pair7
                     var epa = document.getElementById('page5_epa');
-                    page.style.transition="1.0s";
-                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    page.style.transition="0.0s";
+                    page.style.top=((screen_height-page.clientHeight)/2+screen_height)+"px";
                     page.style.opacity="1";
                     epa.style="--rotate:"+(-30)+"deg;";
                     epa.style.transition="0.0s linear";
@@ -249,39 +249,44 @@ function other_animation(page,direct,position){
                     epa.style.left=(screen_width*0.2)+"px";
                     if(page.animate!=null)clearTimeout(page.animate);
                     page.animate=setTimeout(() => {
-                        epa.style.opacity="1";
+                        page.style.transition="1.0s";
+                        page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                        page.style.opacity="1";
                         page.animate=setTimeout(() => {
-                            epa.style.transition="1.0s linear";
-                            epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
-                            epa.style.left=(screen_width*0.415)+"px";
+                            epa.style.opacity="1";
                             page.animate=setTimeout(() => {
-                                epa.style.transition="0.25s linear";
-                                epa.style.top=((screen_height*0.46-epa.clientHeight))+"px";
-                                epa.style.left=(screen_width*0.53)+"px";
+                                epa.style.transition="1.0s linear";
+                                epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
+                                epa.style.left=(screen_width*0.415)+"px";
                                 page.animate=setTimeout(() => {
-                                    epa.style.top=((screen_height*0.42-epa.clientHeight))+"px";
-                                    epa.style.left=(screen_width*0.645)+"px";
+                                    epa.style.transition="0.25s linear";
+                                    epa.style.top=((screen_height*0.46-epa.clientHeight))+"px";
+                                    epa.style.left=(screen_width*0.53)+"px";
                                     page.animate=setTimeout(() => {
-                                        epa.style.top=((screen_height*0.46-epa.clientHeight))+"px";
-                                        epa.style.left=(screen_width*0.76)+"px";
+                                        epa.style.top=((screen_height*0.42-epa.clientHeight))+"px";
+                                        epa.style.left=(screen_width*0.645)+"px";
                                         page.animate=setTimeout(() => {
-                                            epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
-                                            epa.style.left=(screen_width*0.875)+"px";
+                                            epa.style.top=((screen_height*0.46-epa.clientHeight))+"px";
+                                            epa.style.left=(screen_width*0.76)+"px";
                                             page.animate=setTimeout(() => {
-                                                epa.style.top=((screen_height*0.78-epa.clientHeight))+"px";
-                                                epa.style.left=(screen_width*0.99)+"px";
+                                                epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
+                                                epa.style.left=(screen_width*0.875)+"px";
                                                 page.animate=setTimeout(() => {
-                                                    epa.style.top=((screen_height*1.06-epa.clientHeight))+"px";
-                                                    epa.style.left=(screen_width*1.105)+"px";
-                                                    page.animate=null;
+                                                    epa.style.top=((screen_height*0.78-epa.clientHeight))+"px";
+                                                    epa.style.left=(screen_width*0.99)+"px";
+                                                    page.animate=setTimeout(() => {
+                                                        epa.style.top=((screen_height*1.06-epa.clientHeight))+"px";
+                                                        epa.style.left=(screen_width*1.105)+"px";
+                                                        page.animate=null;
+                                                    }, 250);
                                                 }, 250);
                                             }, 250);
                                         }, 250);
                                     }, 250);
-                                }, 250);
-                            }, 1000);
-                        }, 1);
-                    }, 1000);
+                                }, 1000);
+                            }, 1);
+                        }, 1000);
+                    }, 1);
                     return false;
                 case 19://pair8
                     page.style.transition="0.0s";
@@ -341,8 +346,8 @@ function other_animation(page,direct,position){
                     return false;
                 case 5://pair-
                     var epa = document.getElementById('page5_epa');
-                    page.style.transition="1.0s";
-                    page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                    page.style.transition="0.0s";
+                    page.style.top=((screen_height-page.clientHeight)/2-screen_height)+"px";
                     page.style.opacity="1";
                     epa.style="--rotate:"+(-30)+"deg;";
                     epa.style.transition="0.0s linear";
@@ -351,39 +356,44 @@ function other_animation(page,direct,position){
                     epa.style.left=(screen_width*0.2)+"px";
                     if(page.animate!=null)clearTimeout(page.animate);
                     page.animate=setTimeout(() => {
-                        epa.style.opacity="1";
+                        page.style.transition="1.0s";
+                        page.style.top=((screen_height-page.clientHeight)/2)+"px";
+                        page.style.opacity="1";
                         page.animate=setTimeout(() => {
-                            epa.style.transition="1.0s linear";
-                            epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
-                            epa.style.left=(screen_width*0.415)+"px";
+                            epa.style.opacity="1";
                             page.animate=setTimeout(() => {
-                                epa.style.transition="0.25s linear";
-                                epa.style.top=((screen_height*0.46-epa.clientHeight))+"px";
-                                epa.style.left=(screen_width*0.53)+"px";
+                                epa.style.transition="1.0s linear";
+                                epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
+                                epa.style.left=(screen_width*0.415)+"px";
                                 page.animate=setTimeout(() => {
-                                    epa.style.top=((screen_height*0.42-epa.clientHeight))+"px";
-                                    epa.style.left=(screen_width*0.645)+"px";
+                                    epa.style.transition="0.25s linear";
+                                    epa.style.top=((screen_height*0.46-epa.clientHeight))+"px";
+                                    epa.style.left=(screen_width*0.53)+"px";
                                     page.animate=setTimeout(() => {
-                                        epa.style.top=((screen_height*0.46-epa.clientHeight))+"px";
-                                        epa.style.left=(screen_width*0.76)+"px";
+                                        epa.style.top=((screen_height*0.42-epa.clientHeight))+"px";
+                                        epa.style.left=(screen_width*0.645)+"px";
                                         page.animate=setTimeout(() => {
-                                            epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
-                                            epa.style.left=(screen_width*0.875)+"px";
+                                            epa.style.top=((screen_height*0.46-epa.clientHeight))+"px";
+                                            epa.style.left=(screen_width*0.76)+"px";
                                             page.animate=setTimeout(() => {
-                                                epa.style.top=((screen_height*0.78-epa.clientHeight))+"px";
-                                                epa.style.left=(screen_width*0.99)+"px";
+                                                epa.style.top=((screen_height*0.58-epa.clientHeight))+"px";
+                                                epa.style.left=(screen_width*0.875)+"px";
                                                 page.animate=setTimeout(() => {
-                                                    epa.style.top=((screen_height*1.06-epa.clientHeight))+"px";
-                                                    epa.style.left=(screen_width*1.105)+"px";
-                                                    page.animate=null;
+                                                    epa.style.top=((screen_height*0.78-epa.clientHeight))+"px";
+                                                    epa.style.left=(screen_width*0.99)+"px";
+                                                    page.animate=setTimeout(() => {
+                                                        epa.style.top=((screen_height*1.06-epa.clientHeight))+"px";
+                                                        epa.style.left=(screen_width*1.105)+"px";
+                                                        page.animate=null;
+                                                    }, 250);
                                                 }, 250);
                                             }, 250);
                                         }, 250);
                                     }, 250);
-                                }, 250);
-                            }, 1000);
-                        }, 1);
-                    }, 1000);
+                                }, 1000);
+                            }, 1);
+                        }, 1000);
+                    }, 1);
                     return false;
                 case 18://pair9
                     var logo = document.getElementById('team_logo_2');
@@ -594,7 +604,26 @@ function index_move_to_page(id){
         move_to_item_temp=null;
         going_top=false;
     }, 1000);
-} 
+}
+function photo_change(all,show_img,hidden_img){
+    var mod=0;
+    if(document.getElementById(show_img).style.display=="block"){
+        mod=1;
+    }
+    var item=document.getElementById(all);
+    item.getElementsByTagName('img');
+    var item_len=item.length;
+    for(var i=0;i<item_len;i++){
+        item[i].style.display="none";
+    }
+    if(mod==1){
+        document.getElementById(show_img).style.display="none";
+        document.getElementById(hidden_img).style.display="block";
+    }else{
+        document.getElementById(show_img).style.display="block";
+        document.getElementById(hidden_img).style.display="none";
+    }
+}
 var parameter=document.getElementById("parameter");
 parameter.innerHTML = ".first_page{--nav_height: "+document.getElementById("navbar").clientHeight+"px;}";
 parameter=document.getElementById("first_background");
