@@ -8,7 +8,7 @@ function preload_stage5_take(){
     load_transition(this);
     preload_congratulation(this);
     this.load.image('bac', prefix+'/stage5/bac.png');
-    this.load.image('bac_gel', prefix+'/stage5/Plate.png');
+    this.load.image('bac_gel', prefix+'/stage5/plate.png');
     this.load.image('back', prefix+'/main/back.png');
     this.load.image('stick', prefix+'/stage5/stick.png');
     this.load.image('pressure', prefix+'/stage5/pressure.png');

@@ -3,7 +3,7 @@ function preload_stage1_choose(){
     this.load.image('gene1', prefix+'/stage1/1.png');
     this.load.image('gene2', prefix+'/stage1/2.png');
     this.load.image('gene3', prefix+'/stage1/3.png');
-    this.load.image('DNA', prefix+'/stage1/DNA.png');
+    this.load.image('DNA', prefix+'/stage1/dna.png');
     this.load.image('back', prefix+'/main/back.png');
     this.load.image('banner', prefix+'/stage1/banner.png');
     load_talkbox(this);
