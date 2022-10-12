@@ -34,7 +34,7 @@ function preload_stage2_gel(){
     preload_congratulation(this);
     //else
     this.load.image('trashcan', prefix+'/stage2/trashcan.png');
-    this.load.image('TAE', prefix+'/stage2/TAE.png');
+    this.load.image('TAE', prefix+'/stage2/tae.png');
     this.load.image('agarose', prefix+'/stage2/agarose.png');
     this.load.image('desk', prefix+'/stage2/desk.png');
     this.load.image('background', prefix+'/stage2/background.jpg');
