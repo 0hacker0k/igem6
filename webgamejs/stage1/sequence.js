@@ -8,11 +8,11 @@ function preload_stage1_sequence(){
         { frameWidth: 250, frameHeight: 25 }
     );
     this.load.spritesheet('card',
-        prefix+'/stage1/ATCG.png',
+        prefix+'/stage1/atcg.png',
         { frameWidth: 140, frameHeight: 192 }
     );//載入畫楨
     this.load.spritesheet('button',
-        prefix+'/stage1/small-ATCG.png',
+        prefix+'/stage1/small-atcg.png',
         { frameWidth: 90, frameHeight: 90 }
     );
 }

@@ -5,7 +5,7 @@ function preload_stage1_pcr(){
     preload_congratulation(this);
     this.load.image('back', prefix+'/main/back.png');
     this.load.spritesheet('gene',
-        prefix+'/stage1/pcr/ATCG.png',
+        prefix+'/stage1/pcr/atcg.png',
         { frameWidth: 220, frameHeight: 462 }
     );
 }

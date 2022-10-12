@@ -34,7 +34,7 @@ function preload_stage2_gel(){
     preload_congratulation(this);
     //else
     this.load.image('trashcan', prefix+'/stage2/trashcan.png');
-    this.load.image('TAE', prefix+'/stage2/TAE.png');
+    this.load.image('TAE', prefix+'/stage2/tae.png');
     this.load.image('agarose', prefix+'/stage2/agarose.png');
     this.load.image('desk', prefix+'/stage2/desk.png');
     this.load.image('background', prefix+'/stage2/background.jpg');
@@ -53,10 +53,10 @@ function preload_stage2_gel(){
     this.load.image("qte_bar",prefix+'/stage2/qte-bar.png');
     this.load.image("gel_machine",prefix+'/stage2/gel-machine.png');
     this.load.image("uv",prefix+'/stage2/uv.png');
-    this.load.image("note",prefix+'/stage2/Protocol.png');
-    this.load.image("protocol1","img/stage2/protocol1.jpg");
-    this.load.image("protocol2","img/stage2/protocol2.jpg");
-    this.load.image("protocol3","img/stage2/protocol3.jpg");
+    this.load.image("note",prefix+'/stage2/protocol.png');
+    this.load.image("protocol1",prefix+"/stage2/protocol1.jpg");
+    this.load.image("protocol2",prefix+"/stage2/protocol2.jpg");
+    this.load.image("protocol3",prefix+"/stage2/protocol3.jpg");
     this.load.image("machine",prefix+'/stage2/gel-making-machine.png');
     this.load.image('wifi',prefix+'/stage2/wifi.png');
     //light gel

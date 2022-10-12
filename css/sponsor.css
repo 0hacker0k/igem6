@@ -29,6 +29,16 @@ a{
     z-index: 2;
     overflow: hidden;
 }
+h1{
+    width:100%;
+    text-align: center;
+    margin-top:10%;
+    color: #9c0a0a;
+    /* font-family: 'comic'; */
+    font-family: 'lhandw';
+    font-size: 3em;
+    font-weight: 900;
+}
 .sponsor_card{
     margin-left: 5%;
     width: 24%;
