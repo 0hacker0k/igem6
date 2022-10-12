@@ -96,6 +96,12 @@
             <div class="full_block">
                 <div class="img" style="--width:50%;">
                     <img src="<?php echo imgfile;?>/hardware/hardware01.png"/>
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>      
+            <div class="full_block">
+                <div class="img" style="--width:90%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware01.gif"/>
                     <div class="triangle_to_top"></div>Agar bottle cap
                 </div>
             </div>
@@ -288,9 +294,16 @@
             </p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>      
             <div class="full_block">
-                <div class="img" style="--width:60%;">
+                <div class="img" style="--width:50%;">
                     <img src="<?php echo imgfile;?>/hardware/hardware09.png"/>
                     <div class="triangle_to_top"></div>Gel Preparation Machine
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>      
+            <div class="full_block">
+                <div class="img" style="--width:30%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware095.png"/>
+                    <div class="triangle_to_top"></div>Aluminum funnel
                 </div>
             </div>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>
@@ -436,6 +449,14 @@
             <p>
                 &emsp;&emsp;After the gel is solidified, the upper mold will move vertically to a fixed height. At that time, the upper mold, the gel pusher, and the cutting tunnel will be horizontal coplanar. The final demolding step is executed by the gel pusher. The pusher uses a motor to drive the gear and the gear rack to implement forward motion to demold the gel from the upper mold.
             </p>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>
+            <div class="full_block">
+                <div class="img" style="--width:90%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware199.gif"/>
+                    <div class="triangle_to_top"></div>Gel pusher
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>
             <p class="h13">
                 The cutting tunnel
             </p>
@@ -527,7 +548,16 @@
             <h2 class="h13">3D printer</h2>
             <p>&emsp;&emsp;In order to quickly test the feasibility of our concept and build complex shapes, we utilized 3D printing technology to build our prototype, because it is relatively simple and straightforward compared to traditional machining. Before printing it, we had to first build a model with a Computer-Aided-Design (CAD) diagram. Based on a course in the mechanical engineering department we chose CREO, a convenient software for engineering drawing used worldwide. After that, we needed to turn the file into mechanical code (.gcode ). Then, our 3D printer Ultimaker Cura 4.0 could read our blueprint and start to print.</p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>
+            <div class="full_block">
+                <div class="img" style="--width:60%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware216.png"/>
+                    <div class="triangle_to_top"></div>3D printer
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>
             <h2 class="h13">Machining</h2>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>
+            
             <p>&emsp;&emsp;In order to allow our product to withstand moist heat sterilization, a widely used method in the laboratory, we made a model, completing most of the process in our factory classroom.</p>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>
             <ul>    
@@ -569,11 +599,20 @@
             </div>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>      
             <div class="full_block">
-                <div class="img" style="--width:30%;">
+                <div class="img" style="--width:35%;">
                     <img src="<?php echo imgfile;?>/hardware/hardware22.png"/>
                 </div>
-                <div class="img" style="--width:30%;">
+                <div class="img" style="--width:35%;">
                     <img src="<?php echo imgfile;?>/hardware/hardware23.png"/>
+                </div>
+            </div>
+            <div class="marge" style="--width:calc(2em + 2vh)"></div>      
+            <div class="full_block">
+                <div class="img" style="--width:35%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware22.gif"/>
+                </div>
+                <div class="img" style="--width:35%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware23.gif"/>
                 </div>
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>    

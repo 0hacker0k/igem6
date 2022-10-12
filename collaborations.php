@@ -54,7 +54,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Refining our PACOmega project</h1>
             </div>
             <div id="3" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Project feedback From Abroad - <a href="https://2022.igem.wiki/exeter/index.html" class="link_subtitle_no_bgc">Exeter</a></h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Project feedback From Abroad - <a href="https://2022.igem.wiki/exeter/index.html" class="link_subtitle_no_bgc">Exeter</a></h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -69,7 +69,7 @@
                 &emsp;&emsp;After the meeting, we got feedback and some questions to clarify our presentation, and we also learned from their presentation skills. We changed our original lengthy and tedious slides into a more simplified and concise version.
             </p>
             <div id="4" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Project feedback From Abroad - <a href="https://2022.igem.wiki/korea-hs/collaborations" class="link_subtitle_no_bgc">Korea_HS</a></h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Project feedback From Abroad - <a href="https://2022.igem.wiki/korea-hs/collaborations" class="link_subtitle_no_bgc">Korea_HS</a></h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -81,7 +81,7 @@
                 &emsp;&emsp;In our virtual meeting with iGEM Korea_HS we exchanged information about our projects. We gave comments on each other’s presentations and asked questions about how to improve, including details about how we could integrate into society and how to be innovative in promoting our projects. After the meeting, they asked us to participate in several of their projects and conferences, and we indeed gained a lot of new abilities and knowledge due to these collaboration opportunities.
             </p>
             <div id="5" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Project feedback From Abroad - <a href="https://2022.igem.wiki/ucopenhagen/collaborations#item2" class="link_subtitle_no_bgc">Copenhagan</a></h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Project feedback From Abroad - <a href="https://2022.igem.wiki/ucopenhagen/collaborations#item2" class="link_subtitle_no_bgc">Copenhagan</a></h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -93,7 +93,7 @@
                 &emsp;&emsp;Our project and team Copenhagen’s share the same goal of protecting marine resources, but with different approaches. They focused on making biodegradable fishing nets, since nets compose a great amount of marine garbage nowadays. On the other hand, our team tackled the problem of diminishing marine resources by producing EPA supplements that are commonly made from fish and by making fish oil using synthetic biology. During our meeting, both teams shared our presentations and how we tackle the care of marine resources. Not only did we exchange opinions on both our projects, but they also gave us advice on our CVD-free cookbook to focus on Mediterranean diets due to their experience in food science, which we deeply appreciated.
             </p>
             <div id="6" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Project feedback from local - Taiwan iGEM meet '22</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Project feedback from local - Taiwan iGEM meet '22</h2>
             </div>
             <p>
                 &emsp;&emsp;On 8/22, we joined <b>Taiwan iGEM meet ‘22</b>, a live conference, to exchange our ideas with other Taiwan iGEM teams. The <a href="https://2022.igem.wiki/ncku-tainan/collaborations" class="link_subtitle">NCKU_Tainan</a> iGEM team hosted this meet-up, and the participants included <a href="https://2022.igem.wiki/nchu-taichung/" class="link_subtitle">NCHU_Taichung</a>, <a href="https://2022.igem.wiki/nthu-taiwan/collaborations" class="link_subtitle">iGEM NTHU</a>, <a href="https://2022.igem.wiki/nycu-formosa/collaborations" class="link_subtitle">NYCU_Formosa</a>, <a href="https://2022.igem.wiki/kcis-xiugang-taipei/collaborations" class="link_subtitle">iGEM KCIS Xiugang</a>, <a href="https://2022.igem.wiki/csmu-taiwan/collaborations#taiwanigemmeet22" class="link_subtitle">iGEM CSMU</a>, <a href="https://2022.igem.wiki/mingdao/collaborations#NCKU_Tainan%202022%20and%20Taiwan%20iGEMers%20Jamboree" class="link_subtitle">iGEM Mingdao</a>, <a href="https://2022.igem.wiki/gems-taiwan/collaborations#Taiwan-Synbio-Alliance-Meetup" class="link_subtitle">GEMS Taiwan</a>, <a href="https://2022.igem.wiki/nycu-taipei/partnership#collaboration" class="link_subtitle">NYCU_Taipei</a>, and our team. During the conference, all participants gathered to discuss each team’s projects and gave concrete feedback in the hope of improving, including presentation and inspecting and learning from each other’s posters.
@@ -124,7 +124,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="7" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Project feedback from local - TCUS Entrepreneurship Competition</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Project feedback from local - TCUS Entrepreneurship Competition</h2>
             </div>
             <p>
                 &emsp;&emsp;After the experience in <i>Taiwan iGEM meet '22</i>, we hosted a competition for the teams in Taiwan Comprehensive University System (TCUS), a group of four universities in southern Taiwan, including <a href="https://2022.igem.wiki/ncku-tainan/collaborations" class="link_subtitle">NCKU_Tainan</a> and <a href="https://2022.igem.wiki/nchu-taichung/" class="link_subtitle">NCHU_Taichung</a>, to attend and present projects on our CCU campus to imitate the competitive vibe of the Grand Jamboree. Not only did we want to interchange ideas between different teams, but we also wanted to seek suggestions from experts already working in the bioscience industry. 
@@ -158,7 +158,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">United we stand</h1>
             </div>
             <div id="9" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Our PACOmega project - <i>CCU_Taiwan</i></h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Our PACOmega project - <i>CCU_Taiwan</i></h2>
             </div>
             <p>
                 &emsp;&emsp;During our IHP interview with <a href="https://2022.igem.wiki/ccu-taiwan/human-practices#13" class="link_subtitle">dietitian Miranda Chen</a>, she told us that an EPA supplement alone wasn’t sufficient to prevent CVD. From her professional perspective, she suggested that we should also emphasize the importance of having a healthy diet and daily life.
@@ -183,14 +183,14 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="10" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The iGEM Theme Song project - <i>iGEM_CSMU</i></h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The iGEM Theme Song project - <i>iGEM_CSMU</i></h2>
             </div>
             <p>
                 &emsp;&emsp;We got acquainted with iGEM_CSMU at <b>Taiwan iGEM Meet '22</b>. After the meet-up, they created an <a href="https://2022.igem.wiki/csmu-taiwan/collaborations#themesong" class="link_subtitle">iGEM theme song</a> and invited us to record the song and shoot a music video together. With a catchy melody and lyrics describing the days during the preparation of iGEM, we spread the joy and fun of participating in a synthetic biology competition. Also, iGEM_CSMU has translated the theme song into English, so the international iGEM community can share this song and its delight anywhere at any time.
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="11" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The iGEM Map project - <i>NTHU_Taiwan</i></h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The iGEM Map project - <i>NTHU_Taiwan</i></h2>
             </div>
             <p>
                 &emsp;&emsp;<a href="https://2022.igem.wiki/nthu-taiwan/collaborations" class="link_subtitle">NTHU_Tawian</a> created an iGEM map this year to promote the importance of synthetic biology and point out where these experiments are located in the world. They collected characters created by various iGEM groups and put them on a map so that everyone can be immersed in this global village of synthetic biology. CCU_Taiwan, which is located in Minxiong, Chiayi, and our own iconic <i>E. coli</i> character can be found in the southern part of Taiwan!
@@ -204,7 +204,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="12" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The Alzheimer project - <i>CU_Egypt</i></h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The Alzheimer project - <i>CU_Egypt</i></h2>
             </div>
             <p>
                 &emsp;&emsp;This year, <a href="https://2022.igem.wiki/cu-egypt/collaborations.html" class="link_subtitle">CU_Egypt</a> is working on treating Alzheimer’s Disease, and they wrote a book to spread awareness of it. The content of the book is the diary of a patient that has Alzheimer’s Disease, and contains knowledge of the disease. To make more people more aware of Alzheimer's, they asked different iGEM teams to help them translate the book into various languages. Our team helped translate their storybook into Chinese Mandarin for people in Sinophone districts to read and learn about Alzheimer’s disease, and we also obtained a lot of new knowledge during the process.
@@ -231,7 +231,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="13" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The Badge Project - Korea_HS</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The Badge Project - Korea_HS</h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:80%;">
@@ -244,7 +244,7 @@
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="14" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The SDG Conference - Korea_HS</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The SDG Conference - Korea_HS</h2>
             </div>
             <p>
                 &emsp;&emsp;To emphasize the importance of the Sustainable Development Goals (SDGs), which include promotion of human health and conservation of marine resources, and discuss how we can take action to make the world a better place, we participated in a SDG conference held by <a href="https://2022.igem.wiki/korea-hs/collaborations" class="link_subtitle">Korea_HS</a> online. The conference lasted two days and included several meaningful agendas.
@@ -272,7 +272,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Together, we louder</h1>
             </div>
             <div id="16" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The Infographic Exchange Project -  <i>Gems_Taiwan</i>, <i>Korea_HS</i>, <i>Thailand_RS</i></h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The Infographic Exchange Project -  <i>Gems_Taiwan</i>, <i>Korea_HS</i>, <i>Thailand_RS</i></h2>
             </div>
             <p>
                 &emsp;&emsp;This year, <a href="https://2022.igem.wiki/gems-taiwan/partnership" class="link_subtitle">Gems_Taiwan</a>, Korea_HS, Thailand_RIS, and <a href="https://2022.igem.wiki/uioslo-norway/partnership" class="link_subtitle">UiOslo_Norway</a> partnered together to create an infographic exchange project. We gathered infographics from different iGEM teams and translated them into Mandarin, Korean, Thai, and Norwegian, to eliminate barriers between countries and allow people who don't speak English to learn about iGEM projects. We participated in this project by giving our team’s infographic, hoping the world can know more about the crisis of cardiovascular disease and how we can provide a solution.
@@ -297,7 +297,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="17" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">NCHU Taiwan iGEM youtube channel- <i>NCHU_Taiwan</i></h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">NCHU Taiwan iGEM youtube channel- <i>NCHU_Taiwan</i></h2>
             </div>
             <p>
                 &emsp;&emsp;<a href="https://2022.igem.wiki/nchu-taichung/" class="link_subtitle">NCHU_Taichung</a> created a YouTube channel called "<a href="https://www.youtube.com/channel/UCS1MK60X7kBsEvcOowSieCQ" class="link_subtitle">Taiwan iGEM</a>", where they will post videos created by several iGEM teams around Taiwan. The contents of the videos are about each of our projects, but in Mandarin, so that the public in Taiwan can understand them easily. Furthermore, short videos like the ones on "<a href="https://www.youtube.com/channel/UCS1MK60X7kBsEvcOowSieCQ" class="link_subtitle">Taiwan iGEM</a>" YouTube channel are a trend nowadays so that people can not only obtain knowledge quickly, but also can arouse their attention on synthetic biology in a short time.

@@ -92,25 +92,25 @@
     <div class="article">
         <div class="in_center">
             <div id="2" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">A thousand miles begins with a single step</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">A thousand miles begins with a single step</h2>
             </div>
             <p>
                 &emsp;&emsp;The goals of the PACOmega project are generating an alternative EPA resource, raising public awareness of cardiovascular disease (CVD) prevention, and eliminating the prejudice against synthetic biology. To achieve these goals, we determined the original design for generating EPA through synthetic biology, and propagated our PACOmega project and synthetic biology on social media. However, soon after we implemented our naive PACOmega project, we learned that the scope and dimension of our project was far from enough.
             </p>
             <div id="3" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">From benchside to bedside</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">From benchside to bedside</h2>
             </div>
             <p>
                 &emsp;&emsp;To comprehend the needs for our PACOmega project, we first consulted a <b>cardiologist (name withheld by request)</b> to refine our design for generating an alternative EPA resource. The cardiologist also inspired us to remember that an excellent project could not ignore what society truly wants. Therefore, we performed <b>street surveys</b> to reach out to our target audience. We also invited a local <b>pharmacist, Mr. Wu</b>, to share his observations about the marketing of EPA supplements, and the attitude of local people toward nutrient supplements. To prepare our EPA product for the market, we consulted with <b>Dr. Wu</b>, the secretary general of the Health Food Society of Taiwan. Finally, through the activity of the “Taiwan Comprehensive University System (TCUS) entrepreneurship competition”, we contacted the <b>CEO of TWBIO</b> to learn how to promote our product. With these activities, we clarified the axis between EPA generation, product formulation, and future market.
             </p>
             <div id="4" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Balanced sight, balanced life</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Balanced sight, balanced life</h2>
             </div>
             <p>
                 &emsp;&emsp;Next, since taking EPA supplements is not the only way to prevent CVD, we sought help from a <b>dietitian</b> (Ms. Chen) and a <b>professor</b> (Dr. Lee) with expertise in exercise for the elderly. The dietitian informed us of the concept of a balanced life, in which diet and exercise are both important for any kind of disorder. The professor further pointed out that the frequency and intensity of exercise are also important factors for CVD prevention. Based on this precious feedback we developed an online recipe book to reduce the risk of CVD, and a campus walking activity (to encourage exercise). These activities raised the awareness of the CVD crisis and also showed the benefits of a balanced life.
             </p>
             <div id="5" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The more you know, the less you fear</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The more you know, the less you fear</h2>
             </div>
             <p>
                 &emsp;&emsp;From the street surveys, we found that the negative impression of synthetic biology is mostly fear of the unknown. After a detailed explanation, most people could accept the idea of using synthetic biology to make the world better. We are inspired that, in addition to linking the synthetic biology concept with activities promoting CVD prevention, we could hold activities more focused on synthetic biology. This idea led to the <b>online web game</b>, <b>open lab activity</b>, and <b>TCUS entrepreneurship competition</b>. Through the online web game, we shared the basic process of synthetic biology. In the open lab activity, we not only shared synthetic biology with teeangers, but also improved our presentation and pitch based on their feedback. Importantly, we witnessed the urban-rural gap directly, which inspired us to develop <i>affordable laboratory equipment</i>. In the TCUS entrepreneurship competition, we shared synthetic biology with freshmen. 
@@ -122,7 +122,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">From benchside to bedside</h1>
             </div>
             <div id="7" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Unveiling the truth</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Unveiling the truth</h2>
             </div>
             <p>
                 &emsp;&emsp;CVD is a rising crisis both in the world and Taiwan. The World Health Organization (WHO) estimated that 17.9 million people die from CVDs each year. Not surprisingly, CVD has been among the top three domestic causes of death for nearly thirty years.
@@ -137,13 +137,13 @@
                 &emsp;&emsp;Therefore, we decided to perform a <b>street survey</b>, and consulted with a <b>local pharmacist</b> to gain more information about marketing EPA supplements, and how the customers think. 
             </p>
             <div id="8" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Street survey</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Street survey</h2>
             </div>
             <p>
                 &emsp;&emsp;While it seemed like a brilliant idea to directly survey the opinions about EPA supplements and synthetic biology from the local people, we were hampered, seriously but not surprisingly, by the result of our market survey. People agreed that a pure, high concentration EPA supplement is attractive, but not if it came from <i>E. coli</i>. Importantly, however, the negative impression of synthetic biology could be reversed or mitigated after detailed explanation. Hence, to be responsible and reliable scientists, it is our duty to clarify the truth about synthetic biology.
             </p>
             <div id="9" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The local market</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The local market</h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:25%;">
@@ -167,7 +167,7 @@
                 </div>
             </div>
             <div id="10" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The gap between lab and market</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">The gap between lab and market</h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:25%;">
@@ -194,7 +194,7 @@
                 </div>
             </div>
             <div id="11" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">One more step to the market</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">One more step to the market</h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:25%;">
@@ -231,7 +231,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Balanced sight, balanced life</h1>
             </div>
             <div id="13" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Healthy living and healthy eating</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Healthy living and healthy eating</h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:25%;">
@@ -252,7 +252,7 @@
                 &emsp;&emsp;At the same time, we collaborated with the Center for Innovative Research on Aging Society in our university to hold a <a href="https://2022.igem.wiki/ccu-taiwan/education#7" class="link_subtitle">campus walking activity</a> for hundreds of elderly living in nearby regions. In this activity, some participants shared their experience of fighting with CVDs, which greatly encouraged us. 
             </p>
             <div id="14" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">We Can Make It Better!</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">We Can Make It Better!</h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:25%;">
@@ -279,19 +279,19 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">The more you know,</br>the less you fear</h1>
             </div>
             <div id="16" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Bridge the gap</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Bridge the gap</h2>
             </div>
             <p>
                 &emsp;&emsp;From the street survey, we learned that the negative impression of synthetic biology can be reversed or mitigated by education. Therefore, we tried to bridge the gap between science and society through activities. Accordingly, we designed a <a href="https://2022.igem.wiki/ccu-taiwan/webgame" class="link_subtitle">web game</a> for all ages, an <a href="https://2022.igem.wiki/ccu-taiwan/education#2" class="link_subtitle">open lab activity</a> for teenagers, and the <a href="https://2022.igem.wiki/ccu-taiwan/communication#9" class="link_subtitle">TCUS entrepreneurship competition</a> for university freshmen.
             </p>
             <div id="17" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">University-society responsibility (USR)</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">University-society responsibility (USR)</h2>
             </div>
             <p>
                 &emsp;&emsp;To fill the gap between science and society, and share the beauty of synthetic biology, we held an Open Lab science camp and invited high school students to get involved in <a href="https://2022.igem.wiki/ccu-taiwan/education#2" class="link_subtitle">synthetic biological experiments</a>. We successfully left a positive impression of synthetic biology to high school students. However, we also learned an important truth from these students: not all high schools are fully funded in experimental equipment, especially those schools in rural regions. This truth made us wonder if we could do a little more to share our resources with others, the so-called USR.
             </p>
             <div id="18" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Affordable equipment for disadvantaged students</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Affordable equipment for disadvantaged students</h2>
             </div>
             <div class="full_block">
                 <div class="img" style="--width:25%;">

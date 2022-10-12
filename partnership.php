@@ -52,7 +52,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Initiation of partnership</h1>
             </div>
             <div id="3" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">ARS 2022</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">ARS 2022</h2>
             </div>
             <p>
                 &emsp;&emsp;Asian Federation of Biotechnology (AFOB) is a non-profit organization, and the AFOB Regional Symposium (ARS) is a major activity for exchange of research about biotechnology. We were invited to participate in this conference by NCKU_Tainan, to share our research project in synthetic biology experiments with different iGEM teams in Asia and to broaden our view. 
@@ -64,7 +64,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Growth of partnership</h1>
             </div>
             <div id="5" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Taiwan iGEM Meet '22</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Taiwan iGEM Meet '22</h2>
             </div>
             <p>
                 &emsp;&emsp;Following the ARS, NCKU_Tainan hosted a physical meeting event for all the iGEM teams in Taiwan. In the meeting, we had a chance to meet up with teams from other colleges, and be able to exchange our projects with each other. Moreover, this was our first time to make a public presentation, and the experience really helped our team to sharpen our skills of presenting on stage and responding to questions. By joining in this activity, we and the NCKU_Tainan found that we were both interested in turning the crazy ideas into business. Our consensus finally led to the <b>TCUS Entrepreneurship Competition</b>. 
@@ -80,7 +80,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Maturation of partnership</h1>
             </div>
             <div id="7" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Taiwan Comprehensive University System (TCUS) Entrepreneurship Competition</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Taiwan Comprehensive University System (TCUS) Entrepreneurship Competition</h2>
             </div>
             <p>
                 &emsp;&emsp;Although we are all interested in starting a business, it is not easy for student teams to reach out to a biotech company in Taiwan. Joining a symposium or an entrepreneurship competition would make it much easier for us to connect with industry. 
@@ -105,7 +105,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Continued partnership</h1>
             </div>
             <div id="9" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">United talk show</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">United talk show</h2>
             </div>
             <p>
                 &emsp;&emsp;During the break time at the TCUS Entrepreneurship Competition, we learned that the NCKU_Tainan team had used talk shows to promote their project in an interesting way. We all considered that it would be great if we could have a united talk show in the future. Therefore, CCU_Taiwan and NCKU_Tainan collaborated on a talk show at CCU to let the public know more about our project, and use an entertaining way to share synthetic biology and an iGEMer’s daily life. 
@@ -128,7 +128,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Future of partnership</h1>
             </div>
             <div id="11" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Project collaboration</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Project collaboration</h2>
             </div>
             <p>
                 &emsp;&emsp;In addition to these activities, CCU_Taiwan and NCKU_Tainan also searched for a connection between our projects, and came up with a crazy idea to try to combine our projects. One common point lies in the high risk of CVD for astronauts. Astronauts who travel beyond the earth’s magnetic field are more likely to suffer from CVDs, which may be caused by radiation-induced high blood pressure. (Delp, Charvat, et. al. 2016). 
@@ -136,16 +136,17 @@
             <p>
                 &emsp;&emsp;Since EPA has been confirmed to relax blood vessels (Sherratt, Libby et al. 2022), we and NCKU_Tainan hope to produce an <i>E. coli</i> that could survive the radiation of space to produce EPA supplements. This naive idea may be too crazy, but we believe that one day this crazy idea may turn out to be another new business. 
             </p>
+            <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <p class="h25">
                 Reference:
-                <ul>
+                <ol>
                     <li>
                         Delp, M. D., J. M. Charvat, C. L. Limoli, R. K. Globus and P. Ghosh (2016). "Apollo Lunar Astronauts Show Higher Cardiovascular Disease Mortality: Possible Deep Space Radiation Effects on the Vascular Endothelium." Sci Rep 6: 29901.
                     </li>
                     <li>
                         Sherratt, S. C. R., P. Libby, D. L. Bhatt and R. P. Mason (2022). "A biological rationale for the disparate effects of omega-3 fatty acids on cardiovascular disease outcomes." Prostaglandins Leukot Essent Fatty Acids 182: 102450.
                     </li>
-                </ul>
+                </ol>
             </p>          
             <div class="marge" style="--width:calc(3em + 5vh)"></div>      
         </div>
