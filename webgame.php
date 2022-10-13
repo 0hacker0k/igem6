@@ -25,7 +25,7 @@
                 <select id="language_set" onChange="changeLang(this.options[this.selectedIndex].value)">
                     <option value="en">English</option>
                     <option value="zh-tw">繁體中文</option>
-                    <option value="zh-cn">簡體中文</option>
+
                 </select>
             </div>
             <div id="game"></div>
