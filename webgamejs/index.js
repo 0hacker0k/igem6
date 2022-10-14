@@ -20,11 +20,20 @@ var stop=0; //whether should stop the role
 var set_width=1280; //the web game window size(width) 1260
 var set_height=720; //the web game window size(height) 900
 var scale=0.9; //the web game scale of window size
-if(isMobileDevice()){
-    scale=0.7
-}
+// if(isMobileDevice()){
+//     scale=0.7
+// }
 var width=set_width*scale; //the web game real window size(width)
 var height=set_height*scale; //the web game real window size(height)
+if(isMobileDevice()){
+    scale=0.8;
+    if(window.innerHeight>window.innerWidth){
+        width=(window.innerHeight*scale);
+    }else{
+        width=(window.innerWidth*scale);
+    }
+    height=width*9/16;
+}
 var role_x=width/2; //the x coordinate of role when the user back to map
 var role_y=height/2; //the y coordinate of role when the user back to map
 var con;//every storys' parameter. 
