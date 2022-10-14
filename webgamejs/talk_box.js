@@ -152,7 +152,7 @@ var getBuiltInText = function (scene, wrapWidth, fixedWidth, fixedHeight) {
 var getBBcodeText = function (scene, wrapWidth, fixedWidth, fixedHeight) {
     var mod ='word';
     if(language=='zh-tw') mod = 'char';
-    return scene.rexUI.add.BBCodeText(0, 0, '', {
+    var bbcode = scene.rexUI.add.BBCodeText(0, 0, '', {
         fixedWidth: fixedWidth,
         fixedHeight: fixedHeight,
         
@@ -165,7 +165,18 @@ var getBBcodeText = function (scene, wrapWidth, fixedWidth, fixedHeight) {
             width: wrapWidth
         },
         maxLines: 3
-    })
+    });
+    if (isMobileDevice()){
+        bbcode.fontSize='12px';
+        console.log(bbcode.fontSize);
+        if(language=="zh-tw"){
+            bbcode.padding.top=4;
+        }else{
+            bbcode.padding.top=0;
+        }
+        console.log(bbcode.padding.top);
+    }
+    return bbcode;
 
 }
 
