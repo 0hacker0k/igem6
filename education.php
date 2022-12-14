@@ -35,13 +35,17 @@
         </div>
     </div>
     <img class="full_size_image" src="<?php echo imgfile;?>/education/banner-education.png" alt=""> 
+    <div class="overview justify-content-around">
+        <div class="col-7">
+            <div id="1" class="title-label-div">
+                <h1 class="title_label" style="color: #EA2B1F;">Overview</h1>
+            </div>
+        </div>
+    </div>
+    
     <div class="article">
         <div class="in_center">
         
-            <div class="marge" style="--width:calc(3em + 5vh)"></div>
-            <div id="1" class="title-label-div">
-                <h1>Overview</h1>
-            </div>
             <p>
                 &emsp;&emsp;Aside from lab work, education and science communication play an essential role in science research. With proper interaction and brain-storming activities, we, as responsible and reliable scientists, can genuinely understand the viewpoint of our target audience to foster mutual communication. Therefore, we attempted to share information about synthetic biology and our project with various communities.
             </p>

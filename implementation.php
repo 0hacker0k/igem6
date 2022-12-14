@@ -78,13 +78,13 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">To raise concern about CVD</h1>
             </div>
             <div id="3" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Rationale</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Rationale</h2>
             </div>
             <p>
                 &emsp;&emsp;According to the statistical data of World Health Organization, in 2019, 32% of deaths worldwide were caused by CVD. In Taiwan, severe CVD caused more than 42 thousand deaths. CVD is a progressive disease, which means that even if one person is young, he or she still needs to take care of their physical condition to reduce the risk of CVD in the future. 
             </p>
             <div id="4" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Activities and Target audiences</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Activities and Target audiences</h2>
             </div>       
             <p>
                 &emsp;&emsp;Accordingly, we defined our target audiences (TAs) based on age. To reach out to our TAs and raise their concern about the CVD crisis, we planned the following activities: 
@@ -104,7 +104,7 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">To provide an alternative source of pure EPA</h1>
             </div>
             <div id="6" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Rationale</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Rationale</h2>
             </div>  
             <p>
                 &emsp;&emsp;The common resource of EPA, fish and fish oils, might have some problems. For example, fish are at the top of the marine food chain. Therefore, contaminants, such as heavy metals and microplastics, may accumulate in the fish body and fish oil. Further, using fish as a source of EPA supplement will exhaust the marine resource in the future. Finally, the EPA from fish oil is not vegan-friendly. Since the number of vegetarians grow in recent years, a vegan-friendly EPA is a potential product for a new market. In addition, fish oils are a mixture of docosahexaenoic acid (DHA) and EPA, but a recent cohort study showed that the benefit of EPA for CVD prevention can be abolished if mixed with DHA (Saini and Keum 2018, Sherratt, Libby et al. 2022). Together, we decided that a well-packaged, vegan-friendly, purified EPA would be our product.
@@ -113,13 +113,13 @@
                 <h1 class="title_label" style="background-image:url('<?php echo imgfile;?>/tape.png')">Product Design</h1>
             </div>
             <div id="8" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Synthetic biology based EPA generation</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Synthetic biology based EPA generation</h2>
             </div>  
             <p>
                 &emsp;&emsp;To generate the alternative source of EPA, we decided to apply synthetic biology to produce EPA in <i>E.coli</i>. Accordingly, we cloned the EPA-producing <i>pfa</i> genes from the deep sea bacteria <i>Moritella marina</i> and <i>Shewanella pneumatophori</i>. The cloned <i>pfa</i> genes were expressed in  <i>E.coli</i> to generate EPA. Furthermore, we cloned and expressed <i>AccBC</i>, <i>AccD1</i> and <i>AccE</i> genes from <i>Corynebacterium glutamicum</i> with the <i>pfa</i> genes to enhance the EPA production. Finally, the EPA-rich bacteria will be harvested and EPA will be extracted by the Folch method in the lab or by supercritical fluid extraction in mass production. The full design is listed on the <a href="https://2022.igem.wiki/ccu-taiwan/design" class="link_subtitle">design</a> page.
             </p>
             <div id="9" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Final EPA product - Vegan-friendly capsule</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Final EPA product - Vegan-friendly capsule</h2>
             </div>
             <p>
                 &emsp;&emsp;To make the purified EPA vegan-friendly, the enclosed capsule should not be made of an animal product, such as gelatin. Accordingly, we will choose carrageenans as the basic material for our vegan-friendly EPA capsule (Fauzi, Pudjiastuti et al. 2021).
@@ -130,7 +130,7 @@
                 </div>
             </div>
             <div id="10" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Final EPA product - Dark storage bottle</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Final EPA product - Dark storage bottle</h2>
             </div>
             <p>
                 &emsp;&emsp;Since EPA is sensitive to the light, the storage bottle of EPA should be made of dark colored plastic. Alternatively, the EPA capsules could be packed in PTP Aluminum Foil.
@@ -141,13 +141,13 @@
                 </div>
             </div>
             <div id="11" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Final EPA product - Defining the dosage</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Final EPA product - Defining the dosage</h2>
             </div>
             <p>
                 &emsp;&emsp;There is no official daily recommended intake from the National Academies for EPA or DHA. However, the American Heart Association recommends 1 gram EPA per day for adults and 0.5 gram EPA per day for children under 12 year old may promote cardiovascular health.  (Benvenga, Fama et al. 2022).  Accordingly, the minimum amount of EPA in each capsule should be 0.5 gram. Since the capsule will be slowly oxidized as the bottle is unsealed, the future product will be packed sixty capsules per bottle, one month usage for one adult.
             </p>
             <div id="12" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Final EPA product - User’s information</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Final EPA product - User’s information</h2>
             </div>
             <p>
                 &emsp;&emsp;To inform the customers, and as required by law, information for the user will be attached with the product.

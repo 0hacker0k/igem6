@@ -72,7 +72,7 @@
             </p>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="2" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - Obtaining the amplicon of <i>pfa</i> and <i>Acc</i> genes</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - Obtaining the amplicon of <i>pfa</i> and <i>Acc</i> genes</h2>
             </div>
             <ul>
                 <li>
@@ -154,7 +154,7 @@
             </ul>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="3" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - cloning <i>pfa D</i> into pColdI vector</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - cloning <i>pfa D</i> into pColdI vector</h2>
             </div>
             <p>
                 &emsp;&emsp;The sequence confirmed <i>pfa D</i> was digested from TA-<i>pfa D</i> and ligated into pColdI vector with selected restriction enzymes. The pColdI-<i>pfa D</i> was subjected into sequencing and the result is shown below.
@@ -166,7 +166,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="4" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - inducing pfa D protein expression</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - inducing pfa D protein expression</h2>
             </div>
             <p>
                 &emsp;&emsp;To induce pfa D protein expression, we cultured the BL21 bacteria with pCold-<i>pfa D</i> vectors in Terrific Broth with ampicillin and 1 mM IPTG at 16 °C. The bacteria were harvested at  9, 11, and 13 hr and subjected into PAGE analysis and Coomassie blue staining. The predicted size of pfa D protein is around 60 kDa, but we observed clear protein induction with size around 45 kDa. We have confirmed that there is no premature stop codon in pCold-<i>pfa D</i>. We will perform experiments to confirm whether there is unexpected protease activity or we may optimize the codon near the suspected premature ending site.
@@ -178,7 +178,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="5" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - cloning <i>pfa E</i> into pSTV28 vector</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - cloning <i>pfa E</i> into pSTV28 vector</h2>
             </div>
             <p>
                 &emsp;&emsp;The sequence confirmed <i>pfa E</i> was digested from TA-<i>pfa E</i> and ligated into pSTV28 vector with selected restriction enzymes. The pSTV28-<i>pfa E</i> was subjected into sequencing and the result is shown below. 
@@ -190,7 +190,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="6" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - confirming pfa E protein expression</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - confirming pfa E protein expression</h2>
             </div>
             <p>
                 &emsp;&emsp;To induce pfa E protein expression, we cultured the BL21 bacteria with pSTV28-<i>pfaE</i> vectors in Terrific Broth with chloramphenicol and 5 mM IPTG at 37 °C. The bacteria were harvested at 8, 18, and 24 hr and subjected into PAGE analysis and Coomassie blue staining. The predicted size of the pfa E protein is around 32 kDa. The staining result showed the induction of pfa E proteins.
@@ -202,7 +202,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="7" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - cloning <i>AccD1E</i> into pET28a vector</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - cloning <i>AccD1E</i> into pET28a vector</h2>
             </div>
             <p>
                 &emsp;&emsp;The sequence confirmed <i>AccD1E</i> was digested from TA-<i>AccD1E</i>  and ligated into pET28a vector with selected restriction enzymes. The pET28a-<i>AccD1E</i> was subjected into sequencing and the result is shown below. 
@@ -214,7 +214,7 @@
             </div>
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="8" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - confirming ACCD1 and ACCE protein expression</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - confirming ACCD1 and ACCE protein expression</h2>
             </div>
             <p>
                 &emsp;&emsp;To induce ACCD1 and ACCE protein expression, we cultured the BL21 bacteria with pET28a-<i>AccD1E</i> vectors in Terrific Broth with kanamycin and 0.4 mM IPTG at 37 °C. The bacteria were harvested at  2, 3, and 4 hr and subjected into PAGE analysis and Coomassie blue staining. The predicted sizes of ACCD1 and ACCE proteins are around 60 kDa and 10 kDa, respectively. The staining results clearly showed the induction of ACCD1 protein.
@@ -226,7 +226,7 @@
             </div>            
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="9" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - double antibiotics selection</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - double antibiotics selection</h2>
             </div>
             <p>
                 &emsp;&emsp;To confirm that the pColdI (Ampicillin resistant) and pSTV28 (Chloramphenicol resistant) plasmids can be co-expressed in bacteria to establish the pfa megaenzyme expression system, we first performed a double antibiotics selection for pColdI and pSTV28 vectors.
@@ -290,7 +290,7 @@
                 </div>
             </div>
             <div id="10" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - triple antibiotics selection</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Milestone - triple antibiotics selection</h2>
             </div>
             <p>
                 &emsp;&emsp;To confirm that the <i>pfa</i>-expressing vectors (pColdI and pSTV28) can be co-expressed with pET28a (kanamycin resistant) vector, we performed triple antibiotics selection.

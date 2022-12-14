@@ -298,6 +298,10 @@
                     <img src="<?php echo imgfile;?>/hardware/hardware09.png"/>
                     <div class="triangle_to_top"></div>Gel Preparation Machine
                 </div>
+                <div class="img" style="--width:50%;">
+                    <img src="<?php echo imgfile;?>/hardware/hardware0999.png"/>
+                    <div class="triangle_to_top"></div>Gel Preparation Machine
+                </div>
             </div>
             <div class="marge" style="--width:calc(2em + 2vh)"></div>      
             <div class="full_block">

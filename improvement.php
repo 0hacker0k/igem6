@@ -16,13 +16,13 @@
         <div class="in_center">
             <div class="marge" style="--width:calc(3em + 5vh)"></div>
             <div id="1" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Base</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Base</h2>
             </div>
             <p>
                 &emsp;&emsp;<i>AccBC</i>  (BBa_K2560251) and <i>AccD1</i> (BBa_K2560252) subunit from <i>C. glutamicum</i>, codon optimized for <i>V. natriegens</i>
             </p>
             <div id="2" class="title-label-div">
-                <h2 class="title_sub_label" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Improvement</h2>
+                <h2 class="special_sublable" style="background-image: url('<?php echo imgfile;?>/highlight.png')">Improvement</h2>
             </div>
             <p>
                 &emsp;&emsp;<i>AccBC</i>  (BBa_K2560251) and <i>AccD1</i> (BBa_K2560252) subunit from <i>C. glutamicum</i>, codon optimized for <i>E. coli</i>.
