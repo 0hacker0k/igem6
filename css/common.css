@@ -128,7 +128,20 @@ p{
     border-radius: 1.5vw;
     vertical-align: top;
 }
+.img_no img{
+    width: 100%;
+    vertical-align: top;
+}
 .img{
+    /* display:block; */
+    width: var(--width);
+    text-align: center;
+    font-size: calc(0.7em + 0.7vw);
+    margin: auto;
+    display: inline-block;
+
+}
+.img_no{
     /* display:block; */
     width: var(--width);
     text-align: center;

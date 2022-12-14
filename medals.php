@@ -22,7 +22,7 @@
                 Sliver medal
             </p>
             <div class="full_block">
-                <div class="img" style="--width:80%;">
+                <div class="img_no" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/medals/igem666.png"/>
                 </div>
             </div>
