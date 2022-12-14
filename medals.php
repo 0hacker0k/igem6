@@ -21,16 +21,25 @@
             <p class="h13">
                 Sliver medal
             </p>
+        </div>
+    </div>
+    <div class="article">
+        <div class="in_center">
             <div class="full_block">
                 <div class="img_no" style="--width:80%;">
                     <img src="<?php echo imgfile;?>/medals/igem666.png"/>
                 </div>
             </div>
-            <p>
+        </div>
+    </div>
+    <div class="overview justify-content-around">
+        <div class="col-7">
+            <p class="h18">
                 Thanks for being with us! Au revoir!
             </p>
         </div>
     </div>
+    
     <div class="marge" style="--width:calc(2em + 2vh)"></div>      
     
 
